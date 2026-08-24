@@ -1,0 +1,42 @@
+Trace: observed after V07-01 failed the echo-agent-cli clean assertion.
+Method: git status --short scoped to web-frontend/src/generated, then stat -f '%m %N'.
+Content of these files was not read.
+
+ M web-frontend/src/generated/ArtifactKind.ts | mtime 1786521886
+ M web-frontend/src/generated/AttendedMode.ts | mtime 1786521887
+ M web-frontend/src/generated/DomainProfile.ts | mtime 1786521887
+ M web-frontend/src/generated/ExecutionMode.ts | mtime 1786521887
+ M web-frontend/src/generated/InteractionMode.ts | mtime 1786521886
+ M web-frontend/src/generated/IssueSeverity.ts | mtime 1786521886
+ M web-frontend/src/generated/PlanRevision.ts | mtime 1786521886
+ M web-frontend/src/generated/PlanTask.ts | mtime 1786521887
+ M web-frontend/src/generated/PlanTaskKind.ts | mtime 1786521887
+ M web-frontend/src/generated/RecoveryBlocker.ts | mtime 1786521886
+ M web-frontend/src/generated/RecoveryDecision.ts | mtime 1786521886
+ M web-frontend/src/generated/ReviewIssue.ts | mtime 1786521886
+ M web-frontend/src/generated/ReviewOutcome.ts | mtime 1786521887
+ M web-frontend/src/generated/ReviewResult.ts | mtime 1786521886
+ M web-frontend/src/generated/RuntimeArtifact.ts | mtime 1786521886
+ M web-frontend/src/generated/RuntimeEventKind.ts | mtime 1786521887
+ M web-frontend/src/generated/RuntimeTaskEvent.ts | mtime 1786521886
+ M web-frontend/src/generated/SubagentArtifactResult.ts | mtime 1786521887
+ M web-frontend/src/generated/SubagentRun.ts | mtime 1786521886
+ M web-frontend/src/generated/SubagentRunStatus.ts | mtime 1786521887
+ M web-frontend/src/generated/SubagentRunUsage.ts | mtime 1786521887
+ M web-frontend/src/generated/SubagentTaskResult.ts | mtime 1786521887
+ M web-frontend/src/generated/SubagentTouchedFiles.ts | mtime 1786521887
+ M web-frontend/src/generated/SubagentVerificationResult.ts | mtime 1786521887
+ M web-frontend/src/generated/SubagentVerificationSource.ts | mtime 1786521887
+ M web-frontend/src/generated/SubagentVerificationStatus.ts | mtime 1786521887
+ M web-frontend/src/generated/SuggestedTask.ts | mtime 1786521887
+ M web-frontend/src/generated/TaskExecutionSummary.ts | mtime 1786521887
+ M web-frontend/src/generated/TaskPatch.ts | mtime 1786521887
+ M web-frontend/src/generated/TaskPlan.ts | mtime 1786521887
+ M web-frontend/src/generated/TaskRun.ts | mtime 1786521887
+ M web-frontend/src/generated/TaskRunStatus.ts | mtime 1786521887
+ M web-frontend/src/generated/TaskSpec.ts | mtime 1786521887
+ M web-frontend/src/generated/TaskUpdateOperation.ts | mtime 1786521887
+ M web-frontend/src/generated/TaskUpdateRequest.ts | mtime 1786521887
+ M web-frontend/src/generated/TodoItem.ts | mtime 1786521887
+ M web-frontend/src/generated/TodoStatus.ts | mtime 1786521887
+ M web-frontend/src/generated/UnattendedWriteMode.ts | mtime 1786521887

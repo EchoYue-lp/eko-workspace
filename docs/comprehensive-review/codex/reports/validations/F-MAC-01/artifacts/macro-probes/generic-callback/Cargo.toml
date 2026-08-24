@@ -1,0 +1,9 @@
+[package]
+name = "generic-callback"
+version = "0.0.0"
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+echo_agent.workspace = true
+futures.workspace = true

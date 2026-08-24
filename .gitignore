@@ -1,0 +1,16 @@
+# macOS metadata
+**/.DS_Store
+
+# Local agent state and generated worktrees
+.claude/
+.workbuddy/
+.worktrees/
+.zcode/
+**/.eko/
+
+# Independent local projects that are not part of this superproject
+agent-browser/
+echo-rust-learning/
+
+# Local planning notes intentionally kept outside version control
+todolist.md

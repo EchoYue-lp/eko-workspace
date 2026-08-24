@@ -1,0 +1,12 @@
+[submodule "echo-agent"]
+	path = echo-agent
+	url = git@github.com:EchoYue-lp/echo-agent.git
+	branch = main
+[submodule "echo-agent-cli"]
+	path = echo-agent-cli
+	url = git@github.com:EchoYue-lp/echo-agent-cli.git
+	branch = main
+[submodule "echo-website"]
+	path = echo-website
+	url = git@github.com:EchoYue-lp/echo-website.git
+	branch = main

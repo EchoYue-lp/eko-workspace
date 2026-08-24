@@ -1,0 +1,12 @@
+[package]
+name = "f-rel-01-edge-probe"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chrono = "0.4"
+echo_core = { path = "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent/echo-core" }
+echo_agent = { path = "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent", features = ["testing"] }
+futures = "0.3"
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "rt", "time"] }

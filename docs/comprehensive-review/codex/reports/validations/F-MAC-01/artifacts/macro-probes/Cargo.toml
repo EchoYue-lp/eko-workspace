@@ -1,0 +1,35 @@
+[workspace]
+resolver = "2"
+members = [
+    "facade-minimal-attr",
+    "facade-full-attr",
+    "renamed-facade-attr",
+    "renamed-core-derive",
+    "generic-derive",
+    "generic-attr",
+    "malformed-param",
+    "panic-identifier",
+    "cfg-propagation",
+    "unit-schema-validation",
+    "all-attributes-valid",
+    "generic-callback",
+    "missing-name",
+    "invalid-risk",
+    "facade-minimal-derive",
+    "facade-full-derive",
+]
+
+[workspace.package]
+edition = "2024"
+publish = false
+
+[workspace.dependencies]
+echo_agent = { path = "../../../../../../../../echo-agent" }
+eko_framework = { package = "echo_agent", path = "../../../../../../../../echo-agent" }
+echo_core = { path = "../../../../../../../../echo-agent/echo-core" }
+core_kit = { package = "echo_core", path = "../../../../../../../../echo-agent/echo-core" }
+echo_macros = { path = "../../../../../../../../echo-agent/echo-macros" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+schemars = "0.8"
+futures = "0.3"
