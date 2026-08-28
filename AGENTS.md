@@ -336,6 +336,33 @@ npm run build
 
 **只有所有适用的提交前门禁和条件矩阵全部通过,才执行 `git -c commit.gpgsign=false commit`。**
 
+### 大重构期间的验证节奏与工具 Schema Budget（强制）
+
+大范围、跨 crate 或跨 surface 重构必须区分迭代快检、阶段集成验证和最终完整门禁，
+不得在每个小项目完成后机械重复最昂贵的全量测试：
+
+1. 单个小 Todo 或 lane 只运行与改动直接相关的 focused test、`cargo check`、fmt 和必要的
+   契约检查。小项目的本地提交不要求重复 `cargo test --workspace --all-targets
+   --all-features`、GUI 全矩阵或 frontend 全矩阵。
+2. 完整 workspace/all-feature、GUI/frontend 综合门禁只在源码稳定的阶段合流/冻结点或整个
+   重构结束、提交发布前运行一次。若当前 plan 明确要求更早门禁，plan 仍是该阶段权威；
+   经用户批准延期时必须记录未执行命令和原因，绝不能把 deferred 伪装成通过。
+3. 长时 soak、10k/100k release/scale 测试和 Final Gate 只在整个重构结束时运行；不得因
+   `--all-targets` 或某个小项目的默认命令而意外启动这些测试。跳过或中断必须保留真实
+   exit code 和日志。
+4. 延后完整测试不等于延后修复已知问题：focused 测试、编译错误、警告、格式错误和公开
+   契约失败必须在当前行为单元内修复。
+
+工具 schema budget 是既有回归合同，不是大重构期间新增的优化目标：
+
+- `16_000` schema bytes / `4_000` estimated tokens 是当前首轮工具定义的回归门槛，用于
+  防止工具说明挤占模型上下文；它不是新的架构冻结条件。
+- 在 Task/Agent 等大重构尚未稳定时，不要为了这个门槛提前设计或扩展 deferred load、
+  `tool_search` 或工具分组优化；这些优化统一留到工具清单和架构稳定后的专门阶段。
+- 必需能力使现有门槛暂时超限时，不得抬高阈值或用改写描述掩盖失败；在批准的合流范围
+  内将其作为明确 residual 记录，待整个重构完成后统一重新测量和优化。任何阈值调整都
+  必须是独立、可审阅的后续决策，不能混入合流提交。
+
 ### 按磁盘压力 cargo clean,保留增量编译缓存
 
 **背景**:Rust 编译产物（`target/` 目录）极其占空间。本项目两个 Rust 子仓库多次编译及 feature 矩阵验证，累计可能占用大几十 GB。本机磁盘空间有限（约 460GB），不清理会很快耗尽。
