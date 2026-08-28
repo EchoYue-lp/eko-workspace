@@ -113,6 +113,18 @@ EKO 是运行在用户本机的个人超级智能助理。`echo-agent` 是独立
 - `echo-agent` 根 manifest 同时是 `echo_agent` package 与 Cargo workspace root；7 个 split crate、
   `echo-rust-learning` 和 `echo-agent-examples` 与根 package 共享 `Cargo.lock`、`target` 和统一门禁。
 
+### F2-F5 收口里程碑（2026-08-28）
+
+状态：plan_03 完成并合入本地 `main`。framework producer 为
+`302453b174086c3795dc026d16eeb668ecc66bed`，CLI consumer 为
+`d09f11c7878474d0e01ba2562309d5890e369554`；CLI 继续通过相对路径 `../echo-agent`
+消费 framework。F5 保持单一 squash，260 项测试 panic lint 已由独立 hygiene 提交清零。
+
+framework、CLI、GUI 与 frontend 完整适用门禁均有真实 exit 0 证据；generated DTO 已纳入
+标准 Prettier 检查。2k/10k、10k/100k 性能门、长时 soak 和 Final Gate 仍明确后置，ADR 0016
+记录的 R1/P0 bounded-query residual 也未宣称解决。本里程碑未 push、未 release；下一阶段是
+F6/R1 与剩余 lifecycle/persistence 收口。
+
 ### Task 3：Public Framework Boundary（2026-08-23）
 
 状态：实现完成，提交门禁执行中。权威分支为两个独立仓库的
