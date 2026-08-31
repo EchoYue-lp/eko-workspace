@@ -51,9 +51,9 @@ todos:
   - id: converge-framework-examples
     files:
       - echo-agent/Cargo.toml
-      - echo-agent/examples/README.md
-      - echo-agent/echo-agent-examples/src/main.rs
-      - echo-agent/tests/documentation_contract.rs
+      - echo-agent/echo-agent-learning/examples/README.md
+      - echo-agent/echo-agent-learning/src/bin/facade_consumer.rs
+      - echo-agent/echo-agent-learning/tests/documentation_contract.rs
     summary: 重组并修复 framework examples，使其成为 facade-only 可执行回归面。
     verify: 64 个 example 均有 disposition，保留项 feature/prerequisite 准确，panic/UTF-8
       禁用扫描和 all-target 门禁全绿。
@@ -61,7 +61,7 @@ todos:
     files:
       - echo-agent/docs/en/README.md
       - echo-agent/docs/zh/README.md
-      - echo-agent/tests/documentation_contract.rs
+      - echo-agent/echo-agent-learning/tests/documentation_contract.rs
       - echo-website/docs-sync-manifest.json
     summary: 按最新 public facade 收敛双语 framework 文档并同步 website。
     verify: API/feature/example/双语/link/doctest/rustdoc/website
@@ -126,9 +126,9 @@ design_revision: null
 - Modify: `echo-agent/src/lib.rs` — 仅导出 R0 证明需要下沉的通用能力。
 - Modify: `echo-agent-cli/echo-agent-app-core/src/lib.rs` — 切换 framework API 并删除被替代的应用实现。
 - Modify: `echo-agent/Cargo.toml` — examples feature/target 和 consumer gate。
-- Modify: `echo-agent/examples/README.md` — 64 个 examples 的保留、迁移、删除和 prerequisites 清单。
-- Modify: `echo-agent/echo-agent-examples/src/main.rs` — 扩展真实 facade-only consumer probes。
-- Modify: `echo-agent/tests/documentation_contract.rs` — examples/docs/facade 可执行合同。
+- Modify: `echo-agent/echo-agent-learning/examples/README.md` — 64 个 examples 的保留、迁移、删除和 prerequisites 清单。
+- Modify: `echo-agent/echo-agent-learning/src/bin/facade_consumer.rs` — 扩展真实 facade-only consumer probes。
+- Modify: `echo-agent/echo-agent-learning/tests/documentation_contract.rs` — examples/docs/facade 可执行合同。
 - Modify: `echo-agent/docs/en/README.md` — 英文公共文档索引和范围。
 - Modify: `echo-agent/docs/zh/README.md` — 中文公共文档索引和范围。
 - Modify: `echo-website/docs-sync-manifest.json` — framework/EKO 文档 revision 与 hash。
@@ -146,7 +146,7 @@ design_revision: null
 - `echo-agent-cli/echo-agent-app-core/src/agent_router.rs` — durable Conversation Agent mailbox、groups 和 cold/live delivery。
 - `echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/subagent_control.rs` — exact attempt guidance/interrupt authority。
 - `echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/run_authority.rs` — EKO journal-derived read model。
-- `echo-agent/tests/documentation_contract.rs` — 当前 link/facade 文档门禁，后续扩展而非另造脚本。
+- `echo-agent/echo-agent-learning/tests/documentation_contract.rs` — 当前 link/facade 文档门禁，后续扩展而非另造脚本。
 - `echo-website/scripts/sync-docs.mjs` — website 文档同步与 manifest authority。
 - `echo-agent/scripts/verify.sh` 与三个仓库现有 CI workflow — 复用既有门禁，不新建平行验证入口。
 
@@ -299,11 +299,11 @@ steps:
 ### converge-framework-examples
 
 requirements:
-- 用户明确指出：`echo-agent/examples` 代码仍属于未完成架构工作。
+- 用户明确指出：框架 examples 与 Rust 学习材料仍属于未完成架构工作。
 - `AGENTS.md` 的 examples 可执行门禁、UTF-8 和 panic 禁令。
 
 interfaces:
-- consumes: R1 稳定 facade、当前 64 个 examples、`echo-agent-examples` facade-only consumer crate、现有 examples 分类表。
+- consumes: R1 稳定 facade、当前 64 个 examples、`echo-agent-learning` facade-only consumer binary、现有 examples 分类表。
 - produces: 每个 example 的 `keep-root/move-consumer/move-test/delete` 处置、准确 feature/prerequisite、无 panic/UTF-8 违规的可执行 examples 体系。
 
 steps:
@@ -311,7 +311,7 @@ steps:
 1. 逐个追踪 64 个 examples 使用的 API、feature、外部依赖和与 tests/docs 的重复；场景类 EKO 行为不得冒充 framework 示例。
    verify: 每个文件都有唯一 disposition 和理由；重复 workflow/factory/eval/self-improvement 场景有明确保留 owner。
    expected: examples 数量由能力覆盖决定，不由历史编号惯性决定。
-2. 将真实外部消费者 probe 移入 `echo-agent-examples`，deterministic acceptance 移入 tests 或保留为强验收 example；删除无维护价值的重复 demo。
+2. 将真实外部消费者 probe 移入 `echo-agent-learning`，deterministic acceptance 移入 tests 或保留为强验收 example；删除无维护价值的重复 demo。
    verify: consumer crate 只依赖 `echo_agent`；所有保留 example 都在 Cargo target/feature matrix 中可发现。
    expected: examples 不再依赖 split crate 或 EKO 私有 API。
 3. 清理 `unwrap/expect`、直接 JSON/Vec 索引、UTF-8 字节切片和虚假 prerequisite 成功；更新 Cargo targets 与 examples README。
@@ -399,7 +399,7 @@ flowchart TD
 - 本主题采用一份程序级权威路线；每个独立交付阶段必须创建下一序号 plan 后才能进入 Build。本文件本身不得作为“一次执行全部阶段”的授权。
 - F2/F3 保持并行；F4 等二者合流；F5、F6 串行；R0 的只读 inventory 可提前，所有架构生产迁移等待 P3 冻结。
 - 旧 app-core 审计中 `FileRuntimeStateStore`、`FileConversationStore`、`restore_messages` 和 framework task tools 已完成，不重复迁移；`InstructionProvider`、WebhookEmitter、HitlDispatcher、ConfigWatcher 继续视为 EKO policy，除非 R0 以当前代码提供新的跨产品证据。
-- `echo-agent-examples` 是 facade consumer gate；根 examples 只有明确的 framework teaching/acceptance 价值才保留。
+- `echo-agent-learning` 同时承载 facade consumer gate、教学示例和强验收样例；框架根目录不再保留独立 examples 目录。
 - framework docs、EKO docs、website 分别保持所属事实源；顶层只保存跨仓审计和计划。
 - 在线官方资料刷新接口在 2026-08-28 返回 404。R1 若产生新的公共 API/架构取舍，实施前必须重新核验 Cargo、Codex、Claude Code 等官方一手资料；当前仅复用仓库已有 ADR 的已核验结论。
 - push、publish、gitlink、cleanup 和长时门禁均不由本计划写盘动作授权。

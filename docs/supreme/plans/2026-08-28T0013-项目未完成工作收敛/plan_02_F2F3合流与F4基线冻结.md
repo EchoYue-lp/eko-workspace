@@ -95,7 +95,7 @@ design_revision: null
 - `echo-agent-cli/echo-agent-app-core/src/agent_router.rs` — durable Conversation mailbox、target generation 和 delivery owner。
 - `echo-agent-cli/echo-agent-app-core/src/state.rs:3313-3325` — AppState owned message enqueue + delivery wake authority。
 - `echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/subagent_control.rs` — exact attempt、typed receipt replay 和 mailbox settlement owner。
-- `echo-agent/tests/documentation_contract.rs` — 后续 docs/examples contract 的既有门禁，不在本计划新增 verifier。
+- `echo-agent/echo-agent-learning/tests/documentation_contract.rs` — 后续 docs/examples contract 的既有门禁，不在本计划新增 verifier。
 
 ## Todos
 

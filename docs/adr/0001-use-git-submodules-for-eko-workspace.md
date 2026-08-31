@@ -33,7 +33,8 @@ Use `eko-workspace` as a Git superproject with these submodules:
 
 The superproject owns only cross-project concerns: `AGENTS.md`, shared architecture and planning documents, workspace onboarding, and pinned child revisions. Product code, examples, repository-specific documentation, tests, and releases remain in their owning child repositories.
 
-Local agent state, generated worktrees, `agent-browser`, `echo-rust-learning`, and the local `todolist.md` are outside this superproject and are ignored explicitly.
+Local agent state, generated worktrees, `agent-browser`, and the local
+`todolist.md` are outside this superproject and are ignored explicitly.
 
 ## Tradeoffs
 
