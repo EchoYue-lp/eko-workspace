@@ -63,8 +63,13 @@ F2-F5 的合流与门禁证据集中在 [`plan_03`](./supreme/plans/2026-08-28T0
 - F6：Conversation/TaskSubagent cursor 跨重启恢复、cold/unloaded address、workspace generation/delete、boot reconcile、terminal exactly-once 和 GUI/TUI/CLI/JSONL/channel 同 fixture 已通过。
 - R1：framework producer first、EKO product integration second、旧路径同阶段删除。最终逐项证据和 SHA 见 [`boundary closure`](./2026-08-28-current-framework-application-boundary-audit.md)。
 - R2：`echo-agent-learning` 统一承载 43 个编号 demo、13 个 Rust 学习章节和 21 个 executable contracts；正式 framework 文档只引用 learning package 的示例路径。
+- 全方向通信矩阵（2026-09-03）：框架 `feature/agent-communication`（SubagentLineage/UplinkSink/共享控制面/subagent_message+list，ADR 0027，demo50）与 CLI `feature/agent-communication`（EKO uplink sink、escalation→NeedsInput、同 run 兄弟投递、8 角色全开 can_delegate、agent_spawn/resume/handoff/group 四工具，ADR 0034）在各自 worktree 分支完成并通过 fmt/clippy 双档/feature 矩阵/gui bin/前端三件套；CLI 全量测试 76 项失败全部为运行中 EKO 实例持有 `~/.eko/tasks` 文件锁的环境冲突（零断言回归），待实例退出后复跑补验再合并。
 
 ## 下一阶段路线
+
+### 全方向通信矩阵收尾（进行中）
+
+worktree 分支 `feature/agent-communication`（两仓）待办：① 退出运行中的 EKO 实例后重跑 `cargo test --workspace --all-features --locked --no-fail-fast` 补验 76 项锁冲突测试；② 按合并规范 merge main → 改回相对路径（本次用 symlink 方案无需改）→ 先 squash merge echo-agent 后 echo-agent-cli → 清理 worktree → superproject gitlink。合并顺序与验证约束见「提交与验证约束」。
 
 ### R3：framework docs/website（Complete）
 
