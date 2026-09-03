@@ -1,6 +1,6 @@
 # Skill 系统重构(2026-09-03)
 
-status: in-progress
+status: implementation-complete / pending merge
 owner: feature/skill-refactor worktrees(echo-agent + echo-agent-cli)
 
 ## 背景与决策
@@ -21,9 +21,9 @@ baseline 常驻注入 4→1(仅 verification-before-completion);durable 管制
 | 1 | builtin_skills_root 运行时解析($EKO_SKILLS_ROOT→resource dir→源码树)+ tauri resources | ✅ cf8390f |
 | 2 | TUI /skill <name> [instructions] + GUI SkillCommand::Activate + SkillsPanel 按钮 | ✅ cf8390f |
 | 3 | 目录 39→24、默认启用 8→5、baseline 4→1、workspace 路由名单 | ✅ cf8390f |
-| 4 | 移除 durable 管制机器(~3000 行) | ⬜ 待做(建议新窗口) |
-| 5 | install 识别 plugin.json 留口 | ⬜ 待做 |
-| — | 完整门禁 + 文档(新 ADR 取代 0032、0033 补记、project-status、CHANGELOG)+ echo-website 检查 | ⬜ 待做 |
+| 4 | 移除 durable 管制机器(净删 ~2200 行,ADR 0036) | ✅ echo-agent-cli 9398ae0 |
+| 5 | install 识别 plugin.json 留口(仅 skills 面) | ✅ 9398ae0 |
+| — | 完整门禁 + 文档同步 | ✅ clippy 双门禁/全量测试/GUI 矩阵/frontend 全绿;ADR 0036 双语、0032 部分取代标注、project-status、CHANGELOG、skill-sync 运维文档已更新 |
 
 ## Phase 4 执行要点(新窗口读这里)
 
@@ -58,3 +58,13 @@ baseline 常驻注入 4→1(仅 verification-before-completion);durable 管制
   路径,合并前改回相对路径(grep worktrees /Users 零命中)。
 - 磁盘紧张:本轮已两次耗尽,echo-agent 主 target 与 worktree target 均已
   清理;注意 df 检查。
+
+## 最终状态(2026-09-03)
+
+- echo-agent `feature/skill-refactor` @ f34a535(Phase 0,全套门禁过)
+- echo-agent-cli `feature/skill-refactor` @ cf8390f(Phase 1-3)+ 9398ae0(Phase 4+5)
+- echo-website 检查:被删 skill 为 CLI 侧内置,website 无引用(见合并说明)
+- 已知残留:developer.rs 的 pre_dispatch 时序测试在高负载全量运行下偶发
+  5s 超时(与本次改动无关,隔离与复跑均通过)
+- 合并前必做:CLI worktree Cargo.toml 的绝对 path 改回相对路径
+  (grep worktrees /Users 零命中);先合 echo-agent 再合 echo-agent-cli
