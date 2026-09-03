@@ -67,9 +67,9 @@ F2-F5 的合流与门禁证据集中在 [`plan_03`](./supreme/plans/2026-08-28T0
 
 ## 下一阶段路线
 
-### 全方向通信矩阵收尾（进行中）
+### 全方向通信矩阵收尾（Complete，2026-09-03）
 
-worktree 分支 `feature/agent-communication`（两仓）待办：① 退出运行中的 EKO 实例后重跑 `cargo test --workspace --all-features --locked --no-fail-fast` 补验 76 项锁冲突测试；② 按合并规范 merge main → 改回相对路径（本次用 symlink 方案无需改）→ 先 squash merge echo-agent 后 echo-agent-cli → 清理 worktree → superproject gitlink。合并顺序与验证约束见「提交与验证约束」。
+76 项锁冲突测试在 EKO 实例退出后复验全绿（CLI 全量 1844 通过 0 失败）；squash merge 落地：echo-agent main `53473e3`、echo-agent-cli main `8a7fd85`，均已推送；worktree/分支/symlink 已清理；superproject gitlink `d8388dd` 已推送。合并前两仓主 checkout 的遗留 WIP 已 stash 保留：echo-agent `archive/pre-agent-communication-merge-wip-critic-schema-20260903`、echo-agent-cli `archive/pre-agent-communication-merge-wip-pool-primary-frontend-20260903`（未自动 pop，由所有者决定恢复时机）。
 
 ### R3：framework docs/website（Complete）
 
