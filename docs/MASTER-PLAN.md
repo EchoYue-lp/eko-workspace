@@ -37,7 +37,7 @@ F0-F6、R1、R2 和 R3 文档/website 收敛已完成；G 的当前静态门禁�
 | Bilingual docs parity foundation | Complete | CLI 已提交 40 对 zh/en 镜像文档（含 30 个 ADR）和 fail-closed checker；website sync 强制执行 parity 并记录 sourcePath/hash。 |
 | Repository hygiene | Complete / runtime scope protected | 已清理 20 个空缓存/源码占位目录，并在全部验证后按磁盘规则清理两个 Cargo target 缓存（共释放 48.5 GiB）；tracked audit `.txt`、website `.txt`、115 个 `.eko` runtime trace、8 个 soak roots 和验收 worktree 均保留，未按扩展名删除运行数据。 |
 | G Final Integration/Release | Conditional / full gates pending | 当前 framework/app all-target compile、严格 Clippy、双语 parity 与 website static checks 已通过；测试、frontend build、GUI、soak、人工 GUI、远端 CI 和 release 尚未重新验证。 |
-| 长程任务优化(统一 turn-run 绑定) | In progress | 方向:消灭 run-less 轮次,每个 turn 急切绑定 TaskRun(ADR `0035`,收敛计划 Iteration 4 已修订);分支 `feature/unified-turn-run`(echo-agent-cli worktree)。Phase 1:默认 binding + 无 plan 即完即结 + 噪音治理;Phase 2:subagent 终态唤醒;Phase 3:`RunSteerRecorded` 约束锚定;Phase 4:摘要引用化 + goal 超长落盘。 |
+| 长程任务优化(统一 turn-run 绑定) | Remediation complete / `feature/unified-turn-run@9524b47`,待独立复审 | review 9 项阻断全部修复(Critical×1 + Important×8):typed `TaskRunExecutionProfile` provenance、boot/quiet-wake 原子结算、orchestrated `AllowDirect` resume、五入口 exact-run steer、GUI 任务投影过滤、goal revision/SHA 绑定的原子 objective artifact、TS wire 同步、双语 ADR `0037`。完整门禁全绿:fmt/clippy×2/no-default/workspace all-features(app-core 1531)/GUI(207)/前端 prettier+vitest(243)+build。待办:独立实现复审后合入 CLI main;后续项(独立 ADR):task_execute §10.1 同步 await 合同的后台化。 |
 
 ## 当前基线
 

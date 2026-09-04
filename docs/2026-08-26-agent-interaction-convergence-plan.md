@@ -179,8 +179,8 @@ InvocationCapabilitySnapshot
    是不同边界。
 7. **没有 mode 替身**：不得把 `InteractionMode` 重命名成 `ExecutionStyle`、`RouteMode` 等继续
    承担相同职责。
-8. **普通 chat 不伪造 TaskRun**：只有 `task_create/task_execute` 或明确产品 trigger 才建立 formal
-   run。
+8. **普通 chat 使用内部 TaskRun,不伪造正式任务投影**：每个 store-backed turn 都绑定
+   `ConversationTurn` provenance；只有提交 plan 或明确 orchestrated trigger 后才进入任务 UI。
 9. **TaskRun Subagent attempt 不变成长对话**：长期多 turn 协作属于 Conversation Agent；
    SubagentRun 保持 revision/attempt 可核验。
 10. **surface 不是权威**：GUI/TUI/CLI/channel 只渲染 typed event/receipt。
@@ -380,8 +380,12 @@ TaskSubagentTarget(run_id, task_id, plan_revision, execution_id, attempt)
 
 1. **工具可见性切换**：由 invocation capability snapshot、registered tool、DomainProfile、
    workspace resource 和明确 TaskRun binding 计算；
-2. **run admission 切换**：普通 turn 默认无 run；只有 task tool 或明确 scheduler/background trigger
-   创建/绑定 TaskRun；
+2. **run admission 切换**(2026-09-03 修订,见 ADR 0037):每个 turn 急切绑定
+   TaskRun(`taskrun:{turn_id}`,goal = 用户指令);typed `TaskRunExecutionProfile` 区分
+   conversation 与 orchestrated direct run。仅 `ConversationTurn + no plan` 在 turn 结束时
+   直接结算 Completed,不进 continuation 循环。原"普通 turn 默认无
+   run"的懒绑定方案因留下 run-less 保护空洞(裸对话无 goal 锚、懒 run 不跨轮、
+   await/continuation 半覆盖)被否决；
 3. **路由诊断切换**：保留 observed execution facts，但删除 `requested_mode` 作为决策输入；
 4. **surface 切换**：删除 GUI segmented mode、CLI `/mode`、channel session mode 和 TUI mode 状态；
 5. **wire contract 切换**：删除 `InteractionModeRequest` 及 generated TypeScript；
@@ -392,13 +396,16 @@ TaskSubagentTarget(run_id, task_id, plan_revision, execution_id, attempt)
 
 - 不新增 `ExecutionStyle::{Direct,Formal,Auto}`；
 - 不通过字符串 `route=chat|task|auto` 继续决定行为；
-- 不让 UI 选择“复杂任务”后在后台偷偷预创建 formal run；
+- ~~不让 UI 选择“复杂任务”后在后台偷偷预创建 formal run~~(2026-09-03 修订:
+  急切绑定取代懒创建,此禁令针对的是"复杂任务"入口的隐式预创建,统一绑定后不再
+  适用;见 ADR 0037)；
 - 不因删除 mode 隐藏 Task tools，普通 Agent 始终可显式创建正式 graph。
 
 **退出门**：
 
 - `rg InteractionMode` 和生成 DTO 引用为零；
-- 普通聊天不产生 TaskRun；
+- ~~普通聊天不产生 TaskRun~~(2026-09-03 修订:改为"普通聊天 turn 产生 TaskRun 且
+  conversation provenance 且无 plan 即完即结";见 ADR 0037)；
 - 模型调用 `task_create` 后能建立 formal run 并继续 `task_execute`；
 - 所有 surface 对相同输入获得相同 capability snapshot；
 - tool schema budget、provider prompt snapshot 和五入口合同全绿。
@@ -549,7 +556,7 @@ Task/Todo        Agent tools
 
 | 场景                                | 必须结果                                           |
 | ----------------------------------- | -------------------------------------------------- |
-| idle Conversation 用户输入          | 启动一个新 turn，无 TaskRun                        |
+| idle Conversation 用户输入          | 启动新 turn 与内部 conversation TaskRun,不显示任务 UI |
 | active regular turn 用户输入        | tracked steer，receipt 经 accepted/drained/settled |
 | active non-steerable turn           | durable queue，不能丢失或伪造 drain                |
 | idle queue-only Agent message       | 持久等待，不制造无意模型调用                       |
