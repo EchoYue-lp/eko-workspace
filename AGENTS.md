@@ -2,6 +2,8 @@
 
 本文件是 AI agent 在本仓库工作时的**最高优先级约束**(优先级高于 agent 默认行为和任何技能)。请严格遵守。
 
+两个子仓库 `echo-agent/AGENTS.md`、`echo-agent-cli/AGENTS.md` 各自承载独立的提交门禁与仓库级规范(供独立检出使用)。修改本文件中与子仓库相关的规范时,必须同步更新对应子仓库的 AGENTS.md,防止两边漂移。
+
 ---
 
 ## 项目简介(冷启动免重新读)
@@ -229,9 +231,19 @@ git push
 
 > 注意:每个子项目是独立仓库,提交前务必确认当前仓库。跨仓库改动必须先提交并推送子仓库,再提交顶层 superproject 中的 submodule 指针;不得只提交指向未推送子提交的指针。
 
-### 验证分层:迭代快检 + 提交门禁 + 条件矩阵
+### 分支规范:任务在非 main 分支开发,按任务合并(强制)
 
-**规则:提交前必须完成与改动范围匹配的验证,所有已执行命令必须全部通过(零失败、零报错)才能提交。** 不再要求每次任务重复执行默认 feature、all-features 和逐 feature 三套高度重叠的全量矩阵。
+AI 编程常把一个任务拆成很多细粒度提交,逐 commit 跑全量门禁太耗时。因此:
+
+- **新任务必须在非 main 分支开发**,分支命名 `<type>/<user>/<任务名>`。`<type>` 是任务事件类型,与 conventional commits 前缀对齐:`feature`(新功能)、`fix`(bug 修复)、`doc`(文档)、`debug`(排查/诊断类调查)、`refactor`(重构)、`test`(补测试)、`chore`(构建/工具/依赖)。如 `fix/Echoyue/journal-race`、`feature/Echoyue/unified-turn`。worktree 场景见"Worktree 并行开发与合并规范"。main 保持随时可发布。
+- 开发阶段可以细粒度拆分提交,每个 commit 只需通过与改动范围匹配的 focused 快检(下节第 1 条),**不要求每个 commit 跑全量门禁**。
+- **合并粒度 = 任务**:任务完成后,先 `git merge main` 进任务分支,在任务分支上跑全量门禁(下节第 2 条),开 PR 等远端 CI 全绿(或确认本地门禁已全绿),然后 **squash merge 成一个 commit 进 main**,commit message 用与分支一致的类型前缀(如 `fix: ...` / `feat: ...` / `docs: ...`)。门禁或 CI 不绿不得合并;合并后 `git branch -D` 删除任务分支。
+- 跨仓库顺序:echo-agent 的改动先合入其 main,echo-agent-cli 的任务分支再合并(其 CI 跟踪框架 main)。
+- 各子仓库的 AGENTS.md 已同步此规范,修改时必须两边一起改。
+
+### 验证分层:迭代快检 + 合并门禁 + 条件矩阵
+
+**规则:开发阶段(非 main 分支)每个 commit 完成与改动范围匹配的 focused 验证即可;全量门禁只在任务合并到 main 前执行,所有已执行命令必须全部通过(零失败、零报错)才能合并。** 不再要求每次任务重复执行默认 feature、all-features 和逐 feature 三套高度重叠的全量矩阵。
 
 **关键:遇到任何失败 —— 包括"预先存在的失败""与我改动无关的失败""测试本身写错的失败" —— 都必须修复,不得跳过、不得绕过、不得用 `--no-verify` 或只跑子集蒙混。** 否则测试套件会逐渐失效,项目无法维护。具体:
 
@@ -260,11 +272,11 @@ npx vitest run <test-file>
 
 快检只用于迭代,不能替代下面的提交门禁。
 
-#### 2. 提交前门禁(强制)
+#### 2. 合并到 main 前门禁(强制)
 
 `echo-agent` 与 `echo-agent-cli` 都是真正的 Cargo workspace。`cargo ... --workspace` 会覆盖 workspace 全成员,**不再逐 crate 重复执行命令**,也不再额外跑一遍默认 feature 的 `cargo check/test/clippy`。
 
-`echo-agent` 提交前执行:
+`echo-agent` 在任务分支合并到 main 前执行:
 
 ```bash
 cd echo-agent
@@ -280,7 +292,7 @@ cargo test --workspace --all-targets --all-features --locked
 cargo check --workspace --lib --no-default-features --locked
 ```
 
-`echo-agent-cli` 提交前执行:
+`echo-agent-cli` 在任务分支合并到 main 前执行:
 
 ```bash
 cd echo-agent-cli
@@ -306,7 +318,8 @@ cargo check -p echo-agent-app-core --no-default-features --locked
 
 ```bash
 cd echo-agent
-for feature in sqlite subagent human-loop mcp lsp a2a git database rag chart web media; do
+for feature in a2a mcp lsp sqlite telemetry topology subagent web media \
+  data statistics channels git database rag chart; do
   cargo check -p echo_agent --no-default-features --features "$feature" --locked || exit 1
 done
 ```
@@ -335,7 +348,24 @@ npm run build
 
 现在 workspace 已经原生解决全成员覆盖问题。逐 feature 矩阵仍能发现 feature 隔离错误,但与 all-features 门禁高度重叠且代价很高,所以改为只在 feature 拓扑、条件编译或公共 API 变化时运行,并继续由 CI/专项审计兜底。
 
-**只有所有适用的提交前门禁和条件矩阵全部通过,才执行 `git -c commit.gpgsign=false commit`。**
+**只有所有适用的合并门禁和条件矩阵全部通过,任务分支才能 squash merge 进 main。**
+
+### CI 职责边界:验证环境差异,不重复本地完整门禁(强制)
+
+完整门禁由开发者在已合入最新 main 的任务分支上执行一次,CI 不再逐项镜像这套高成本
+矩阵。CI 只保留本地 macOS 无法等价提供的独立信号:
+
+- `echo-agent`:Linux all-target/all-feature lint、分组的默认 feature 测试、Windows 编译与
+  原子文件替换测试、依赖审计。Linux 测试必须按资源组拆分,不得恢复会令标准 runner
+  OOM 的单一 workspace test job;all-feature 测试仍属于本地合并前门禁。
+- `echo-agent-cli`:Linux all-target/all-feature lint、app-core 默认 feature 测试与 Node LTS
+  前端门禁(包含已提交 TypeScript 契约的编译)。app-core 测试必须把 `ts-rs` 导出隔离到
+  runner 临时目录,避免覆盖需要人工补齐跨 crate import 的正式契约。完整 workspace、GUI
+  test 和 JSONL 产品验收由本地合并前门禁负责,不得仅因共享 runner 资源不足而反复放宽
+  产品测试等待时间或加入常驻诊断依赖。
+- 同一 ref 的旧 CI run 应在新提交到达时取消,避免过期提交继续消耗 runner。
+
+CI 精简不降低本地提交门禁;任何新增跨平台或依赖策略风险仍应放在 CI 中验证。
 
 ### 大重构期间的验证节奏与工具 Schema Budget（强制）
 
@@ -394,7 +424,7 @@ du -sh echo-agent/target echo-agent-cli/target 2>/dev/null
 - 删除优先于保留:如果一个函数被新实现取代、一个 enum 变体不再构造、一个 feature gate 下的代码不再需要,**删掉它**,不要留着加 `#[deprecated]` 或 `#[allow(dead_code)]`。
 - 不要为"可能将来还会用"的代码留死路径。YAGNI —— 删了,将来真需要再写(那时上下文更清楚)。
 - 重构时,如果发现两套做同一件事的机制(例如"旧的 HumanGate 路径"和"新的审批路径"),确认新的能覆盖需求后,**删除旧的**,不要双系统并存。
-- 删除时连带清理:调用点、测试、文档、导入。删完必须按上节执行提交前门禁;若涉及 feature/`#[cfg]`/公共 API,再执行条件 feature 矩阵,确保没有遗漏的引用。
+- 删除时连带清理:调用点、测试、文档、导入。删完必须通过上节"合并到 main 前门禁";若涉及 feature/`#[cfg]`/公共 API,再执行条件 feature 矩阵,确保没有遗漏的引用。
 - 删除是有价值的贡献:死代码和双系统是最大的维护负担。看到就删,不要"留着以防万一"。
 
 > 例外:如果一段代码你**不确定**是否还有人用(例如被反射式调用、被外部插件引用),先 grep 确认无调用点再删;确认不了的,在 PR 描述里标注"疑删,请 review",而不是默默保留。
@@ -407,7 +437,7 @@ du -sh echo-agent/target echo-agent-cli/target 2>/dev/null
 
 ### 1. Cargo.toml 路径：合并前必须改回相对路径
 
-**坑**：在 worktree 里开发时，为了让 `echo-agent-cli` 编译到 worktree 里未发布的 `echo-agent` 改动，会临时把 `Cargo.toml` 的 `path` 指向 worktree 的绝对路径（如 `path = "/Users/.../.worktrees/feature/xxx"`）。这个路径**只在作者本机存在**，合并后任何其他人 / CI / fresh clone 都无法构建。
+**坑**：在 worktree 里开发时，为了让 `echo-agent-cli` 编译到 worktree 里未发布的 `echo-agent` 改动，会临时把 `Cargo.toml` 的 `path` 指向 worktree 的绝对路径（如 `path = "/Users/.../.worktrees/fix/Echoyue/xxx"`）。这个路径**只在作者本机存在**，合并后任何其他人 / CI / fresh clone 都无法构建。
 
 **规则**：
 - worktree 开发期间可以用绝对路径或 symlink 临时让编译通过。
@@ -434,15 +464,15 @@ du -sh echo-agent/target echo-agent-cli/target 2>/dev/null
 
 ### 4. squash merge 后的分支删除用 -D
 
-squash merge 不创建 merge commit，`git branch -d` 会报 "not fully merged"。用 `git branch -D feature/xxx` 强制删除——改动已通过 squash 在 main 上了。
+squash merge 不创建 merge commit，`git branch -d` 会报 "not fully merged"。用 `git branch -D fix/Echoyue/xxx` 强制删除——改动已通过 squash 在 main 上了。
 
 ### 5. worktree 清理顺序
 
 ```bash
-git worktree remove .worktrees/feature/xxx --force
+git worktree remove .worktrees/fix/Echoyue/xxx --force
 git worktree prune
-git branch -D feature/xxx
-rm -f .worktrees/feature/echo-agent  # 删除临时 symlink
+git branch -D fix/Echoyue/xxx
+rm -f .worktrees/fix/Echoyue/echo-agent  # 删除临时 symlink
 ```
 
 ### 6. 跨仓库依赖的合并顺序
