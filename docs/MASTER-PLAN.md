@@ -2,7 +2,7 @@
 
 > **跨仓库当前事实源**。本文只记录阶段状态、前向路线、分层边界、验收门和可核验证据；不再保存逐轮实施日志。
 > EKO 是本机个人助理：`echo-agent` 是独立可复用框架，`echo-agent-cli` 是应用层，`echo-website` 是官网。
-> 最后更新：2026-09-01。
+> 最后更新：2026-09-04。
 
 ## 当前结论
 
@@ -37,16 +37,16 @@ F0-F6、R1、R2 和 R3 文档/website 收敛已完成；G 的当前静态门禁�
 | Bilingual docs parity foundation | Complete | CLI 已提交 40 对 zh/en 镜像文档（含 30 个 ADR）和 fail-closed checker；website sync 强制执行 parity 并记录 sourcePath/hash。 |
 | Repository hygiene | Complete / runtime scope protected | 已清理 20 个空缓存/源码占位目录，并在全部验证后按磁盘规则清理两个 Cargo target 缓存（共释放 48.5 GiB）；tracked audit `.txt`、website `.txt`、115 个 `.eko` runtime trace、8 个 soak roots 和验收 worktree 均保留，未按扩展名删除运行数据。 |
 | G Final Integration/Release | Conditional / full gates pending | 当前 framework/app all-target compile、严格 Clippy、双语 parity 与 website static checks 已通过；测试、frontend build、GUI、soak、人工 GUI、远端 CI 和 release 尚未重新验证。 |
-| 长程任务优化(统一 turn-run 绑定) | Remediation complete / `feature/unified-turn-run@9524b47`,待独立复审 | review 9 项阻断全部修复(Critical×1 + Important×8):typed `TaskRunExecutionProfile` provenance、boot/quiet-wake 原子结算、orchestrated `AllowDirect` resume、五入口 exact-run steer、GUI 任务投影过滤、goal revision/SHA 绑定的原子 objective artifact、TS wire 同步、双语 ADR `0037`。完整门禁全绿:fmt/clippy×2/no-default/workspace all-features(app-core 1531)/GUI(207)/前端 prettier+vitest(243)+build。待办:独立实现复审后合入 CLI main;后续项(独立 ADR):task_execute §10.1 同步 await 合同的后台化。 |
+| 长程任务优化(统一 turn-run 绑定) | Closure complete on local `main` / `echo-agent-cli@be273d3` + `echo-website@ae91c39`,未推送 | `feature/unified-turn-run@9524b47` 的 9 项 review 修复已作为基线,closure 补齐 typed provenance memory gate、quiet-check 与 RunTurn claim 原子复核、五入口长 steer 原文保真、`ForegroundTurnSnapshot.run_id` TS 绑定和 `PlanRevisionCommitted` 任务 UI 激活。第三轮独立复审 Critical/Important/Minor 均为 0。CLI 门禁已通过 fmt、Clippy 双档、workspace all-features(app-core 1534 passed/9 ignored、CLI lib 276、main 11、JSONL 6)、no-default、GUI check/tests(207 + main 1 + JSONL 6)、前端 Prettier/ESLint/Vitest 244/build、双语 parity；website source-aware docs check 与完整 verify 通过(39 单测、174 static/discovery routes、Playwright 15 passed/1 skipped)。后续项(独立 ADR):task_execute §10.1 同步 await 合同的后台化。 |
 
 ## 当前基线
 
 | 仓库 | 本地基线 | 远端/发布状态 |
 | --- | --- | --- |
-| `echo-agent` | `4ad095b` | keyed admission、typed delivery/task/tool/model API、immutable `SkillDocument`、官方 Skill format validator、统一 Subagent prompt compiler 与 deterministic `CommandCellWatcher` 均已进入正式 facade；模型驱动的 command polling 不再属于 Subagent runtime；尚未执行最终 release/push 流程。 |
-| `echo-agent-cli` | `c29ca20` (`consume framework-native SDK APIs`) | AgentPool/AgentRouter/TaskRuntime/ToolControl/MCP/outcome 已完成 framework-first 收敛；全部 Subagent dispatch 使用统一 compiler，builtin Skill active policy、standard-only Skill catalog、pool reload 和 fail-closed config 已切入主路径。43 对双语 parity、all-target/all-feature/no-default compile、严格 Clippy 与 frontend Prettier 通过；focused Skill contract gates 通过；未运行完整测试。 |
-| `echo-website` | current reviewed projection | framework/EKO official Skill format、catalog contraction、Hook ownership and current child source hashes 已同步；source-aware docs/discovery/format/lint/site checks 通过；本阶段未运行测试、build 或浏览器人工门禁。 |
-| superproject | current checkout | 三个 child commit 与 Phase 3 文档、gitlink 已在本地提交；远端 CI、push/release 与最终发布仍未闭合。 |
+| `echo-agent` | `ac00815` | 本轮未修改 framework；作为统一 turn-run closure 的干净依赖基线。 |
+| `echo-agent-cli` | `be273d3` (`main`) | 统一 turn-run 绑定的 review remediation 与 closure 已合入本地 `main`；第三轮独立复审 0 findings，Rust workspace/no-default/GUI 与 frontend 全部门禁通过，尚未推送。 |
+| `echo-website` | `ae91c39` (`main`) | EKO storage authority、CLI source manifest 与 `llms-full.txt` 已同步并合入本地 `main`；source-aware docs check 和完整 website verify 通过，尚未推送。 |
+| superproject | local `main` | 已记录上述三个 child 指针与 closure 证据；远端 CI、push/release 与最终发布仍未闭合。 |
 
 F2-F5 的合流与门禁证据集中在 [`plan_03`](./supreme/plans/2026-08-28T0013-项目未完成工作收敛/plan_03_F5收口完整验证主分支合并与资源清理.md) 及两个 child MASTER-PLAN；这些文件记录历史实施证据，不替代本节状态表。
 
