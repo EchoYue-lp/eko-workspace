@@ -356,8 +356,10 @@ npm run build
 矩阵。CI 只保留本地 macOS 无法等价提供的独立信号:
 
 - `echo-agent`:Linux all-target/all-feature lint、分组的默认 feature 测试、Windows 编译与
-  原子文件替换测试、依赖审计。Linux 测试必须按资源组拆分,不得恢复会令标准 runner
-  OOM 的单一 workspace test job;all-feature 测试仍属于本地合并前门禁。
+  原子文件替换测试、依赖审计,以及learning test中的semantic baseline target-main
+  ancestry合同。PR使用base SHA、main push使用before SHA并checkout完整历史,使
+  feature-only baseline revision在squash前失败。Linux 测试必须按资源组拆分,不得恢复会令
+  标准 runner OOM 的单一 workspace test job;all-feature 测试仍属于本地合并前门禁。
 - `echo-agent-cli`:Linux all-target/all-feature lint、app-core 默认 feature 测试与 Node LTS
   前端门禁(包含已提交 TypeScript 契约的编译)。app-core 测试必须把 `ts-rs` 导出隔离到
   runner 临时目录,避免覆盖需要人工补齐跨 crate import 的正式契约。完整 workspace、GUI
