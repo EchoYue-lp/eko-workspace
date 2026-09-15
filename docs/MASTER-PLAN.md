@@ -2,7 +2,7 @@
 
 > **跨仓库当前事实源**。本文只记录阶段状态、前向路线、分层边界、验收门和可核验证据；不再保存逐轮实施日志。
 > EKO 是本机个人助理：`echo-agent` 是独立可复用框架，`echo-agent-cli` 是应用层，`echo-website` 是官网。
-> 最后更新：2026-09-14。
+> 最后更新：2026-09-15。
 
 ## 当前结论
 
@@ -38,16 +38,16 @@ F0-F6、R1、R2 和 R3 文档/website 收敛已完成；G 的当前静态门禁�
 | Repository hygiene | Complete / runtime scope protected | 已清理 20 个空缓存/源码占位目录，并在全部验证后按磁盘规则清理两个 Cargo target 缓存（共释放 48.5 GiB）；tracked audit `.txt`、website `.txt`、115 个 `.eko` runtime trace、8 个 soak roots 和验收 worktree 均保留，未按扩展名删除运行数据。 |
 | G Final Integration/Release | Conditional / full gates pending | 当前 framework/app all-target compile、严格 Clippy、双语 parity 与 website static checks 已通过；测试、frontend build、GUI、soak、人工 GUI、远端 CI 和 release 尚未重新验证。 |
 | 长程任务优化(统一 turn-run 绑定) | Closure complete on local `main` / `echo-agent-cli@be273d3` + `echo-website@ae91c39`,未推送 | `feature/unified-turn-run@9524b47` 的 9 项 review 修复已作为基线,closure 补齐 typed provenance memory gate、quiet-check 与 RunTurn claim 原子复核、五入口长 steer 原文保真、`ForegroundTurnSnapshot.run_id` TS 绑定和 `PlanRevisionCommitted` 任务 UI 激活。第三轮独立复审 Critical/Important/Minor 均为 0。CLI 门禁已通过 fmt、Clippy 双档、workspace all-features(app-core 1534 passed/9 ignored、CLI lib 276、main 11、JSONL 6)、no-default、GUI check/tests(207 + main 1 + JSONL 6)、前端 Prettier/ESLint/Vitest 244/build、双语 parity；website source-aware docs check 与完整 verify 通过(39 单测、174 static/discovery routes、Playwright 15 passed/1 skipped)。后续项(独立 ADR):task_execute §10.1 同步 await 合同的后台化。 |
-| echo-agent 全 workspace 语义治理 | Complete / delivered to remote main | PR #117将workspace baseline、高风险Audit、SDK scope reset、已批准Finding repair、framework concept convergence与最终验收squash merge为`d492c676`；post-merge发现的baseline ancestry问题由Issue #118和PR #119持久修复，最终远端main为`0878a676`。当前9684个canonical identity中5607 external contract、1765 Host/Rust-only、781 language intrinsic、90 internal helper、1441 deferred；45份Audit、45份Evidence、94个Finding（71 open、23 resolved），94/94 Finding一对一映射GitHub Issue，远端状态23 CLOSED/71 OPEN。`verify.sh`（2993 passed/0 failed/3 ignored）、17个独立feature、SDK/三语言、documentation 10、examples 21、facade 10、target-main ancestry 3、semantic strict/change-evidence、continuity 428（408 preserved/4 replaced/16 retired）及独立review全部通过；PR #117与#119均10/10 CI成功。路线见 [`delivery map`](./supreme/plans/2026-09-13T1448-echo-agent全workspace语义治理/delivery-map.md) 与 [`完整优化清单`](./2026-09-14-echo-agent-semantic-governance-findings.md)。 |
+| echo-agent 全 workspace 语义治理 | Baseline complete / Finding remediation ongoing | PR #117交付workspace baseline、Audit、SDK scope reset与首批repair，PR #119修复squash-aware ancestry；生命周期结算Wave 1由PR #121继续squash merge为`c5f76882`。当前9713个canonical identity中5620 external contract、1773 Host/Rust-only、787 language intrinsic、90 internal helper、1443 deferred；95个Finding中41 resolved、54 open并一对一映射GitHub Issue。Wave 1本地`verify.sh`、17个独立feature、三语言SDK、dependency audit、semantic strict/change-evidence与独立review全部通过，PR #121远端10/10 CI成功并关闭18个Issue。路线见 [`delivery map`](./supreme/plans/2026-09-13T1448-echo-agent全workspace语义治理/delivery-map.md) 与 [`完整优化清单`](./2026-09-14-echo-agent-semantic-governance-findings.md)。 |
 
 ## 当前基线
 
 | 仓库 | 本地基线 | 远端/发布状态 |
 | --- | --- | --- |
-| `echo-agent` | `0878a676` (`main`) | PR #117与baseline follow-up PR #119均已squash merge；本地/远端main一致。94个Finding中23个resolved Issue已关闭，71个open Issue保持后续backlog。 |
+| `echo-agent` | `c5f76882` (`main`) | PR #121已squash merge且GitHub签名verified；本地/远端main一致。95个Finding中41个resolved Issue已关闭，54个open Issue保持后续backlog。 |
 | `echo-agent-cli` | `be273d3` (`main`) | 统一 turn-run 绑定的 review remediation 与 closure 已合入本地 `main`；第三轮独立复审 0 findings，Rust workspace/no-default/GUI 与 frontend 全部门禁通过，尚未推送。 |
 | `echo-website` | `ae91c39` (`main`) | EKO storage authority、CLI source manifest 与 `llms-full.txt` 已同步并合入本地 `main`；source-aware docs check 和完整 website verify 通过，尚未推送。 |
-| superproject | `doc/Echoyue/echo-agent-semantic-governance-plan` | 本次只交付全workspace治理计划、最终总结、同步CI规则和`echo-agent@0878a676`指针；`echo-agent-cli`、`echo-website`及其它现有工作树改动不进入本次提交。 |
+| superproject | `doc/Echoyue/semantic-lifecycle-settlement-wave1` | 本次只交付Wave 1总结、路线更新和`echo-agent@c5f76882`指针；`echo-agent-cli`、`echo-website`及其它线程工作树改动不进入本次提交。 |
 
 F2-F5 的合流与门禁证据集中在 [`plan_03`](./supreme/plans/2026-08-28T0013-项目未完成工作收敛/plan_03_F5收口完整验证主分支合并与资源清理.md) 及两个 child MASTER-PLAN；这些文件记录历史实施证据，不替代本节状态表。
 
@@ -70,9 +70,13 @@ F2-F5 的合流与门禁证据集中在 [`plan_03`](./supreme/plans/2026-08-28T0
 
 ## 下一阶段路线
 
-### echo-agent 全 workspace 语义治理（Complete，2026-09-14）
+### echo-agent 全 workspace 语义治理（Baseline Complete / Remediation Ongoing，2026-09-15）
 
-SDK identity inventory保留为漂移监控和独立backlog，不再用其完成比例表示项目进度，也不再逐identity建PR。全workspace discovery、高风险审计、SDK scope reset、已批准Finding repair、concept convergence、最终验收和squash-aware baseline门禁均已进入远端main`0878a676`。Issue #116将SDK backlog统一为1441个deferred identity的capability级决策；Issue #118确保baseline revision属于target main而非feature-only历史。94个Finding全部映射唯一GitHub Issue，23个resolved Issue已随交付关闭，剩余71个继续按风险和Finding独立推进。
+SDK identity inventory保留为漂移监控和独立backlog，不再用其完成比例表示项目进度，也不再逐identity建PR。全workspace discovery、高风险审计、SDK scope reset、首批Finding repair、concept convergence和squash-aware baseline门禁已进入远端main；PR #121在`c5f76882`闭合18个终态、恢复、权限、协议与副作用Finding。95个Finding全部映射唯一GitHub Issue，41个resolved Issue已随交付关闭，剩余54个继续按风险和Finding独立推进。
+
+下一修复前沿优先覆盖Scheduler durable occurrence（#84）、Workflow多入口漂移（#112）、SDK gap ACK replay watermark（#120）、MCP/LSP transport close（#55）及其它持久化/cleanup owner。`echo-sdk-host`与`echo-sdk-protocol`独立仓库迁移线程必须吸收`c5f76882`的Turn delivery、checkpoint settlement、gap generation和SDK contract变化；迁移稳定前不在本线程并行扩大这两个crate。
+
+统一Tool Surface / ToolRouter草案的首次复审结论为block：surface必须按model request/iteration generation冻结，必须复用现有`ToolInvocation`/`ToolRuntime`/`ToolExecutionContext`，execution traits不得取代动态Permission与现有ToolManager/network生命周期。草案在修订和复审通过前不是正式ADR，不得进入实现。
 
 ### 全方向通信矩阵收尾（Complete，2026-09-03）
 

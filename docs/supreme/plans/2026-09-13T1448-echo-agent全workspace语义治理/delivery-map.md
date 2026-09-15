@@ -116,7 +116,7 @@ outcomes:
       - high-risk-boundary-audits
       - sdk-contract-scope-reset
   repair-sdk-deferred-backlog-count-drift:
-    ships: 将全workspace discovery和protocol map中的SDK backlog统一为1441个deferred
+    ships: 将当时全workspace discovery和protocol map中的SDK backlog统一为1441个deferred
       identity的capability级决策，并明确Host/Rust-only、language intrinsic与internal
       helper不属于语言parity backlog
     depends_on:
@@ -126,6 +126,97 @@ outcomes:
       ancestor重新绑定到远端main，并增加target-main稳定祖先的pre-merge合同与squash反例，恢复strict/continuity且防止同类回归
     depends_on:
       - governance-final-verification
+  repair-command-cell-settlement:
+    ships: PR #121闭合Issue #44/#45；CommandCell cancel中断artifact finalizer，retention prune以原子lease谓词拒绝删除新waiter
+    depends_on:
+      - high-risk-boundary-audits
+  repair-scheduler-local-occurrence-fence:
+    ships: PR #121闭合Issue #85/#86；Scheduler control generation使旧callback失效并统一CronTask ID唯一性，但不冒充durable delivery
+    depends_on:
+      - high-risk-boundary-audits
+  repair-workflow-checkpoint-settlement:
+    ships: PR #121闭合Issue #109/#110；checkpoint claim以generation、renew、ack和requeue结算，Store不支持settlement时fail closed
+    depends_on:
+      - high-risk-boundary-audits
+  repair-workflow-sibling-failure-settlement:
+    ships: PR #121闭合Issue #113；并行sibling fail-fast且成功结果按稳定注册顺序归并
+    depends_on:
+      - high-risk-boundary-audits
+  repair-turn-execution-delivery-settlement:
+    ships: PR #121闭合Issue #108；Turn执行终态与Delivery结算分离，projection失败不再改写producer terminal
+    depends_on:
+      - high-risk-boundary-audits
+  repair-extension-secret-and-hook-precedence:
+    ships: PR #121闭合Issue #56/#59；统一extension credential redaction并使全部匹配Permission action全局deny-wins
+    depends_on:
+      - high-risk-boundary-audits
+  repair-lsp-derived-handle-generation:
+    ships: PR #121闭合Issue #63；LSP manager持有child、generation和closed fence，旧handle不能复活进程
+    depends_on:
+      - high-risk-boundary-audits
+  repair-mcp-capability-and-version-contract:
+    ships: PR #121闭合Issue #65/#67；MCP只广告真实能力，协议协商与中英文文档一致
+    depends_on:
+      - high-risk-boundary-audits
+  repair-mcp-local-tool-classification:
+    ships: PR #121闭合Issue #66；server annotation保持advisory，本地ToolCapabilities拥有权限/风险/副作用分类，Plan mode在hook前阻断mutation
+    depends_on:
+      - high-risk-boundary-audits
+  repair-provider-cancellation-and-sse-framing:
+    ships: PR #121闭合Issue #69/#95；non-stream provider全链路监听统一取消，delimiterless SSE EOF fail closed
+    depends_on:
+      - high-risk-boundary-audits
+  repair-sdk-gap-generation:
+    ships: PR #121闭合Issue #88；Host与三语言SDK统一校验gap handle generation和sequence，同时将ACK replay watermark残余风险拆为Issue #120
+    depends_on:
+      - sdk-contract-scope-reset
+  repair-skill-activation-authority:
+    ships: PR #121闭合Issue #93；Skill activation统一handle、epoch、generation与single-flight，替换策略先验证后撤旧代
+    depends_on:
+      - high-risk-boundary-audits
+  semantic-lifecycle-settlement-wave1-main:
+    ships: PR #121以GitHub verified squash commit c5f76882交付上述18个Finding，10项远端CI全绿并自动关闭对应Issue
+    depends_on:
+      - repair-command-cell-settlement
+      - repair-scheduler-local-occurrence-fence
+      - repair-workflow-checkpoint-settlement
+      - repair-workflow-sibling-failure-settlement
+      - repair-turn-execution-delivery-settlement
+      - repair-extension-secret-and-hook-precedence
+      - repair-lsp-derived-handle-generation
+      - repair-mcp-capability-and-version-contract
+      - repair-mcp-local-tool-classification
+      - repair-provider-cancellation-and-sse-framing
+      - repair-sdk-gap-generation
+      - repair-skill-activation-authority
+  repair-scheduler-durable-occurrence:
+    ships: Issue #84为Scheduler建立durable occurrence claim、crash replay和callback delivery合同，不把process-local generation fence解释为持久结算
+    depends_on:
+      - semantic-lifecycle-settlement-wave1-main
+  repair-workflow-entry-loop-drift:
+    ships: Issue #112收敛Workflow四个执行入口的主循环、事件和恢复语义，保留一个canonical execution authority
+    depends_on:
+      - semantic-lifecycle-settlement-wave1-main
+  repair-sdk-gap-ack-replay-watermark:
+    ships: Issue #120使gap ACK后的Host resume watermark单调越过snapshot boundary，并以gap到ACK再到replay/live continuation端到端反例验证
+    depends_on:
+      - repair-sdk-gap-generation
+  repair-mcp-transport-close-settlement:
+    ships: Issue #55统一MCP SSE与SDK LSP transport close owner和有界等待结算；合流时避开SDK独立仓库迁移冲突
+    depends_on:
+      - semantic-lifecycle-settlement-wave1-main
+  coordinate-sdk-repository-extraction:
+    ships: echo-sdk-host与echo-sdk-protocol独立仓库迁移线程吸收c5f76882的Turn delivery、checkpoint settlement、gap generation、source contract和三语言scope基线
+    depends_on:
+      - semantic-lifecycle-settlement-wave1-main
+  redesign-unified-tool-surface:
+    ships: 修订被review阻塞的Tool Surface草案；按model request/iteration generation冻结surface，复用现有invocation/runtime/context并保持Permission与ToolManager生命周期正交
+    depends_on:
+      - high-risk-boundary-audits
+  refresh-ci-actions-runtime:
+    ships: 独立Delivery MR升级弃用的setup-java和Node 20 Action runtime，消除GitHub runner维护提示并复验Rust/SDK CI
+    depends_on:
+      - semantic-lifecycle-settlement-wave1-main
 design_revision: null
 ---
 该交付图以语义边界和 Finding 为推进单位。discovery 或 audit 产生的每个独立修复必须先作为新的 outcome 插入本图，并补到 framework-concept-convergence 的依赖，再创建对应 Plan；不得用一个大修复 Plan 吞并多个可独立合并的 Finding。repair-task-patch-claim-cas 绑定已 superseded 的范围不足 Plan 06；前向交付由包含 public SDK contract 同步的 repair-task-patch-claim-cas-sdk-contract 取代。Subagent factory 的 cancellation 与 publication race 共享并替换同一个 registry-wide instantiating authority，必须在一个 revision-scoped single-flight outcome 中原子收敛。
@@ -139,5 +230,10 @@ Eval workspace generation isolation以每次EvalRunner::run唯一generation闭�
 Eval timeout settlement复用唯一AgentTurnDriver与现有6秒grace；cancel请求不等于终态，只有TurnReceipt允许终态trace与generation cleanup，grace失败保持隔离。
 Eval trace correlation复用ExternalRunContext与RunStore parent/turn/execution关联，不扩TurnReceipt或SDK，也不再用Agent共享product run ID猜测trace。
 BackgroundTask terminal authority只修复process-local future handle；Clone新增identity归入Rust language intrinsic，不扩三语言facade，也不替代revisioned Task DAG。
-SDK deferred backlog口径漂移由Issue #116跟踪；修复只统一语义材料中的1441 deferred capability backlog，不改变manifest、route、language status或runtime。
+SDK deferred backlog口径漂移由Issue #116跟踪；该历史修复只统一当时语义材料中的1441 deferred capability backlog，不改变manifest、route、language status或runtime；当前漂移监控值见主报告。
 Semantic baseline squash ancestry由Issue #118跟踪；修复更新基线祖先，并在现有learning contract与Rust CI中增加target-main ancestry和squash反例，不放宽Echo Semantic verifier或改变runtime/API。
+生命周期结算Wave 1中的每个Finding继续保留独立Issue、repair、verification和rereview；delivery outcome只聚合已经独立闭合的切片，不建立第二状态权威。
+Scheduler durable occurrence、Workflow entry loop、SDK gap ACK watermark和MCP transport close是下一批优先并行frontier；只有各自进入远端main后才关闭Issue。
+SDK仓库拆分由独立线程拥有，本图只声明必须吸收的c5f76882语义基线，不创建竞争实现或修改其worktree。
+Tool Surface草案首次review为block，必须完成generation粒度、既有类型复用和动态Permission/ToolManager职责修订后再评审；当前不是accepted design或实现授权。
+CI Action runtime升级是Delivery维护项，不修改Agent运行语义，也不并入任何生命周期Finding。
