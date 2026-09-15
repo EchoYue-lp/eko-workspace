@@ -1,29 +1,29 @@
 # echo-agent 全 Workspace 语义治理优化清单
 
-> 快照：2026-09-15，`echo-agent@c5f76882`。本报告是本轮跨仓工程总结；长期行为、状态权威和 Finding 事实仍以 `echo-agent/.echo-semantic/` 为准。
+> 快照：2026-09-16，`echo-agent@29cea08c`。本报告是本轮跨仓工程总结；长期行为、状态权威和 Finding 事实仍以 `echo-agent/.echo-semantic/` 为准。
 
 ## 总体结论
 
-项目治理单位已从数千个 Rust public identity 收敛为 Capability、Behavior、Rule、状态权威、生命周期、Finding 和 Evidence。全仓共形成 95 个可追踪 Finding，其中 41 个已完成修复、验证、独立复审和远端交付，54 个仍保持 open；95 个 Finding 均映射唯一 GitHub Issue，远端状态为 41 CLOSED / 54 OPEN。
+项目治理单位已从数千个 Rust public identity 收敛为 Capability、Behavior、Rule、状态权威、生命周期、Finding 和 Evidence。全仓共形成 95 个可追踪 Finding，其中 44 个已完成修复、验证、独立复审和远端交付，51 个仍保持 open；95 个 Finding 均映射唯一 GitHub Issue，远端状态为 44 CLOSED / 51 OPEN。SDK 独立仓库切换另由协调 Issue #122 跟踪，不混入原 95 个 Finding 统计。
 
-SDK identity inventory 继续用于 API 漂移监控，但不再表示项目完成度。当前 9,713 个 canonical identity 的 scope 是 5,620 external contract、1,773 Host/Rust-only、787 language intrinsic、90 internal helper、1,443 deferred；后续只按可交付 capability 推进 deferred backlog。
+SDK identity inventory 继续用于 API 漂移监控，但不再表示项目完成度。当前 9,724 个 canonical identity 的 scope 是 5,622 external contract、1,774 Host/Rust-only、790 language intrinsic、90 internal helper、1,448 deferred；后续只按可交付 capability 推进 deferred backlog。
 
-生命周期结算 Wave 1 已通过 [PR #121](https://github.com/EchoYue-lp/echo-agent/pull/121) squash merge 为 `c5f76882`。本地完整 workspace 门禁、17 个独立 feature、TypeScript 157、Python 177、Java Host 连接、semantic strict/change-evidence 与独立复审均通过；远端 Linux、Windows、SDK contract、三语言 SDK 和 dependency policy 共 10 项 CI 全绿。合并同时关闭 #44、#45、#56、#59、#63、#65、#66、#67、#69、#85、#86、#88、#93、#95、#108、#109、#110、#113。
+生命周期结算 Wave 1 已通过 [PR #121](https://github.com/EchoYue-lp/echo-agent/pull/121) squash merge 为 `c5f76882`，Plugin component isolation 通过 [PR #123](https://github.com/EchoYue-lp/echo-agent/pull/123) 合入 `7e74d144`，持久化与 Workflow 权威 Wave 2 通过 [PR #124](https://github.com/EchoYue-lp/echo-agent/pull/124) 合入 `29cea08c`。Wave 2 本地完整 workspace 门禁、17 个独立 feature、TypeScript 157、Python 177、Java Host 连接、semantic strict/change-evidence 与独立复审均通过；远端 Linux、Windows、SDK contract、三语言 SDK 和 dependency policy 共 10 项 CI 全绿。新增关闭 #71、#43 和 #112。
 
 | 语义边界 | Finding | 已修复 | 待优化 |
 | --- | ---: | ---: | ---: |
 | Workspace 架构与公共组合 | 4 | 4 | 0 |
 | Agent / Session / Turn | 2 | 0 | 2 |
 | Context 与 Memory | 3 | 0 | 3 |
-| Task / Subagent / Workflow | 16 | 11 | 5 |
-| Observation / Persistence / Delivery | 6 | 1 | 5 |
+| Task / Subagent / Workflow | 16 | 12 | 4 |
+| Observation / Persistence / Delivery | 6 | 2 | 4 |
 | Tool / Permission / Sandbox | 16 | 4 | 12 |
-| Extension / MCP / LSP / Plugin | 14 | 7 | 7 |
+| Extension / MCP / LSP / Plugin | 14 | 8 | 6 |
 | LLM / Provider | 8 | 2 | 6 |
 | Protocol / A2A / Channel / SDK | 9 | 2 | 7 |
 | SDK facade parity | 5 | 5 | 0 |
 | Eval / Improve / Evolution | 12 | 5 | 7 |
-| **合计** | **95** | **41** | **54** |
+| **合计** | **95** | **44** | **51** |
 
 ## 已完成优化
 
@@ -47,10 +47,12 @@ SDK identity inventory 继续用于 API 漂移监控，但不再表示项目完�
 - [#109](https://github.com/EchoYue-lp/echo-agent/issues/109) Workflow checkpoint claim 失败后不可恢复：claim 后失败统一 requeue，成功统一 ack。
 - [#110](https://github.com/EchoYue-lp/echo-agent/issues/110) Workflow tag 可复活旧 claim：generation、renew、ack/requeue 共同 fence，Store 不支持 settlement 时 fail closed。
 - [#113](https://github.com/EchoYue-lp/echo-agent/issues/113) Workflow sibling 失败被遮蔽：并行批次 fail-fast，成功结果按稳定注册顺序归并。
+- [#112](https://github.com/EchoYue-lp/echo-agent/issues/112) Workflow 四个公开入口各自维护主循环：已统一投影同一 `Graph::execute_loop`，Token、NodeError、Completed 与 checkpoint/resume 顺序一致，drop/cancel/timeout/sibling failure 均结算 Agent producer。
 
 ### Observation / Delivery
 
 - [#108](https://github.com/EchoYue-lp/echo-agent/issues/108) Turn terminal commit 与 projection 顺序冲突：执行结果与 delivery 结果分离，sink/projection 失败不再改写 producer terminal；ACP 只在 Completed + Delivered 时返回 EndTurn。
+- [#43](https://github.com/EchoYue-lp/echo-agent/issues/43) Checkpoint 未绑定来源 Journal identity：Memory/File/Segmented Journal 统一持久化 generation identity，batch/checkpoint/retention marker 与 receipt 共同校验；完整事实可从 0 重建，已裁剪事实遇到异源 checkpoint 时 fail closed。
 
 ### Extension / MCP / LSP / Skill
 
@@ -61,6 +63,7 @@ SDK identity inventory 继续用于 API 漂移监控，但不再表示项目完�
 - [#66](https://github.com/EchoYue-lp/echo-agent/issues/66) MCP annotation 被误当权限事实：annotation 仅作提示，本地 `ToolCapabilities` 成为 permission/risk/effect 分类权威，Plan mode 在 hook 前硬阻断 mutating tool。
 - [#67](https://github.com/EchoYue-lp/echo-agent/issues/67) MCP 协议版本文档漂移：协商版本、实现与中英文文档已同步。
 - [#93](https://github.com/EchoYue-lp/echo-agent/issues/93) Skill activation 双状态权威：统一 activation handle/epoch/generation/single-flight，替换策略先验证再撤旧代。
+- [#71](https://github.com/EchoYue-lp/echo-agent/issues/71) Plugin component isolation 与 atomic generation 冲突：无效 Skill/Hook/MCP 单组件被隔离并保留结构化诊断，健康兄弟仍在同一不可变 generation 发布；依赖闭包或完整 Plugin 准备失败继续阻断整代。
 
 ### LLM / Protocol / SDK
 
@@ -90,7 +93,7 @@ SDK identity inventory 继续用于 API 漂移监控，但不再表示项目完�
 - [#90](https://github.com/EchoYue-lp/echo-agent/issues/90) facade/bridge/improve feature 组合未闭合：feature、test target、CI 与 Linux linker 边界已补齐。
 - [#91](https://github.com/EchoYue-lp/echo-agent/issues/91) Sandbox bridge 丢失取消分类：已保留 typed cancellation semantics。
 - [#92](https://github.com/EchoYue-lp/echo-agent/issues/92) SkillLoadPolicy 被误归为 process-local：已接入真实 Host/consumer bridge。
-- [#116](https://github.com/EchoYue-lp/echo-agent/issues/116) SDK backlog 混用 4,076 intrinsic 旧口径：已统一为 deferred identity 的 capability backlog，其他 scope 不属于语言 parity backlog；当前随 Rust facade 漂移监控为 1,443 项。
+- [#116](https://github.com/EchoYue-lp/echo-agent/issues/116) SDK backlog 混用 4,076 intrinsic 旧口径：已统一为 deferred identity 的 capability backlog，其他 scope 不属于语言 parity backlog；当前随 Rust facade 漂移监控为 1,448 项。
 
 ## 待优化清单
 
@@ -111,11 +114,9 @@ SDK identity inventory 继续用于 API 漂移监控，但不再表示项目完�
 - [M][#98](https://github.com/EchoYue-lp/echo-agent/issues/98) Definition-only Subagent catalog 合同冲突。
 - [H][#99](https://github.com/EchoYue-lp/echo-agent/issues/99) TaskClaim 与 SubagentAttempt identity 未闭合。
 - [M][#111](https://github.com/EchoYue-lp/echo-agent/issues/111) Task DAG 与 Workflow DAG 仍是平行实现候选。
-- [M][#112](https://github.com/EchoYue-lp/echo-agent/issues/112) Workflow 多入口主循环已发生事件漂移。
 
 ### Observation / Persistence / Delivery
 
-- [H][#43](https://github.com/EchoYue-lp/echo-agent/issues/43) Checkpoint 未绑定来源 Journal identity。
 - [H][#46](https://github.com/EchoYue-lp/echo-agent/issues/46) Trace 与 Audit 持久化失败缺少统一可见结果。
 - [M][#58](https://github.com/EchoYue-lp/echo-agent/issues/58) HookEvent catalog 与自动 producer 不一致。
 - [M][#61](https://github.com/EchoYue-lp/echo-agent/issues/61) InMemoryAuditLogger 丢写仍返回成功。
@@ -140,7 +141,6 @@ SDK identity inventory 继续用于 API 漂移监控，但不再表示项目完�
 
 - [H][#55](https://github.com/EchoYue-lp/echo-agent/issues/55) MCP SSE 与 SDK LSP cleanup 未等待结算。
 - [H][#64](https://github.com/EchoYue-lp/echo-agent/issues/64) LSP runtime status 与 restart 字段未闭合。
-- [M][#71](https://github.com/EchoYue-lp/echo-agent/issues/71) Plugin component isolation 与 atomic generation 冲突。
 - [H][#72](https://github.com/EchoYue-lp/echo-agent/issues/72) Plugin wiring 缺 active generation authority。
 - [H][#73](https://github.com/EchoYue-lp/echo-agent/issues/73) Plugin Registry、wiring 与 callback lifecycle 未统一编排。
 - [M][#74](https://github.com/EchoYue-lp/echo-agent/issues/74) Plugin lifecycle reconcile 可形成两代资源重叠。
@@ -175,10 +175,18 @@ SDK identity inventory 继续用于 API 漂移监控，但不再表示项目完�
 - [H][#76](https://github.com/EchoYue-lp/echo-agent/issues/76) Pre-compaction memory 丢失混合来源 trust provenance。
 - [M][#94](https://github.com/EchoYue-lp/echo-agent/issues/94) Skill candidate reinforcement 不写 audit。
 
+## 已形成但尚未交付的候选
+
+- [#84](https://github.com/EchoYue-lp/echo-agent/issues/84) Scheduler durable occurrence 候选 `573ee8b2`：复用 `DeliveryLedger` 实现 at-least-once claim、`OutcomeUnknown` replay、definition/control generation fencing；focused 29 项、两档 Clippy、demo70 与三轮复审通过。仍需 EKO stable data-root consumer 迁移、SDK 拆分吸收、全量门禁与集成语义归并。
+- [#46](https://github.com/EchoYue-lp/echo-agent/issues/46) Trace/Audit failure visibility 候选 `080ec777`：有界异步 observer、FileAudit identity/lease/SyncData/torn-tail 修复及独立复审通过。尚缺最终 focused Cargo、集成门禁与相邻 #61/#102/#103 的独立处置。
+- [#62](https://github.com/EchoYue-lp/echo-agent/issues/62) K8s cleanup owner 候选 `ed35dc13`：detached owner 覆盖成功、失败、取消、超时、stdin 阻塞、caller drop 与清理失败；focused 16/16、两档 Clippy 与复审通过。仍需集成门禁；真实集群 crash 依赖 reconciler/Job TTL，不宣称仅靠进程内 owner 闭合。
+- [#36](https://github.com/EchoYue-lp/echo-agent/issues/36) Agent adapter close 的 ACP 子边界候选 `00b8428b`：close 前永久 fencing admission，并发取消 Run/extension、保留未结算 owner；focused 33 项、两档 Clippy 与复审通过。Finding 仍保持 open，Headless/A2A/Channel/ReactAgent Drop 要在 SDK 拆分后继续统一公共 lifecycle 合同。
+- [#122](https://github.com/EchoYue-lp/echo-agent/issues/122) SDK repository extraction：独立线程正在迁移 `echo-sdk-host`/`echo-sdk-protocol`；必须吸收 `29cea08c` 的 Journal identity、scope 冻结与共享 catalog，不能从旧基线切换。
+
 ## 推荐推进顺序
 
-1. 继续闭合唯一终态和恢复权威：A2A、Agent adapter close、Channel driven Turn、Task/Subagent、Workflow 多入口和 Scheduler durable occurrence。
-2. 再闭合持久事实与副作用结算：Journal/Checkpoint、Transcript、Delivery、Tool/Audit、cleanup owner。
+1. 先交付已成形候选：#62 K8s cleanup 与 #46 Trace/Audit 可组成下一轮副作用结算批次；#84 先完成 EKO consumer 与 SDK 拆分依赖；#36 只合入不扩大边界的 ACP 子切片或等待完整 lifecycle 合同。
+2. 继续闭合唯一终态和恢复权威：A2A、Channel driven Turn、Task/Subagent attempt、Scheduler durable occurrence、Transcript generation/projection。
 3. 统一权限和扩展生命周期：Permission/Hook、Sandbox、Plugin/MCP/LSP generation 与 shutdown。
 4. 收敛 Provider 和协议行为：stream terminal、structured output、A2A/Channel projection、SDK ACK replay watermark。
 5. 最后处理 Evolution、长期记忆 provenance、动态 model facts 和中风险文档/示例漂移。
@@ -188,5 +196,5 @@ SDK identity inventory 继续用于 API 漂移监控，但不再表示项目完�
 ## 跨 Finding 架构与交付观察
 
 - **Tool Surface / ToolRouter 草案仍被 review 阻塞，不得进入实现。** 下一版必须把 surface 冻结粒度从整个 Turn 改为每次 model request/iteration generation；复用现有 `ToolInvocation`、`snapshot::ToolRuntime`、`ToolExecutionContext`，明确 requested → mutable policy context → frozen admitted invocation；并把并发/副作用 traits 与动态 Permission decision、既有 ToolManager semaphore、network lifecycle 分离。该草案不计入95个Finding，也不是已接受ADR。
-- **SDK 拆分必须吸收 `c5f76882`。** `echo-sdk-host`/`echo-sdk-protocol` 独立仓库线程应以本次 main 为迁移基线，保留 Turn delivery、checkpoint claim settlement、gap generation、source contract 与三语言 scope 变化；迁移完成前，新的治理切片避免继续扩大这两个 crate。
-- **CI Actions 有维护债。** PR #121 全绿，但 GitHub 提示 `actions/setup-java@v4` 已弃用，多个 v4/v5 Action 的 Node 20 runtime 被 runner 强制切到 Node 24；应以独立 Delivery MR 升级 Action major 并重新验证，不混入运行时 Finding。
+- **SDK 拆分必须吸收 `29cea08c`。** `echo-sdk-host`/`echo-sdk-protocol` 独立仓库线程应保留 Turn delivery、checkpoint claim settlement、Journal generation identity、gap generation、source contract 与最终五类 scope 冻结；迁移完成前，新的治理切片避免无必要扩大这两个 crate。
+- **CI Actions 有维护债。** PR #124 的 10 项 CI 全绿，但多个旧 Action major 仍存在 Node runtime/弃用升级提示；应以独立 Delivery MR 升级并重新验证，不混入运行时 Finding。
