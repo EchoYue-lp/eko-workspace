@@ -1,14 +1,14 @@
 # echo-agent 全 Workspace 语义治理优化清单
 
-> 快照：2026-09-16，`echo-agent@29cea08c`。本报告是本轮跨仓工程总结；长期行为、状态权威和 Finding 事实仍以 `echo-agent/.echo-semantic/` 为准。
+> 快照：2026-09-16，`echo-agent@0e09324a`。本报告是本轮跨仓工程总结；长期行为、状态权威和 Finding 事实仍以 `echo-agent/.echo-semantic/` 为准。
 
 ## 总体结论
 
-项目治理单位已从数千个 Rust public identity 收敛为 Capability、Behavior、Rule、状态权威、生命周期、Finding 和 Evidence。全仓共形成 95 个可追踪 Finding，其中 44 个已完成修复、验证、独立复审和远端交付，51 个仍保持 open；95 个 Finding 均映射唯一 GitHub Issue，远端状态为 44 CLOSED / 51 OPEN。SDK 独立仓库切换另由协调 Issue #122 跟踪，不混入原 95 个 Finding 统计。
+项目治理单位已从数千个 Rust public identity 收敛为 Capability、Behavior、Rule、状态权威、生命周期、Finding 和 Evidence。全仓共形成 95 个可追踪 Finding，其中 45 个已完成修复、验证、独立复审和远端交付，50 个仍保持 open；95 个 Finding 均映射唯一 GitHub Issue，远端状态为 45 CLOSED / 50 OPEN。SDK 独立仓库切换另由协调 Issue #122 跟踪，不混入原 95 个 Finding 统计。
 
 SDK identity inventory 继续用于 API 漂移监控，但不再表示项目完成度。当前 9,724 个 canonical identity 的 scope 是 5,622 external contract、1,774 Host/Rust-only、790 language intrinsic、90 internal helper、1,448 deferred；后续只按可交付 capability 推进 deferred backlog。
 
-生命周期结算 Wave 1 已通过 [PR #121](https://github.com/EchoYue-lp/echo-agent/pull/121) squash merge 为 `c5f76882`，Plugin component isolation 通过 [PR #123](https://github.com/EchoYue-lp/echo-agent/pull/123) 合入 `7e74d144`，持久化与 Workflow 权威 Wave 2 通过 [PR #124](https://github.com/EchoYue-lp/echo-agent/pull/124) 合入 `29cea08c`。Wave 2 本地完整 workspace 门禁、17 个独立 feature、TypeScript 157、Python 177、Java Host 连接、semantic strict/change-evidence 与独立复审均通过；远端 Linux、Windows、SDK contract、三语言 SDK 和 dependency policy 共 10 项 CI 全绿。新增关闭 #71、#43 和 #112。
+生命周期结算 Wave 1 已通过 [PR #121](https://github.com/EchoYue-lp/echo-agent/pull/121) squash merge 为 `c5f76882`，Plugin component isolation 通过 [PR #123](https://github.com/EchoYue-lp/echo-agent/pull/123) 合入 `7e74d144`，持久化与 Workflow 权威 Wave 2 通过 [PR #124](https://github.com/EchoYue-lp/echo-agent/pull/124) 合入 `29cea08c`，Kubernetes cleanup settlement Wave 3 通过 [PR #125](https://github.com/EchoYue-lp/echo-agent/pull/125) 合入 `0e09324a`。Wave 3 的 SDK 合同、两档 workspace Clippy、all-target/all-feature 测试、no-default-features、17-feature 矩阵、semantic strict/change-evidence 与独立复审均通过；远端 Linux、Windows、SDK contract、三语言 SDK 和 dependency policy 共 10 项 CI 全绿。新增关闭 #62。
 
 | 语义边界 | Finding | 已修复 | 待优化 |
 | --- | ---: | ---: | ---: |
@@ -17,13 +17,13 @@ SDK identity inventory 继续用于 API 漂移监控，但不再表示项目完�
 | Context 与 Memory | 3 | 0 | 3 |
 | Task / Subagent / Workflow | 16 | 12 | 4 |
 | Observation / Persistence / Delivery | 6 | 2 | 4 |
-| Tool / Permission / Sandbox | 16 | 4 | 12 |
+| Tool / Permission / Sandbox | 16 | 5 | 11 |
 | Extension / MCP / LSP / Plugin | 14 | 8 | 6 |
 | LLM / Provider | 8 | 2 | 6 |
 | Protocol / A2A / Channel / SDK | 9 | 2 | 7 |
 | SDK facade parity | 5 | 5 | 0 |
 | Eval / Improve / Evolution | 12 | 5 | 7 |
-| **合计** | **95** | **44** | **51** |
+| **合计** | **95** | **45** | **50** |
 
 ## 已完成优化
 
@@ -77,6 +77,7 @@ SDK identity inventory 继续用于 API 漂移监控，但不再表示项目完�
 - [#30](https://github.com/EchoYue-lp/echo-agent/issues/30) Tool read cache 缺 workspace identity：cache key 已纳入 effective workspace 与 invocation lineage。
 - [#28](https://github.com/EchoYue-lp/echo-agent/issues/28) In-flight Read 可在 Write 后复活陈旧 cache：已使用 write-lifetime epoch CAS 阻止旧值发布。
 - [#115](https://github.com/EchoYue-lp/echo-agent/issues/115) Tool registry mutation 被跨 await guard 阻塞：执行路径改为 owned handle，保留 generation/freshness fence。
+- [#62](https://github.com/EchoYue-lp/echo-agent/issues/62) K8s Sandbox Pod 清理缺少可靠 owner settlement：detached owner 统一持有 kubectl 进程组、stdin、pipe drain、绝对 deadline、caller abandonment 与 Pod 删除；删除成功要求具名 receipt 和 confirmed absence，首次 NotFound 后延迟提交的 Pod 会被重删，持续歧义转为 typed cleanup debt。
 
 ### Eval / Improve
 
@@ -128,7 +129,6 @@ SDK identity inventory 继续用于 API 漂移监控，但不再表示项目完�
 - [H][#47](https://github.com/EchoYue-lp/echo-agent/issues/47) Artifact、Sandbox 与 Worktree cleanup owner 未闭合。
 - [M][#57](https://github.com/EchoYue-lp/echo-agent/issues/57) Guard ToolInput/ToolOutput 与生产可达性错位。
 - [H][#60](https://github.com/EchoYue-lp/echo-agent/issues/60) Hook Allow 可绕过 protected-path decision。
-- [H][#62](https://github.com/EchoYue-lp/echo-agent/issues/62) K8s Sandbox Pod 清理没有可靠 owner settlement。
 - [H][#70](https://github.com/EchoYue-lp/echo-agent/issues/70) Plan mode 未形成可靠只读 surface。
 - [H][#81](https://github.com/EchoYue-lp/echo-agent/issues/81) `readonly_tools` 不约束 custom Write/Execute Tool。
 - [M][#82](https://github.com/EchoYue-lp/echo-agent/issues/82) SandboxManager 建流失败丢失 typed Failed 终态。
@@ -178,14 +178,13 @@ SDK identity inventory 继续用于 API 漂移监控，但不再表示项目完�
 ## 已形成但尚未交付的候选
 
 - [#84](https://github.com/EchoYue-lp/echo-agent/issues/84) Scheduler durable occurrence 候选 `573ee8b2`：复用 `DeliveryLedger` 实现 at-least-once claim、`OutcomeUnknown` replay、definition/control generation fencing；focused 29 项、两档 Clippy、demo70 与三轮复审通过。仍需 EKO stable data-root consumer 迁移、SDK 拆分吸收、全量门禁与集成语义归并。
-- [#46](https://github.com/EchoYue-lp/echo-agent/issues/46) Trace/Audit failure visibility 候选 `080ec777`：有界异步 observer、FileAudit identity/lease/SyncData/torn-tail 修复及独立复审通过。尚缺最终 focused Cargo、集成门禁与相邻 #61/#102/#103 的独立处置。
-- [#62](https://github.com/EchoYue-lp/echo-agent/issues/62) K8s cleanup owner 候选 `ed35dc13`：detached owner 覆盖成功、失败、取消、超时、stdin 阻塞、caller drop 与清理失败；focused 16/16、两档 Clippy 与复审通过。仍需集成门禁；真实集群 crash 依赖 reconciler/Job TTL，不宣称仅靠进程内 owner 闭合。
+- [#46](https://github.com/EchoYue-lp/echo-agent/issues/46) Trace/Audit failure visibility 候选 `080ec777`：已有有界异步 observer 与 FileAudit identity/lease/SyncData/torn-tail 修复，但当前审查结论为 BLOCK；仍缺 `Finalize` 持久化失败反例、公共 API 的 SDK inventory 分类、与 PR #124 的语义归并、完整验证证据和最终独立复审。
 - [#36](https://github.com/EchoYue-lp/echo-agent/issues/36) Agent adapter close 的 ACP 子边界候选 `00b8428b`：close 前永久 fencing admission，并发取消 Run/extension、保留未结算 owner；focused 33 项、两档 Clippy 与复审通过。Finding 仍保持 open，Headless/A2A/Channel/ReactAgent Drop 要在 SDK 拆分后继续统一公共 lifecycle 合同。
-- [#122](https://github.com/EchoYue-lp/echo-agent/issues/122) SDK repository extraction：独立线程正在迁移 `echo-sdk-host`/`echo-sdk-protocol`；必须吸收 `29cea08c` 的 Journal identity、scope 冻结与共享 catalog，不能从旧基线切换。
+- [#122](https://github.com/EchoYue-lp/echo-agent/issues/122) SDK repository extraction：独立线程正在迁移 `echo-sdk-host`/`echo-sdk-protocol`；必须从 continuity 权威分支吸收 `29cea08c` 的 Journal identity、scope 冻结与共享 catalog，并把 framework pin 推进到当前 `0e09324a`，不能从旧基线切换。#62 没有新增 SDK public identity 或 wire payload。
 
 ## 推荐推进顺序
 
-1. 先交付已成形候选：#62 K8s cleanup 与 #46 Trace/Audit 可组成下一轮副作用结算批次；#84 先完成 EKO consumer 与 SDK 拆分依赖；#36 只合入不扩大边界的 ACP 子切片或等待完整 lifecycle 合同。
+1. 先完成 SDK repository extraction #122，再补齐 #46 的 `Finalize` 反例、SDK inventory 和语义归并；#84 先完成 EKO consumer 与 SDK 拆分依赖；#36 继续闭合 Headless/A2A/Channel/ReactAgent Drop，而不是只交付 ACP 子边界。
 2. 继续闭合唯一终态和恢复权威：A2A、Channel driven Turn、Task/Subagent attempt、Scheduler durable occurrence、Transcript generation/projection。
 3. 统一权限和扩展生命周期：Permission/Hook、Sandbox、Plugin/MCP/LSP generation 与 shutdown。
 4. 收敛 Provider 和协议行为：stream terminal、structured output、A2A/Channel projection、SDK ACK replay watermark。
@@ -196,5 +195,5 @@ SDK identity inventory 继续用于 API 漂移监控，但不再表示项目完�
 ## 跨 Finding 架构与交付观察
 
 - **Tool Surface / ToolRouter 草案仍被 review 阻塞，不得进入实现。** 下一版必须把 surface 冻结粒度从整个 Turn 改为每次 model request/iteration generation；复用现有 `ToolInvocation`、`snapshot::ToolRuntime`、`ToolExecutionContext`，明确 requested → mutable policy context → frozen admitted invocation；并把并发/副作用 traits 与动态 Permission decision、既有 ToolManager semaphore、network lifecycle 分离。该草案不计入95个Finding，也不是已接受ADR。
-- **SDK 拆分必须吸收 `29cea08c`。** `echo-sdk-host`/`echo-sdk-protocol` 独立仓库线程应保留 Turn delivery、checkpoint claim settlement、Journal generation identity、gap generation、source contract 与最终五类 scope 冻结；迁移完成前，新的治理切片避免无必要扩大这两个 crate。
-- **CI Actions 有维护债。** PR #124 的 10 项 CI 全绿，但多个旧 Action major 仍存在 Node runtime/弃用升级提示；应以独立 Delivery MR 升级并重新验证，不混入运行时 Finding。
+- **SDK 拆分必须吸收 `0e09324a`。** `echo-sdk-host`/`echo-sdk-protocol` 独立仓库线程应保留 Turn delivery、checkpoint claim settlement、Journal generation identity、gap generation、source contract 与最终五类 scope 冻结；#62 无 SDK payload，只需要 framework pin 前移。迁移完成前，新的治理切片避免无必要扩大这两个 crate。
+- **CI Actions 有维护债。** PR #125 的 10 项 CI 全绿，但多个旧 Action major 仍存在 Node runtime/弃用升级提示；应以独立 Delivery MR 升级并重新验证，不混入运行时 Finding。
