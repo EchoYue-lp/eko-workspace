@@ -45,7 +45,10 @@ todos:
       compare-and-save/retirement contract, with identical File and SQLite
       authority semantics and managed legacy-mutator fences.
     files:
+      - echo-core/src/error.rs
+      - echo-core/src/memory/mod.rs
       - echo-core/src/memory/conversation.rs
+      - echo-state/src/memory/mod.rs
       - echo-state/src/memory/conversation.rs
       - echo-state/src/memory/file_conversation.rs
       - echo-state/src/memory/sqlite_conversation.rs
@@ -63,21 +66,30 @@ todos:
       timeout, observation, and reconcile through one framework coordinator.
     files:
       - echo-core/src/agent/mod.rs
+      - echo-core/src/agent/event_envelope.rs
       - src/agent/snapshot.rs
+      - src/agent/config.rs
+      - src/agent/mod.rs
       - src/agent/react/mod.rs
       - src/agent/react/builder.rs
+      - src/agent/react/subsystems/memory.rs
       - src/agent/react/run/context.rs
+      - src/agent/react/run/direct.rs
       - src/agent/react/run/react_loop.rs
       - src/agent/react/run/stream_channel.rs
+      - src/agent/react/run/stream_macros.rs
       - src/agent/react/run/phases
+      - src/trace/mod.rs
     acceptance:
       - Failure-first tests cover store-only admission rejection with no side
-        effects in streaming and non-stream runs; direct
-        resume_from_state_store plus cold and warm reconcile before Hydrated;
-        pre-compact fail-closed; Completed, NoResponse, cancel, consumer
-        disconnect, provider/tool failure, guard/intervention stop, and
-        max-iteration ordering; bounded unknown-outcome retry; exact clear;
-        and product delete replay after every crash cut.
+        effects in streaming, direct, direct-chat, and multimodal runs; direct
+        resume_from_state_store, load_messages, force_checkpoint, plus cold and
+        warm reconcile before Hydrated; pre-compact fail-closed; Completed,
+        NoResponse, cancel, consumer disconnect, provider/tool failure,
+        guard/intervention stop, and max-iteration ordering; bounded
+        unknown-outcome retry; exact clear; and product delete replay after
+        every crash cut. Settlement observation precedes the single terminal,
+        and event-envelope schema/trajectory tests cover the new public event.
   - id: framework-contract-evidence
     summary: Document the framework authority and breaking managed-store contract,
       refresh semantic objects, and deliver the framework outcome while
