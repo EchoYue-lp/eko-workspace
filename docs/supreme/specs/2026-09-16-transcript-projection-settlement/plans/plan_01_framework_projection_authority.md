@@ -105,5 +105,5 @@ todos:
         describe the exact merged behavior and keep the SDK outcome and Issue
         #106 open."
 artifact_id: plan:6ff30090-a6c9-405c-acbe-450f2bc93e7d
-lifecycle: ready
+lifecycle: completed
 ---
