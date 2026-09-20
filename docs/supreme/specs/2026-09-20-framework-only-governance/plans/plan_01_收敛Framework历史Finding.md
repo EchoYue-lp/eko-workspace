@@ -95,5 +95,5 @@ todos:
         GitHub closure comments cite framework evidence, and the final Issue
         states match canonical Finding states.
 artifact_id: plan:26f9cac3-3526-4710-b225-02362f58df70
-lifecycle: ready
+lifecycle: completed
 ---
