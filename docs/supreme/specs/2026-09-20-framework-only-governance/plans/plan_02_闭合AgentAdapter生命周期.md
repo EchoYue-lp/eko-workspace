@@ -89,5 +89,5 @@ todos:
       - The final main revision satisfies the repository gates and the GitHub
         Issue state matches a resolved canonical Finding.
 artifact_id: plan:20cfc03c-3cdb-448d-ba28-ee58dd5ff749
-lifecycle: ready
+lifecycle: completed
 ---
