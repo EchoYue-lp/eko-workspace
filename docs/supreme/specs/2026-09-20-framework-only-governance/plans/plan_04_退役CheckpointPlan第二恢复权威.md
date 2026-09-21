@@ -82,5 +82,5 @@ todos:
         plan recovery, the Finding has repair/verification/rereview evidence on
         the same framework snapshot, and #42 closes only after main delivery."
 artifact_id: plan:a8df56af-9a64-43c1-8787-cbd15e5aea21
-lifecycle: ready
+lifecycle: completed
 ---
