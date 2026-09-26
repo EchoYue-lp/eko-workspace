@@ -28,7 +28,8 @@
 
 - **数据持久化:echo-agent-cli(EKO)不需要 SQLite。** 本地个人 cowork 场景,对话历史/记忆用文件或内存实现即可。**禁止**给 echo-agent-cli 引入或保留 SQLite 依赖(`SqliteStore` / `SqliteConversationStore` / echo-state 的 `sqlite` feature 在 CLI 侧不启用);也**禁止**把"SQLite schema 变更/迁移/前端契约"当作成本或风险来反对改动——本项目尚处开发阶段,无迁移、无兼容负担(见"代码清理"节,过时代码/旧 schema 可直接删)。echo-state 的 `sqlite` feature 仅供框架其它复用方,**echo-agent-cli 不启用**。
 
-- **多模式功能对等:TUI 与 GUI 是功能完全一样的 Agent 完全体,只是交互方式不同。** 参考标杆:Claude Code 是纯 TUI 产品,广受全球开发者欢迎——证明 TUI 能成为主力 Agent 交互形态。因此 EKO 的 TUI、GUI(以及 CLI/channel)必须**功能对等**:任何一方有的能力(复杂任务/plan/subagent/任务运行时/工具/HITL/记忆/附件…),其它方也应有。**禁止以"某模式不需要"为由拒绝给该模式接入能力。** 代码里若出现"X 模式 doesn't use Y"之类的注释/None 传参,那是**待补的缺口,不是产品定位**——不得把它当成"该模式刻意不要"来解读、更不得当成反对接入的理由。各模式共享同一套核心能力(如阶段 2 的 `drive_chat` 统一驱动),差异只在渲染/事件层。
+- **多模式核心能力对等:TUI 与 GUI 是功能完全一样的 Agent 完全体,只是交互方式不同。** 参考标杆:Claude Code 是纯 TUI 产品,广受全球开发者欢迎——证明 TUI 能成为主力 Agent 交互形态。因此 EKO 的 TUI、GUI(以及 CLI/channel)必须对复杂任务/plan/subagent/任务运行时/工具/HITL/记忆/附件等**核心 Agent 能力保持对等**。**禁止以"某模式不需要"为由拒绝给该模式接入核心能力。** 代码里若出现"X 模式 doesn't use Y"之类的注释/None 传参,那是**待补的缺口,不是产品定位**——不得把它当成"该模式刻意不要"来解读、更不得当成反对接入的理由。各模式共享同一套核心能力(如阶段 2 的 `drive_chat` 统一驱动),差异只在渲染/事件层。
+- **纯界面布局能力不要求跨 surface 复制。** 只有依赖某种界面形态才成立的布局、窗口编排、侧栏或多面板交互,可以由对应 surface 独有;这类例外不得改变底层 Agent 能力、状态权威或其它 surface 已有行为。`Side Conversation` 明确定义为 GUI 的侧栏/并行面板能力:只由 GUI/Tauri 暴露创建、树形导航和支线管理入口,TUI、CLI/JSONL 与 channel 不新增 Side Conversation 专用命令或 wire contract,并继续保留各自已有的普通 conversation、Subagent 和 `/fork` 等行为。不得把这条例外扩展成任意产品能力的 surface 缺失理由。
 
 > 历史教训:agent 看到 `main.rs` 里 `task_runtime_store — TUI doesn't use the task runtime`(传 None)+ TUI 固定 Chat 模式,就推断"TUI 是轻量交互终端、刻意不接 TaskRuntime",并据此建议取消 TUI 的 complex 接入。这是把**当前的缺口**误读成**产品定位**。用户澄清:TUI 目标是与 GUI 功能对等的完全体(对标 Claude Code)。定位已固化于此,不得再把"TUI 不需要 X"当理由。
 
