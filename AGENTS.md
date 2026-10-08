@@ -30,6 +30,7 @@
 
 - **多模式核心能力对等:TUI 与 GUI 是功能完全一样的 Agent 完全体,只是交互方式不同。** 参考标杆:Claude Code 是纯 TUI 产品,广受全球开发者欢迎——证明 TUI 能成为主力 Agent 交互形态。因此 EKO 的 TUI、GUI(以及 CLI/channel)必须对复杂任务/plan/subagent/任务运行时/工具/HITL/记忆/附件等**核心 Agent 能力保持对等**。**禁止以"某模式不需要"为由拒绝给该模式接入核心能力。** 代码里若出现"X 模式 doesn't use Y"之类的注释/None 传参,那是**待补的缺口,不是产品定位**——不得把它当成"该模式刻意不要"来解读、更不得当成反对接入的理由。各模式共享同一套核心能力(如阶段 2 的 `drive_chat` 统一驱动),差异只在渲染/事件层。
 - **纯界面布局能力不要求跨 surface 复制。** 只有依赖某种界面形态才成立的布局、窗口编排、侧栏或多面板交互,可以由对应 surface 独有;这类例外不得改变底层 Agent 能力、状态权威或其它 surface 已有行为。`Side Conversation` 明确定义为 GUI 的侧栏/并行面板能力:只由 GUI/Tauri 暴露创建、树形导航和支线管理入口,TUI、CLI/JSONL 与 channel 不新增 Side Conversation 专用命令或 wire contract,并继续保留各自已有的普通 conversation、Subagent 和 `/fork` 等行为。不得把这条例外扩展成任意产品能力的 surface 缺失理由。
+- **Agent 协作由 AI 自动组织。** 跨会话通信、主/子 Subagent 消息与协作组编排由 Agent 使用既有工具和运行时完成。GUI 不提供要求用户手动选地址、发送协作消息、维护 Agent 组或管理投递收据的页面/控制台。用户参与并行探索使用 Sidechat 或 Forkchat；既有对话、任务/Subagent 结果呈现及 HITL 保持其核心能力。
 
 > 历史教训:agent 看到 `main.rs` 里 `task_runtime_store — TUI doesn't use the task runtime`(传 None)+ TUI 固定 Chat 模式,就推断"TUI 是轻量交互终端、刻意不接 TaskRuntime",并据此建议取消 TUI 的 complex 接入。这是把**当前的缺口**误读成**产品定位**。用户澄清:TUI 目标是与 GUI 功能对等的完全体(对标 Claude Code)。定位已固化于此,不得再把"TUI 不需要 X"当理由。
 

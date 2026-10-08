@@ -14,6 +14,14 @@ EKO 应用候选 `8bd2a6f` 已提交、推送至 [CLI PR #8](https://github.com/
 
 ## 当前结论
 
+### 2026-10-08 Agent 自动协作边界
+
+按用户明确决定，EKO 不提供人工发协作消息、维护 Agent 组或管理投递收据的页面。CLI `f014323` 删除旧弹窗、组编辑器、聊天入口与无消费者的 GUI adapter，并完整撤回未提交的动态管理台/查询。模型工具、AgentRouter/AppState、TaskRuntime 与 Sidechat/Fork 保留；正式产品决定在 CLI 双语 ADR 0047 和 top-level/CLI AGENTS 同步维护。
+
+本地 Rust 1.99 完整门禁全绿：app-core 1594 passed/9 ignored、CLI 280、main 11、JSONL 6、GUI 211/main 1/JSONL 6，前端 287 tests/build、两档 Clippy、no-default、58 对文档/48 ADR 与 strict semantic deletion evidence。人工 UI 有意退役，保留核心与 Side/Fork 的验证不冒充 UI 等价。
+
+Framework `c13937b5` / [PR #176](https://github.com/EchoYue-lp/echo-agent/pull/176) 修复 Rust 1.99 atomic API 与 generated must-use lint，保留 Rust 1.95 minimum 和原 lazy dispatch；完整 workspace/all-target/all-feature、no-default、18-feature 与 semantic 门禁通过。候选依次由 framework PR #176、CLI PR #8、顶层 draft PR #16 交付；未合并快照不得称为远端 main 验收。旧用户 journal 的恢复警告未通过清空数据或迁移绕过。
+
 F0-F6、R1、R2 和 R3 文档/website 收敛已完成；G 的当前静态门禁已完成，但完整测试与 Final Integration/Release 仍为 conditional，因此整个优化迭代不能宣称发布完成。
 
 | 阶段 | 当前状态 | 结论与证据入口 |
