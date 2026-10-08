@@ -2,7 +2,15 @@
 
 > **跨仓库当前事实源**。本文只记录阶段状态、前向路线、分层边界、验收门和可核验证据；不再保存逐轮实施日志。
 > EKO 是本机个人助理：`echo-agent` 是独立可复用框架，`echo-agent-cli` 是应用层，`echo-website` 是官网。
-> 最后更新：2026-09-16。
+> 最后更新：2026-10-08（GUI Fork 增量；其它阶段保留原验收范围）。
+
+## 2026-10-08 GUI Fork 增量交付
+
+EKO 应用候选 `8bd2a6f` 已提交、推送至 [CLI PR #8](https://github.com/EchoYue-lp/echo-agent-cli/pull/8)。完成回复下方的独立 Fork 与普通会话列表已接通，复用原有 branch IPC、managed import 与会话权威。正式行为说明和双语 ADR 0045 均在应用子仓库维护；framework、普通 TUI `/fork` 与 Side Conversation 的分层边界保持既有约定。
+
+候选本地完整门禁通过：两档 Rust Clippy、fmt、workspace all-features（app-core 1594 passed / 9 ignored、CLI 281、main 11、JSONL 6）、app-core no-default、GUI check/tests（212、Tauri main 1、JSONL 6）、前端 Prettier/ESLint/290 tests/build、57 对双语文档与 strict semantic snapshot/change-evidence。已修复完整测试暴露的 live-steer 固定睡眠竞争，用流式入口和持久 mailbox acceptance 同步测试，未放宽断言。浏览器使用真实组件与本地 API fixture 验证分叉选中及源/分支独立列表条目；不宣称原生 Tauri 窗口验收。
+
+本顶层候选仅同步上述已推送 CLI 提交指针和阶段记录。CLI PR 合并前保持顶层 PR 为 draft；合并后须将指针刷新为 CLI squash main，再完成顶层交付。Framework examples 与 echo-website 不消费这个 EKO 回复操作入口，无需修改。既有阶段的全局 release/soak 结论不由本次 GUI 增量改写。
 
 ## 当前结论
 
