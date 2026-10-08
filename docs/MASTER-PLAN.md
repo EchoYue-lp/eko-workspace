@@ -14,6 +14,14 @@ EKO 应用候选 `8bd2a6f` 已提交、推送至 [CLI PR #8](https://github.com/
 
 ## 当前结论
 
+### 2026-10-09 合并后 Docker 测试门禁收尾
+
+framework `d8a73701` 的 main CI 曾在 invalid-create cleanup fixture 间歇失败，同一提交重跑通过。`echo-agent` [PR #177](https://github.com/EchoYue-lp/echo-agent/pull/177) 候选 `707f5279` 将普通注入 CLI 恢复到原生产 control deadline，仅 dedicated hung info/create/rm 测试保留 100ms。有限延迟 200ms 后返回 invalid ID 的确定性回归在修复前失败、修复后 StartFailed 与 info/create/rm 结算通过。
+
+本地 Docker 28/28、受影响 echo_execution 331/331、完整 workspace/all-target/all-feature tests、两档严格 Clippy、fmt、workspace no-default 与 strict semantic snapshot/change-evidence 均通过。生产 Docker 配置/执行、GUI、Sidechat/Fork 与 AI 自动协作行为没有变化；CLI、SDK、website 不消费 test-only override，examples 已进入 all-target 链路。此阶段仅同步 framework 修复指针与验收材料，不重开其它旧阶段。
+
+候选已推送，远端 PR CI 尚在执行；顶层 PR 在子仓合并前保持 draft，合并后将指针刷新为 framework squash main。EKO 开发版持续运行，旧用户 journal 的格式警告不由本次测试修复解决。
+
 ### 2026-10-08 Agent 自动协作边界
 
 按用户明确决定，EKO 不提供人工发协作消息、维护 Agent 组或管理投递收据的页面。CLI `f014323` 删除旧弹窗、组编辑器、聊天入口与无消费者的 GUI adapter，并完整撤回未提交的动态管理台/查询。模型工具、AgentRouter/AppState、TaskRuntime 与 Sidechat/Fork 保留；正式产品决定在 CLI 双语 ADR 0047 和 top-level/CLI AGENTS 同步维护。
