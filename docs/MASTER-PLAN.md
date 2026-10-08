@@ -10,7 +10,7 @@ EKO 应用候选 `8bd2a6f` 已提交、推送至 [CLI PR #8](https://github.com/
 
 候选本地完整门禁通过：两档 Rust Clippy、fmt、workspace all-features（app-core 1594 passed / 9 ignored、CLI 281、main 11、JSONL 6）、app-core no-default、GUI check/tests（212、Tauri main 1、JSONL 6）、前端 Prettier/ESLint/290 tests/build、57 对双语文档与 strict semantic snapshot/change-evidence。已修复完整测试暴露的 live-steer 固定睡眠竞争，用流式入口和持久 mailbox acceptance 同步测试，未放宽断言。浏览器使用真实组件与本地 API fixture 验证分叉选中及源/分支独立列表条目；不宣称原生 Tauri 窗口验收。
 
-本顶层候选仅同步上述已推送 CLI 提交指针和阶段记录。CLI PR 合并前保持顶层 PR 为 draft；合并后须将指针刷新为 CLI squash main，再完成顶层交付。Framework examples 与 echo-website 不消费这个 EKO 回复操作入口，无需修改。既有阶段的全局 release/soak 结论不由本次 GUI 增量改写。
+该候选已包含在 CLI PR #8 的最终 squash main `40fd804` 中，Fork 与自动协作边界按下节共同交付。Framework examples 与 echo-website 不消费这个 EKO 回复操作入口，无需修改。既有阶段的全局 release/soak 结论不由本次 GUI 增量改写。
 
 ## 当前结论
 
@@ -20,7 +20,7 @@ EKO 应用候选 `8bd2a6f` 已提交、推送至 [CLI PR #8](https://github.com/
 
 本地 Rust 1.99 完整门禁全绿：app-core 1594 passed/9 ignored、CLI 280、main 11、JSONL 6、GUI 211/main 1/JSONL 6，前端 287 tests/build、两档 Clippy、no-default、58 对文档/48 ADR 与 strict semantic deletion evidence。人工 UI 有意退役，保留核心与 Side/Fork 的验证不冒充 UI 等价。
 
-Framework `c13937b5` / [PR #176](https://github.com/EchoYue-lp/echo-agent/pull/176) 修复 Rust 1.99 atomic API 与 generated must-use lint，保留 Rust 1.95 minimum 和原 lazy dispatch；完整 workspace/all-target/all-feature、no-default、18-feature 与 semantic 门禁通过。候选依次由 framework PR #176、CLI PR #8、顶层 draft PR #16 交付；未合并快照不得称为远端 main 验收。旧用户 journal 的恢复警告未通过清空数据或迁移绕过。
+Framework [PR #176](https://github.com/EchoYue-lp/echo-agent/pull/176) 已合入签名有效的 `d8a73701768a3433c8b2afd5de08da573754673c`，7 项 CI 全绿，Git tree 与验证候选 `c13937b5` 一致。修复 Rust 1.99 atomic API 与 generated must-use lint，保留 Rust 1.95 minimum 和原 lazy dispatch；完整 workspace/all-target/all-feature、no-default、18-feature 与 semantic 门禁通过。CLI [PR #8](https://github.com/EchoYue-lp/echo-agent-cli/pull/8) 已合入 `40fd80447cdf3d7627399af0b2069a8b4da5327a`，Linux 与 frontend CI 全绿，Git tree 与验证候选 `f014323` 一致。本顶层 [PR #16](https://github.com/EchoYue-lp/eko-workspace/pull/16) 同步两者 main 指针；旧用户 journal 的恢复警告未通过清空数据或迁移绕过。开发版已重新启动，运行新源码且人工 Agent 协作入口已移除。
 
 F0-F6、R1、R2 和 R3 文档/website 收敛已完成；G 的当前静态门禁已完成，但完整测试与 Final Integration/Release 仍为 conditional，因此整个优化迭代不能宣称发布完成。
 
