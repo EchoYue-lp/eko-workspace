@@ -2,7 +2,33 @@
 
 > **跨仓库当前事实源**。本文只记录阶段状态、前向路线、分层边界、验收门和可核验证据；不再保存逐轮实施日志。
 > EKO 是本机个人助理：`echo-agent` 是独立可复用框架，`echo-agent-cli` 是应用层，`echo-website` 是官网。
-> 最后更新：2026-10-08（GUI Fork 增量；其它阶段保留原验收范围）。
+> 最后更新：2026-10-10（上下文压缩远端集成；其它阶段保留原验收范围）。
+
+## 2026-10-10 上下文压缩远端集成
+
+框架 [PR #178](https://github.com/EchoYue-lp/echo-agent/pull/178) 已在 7 项 CI 全绿后 squash
+合入 `e5372b8ca3dc308ce8dde4a0092ea58b8d7dd21d`，签名 verified，Git tree 与完整验证的
+`13a8b285` 候选一致。Summary、IncrementalSummary、SlidingWindow 共用 token/turn
+尾部选择，当前请求和工具组保真；取消、fallback 和增量观察缓存复用 ContextManager 权威。
+
+随后修复了远端集成发现的 process-group cleanup 前置缺陷：[框架 PR #179](https://github.com/EchoYue-lp/echo-agent/pull/179)
+在本地完整门禁（3,398 tests）与7项 PR CI 全绿后合入 `1486d2f4a26adbefab393679c58da2804e5f4a75`，
+签名 verified、tree 与已审候选一致。负数 PGID 通过 `kill -KILL --` 明确分隔；两条原清理
+路径继续拥有取消、超时和回收权威。Ubuntu 的无信号 syscall probe 证明原解析缺陷，但不
+宣称已证明历史 cancelled CI 的具体因果。
+
+应用 [PR #10](https://github.com/EchoYue-lp/echo-agent-cli/pull/10) 在4项 CI 和完整本地
+Rust/GUI 门禁通过后合入 `f98f50985c9dbc8aad8c1c7e873a8997fe5024f0`；官网
+[PR #4](https://github.com/EchoYue-lp/echo-website/pull/4) 在2项 verify 通过后合入
+`b1609b126014bf0cb120e68a2a665a9c64b8fa54`。两者签名 verified、tree 与验收候选一致。
+CI 复用已审预算拆分、保留全部原检查与失败聚合；官网 manifest 绑定上述实际 main。
+EKO 的 default policy、goal/recovery projection、focus 与 journal 仍属于
+应用层。独立复审全部 pass，剩余 findings 0；本地框架 3,396 tests/17 feature、应用
+1,922 tests、GUI 218 tests、前端 287 tests 和官网 39 unit/15 E2E 已通过。
+完整源码、文档与验证材料见[压缩验收记录](./supreme/plans/2026-10-09T1545-eko-context-compression/verification.md)。
+三仓最终 main push CI 全绿，精确run与snapshot见验收记录。三个 submodule 指针
+在本次顶层交付中同步，保留原工作区与其它线程成果；
+不将本次本地/CI 证据扩展为真实模型或原生 EKO 窗口验收。
 
 ## 2026-10-08 GUI Fork 增量交付
 
@@ -44,7 +70,7 @@ F0-F6、R1、R2 和 R3 文档/website 收敛已完成；G 的当前静态门禁�
 | R0 app/framework boundary audit | Complete | 151 个 app-core Rust 文件已分类，现已升级为 R1 final closure ledger。见 [`boundary closure`](./2026-08-28-current-framework-application-boundary-audit.md)。 |
 | R1 framework-first migration | Complete | 19 个 M 与 8 个 C 均有最终 disposition；turn、TaskRuntime、artifact、bootstrap、diff、plugin、memory、tool-control、background 和旧路径已收敛，无第二 authority。 |
 | R2 examples convergence | Complete | 43 个教学/组合 demo 与 21 个 executable contracts 已统一迁入 `echo-agent/echo-agent-learning`；feature、panic、UTF-8、facade 与链接合同通过。见 [`framework-examples-inventory`](./2026-08-28-framework-examples-inventory.md)。 |
-| R3 framework docs/website | Complete / source sync current | framework 与 EKO 正式双语文档、示例路径、discovery 与 source-aware sync 已完成；当前 website manifest 绑定 CLI `c29ca20` 与 framework `4ad095b`。 |
+| R3 framework docs/website | Complete / source sync current | framework 与 EKO 正式双语文档、示例路径、discovery 与 source-aware sync 已完成；当前 website manifest 绑定 CLI `f98f509` 与 framework `1486d2f4`，来源与本次远端 main 一致。 |
 | R4 app-core global modularization | Complete | app-core authority modules are physically split behind `echo_agent_app_core::api`; CLI/TUI/Tauri/channel/examples/tests use the facade. Wire and persistence contracts remain unchanged. R4 validation remains pinned to code `0e762ab` and framework `125ea5f`; current child baselines are listed below. See `echo-agent-cli/docs/zh/adr/0025-app-core-global-modularization.md`. |
 | Framework capability placement correction | Complete | 通用 primitive 不再以第二消费者作为准入门槛；AgentPool/AgentRouter/ChatEventLog/Plugin/Extension 的逐符号 disposition 见 [`framework capability placement audit`](./2026-08-30-framework-capability-placement-audit.md)。 |
 | AgentPool keyed admission kernel | Complete | `echo-agent` 的 `KeyedExecutionAdmission` 负责 opaque-key lease、per-key process permit、retirement、close/wait；EKO `AgentPool` 保留 Agent cache、capacity class、workspace、plugin/model/tool policy。 |
@@ -68,10 +94,10 @@ F0-F6、R1、R2 和 R3 文档/website 收敛已完成；G 的当前静态门禁�
 
 | 仓库 | 本地基线 | 远端/发布状态 |
 | --- | --- | --- |
-| `echo-agent` | `0e09324a` (`main`) | PR #125已squash merge且GitHub签名verified；本地/远端main一致。95个Finding中45个resolved Issue已关闭，50个open Issue保持后续backlog。 |
-| `echo-agent-cli` | `be273d3` (`main`) | 统一 turn-run 绑定的 review remediation 与 closure 已合入本地 `main`；第三轮独立复审 0 findings，Rust workspace/no-default/GUI 与 frontend 全部门禁通过，尚未推送。 |
-| `echo-website` | `ae91c39` (`main`) | EKO storage authority、CLI source manifest 与 `llms-full.txt` 已同步并合入本地 `main`；source-aware docs check 和完整 website verify 通过，尚未推送。 |
-| superproject | `doc/Echoyue/semantic-k8s-settlement-wave3` | 本次只交付最新语义治理总结、路线更新和`echo-agent@0e09324a`指针；`echo-agent-cli`、`echo-website`、SDK迁移及其它线程工作树改动不进入本次提交。 |
+| `echo-agent` | `1486d2f4`（任务验收 checkout） | 压缩 PR178 与前置清理修复 PR179 已合入签名有效的远端 main；PR 与最终 main CI 全绿。本次不重算其它 Finding/Issue 关闭数量。 |
+| `echo-agent-cli` | `f98f509`（任务验收 checkout） | PR10 已合入签名有效的远端 main；压缩策略、TaskRuntime projection 与CI预算同步，完整本地、PR与main门禁通过。 |
+| `echo-website` | `b1609b1`（任务验收 checkout） | PR4 已合入签名有效的远端 main；source-aware manifest、完整verify、PR与main检查通过。 |
+| superproject | `chore/Echoyue/compression-remote-integration` | 从最新 origin/main 隔离，仅同步三个已交付指针、压缩计划与验收记录；SDK及其它线程改动保持原状。 |
 
 F2-F5 的合流与门禁证据集中在 [`plan_03`](./supreme/plans/2026-08-28T0013-项目未完成工作收敛/plan_03_F5收口完整验证主分支合并与资源清理.md) 及两个 child MASTER-PLAN；这些文件记录历史实施证据，不替代本节状态表。
 
