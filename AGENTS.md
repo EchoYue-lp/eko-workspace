@@ -2,13 +2,13 @@
 
 本文件是 AI agent 在本仓库工作时的**最高优先级约束**(优先级高于 agent 默认行为和任何技能)。请严格遵守。
 
-两个子仓库 `echo-agent/AGENTS.md`、`echo-agent-cli/AGENTS.md` 各自承载独立的提交门禁与仓库级规范(供独立检出使用)。修改本文件中与子仓库相关的规范时,必须同步更新对应子仓库的 AGENTS.md,防止两边漂移。
+`echo-agent/AGENTS.md`、`echo-agent-sdk/AGENTS.md`、`echo-agent-cli/AGENTS.md` 各自承载独立的提交门禁与仓库级规范(供独立检出使用)。修改本文件中与子仓库相关的规范时,必须同步更新对应子仓库的 AGENTS.md,防止两边漂移。
 
 ---
 
 ## 项目简介(冷启动免重新读)
 
-`eko-workspace` 是 EKO 的顶层 Git superproject,通过 submodule 统一管理三个**互相独立的 git 子仓库**,但不是 monorepo。工作根目录为 `/Users/ls/MyWork/code/ylp_agent_learn/lp-agent`。
+`eko-workspace` 是 EKO 的顶层 Git superproject,通过 submodule 统一管理四个**互相独立的 git 子仓库**,但不是 monorepo。工作根目录为 `/Users/ls/MyWork/code/ylp_agent_learn/lp-agent`。
 
 技术栈总览:Rust 后端(`echo-agent` 框架 + `echo-agent-cli` 应用)+ React/TypeScript 前端 + Tauri 桌面壳。
 
@@ -136,15 +136,16 @@
 
 ---
 
-## 三个项目的定位
+## 四个项目的定位
 
 | 项目 | 类型 | 定位 |
 |---|---|---|
 | **`echo-agent/`** | Rust crate (`echo_agent` v0.2.0) | **核心 Agent 框架**。生产级 Rust AI Agent 框架:ReAct 引擎、多 agent、记忆、流式、MCP、IM 渠道、工作流。是其他项目的基础依赖。 |
+| **`echo-agent-sdk/`** | Rust workspace + TypeScript/Python/Java SDK | **独立 SDK 产品**。拥有 Protocol、Host adapter、明确接受的跨语言合同、三语言 SDK、正式文档、示例、脚本和 CI。Host 精确依赖 framework revision；Protocol 无 framework 依赖；完整 Rust public inventory 仅为非阻断遥测。 |
 | **`echo-agent-cli/`** | Rust workspace + Tauri + 前端 | **应用层 = EKO**。基于 `echo-agent` 的 CLI 与桌面应用(品牌名 EKO)。包含子模块:`echo-agent-app-core`(应用核心逻辑、任务/会话/状态)、`web-frontend/`(React+TS+Tailwind v4+Zustand 前端)、`src-tauri/`(Tauri 桌面壳)。 |
 | **`echo-website/`** | Vite 站点 | **官网 / 展示站点**。独立的 Vite 驱动网站,与 agent 运行时无依赖关系。 |
 
-> 顶层 `eko-workspace` 仓库只管理跨项目文档、协作规则和 submodule 提交指针。三个目录仍各自是独立 git 仓库(`git -C echo-agent` / `git -C echo-agent-cli` / `git -C echo-website`),子仓库代码必须在所属子仓库内提交。
+> 顶层 `eko-workspace` 仓库只管理跨项目文档、协作规则和 submodule 提交指针。四个目录仍各自是独立 git 仓库(`git -C echo-agent` / `git -C echo-agent-sdk` / `git -C echo-agent-cli` / `git -C echo-website`),子仓库代码必须在所属子仓库内提交。SDK 的 framework build pin 与顶层 framework gitlink 独立管理。
 
 ---
 
@@ -152,7 +153,7 @@
 
 ### 文档归属边界(强制)
 
-1. **`echo-agent/`、`echo-agent-cli/` 只承载正式、长期维护的框架/产品文档。** 通用框架概念、公共 API 和框架架构文档归 `echo-agent/`；EKO 产品架构、运行时、交互与应用配置文档归 `echo-agent-cli/`。正式文档必须放在其所属子仓库内，并随该子仓库代码独立提交、维护和发布。
+1. **各子仓库承载各自正式、长期维护的框架/SDK/产品文档。** 通用框架概念、公共 API 和框架架构文档归 `echo-agent/`；SDK 合同、语言 API、Host adapter 与 SDK ADR 归 `echo-agent-sdk/`；EKO 产品架构、运行时、交互与应用配置文档归 `echo-agent-cli/`。正式文档必须放在其所属子仓库内，并随该子仓库代码独立提交、维护和发布。
 2. **顶层 `lp-agent/` 只承载跨仓库协作内容和阶段性工程材料。** 允许保存跨仓库协作规则，以及测试记录、spec、计划、审计报告、评审材料和阶段验收证据；不得把正式的框架/产品说明文档放在顶层 `docs/`，也不得让顶层文档成为子仓库产品行为或公共 API 的长期事实源。
 
 3. **任何代码修改都必须同步检查并修改对应的文档、`examples` 代码示例以及 `echo-website` 相关内容**,确保实现、示例和对外说明始终一致。
@@ -220,7 +221,7 @@ s.len() > 100  // ❌ 这是字节数,不是字符数(判断可改用 chars().co
 
 ```bash
 # 顶层 superproject 只提交跨项目文档、规则和 submodule 指针:
-git add AGENTS.md README.md docs/ .gitmodules echo-agent echo-agent-cli echo-website
+git add AGENTS.md README.md docs/ .gitmodules echo-agent echo-agent-sdk echo-agent-cli echo-website
 git -c commit.gpgsign=false commit -m "..."
 
 # 子仓库代码在对应子仓库目录内单独提交:

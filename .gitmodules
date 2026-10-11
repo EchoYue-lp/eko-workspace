@@ -10,3 +10,7 @@
 	path = echo-website
 	url = git@github.com:EchoYue-lp/echo-website.git
 	branch = main
+[submodule "echo-agent-sdk"]
+	path = echo-agent-sdk
+	url = git@github.com:EchoYue-lp/echo-agent-sdk.git
+	branch = main

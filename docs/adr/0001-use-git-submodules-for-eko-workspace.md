@@ -28,6 +28,7 @@ Git submodules preserve each child repository while allowing a parent repository
 Use `eko-workspace` as a Git superproject with these submodules:
 
 - `echo-agent`
+- `echo-agent-sdk` (added by the accepted SDK repository extraction decision on 2026-10-11)
 - `echo-agent-cli`
 - `echo-website`
 
@@ -58,3 +59,20 @@ Costs:
 - Commit and push changes in each child repository before updating its pointer in `eko-workspace`.
 - Keep framework features in `echo-agent`, EKO product policy in `echo-agent-cli`, and public website content in `echo-website`; the superproject does not become another implementation layer.
 - This repository-structure change does not modify product code or public behavior, so no `examples` or `echo-website` content changes are required for this decision.
+
+## SDK extraction amendment — 2026-10-11
+
+The SDK product now has its own Protocol/Host, three language SDKs, accepted contracts,
+documentation and CI. Keeping it inside the framework workspace coupled every framework change
+to contract generation and three language toolchains. The accepted extraction preserves both Git
+histories and adds the SDK as the fourth independent submodule, rather than using directory-only
+co-location or nesting it inside the framework.
+
+The SDK Host pins an immutable framework commit; the Protocol has no framework dependency.
+Only the accepted external contract blocks wire compatibility. Full Rust public inventory remains
+non-blocking telemetry. Framework and EKO ownership rules continue to apply in their child
+repositories; the SDK's standalone AGENTS.md defines its own delivery rules.
+
+The superproject SDK gitlink must reference a pushed, verified SDK commit. Its Host dependency
+pin is independent of the current framework gitlink. Reverting the superproject addition restores
+the preceding workspace composition without deleting the independent SDK repository or history.
