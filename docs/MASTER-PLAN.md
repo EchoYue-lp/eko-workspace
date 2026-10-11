@@ -2,7 +2,38 @@
 
 > **跨仓库当前事实源**。本文只记录阶段状态、前向路线、分层边界、验收门和可核验证据；不再保存逐轮实施日志。
 > EKO 是本机个人助理：`echo-agent` 是独立可复用框架，`echo-agent-cli` 是应用层，`echo-website` 是官网。
-> 最后更新：2026-10-10（上下文压缩远端集成；其它阶段保留原验收范围）。
+> 最后更新：2026-10-11（Background Review 重新验收闭合、框架语义修复范围核对；其它阶段保留原验收范围）。
+
+## 2026-10-11 Background Review 入口结算
+
+按用户 B 选择，#38 的应用层修复纳入本轮交付。CLI
+[PR #11](https://github.com/EchoYue-lp/echo-agent-cli/pull/11) 候选
+`b34df102e8aca5d787c23d851f9c85bc748521ff` 在 4 项 PR CI 全绿后 squash 合入签名有效的
+远端 main `f57b90a2b0962fa5561f8839a3df70be1f261ffa`，Git tree 与候选一致，actual main
+strict semantic 通过。原顶层 checkout 的既有差异
+完整保留，应用、framework 证据及顶层指针分别使用专用 worktree。
+
+修复 Tauri 正常退出绕过服务结算、workspace bootstrap 恢复身份和 ProductData 回滚顺序；
+复用单一 Review owner/Store/generation，保留全部弱投影目标、显式 P/Q 项目指令及同项目
+link 幂等，Memory 归因排除 recall telemetry 并对旧指纹保持 unknown。框架公共 API、
+SDK、前端契约和 website 无改动。应用双语 ADR 0043 是正式行为说明。
+
+联合定向 94/94、桌面 adapter 7/7、两份独立只读复审 pass；完整本地门禁已通过两档
+Clippy、fmt/check、workspace all-feature（app-core 1,611 passed / 9 ignored、CLI 285，
+集成/doctest 零失败）、app-core no-default、GUI check/tests（216 + Tauri 1 + JSONL 6
+passed，3 ignored doctests）、59 对文档/49 ADR 和 semantic strict/change-evidence。
+原生窗口、真实 provider、Tauri restart/setup panic、较早 post-fork 初始化错误的完整
+清理尚未验证；发布检查失败的显式清理和 EffectsApplied 恢复是本轮较窄的验证结论。
+
+外部 #38 因真实入口反例重新打开，旧 PR #5 的 resolved 不能代替本次验收。Framework
+[PR #180](https://github.com/EchoYue-lp/echo-agent/pull/180) 的7项 CI 全绿后 squash 合入
+签名有效的 main `95ec66c6083a8feb17a1c28de0d01e1a24ca8a28`，tree 与候选 `a0c5b95d`
+一致，actual main strict semantic 通过；仅改四份语义材料，框架代码/API 无变化。
+独立复审 pass，完整 `scripts/verify.sh` 退出码 0。CLI 精确 main run 38106297341 的
+4项 CI 全绿；framework 精确 main run 38107875170 的7项 CI 全绿。
+#38 已在 repair、verification、independent rereview 全部进入主线并验收后关闭，
+[关闭记录](https://github.com/EchoYue-lp/echo-agent/issues/38#issuecomment-6105020331) 绑定实际快照和收据。
+SDK #120 与 A2A #32–35 继续排除，既有 release/soak 阶段不在本轮重开。
 
 ## 2026-10-10 上下文压缩远端集成
 
@@ -70,7 +101,7 @@ F0-F6、R1、R2 和 R3 文档/website 收敛已完成；G 的当前静态门禁�
 | R0 app/framework boundary audit | Complete | 151 个 app-core Rust 文件已分类，现已升级为 R1 final closure ledger。见 [`boundary closure`](./2026-08-28-current-framework-application-boundary-audit.md)。 |
 | R1 framework-first migration | Complete | 19 个 M 与 8 个 C 均有最终 disposition；turn、TaskRuntime、artifact、bootstrap、diff、plugin、memory、tool-control、background 和旧路径已收敛，无第二 authority。 |
 | R2 examples convergence | Complete | 43 个教学/组合 demo 与 21 个 executable contracts 已统一迁入 `echo-agent/echo-agent-learning`；feature、panic、UTF-8、facade 与链接合同通过。见 [`framework-examples-inventory`](./2026-08-28-framework-examples-inventory.md)。 |
-| R3 framework docs/website | Complete / source sync current | framework 与 EKO 正式双语文档、示例路径、discovery 与 source-aware sync 已完成；当前 website manifest 绑定 CLI `f98f509` 与 framework `1486d2f4`，来源与本次远端 main 一致。 |
+| R3 framework docs/website | Complete / 2026-10-10 验收快照 | framework 与 EKO 正式双语文档、示例路径、discovery 与 source-aware sync 在该次交付完成；website manifest 绑定 CLI `f98f509` 与 framework `1486d2f4`，对应 2026-10-10 的压缩交付快照。本轮私有生命周期修复与证据交付不更新 website，不把历史站点快照当作本轮 main 验收。 |
 | R4 app-core global modularization | Complete | app-core authority modules are physically split behind `echo_agent_app_core::api`; CLI/TUI/Tauri/channel/examples/tests use the facade. Wire and persistence contracts remain unchanged. R4 validation remains pinned to code `0e762ab` and framework `125ea5f`; current child baselines are listed below. See `echo-agent-cli/docs/zh/adr/0025-app-core-global-modularization.md`. |
 | Framework capability placement correction | Complete | 通用 primitive 不再以第二消费者作为准入门槛；AgentPool/AgentRouter/ChatEventLog/Plugin/Extension 的逐符号 disposition 见 [`framework capability placement audit`](./2026-08-30-framework-capability-placement-audit.md)。 |
 | AgentPool keyed admission kernel | Complete | `echo-agent` 的 `KeyedExecutionAdmission` 负责 opaque-key lease、per-key process permit、retirement、close/wait；EKO `AgentPool` 保留 Agent cache、capacity class、workspace、plugin/model/tool policy。 |
@@ -88,16 +119,16 @@ F0-F6、R1、R2 和 R3 文档/website 收敛已完成；G 的当前静态门禁�
 | Repository hygiene | Complete / runtime scope protected | 已清理 20 个空缓存/源码占位目录，并在全部验证后按磁盘规则清理两个 Cargo target 缓存（共释放 48.5 GiB）；tracked audit `.txt`、website `.txt`、115 个 `.eko` runtime trace、8 个 soak roots 和验收 worktree 均保留，未按扩展名删除运行数据。 |
 | G Final Integration/Release | Conditional / full gates pending | 当前 framework/app all-target compile、严格 Clippy、双语 parity 与 website static checks 已通过；测试、frontend build、GUI、soak、人工 GUI、远端 CI 和 release 尚未重新验证。 |
 | 长程任务优化(统一 turn-run 绑定) | Closure complete on local `main` / `echo-agent-cli@be273d3` + `echo-website@ae91c39`,未推送 | `feature/unified-turn-run@9524b47` 的 9 项 review 修复已作为基线,closure 补齐 typed provenance memory gate、quiet-check 与 RunTurn claim 原子复核、五入口长 steer 原文保真、`ForegroundTurnSnapshot.run_id` TS 绑定和 `PlanRevisionCommitted` 任务 UI 激活。第三轮独立复审 Critical/Important/Minor 均为 0。CLI 门禁已通过 fmt、Clippy 双档、workspace all-features(app-core 1534 passed/9 ignored、CLI lib 276、main 11、JSONL 6)、no-default、GUI check/tests(207 + main 1 + JSONL 6)、前端 Prettier/ESLint/Vitest 244/build、双语 parity；website source-aware docs check 与完整 verify 通过(39 单测、174 static/discovery routes、Playwright 15 passed/1 skipped)。后续项(独立 ADR):task_execute §10.1 同步 await 合同的后台化。 |
-| echo-agent 全 workspace 语义治理 | Baseline complete / Finding remediation ongoing | PR #117交付workspace baseline、Audit、SDK scope reset与首批repair，PR #119修复squash-aware ancestry，PR #121交付生命周期结算Wave 1，PR #123闭合Plugin component isolation，PR #124闭合Journal/checkpoint generation与Workflow四入口执行权威，PR #125以`0e09324a`闭合Kubernetes Pod cleanup settlement。当前9724个canonical identity中5622 external contract、1774 Host/Rust-only、790 language intrinsic、90 internal helper、1448 deferred；95个Finding中45 resolved、50 open并一对一映射GitHub Issue，SDK仓库拆分另由#122协调。Wave 3本地SDK合同、两档Clippy、all-target/all-feature测试、no-default、17-feature矩阵、semantic strict/change-evidence与独立review全部通过，PR #125远端10/10 CI成功。路线见 [`delivery map`](./supreme/plans/2026-09-13T1448-echo-agent全workspace语义治理/delivery-map.md) 与 [`完整优化清单`](./2026-09-14-echo-agent-semantic-governance-findings.md)。 |
+| echo-agent 全 workspace 语义治理 | Baseline complete / 当前修复范围已闭合 | 最新 framework 清单为 96 个 Finding：91 resolved、5 open；5 个 open 是本轮排除的 SDK #120 与 A2A #32–35。#38 的 CLI 修复、framework 三类证据及两仓精确 main CI 已验收，外部 Issue 已关闭；不以旧 resolved 代替本次验收。治理单位为 Capability / Behavior / Rule / State Authority / Lifecycle / Finding / Evidence；SDK identity inventory 不计项目完成率。历史路线保留于 [`delivery map`](./supreme/plans/2026-09-13T1448-echo-agent全workspace语义治理/delivery-map.md) 与 [`优化清单`](./2026-09-14-echo-agent-semantic-governance-findings.md)。 |
 
 ## 当前基线
 
-| 仓库 | 本地基线 | 远端/发布状态 |
+| 仓库 | 本轮验收快照 | 远端/发布状态 |
 | --- | --- | --- |
-| `echo-agent` | `1486d2f4`（任务验收 checkout） | 压缩 PR178 与前置清理修复 PR179 已合入签名有效的远端 main；PR 与最终 main CI 全绿。本次不重算其它 Finding/Issue 关闭数量。 |
-| `echo-agent-cli` | `f98f509`（任务验收 checkout） | PR10 已合入签名有效的远端 main；压缩策略、TaskRuntime projection 与CI预算同步，完整本地、PR与main门禁通过。 |
+| `echo-agent` | `95ec66c6`（精确远端 main） | PR180 已合入签名有效的远端 main，tree 与已审候选一致；完整本地、PR与精确main各7项CI、actual main strict semantic通过，#38已关闭。 |
+| `echo-agent-cli` | `f57b90a2`（精确远端 main） | PR11 已合入签名有效的远端 main；tree 与已审候选一致，完整本地、PR 与精确 main 的4项CI、strict semantic 通过。 |
 | `echo-website` | `b1609b1`（任务验收 checkout） | PR4 已合入签名有效的远端 main；source-aware manifest、完整verify、PR与main检查通过。 |
-| superproject | `chore/Echoyue/compression-remote-integration` | 从最新 origin/main 隔离，仅同步三个已交付指针、压缩计划与验收记录；SDK及其它线程改动保持原状。 |
+| superproject | 本次顶层交付候选 | 从最新 origin/main 隔离，仅更新已交付 framework/CLI 指针及本阶段记录；原 checkout、website、SDK 及其它线程改动保持原状。 |
 
 F2-F5 的合流与门禁证据集中在 [`plan_03`](./supreme/plans/2026-08-28T0013-项目未完成工作收敛/plan_03_F5收口完整验证主分支合并与资源清理.md) 及两个 child MASTER-PLAN；这些文件记录历史实施证据，不替代本节状态表。
 
@@ -120,11 +151,17 @@ F2-F5 的合流与门禁证据集中在 [`plan_03`](./supreme/plans/2026-08-28T0
 
 ## 下一阶段路线
 
-### echo-agent 全 workspace 语义治理（Baseline Complete / Remediation Ongoing，2026-09-16）
+### echo-agent 全 workspace 语义治理（当前修复范围已闭合，2026-10-11）
 
-SDK identity inventory保留为漂移监控和独立backlog，不再用其完成比例表示项目进度，也不再逐identity建PR。全workspace discovery、高风险审计、SDK scope reset、首批Finding repair、concept convergence和squash-aware baseline门禁已进入远端main；PR #121闭合18个终态、恢复、权限、协议与副作用Finding，PR #123闭合Plugin component isolation，PR #124闭合Journal/checkpoint generation identity与Workflow四入口执行权威，PR #125在`0e09324a`闭合Kubernetes Pod cleanup settlement。95个Finding全部映射唯一GitHub Issue，45个resolved Issue已随交付关闭，剩余50个继续按风险和Finding独立推进。
+全 workspace discovery、状态权威/生命周期审计及 Finding 修复已持续进入框架 main。
+当前实际清单为 96 个 Finding：91 resolved、5 open；5 个 open 均是本轮排除的 SDK #120
+与 A2A #32–35。GitHub 功能请求 #10 不是语义 Finding，不计入该清单。#38 的新入口
+验收见本文件 2026-10-11 阶段记录；当前纳入目标的已确认 Finding 均已交付并关闭。
 
-下一修复前沿先完成SDK repository extraction（#122），再补齐Trace/Audit persistence visibility（#46）的`Finalize`反例、SDK inventory和语义归并；Scheduler durable occurrence（#84）需先闭合EKO stable data-root consumer与SDK拆分依赖，Agent adapter close（#36）仍需覆盖Headless/A2A/Channel/ReactAgent Drop。随后处理SDK gap ACK replay watermark（#120）、MCP/LSP transport close（#55）及其它持久化/cleanup owner。`echo-sdk-host`与`echo-sdk-protocol`独立仓库迁移线程必须吸收`29cea08c`的Turn delivery、checkpoint settlement、Journal identity、gap generation和SDK scope变化，并把framework pin前移到`0e09324a`；#62没有新增SDK public identity或wire payload。
+本轮只完成当前范围的终态、恢复、持久化和副作用结算，不重开 SDK/website 或产品发布。
+后续发现须以最新 main 的真实入口、唯一状态权威、取消/恢复与持久事实反例为依据，按依赖
+关系形成可独立验收的 Finding 切片；完整门禁只在稳定的 PR/main 交付点执行。
+SDK inventory 继续作为漂移监控和独立 backlog，不按 identity 数量衡量项目完成度。
 
 统一Tool Surface / ToolRouter草案的首次复审结论为block：surface必须按model request/iteration generation冻结，必须复用现有`ToolInvocation`/`ToolRuntime`/`ToolExecutionContext`，execution traits不得取代动态Permission与现有ToolManager/network生命周期。草案在修订和复审通过前不是正式ADR，不得进入实现。
 
