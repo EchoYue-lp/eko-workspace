@@ -1,8 +1,20 @@
 # EKO 总纲（MASTER-PLAN）
 
 > **跨仓库当前事实源**。本文只记录阶段状态、前向路线、分层边界、验收门和可核验证据；不再保存逐轮实施日志。
-> EKO 是本机个人助理：`echo-agent` 是独立可复用框架，`echo-agent-cli` 是应用层，`echo-website` 是官网。
-> 最后更新：2026-10-11（Background Review 重新验收闭合、框架语义修复范围核对；其它阶段保留原验收范围）。
+> EKO 是本机个人助理：`echo-agent` 是独立可复用框架，`echo-agent-sdk` 是独立 SDK 产品，`echo-agent-cli` 是应用层，`echo-website` 是官网。
+> 最后更新：2026-10-11（独立 SDK 第四 submodule 收口、Background Review 验收闭合；其它阶段保留原验收范围）。
+
+## 2026-10-11 SDK 独立仓接入
+
+完整 SDK 产品与过滤 Git 历史归属独立 `echo-agent-sdk`，顶层接入第四个 submodule。
+Protocol 不依赖 framework；Host 固定已推送的 framework extraction revision `27c7701e`，
+不随顶层 framework gitlink 隐式升级。Framework 已删除可编辑 SDK 副本与 SDK CI；
+EKO 与官网使用独立 SDK 链接。
+
+兼容门禁只承诺明确接受的跨语言合同。三语言直接读取 accepted artifact，完整 Rust
+inventory 数量与 intrinsic membership 是非阻断遥测。SDK 全能力语义治理与发布制品
+属于后续独立工作，不把 inventory 数量计入 framework 完成率。验收范围、子仓交付和
+用户工作区保留记录见 [SDK 迁移验收](./sdk-migration-final-acceptance.md)。
 
 ## 2026-10-11 Background Review 入口结算
 
@@ -127,8 +139,9 @@ F0-F6、R1、R2 和 R3 文档/website 收敛已完成；G 的当前静态门禁�
 | --- | --- | --- |
 | `echo-agent` | `95ec66c6`（精确远端 main） | PR180 已合入签名有效的远端 main，tree 与已审候选一致；完整本地、PR与精确main各7项CI、actual main strict semantic通过，#38已关闭。 |
 | `echo-agent-cli` | `f57b90a2`（精确远端 main） | PR11 已合入签名有效的远端 main；tree 与已审候选一致，完整本地、PR 与精确 main 的4项CI、strict semantic 通过。 |
-| `echo-website` | `b1609b1`（任务验收 checkout） | PR4 已合入签名有效的远端 main；source-aware manifest、完整verify、PR与main检查通过。 |
-| superproject | 本次顶层交付候选 | 从最新 origin/main 隔离，仅更新已交付 framework/CLI 指针及本阶段记录；原 checkout、website、SDK 及其它线程改动保持原状。 |
+| `echo-website` | `0dc2dc5`（SDK projection main） | PR2 已合入远端 main；source-aware manifest、完整 verify、PR 与精确 main CI 通过，正式来源只取已提交 revision。 |
+| `echo-agent-sdk` | `30d7e21`（SDK independent main） | PR4 的 8 项 CI 与精确 main 的 8 项 CI 全绿，tree 与已审候选一致；完整本地及独立检出验证通过；只承诺 accepted contract，源码交付证据见 SDK 迁移验收。 |
+| superproject | PR20 的四仓快照 | 从最新 origin/main 隔离，新增 SDK 第四 gitlink、同步 website 已交付指针及跨仓规则；远端四仓新检出验证通过，原 checkout 的未提交材料和旧 task worktree 保留。 |
 
 F2-F5 的合流与门禁证据集中在 [`plan_03`](./supreme/plans/2026-08-28T0013-项目未完成工作收敛/plan_03_F5收口完整验证主分支合并与资源清理.md) 及两个 child MASTER-PLAN；这些文件记录历史实施证据，不替代本节状态表。
 

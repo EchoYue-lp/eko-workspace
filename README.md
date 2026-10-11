@@ -1,6 +1,6 @@
 # EKO Workspace
 
-`eko-workspace` is the Git superproject for the EKO local AI assistant. It keeps the framework, application, and website as independent repositories while pinning a known-compatible commit of each repository in one place.
+`eko-workspace` is the Git superproject for the EKO local AI assistant. It keeps the framework, SDK product, application, and website as four independent repositories while pinning a known-compatible commit of each repository in one place.
 
 This repository is not a monorepo or a Cargo workspace. Each submodule keeps its own history, branches, releases, tests, and remote repository.
 
@@ -9,10 +9,16 @@ This repository is not a monorepo or a Cargo workspace. Each submodule keeps its
 | Path | Repository | Responsibility |
 |---|---|---|
 | `echo-agent/` | [echo-agent](https://github.com/EchoYue-lp/echo-agent) | Reusable Rust Agent framework |
+| `echo-agent-sdk/` | [echo-agent-sdk](https://github.com/EchoYue-lp/echo-agent-sdk) | Rust Protocol/Host, TypeScript/Python/Java SDKs, accepted contracts, documentation, and CI |
 | `echo-agent-cli/` | [echo-agent-cli](https://github.com/EchoYue-lp/echo-agent-cli) | EKO CLI, TUI, desktop application, and frontend |
 | `echo-website/` | [echo-website](https://github.com/EchoYue-lp/echo-website) | EKO website and public documentation |
 
 Cross-project instructions and architecture documents live in `AGENTS.md` and `docs/`.
+
+The SDK Host pins its own immutable framework revision. Its build pin is independent of the
+framework gitlink in this workspace; ordinary framework development does not run SDK gates.
+Only accepted cross-language contracts define SDK compatibility. The complete Rust public
+inventory is non-blocking drift telemetry.
 
 ## Clone
 
@@ -36,10 +42,11 @@ Make and verify changes inside the owning submodule. Commit and push that reposi
 
 ```bash
 git -C echo-agent status --short
+git -C echo-agent-sdk status --short
 git -C echo-agent-cli status --short
 git -C echo-website status --short
 
-git add echo-agent echo-agent-cli echo-website
+git add echo-agent echo-agent-sdk echo-agent-cli echo-website
 git -c commit.gpgsign=false commit -m "chore: update workspace revisions"
 git push
 ```
