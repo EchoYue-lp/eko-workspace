@@ -140,8 +140,8 @@ F0-F6、R1、R2 和 R3 文档/website 收敛已完成；G 的当前静态门禁�
 | `echo-agent` | `95ec66c6`（精确远端 main） | PR180 已合入签名有效的远端 main，tree 与已审候选一致；完整本地、PR与精确main各7项CI、actual main strict semantic通过，#38已关闭。 |
 | `echo-agent-cli` | `f57b90a2`（精确远端 main） | PR11 已合入签名有效的远端 main；tree 与已审候选一致，完整本地、PR 与精确 main 的4项CI、strict semantic 通过。 |
 | `echo-website` | `0dc2dc5`（SDK projection main） | PR2 已合入远端 main；source-aware manifest、完整 verify、PR 与精确 main CI 通过，正式来源只取已提交 revision。 |
-| `echo-agent-sdk` | `30d7e21`（SDK independent main） | PR4 在 8 项 CI 全绿后合入远端 main，tree 与已审候选一致；完整本地及独立检出验证通过；只承诺 accepted contract，源码交付证据见 SDK 迁移验收。 |
-| superproject | 本次顶层交付候选 | 从最新 origin/main 隔离，新增 SDK 第四 gitlink、同步 website 已交付指针及跨仓规则；原 checkout 的未提交材料和旧 task worktree 保留。 |
+| `echo-agent-sdk` | `30d7e21`（SDK independent main） | PR4 的 8 项 CI 与精确 main 的 8 项 CI 全绿，tree 与已审候选一致；完整本地及独立检出验证通过；只承诺 accepted contract，源码交付证据见 SDK 迁移验收。 |
+| superproject | PR20 的四仓快照 | 从最新 origin/main 隔离，新增 SDK 第四 gitlink、同步 website 已交付指针及跨仓规则；远端四仓新检出验证通过，原 checkout 的未提交材料和旧 task worktree 保留。 |
 
 F2-F5 的合流与门禁证据集中在 [`plan_03`](./supreme/plans/2026-08-28T0013-项目未完成工作收敛/plan_03_F5收口完整验证主分支合并与资源清理.md) 及两个 child MASTER-PLAN；这些文件记录历史实施证据，不替代本节状态表。
 

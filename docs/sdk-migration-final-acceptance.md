@@ -60,7 +60,16 @@ no-default-feature build、exact framework provenance 与 strict semantic snapsh
 SDK PR4 在 [8 项 CI 全绿](https://github.com/EchoYue-lp/echo-agent-sdk/actions/runs/38112834392)
 后合入 main `30d7e219cc7d3aef0f75a19217c82898c363f50d`；合并 tree 与已验收候选完全
 一致，初始 import `ea21dfc` 与过滤历史 tip `28d6709` 都仍是 main 祖先。
-精确 main CI 与顶层新检出验收完成后补齐最终记录。
+顶层候选已从远端重新检出并依次初始化四个 submodule，精确匹配四个 gitlink，
+全部 clean。初始化使用 reference cache 后执行 dissociate；superproject 与四个子仓
+均不保留对象 alternates，不依赖原工作区目录继续存在。SDK 608 个主要产品路径可读，
+初始 import 与过滤历史祖先均可恢复。验收日志为
+`/private/tmp/eko-sdk-workspace-reconstruction.log`。
+精确 SDK main `30d7e21` 的 [8 项 CI](https://github.com/EchoYue-lp/echo-agent-sdk/actions/runs/38113904024)
+全部通过。最终四仓 gitlink、实际检出与远端 main 一致，全部引用已经推送的提交。
+独立复审与跨仓验收闭合后，顶层通过
+[PR20](https://github.com/EchoYue-lp/eko-workspace/pull/20) 交付；保留项只有本文件明确
+排除的发布制品和后续全能力语义治理。
 
 官网完整 `npm run verify`、source-aware manifest 校验通过：39 unit tests、286 static
 routes、15 Playwright tests，保留 1 项既有平台 skip。独立 reviewer 逐项核对
