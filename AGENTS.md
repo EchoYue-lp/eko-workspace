@@ -240,7 +240,7 @@ AI 编程常把一个任务拆成很多细粒度提交,逐 commit 跑全量门�
 
 - **新任务必须在非 main 分支开发**,分支命名 `<type>/<user>/<任务名>`。`<type>` 是任务事件类型,与 conventional commits 前缀对齐:`feature`(新功能)、`fix`(bug 修复)、`doc`(文档)、`debug`(排查/诊断类调查)、`refactor`(重构)、`test`(补测试)、`chore`(构建/工具/依赖)。如 `fix/Echoyue/journal-race`、`feature/Echoyue/unified-turn`。worktree 场景见"Worktree 并行开发与合并规范"。main 保持随时可发布。
 - 开发阶段可以细粒度拆分提交,每个 commit 只需通过与改动范围匹配的 focused 快检(下节第 1 条),**不要求每个 commit 跑全量门禁**。
-- **合并粒度 = 任务**:任务完成后,先 `git merge main` 进任务分支,在任务分支上跑全量门禁(下节第 2 条),开 PR 等远端 CI 全绿(或确认本地门禁已全绿),然后 **squash merge 成一个 commit 进 main**,commit message 用与分支一致的类型前缀(如 `fix: ...` / `feat: ...` / `docs: ...`)。门禁或 CI 不绿不得合并;合并后 `git branch -D` 删除任务分支。
+- **合并粒度 = 任务**:任务完成后,先 `git merge main` 进任务分支,在任务分支上跑适用的本地全量门禁(下节第 2 条),全部通过后开 PR 并 **squash merge 成一个 commit 进 main**,commit message 用与分支一致的类型前缀(如 `fix: ...` / `feat: ...` / `docs: ...`)。四个子仓库的 CI 仅由 push 到 `main` 触发,任务分支和 PR 不自动触发 CI,不免除合并前本地门禁。合并后必须核验精确 main 提交的 CI 全绿才能完成交付;任何失败仍须修复,不得因已合并而跳过或绕过。交付完成后 `git branch -D` 删除任务分支。
 - 跨仓库顺序:echo-agent 的改动先合入其 main,echo-agent-cli 的任务分支再合并(其 CI 跟踪框架 main)。
 - 各子仓库的 AGENTS.md 已同步此规范,修改时必须两边一起改。
 
@@ -254,6 +254,8 @@ AI 编程常把一个任务拆成很多细粒度提交,逐 commit 跑全量门�
 - 编译警告/错误 → 全部消除(`cargo clippy` / `cargo test` / `tsc` 零错误)。
 - **格式化(强制,CI 依赖)** → `cargo fmt --all` 跑过**且** `cargo fmt --all -- --check` 退出码 0(零 diff)。CI 会跑 fmt 检查,**fmt 不干净的提交会让 CI 红**——本地必须先 fmt 再提交,不能依赖 CI 兜底。前端同理(`prettier --check` / 项目脚本)。
 - 只有"全部通过"这一个状态可以提交;不存在"大部分通过就先提交"。
+
+echo-agent-sdk 的依赖检查只按其独立 AGENTS.md 中经用户接受、绑定精确 Cargo.lock 版本组基线的 cargo-deny `warning[duplicate]` 特例执行；该特例不适用于 echo-agent、echo-agent-cli、编译警告或其它工具类别，原失败必须修复及提交/分支门禁保持不变。
 
 #### 1. 迭代快检(开发过程中)
 
