@@ -122,10 +122,11 @@ aborted-reporter 两例确认原终态写入债务的资源被提前释放，分
 before 产物。现有债务结构携带同一物理 owner、严格确认后才释放的最小修复正在验证。
 其余失败涉及真实进程退出模拟、恢复/续跑及故障阶段预期，逐桶保强断言调查；不把
 caller future abort 当作进程死亡，也不把目录缺失/不可读直接推为无未结算意图。
-该债务修复后的5项定向实际4成功、1失败，零编译告警和来源漂移；原 parked/abort 两例
-及错误owner、来源IO、重复ACK和真正未准备控制已有有限通过。剩余完全丢失root变体
-先保住资源及typed debt，随后在恢复目录时失败；正核对目录重建来源与恢复等价性，
-不将其当原资源释放反例仍失败，也不称5项全绿。原失败和精确产物均保留。
+后继冻结组合48项实际全通过，零失败、零忽略及来源漂移；原 parked/abort、错误owner、
+来源IO、重复ACK、目录恢复及真正子进程退出后重开等控制分别保留。另一个明确声明
+输入差异的原产物反例实际失败：取消已真实完成后遇读取错误，原兜底把债务目标写成
+Failed，预期仍为 Cancelled。该分支正做最小修复，不能借前述48项通过覆盖；原失败、
+同owner journal、单次receipt及精确产物均保留。CF仍为988，完整门禁与main仍待。
 CLI 已按用户指令无损迁入 primary `echo-agent-cli` 的
 `fix/Echoyue/cancellation-observation-primary`，C 工作区保留备份；primary framework 的 Exa
 任务改动不纳入本次验证。旧 Cargo paths 覆盖产生不支持的依赖图告警，未用于验收。
@@ -161,13 +162,26 @@ accepted 仍5621，均不以库存数量充当完成率。
 main、持久恢复义务或整体治理。
 五项 open 已只读盘点：Sandbox 原 connection-scoped 实现及 cleanup 先于 Cancelled 的
 强断言已有；Graph 的 Memory/File、renew/expiry/reopen/CRUD 上游证明也已有，不能泛称
-整组未验。后继先按精确来源复用、补必要当前用例及正式三链和独审；Graph 特定 foreign/
-lateUnknown 仅源码审的限制、宽 cleanup 的未证入口与独立 Linux 十秒诊断仍具名保留。
-正式 Task 后继 TypeScript/Python 各一例通过，Java 尚待；同 claim 的 A 只由原 matching
-attempt 完成一次结算，B 即时提交 canonical 结果，C/D 消费原依赖结果，B execution 不变。
+整组未验。后继按精确来源复用、补必要当前用例及正式三链和独审；原历史切点的 Graph
+foreign/lateUnknown 仅源码审记录保留，后来补证单列于下段。宽 cleanup 的未证入口与
+独立 Linux 十秒诊断仍具名待办。
+Graph 后继测试 checkpoint `c1547d6b92201fd3c702782fe0972e1a99e13318` 已提交推送：补齐
+foreign 观察不被本地观察覆盖、terminal 后 Unknown 不借先前收据两项负例，五项控制及
+默认 workflow 子集93项实际全通过。生产前缀、Node、Store 不变，未出现产品 red；7个
+必要文件、最终严格/真实6563基准检查及独立复审通过，无原始产物入库。全六门禁与新
+main 仍待，不改变 SDK 已接受6563 pin，也不把该结果扩称跨 provider 持久化验证。
+正式 Task 后继 checkpoint `fa62f3b3d0df3ed5b14c6d9786dfffce5db57da6` 已提交推送，精树与
+审定候选一致；13个必要文件经独立复审，foreign/Linux 原工作差异保留，无原始产物入库。
+仅供后续 foreign 的 UUID 缺省分支已从该候选剔除，要求原 Task 双身份；输入变化后全新
+TypeScript/Python/Java 各5项完整 Task 套件实际通过，零失败、零跳过，611项输入各无漂移，
+原四类经典场景仍覆盖。同 claim 的 A 只由原 matching attempt 完成一次结算，B 即时
+提交 canonical 结果，C/D 消费原依赖结果，B execution 不变；结果限于988/14a切点。
 原 ADR0060 和 Tasks 文档明确 next wave 等待本 wave 全部结算；unknown A 仍持 claim 与
 已结算 Paused 不同。新用例原“释放 A 前 C 必须完成”的失败保留为超出该合同的 oracle，
 不降低原 Paused 场景的独立继续断言，也不据当前实现新增调度承诺。
+后继6563 pin 的依赖解析已退出0，656个包的版本、checksum和依赖边不变，仅11个 Git
+来源改精确 revision；完整新生成和真实 Host 构建已进入独占重编译窗口，尚不称通过。
+原14a二进制已保全到 target 外并核对相同 SHA，不借旧 Host 结果验收新 pin。
 
 官网独立 checkpoint `28f38b523319f7470a2715f64135395b0f30e3f6` 已提交并推送：290个
 framework 镜像逐字节匹配干净 `9886502`，CLI 的118个来源文件和8个投影仍绑定原
