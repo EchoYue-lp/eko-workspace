@@ -27,14 +27,34 @@ tree 与已审候选一致；精确 main CI `38862267005` 七项全部成功，�
 当前源码与已执行用例；不宣称恢复七个缺失历史 tree，也不把旧红绿记录作为新执行。
 本轮框架验证后官方 `cargo clean` 移除 7.2 GiB 缓存，源码及证据保留。
 
-SDK 已进入固定上述通过 CI 的精确 framework revision、生成合同及构建真实 Host 的阶段，
-继续完成已准备的三语言保护合同及取消场景、反例与修复结果；不能将 Catalog 或纯语言
-fixture 通过计为真实 Host 验收。CLI 的消费方集成及完整 Rust/GUI 门禁、官网源文档同步与
+SDK 已固定上述通过 CI 的精确 framework revision；
+[PR #5](https://github.com/EchoYue-lp/echo-agent-sdk/pull/5) 的开发 checkpoint
+`637a308e0d1c7f13339d279eb1f91aedfb403685` 已推送，修复 canonical generator 对 workspace
+membership 的选择，独立复审和对应 9 项测试通过。后继合同生成与检查、真实 Host 的三语言
+保护及取消场景继续由 SDK 任务验收；当前构建仍在消除 Darwin linker 警告，不能把带警告的
+局部通过、Catalog 或纯语言 fixture 通过计为最终真实 Host 验收。新增 Workflow stream
+late-completed payload 缺陷和 callback observer 先退出的结算顺序候选分别保留其证据边界。
+
+CLI [PR #12](https://github.com/EchoYue-lp/echo-agent-cli/pull/12) 的开发 checkpoint
+`c874a79aa25f8bef16ba4df2e809ceb447bb1604` 已推送，compose 早绑定、Running/Paused
+恢复和既有 run 身份/错配拒绝三项定向验证各通过 1 项。完整 all-feature Clippy 实际退出
+101，11 项 lint 错误及三项未结算的上游审计告警仍阻止 main 验收；不能继承旧绿。原 CLI
+会话因接入平台会话策略 403 停止，用户明确要求新建接续任务，接管六处尚未提交的 lint
+整理及原始失败记录。SDK/CLI 消费方的完整 Rust/GUI 与语言门禁、官网源文档同步与
 完整验证、四仓 main 验收和最终 gitlink 更新仍待完成。Echo Semantic 支撑修复已由其
 [PR #4](https://github.com/EchoYue-lp/echo-semantic/pull/4) 交付到
 `c0bc306bd36d2b1b76def2b6c7308a07dda4f54b`，用于无损读取 SDK 原有二进制 diff。
 
 顶层协调规则 checkpoint `d36f4c1d` 已推送任务分支；四个 gitlink 尚保持下方历史验收快照。
+本轮协调线程为 `01a143e5-5a92-7293-8655-f880c3f698ae`；SDK 任务
+`01a14385-3980-70e2-af93-07f29fb43ed2` 和新 CLI 任务
+`01a143e8-d621-7f81-b968-b08783991777` 各自独占原 worktree 写入权，协调者负责官网、
+顶层集成和联合验收。framework Issue #120 在 GitHub 仍为 OPEN；SDK 本地 watermark
+Finding 的修复记录不能代替精确 SDK main 的三语言 Host 结果或外部 Issue 结算。
+每个可独立验收里程碑经 focused 验证、复审和必要路径检查后及时提交；正式 squash 前再次
+逐项检查完整 PR 文件及引用，raw/log/PF/临时探针不进入 main，仅保留必要源码、合同、
+测试、fixture、正式文档、CI 和最小长期证据结论。最终只更新已推送且精确 main CI 验收
+通过的子仓 gitlink，不用任务分支 checkpoint 冒充 main 交付。
 主 checkout 的既有一份修改及 297 个未跟踪文件继续保留，新增开发均位于本仓库 `.worktrees/`。
 本轮不发布 npm/PyPI/Maven/crates.io 或插件版本，不部署官网；本节不声明全项目已完成。
 
