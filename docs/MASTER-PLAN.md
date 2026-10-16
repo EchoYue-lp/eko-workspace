@@ -84,27 +84,34 @@ foreground 的缺口。后继 `629de1ea95627ce8284dae1fcf56221b7d0be476` 已修�
 after 全通过、零告警及输入漂移。四种 surface 参数仍只算一个顶层用例，不称原生界面
 E2E。10个必要文件经独立审查 PASS。风险门禁先拒绝新源码，再经独立确认消费者边界未
 扩大后重评指纹；锁和三项身份不变，后继双在线结果仍为 scanner1/gate0。旧完整测试在
-编译阶段由其唯一 owner 停止，没有行为结果；两类 Clippy 与完整矩阵正在新切点重跑。
+编译阶段由其唯一 owner 停止，没有行为结果。新切点两类 Clippy 均实际退出0、零告警和
+源码漂移；完整 workspace 的首次运行在行为用例前被9 GiB target 守卫中断，原件保留为
+资源中断，不算产品 red 或通过。仅官方清理本任务独占缓存后已冷跑原完整命令，预算及
+覆盖不变；no-default 与 GUI 条件矩阵仍待。
 CLI 已按用户指令无损迁入 primary `echo-agent-cli` 的
 `fix/Echoyue/cancellation-observation-primary`，C 工作区保留备份；primary framework 的 Exa
 任务改动不纳入本次验证。旧 Cargo paths 覆盖产生不支持的依赖图告警，未用于验收。
 
-SDK 的 B fixture 错误地要求普通 turn 必有 `run_id`，需保持可选身份合同并区分 foreign
-producer 与原 TaskRun/attempt 回执；Workflow protected-claim 三语言核心30步校验均完成，
-但 Java 在关闭阶段报五秒 deadline，整个用例仍失败，具体关闭停点未证。SDK 语义材料的
-19处缺标题与后继来源仍需在精确候选验证；22份历史对象的947组来源引用已按上述独立
-checkpoint 修正，不能将历史对象批量改为当前来源。当前摘要与 deferred 分组也需最终冻结
-核对。以上反例、范围与原件留在各任务的 ignored local，正式三链随子仓阶段提交收束。
-本次官方对象解析区分已推 `55bf069` 的63 resolved/4 open，与私有候选和当前工作树的
-63/7；后三项 Workflow Finding 尚未公开交付。七项均属已接受行为或必要 Host 生命周期，
-不能整体标为 deferred。独立复审新增 Workflow 满队列发送阻挡取消、cleanup join 的风险，
-已取得真实产品 before；最小修复后同两项含正常 drain 对照全部通过，增量独审 PASS。
-保存配置的四项 dev 行为唯一移到原 config，删除告警屏蔽，未新增 warning 策略；原目录
-入口和树外调用差异已写 ADR。新候选的 canonical 严格快照/真实基准变更依据检查及74个
-路径必要性审查通过，但新 Host 冷构建和受影响运行验证尚无终态，暂不提交该候选。
-direct-run 与 late-payload 的有限红绿及三语后继结果已补入原三链，状态仍 open 等待最终
-共同切点。deferred 文档过时 intrinsic 假设已修，自带脚本实际通过，2528项完整互斥分组，
-不扩大 accepted 合同。不能将这些局部或结构通过扩为整项生命周期关闭。
+SDK 后继 `335193791c70a6cb077033c3f8f0cb1223e5266e` 已正常提交并推送，74个文件的
+提交树与最终独立审阅树一致，无原始产物入库。A/B 累计生产、协议、三语、生成物和必要
+文稿按真实依赖共同纳入该切片，验证限于下述实际用例；另9条独立 Task/protected-claim
+fixture 与平台诊断路径仍未纳入。
+保存配置四项 dev 行为唯一归原 config；无行为及 Rust warning flags 环境覆盖，保留原
+debug/strip/inc/jobs 资源设置的 Host 构建实际退出0、零告警，新产物
+`14a0cb58c44bdb84990262f1324e1a2513513a8b40fc0640a9d36f91f95e27e9` 的 EH 为15,488,572
+字节，unwind 信息保留。当前共同切点的 drain 两例、unwind 和 direct-run 各一例全通过，
+三语言 late-payload 各一例通过，611项语言输入无漂移；旧7控、纯回归及#120另保原切点。
+原 canonical 的严格快照、真实基准变更依据及必要性审查通过；19处缺标题及后继来源已
+修正，不等于本地原生 Stop 或完整运行验收。deferred 原脚本已修，2528项完整互斥分组，
+accepted 仍5621，均不以库存数量充当完成率。
+
+官方对象解析在该已推提交为65 resolved/5 open：三项 Workflow Finding 纳入交付，direct-run
+与 late Completed 两个具名缺陷在当前三链、真实验证及独审后有限 resolved；历史原件保留。
+其余宽 cleanup、Sandbox、Task resume、Graph claim、managed exit 仍 open，均为已接受行为
+或必要 Host 生命周期，不能整体 deferred。B fixture 仍需修复普通 turn 可缺 `run_id` 的
+假设，严格区分 foreign producer 与原 TaskRun/attempt 回执。protected-claim 的旧三语言
+30步核心校验已完成，但 Java close 整例仍失败，须先证明具体停点；外部进程退出不能
+替代原 callback 的匹配结算回执。以上局部闭合不关闭外部 Issue #120、SDK main 或整体治理。
 
 官网独立 checkpoint `28f38b523319f7470a2715f64135395b0f30e3f6` 已提交并推送：290个
 framework 镜像逐字节匹配干净 `9886502`，CLI 的118个来源文件和8个投影仍绑定原
