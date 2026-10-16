@@ -136,6 +136,11 @@ Failed，预期仍为 Cancelled。后继复用原取消目标修复该分支，�
 通过；累计84路径均有必要性，无新增运行代码或告警豁免。两条精确 evidence refs 的远端
 对象、冷仓32条唯一来源及9份对象已独立核对，不借此改写历史观察或声称原生 Stop 通过。
 独立 CF 已 clean 切到6563；945项新来源已冻结，完整门禁及精确 main 仍待。
+该切点的原完整 workspace 命令后继实际退出101：app-core 单测1647成功、9项既有忽略，
+嵌套子进程单列；CLI 库285成功、3失败，后续目标未完成。运行无源码/CF漂移或资源中断。
+Channel 原 driver 的实际提前失败与 GUI 均确认缺少测试前置的应用 lifecycle owner；
+TUI 原静态字符串提取越过 resume 分支，不能据此认定真实输入进入 ingress。后继复用
+公开 owner 绑定并保持原强断言，以真实 TaskRun/Goal 与输入事实验证 TUI；全量仍须重验。
 CLI 已按用户指令无损迁入 primary `echo-agent-cli` 的
 `fix/Echoyue/cancellation-observation-primary`，C 工作区保留备份；primary framework 的 Exa
 任务改动不纳入本次验证。旧 Cargo paths 覆盖产生不支持的依赖图告警，未用于验收。
@@ -217,7 +222,22 @@ TS Tool 通过；Factory 新增的回执检查却误读只记录 Host→SDK 的�
 invocation timeout 错当成必须取消独立 cleanup owner。此前源码复审漏核这两个边界，
 已由实际失败纠正，原审查和失败保留。后继只给既有 proxy 补方向明确的真实回传记录，
 并验证原超时之后 cleanup 仍由原 owner 持有；不改生产、Host、pin 或超时，不制造收据。
-这些修订的实际复验及原官方全语言重跑未完成前不称通过。
+后继实际复验已完成：TS3、Python2、Java3全部通过；再补强原 RPC 唯一回复断言后，
+Factory TS1、Python1、Java2实际全通过，零失败、error、skip；独立源码及原始帧/日志复审
+通过。两切点按未变输入衔接，不重复计数或替代完整官方入口。
+有限 checkpoint `410e0f1d857bbf8bcfd805376638794697524de9` 已正常提交推送：29个必要
+路径经独立复审，tree 与最终候选一致，canonical 严格快照/真实 main 基准检查、artifact、
+fmt 和对应语言格式检查通过。仅纳入已资格6563 pin、必要官方遥测、原测试修正及薄证据；
+候选四份 Task 文件采用 fa62 原 blob，foreign 后继改动保留为工作树差异，未纳入本提交。必要历史来源
+fa62 已有精确 annotated evidence ref，远端 main 加该 tag 的空仓冷取回、七个来源 blob
+等价均独立核对通过；旧 Task 的988/14a正文和状态未重写。
+协调者已独立核对公开 SHA、tree、父提交及 PR #5 head；PR 仍为草稿。原官方全语言
+第二轮后继实际退出1：TS354项中353成功、1失败、0跳过，Python/Java 未启动；前述三类
+oracle 本轮均通过。新失败已定位到 collector 启动清单的 create/write 窗口：文件存在时
+内容尚为空，真实 Host 尚未启动，业务 flush 未执行。后继修正原进程的完整清单就绪条件，
+保原期限、退出与清理边界，先验证已声明的瞬态读取反例，不伪造 ready 或业务成功。完整语言与
+Rust、四份后继 Task 改动、五项 open Finding、平台、精确 SDK main 和最终冷检仍待，
+不以该 checkpoint 宣称整体完成。
 
 官网独立 checkpoint `28f38b523319f7470a2715f64135395b0f30e3f6` 已提交并推送：290个
 framework 镜像逐字节匹配干净 `9886502`，CLI 的118个来源文件和8个投影仍绑定原
