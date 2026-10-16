@@ -40,7 +40,9 @@ RunRegistry、lease、receipt 权威保留，SDK 不吞错或复制状态。当�
 新 `wait_result` 只暴露原 Run 的非终态观察，真实 receipt 优先，原 lease 不释放；未新增
 三语言合同。原 canonical 的精 Git 候选严格/真实988基准变更检查通过；当前0.5运行态
 校验的历史引用、闭包与范围限制单列，不称原生 Stop 通过。[PR #191](https://github.com/EchoYue-lp/echo-agent/pull/191)
-保持 draft，完整六项门禁、独立 feature 矩阵及精确 main CI 仍待。
+保持 draft。后继同源码的六项完整门禁已实际全0、零告警及输入漂移；主87个 harness 共
+3627成功、0失败、3项既有 opt-in 忽略，两个各1成功的嵌套 echo-state 子进程单列，不将
+原始3629合计当主计数。17项独立 feature 矩阵仍在原进程顺序执行，精确 main CI 未验。
 
 SDK 已固定上述通过 CI 的精确 framework revision；
 [PR #5](https://github.com/EchoYue-lp/echo-agent-sdk/pull/5) 的开发 checkpoint
@@ -107,6 +109,11 @@ E2E。10个必要文件经独立审查 PASS。风险门禁先拒绝新源码，�
 可能抢先吞掉已发布 Cancelled 收据；产品读序和资源 scope/真实 EOF/故障阶段等 fixture
 问题分开修复，保留强断言，不将全部失败归为 fixture。完整命令、no-default 及 GUI 门禁
 均仍须通过，前述局部结果不能替代。
+后继精确46例重跑为40成功、6失败、0忽略，零编译告警及输入漂移；parked 与
+aborted-reporter 两例确认原终态写入债务的资源被提前释放，分别保有真实 red 和独立
+before 产物。现有债务结构携带同一物理 owner、严格确认后才释放的最小修复正在验证。
+其余失败涉及真实进程退出模拟、恢复/续跑及故障阶段预期，逐桶保强断言调查；不把
+caller future abort 当作进程死亡，也不把目录缺失/不可读直接推为无未结算意图。
 CLI 已按用户指令无损迁入 primary `echo-agent-cli` 的
 `fix/Echoyue/cancellation-observation-primary`，C 工作区保留备份；primary framework 的 Exa
 任务改动不纳入本次验证。旧 Cargo paths 覆盖产生不支持的依赖图告警，未用于验收。
@@ -140,6 +147,11 @@ accepted 仍5621，均不以库存数量充当完成率。
 原 target 下358份诊断已按 bytes/hash 固化到 ignored local，未提交 raw。宽 Graph Finding
 仍 open，外部进程退出不能替原 callback 回执；这些局部闭合不关闭外部 Issue #120、SDK
 main、持久恢复义务或整体治理。
+正式 Task 后继 TypeScript/Python 各一例通过，Java 尚待；同 claim 的 A 只由原 matching
+attempt 完成一次结算，B 即时提交 canonical 结果，C/D 消费原依赖结果，B execution 不变。
+原 ADR0060 和 Tasks 文档明确 next wave 等待本 wave 全部结算；unknown A 仍持 claim 与
+已结算 Paused 不同。新用例原“释放 A 前 C 必须完成”的失败保留为超出该合同的 oracle，
+不降低原 Paused 场景的独立继续断言，也不据当前实现新增调度承诺。
 
 官网独立 checkpoint `28f38b523319f7470a2715f64135395b0f30e3f6` 已提交并推送：290个
 framework 镜像逐字节匹配干净 `9886502`，CLI 的118个来源文件和8个投影仍绑定原
