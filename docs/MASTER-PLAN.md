@@ -40,9 +40,14 @@ RunRegistry、lease、receipt 权威保留，SDK 不吞错或复制状态。当�
 新 `wait_result` 只暴露原 Run 的非终态观察，真实 receipt 优先，原 lease 不释放；未新增
 三语言合同。原 canonical 的精 Git 候选严格/真实988基准变更检查通过；当前0.5运行态
 校验的历史引用、闭包与范围限制单列，不称原生 Stop 通过。[PR #191](https://github.com/EchoYue-lp/echo-agent/pull/191)
-保持 draft。后继同源码的六项完整门禁已实际全0、零告警及输入漂移；主87个 harness 共
+的最终文稿 checkpoint `b7319a81e8c24b1b595e0daee74ea52828512547` 已提交推送；累计仍仅
+13个必要文件，无原始产物入库。后继同源码的六项完整门禁实际全0、零告警及输入漂移；主87个 harness 共
 3627成功、0失败、3项既有 opt-in 忽略，两个各1成功的嵌套 echo-state 子进程单列，不将
-原始3629合计当主计数。17项独立 feature 矩阵仍在原进程顺序执行，精确 main CI 未验。
+原始3629合计当主计数。17项独立 feature 矩阵也已全部退出0；文档合同15项通过，最终
+独立实现及必要性复审均 PASS。PR 已正常 squash 合入
+`6563d26570cc4a8d93c86b7e37443b0559476807`，签名有效、唯一父为988，tree 与最终已审
+候选完全一致；精确 main 的 canonical 严格快照及真实988基准变更检查实际通过。
+精确 main CI `38958501642` 尚在运行，不提前接受新治理 pin，不以本地通过代替平台结果。
 
 SDK 已固定上述通过 CI 的精确 framework revision；
 [PR #5](https://github.com/EchoYue-lp/echo-agent-sdk/pull/5) 的开发 checkpoint
@@ -114,6 +119,10 @@ aborted-reporter 两例确认原终态写入债务的资源被提前释放，分
 before 产物。现有债务结构携带同一物理 owner、严格确认后才释放的最小修复正在验证。
 其余失败涉及真实进程退出模拟、恢复/续跑及故障阶段预期，逐桶保强断言调查；不把
 caller future abort 当作进程死亡，也不把目录缺失/不可读直接推为无未结算意图。
+该债务修复后的5项定向实际4成功、1失败，零编译告警和来源漂移；原 parked/abort 两例
+及错误owner、来源IO、重复ACK和真正未准备控制已有有限通过。剩余完全丢失root变体
+先保住资源及typed debt，随后在恢复目录时失败；正核对目录重建来源与恢复等价性，
+不将其当原资源释放反例仍失败，也不称5项全绿。原失败和精确产物均保留。
 CLI 已按用户指令无损迁入 primary `echo-agent-cli` 的
 `fix/Echoyue/cancellation-observation-primary`，C 工作区保留备份；primary framework 的 Exa
 任务改动不纳入本次验证。旧 Cargo paths 覆盖产生不支持的依赖图告警，未用于验收。
@@ -147,6 +156,10 @@ accepted 仍5621，均不以库存数量充当完成率。
 原 target 下358份诊断已按 bytes/hash 固化到 ignored local，未提交 raw。宽 Graph Finding
 仍 open，外部进程退出不能替原 callback 回执；这些局部闭合不关闭外部 Issue #120、SDK
 main、持久恢复义务或整体治理。
+五项 open 已只读盘点：Sandbox 原 connection-scoped 实现及 cleanup 先于 Cancelled 的
+强断言已有；Graph 的 Memory/File、renew/expiry/reopen/CRUD 上游证明也已有，不能泛称
+整组未验。后继先按精确来源复用、补必要当前用例及正式三链和独审；Graph 特定 foreign/
+lateUnknown 仅源码审的限制、宽 cleanup 的未证入口与独立 Linux 十秒诊断仍具名保留。
 正式 Task 后继 TypeScript/Python 各一例通过，Java 尚待；同 claim 的 A 只由原 matching
 attempt 完成一次结算，B 即时提交 canonical 结果，C/D 消费原依赖结果，B execution 不变。
 原 ADR0060 和 Tasks 文档明确 next wave 等待本 wave 全部结算；unknown A 仍持 claim 与
