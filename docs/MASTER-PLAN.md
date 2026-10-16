@@ -52,7 +52,8 @@ RunRegistry、lease、receipt 权威保留，SDK 不吞错或复制状态。该�
 988切点的有限里程碑，再在各自冻结边界升级并重验；不将新框架通过冒充消费者已验证。
 仅官方清理本任务独占 target 后回收7.97 GiB，源码及证据校验不变，不动 SDK/CLI 缓存。
 
-SDK 当前仍固定已通过 CI 的988来源，后继6563切换及新 Host 资格单列；
+SDK 下述历史 checkpoint 固定已通过 CI 的988来源；后继6563切换及新 Host 资格见本节后段，
+各切点结果不互相替代。
 [PR #5](https://github.com/EchoYue-lp/echo-agent-sdk/pull/5) 的开发 checkpoint
 `637a308e0d1c7f13339d279eb1f91aedfb403685` 已推送，修复 canonical generator 对 workspace
 membership 的选择，独立复审和对应 9 项测试通过。后继已推送 checkpoint
@@ -125,8 +126,16 @@ caller future abort 当作进程死亡，也不把目录缺失/不可读直接�
 后继冻结组合48项实际全通过，零失败、零忽略及来源漂移；原 parked/abort、错误owner、
 来源IO、重复ACK、目录恢复及真正子进程退出后重开等控制分别保留。另一个明确声明
 输入差异的原产物反例实际失败：取消已真实完成后遇读取错误，原兜底把债务目标写成
-Failed，预期仍为 Cancelled。该分支正做最小修复，不能借前述48项通过覆盖；原失败、
-同owner journal、单次receipt及精确产物均保留。CF仍为988，完整门禁与main仍待。
+Failed，预期仍为 Cancelled。后继复用原取消目标修复该分支，原失败、同owner journal、
+单次receipt及精确产物均保留。最终 focused49 实际49成功、0失败、0忽略、零告警及输入
+漂移，来源仍为988；不借此覆盖6563后的完整门禁。必要修复及证据已在
+`e0f09e80743c7a784ff43bf590f083e7de43fec3` 提交推送；协调侧独立累计检查 main f57 至该
+提交的83个路径，全部有保留依据，无 raw/log/PF、临时产物、凭据或新增发布路径。
+风险仅重绑消费者指纹，版本、锁和三项接受身份未扩大。后继
+`9819a51318df04996103b8b56b2413e59822cb20` 仅补两份历史来源持久化文稿，固定增量独审
+通过；累计84路径均有必要性，无新增运行代码或告警豁免。两条精确 evidence refs 的远端
+对象、冷仓32条唯一来源及9份对象已独立核对，不借此改写历史观察或声称原生 Stop 通过。
+独立 CF 已 clean 切到6563；945项新来源已冻结，完整门禁及精确 main 仍待。
 CLI 已按用户指令无损迁入 primary `echo-agent-cli` 的
 `fix/Echoyue/cancellation-observation-primary`，C 工作区保留备份；primary framework 的 Exa
 任务改动不纳入本次验证。旧 Cargo paths 覆盖产生不支持的依赖图告警，未用于验收。
@@ -168,8 +177,11 @@ foreign/lateUnknown 仅源码审记录保留，后来补证单列于下段。宽
 Graph 后继测试 checkpoint `c1547d6b92201fd3c702782fe0972e1a99e13318` 已提交推送：补齐
 foreign 观察不被本地观察覆盖、terminal 后 Unknown 不借先前收据两项负例，五项控制及
 默认 workflow 子集93项实际全通过。生产前缀、Node、Store 不变，未出现产品 red；7个
-必要文件、最终严格/真实6563基准检查及独立复审通过，无原始产物入库。全六门禁与新
-main 仍待，不改变 SDK 已接受6563 pin，也不把该结果扩称跨 provider 持久化验证。
+必要文件、最终严格/真实6563基准检查及独立复审通过，无原始产物入库。后继同一精确
+提交及1023项冻结输入的六条本地 main 门禁已全部实际退出0、零告警和来源漂移；主87个
+harness 为3629成功、0失败、3项既有 live opt-in 忽略，两个各1成功的嵌套子进程单列。
+两条新增负例及原 matching 正控在全套实际通过；新 main/CI 尚待，不改变 SDK 已接受
+6563 pin，也不把 Memory 同实例反例扩称跨 provider 或重启持久化验证。
 正式 Task 后继 checkpoint `fa62f3b3d0df3ed5b14c6d9786dfffce5db57da6` 已提交推送，精树与
 审定候选一致；13个必要文件经独立复审，foreign/Linux 原工作差异保留，无原始产物入库。
 仅供后续 foreign 的 UUID 缺省分支已从该候选剔除，要求原 Task 双身份；输入变化后全新
@@ -180,8 +192,22 @@ TypeScript/Python/Java 各5项完整 Task 套件实际通过，零失败、零�
 已结算 Paused 不同。新用例原“释放 A 前 C 必须完成”的失败保留为超出该合同的 oracle，
 不降低原 Paused 场景的独立继续断言，也不据当前实现新增调度承诺。
 后继6563 pin 的依赖解析已退出0，656个包的版本、checksum和依赖边不变，仅11个 Git
-来源改精确 revision；完整新生成和真实 Host 构建已进入独占重编译窗口，尚不称通过。
-原14a二进制已保全到 target 外并核对相同 SHA，不借旧 Host 结果验收新 pin。
+来源改精确 revision。唯一生成入口实际退出0，28 profiles、117项产物；5621个 accepted
+身份及454条路由不变，5份阻断/共享合同逐字节不变，仅4份非阻断遥测变化。
+新增 `RunEntry::wait_result` 归 process-local Host/Rust intrinsic，不进入三语言合同。
+官方合同检查实际退出0。新保存配置 Host 构建实际退出0、零告警，产物
+`ac4332105734bbedda144b5c033fedc6610de4b5b9d9a5a0c11dd4953a28a87f` 的 EH 为15,491,256
+字节，保留 unwind；原14a产物与新产物均保全到 target 外。不借旧 Host 验收新 pin。
+同 dropped-next 原 waiter 的 quota 单测实际1项通过；Sandbox 原强断言用例补齐原 RPC
+真实 Cancelled 回应后同例1项通过，原失败保留为失效 oracle，不称新增生产缺陷。
+SDK 历史335/404/637的精确 annotated evidence refs 已按既有来源策略推送；独立空仓只从
+远端 main 与三条显式 refs 取回，8份对象、11组观察及42条引用逐字节匹配，无 task branch、
+PR 或本地对象借用。它只关闭这三条来源持久化缺口，最终 squash main 冷检仍待。
+后继官方语言入口实际退出1：完整 telemetry collector 编译退出0、原 Host ac433 复用，
+TypeScript 354项中351成功、3失败、0跳过，Python/Java 尚未启动。三例分别涉及迟到的
+factory construction、Workflow stream owner cancel/close 与 cancelled tool callback；
+独立源码复核发现旧测试未释放原物理 owner。正在原测试内补齐真实结束并保留完成前的
+强断言，不改生产、Host、pin 或超时；最窄回归和原官方全语言重跑未完成前不称通过。
 
 官网独立 checkpoint `28f38b523319f7470a2715f64135395b0f30e3f6` 已提交并推送：290个
 framework 镜像逐字节匹配干净 `9886502`，CLI 的118个来源文件和8个投影仍绑定原
