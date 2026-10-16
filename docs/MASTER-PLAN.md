@@ -89,7 +89,12 @@ framework 镜像逐字节匹配干净 `9886502`，CLI 的118个来源文件和8�
 `f57b90a2`；未复制 SDK 合同或新增 SDK pin。source-aware 检查及完整官网验证通过，
 包括39项单测、306条静态路由、15项浏览器测试，另有1项既有条件跳过；52个文件的独立
 必要性审查及 artifact 检查通过，无原始产物入库。CI 改为仅 push main，原 jobs 和来源
-检查保留。最终 EKO 投影、官网精确 main CI 与联合验收仍待 CLI main 后收束，未部署。
+检查保留。该阶段 [PR #5](https://github.com/EchoYue-lp/echo-website/pull/5) 已 squash 合入
+`faa9987d8da642d59e4a5c8e302d725cf18e36d2`，tree 与上述已审候选完全相同；精确 main
+CI `38938673709` 的唯一 verify job 及全部步骤成功，实际检出的来源为 `9886502`/
+`f57b90a2`。协调者已独立复核远端 SHA、tree、CI 和实际 checkout 日志。平台 action/
+runner 的非阻断弃用提示保留，不宣称 CI 零告警；无部署。最终 EKO 投影与联合验收仍待
+CLI main 后收束，不能将本阶段通过代替后继来源更新的验收。
 
 SDK/CLI 的剩余完整 Rust/GUI 与语言门禁、官网最终来源同步、四仓 main 验收和最终
 gitlink 更新仍待完成。Echo Semantic 支撑修复已由其
