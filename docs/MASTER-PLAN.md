@@ -84,8 +84,15 @@ producer 与原 TaskRun/attempt 回执；Workflow protected-claim 三语言核�
 checkpoint 修正，不能将历史对象批量改为当前来源。当前摘要与 deferred 分组也需最终冻结
 核对。以上反例、范围与原件留在各任务的 ignored local，正式三链随子仓阶段提交收束。
 
-SDK/CLI 的剩余完整 Rust/GUI 与语言门禁、官网 clean-source 同步与完整验证、四仓 main
-验收和最终 gitlink 更新仍待完成。Echo Semantic 支撑修复已由其
+官网独立 checkpoint `28f38b523319f7470a2715f64135395b0f30e3f6` 已提交并推送：290个
+framework 镜像逐字节匹配干净 `9886502`，CLI 的118个来源文件和8个投影仍绑定原
+`f57b90a2`；未复制 SDK 合同或新增 SDK pin。source-aware 检查及完整官网验证通过，
+包括39项单测、306条静态路由、15项浏览器测试，另有1项既有条件跳过；52个文件的独立
+必要性审查及 artifact 检查通过，无原始产物入库。CI 改为仅 push main，原 jobs 和来源
+检查保留。最终 EKO 投影、官网精确 main CI 与联合验收仍待 CLI main 后收束，未部署。
+
+SDK/CLI 的剩余完整 Rust/GUI 与语言门禁、官网最终来源同步、四仓 main 验收和最终
+gitlink 更新仍待完成。Echo Semantic 支撑修复已由其
 [PR #4](https://github.com/EchoYue-lp/echo-semantic/pull/4) 交付到
 `c0bc306bd36d2b1b76def2b6c7308a07dda4f54b`，用于无损读取 SDK 原有二进制 diff。
 
