@@ -17,12 +17,18 @@
 `875cc22f2e99c7ccd83c07e02c03fe221c5e3f6c`，签名有效、tree 与已审候选一致。
 精确 main CI `38849170013` 的六项运行时/平台 job 成功，依赖策略 job 因
 `zip 2.4.2`、`zip 8.6.0` 已撤回而失败，因此该提交尚未通过交付验收，SDK 不升级到此快照。
-最小兼容修复正在独立任务分支收口：保留三个媒体父包的 API/feature，适配非撤回的 zip 9；
-补齐 path/Git 来源不被原审计工具覆盖的 registry-origin 检查。正式决策见框架 ADR 0089。
-独立源码复审与定向媒体用例已通过；修复后的完整本地门禁和精确 main CI 尚待完成。
+后继修复 [PR #190](https://github.com/EchoYue-lp/echo-agent/pull/190) 已合入
+`9886502c83d6b1f6fa9212eb221db0e5874deaee`：保留三个媒体父包的 API/feature，适配非撤回的
+zip 9，并补齐 path/Git 来源的 registry-origin 审计；正式决策见框架 ADR 0089。
+六项完整本地门禁及 17 项独立 feature 检查全通过，主测试计数 3,622 成功、0 失败、
+3 项既有 opt-in 忽略；不重复计入两个子进程结果。独立复审、必要路径检查通过，签名有效、
+tree 与已审候选一致；精确 main CI `38862267005` 七项全部成功，远端冷克隆的严格语义
+检查通过。按用户“旧提交无法找到则按最新代码审计、处理”的明确裁决，相关能力重新绑定
+当前源码与已执行用例；不宣称恢复七个缺失历史 tree，也不把旧红绿记录作为新执行。
+本轮框架验证后官方 `cargo clean` 移除 7.2 GiB 缓存，源码及证据保留。
 
-SDK 仍在原隔离工作区完成已准备的三语言保护合同及取消场景；必须先固定通过 CI 的精确
-framework revision，再生成合同、构建真实 Host、验证反例与修复结果，不能将 Catalog 或纯语言
+SDK 已进入固定上述通过 CI 的精确 framework revision、生成合同及构建真实 Host 的阶段，
+继续完成已准备的三语言保护合同及取消场景、反例与修复结果；不能将 Catalog 或纯语言
 fixture 通过计为真实 Host 验收。CLI 的消费方集成及完整 Rust/GUI 门禁、官网源文档同步与
 完整验证、四仓 main 验收和最终 gitlink 更新仍待完成。Echo Semantic 支撑修复已由其
 [PR #4](https://github.com/EchoYue-lp/echo-semantic/pull/4) 交付到
