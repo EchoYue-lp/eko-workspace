@@ -18,8 +18,8 @@
 | 仓库 | 本 goal 已验收的 main 快照 | 最新开发 checkpoint 与未完成事项 |
 | --- | --- | --- |
 | framework | `6563d265` 生产治理目标；`f3fa0705` 仅补 Graph 测试证据，两者精确 main CI 各7项成功 | 该补证已交付；SDK Host 继续固定6563，不自动跟随测试提交。 |
-| SDK | `30d7e219` 历史独立仓验收 | `410e0f1d` 已资格 pin/测试，后继 `132bb703` 只修两个 Telemetry 启动辅助文件，均经独立必要性审查并推送。完整语言仍未通过：Python Task 定向7项通过，Java foreign 场景的 unknown-close 边界待最终复验；完整 Rust、五项 Finding、平台与新 main 待验。 |
-| CLI | `f57b90a2` 历史 main 验收 | `c2d981be` 已推送；定向3项、完整 all-target Clippy及精确风险接受门禁通过（官方扫描退出1保留），累计84路径必要性审查通过。新全量 core 为1645成功、2失败、9项既有忽略；相同原 binary 的两项单独复跑通过，仍需定位并完成全量/GUI/main。三项已接受依赖保持原版本。 |
+| SDK | `30d7e219` 历史独立仓验收 | `98ead9c3` 六个必要文件已独审、提交并推送；三语言 Task 各7项、provider四种冲突和Java EarlyExit正控通过。第五轮完整官方语言入口实际0：TS354、Python440（另18子测试）、Java375及三个quickstart全过，原件待独审。Java关闭竞争候选待确定性反证；完整Rust、五项Finding、平台与新main仍待验。 |
+| CLI | `f57b90a2` 历史 main 验收 | `7a33c11b` 九个必要文件已独审、提交并推送，保留生产共享配额，隔离四个gate测试并等待原Completed落盘。定向7项、风险规则6项及两份新在线精确风险门禁通过（scanner1/gate0），三依赖版本不变；原全量1645成功/2失败/9既有忽略保留。新源码的两档Clippy、完整workspace、no-default、GUI及main正在接续验收。 |
 | website | `ccdbfb4b`，精确 main CI 成功，来源6563/f57 | 最终 CLI 来源投影与联合 gitlink 验收仍待；无部署。 |
 
 框架 [PR #187](https://github.com/EchoYue-lp/echo-agent/pull/187) 已 squash 合入
