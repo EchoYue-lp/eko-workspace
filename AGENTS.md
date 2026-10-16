@@ -323,7 +323,7 @@ cargo check -p echo-agent-app-core --no-default-features --locked
 
 ```bash
 cd echo-agent
-for feature in a2a mcp lsp sqlite telemetry topology subagent web media \
+for feature in acp a2a mcp lsp sqlite telemetry topology subagent web media \
   data statistics channels git database rag chart; do
   cargo check -p echo_agent --no-default-features --features "$feature" --locked || exit 1
 done
@@ -358,12 +358,13 @@ npm run build
 ### CI 职责边界:验证环境差异,不重复本地完整门禁(强制)
 
 完整门禁由开发者在已合入最新 main 的任务分支上执行一次,CI 不再逐项镜像这套高成本
-矩阵。CI 只保留本地 macOS 无法等价提供的独立信号:
+矩阵。四个子仓库的 CI 只在 push 到 main 后运行,任务分支和 PR 不自动触发。
+CI 只保留本地 macOS 无法等价提供的独立信号:
 
 - `echo-agent`:Linux all-target/all-feature lint、分组的默认 feature 测试、Windows 编译与
   原子文件替换测试、依赖审计,以及learning test中的semantic baseline target-main
-  ancestry合同。PR使用base SHA、main push使用before SHA并checkout完整历史,使
-  feature-only baseline revision在squash前失败。Linux 测试必须按资源组拆分,不得恢复会令
+  ancestry合同。main push使用before SHA并checkout完整历史,校验baseline revision属于
+  此前main历史。Linux 测试必须按资源组拆分,不得恢复会令
   标准 runner OOM 的单一 workspace test job;all-feature 测试仍属于本地合并前门禁。
 - `echo-agent-cli`:Linux all-target/all-feature lint、app-core 默认 feature 测试与 Node LTS
   前端门禁(包含已提交 TypeScript 契约的编译)。app-core 测试必须把 `ts-rs` 导出隔离到
