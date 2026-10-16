@@ -72,7 +72,16 @@ framework `9886502`；不称原生 Tauri UI 或 OS 物理执行验收。all-targ
 用户已明确保留 `glib 0.18.5`、`proc-macro-error 1.0.4`、`bincode 1.3.3`，记录风险并延期升级；
 停止相应升级、替换与回补研究。三项真实审计告警及 exit1 保留；CLI 上述提交已保存精确
 Decision 与 `risk_accepted` Finding，绑定版本、registry 来源、checksum 和消费者闭包。
-门禁处置仍待验证，不称告警消失或缺陷已修复，也不扩大其它告警/编译/测试豁免。
+当时门禁处置尚待验证，不称告警消失或缺陷已修复，也不扩大其它告警/编译/测试豁免。
+后继窄 checkpoint `32c6719d4f15c4c27b59258a7ff22579357dfe11` 已提交并推送，实现
+精确风险门禁及6个反例测试方法；11个文件的独立必要性审查 PASS。官方 actual-lock 与
+干净 framework 来源重建的 registry-origin 在线扫描均保留 scanner exit1、三项告警、
+零漏洞，单独风险核对 gate0；未关闭 fetch。该次只对扫描进程指定 HTTP/1.1，默认 fetch
+失败原件仍保留，不推定更底层原因或默认 Linux CI 已通过。四类 panic Clippy 实际通过。
+新全范围复审另发现 shared chat preparation 将 `RecoveryBlocked` 字符串化并错误释放
+foreground 的缺口，CLI 正沿原 typed error 路径补真实反例与修复；旧完整测试在编译阶段
+由其唯一 owner 停止，没有行为用例结果。后继源码会使风险消费者指纹失效，必须先核实
+消费范围不变并独立重评绑定，再运行剩余完整门禁，不能自动接受所有源码漂移。
 CLI 已按用户指令无损迁入 primary `echo-agent-cli` 的
 `fix/Echoyue/cancellation-observation-primary`，C 工作区保留备份；primary framework 的 Exa
 任务改动不纳入本次验证。旧 Cargo paths 覆盖产生不支持的依赖图告警，未用于验收。
@@ -83,6 +92,11 @@ producer 与原 TaskRun/attempt 回执；Workflow protected-claim 三语言核�
 19处缺标题与后继来源仍需在精确候选验证；22份历史对象的947组来源引用已按上述独立
 checkpoint 修正，不能将历史对象批量改为当前来源。当前摘要与 deferred 分组也需最终冻结
 核对。以上反例、范围与原件留在各任务的 ignored local，正式三链随子仓阶段提交收束。
+本次官方对象解析区分已推 `55bf069` 的63 resolved/4 open，与私有候选和当前工作树的
+63/7；后三项 Workflow Finding 尚未公开交付。七项均属已接受行为或必要 Host 生命周期，
+不能整体标为 deferred。独立复审新增 Workflow 满队列发送阻挡取消、cleanup join 的风险，
+正在复现后最小修复；旧候选暂不提交。direct-run 与 late-payload 已有有限红绿及三语结果，
+正式材料仍须追加对应后继切点，不能仅按过时“未运行”文字判定或将局部结果扩为整项关闭。
 
 官网独立 checkpoint `28f38b523319f7470a2715f64135395b0f30e3f6` 已提交并推送：290个
 framework 镜像逐字节匹配干净 `9886502`，CLI 的118个来源文件和8个投影仍绑定原
