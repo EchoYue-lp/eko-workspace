@@ -79,9 +79,12 @@ Decision 与 `risk_accepted` Finding，绑定版本、registry 来源、checksum
 零漏洞，单独风险核对 gate0；未关闭 fetch。该次只对扫描进程指定 HTTP/1.1，默认 fetch
 失败原件仍保留，不推定更底层原因或默认 Linux CI 已通过。四类 panic Clippy 实际通过。
 新全范围复审另发现 shared chat preparation 将 `RecoveryBlocked` 字符串化并错误释放
-foreground 的缺口，CLI 正沿原 typed error 路径补真实反例与修复；旧完整测试在编译阶段
-由其唯一 owner 停止，没有行为用例结果。后继源码会使风险消费者指纹失效，必须先核实
-消费范围不变并独立重评绑定，再运行剩余完整门禁，不能自动接受所有源码漂移。
+foreground 的缺口。后继 `629de1ea95627ce8284dae1fcf56221b7d0be476` 已修复并提交推送：
+原持久化 pending-intent 重开后的共享入口实际 before 失败，普通错误对照通过；同两项
+after 全通过、零告警及输入漂移。四种 surface 参数仍只算一个顶层用例，不称原生界面
+E2E。10个必要文件经独立审查 PASS。风险门禁先拒绝新源码，再经独立确认消费者边界未
+扩大后重评指纹；锁和三项身份不变，后继双在线结果仍为 scanner1/gate0。旧完整测试在
+编译阶段由其唯一 owner 停止，没有行为结果；两类 Clippy 与完整矩阵正在新切点重跑。
 CLI 已按用户指令无损迁入 primary `echo-agent-cli` 的
 `fix/Echoyue/cancellation-observation-primary`，C 工作区保留备份；primary framework 的 Exa
 任务改动不纳入本次验证。旧 Cargo paths 覆盖产生不支持的依赖图告警，未用于验收。
@@ -95,8 +98,13 @@ checkpoint 修正，不能将历史对象批量改为当前来源。当前摘要
 本次官方对象解析区分已推 `55bf069` 的63 resolved/4 open，与私有候选和当前工作树的
 63/7；后三项 Workflow Finding 尚未公开交付。七项均属已接受行为或必要 Host 生命周期，
 不能整体标为 deferred。独立复审新增 Workflow 满队列发送阻挡取消、cleanup join 的风险，
-正在复现后最小修复；旧候选暂不提交。direct-run 与 late-payload 已有有限红绿及三语结果，
-正式材料仍须追加对应后继切点，不能仅按过时“未运行”文字判定或将局部结果扩为整项关闭。
+已取得真实产品 before；最小修复后同两项含正常 drain 对照全部通过，增量独审 PASS。
+保存配置的四项 dev 行为唯一移到原 config，删除告警屏蔽，未新增 warning 策略；原目录
+入口和树外调用差异已写 ADR。新候选的 canonical 严格快照/真实基准变更依据检查及74个
+路径必要性审查通过，但新 Host 冷构建和受影响运行验证尚无终态，暂不提交该候选。
+direct-run 与 late-payload 的有限红绿及三语后继结果已补入原三链，状态仍 open 等待最终
+共同切点。deferred 文档过时 intrinsic 假设已修，自带脚本实际通过，2528项完整互斥分组，
+不扩大 accepted 合同。不能将这些局部或结构通过扩为整项生命周期关闭。
 
 官网独立 checkpoint `28f38b523319f7470a2715f64135395b0f30e3f6` 已提交并推送：290个
 framework 镜像逐字节匹配干净 `9886502`，CLI 的118个来源文件和8个投影仍绑定原
