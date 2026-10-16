@@ -32,8 +32,8 @@ SDK 后继 B 场景在上述固定 `9886502` 来源上又确认一个 ACP 集成
 ACP actor 合同关闭整连接。原 Host 自行退出2，不是 `run_wait` 的正常有界等待，也不能
 把 foreign physical exit 当作原 Run 收据。唯一框架子智能体已接手原干净隔离工作区的
 `fix/Echoyue/acp-run-task-error-isolation`，先以官方连接复现，标准 adapter 与 SDK 通用入口同审；
-RunRegistry、lease、receipt 权威保留，SDK 不吞错或复制状态。当前治理 pin 仍为988，
-须待该必要修复精确 main CI 通过后再协调升级及重验，旧 CI 通过不覆盖这条新反例。
+RunRegistry、lease、receipt 权威保留，SDK 不吞错或复制状态。该反例首先按988复现，
+必要修复的来源资格与后继消费者升级分别验收，旧 CI 通过不覆盖这条新反例。
 后继开发 checkpoint `30b9bf0539efbec838f6229e7736e5889b483639` 已提交推送，精13个
 文件及 tree 与审定候选一致。原官方 ACP 连接两项真实 red 在最小修复后同例通过，
 29项 ACP 集成、43项 ACP 单元和 focused Clippy 全通过，独立实现及必要性复审 PASS。
@@ -47,9 +47,12 @@ RunRegistry、lease、receipt 权威保留，SDK 不吞错或复制状态。当�
 独立实现及必要性复审均 PASS。PR 已正常 squash 合入
 `6563d26570cc4a8d93c86b7e37443b0559476807`，签名有效、唯一父为988，tree 与最终已审
 候选完全一致；精确 main 的 canonical 严格快照及真实988基准变更检查实际通过。
-精确 main CI `38958501642` 尚在运行，不提前接受新治理 pin，不以本地通过代替平台结果。
+精确 main CI `38958501642` 七项全部成功，协调者独立核对远端身份及各 job，正式接受
+`6563d26570cc4a8d93c86b7e37443b0559476807` 为后继治理目标。SDK 与 CLI 先完成当前
+988切点的有限里程碑，再在各自冻结边界升级并重验；不将新框架通过冒充消费者已验证。
+仅官方清理本任务独占 target 后回收7.97 GiB，源码及证据校验不变，不动 SDK/CLI 缓存。
 
-SDK 已固定上述通过 CI 的精确 framework revision；
+SDK 当前仍固定已通过 CI 的988来源，后继6563切换及新 Host 资格单列；
 [PR #5](https://github.com/EchoYue-lp/echo-agent-sdk/pull/5) 的开发 checkpoint
 `637a308e0d1c7f13339d279eb1f91aedfb403685` 已推送，修复 canonical generator 对 workspace
 membership 的选择，独立复审和对应 9 项测试通过。后继已推送 checkpoint
@@ -177,6 +180,11 @@ CI `38938673709` 的唯一 verify job 及全部步骤成功，实际检出的来
 `f57b90a2`。协调者已独立复核远端 SHA、tree、CI 和实际 checkout 日志。平台 action/
 runner 的非阻断弃用提示保留，不宣称 CI 零告警；无部署。最终 EKO 投影与联合验收仍待
 CLI main 后收束，不能将本阶段通过代替后继来源更新的验收。
+后继框架6563同步已以6个必要文件单独交付：[PR #6](https://github.com/EchoYue-lp/echo-website/pull/6)
+合入 `ccdbfb4b35b7b867cf39b059bbca56c3b01fbb9c`，tree 与已审候选一致；精确 main CI
+`38960733265` 全部步骤成功。协调者独立核对 CI 及实际 checkout 日志，来源确为6563/
+f57，CLI 118个来源和8个投影不变；完整官网验证及独立复审通过。无部署、无原始产物
+入库；后继 CLI 投影与联合验收仍须独立完成，平台弃用提示保留。
 
 SDK/CLI 的剩余完整 Rust/GUI 与语言门禁、官网最终来源同步、四仓 main 验收和最终
 gitlink 更新仍待完成。Echo Semantic 支撑修复已由其
