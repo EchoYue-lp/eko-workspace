@@ -13,6 +13,15 @@
 取消结算采用已批准的 B：观察等待有界，原物理执行、claim 和 permit 保留到原执行真实结算，
 不得用超时、丢弃 handle 或合成终态替代。正式合同、实现与限制分别由 framework/SDK 维护。
 
+本 goal 当前验收与开发状态如下；后文各切点保留原历史范围，不替代本表的待办。
+
+| 仓库 | 本 goal 已验收的 main 快照 | 最新开发 checkpoint 与未完成事项 |
+| --- | --- | --- |
+| framework | `6563d265` 生产治理目标；`f3fa0705` 仅补 Graph 测试证据，两者精确 main CI 各7项成功 | 该补证已交付；SDK Host 继续固定6563，不自动跟随测试提交。 |
+| SDK | `30d7e219` 历史独立仓验收 | `410e0f1d` 已资格 pin/测试，后继 `132bb703` 只修两个 Telemetry 启动辅助文件，均经独立必要性审查并推送。完整语言仍未通过：Python Task 定向7项通过，Java foreign 场景的 unknown-close 边界待最终复验；完整 Rust、五项 Finding、平台与新 main 待验。 |
+| CLI | `f57b90a2` 历史 main 验收 | `c2d981be` 已推送；定向3项、完整 all-target Clippy及精确风险接受门禁通过（官方扫描退出1保留），累计84路径必要性审查通过。新全量 core 为1645成功、2失败、9项既有忽略；相同原 binary 的两项单独复跑通过，仍需定位并完成全量/GUI/main。三项已接受依赖保持原版本。 |
+| website | `ccdbfb4b`，精确 main CI 成功，来源6563/f57 | 最终 CLI 来源投影与联合 gitlink 验收仍待；无部署。 |
+
 框架 [PR #187](https://github.com/EchoYue-lp/echo-agent/pull/187) 已 squash 合入
 `875cc22f2e99c7ccd83c07e02c03fe221c5e3f6c`，签名有效、tree 与已审候选一致。
 精确 main CI `38849170013` 的六项运行时/平台 job 成功，依赖策略 job 因
