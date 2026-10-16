@@ -180,8 +180,14 @@ foreign 观察不被本地观察覆盖、terminal 后 Unknown 不借先前收据
 必要文件、最终严格/真实6563基准检查及独立复审通过，无原始产物入库。后继同一精确
 提交及1023项冻结输入的六条本地 main 门禁已全部实际退出0、零告警和来源漂移；主87个
 harness 为3629成功、0失败、3项既有 live opt-in 忽略，两个各1成功的嵌套子进程单列。
-两条新增负例及原 matching 正控在全套实际通过；新 main/CI 尚待，不改变 SDK 已接受
-6563 pin，也不把 Memory 同实例反例扩称跨 provider 或重启持久化验证。
+两条新增负例及原 matching 正控在全套实际通过。最终7个必要路径及薄文稿经独立复审，
+[PR #192](https://github.com/EchoYue-lp/echo-agent/pull/192) 正常 squash 合入
+`f3fa0705f62fe813a5a86bc41cd673f82f915a61`，唯一父为6563、签名有效、tree 与已审候选
+一致；精确 main 严格语义/真实6563基准变更检查退出0，精确 main CI `38972460664`
+七项全部成功，协调者已独立核对远端身份和各 job。该补证切片完成交付；不改变 SDK
+已接受6563生产 pin，也不把 Memory 同实例反例扩称跨 provider 或重启持久化验证。
+新 target 的90份引用可执行产物已压缩并逐成员核 SHA，137份原记录前后 hash 不变；
+仅官方清理本任务独占 target 后释放6.38 GiB，未触及 SDK/CLI 缓存。
 正式 Task 后继 checkpoint `fa62f3b3d0df3ed5b14c6d9786dfffce5db57da6` 已提交推送，精树与
 审定候选一致；13个必要文件经独立复审，foreign/Linux 原工作差异保留，无原始产物入库。
 仅供后续 foreign 的 UUID 缺省分支已从该候选剔除，要求原 Task 双身份；输入变化后全新
@@ -206,8 +212,12 @@ PR 或本地对象借用。它只关闭这三条来源持久化缺口，最终 s
 后继官方语言入口实际退出1：完整 telemetry collector 编译退出0、原 Host ac433 复用，
 TypeScript 354项中351成功、3失败、0跳过，Python/Java 尚未启动。三例分别涉及迟到的
 factory construction、Workflow stream owner cancel/close 与 cancelled tool callback；
-独立源码复核发现旧测试未释放原物理 owner。正在原测试内补齐真实结束并保留完成前的
-强断言，不改生产、Host、pin 或超时；最窄回归和原官方全语言重跑未完成前不称通过。
+独立源码复核发现旧测试未释放原物理 owner。第一轮修订后最窄运行中 Workflow 三语和
+TS Tool 通过；Factory 新增的回执检查却误读只记录 Host→SDK 的单向 trace，Java 另将
+invocation timeout 错当成必须取消独立 cleanup owner。此前源码复审漏核这两个边界，
+已由实际失败纠正，原审查和失败保留。后继只给既有 proxy 补方向明确的真实回传记录，
+并验证原超时之后 cleanup 仍由原 owner 持有；不改生产、Host、pin 或超时，不制造收据。
+这些修订的实际复验及原官方全语言重跑未完成前不称通过。
 
 官网独立 checkpoint `28f38b523319f7470a2715f64135395b0f30e3f6` 已提交并推送：290个
 framework 镜像逐字节匹配干净 `9886502`，CLI 的118个来源文件和8个投影仍绑定原
@@ -240,7 +250,10 @@ Finding 与当前 Host 有限验证不能代替精确 SDK main 的最终结果�
 Hook 专项 `01a1442d-160b-7523-a946-32184bc23e72` 已经独审及完整检查并正规本机安装；
 P 的真实 pre-edit 根/宿主证据成立，S 的新 pre-edit 记录仍缺失，宿主四项 Hook 显示
 `trustStatus=modified`，已请求用户在 `/hooks` 审阅信任。不能据安装成功或编辑未拒绝冒称
-整个原生 Hook/Stop 通过；已授权工程工作继续，最终现场验收单列。该专项未远端推送或发布。
+整个原生 Hook/Stop 通过；已授权工程工作继续，最终现场验收单列。后继正常提交推进又
+触发 Stop 绑定失效，原现场已保全并复现；与历史来源处理一起形成的隔离候选 Node134、
+Python95 项实际通过，但正式应用仍待两处受保护既有改动的明确接纳，不据自动续跑授权
+覆盖这些文件，也不手改安装缓存或绑定记录。该专项未远端推送或发布。
 每个可独立验收里程碑经 focused 验证、复审和必要路径检查后及时提交；正式 squash 前再次
 逐项检查完整 PR 文件及引用，raw/log/PF/临时探针不进入 main，仅保留必要源码、合同、
 测试、fixture、正式文档、CI 和最小长期证据结论。最终只更新已推送且精确 main CI 验收
