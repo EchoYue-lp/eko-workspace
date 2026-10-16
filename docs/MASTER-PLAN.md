@@ -34,6 +34,13 @@ ACP actor 合同关闭整连接。原 Host 自行退出2，不是 `run_wait` 的
 `fix/Echoyue/acp-run-task-error-isolation`，先以官方连接复现，标准 adapter 与 SDK 通用入口同审；
 RunRegistry、lease、receipt 权威保留，SDK 不吞错或复制状态。当前治理 pin 仍为988，
 须待该必要修复精确 main CI 通过后再协调升级及重验，旧 CI 通过不覆盖这条新反例。
+后继开发 checkpoint `30b9bf0539efbec838f6229e7736e5889b483639` 已提交推送，精13个
+文件及 tree 与审定候选一致。原官方 ACP 连接两项真实 red 在最小修复后同例通过，
+29项 ACP 集成、43项 ACP 单元和 focused Clippy 全通过，独立实现及必要性复审 PASS。
+新 `wait_result` 只暴露原 Run 的非终态观察，真实 receipt 优先，原 lease 不释放；未新增
+三语言合同。原 canonical 的精 Git 候选严格/真实988基准变更检查通过；当前0.5运行态
+校验的历史引用、闭包与范围限制单列，不称原生 Stop 通过。[PR #191](https://github.com/EchoYue-lp/echo-agent/pull/191)
+保持 draft，完整六项门禁、独立 feature 矩阵及精确 main CI 仍待。
 
 SDK 已固定上述通过 CI 的精确 framework revision；
 [PR #5](https://github.com/EchoYue-lp/echo-agent-sdk/pull/5) 的开发 checkpoint
@@ -122,8 +129,17 @@ accepted 仍5621，均不以库存数量充当完成率。
 其余宽 cleanup、Sandbox、Task resume、Graph claim、managed exit 仍 open，均为已接受行为
 或必要 Host 生命周期，不能整体 deferred。B fixture 仍需修复普通 turn 可缺 `run_id` 的
 假设，严格区分 foreign producer 与原 TaskRun/attempt 回执。protected-claim 的旧三语言
-30步核心校验已完成，但 Java close 整例仍失败，须先证明具体停点；外部进程退出不能
-替代原 callback 的匹配结算回执。以上局部闭合不关闭外部 Issue #120、SDK main 或整体治理。
+30步核心校验的 Java 关闭失败已取得分阶段事实：原 Host 在 native writes 完成后仍活着，
+五秒时由既有 SDK watchdog 回收为137，并非 stderr/dispose 卡死。后继 A 有限 checkpoint
+`404d447f1a69fb4af2843272005b894063888ed9` 已提交推送14个必要文件，精树与已审候选
+一致；三语 A 各一例通过，Java 另有合法 local-close 控制一例通过。测试允许本机 transport
+清理成功，但无原回执的 A 场景要求实际 Host 非零退出；错误分支精核 typed timeout、
+原取消地址、同 owner retry 及清理后 backend 不变，不把137或 transport retry 叫作自然
+退出、业务 receipt 或 claim 结算。5份旧来源元数据仅无损改绑可恢复 Git335，canonical
+严格/真实基准检查、局部独审及 artifact 检查通过；B四路径和 Linux诊断一条仍未提交。
+原 target 下358份诊断已按 bytes/hash 固化到 ignored local，未提交 raw。宽 Graph Finding
+仍 open，外部进程退出不能替原 callback 回执；这些局部闭合不关闭外部 Issue #120、SDK
+main、持久恢复义务或整体治理。
 
 官网独立 checkpoint `28f38b523319f7470a2715f64135395b0f30e3f6` 已提交并推送：290个
 framework 镜像逐字节匹配干净 `9886502`，CLI 的118个来源文件和8个投影仍绑定原
