@@ -34,6 +34,11 @@ membership 的选择，独立复审和对应 9 项测试通过。后继已推送
 `4ca17639265af41b5a39586331346f165d1a610f` 保存当前锁的依赖复验及必要元数据修正；
 两项 audit 在既有配置下退出0，deny 保留49组原已接受 duplicate、没有增量，不把它称为
 零告警。28 profiles 的唯一生成与合同检查已经完成，仍不代替后继 runtime 的验收。
+后继 `55bf069cf75832416f5d61ba247cd6b7df5cd25c` 已提交并推送，仅将22份历史对象的
+23行版本字段绑定到可恢复的 `019e700279677a2eb77e265b5038d9d581bc22da`；对应完整源码
+摘要 `2bbd6457d7b6ea031b8999d1466d85f5a5c1d2d994218d45f008ed6d5f1fa276` 和947组
+来源引用已用原校验器核对，独立复审 PASS。正文、状态和原失败范围未重写；不代表其余
+新材料、baseline、完整 runtime 或 main 验收通过。
 
 Issue #120 的具名场景在不可变 Host `45fc7b267941864f4528f55d8d7373d048f5afc824b2fb389c7c8c8fbc680abc`
 切点取得 TypeScript 12、Python 12、Java 9+3 项真实通过，零失败、零跳过，独立复审 PASS。
@@ -59,10 +64,15 @@ before 均已复现，两个同例 after 与普通错误/正常/continuation 等
 framework `9886502`；不称原生 Tauri UI 或 OS 物理执行验收。all-target/all-feature Clippy
 后继实际失败过4项测试 lint；最小修正后原命令 v2 已退出0、零告警，源码与干净 framework
 均无漂移。两条局部修复、6项测试与该 Clippy 分别验收，不称其余完整门禁已通过。
+这些行为修复、对应测试与必要文稿已在
+`dfd5750ce1b00ac1e36a2e778d469f2c3e82b62c` 独立提交并推送；24个必要路径不含原始
+日志、临时产物或会话预检。普通、strict 与变更证据检查通过；绑定任务/会话的仓库收据
+仍因将5个历史 Git 引用当成当前文件读取而失败，已交插件专项调查，不修改历史锚来消错。
 
 用户已明确保留 `glib 0.18.5`、`proc-macro-error 1.0.4`、`bincode 1.3.3`，记录风险并延期升级；
-停止相应升级、替换与回补研究。三项真实审计告警及 exit1 保留，正式精确风险接受记录和
-门禁处置由 CLI 维护，不称告警消失或缺陷已修复，也不扩大其它告警/编译/测试豁免。
+停止相应升级、替换与回补研究。三项真实审计告警及 exit1 保留；CLI 上述提交已保存精确
+Decision 与 `risk_accepted` Finding，绑定版本、registry 来源、checksum 和消费者闭包。
+门禁处置仍待验证，不称告警消失或缺陷已修复，也不扩大其它告警/编译/测试豁免。
 CLI 已按用户指令无损迁入 primary `echo-agent-cli` 的
 `fix/Echoyue/cancellation-observation-primary`，C 工作区保留备份；primary framework 的 Exa
 任务改动不纳入本次验证。旧 Cargo paths 覆盖产生不支持的依赖图告警，未用于验收。
@@ -70,8 +80,8 @@ CLI 已按用户指令无损迁入 primary `echo-agent-cli` 的
 SDK 的 B fixture 错误地要求普通 turn 必有 `run_id`，需保持可选身份合同并区分 foreign
 producer 与原 TaskRun/attempt 回执；Workflow protected-claim 三语言核心30步校验均完成，
 但 Java 在关闭阶段报五秒 deadline，整个用例仍失败，具体关闭停点未证。SDK 语义材料的
-19处缺标题、22份历史对象的947组来源引用及后继来源还需修正；旧摘要映射已用原校验器
-在内存核实对应 `019e700`，不能批量改为当前来源。当前摘要与 deferred 分组也需最终冻结
+19处缺标题与后继来源仍需在精确候选验证；22份历史对象的947组来源引用已按上述独立
+checkpoint 修正，不能将历史对象批量改为当前来源。当前摘要与 deferred 分组也需最终冻结
 核对。以上反例、范围与原件留在各任务的 ignored local，正式三链随子仓阶段提交收束。
 
 SDK/CLI 的剩余完整 Rust/GUI 与语言门禁、官网 clean-source 同步与完整验证、四仓 main
