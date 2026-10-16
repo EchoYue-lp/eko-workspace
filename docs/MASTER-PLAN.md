@@ -2,7 +2,35 @@
 
 > **跨仓库当前事实源**。本文只记录阶段状态、前向路线、分层边界、验收门和可核验证据；不再保存逐轮实施日志。
 > EKO 是本机个人助理：`echo-agent` 是独立可复用框架，`echo-agent-sdk` 是独立 SDK 产品，`echo-agent-cli` 是应用层，`echo-website` 是官网。
-> 最后更新：2026-10-11（独立 SDK 第四 submodule 收口、Background Review 验收闭合；其它阶段保留原验收范围）。
+> 最后更新：2026-10-16（SDK 全能力治理阶段快照；尚未完成联合验收，历史阶段保留原验收范围）。
+
+## 2026-10-16 SDK 全能力治理（进行中）
+
+治理范围仍以明确接受的跨语言合同为准，完整 Rust public inventory 仅作遥测。
+用户已批准 Workflow `protected_claim_v1` 与
+`workflow_checkpoint_protect_claim(checkpoint_id, attempt_id)` 反向操作：原 Store 在节点副作用前
+保护同一 claim，未知执行不能因租约到期重跑，也不能由 CRUD 解除；缺能力时执行前明确拒绝。
+取消结算采用已批准的 B：观察等待有界，原物理执行、claim 和 permit 保留到原执行真实结算，
+不得用超时、丢弃 handle 或合成终态替代。正式合同、实现与限制分别由 framework/SDK 维护。
+
+框架 [PR #187](https://github.com/EchoYue-lp/echo-agent/pull/187) 已 squash 合入
+`875cc22f2e99c7ccd83c07e02c03fe221c5e3f6c`，签名有效、tree 与已审候选一致。
+精确 main CI `38849170013` 的六项运行时/平台 job 成功，依赖策略 job 因
+`zip 2.4.2`、`zip 8.6.0` 已撤回而失败，因此该提交尚未通过交付验收，SDK 不升级到此快照。
+最小兼容修复正在独立任务分支收口：保留三个媒体父包的 API/feature，适配非撤回的 zip 9；
+补齐 path/Git 来源不被原审计工具覆盖的 registry-origin 检查。正式决策见框架 ADR 0089。
+独立源码复审与定向媒体用例已通过；修复后的完整本地门禁和精确 main CI 尚待完成。
+
+SDK 仍在原隔离工作区完成已准备的三语言保护合同及取消场景；必须先固定通过 CI 的精确
+framework revision，再生成合同、构建真实 Host、验证反例与修复结果，不能将 Catalog 或纯语言
+fixture 通过计为真实 Host 验收。CLI 的消费方集成及完整 Rust/GUI 门禁、官网源文档同步与
+完整验证、四仓 main 验收和最终 gitlink 更新仍待完成。Echo Semantic 支撑修复已由其
+[PR #4](https://github.com/EchoYue-lp/echo-semantic/pull/4) 交付到
+`c0bc306bd36d2b1b76def2b6c7308a07dda4f54b`，用于无损读取 SDK 原有二进制 diff。
+
+顶层协调规则 checkpoint `d36f4c1d` 已推送任务分支；四个 gitlink 尚保持下方历史验收快照。
+主 checkout 的既有一份修改及 297 个未跟踪文件继续保留，新增开发均位于本仓库 `.worktrees/`。
+本轮不发布 npm/PyPI/Maven/crates.io 或插件版本，不部署官网；本节不声明全项目已完成。
 
 ## 2026-10-11 SDK 独立仓接入
 
@@ -133,7 +161,7 @@ F0-F6、R1、R2 和 R3 文档/website 收敛已完成；G 的当前静态门禁�
 | 长程任务优化(统一 turn-run 绑定) | Closure complete on local `main` / `echo-agent-cli@be273d3` + `echo-website@ae91c39`,未推送 | `feature/unified-turn-run@9524b47` 的 9 项 review 修复已作为基线,closure 补齐 typed provenance memory gate、quiet-check 与 RunTurn claim 原子复核、五入口长 steer 原文保真、`ForegroundTurnSnapshot.run_id` TS 绑定和 `PlanRevisionCommitted` 任务 UI 激活。第三轮独立复审 Critical/Important/Minor 均为 0。CLI 门禁已通过 fmt、Clippy 双档、workspace all-features(app-core 1534 passed/9 ignored、CLI lib 276、main 11、JSONL 6)、no-default、GUI check/tests(207 + main 1 + JSONL 6)、前端 Prettier/ESLint/Vitest 244/build、双语 parity；website source-aware docs check 与完整 verify 通过(39 单测、174 static/discovery routes、Playwright 15 passed/1 skipped)。后续项(独立 ADR):task_execute §10.1 同步 await 合同的后台化。 |
 | echo-agent 全 workspace 语义治理 | Baseline complete / 当前修复范围已闭合 | 最新 framework 清单为 96 个 Finding：91 resolved、5 open；5 个 open 是本轮排除的 SDK #120 与 A2A #32–35。#38 的 CLI 修复、framework 三类证据及两仓精确 main CI 已验收，外部 Issue 已关闭；不以旧 resolved 代替本次验收。治理单位为 Capability / Behavior / Rule / State Authority / Lifecycle / Finding / Evidence；SDK identity inventory 不计项目完成率。历史路线保留于 [`delivery map`](./supreme/plans/2026-09-13T1448-echo-agent全workspace语义治理/delivery-map.md) 与 [`优化清单`](./2026-09-14-echo-agent-semantic-governance-findings.md)。 |
 
-## 当前基线
+## 2026-10-11 已验收基线（历史快照）
 
 | 仓库 | 本轮验收快照 | 远端/发布状态 |
 | --- | --- | --- |
