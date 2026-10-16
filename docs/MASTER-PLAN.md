@@ -27,6 +27,14 @@ tree 与已审候选一致；精确 main CI `38862267005` 七项全部成功，�
 当前源码与已执行用例；不宣称恢复七个缺失历史 tree，也不把旧红绿记录作为新执行。
 本轮框架验证后官方 `cargo clean` 移除 7.2 GiB 缓存，源码及证据保留。
 
+SDK 后继 B 场景在上述固定 `9886502` 来源上又确认一个 ACP 集成缺口：原 driver 返回
+`ExecutionNotSettled` 并保留 lease 后，其错误直接进入官方 `connection.spawn(task)`，按
+ACP actor 合同关闭整连接。原 Host 自行退出2，不是 `run_wait` 的正常有界等待，也不能
+把 foreign physical exit 当作原 Run 收据。唯一框架子智能体已接手原干净隔离工作区的
+`fix/Echoyue/acp-run-task-error-isolation`，先以官方连接复现，标准 adapter 与 SDK 通用入口同审；
+RunRegistry、lease、receipt 权威保留，SDK 不吞错或复制状态。当前治理 pin 仍为988，
+须待该必要修复精确 main CI 通过后再协调升级及重验，旧 CI 通过不覆盖这条新反例。
+
 SDK 已固定上述通过 CI 的精确 framework revision；
 [PR #5](https://github.com/EchoYue-lp/echo-agent-sdk/pull/5) 的开发 checkpoint
 `637a308e0d1c7f13339d279eb1f91aedfb403685` 已推送，修复 canonical generator 对 workspace
@@ -86,8 +94,12 @@ E2E。10个必要文件经独立审查 PASS。风险门禁先拒绝新源码，�
 扩大后重评指纹；锁和三项身份不变，后继双在线结果仍为 scanner1/gate0。旧完整测试在
 编译阶段由其唯一 owner 停止，没有行为结果。新切点两类 Clippy 均实际退出0、零告警和
 源码漂移；完整 workspace 的首次运行在行为用例前被9 GiB target 守卫中断，原件保留为
-资源中断，不算产品 red 或通过。仅官方清理本任务独占缓存后已冷跑原完整命令，预算及
-覆盖不变；no-default 与 GUI 条件矩阵仍待。
+资源中断，不算产品 red 或通过。仅官方清理本任务独占缓存后冷跑原完整命令，预算及
+覆盖不变；该轮进入行为后出现多项真实失败，另两条忽略 cancel 的永久 pending fixture
+无法产生 EOF，已保全未完成结果并仅停止自有进程。代表用例确认 foreground 的关闭分支
+可能抢先吞掉已发布 Cancelled 收据；产品读序和资源 scope/真实 EOF/故障阶段等 fixture
+问题分开修复，保留强断言，不将全部失败归为 fixture。完整命令、no-default 及 GUI 门禁
+均仍须通过，前述局部结果不能替代。
 CLI 已按用户指令无损迁入 primary `echo-agent-cli` 的
 `fix/Echoyue/cancellation-observation-primary`，C 工作区保留备份；primary framework 的 Exa
 任务改动不纳入本次验证。旧 Cargo paths 覆盖产生不支持的依赖图告警，未用于验收。
