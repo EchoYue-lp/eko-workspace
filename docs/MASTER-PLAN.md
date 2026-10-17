@@ -18,8 +18,8 @@
 | 仓库 | 本 goal 已验收的 main 快照 | 最新开发 checkpoint 与未完成事项 |
 | --- | --- | --- |
 | framework | `6563d265` 生产治理目标；`f3fa0705` 仅补 Graph 测试证据，两者精确 main CI 各7项成功 | 该补证已交付；SDK Host 继续固定6563，不自动跟随测试提交。 |
-| SDK | `30d7e219` 历史独立仓验收 | `98ead9c3` 六个必要文件已独审、提交并推送；三语言 Task 各7项、provider四种冲突和Java EarlyExit正控通过。第五轮完整官方语言入口实际0：TS354、Python440（另18子测试）、Java375及三个quickstart全过，原件待独审。Java关闭竞争候选待确定性反证；完整Rust、五项Finding、平台与新main仍待验。 |
-| CLI | `f57b90a2` 历史 main 验收 | `7a33c11b` 九个必要文件已独审、提交并推送，保留生产共享配额，隔离四个gate测试并等待原Completed落盘。定向7项、风险规则6项及两份新在线精确风险门禁通过（scanner1/gate0），三依赖版本不变；原全量1645成功/2失败/9既有忽略保留。新源码的两档Clippy、完整workspace、no-default、GUI及main正在接续验收。 |
+| SDK | `30d7e219` 历史独立仓验收 | `5b08b0e9` 四个必要Java文件已独审、提交并推送；关闭结果选择的受控单元与真实进程回归30项全过，不冒原OS竞争红绿。98ead第五轮完整语言入口独审通过；TS354、Python440（另18子测试）按未变闭包承接，新Java377项及quickstart实际0、原件已独审。完整Rust、五项Finding、最终来源及文稿、平台与新main仍待验。 |
+| CLI | `f57b90a2` 历史 main 验收 | `7a33c11b` 累计84路径必要性独审通过；两档Clippy、完整workspace、no-default、GUI check/test六命令已实际通过并获独审。core1647成功/9既有忽略、CLI库288、GUI库219，嵌套子进程与文档忽略另计；原全量失败及GUI磁盘中止保留。新双在线精确风险门禁scanner1/gate0，三依赖版本不变；累计严格预检基准、最终来源及精确main仍待验。 |
 | website | `ccdbfb4b`，精确 main CI 成功，来源6563/f57 | 最终 CLI 来源投影与联合 gitlink 验收仍待；无部署。 |
 
 框架 [PR #187](https://github.com/EchoYue-lp/echo-agent/pull/187) 已 squash 合入
