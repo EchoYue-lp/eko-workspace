@@ -18,7 +18,7 @@
 | 仓库 | 本 goal 已验收的 main 快照 | 最新开发 checkpoint 与未完成事项 |
 | --- | --- | --- |
 | framework | `6563d265` 生产治理目标；`f3fa0705` 仅补 Graph 测试证据，两者精确 main CI 各7项成功 | `f9906007` 任务分支已提交推送：显式预算跨Run保留、实际模型/client/profile原子发布已修复，原HTTP反例A/A→A/B。定向回归、channels编译、Clippy、fmt及分段历史strict通过，累计22个必要路径经独审，无日志入Git。SDK旧pin服务探针独审又确认一项framework缺陷：压缩删除末尾消息后，同generation保留三条消息被重新分配ordinal并重复投影；真实工具只执行一次，既有保留ordinal合同被违反。正补原managed持久化反例及最小修复，再执行六门禁、17独立feature及精确main CI；SDK Host目前仍固定6563。 |
-| SDK | `30d7e219` 历史独立仓验收 | `88a573b7` FS、GitCheckpoint和Plan十二文件补证checkpoint已独审提交推送：三语言真实Host、比较器修正及有限合同证据闭合，旧失败保留；Store/Plugin五文件与演化八操作的既有切片资格保留，PR5仍DRAFT。原 `8481ba58` 的14条Rust零警告、workspace519项及Host `0982121c` 完整语言入口（TS354、Python440及18个subtests另计、Java377/76份fresh XML、三quickstart、#120各12场景）限定资格保留。后继live组件原case、原对照及Clippy/fmt通过，但独审发现上述framework重复投影缺陷，不能宣称整个live组闭合；模型/预算的新框架消费者、managed旧Linux根因、精确main与最终新快照继续处理。已推送切片累计仍671个必要路径，无原始日志入Git。 |
+| SDK | `30d7e219` 历史独立仓验收 | `1b8f660b` 七文件正式账本checkpoint已独审、严格验证并提交推送，模型切换与保留消息重复投影两项Finding独立open，修复三链未提前关闭。`88a573b7` FS、GitCheckpoint和Plan十二文件三语言补证，以及Store/Plugin、演化八操作的有限资格保留，PR5仍DRAFT。原 `8481ba58` 的14条Rust零警告、workspace519项及Host `0982121c` 完整语言入口（TS354、Python440及18个subtests另计、Java377/76份fresh XML、三quickstart、#120各12场景）限定资格保留。后继live组件原case、原对照及Clippy/fmt通过，但上述framework重复投影缺陷仍阻断整个live组闭合；模型/预算的新框架消费者、managed旧Linux根因、精确main与最终新快照继续处理。各checkpoint逐文件必要性经独审，无原始日志入Git。 |
 | CLI | `f57b90a2` 历史 main 验收 | `0d1bbd39` 六份最终文稿已独审推送，累计仍84个必要路径；7a33的六项本地Rust/GUI门禁及三项原版本依赖精确接受门禁已通过，运行代码和锁未变。P增量strict、真实f57基准等价候选的累计strict及32个历史源码身份冷恢复均获独审；安装版任务完成的五条历史引用错误及原生Stop绑定仍待插件修复的两处已有差异人工确认。精确main、合并后冷检与官网最终同步待验。 |
 | website | `ccdbfb4b`，精确 main CI 成功，来源6563/f57 | 六页双语EKO最终措辞草稿已独审，尚未应用；待CLI精确main与CI通过后同步实际来源、发现清单及联合gitlink，无部署。 |
 
