@@ -17,8 +17,8 @@
 
 | 仓库 | 本 goal 已验收的 main 快照 | 最新开发 checkpoint 与未完成事项 |
 | --- | --- | --- |
-| framework | `6563d265` 生产治理目标；`f3fa0705` 仅补 Graph 测试证据，两者精确 main CI 各7项成功 | SDK Host 仍固定6563。后继 `e3ba883a` 已本地提交：修复运行时显式 token limit 在后续 Run 被默认预算覆盖；同四项回归 before 2失败/2通过→after全通过，prepared相关检查（含1项重复，不新增计数）、Clippy及fmt通过，唯一必要文件经独审。尚未推送、完整门禁或main验收，SDK暂不换pin。 |
-| SDK | `30d7e219` 历史独立仓验收 | `e31e39a5` 演化八项accepted操作的三语言合法调用及对应六份既有材料已独审提交推送，PR5仍DRAFT；原 `8481ba58` 完整14条Rust零警告、workspace519项及Host `0982121c` 的完整语言入口（TS354、Python440及18个subtests另计、Java377/76份fresh XML、三quickstart、#120各12场景）限定资格保留。五项Finding中四项局部闭合，managed旧Linux根因未知；accepted能力仍须补齐分组消费证据，不能用41行Map代替闭合。压缩器暴露上列framework预算缺陷；同Session的set_model成功返回后真实HTTP仍用旧模型也已复现，尚未修复。Store/Plugin及其它live绑定组继续处理。精确main、平台与新快照完整验收待办；已推送切片累计671个必要路径，无原始日志入Git。 |
+| framework | `6563d265` 生产治理目标；`f3fa0705` 仅补 Graph 测试证据，两者精确 main CI 各7项成功 | `f9906007` 任务分支已提交推送：显式预算跨Run保留、实际模型/client/profile原子发布已修复，原HTTP反例A/A→A/B。定向回归、channels编译、Clippy、fmt及完整历史strict通过，累计22个必要路径经独审，无日志入Git。待SDK旧pin服务替换消费探测后执行六门禁、17独立feature及精确main CI；SDK Host目前仍固定6563。 |
+| SDK | `30d7e219` 历史独立仓验收 | `2cae24a2` Store/Plugin五文件补证checkpoint已独审提交推送；Rust真实Host后端生命周期与既有三语言合法调用证据组合闭合该有限组，PR5仍DRAFT。原 `8481ba58` 的14条Rust零警告、workspace519项及Host `0982121c` 完整语言入口（TS354、Python440及18个subtests另计、Java377/76份fresh XML、三quickstart、#120各12场景）限定资格保留。演化八操作已由e31独立补证；FS三语言副作用测试通过，比较器与计数补正待复审。live服务、GitCheckpoint/Plan及模型/预算的新框架消费者继续处理；managed旧Linux根因未知，精确main、平台与最终新快照待验。已推送切片累计仍671个必要路径，无原始日志入Git。 |
 | CLI | `f57b90a2` 历史 main 验收 | `0d1bbd39` 六份最终文稿已独审推送，累计仍84个必要路径；7a33的六项本地Rust/GUI门禁及三项原版本依赖精确接受门禁已通过，运行代码和锁未变。P增量strict、真实f57基准等价候选的累计strict及32个历史源码身份冷恢复均获独审；安装版任务完成的五条历史引用错误及原生Stop绑定仍待插件修复的两处已有差异人工确认。精确main、合并后冷检与官网最终同步待验。 |
 | website | `ccdbfb4b`，精确 main CI 成功，来源6563/f57 | 六页双语EKO最终措辞草稿已独审，尚未应用；待CLI精确main与CI通过后同步实际来源、发现清单及联合gitlink，无部署。 |
 
