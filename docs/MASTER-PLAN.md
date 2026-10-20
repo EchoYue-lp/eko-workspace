@@ -2,7 +2,7 @@
 
 > **跨仓库当前事实源**。本文只记录阶段状态、前向路线、分层边界、验收门和可核验证据；不再保存逐轮实施日志。
 > EKO 是本机个人助理：`echo-agent` 是独立可复用框架，`echo-agent-sdk` 是独立 SDK 产品，`echo-agent-cli` 是应用层，`echo-website` 是官网。
-> 最后更新：2026-10-19（SDK 全能力治理阶段快照；尚未完成联合验收，历史阶段保留原验收范围）。
+> 最后更新：2026-10-20（SDK 全能力治理阶段快照；尚未完成联合验收，历史阶段保留原验收范围）。
 
 ## 2026-10-16 SDK 全能力治理（进行中）
 
@@ -17,9 +17,9 @@
 
 | 仓库 | 本 goal 已验收的 main 快照 | 最新开发 checkpoint 与未完成事项 |
 | --- | --- | --- |
-| framework | `6563d265` 生产治理目标；`f3fa0705` 仅补 Graph 测试证据，两者精确 main CI 各7项成功 | 任务分支 `5eeb8d47` 四文件checkpoint已正常推送：上一轮完整测试的3项旧project-rules oracle仅在测试中修正，同workspace/all-target/all-feature组合三项复测、Clippy/fmt及源码/证据/文件必要性独审通过，生产代码未变；原失败、资源中断、官方包级缓存回收和预检实际时序保留在原Evidence，不冒称native Hook或全套通过。`382cb600` 的配置化client构造与Intent、`f9906007` 的预算/模型、`674f2b41` 的保留ordinal/CAS及canonical/effective根System修复，保留各自有限三链和定向资格。累计38个必要文件已独审，广域Behavior未冒称闭合。已fresh fetch并合入仍为f3fa的main，最终六门禁和17独立feature正按同一干净5eeb快照重新执行，尚无全套结果；PR、精确main CI、官网镜像与SDK新Host消费继续待验。SDK生产pin目前仍为6563，无日志入Git。 |
-| SDK | `30d7e219` 历史独立仓验收 | `ab9ee4bd` 两文件正式来源补证已独审、严格验证并正常推送，仅记录必要e31/88a/4f标签的远端冷恢复。此前 `e9249765`、`24afef64` 各七文件Finding账本checkpoint记录Session基础提示词读缓存、锁忙返回伪空两项真实Host反例；与原模型切换、保留消息重复投影Finding均保持open，不以framework局部修复替代SDK新Host验证。Agent/Context两层原guard读取候选及错误校验/断言增量已独审C0并冻结在ignored区，未采用生产源码、未编译或运行after。`88a573b7` FS、GitCheckpoint和Plan十二文件三语言补证，以及Store/Plugin、演化八操作的有限资格保留，PR5仍DRAFT。原 `8481ba58` 的14条Rust零警告、workspace519项及Host `0982121c` 完整语言入口（TS354、Python440及18个subtests另计、Java377/76份fresh XML、三quickstart、#120各12场景）限定资格保留。新framework pin、合同生成与真实Host after、live组闭合、managed旧Linux根因、精确main及最终冷检继续处理。各checkpoint逐文件必要性经独审，无原始日志入Git。 |
-| CLI | `f57b90a2` 历史 main 验收 | `0d1bbd39` 六份最终文稿已独审推送，累计仍84个必要路径；7a33的六项本地Rust/GUI门禁及三项原版本依赖精确接受门禁已通过，运行代码和锁未变。P增量strict、真实f57基准等价候选的累计strict及32个历史源码身份冷恢复均获独审；安装版任务完成的五条历史引用错误及原生Stop绑定仍待插件修复的两处已有差异人工确认。精确main、合并后冷检与官网最终同步待验。 |
+| framework | `3560812c`：PR193 squash main，精确CI七项全绿，累计strict及远端冷恢复通过 | 本goal后继framework治理目标已接受为完整revision `3560812caede84998a1f6f26d7bf3fa81ea0486c`，tree与已审 `8138d81e` 精同。预算/模型发布、配置化client构造、压缩保留ordinal/CAS、canonical/effective根System及Intent回归均保有限独立复审；六完整门禁与17独立feature全0，完整测试3653通过、0失败、3个原有外部环境用例未执行、不计覆盖。累计38个必要文件经独审，无日志或临时副本；1764工程输入与实际门禁快照逐字一致。仅远端main及必要证据refs冷恢复后，38当前文件与1039历史源码对象一致，同一累计basef3fa strict退出0；原缺对象失败保留。原生产治理目标6563及Graph补证f3fa保其历史资格，广域Behavior不升级。SDK新pin/真实Host消费、CLI新框架消费者、官网镜像与联合gitlink仍待，不代替全goal验收。 |
+| SDK | `30d7e219` 历史独立仓验收 | `ab9ee4bd` 两文件正式来源补证已独审、严格验证并正常推送，仅记录必要e31/88a/4f标签的远端冷恢复。此前 `e9249765`、`24afef64` 各七文件Finding账本checkpoint记录Session基础提示词读缓存、锁忙返回伪空两项真实Host反例；与原模型切换、保留消息重复投影Finding均保持open，不以framework局部修复替代SDK新Host验证。Agent/Context两层读取修复候选及错误校验/断言已静态独审C0；F356接受后已按正规预检采用源码、更新Host pin和来源断言，锁文件更新中，原生成器及新Host验证继续执行，尚无新Host after资格。`88a573b7` FS、GitCheckpoint和Plan十二文件三语言补证，以及Store/Plugin、演化八操作的有限资格保留，PR5仍DRAFT。原 `8481ba58` 的14条Rust零警告、workspace519项及Host `0982121c` 完整语言入口（TS354、Python440及18个subtests另计、Java377/76份fresh XML、三quickstart、#120各12场景）限定资格保留。合同生成与真实Host after、live组闭合、managed旧Linux根因、精确main及最终冷检继续处理。各checkpoint逐文件必要性经独审，无原始日志入Git。 |
+| CLI | `f57b90a2` 历史 main 验收 | `0d1bbd39` 六份最终文稿已独审推送，累计仍84个必要路径；7a33的旧框架Rust/GUI与三项原版本依赖精确接受资格保留。预查确认普通历史导入两处checkpoint literal须补 `context_only: None`；正由独占子智能体在新CLI/F356兄弟隔离worktree准备，保primary及旧冻结候选，不改相对依赖或升级三依赖。尚未在新框架上编译/执行门禁，待SDK释放唯一Cargo窗口。P旧增量/累计strict及32个历史源码冷恢复保有限资格；插件两处已有差异人工接管、原生Stop、精确main及官网最终同步仍待。原CLI聊天已因网络策略失败，后续由协调线程委派子智能体接续。 |
 | website | `ccdbfb4b`，精确 main CI 成功，来源6563/f57 | 六页双语EKO最终措辞草稿已独审，尚未应用；待CLI精确main与CI通过后同步实际来源、发现清单及联合gitlink，无部署。 |
 
 框架 [PR #187](https://github.com/EchoYue-lp/echo-agent/pull/187) 已 squash 合入
