@@ -255,7 +255,7 @@ AI 编程常把一个任务拆成很多细粒度提交,逐 commit 跑全量门�
 - **格式化(强制,CI 依赖)** → `cargo fmt --all` 跑过**且** `cargo fmt --all -- --check` 退出码 0(零 diff)。CI 会跑 fmt 检查,**fmt 不干净的提交会让 CI 红**——本地必须先 fmt 再提交,不能依赖 CI 兜底。前端同理(`prettier --check` / 项目脚本)。
 - 只有"全部通过"这一个状态可以提交;不存在"大部分通过就先提交"。
 
-echo-agent-sdk 的依赖检查只按其独立 AGENTS.md 中经用户接受、绑定精确 Cargo.lock 版本组基线的 cargo-deny `warning[duplicate]` 特例执行；该特例不适用于 echo-agent、echo-agent-cli、编译警告或其它工具类别，原失败必须修复及提交/分支门禁保持不变。
+echo-agent-sdk 与 echo-agent 的依赖检查分别按各自独立 AGENTS.md 中经用户接受、绑定各自精确 Cargo.lock 版本/source 组基线的 cargo-deny `warning[duplicate]` 合同执行；framework 本次仅接受锁 SHA-256 `7607c1458036adc04e64858215e21d45f7f8ae1ffa992ad82fba97e7a72aa528` 的49组，并非从 SDK 自动继承。两仓均保留官方原始输出及自然退出码，其它类别、新组/少组、版本或来源变化仍阻断；本句不授权 echo-agent-cli 例外或修改编译警告、其它工具门禁，CLI 的独立人类裁决由其 owner 另行同步，原失败必须修复及提交/分支门禁保持不变。
 
 #### 1. 迭代快检(开发过程中)
 
