@@ -2,7 +2,320 @@
 
 > **跨仓库当前事实源**。本文只记录阶段状态、前向路线、分层边界、验收门和可核验证据；不再保存逐轮实施日志。
 > EKO 是本机个人助理：`echo-agent` 是独立可复用框架，`echo-agent-sdk` 是独立 SDK 产品，`echo-agent-cli` 是应用层，`echo-website` 是官网。
-> 最后更新：2026-10-11（独立 SDK 第四 submodule 收口、Background Review 验收闭合；其它阶段保留原验收范围）。
+> 最后更新：2026-10-22（四个子仓本轮验收已闭合，顶层集成按下列精确指针；历史阶段保留原验收范围）。
+
+## 2026-10-16 SDK 全能力治理（2026-10-22 联合验收）
+
+治理范围仍以明确接受的跨语言合同为准，完整 Rust public inventory 仅作遥测。
+用户已批准 Workflow `protected_claim_v1` 与
+`workflow_checkpoint_protect_claim(checkpoint_id, attempt_id)` 反向操作：原 Store 在节点副作用前
+保护同一 claim，未知执行不能因租约到期重跑，也不能由 CRUD 解除；缺能力时执行前明确拒绝。
+取消结算采用已批准的 B：观察等待有界，原物理执行、claim 和 permit 保留到原执行真实结算，
+不得用超时、丢弃 handle 或合成终态替代。正式合同、实现与限制分别由 framework/SDK 维护。
+
+本 goal 当前验收与开发状态如下；后文各切点保留原历史范围，不替代本表的待办。
+
+| 仓库 | 本 goal 已验收的 main 快照 | 最新开发 checkpoint 与未完成事项 |
+| --- | --- | --- |
+| framework | `f7bac62e`：PR197，精确main七项CI成功，独立冷恢复与严格检查C0 | 已正式接受完整revision `f7bac62eee04a963f92a3e4308b6ea2336e91cc0`。原始main CI39605663648七项SUCCESS；新EMPTY GitHub-only冷仓2332输入/source8506、27必要tags、固定950a strict及真实base6849 change检查均0，最终proof独审C0。通用prepare_run driver仍由同一Run/receipt权威结算；历史两entry RED2→GREEN2、runtime15及adapter31分组独审，不相加或借此证明SDK原12已过。最新六完整工程门禁actual3664通过/0失败/3原环境忽略；父环境CARGO_TERM_COLOR=always时，原policy5五项真实0；scanner子进程never及strict49不变，CI含原14及8项单元，49版本组与107来源精确匹配。人类仅接受锁7607的精49 duplicate合同，其它warning、新组/版本/source或编译告警仍阻断，官方原始输出和自然退出码保留。旧6849 CI的scanner0/ANSI gate1、网络/资源失败的UNKNOWN及首个其它actor错误UNKNOWN保原切点，不倒推为flaky或已查明。原1d/ebc/356及预算、custody范围见历史，不复标当前；旧#120已按严格水位范围闭合，F四path历史账本亦已正式闭合，不扩大为managed未知或全goal。F BF自有L1 target经官方DEV清理，全139保护项零漂移、target8192B/free约19.322GB，最终必要性独审C0；这只是当时F owncache清理观察，不是CLI清理或SDK runtime授权，SDK默认约8.113GB cache未动。官网a29已同步本Ff7与CLI0616，最终联合gitlinks只引用本表已接受的四个main。 |
+| SDK | [`7138de2c`](https://github.com/EchoYue-lp/echo-agent-sdk/commit/7138de2ccc87f8967129c8bd7859dee1f84ec736)：PR9，最终文稿及精确main九项CI、冷恢复、独审通过 | 既有工程及模型验收锚点为完整revision `eb22398676310fcbd67e9f4babe4afcefd56ed06`，soleparent为已验工程main a9f267，tree `be10d293b702898bffeaedc46720d3e59e9c4d72` 与已审ed8任务快照一致、签名valid。最终材料精9路径（1A/8M）必要性独审C0，无raw、缓存、控制脚本、数据库、二进制或源码副本入Git。四whole与人的唯一裁决已正式落盘：50 Behavior verified、75 Finding resolved、1 risk_accepted、0 open；accepted inventory/model closed，97 Audit仍只表示各具名假设已examined。[原push CI39720432985](https://github.com/EchoYue-lp/echo-agent-sdk/actions/runs/39720432985)九job原attempt1全SUCCESS；原Linux Host、Windows及完整语言日志独审C0。Linux原bridge31/core33/facade12与无reverse具名1（25原selector过滤）分别通过，不跨feature相加；managed具名回归仍在原10秒首Host被动等待内返回，但不证明首Host退出码0。用户仅接受历史超时首因UNKNOWN这一残余，修复/验证/复审三链仍空、原失败保留、后续同类失败仍阻断；两个bridge共享同一裁决，资源/客户端依自身证据结算。Windows三语具名原生case各1通过/0失败/0case skip、各4真实调用，PY/Java fresh XML和UTF-16证据成立；不扩大为全Windows套件。精main Linux完整入口TS363通过另1平台未运行、PY450通过另1平台未运行及18成功subtests、Java原mvn-q与三个quickstart在Temurin17成功；不借本机Java380/76XML冒CI计数。新空仓仅GitHub main与36必要tags恢复1227文件及必要历史锚点，tree/source afbd逐byte-mode一致；固定950a strict/basea9/change检查实际0、71.33秒，原初始化回执错误在首次fetch前修正并保原件，独审C0。本机33原96样本/4大墙钟缺口UNKNOWN、Channel/Workflow真实不完整close及protected claim/receipt未知边界保留。Host接受Ff7bac、锁1c865、accepted5621 identity-kind/454routes不扩；原14 Rust/合同/三policy按193编译与支持输入连续性承接原范围，4项Rust库存漂移仍仅遥测，不自动update117。正式SDK事实归[来源Evidence](https://github.com/EchoYue-lp/echo-agent-sdk/blob/eb22398676310fcbd67e9f4babe4afcefd56ed06/.echo-semantic/evidence/evidence.sdk-source-continuity.md)。本地ed8/PF、原4 pyc/old19及Host/collector保留以承接协调资源义务，任何已退休普通镜像由明确归档/恢复索引/实际journal后继承接，不伪称原位仍在。最终集成接受后继main `7138de2ccc87f8967129c8bd7859dee1f84ec736`（PR9、tree e879b1f2、单父eb223986、服务端签名valid）。六处current-status文案M1以精8路径修正，语义及必要性双独审C0、193工程输入/代码fence/历史原文不变。新原push CI39739735628 attempt1九job全部SUCCESS，三原关键日志独审C0；本轮Host managed具名通过、bridge31/core33/facade12及无reverse具名1（25原selector过滤）分别通过，Windows与完整语言入口亦按上列限定重新取得实际证据，不借旧eb CI。新空冷仓1227输入与原36tags/digest b4cc逐byte-mode一致，固定950a strict/baseeb/change检查实际0、71.41秒，独审C0。首次HTTPS fetch128原件及首因UNKNOWN保留；修正脚手架到原SSH配方后，唯一获授权的第二网络尝试fetch0、strict0，不冒称整体首次通过。辅助计数脚本字段错误保留且仅修读取，不重跑冷门禁。最终SDK资格已闭合；原eb锚点文稿无需追自身新CI再开ack PR。原4pyc、历史原件、outside副本及归档保护继续保存，无运行时、API、117库存或风险接受范围扩张；插件native Hook/Stop专项撤回，普通保护保留；无registry发布或网站部署。 |
+| CLI | PR12 main `0616c6cd`：按本次精确人类风险接受验收；原CI仍失败 | 接受完整revision `0616c6cd25e2496c6940b74c983f4ffa08003518`，由任务checkpoint a4f03fb8普通快进复用PR12后squash合入，tree526ba4/单父f57b90a2。90路径及最终六份材料必要性独审C0，无raw、缓存、控制脚本或二进制入库；原13处dirty工作区保留。消费clean framework f7bac/2332、consumer e46/锁d2e7；本地原full8加factory格式检查九命令均0，workspace1978通过/15原忽略、GUI226通过/3原忽略，配置分别计数，nested selfprobe不另加，原17为通过集合子集。最终fresh policy3也0：官方DB4b587/1348 advisories/839依赖、零漏洞/精六warning，原scanner自然1、独立riskgate0；原三依赖冻结及本次精六合同不变。303编译/测试/工具输入等价承接到a4f/0616；固定950a strict与artifact均0。GitHub-only精main冷恢复独审C0，945输入/tree526一致，仅main、两既有tag和固定PR12/head历史来源；当时未测冷仓峰值等指标，不追溯宣称后加caps通过。原main CI39730818227确实失败：quality/frontend成功，Linux app-core1646通过/1失败/9原忽略，唯一cold-compose具名用例5秒观察超时，aggregate正确失败。用户2026-10-22明确接受下方F-CLI-CI0616-COLD-COMPOSE-01残余，本次不再阻断官网及联合交付；原失败与根因UNKNOWN保留，不称CI全绿、已修复或机器资源已证实。Mac原二进制控制及阶段诊断通过只作有限证据；不自动接受其它测试或后续新增失败。后续负控与修复扩展已取消；在途V1自然通过仅作Mac取证，未执行V2。测试已恢复原7ef277字节、runtime4f1从未修改，945输入/2332框架输入/保护项末核通过，工作树干净且无残留重型进程；保留原诊断但不把候选二进制冒充已恢复源码或Linux修复。Framework/SDK独立验收保持，官网a29的来源采纳及精确CI均已验收，最终gitlinks按本表绑定。原资源准入失败、精10恢复保护及已撤回插件边界不变；无发布或部署。 |
+| website | [`a29d6769`](https://github.com/EchoYue-lp/echo-website/commit/a29d6769030639df0745b8bd3599c127e79d1799)：PR7，精确main CI及独立复审通过 | 正式接受完整revision `a29d6769030639df0745b8bd3599c127e79d1799`，tree58cbd641与已审checkpoint c1740841一致、单父ccdbfb4b、服务端签名valid；普通match-head squash，无policy绕过。相对main累计20必要路径：12篇framework镜像、6篇既有双语EKO页面、manifest及官方llms-full；必要性与来源/语义独审C0，无raw、缓存、二进制、脚本、锁、路由或SDK投影改动。精绑定Ff7bac与CLI0616，290框架镜像逐Git字节相同、118 CLI来源与8页EKO投影集合/身份不扩，298个发现文本段落与正式正文一致。6条本地命令自然0；39单测、306静态路由、真实Chromium15通过/1既有desktop移动专用条件跳过，其mobile同例通过。原push CI39738054426 attempt1的verify119688331537全部22steps成功；原日志实际checkout官网a29/Ff7/CLI0616，source-aware、39/306/15+1具名结果均成立，精main独审C0。平台/action弃用提示保留，不称零CI警告；CLI人类例外不充官网豁免。工作树clean-detached精main，任务分支依规范删除，所有本地产物保ignored；未部署、未执行部署脚本。SDK后继7138资格也已验收，最终顶层gitlink统一绑定本表四个main。 |
+
+联合验收只引用已推送的 framework `f7bac62e`、SDK `7138de2c`、CLI `0616c6cd` 和官网 `a29d6769`。
+顶层正式合并范围仅 `AGENTS.md`、本文与四个gitlink；SDK能力边界、逐场景证据和延期/Rust-Host合同由SDK正式文档维护。
+SDK的历史managed残余与下方CLI单次CI残余分别按人的明确裁决保留，不计为修复；后续失败仍按原门禁处理。
+registry发布、官网部署及已取消的插件派生专项不属于本轮交付。
+
+### CLI 精确 main CI 残余风险裁决（2026-10-22）
+
+- Finding：`F-CLI-CI0616-COLD-COMPOSE-01`，状态 `risk_accepted`。只绑定
+  `0616c6cd25e2496c6940b74c983f4ffa08003518`、[原 CI run 39730818227](https://github.com/EchoYue-lp/echo-agent-cli/actions/runs/39730818227)
+  和 `plugin_runtime::tests::canonical_compose_binds_cold_workspace_owner_before_boot_dispatch`
+  的本次失败；该 run 的测试与 aggregate 失败状态均不改写。
+- 人类裁决：用户在侧聊解释本地通过与 Linux 根因未证实后，明确接受本次残余并要求通知主线程；
+  本线程已收到其可信转达。用户原话：“github ci 会收到机器、资源等限制。我觉得ci 可以忽略这个问题。”
+  侧聊来源为 `01a1623e-e31b-7bc3-bca0-eb09d7bbc520`；此临时聊天不支持原文读取 API，
+  不声称协调者另行读过侧聊。该裁决覆盖本次原零失败验收要求中的唯一例外，无需重复确认。
+- 证据与限制：本地原完整门禁、原二进制控制和阶段诊断实际通过；原 Linux 具名用例超时失败保留。
+  根因为 `UNKNOWN`，机器/资源解释未证实。修复、修复验证、修复复审链为空，不能标为 `resolved`，
+  也不能称原 CI 全绿或 Linux 修复已验收；已有诊断及候选复审不充当上述修复链。
+- 后继义务：仅解除本次具名失败对官网与最终集成的阻断，不新增测试 ignore、重试、延长超时或工作流豁免。
+  其它测试、其它类别及后续新增失败仍按原门禁阻断，不自动继承本裁决。临时诊断与负控候选不进入正式 CLI 提交；
+  本次跨仓验收账本由顶层维护，CLI 受接受的 main 内容保持不变。
+
+框架 [PR #187](https://github.com/EchoYue-lp/echo-agent/pull/187) 已 squash 合入
+`875cc22f2e99c7ccd83c07e02c03fe221c5e3f6c`，签名有效、tree 与已审候选一致。
+精确 main CI `38849170013` 的六项运行时/平台 job 成功，依赖策略 job 因
+`zip 2.4.2`、`zip 8.6.0` 已撤回而失败，因此该提交尚未通过交付验收，SDK 不升级到此快照。
+后继修复 [PR #190](https://github.com/EchoYue-lp/echo-agent/pull/190) 已合入
+`9886502c83d6b1f6fa9212eb221db0e5874deaee`：保留三个媒体父包的 API/feature，适配非撤回的
+zip 9，并补齐 path/Git 来源的 registry-origin 审计；正式决策见框架 ADR 0089。
+六项完整本地门禁及 17 项独立 feature 检查全通过，主测试计数 3,622 成功、0 失败、
+3 项既有 opt-in 忽略；不重复计入两个子进程结果。独立复审、必要路径检查通过，签名有效、
+tree 与已审候选一致；精确 main CI `38862267005` 七项全部成功，远端冷克隆的严格语义
+检查通过。按用户“旧提交无法找到则按最新代码审计、处理”的明确裁决，相关能力重新绑定
+当前源码与已执行用例；不宣称恢复七个缺失历史 tree，也不把旧红绿记录作为新执行。
+本轮框架验证后官方 `cargo clean` 移除 7.2 GiB 缓存，源码及证据保留。
+
+SDK 后继 B 场景在上述固定 `9886502` 来源上又确认一个 ACP 集成缺口：原 driver 返回
+`ExecutionNotSettled` 并保留 lease 后，其错误直接进入官方 `connection.spawn(task)`，按
+ACP actor 合同关闭整连接。原 Host 自行退出2，不是 `run_wait` 的正常有界等待，也不能
+把 foreign physical exit 当作原 Run 收据。唯一框架子智能体已接手原干净隔离工作区的
+`fix/Echoyue/acp-run-task-error-isolation`，先以官方连接复现，标准 adapter 与 SDK 通用入口同审；
+RunRegistry、lease、receipt 权威保留，SDK 不吞错或复制状态。该反例首先按988复现，
+必要修复的来源资格与后继消费者升级分别验收，旧 CI 通过不覆盖这条新反例。
+后继开发 checkpoint `30b9bf0539efbec838f6229e7736e5889b483639` 已提交推送，精13个
+文件及 tree 与审定候选一致。原官方 ACP 连接两项真实 red 在最小修复后同例通过，
+29项 ACP 集成、43项 ACP 单元和 focused Clippy 全通过，独立实现及必要性复审 PASS。
+新 `wait_result` 只暴露原 Run 的非终态观察，真实 receipt 优先，原 lease 不释放；未新增
+三语言合同。原 canonical 的精 Git 候选严格/真实988基准变更检查通过；当前0.5运行态
+校验的历史引用、闭包与范围限制单列，不称原生 Stop 通过。[PR #191](https://github.com/EchoYue-lp/echo-agent/pull/191)
+的最终文稿 checkpoint `b7319a81e8c24b1b595e0daee74ea52828512547` 已提交推送；累计仍仅
+13个必要文件，无原始产物入库。后继同源码的六项完整门禁实际全0、零告警及输入漂移；主87个 harness 共
+3627成功、0失败、3项既有 opt-in 忽略，两个各1成功的嵌套 echo-state 子进程单列，不将
+原始3629合计当主计数。17项独立 feature 矩阵也已全部退出0；文档合同15项通过，最终
+独立实现及必要性复审均 PASS。PR 已正常 squash 合入
+`6563d26570cc4a8d93c86b7e37443b0559476807`，签名有效、唯一父为988，tree 与最终已审
+候选完全一致；精确 main 的 canonical 严格快照及真实988基准变更检查实际通过。
+精确 main CI `38958501642` 七项全部成功，协调者独立核对远端身份及各 job，正式接受
+`6563d26570cc4a8d93c86b7e37443b0559476807` 为后继治理目标。SDK 与 CLI 先完成当前
+988切点的有限里程碑，再在各自冻结边界升级并重验；不将新框架通过冒充消费者已验证。
+仅官方清理本任务独占 target 后回收7.97 GiB，源码及证据校验不变，不动 SDK/CLI 缓存。
+
+SDK 下述历史 checkpoint 固定已通过 CI 的988来源；后继6563切换及新 Host 资格见本节后段，
+各切点结果不互相替代。
+[PR #5](https://github.com/EchoYue-lp/echo-agent-sdk/pull/5) 的开发 checkpoint
+`637a308e0d1c7f13339d279eb1f91aedfb403685` 已推送，修复 canonical generator 对 workspace
+membership 的选择，独立复审和对应 9 项测试通过。后继已推送 checkpoint
+`4ca17639265af41b5a39586331346f165d1a610f` 保存当前锁的依赖复验及必要元数据修正；
+两项 audit 在既有配置下退出0，deny 保留49组原已接受 duplicate、没有增量，不把它称为
+零告警。28 profiles 的唯一生成与合同检查已经完成，仍不代替后继 runtime 的验收。
+后继 `55bf069cf75832416f5d61ba247cd6b7df5cd25c` 已提交并推送，仅将22份历史对象的
+23行版本字段绑定到可恢复的 `019e700279677a2eb77e265b5038d9d581bc22da`；对应完整源码
+摘要 `2bbd6457d7b6ea031b8999d1466d85f5a5c1d2d994218d45f008ed6d5f1fa276` 和947组
+来源引用已用原校验器核对，独立复审 PASS。正文、状态和原失败范围未重写；不代表其余
+新材料、baseline、完整 runtime 或 main 验收通过。
+
+Issue #120 的具名场景在不可变 Host `45fc7b267941864f4528f55d8d7373d048f5afc824b2fb389c7c8c8fbc680abc`
+切点取得 TypeScript 12、Python 12、Java 9+3 项真实通过，零失败、零跳过，独立复审 PASS。
+182项生产/合同输入和语言来源已核对，包含 snapshot ACK 后严格更大水位的 replay/live
+continuation、迟到 ACK、terminal EOF 与 journal 换代；Java 两次运行互不重叠。
+它不证明后继 callback 改动后的最终整套、SDK main 或外部 Issue 已关闭。
+
+callback observer unwind 提前释放，以及 invalid ACK 被投影为普通终止错误，均已取得真实
+before；后继同源7项 focused 通过、局部独立复审 PASS，保留原 guard/lease/配额与 foreign
+身份边界，宽 Finding 继续 open。保存的 dev opt1 配置保留 assertions、overflow checks 和
+unwind，删除旧链接告警屏蔽；无 opt-level/assertions/overflow/panic 环境覆盖的 Host
+构建实际退出0、零告警，产物
+`8bf4a1d6deb647e608153c807ca07785dd31f7d3223a88cc3daf9b835b8bff5c` 的 EH 为15,489,244字节，
+低于16 MiB，保存配置下的 unwind focused 也通过。A/B 累计 Rust/protocol/pin 必须按真实
+依赖边界验证和提交，不能仅 stage 局部代码而借用完整 dirty 树的通过结果。
+
+CLI [PR #12](https://github.com/EchoYue-lp/echo-agent-cli/pull/12) 的开发 checkpoint
+`c874a79aa25f8bef16ba4df2e809ceb447bb1604` 已推送，compose 早绑定、Running/Paused
+恢复和既有 run 身份/错配拒绝三项定向验证各通过 1 项。后继具名 cron 场景实际1项通过并
+经独立复审；channel 丢失观察身份、GUI launch 把 pending owner 写成 Failed 两条独立
+before 均已复现，两个同例 after 与普通错误/正常/continuation 等控制共6项通过、独立
+复审及15路径必要性检查 PASS。验证使用与实际 CLI 字节/模式一致的冻结消费者和干净
+framework `9886502`；不称原生 Tauri UI 或 OS 物理执行验收。all-target/all-feature Clippy
+后继实际失败过4项测试 lint；最小修正后原命令 v2 已退出0、零告警，源码与干净 framework
+均无漂移。两条局部修复、6项测试与该 Clippy 分别验收，不称其余完整门禁已通过。
+这些行为修复、对应测试与必要文稿已在
+`dfd5750ce1b00ac1e36a2e778d469f2c3e82b62c` 独立提交并推送；24个必要路径不含原始
+日志、临时产物或会话预检。普通、strict 与变更证据检查通过；绑定任务/会话的仓库收据
+仍因将5个历史 Git 引用当成当前文件读取而失败，已交插件专项调查，不修改历史锚来消错。
+
+用户已明确保留 `glib 0.18.5`、`proc-macro-error 1.0.4`、`bincode 1.3.3`，记录风险并延期升级；
+停止相应升级、替换与回补研究。三项真实审计告警及 exit1 保留；CLI 上述提交已保存精确
+Decision 与 `risk_accepted` Finding，绑定版本、registry 来源、checksum 和消费者闭包。
+当时门禁处置尚待验证，不称告警消失或缺陷已修复，也不扩大其它告警/编译/测试豁免。
+后继窄 checkpoint `32c6719d4f15c4c27b59258a7ff22579357dfe11` 已提交并推送，实现
+精确风险门禁及6个反例测试方法；11个文件的独立必要性审查 PASS。官方 actual-lock 与
+干净 framework 来源重建的 registry-origin 在线扫描均保留 scanner exit1、三项告警、
+零漏洞，单独风险核对 gate0；未关闭 fetch。该次只对扫描进程指定 HTTP/1.1，默认 fetch
+失败原件仍保留，不推定更底层原因或默认 Linux CI 已通过。四类 panic Clippy 实际通过。
+新全范围复审另发现 shared chat preparation 将 `RecoveryBlocked` 字符串化并错误释放
+foreground 的缺口。后继 `629de1ea95627ce8284dae1fcf56221b7d0be476` 已修复并提交推送：
+原持久化 pending-intent 重开后的共享入口实际 before 失败，普通错误对照通过；同两项
+after 全通过、零告警及输入漂移。四种 surface 参数仍只算一个顶层用例，不称原生界面
+E2E。10个必要文件经独立审查 PASS。风险门禁先拒绝新源码，再经独立确认消费者边界未
+扩大后重评指纹；锁和三项身份不变，后继双在线结果仍为 scanner1/gate0。旧完整测试在
+编译阶段由其唯一 owner 停止，没有行为结果。新切点两类 Clippy 均实际退出0、零告警和
+源码漂移；完整 workspace 的首次运行在行为用例前被9 GiB target 守卫中断，原件保留为
+资源中断，不算产品 red 或通过。仅官方清理本任务独占缓存后冷跑原完整命令，预算及
+覆盖不变；该轮进入行为后出现多项真实失败，另两条忽略 cancel 的永久 pending fixture
+无法产生 EOF，已保全未完成结果并仅停止自有进程。代表用例确认 foreground 的关闭分支
+可能抢先吞掉已发布 Cancelled 收据；产品读序和资源 scope/真实 EOF/故障阶段等 fixture
+问题分开修复，保留强断言，不将全部失败归为 fixture。完整命令、no-default 及 GUI 门禁
+均仍须通过，前述局部结果不能替代。
+后继精确46例重跑为40成功、6失败、0忽略，零编译告警及输入漂移；parked 与
+aborted-reporter 两例确认原终态写入债务的资源被提前释放，分别保有真实 red 和独立
+before 产物。现有债务结构携带同一物理 owner、严格确认后才释放的最小修复正在验证。
+其余失败涉及真实进程退出模拟、恢复/续跑及故障阶段预期，逐桶保强断言调查；不把
+caller future abort 当作进程死亡，也不把目录缺失/不可读直接推为无未结算意图。
+后继冻结组合48项实际全通过，零失败、零忽略及来源漂移；原 parked/abort、错误owner、
+来源IO、重复ACK、目录恢复及真正子进程退出后重开等控制分别保留。另一个明确声明
+输入差异的原产物反例实际失败：取消已真实完成后遇读取错误，原兜底把债务目标写成
+Failed，预期仍为 Cancelled。后继复用原取消目标修复该分支，原失败、同owner journal、
+单次receipt及精确产物均保留。最终 focused49 实际49成功、0失败、0忽略、零告警及输入
+漂移，来源仍为988；不借此覆盖6563后的完整门禁。必要修复及证据已在
+`e0f09e80743c7a784ff43bf590f083e7de43fec3` 提交推送；协调侧独立累计检查 main f57 至该
+提交的83个路径，全部有保留依据，无 raw/log/PF、临时产物、凭据或新增发布路径。
+风险仅重绑消费者指纹，版本、锁和三项接受身份未扩大。后继
+`9819a51318df04996103b8b56b2413e59822cb20` 仅补两份历史来源持久化文稿，固定增量独审
+通过；累计84路径均有必要性，无新增运行代码或告警豁免。两条精确 evidence refs 的远端
+对象、冷仓32条唯一来源及9份对象已独立核对，不借此改写历史观察或声称原生 Stop 通过。
+独立 CF 已 clean 切到6563；945项新来源已冻结，完整门禁及精确 main 仍待。
+该切点的原完整 workspace 命令后继实际退出101：app-core 单测1647成功、9项既有忽略，
+嵌套子进程单列；CLI 库285成功、3失败，后续目标未完成。运行无源码/CF漂移或资源中断。
+Channel 原 driver 的实际提前失败与 GUI 均确认缺少测试前置的应用 lifecycle owner；
+TUI 原静态字符串提取越过 resume 分支，不能据此认定真实输入进入 ingress。后继复用
+公开 owner 绑定并保持原强断言，以真实 TaskRun/Goal 与输入事实验证 TUI；全量仍须重验。
+CLI 已按用户指令无损迁入 primary `echo-agent-cli` 的
+`fix/Echoyue/cancellation-observation-primary`，C 工作区保留备份；primary framework 的 Exa
+任务改动不纳入本次验证。旧 Cargo paths 覆盖产生不支持的依赖图告警，未用于验收。
+
+SDK 后继 `335193791c70a6cb077033c3f8f0cb1223e5266e` 已正常提交并推送，74个文件的
+提交树与最终独立审阅树一致，无原始产物入库。A/B 累计生产、协议、三语、生成物和必要
+文稿按真实依赖共同纳入该切片，验证限于下述实际用例；另9条独立 Task/protected-claim
+fixture 与平台诊断路径仍未纳入。
+保存配置四项 dev 行为唯一归原 config；无行为及 Rust warning flags 环境覆盖，保留原
+debug/strip/inc/jobs 资源设置的 Host 构建实际退出0、零告警，新产物
+`14a0cb58c44bdb84990262f1324e1a2513513a8b40fc0640a9d36f91f95e27e9` 的 EH 为15,488,572
+字节，unwind 信息保留。当前共同切点的 drain 两例、unwind 和 direct-run 各一例全通过，
+三语言 late-payload 各一例通过，611项语言输入无漂移；旧7控、纯回归及#120另保原切点。
+原 canonical 的严格快照、真实基准变更依据及必要性审查通过；19处缺标题及后继来源已
+修正，不等于本地原生 Stop 或完整运行验收。deferred 原脚本已修，2528项完整互斥分组，
+accepted 仍5621，均不以库存数量充当完成率。
+
+官方对象解析在该已推提交为65 resolved/5 open：三项 Workflow Finding 纳入交付，direct-run
+与 late Completed 两个具名缺陷在当前三链、真实验证及独审后有限 resolved；历史原件保留。
+其余宽 cleanup、Sandbox、Task resume、Graph claim、managed exit 仍 open，均为已接受行为
+或必要 Host 生命周期，不能整体 deferred。B fixture 仍需修复普通 turn 可缺 `run_id` 的
+假设，严格区分 foreign producer 与原 TaskRun/attempt 回执。protected-claim 的旧三语言
+30步核心校验的 Java 关闭失败已取得分阶段事实：原 Host 在 native writes 完成后仍活着，
+五秒时由既有 SDK watchdog 回收为137，并非 stderr/dispose 卡死。后继 A 有限 checkpoint
+`404d447f1a69fb4af2843272005b894063888ed9` 已提交推送14个必要文件，精树与已审候选
+一致；三语 A 各一例通过，Java 另有合法 local-close 控制一例通过。测试允许本机 transport
+清理成功，但无原回执的 A 场景要求实际 Host 非零退出；错误分支精核 typed timeout、
+原取消地址、同 owner retry 及清理后 backend 不变，不把137或 transport retry 叫作自然
+退出、业务 receipt 或 claim 结算。5份旧来源元数据仅无损改绑可恢复 Git335，canonical
+严格/真实基准检查、局部独审及 artifact 检查通过；B四路径和 Linux诊断一条仍未提交。
+原 target 下358份诊断已按 bytes/hash 固化到 ignored local，未提交 raw。宽 Graph Finding
+仍 open，外部进程退出不能替原 callback 回执；这些局部闭合不关闭外部 Issue #120、SDK
+main、持久恢复义务或整体治理。
+五项 open 已只读盘点：Sandbox 原 connection-scoped 实现及 cleanup 先于 Cancelled 的
+强断言已有；Graph 的 Memory/File、renew/expiry/reopen/CRUD 上游证明也已有，不能泛称
+整组未验。后继按精确来源复用、补必要当前用例及正式三链和独审；原历史切点的 Graph
+foreign/lateUnknown 仅源码审记录保留，后来补证单列于下段。宽 cleanup 的未证入口与
+独立 Linux 十秒诊断仍具名待办。
+Graph 后继测试 checkpoint `c1547d6b92201fd3c702782fe0972e1a99e13318` 已提交推送：补齐
+foreign 观察不被本地观察覆盖、terminal 后 Unknown 不借先前收据两项负例，五项控制及
+默认 workflow 子集93项实际全通过。生产前缀、Node、Store 不变，未出现产品 red；7个
+必要文件、最终严格/真实6563基准检查及独立复审通过，无原始产物入库。后继同一精确
+提交及1023项冻结输入的六条本地 main 门禁已全部实际退出0、零告警和来源漂移；主87个
+harness 为3629成功、0失败、3项既有 live opt-in 忽略，两个各1成功的嵌套子进程单列。
+两条新增负例及原 matching 正控在全套实际通过。最终7个必要路径及薄文稿经独立复审，
+[PR #192](https://github.com/EchoYue-lp/echo-agent/pull/192) 正常 squash 合入
+`f3fa0705f62fe813a5a86bc41cd673f82f915a61`，唯一父为6563、签名有效、tree 与已审候选
+一致；精确 main 严格语义/真实6563基准变更检查退出0，精确 main CI `38972460664`
+七项全部成功，协调者已独立核对远端身份和各 job。该补证切片完成交付；不改变 SDK
+已接受6563生产 pin，也不把 Memory 同实例反例扩称跨 provider 或重启持久化验证。
+新 target 的90份引用可执行产物已压缩并逐成员核 SHA，137份原记录前后 hash 不变；
+仅官方清理本任务独占 target 后释放6.38 GiB，未触及 SDK/CLI 缓存。
+正式 Task 后继 checkpoint `fa62f3b3d0df3ed5b14c6d9786dfffce5db57da6` 已提交推送，精树与
+审定候选一致；13个必要文件经独立复审，foreign/Linux 原工作差异保留，无原始产物入库。
+仅供后续 foreign 的 UUID 缺省分支已从该候选剔除，要求原 Task 双身份；输入变化后全新
+TypeScript/Python/Java 各5项完整 Task 套件实际通过，零失败、零跳过，611项输入各无漂移，
+原四类经典场景仍覆盖。同 claim 的 A 只由原 matching attempt 完成一次结算，B 即时
+提交 canonical 结果，C/D 消费原依赖结果，B execution 不变；结果限于988/14a切点。
+原 ADR0060 和 Tasks 文档明确 next wave 等待本 wave 全部结算；unknown A 仍持 claim 与
+已结算 Paused 不同。新用例原“释放 A 前 C 必须完成”的失败保留为超出该合同的 oracle，
+不降低原 Paused 场景的独立继续断言，也不据当前实现新增调度承诺。
+后继6563 pin 的依赖解析已退出0，656个包的版本、checksum和依赖边不变，仅11个 Git
+来源改精确 revision。唯一生成入口实际退出0，28 profiles、117项产物；5621个 accepted
+身份及454条路由不变，5份阻断/共享合同逐字节不变，仅4份非阻断遥测变化。
+新增 `RunEntry::wait_result` 归 process-local Host/Rust intrinsic，不进入三语言合同。
+官方合同检查实际退出0。新保存配置 Host 构建实际退出0、零告警，产物
+`ac4332105734bbedda144b5c033fedc6610de4b5b9d9a5a0c11dd4953a28a87f` 的 EH 为15,491,256
+字节，保留 unwind；原14a产物与新产物均保全到 target 外。不借旧 Host 验收新 pin。
+同 dropped-next 原 waiter 的 quota 单测实际1项通过；Sandbox 原强断言用例补齐原 RPC
+真实 Cancelled 回应后同例1项通过，原失败保留为失效 oracle，不称新增生产缺陷。
+SDK 历史335/404/637的精确 annotated evidence refs 已按既有来源策略推送；独立空仓只从
+远端 main 与三条显式 refs 取回，8份对象、11组观察及42条引用逐字节匹配，无 task branch、
+PR 或本地对象借用。它只关闭这三条来源持久化缺口，最终 squash main 冷检仍待。
+后继官方语言入口实际退出1：完整 telemetry collector 编译退出0、原 Host ac433 复用，
+TypeScript 354项中351成功、3失败、0跳过，Python/Java 尚未启动。三例分别涉及迟到的
+factory construction、Workflow stream owner cancel/close 与 cancelled tool callback；
+独立源码复核发现旧测试未释放原物理 owner。第一轮修订后最窄运行中 Workflow 三语和
+TS Tool 通过；Factory 新增的回执检查却误读只记录 Host→SDK 的单向 trace，Java 另将
+invocation timeout 错当成必须取消独立 cleanup owner。此前源码复审漏核这两个边界，
+已由实际失败纠正，原审查和失败保留。后继只给既有 proxy 补方向明确的真实回传记录，
+并验证原超时之后 cleanup 仍由原 owner 持有；不改生产、Host、pin 或超时，不制造收据。
+后继实际复验已完成：TS3、Python2、Java3全部通过；再补强原 RPC 唯一回复断言后，
+Factory TS1、Python1、Java2实际全通过，零失败、error、skip；独立源码及原始帧/日志复审
+通过。两切点按未变输入衔接，不重复计数或替代完整官方入口。
+有限 checkpoint `410e0f1d857bbf8bcfd805376638794697524de9` 已正常提交推送：29个必要
+路径经独立复审，tree 与最终候选一致，canonical 严格快照/真实 main 基准检查、artifact、
+fmt 和对应语言格式检查通过。仅纳入已资格6563 pin、必要官方遥测、原测试修正及薄证据；
+候选四份 Task 文件采用 fa62 原 blob，foreign 后继改动保留为工作树差异，未纳入本提交。必要历史来源
+fa62 已有精确 annotated evidence ref，远端 main 加该 tag 的空仓冷取回、七个来源 blob
+等价均独立核对通过；旧 Task 的988/14a正文和状态未重写。
+协调者已独立核对公开 SHA、tree、父提交及 PR #5 head；PR 仍为草稿。原官方全语言
+第二轮后继实际退出1：TS354项中353成功、1失败、0跳过，Python/Java 未启动；前述三类
+oracle 本轮均通过。新失败已定位到 collector 启动清单的 create/write 窗口：文件存在时
+内容尚为空，真实 Host 尚未启动，业务 flush 未执行。后继修正原进程的完整清单就绪条件，
+保原期限、退出与清理边界，先验证已声明的瞬态读取反例，不伪造 ready 或业务成功。完整语言与
+Rust、四份后继 Task 改动、五项 open Finding、平台、精确 SDK main 和最终冷检仍待，
+不以该 checkpoint 宣称整体完成。
+
+官网独立 checkpoint `28f38b523319f7470a2715f64135395b0f30e3f6` 已提交并推送：290个
+framework 镜像逐字节匹配干净 `9886502`，CLI 的118个来源文件和8个投影仍绑定原
+`f57b90a2`；未复制 SDK 合同或新增 SDK pin。source-aware 检查及完整官网验证通过，
+包括39项单测、306条静态路由、15项浏览器测试，另有1项既有条件跳过；52个文件的独立
+必要性审查及 artifact 检查通过，无原始产物入库。CI 改为仅 push main，原 jobs 和来源
+检查保留。该阶段 [PR #5](https://github.com/EchoYue-lp/echo-website/pull/5) 已 squash 合入
+`faa9987d8da642d59e4a5c8e302d725cf18e36d2`，tree 与上述已审候选完全相同；精确 main
+CI `38938673709` 的唯一 verify job 及全部步骤成功，实际检出的来源为 `9886502`/
+`f57b90a2`。协调者已独立复核远端 SHA、tree、CI 和实际 checkout 日志。平台 action/
+runner 的非阻断弃用提示保留，不宣称 CI 零告警；无部署。最终 EKO 投影与联合验收仍待
+CLI main 后收束，不能将本阶段通过代替后继来源更新的验收。
+后继框架6563同步已以6个必要文件单独交付：[PR #6](https://github.com/EchoYue-lp/echo-website/pull/6)
+合入 `ccdbfb4b35b7b867cf39b059bbca56c3b01fbb9c`，tree 与已审候选一致；精确 main CI
+`38960733265` 全部步骤成功。协调者独立核对 CI 及实际 checkout 日志，来源确为6563/
+f57，CLI 118个来源和8个投影不变；完整官网验证及独立复审通过。无部署、无原始产物
+入库；后继 CLI 投影与联合验收仍须独立完成，平台弃用提示保留。
+
+### 早期协调与插件调查历史快照
+
+以下保留当时的待验、owner 和外部 Issue 状态；后继状态以上方当前表为准。
+已撤回的插件专项不再构成本 goal 的验收前置，原失败和未知证据仍保留。
+
+SDK/CLI 的剩余完整 Rust/GUI 与语言门禁、官网最终来源同步、四仓 main 验收和最终
+gitlink 更新仍待完成。Echo Semantic 支撑修复已由其
+[PR #4](https://github.com/EchoYue-lp/echo-semantic/pull/4) 交付到
+`c0bc306bd36d2b1b76def2b6c7308a07dda4f54b`，用于无损读取 SDK 原有二进制 diff。
+
+顶层协调规则 checkpoint `d36f4c1d` 已推送任务分支；四个 gitlink 尚保持下方历史验收快照。
+本轮协调线程为 `01a143e5-5a92-7293-8655-f880c3f698ae`；SDK 任务
+`01a14385-3980-70e2-af93-07f29fb43ed2` 独占原 SDK worktree，CLI 任务
+`01a143e8-d621-7f81-b968-b08783991777` 独占上述 primary CLI 任务分支，协调者负责官网、
+顶层集成和联合验收。framework Issue #120 在 GitHub 仍为 OPEN；SDK 本地 watermark
+Finding 与当前 Host 有限验证不能代替精确 SDK main 的最终结果或外部 Issue 结算。
+Hook 专项 `01a1442d-160b-7523-a946-32184bc23e72` 已经独审及完整检查并正规本机安装；
+P 的真实 pre-edit 根/宿主证据成立，S 的新 pre-edit 记录仍缺失，宿主四项 Hook 显示
+`trustStatus=modified`，已请求用户在 `/hooks` 审阅信任。不能据安装成功或编辑未拒绝冒称
+整个原生 Hook/Stop 通过；已授权工程工作继续，最终现场验收单列。后继正常提交推进又
+触发 Stop 绑定失效，原现场已保全并复现；与历史来源处理一起形成的隔离候选 Node134、
+Python95 项实际通过，但正式应用仍待两处受保护既有改动的明确接纳，不据自动续跑授权
+覆盖这些文件，也不手改安装缓存或绑定记录。该专项未远端推送或发布。
+每个可独立验收里程碑经 focused 验证、复审和必要路径检查后及时提交；正式 squash 前再次
+逐项检查完整 PR 文件及引用，raw/log/PF/临时探针不进入 main，仅保留必要源码、合同、
+测试、fixture、正式文档、CI 和最小长期证据结论。最终只更新已推送且精确 main CI 验收
+通过的子仓 gitlink，不用任务分支 checkpoint 冒充 main 交付。
+原主 checkout 的无关差异继续保留；CLI 目录迁移是用户后继明确授权，不推广到其它子仓。
+本轮不发布 npm/PyPI/Maven/crates.io 或插件版本，不部署官网；本节不声明全项目已完成。
 
 ## 2026-10-11 SDK 独立仓接入
 
@@ -133,7 +446,7 @@ F0-F6、R1、R2 和 R3 文档/website 收敛已完成；G 的当前静态门禁�
 | 长程任务优化(统一 turn-run 绑定) | Closure complete on local `main` / `echo-agent-cli@be273d3` + `echo-website@ae91c39`,未推送 | `feature/unified-turn-run@9524b47` 的 9 项 review 修复已作为基线,closure 补齐 typed provenance memory gate、quiet-check 与 RunTurn claim 原子复核、五入口长 steer 原文保真、`ForegroundTurnSnapshot.run_id` TS 绑定和 `PlanRevisionCommitted` 任务 UI 激活。第三轮独立复审 Critical/Important/Minor 均为 0。CLI 门禁已通过 fmt、Clippy 双档、workspace all-features(app-core 1534 passed/9 ignored、CLI lib 276、main 11、JSONL 6)、no-default、GUI check/tests(207 + main 1 + JSONL 6)、前端 Prettier/ESLint/Vitest 244/build、双语 parity；website source-aware docs check 与完整 verify 通过(39 单测、174 static/discovery routes、Playwright 15 passed/1 skipped)。后续项(独立 ADR):task_execute §10.1 同步 await 合同的后台化。 |
 | echo-agent 全 workspace 语义治理 | Baseline complete / 当前修复范围已闭合 | 最新 framework 清单为 96 个 Finding：91 resolved、5 open；5 个 open 是本轮排除的 SDK #120 与 A2A #32–35。#38 的 CLI 修复、framework 三类证据及两仓精确 main CI 已验收，外部 Issue 已关闭；不以旧 resolved 代替本次验收。治理单位为 Capability / Behavior / Rule / State Authority / Lifecycle / Finding / Evidence；SDK identity inventory 不计项目完成率。历史路线保留于 [`delivery map`](./supreme/plans/2026-09-13T1448-echo-agent全workspace语义治理/delivery-map.md) 与 [`优化清单`](./2026-09-14-echo-agent-semantic-governance-findings.md)。 |
 
-## 当前基线
+## 2026-10-11 已验收基线（历史快照）
 
 | 仓库 | 本轮验收快照 | 远端/发布状态 |
 | --- | --- | --- |

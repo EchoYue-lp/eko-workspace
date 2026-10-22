@@ -240,7 +240,7 @@ AI 编程常把一个任务拆成很多细粒度提交,逐 commit 跑全量门�
 
 - **新任务必须在非 main 分支开发**,分支命名 `<type>/<user>/<任务名>`。`<type>` 是任务事件类型,与 conventional commits 前缀对齐:`feature`(新功能)、`fix`(bug 修复)、`doc`(文档)、`debug`(排查/诊断类调查)、`refactor`(重构)、`test`(补测试)、`chore`(构建/工具/依赖)。如 `fix/Echoyue/journal-race`、`feature/Echoyue/unified-turn`。worktree 场景见"Worktree 并行开发与合并规范"。main 保持随时可发布。
 - 开发阶段可以细粒度拆分提交,每个 commit 只需通过与改动范围匹配的 focused 快检(下节第 1 条),**不要求每个 commit 跑全量门禁**。
-- **合并粒度 = 任务**:任务完成后,先 `git merge main` 进任务分支,在任务分支上跑全量门禁(下节第 2 条),开 PR 等远端 CI 全绿(或确认本地门禁已全绿),然后 **squash merge 成一个 commit 进 main**,commit message 用与分支一致的类型前缀(如 `fix: ...` / `feat: ...` / `docs: ...`)。门禁或 CI 不绿不得合并;合并后 `git branch -D` 删除任务分支。
+- **合并粒度 = 任务**:任务完成后,先 `git merge main` 进任务分支,在任务分支上跑适用的本地全量门禁(下节第 2 条),全部通过后开 PR 并 **squash merge 成一个 commit 进 main**,commit message 用与分支一致的类型前缀(如 `fix: ...` / `feat: ...` / `docs: ...`)。四个子仓库的 CI 仅由 push 到 `main` 触发,任务分支和 PR 不自动触发 CI,不免除合并前本地门禁。合并后必须核验精确 main 提交的 CI 全绿才能完成交付;任何失败仍须修复,不得因已合并而跳过或绕过。交付完成后 `git branch -D` 删除任务分支。
 - 跨仓库顺序:echo-agent 的改动先合入其 main,echo-agent-cli 的任务分支再合并(其 CI 跟踪框架 main)。
 - 各子仓库的 AGENTS.md 已同步此规范,修改时必须两边一起改。
 
@@ -254,6 +254,8 @@ AI 编程常把一个任务拆成很多细粒度提交,逐 commit 跑全量门�
 - 编译警告/错误 → 全部消除(`cargo clippy` / `cargo test` / `tsc` 零错误)。
 - **格式化(强制,CI 依赖)** → `cargo fmt --all` 跑过**且** `cargo fmt --all -- --check` 退出码 0(零 diff)。CI 会跑 fmt 检查,**fmt 不干净的提交会让 CI 红**——本地必须先 fmt 再提交,不能依赖 CI 兜底。前端同理(`prettier --check` / 项目脚本)。
 - 只有"全部通过"这一个状态可以提交;不存在"大部分通过就先提交"。
+
+echo-agent-sdk 与 echo-agent 的依赖检查分别按各自独立 AGENTS.md 中经用户接受、绑定各自精确 Cargo.lock 版本/source 组基线的 cargo-deny `warning[duplicate]` 合同执行；framework 本次仅接受锁 SHA-256 `7607c1458036adc04e64858215e21d45f7f8ae1ffa992ad82fba97e7a72aa528` 的49组，并非从 SDK 自动继承。两仓均保留官方原始输出及自然退出码，其它类别、新组/少组、版本或来源变化仍阻断。echo-agent-cli 另按其独立 AGENTS.md、`.cargo/accepted-dependency-risks.json` 和 `docs/supreme/specs/cancellation-observation-consumer/dependency-risk-decision.md` 中真实用户已接受的当前交付精六项 lock/consumer 合同执行：锁 SHA-256 `d2e7b7ebc035d35940f20fd9a95628a37ddf13bba2c1d5c828cdac142ae41680`，原 glib 0.18.5、proc-macro-error 1.0.4、bincode 1.3.3 继续冻结；官方 scanner 自然退出 1、零漏洞和恰六项 warning 原样保留，由独立精确风险 gate 退出 0 表示符合已接受合同，不是风险修复或零 warning 审计。新增 warning、漏洞、身份或输入漂移仍阻断，不自动续期或新增 ignore。三仓例外互不继承，编译警告、其它工程与提交/分支门禁保持不变。
 
 #### 1. 迭代快检(开发过程中)
 
@@ -321,7 +323,7 @@ cargo check -p echo-agent-app-core --no-default-features --locked
 
 ```bash
 cd echo-agent
-for feature in a2a mcp lsp sqlite telemetry topology subagent web media \
+for feature in acp a2a mcp lsp sqlite telemetry topology subagent web media \
   data statistics channels git database rag chart; do
   cargo check -p echo_agent --no-default-features --features "$feature" --locked || exit 1
 done
@@ -356,12 +358,13 @@ npm run build
 ### CI 职责边界:验证环境差异,不重复本地完整门禁(强制)
 
 完整门禁由开发者在已合入最新 main 的任务分支上执行一次,CI 不再逐项镜像这套高成本
-矩阵。CI 只保留本地 macOS 无法等价提供的独立信号:
+矩阵。四个子仓库的 CI 只在 push 到 main 后运行,任务分支和 PR 不自动触发。
+CI 只保留本地 macOS 无法等价提供的独立信号:
 
 - `echo-agent`:Linux all-target/all-feature lint、分组的默认 feature 测试、Windows 编译与
   原子文件替换测试、依赖审计,以及learning test中的semantic baseline target-main
-  ancestry合同。PR使用base SHA、main push使用before SHA并checkout完整历史,使
-  feature-only baseline revision在squash前失败。Linux 测试必须按资源组拆分,不得恢复会令
+  ancestry合同。main push使用before SHA并checkout完整历史,校验baseline revision属于
+  此前main历史。Linux 测试必须按资源组拆分,不得恢复会令
   标准 runner OOM 的单一 workspace test job;all-feature 测试仍属于本地合并前门禁。
 - `echo-agent-cli`:Linux all-target/all-feature lint、app-core 默认 feature 测试与 Node LTS
   前端门禁(包含已提交 TypeScript 契约的编译)。app-core 测试必须把 `ts-rs` 导出隔离到
