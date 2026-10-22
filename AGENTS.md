@@ -255,7 +255,7 @@ AI 编程常把一个任务拆成很多细粒度提交,逐 commit 跑全量门�
 - **格式化(强制,CI 依赖)** → `cargo fmt --all` 跑过**且** `cargo fmt --all -- --check` 退出码 0(零 diff)。CI 会跑 fmt 检查,**fmt 不干净的提交会让 CI 红**——本地必须先 fmt 再提交,不能依赖 CI 兜底。前端同理(`prettier --check` / 项目脚本)。
 - 只有"全部通过"这一个状态可以提交;不存在"大部分通过就先提交"。
 
-echo-agent-sdk 与 echo-agent 的依赖检查分别按各自独立 AGENTS.md 中经用户接受、绑定各自精确 Cargo.lock 版本/source 组基线的 cargo-deny `warning[duplicate]` 合同执行；framework 本次仅接受锁 SHA-256 `7607c1458036adc04e64858215e21d45f7f8ae1ffa992ad82fba97e7a72aa528` 的49组，并非从 SDK 自动继承。两仓均保留官方原始输出及自然退出码，其它类别、新组/少组、版本或来源变化仍阻断；本句不授权 echo-agent-cli 例外或修改编译警告、其它工具门禁，CLI 的独立人类裁决由其 owner 另行同步，原失败必须修复及提交/分支门禁保持不变。
+echo-agent-sdk 与 echo-agent 的依赖检查分别按各自独立 AGENTS.md 中经用户接受、绑定各自精确 Cargo.lock 版本/source 组基线的 cargo-deny `warning[duplicate]` 合同执行；framework 本次仅接受锁 SHA-256 `7607c1458036adc04e64858215e21d45f7f8ae1ffa992ad82fba97e7a72aa528` 的49组，并非从 SDK 自动继承。两仓均保留官方原始输出及自然退出码，其它类别、新组/少组、版本或来源变化仍阻断。echo-agent-cli 另按其独立 AGENTS.md、`.cargo/accepted-dependency-risks.json` 和 `docs/supreme/specs/cancellation-observation-consumer/dependency-risk-decision.md` 中真实用户已接受的当前交付精六项 lock/consumer 合同执行：锁 SHA-256 `d2e7b7ebc035d35940f20fd9a95628a37ddf13bba2c1d5c828cdac142ae41680`，原 glib 0.18.5、proc-macro-error 1.0.4、bincode 1.3.3 继续冻结；官方 scanner 自然退出 1、零漏洞和恰六项 warning 原样保留，由独立精确风险 gate 退出 0 表示符合已接受合同，不是风险修复或零 warning 审计。新增 warning、漏洞、身份或输入漂移仍阻断，不自动续期或新增 ignore。三仓例外互不继承，编译警告、其它工程与提交/分支门禁保持不变。
 
 #### 1. 迭代快检(开发过程中)
 
