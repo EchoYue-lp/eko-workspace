@@ -145,3 +145,28 @@ R1 只读调查确认：**崩溃后存在永久未结算的 interruption**，且
 **合流注意**：T3 的分支基于 `1f88bfb1`，不含 T4 的 `458be9b`（occurrence clippy 修复）与 T2 的 `new_owned`。因此 T3 合流前需要 `git merge main`，并（由 T3 本人）把 `runtime.rs` 的 `PluginRuntimeService::new` 调用切到 `new_owned`——这段接线必须在 T2 落地之后，否则编译失败。
 
 **冻结门禁注意（ts-rs 污染）**：本地跑 `cargo test -p echo-agent-app-core` 时，ts-rs 导出测试会改写 `web-frontend/src/generated/*.ts`（16 个文件）。冻结点门禁必须把 `TS_RS_EXPORT_DIR` 指向临时目录（CI 已如此），否则工作树会被污染、且可能把生成物夹进合流提交。T3、T4 都各自 `git checkout` 还原过。
+
+## 11. 冻结点门禁与 CI（2026-10-23）
+
+**本地全量门禁**（隔离 target、`CARGO_PROFILE_*_DEBUG=0`、`CARGO_BUILD_JOBS=2`、`TS_RS_EXPORT_DIR=/tmp/ts-rs-export`）：
+
+- CLI `8edf7b6`：fmt-check / clippy all-targets all-features / 严格 panic lint / `test --workspace --all-features` / app-core `--no-default-features` / GUI bin check / GUI tests —— **7/7 exit 0，2256 tests passed，0 warning**（日志 `/tmp/cli-gate.log`）。
+- 框架 `287ed2d6`：fmt-check / clippy all / 严格 panic lint / `test --workspace --all-targets --all-features` / `check --no-default-features` —— **5/5 exit 0，3670 tests passed，0 warning**（日志 `/tmp/fw-gate.log`）。
+
+**CI**：框架 main push 后 `Rust CI` 成功。CLI 首轮 `linux-quality` 失败于依赖风险 gate：`consumer inputs changed; human risk reassessment required`。根因是 `consumer_digest` 覆盖 `src`/`echo-agent-app-core/src`/`src-tauri` 下全部 `.rs`，本批应用层改动改变了指纹；`Cargo.lock` 未变（lock sha 仍匹配），六项已接受风险的 identity/checksum/kind 未变。处置：重算 `consumer_inputs_sha256`（`e46c7fcc…` → `9c834f6c…`），并在 `dependency-risk-decision.md` 记录复评理由，`scripts/test_cli_dependency_risks.py` 6/6 通过，提交 `456ccf5` 推入 main 触发重跑。
+
+**顶层指针**：`fix/Echoyue/parallel-remediation-pointers` = `a73922e`（基于 `origin/main`，仅两个 submodule 指针 + 本目录文档）：`echo-agent` → `287ed2d6`，`echo-agent-cli` → `456ccf5`。该 commit 通过临时 index 构造，未改动顶层工作树（该工作树当前停在无关的 chore 分支且有未提交改动）。
+
+## 12. 交付结论（2026-10-23）
+
+| 项 | 结果 |
+|---|---|
+| `echo-agent` main | `287ed2d6`（T5），已 push；`Rust CI` run 39823176645 **success**（7m17s） |
+| `echo-agent-cli` main | `456ccf5`（T4→T1→T3→T2→T6 + 依赖风险指纹复评），已 push；`Rust CI` run 39827830383 **success**（17m48s，4/4 job 绿） |
+| 顶层 superproject main | `a73922e`，指针 `echo-agent=287ed2d6` / `echo-agent-cli=456ccf5` |
+| 本地全量门禁 | CLI 7/7、框架 5/5，全部 exit 0；2256 + 3670 tests，0 warning |
+| lane 清理 | 6 条 worktree 已 remove + prune，6 条 lane 分支与顶层指针分支已 `-D` 删除 |
+
+**与计划的偏差（如实记录）**：CLI 实际合入序为 T4→T1→T3→T2→T6，计划写的是 T1→T2→T4→T3→T6。原因：T4 先落地才能给 T3 提供稳定接口并修掉其 clippy 拦截；T2 是唯一改动 `plugin_runtime/` 的 lane，最后合不影响其它 lane。文件级等价校验（各 lane 独占路径 `git diff <branch> HEAD` 为空）在每次合入后执行，因此顺序偏差未造成内容差异。
+
+**未纳入本批（待裁）**：R1 的永久未结算 interruption（建议 T7）、`retaining_source_stream` 吞 tail 与 `McpPreparationScope` 无 Drop（建议 T8）。R1/R2 的证据与复现均在 `r1-boot-interruption.md` / `r2-sdk-child-handles.md`。
