@@ -90,15 +90,17 @@ SDK新Host SHA-256为`d167b366a0288c91ce9debca8725b11425f05b22e4fb40bc8b280e6829
 
 ## 远端交付状态
 
-Framework、CLI与官网已按下表精确main通过CI；SDK本次Tokio与源锚后继已合并，正在等待最终精确main CI，顶层在它通过后提交四个gitlink。
+四个子仓的最终精确main均已通过远端CI；本提交包含对应四个gitlink、完整inventory及本报告。
 
 | 仓库 | 本轮main提交／PR | 精确main CI及绑定 |
 |---|---|---|
 | Framework | `51726454985fd6f064b21a7e9c539e22d494c987`；[PR199](https://github.com/EchoYue-lp/echo-agent/pull/199)、[PR200](https://github.com/EchoYue-lp/echo-agent/pull/200) | [run39984523075](https://github.com/EchoYue-lp/echo-agent/actions/runs/39984523075) **success，7／7** |
 | CLI | `c262cfed8e77abed38a27c1fff93547997ec9486`；[PR13](https://github.com/EchoYue-lp/echo-agent-cli/pull/13)、[PR14](https://github.com/EchoYue-lp/echo-agent-cli/pull/14) | [run39989318123](https://github.com/EchoYue-lp/echo-agent-cli/actions/runs/39989318123) **success，4／4** |
-| SDK | `0930eef9f878cf436ed88384030b6bc03d6f6c53`；[PR10](https://github.com/EchoYue-lp/echo-agent-sdk/pull/10)／[PR11](https://github.com/EchoYue-lp/echo-agent-sdk/pull/11)／[PR12](https://github.com/EchoYue-lp/echo-agent-sdk/pull/12)／[PR13](https://github.com/EchoYue-lp/echo-agent-sdk/pull/13) | [run39997245246](https://github.com/EchoYue-lp/echo-agent-sdk/actions/runs/39997245246) **pending**；永久源码锚`449934d2`是最终main的祖先，非临时分支SHA |
+| SDK | `0930eef9f878cf436ed88384030b6bc03d6f6c53`；[PR10](https://github.com/EchoYue-lp/echo-agent-sdk/pull/10)／[PR11](https://github.com/EchoYue-lp/echo-agent-sdk/pull/11)／[PR12](https://github.com/EchoYue-lp/echo-agent-sdk/pull/12)／[PR13](https://github.com/EchoYue-lp/echo-agent-sdk/pull/13) | [run39997245246](https://github.com/EchoYue-lp/echo-agent-sdk/actions/runs/39997245246) **success，9／9**；永久源码锚`449934d2`是最终main的祖先，非临时分支SHA |
 | 官网 | `a926ef7cf10bdc03cc0a19b2e406cc6164477485`；[PR8](https://github.com/EchoYue-lp/echo-website/pull/8) | [run39991323673](https://github.com/EchoYue-lp/echo-website/actions/runs/39991323673) **success**；manifest精确绑定FW51726454／CLIc262cfed |
-| 顶层 | 本报告、inventory及四仓gitlink将在SDK最终交付后提交 | **pending**；此仓没有独立workflow，验证四子提交已推送、对应CI及gitlink精确一致 |
+| 顶层 | 本提交包含本报告、inventory及上述四仓gitlink | 无独立workflow；四个gitlink与已推送、精确CI成功的四个main逐项一致，diff check通过 |
+
+SDK远端Windows job另通过原生Host执行TS、Python、Java各1个具名路径consumer，三项均通过、各0失败／0case skip；这只覆盖指定路径窗口，不等于三语言完整Windows回归。上述本地各1项平台skip仍按原结果保留，不混合平台计数。
 
 本轮遇到的旧CI失败保留为原失败，不借邻近提交的green：Framework旧`a39a4cde`失败于Linux fixture；SDK原`4acd5b81`失败于源摘要与同次语义对象，`3daaa573`随后又被新Tokio advisory阻断；CLI旧`fb98ffc2`的Linux测试与前端通过，但quality准确拒绝新advisory。SDK中间源码提交`449934d2`的run39996250155被既有concurrency策略取消，不计为成功。最终交付只以上表最终提交及各自CI为准。
 
@@ -108,4 +110,4 @@ Framework、CLI与官网已按下表精确main通过CI；SDK本次Tokio与源锚
 
 本地GUI feature检查与单元测试未证明原生窗口、跨平台执行或远端工具真正完成；真实Host证据只覆盖列明窗口。SDK固定框架pin与CLI使用新框架是两条不同依赖证据，不混称同一集成版本。原会话曾有Echo Semantic预检失败，这不是通过记录。用户已关闭本机会话插件；本轮未调用或伪造SessionStart，也未启用它。SDK原已配置的远端canonical semantic CI保留，补齐真实源码证据后以其实际结果验收，不关闭或弱化该检查。
 
-审查来源：会话`01a1630a-bf4a-7812-b9dc-6cd0e4b20123`的2026-10-22原始rollout第48行全量inventory、第168行AST对照、第179行类型诊断、第538行最终审查；后继本地验收为本轮冻结源码、原始命令退出与独立审查记录。最终完成结论以本节实际main、对应CI和四仓gitlink为准，SDK和顶层的待完成项会在发布前回填。
+审查来源：会话`01a1630a-bf4a-7812-b9dc-6cd0e4b20123`的2026-10-22原始rollout第48行全量inventory、第168行AST对照、第179行类型诊断、第538行最终审查；后继本地验收为本轮冻结源码、原始命令退出与独立审查记录。最终交付以本节精确main、各自CI及本提交四仓gitlink为准。全部旧补丁组审查与已采纳问题修复闭合；明确不采纳的候选保持上述结论，旧补丁与恢复材料继续保留。
