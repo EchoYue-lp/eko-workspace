@@ -1,0 +1,122 @@
+{
+  "scope": "Historical inventory only; unchanged patch sources are not automatically accepted for migration.",
+  "sourceSession": "01a1630a-bf4a-7812-b9dc-6cd0e4b20123",
+  "sourceRollout": "rollout-2026-10-22T17-56-51-01a1630a-bf4a-7812-b9dc-6cd0e4b20123.jsonl",
+  "sourceLine": 48,
+  "groups": 14,
+  "fileStatusChanges": 718,
+  "items": [
+    {
+      "repo": "echo-agent-cli",
+      "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.worktrees/echo-agent-cli-worktrees/main-only-ci",
+      "head": "HEAD c874a79aa25f8bef16ba4df2e809ceb447bb1604",
+      "count": 13,
+      "tracked": 13,
+      "untracked": 0
+    },
+    {
+      "repo": "echo-agent-cli",
+      "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.worktrees/echo-agent-cli-worktrees/sdk-projection",
+      "head": "HEAD f022e3676edd618200377a184c3cce4e276d8629",
+      "count": 215,
+      "tracked": 215,
+      "untracked": 0
+    },
+    {
+      "repo": "echo-agent-cli",
+      "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.worktrees/echo-agent-cli-worktrees/task-runtime-framework-consumer",
+      "head": "HEAD f57b90a2b0962fa5561f8839a3df70be1f261ffa",
+      "count": 62,
+      "tracked": 24,
+      "untracked": 38
+    },
+    {
+      "repo": "echo-agent-cli",
+      "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.worktrees/lsp-runtime-consumer",
+      "head": "HEAD 87eba93c6e557dafda2178e5b4763d91230fbcd6",
+      "count": 5,
+      "tracked": 5,
+      "untracked": 0
+    },
+    {
+      "repo": "echo-agent-cli",
+      "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.worktrees/observation-settlement",
+      "head": "HEAD 87eba93c6e557dafda2178e5b4763d91230fbcd6",
+      "count": 250,
+      "tracked": 245,
+      "untracked": 5
+    },
+    {
+      "repo": "echo-agent",
+      "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.worktrees/echo-agent-worktrees/acp-recovered-turn-identity",
+      "head": "HEAD 95ec66c6083a8feb17a1c28de0d01e1a24ca8a28",
+      "count": 23,
+      "tracked": 22,
+      "untracked": 1
+    },
+    {
+      "repo": "echo-agent",
+      "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.worktrees/echo-agent-worktrees/database-describe-fidelity",
+      "head": "HEAD b9099558620f5f9693c736c85c214db14f62a8cb",
+      "count": 37,
+      "tracked": 8,
+      "untracked": 29
+    },
+    {
+      "repo": "echo-agent",
+      "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.worktrees/echo-agent-worktrees/lsp-response-fidelity",
+      "head": "HEAD 95ec66c6083a8feb17a1c28de0d01e1a24ca8a28",
+      "count": 18,
+      "tracked": 13,
+      "untracked": 5
+    },
+    {
+      "repo": "echo-agent-sdk",
+      "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.worktrees/echo-agent-sdk-worktrees/sdk-accepted-continuity-ci-01a13eb8",
+      "head": "HEAD 1e1c4f03f670561d6ca804a56d35967eeea191ce",
+      "count": 13,
+      "tracked": 13,
+      "untracked": 0
+    },
+    {
+      "repo": "echo-agent-sdk",
+      "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.worktrees/echo-agent-sdk-worktrees/sdk-semantic-governance",
+      "head": "HEAD 7138de2ccc87f8967129c8bd7859dee1f84ec736",
+      "count": 4,
+      "tracked": 0,
+      "untracked": 4
+    },
+    {
+      "repo": "echo-agent-sdk",
+      "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.worktrees/semantic-120-55",
+      "head": "HEAD fe8aeba0f587b5377d4a5f02af26e9315c2d5d85",
+      "count": 68,
+      "tracked": 49,
+      "untracked": 19
+    },
+    {
+      "repo": "echo-website",
+      "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-website/.worktrees/semantic-60-81-83",
+      "head": "HEAD 21b2311909df5081173dc0dea4fd0378f29c3904",
+      "count": 6,
+      "tracked": 6,
+      "untracked": 0
+    },
+    {
+      "repo": "echo-website",
+      "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-website/.worktrees/semantic-review-remediation",
+      "head": "HEAD 21b2311909df5081173dc0dea4fd0378f29c3904",
+      "count": 2,
+      "tracked": 2,
+      "untracked": 0
+    },
+    {
+      "repo": "echo-website",
+      "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-website/.worktrees/unified-turn-docs",
+      "head": "HEAD 35490e8c4fa4530183bf2dcc0c303f084f8d9acc",
+      "count": 2,
+      "tracked": 2,
+      "untracked": 0
+    }
+  ]
+}
