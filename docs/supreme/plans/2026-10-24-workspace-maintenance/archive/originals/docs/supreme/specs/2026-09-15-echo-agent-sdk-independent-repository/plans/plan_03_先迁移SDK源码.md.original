@@ -1,0 +1,87 @@
+---
+schema_version: 4
+slug: echo-agent-sdk-independent-repository/source-import
+outcome:
+  summary: echo-agent-sdk 仓库先原样接收完整 SDK 产品源码、合同、三语言 SDK、文档、脚本和
+    CI，并将源快照推送到远端任务分支；不在本结果修复当前框架治理期间暴露的合同或生成物漂移。
+  acceptance:
+    - 从当前冻结的 echo-agent SDK-owned 源快照建立独立 echo-agent-sdk 任务分支，保留新仓库初始 README
+      commit 和可追溯 Git 历史。
+    - 新仓库包含两个 Rust SDK
+      crate、contracts/sdk、sdks/typescript、sdks/python、sdks/java、docs/sdk、SDK
+      脚本、CI 和相关源码资产；不依赖相邻 echo-agent 路径作为文件来源。
+    - 本结果只做路径归属、manifest 入口和必要的独立 clone 适配，不修复当前 framework semantic governance
+      期间发现的协议、合同、生成物或语言计数问题；这些问题保留到 sdk-clean-framework-pin。
+    - 源快照在新仓库非 main 任务分支完成最小可构建检查并提交、推送；远端完整 SHA 可解析，且源 echo-agent 工作树未被修改。
+out_of_scope:
+  - 从 echo-agent 删除 SDK 资产或修改 echo-agent workspace、CI 和正式 framework 文档。
+  - 修改 protocol 依赖边界、accepted external contract、Rust inventory scope 或任何 SDK
+    runtime semantics。
+  - 更新 echo-agent-cli、echo-website、lp-agent/.gitmodules 或跨仓链接。
+  - 运行需要 framework 治理完成后才能有意义的全量 SDK contract/language parity gate。
+design_ref: docs/supreme/specs/2026-09-15-echo-agent-sdk-independent-repository/design.md
+design_sections:
+  - ref: design.md § 目标行为
+    digest: sha256:92ae576059568ae7b1883f2600e9d314e3bb1d509ce0e0db41f13276e21e43fc
+  - ref: design.md § 范围
+    digest: sha256:b95a8097a6dea40ad44003a7ef1743d0b7fd0ef486100cdd218ea1b7083c7ae5
+  - ref: design.md § 系统边界
+    digest: sha256:58a74239562555c3a7101650be426afbfe6a93c3bf139b2c8b48630abe500cb8
+  - ref: design.md § 核心结构与数据流
+    digest: sha256:6efa688e23d29ada05a55eda2d001285a3f8c91c4abc7d93bd7be5042b1317dc
+  - ref: design.md § 文档、ADR 与历史归属
+    digest: sha256:5d72a7c5ab1b196d6888a243ded7db1e4befd920b087dc075ce20770f0fcb408
+  - ref: design.md § CI 与门禁边界
+    digest: sha256:0e9e818db60b1e1271a351c66bc28171dd12780cef39d40d9d08f10524f620a5
+  - ref: design.md § 异常与边界场景
+    digest: sha256:bbefb154cb0733f3118a4e98fdd5c1e6ea26dd3188c2d05f6b41afacf2ac66d8
+  - ref: design.md § 复用与实现约束
+    digest: sha256:8433d41a70261b3933bd3eaf06b02eaa1311bd2658f5021367caddb296aec4c6
+  - ref: design.md § 验收标准
+    digest: sha256:7c463a2e8f5d63c3906fbc73bf8c97e5081a473fc3c49c863e600b66d7c1a367
+delivery_ref: docs/supreme/specs/2026-09-15-echo-agent-sdk-independent-repository/plans/delivery-map.md#sdk-source-import
+todos:
+  - id: freeze-sdk-source-snapshot
+    summary: 记录源 echo-agent 当前 SDK-owned 文件、当前未提交 SDK diff 和目标 framework
+      revision，形成可复核的迁移输入，不修改源工作树。
+    files:
+      - echo-agent/echo-sdk-protocol/
+      - echo-agent/echo-sdk-host/
+      - echo-agent/contracts/sdk/
+      - echo-agent/sdks/
+      - echo-agent/docs/sdk/
+      - echo-agent/scripts/
+      - echo-agent/.github/workflows/
+    acceptance:
+      - 迁移清单覆盖 SDK crate、合同、三语言源码、文档、脚本、CI 与配置；源工作树 status、HEAD 和用户未提交修改保持不变。
+  - id: initialize-independent-sdk-repository
+    summary: 从新仓库初始 commit 建立 SDK 任务分支并导入完整 SDK-owned 路径，保留可追溯历史和独立仓库
+      README/AGENTS/许可证入口。
+    files:
+      - /Users/ls/MyWork/code/ylp_agent_learn/echo-agent-sdk/
+      - echo-agent/
+    acceptance:
+      - echo-agent-sdk 独立 clone 不依赖 ../echo-agent 路径即可看到完整 SDK 产品目录；历史可通过原
+        echo-agent commit 和导入映射追溯。
+  - id: preserve-as-is-build-boundary
+    summary: 完成最小独立构建边界适配：SDK Host 依赖使用可解析的 framework source pin
+      或明确迁移占位，protocol/合同/语言资产原样保留，暂不处理已知治理漂移。
+    files:
+      - /Users/ls/MyWork/code/ylp_agent_learn/echo-agent-sdk/Cargo.toml
+      - /Users/ls/MyWork/code/ylp_agent_learn/echo-agent-sdk/Cargo.lock
+      - /Users/ls/MyWork/code/ylp_agent_learn/echo-agent-sdk/echo-sdk-protocol/Cargo.toml
+      - /Users/ls/MyWork/code/ylp_agent_learn/echo-agent-sdk/echo-sdk-host/Cargo.toml
+      - /Users/ls/MyWork/code/ylp_agent_learn/echo-agent-sdk/README.md
+    acceptance:
+      - Cargo metadata、protocol crate dependency inspection
+        和目录完整性检查可在独立仓库执行；不能通过的 full contract/language gate 明确记录为后续
+        sdk-clean-framework-pin，不伪造通过。
+  - id: commit-and-push-source-import
+    summary: 在独立 SDK 仓库非 main 任务分支提交原样迁移结果并推送，留下源 revision、迁移清单和后续治理入口。
+    files:
+      - /Users/ls/MyWork/code/ylp_agent_learn/echo-agent-sdk/
+    acceptance:
+      - 提交关闭 GPG 签名，任务分支已推送；git ls-remote 与本地 commit 一致，SDK 仓库工作树 clean。
+artifact_id: plan:e75db226-4c51-4a47-a2ac-a7013b07b34d
+lifecycle: completed
+---

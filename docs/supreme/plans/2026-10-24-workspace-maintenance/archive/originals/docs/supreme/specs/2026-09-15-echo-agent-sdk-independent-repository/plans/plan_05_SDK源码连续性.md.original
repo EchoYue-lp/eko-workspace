@@ -1,0 +1,90 @@
+---
+schema_version: 4
+slug: echo-agent-sdk-independent-repository/sdk-source-continuity
+outcome:
+  summary: echo-agent-sdk 合并 echo-agent@c5f7688 的 SDK-owned 历史，补齐 source-import 后
+    17 个已提交 SDK 变化及 SDK ADR/design，并将完整可恢复源码快照推送到远端。
+  acceptance:
+    - echo-agent-sdk 的任务分支同时保留新仓库初始提交与过滤后的 echo-agent SDK-owned 历史，Git ancestry
+      和迁移说明可追溯到 framework c5f7688212d45d5bdcdbf60342605e8bfb176cae。
+    - 除两份独立仓 Cargo 依赖适配和 ACP example 的跨仓链接外，echo-agent@c5f7688 的 602 个 SDK-owned
+      当前文件与 echo-agent-sdk 一致；source-import 后 17 个文件、+588/-118 的提交差异均未遗漏。
+    - SDK ADR 0028/0031/0032 与 source-first SDK design 在新仓库可解析，docs/sdk
+      的本地链接无断链；framework 可据此仅保留 superseded/ownership 指引。
+    - source continuity 分支通过静态结构、Cargo metadata、文档链接和差异清单验证，使用关闭 GPG
+      签名方式提交并推送，远端 SHA 可复核。
+out_of_scope:
+  - 纯化 echo-sdk-protocol 对 echo_core 的依赖、修改 accepted external contract 或重新生成合同。
+  - 切换 Host 的精确 framework pin、收敛 SDK CI 或运行完整 Host/三语言最终门禁。
+  - 提交 echo-agent framework extraction、consumer 仓库或 lp-agent submodule 指针。
+design_ref: docs/supreme/specs/2026-09-15-echo-agent-sdk-independent-repository/design.md
+design_sections:
+  - ref: design.md § 范围
+    digest: sha256:b95a8097a6dea40ad44003a7ef1743d0b7fd0ef486100cdd218ea1b7083c7ae5
+  - ref: design.md § 文档、ADR 与历史归属
+    digest: sha256:5d72a7c5ab1b196d6888a243ded7db1e4befd920b087dc075ce20770f0fcb408
+  - ref: design.md § 当前工作树存在未完成 SDK 改动
+    digest: sha256:352d8bc629970097bec22db47367e301267b7248381d495b391e7f4ad27de7d4
+  - ref: design.md § 验收标准
+    digest: sha256:7c463a2e8f5d63c3906fbc73bf8c97e5081a473fc3c49c863e600b66d7c1a367
+delivery_ref: docs/supreme/specs/2026-09-15-echo-agent-sdk-independent-repository/plans/delivery-map.md#sdk-source-continuity
+todos:
+  - id: merge-filtered-sdk-history
+    summary: 从 echo-agent@c5f7688 过滤 SDK-owned 路径与专属 ADR/design 历史，并以显式双根 merge 保留到
+      echo-agent-sdk 任务分支，不覆盖新仓库初始历史。
+    files:
+      - echo-sdk-protocol/
+      - echo-sdk-host/
+      - contracts/sdk/
+      - sdks/
+      - docs/sdk/
+      - docs/adr/
+      - docs/supreme/specs/2026-09-04-source-first-multilanguage-sdk-runtime/
+    acceptance:
+      - 最终任务分支同时以 ea21dfc source-import 历史和过滤后的 framework SDK 历史为祖先；不使用 force
+        push。
+  - id: synchronize-frozen-sdk-source
+    summary: 将 framework c5f7688 中 source-import 后发生变化的 17 个 SDK-owned 文件同步到独立仓，并更新
+      MIGRATION-SOURCE 的冻结 revision、差异边界和后续入口。
+    files:
+      - contracts/sdk/
+      - echo-sdk-host/tests/extension_bridge_e2e.rs
+      - echo-sdk-protocol/
+      - scripts/check-language-sdks.sh
+      - sdks/
+      - MIGRATION-SOURCE.md
+    acceptance:
+      - 结构化路径对账证明 c5f7688 的 SDK-owned tree 无遗漏；仅两份 Cargo manifest 和 ACP example
+        的跨仓链接保留已记录的独立仓适配差异。
+  - id: establish-sdk-document-authority
+    summary: 在 echo-agent-sdk 中建立 SDK ADR/design 唯一事实源，修复 docs/sdk 指向迁移材料的本地链接并记录
+      repository extraction ownership。
+    files:
+      - docs/adr/
+      - docs/supreme/specs/2026-09-04-source-first-multilanguage-sdk-runtime/
+      - docs/sdk/
+      - README.md
+      - README.zh.md
+    acceptance:
+      - SDK README、docs/sdk、ADR 和 design 的仓库内链接可解析，迁移文档不再依赖相邻 echo-agent
+        checkout。
+  - id: verify-and-deliver-sdk-source-continuity
+    summary: 完成 source continuity 的差异、历史、静态结构和 focused Cargo 校验，并提交推送远端任务分支。
+    files:
+      - Cargo.toml
+      - Cargo.lock
+      - MIGRATION-SOURCE.md
+      - docs/
+      - scripts/
+      - echo-sdk-protocol/
+      - echo-sdk-host/
+      - contracts/sdk/
+      - sdks/
+    acceptance:
+      - 验证零失败；提交显式关闭 GPG 签名并推送，远端任务分支 SHA 与本地 HEAD 一致。
+artifact_id: plan:139cd7a5-ba5e-4046-97ea-7f767ff33ec6
+lifecycle: completed
+---
+## Notes
+
+过滤历史只用于恢复 SDK-owned commit ancestry；最终工作树以 framework `c5f7688` 的 SDK 文件为准。两份 Cargo manifest 保留独立仓 Git 依赖适配，ACP adapter 文档把已迁出的相邻 learning example 改为冻结 framework revision 的外链。双根 merge 记录历史关系，不把 framework 其它产品路径带入 SDK 仓库。

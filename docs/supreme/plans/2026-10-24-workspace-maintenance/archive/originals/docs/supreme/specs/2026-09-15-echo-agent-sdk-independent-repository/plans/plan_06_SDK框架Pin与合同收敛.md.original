@@ -1,0 +1,118 @@
+---
+schema_version: 4
+slug: echo-agent-sdk-independent-repository/sdk-clean-framework-pin
+outcome:
+  summary: echo-agent-sdk 固定到已经移除 SDK 资产的 echo-agent revision，并集中修复 protocol
+    边界、accepted external contract、生成物、Host 与三语言行为。
+  acceptance:
+    - echo-sdk-protocol 的 Cargo 依赖和源码不再引用 echo_agent 或
+      echo_core；wire/schema/catalog/fixture tests 在无 framework crate 的
+      protocol-only build 中通过。
+    - echo-sdk-host 精确依赖已推送的 echo-agent framework extraction revision
+      1754877996778afac4e4db77ce37c330496760ea，并保留 protocol -> Host -> framework
+      的单向依赖；Host/ACP core、extension、facade、cancel/recovery E2E 通过。
+    - SDK committed contract 只包含已接受的 external_contract scope；完整 Rust public
+      inventory 有独立、非阻断的 drift telemetry，Cargo.lock、framework revision 或
+      Host/Rust-only 漂移不会单独改变 extended-mode negotiation。
+    - SDK CI、文档、示例和生成入口统一到新的 boundary；TypeScript、Python、Java gate 与 quickstart 对
+      accepted external contract 全部通过，失败路径不再依赖相邻 echo-agent checkout。
+    - SDK 任务分支通过适用 formatter、lint、test、contract、Host integration、三语言、dependency
+      和文档门禁，使用关闭 GPG 签名方式提交并推送，远端 SHA 可复核。
+out_of_scope:
+  - 在本结果中改变 echo-agent runtime、ACP adapter、Agent/Run/Task/Subagent、取消、恢复或持久化语义。
+  - 把 EKO 产品策略、GUI/TUI projection、DomainProfile 或 SQLite 引入 SDK。
+  - 新增非 accepted external contract 的语言 parity 承诺，或把完整 Rust inventory 重新变成阻断门禁。
+  - 更新 echo-agent-cli、echo-website 或 lp-agent/.gitmodules；这些由后续
+    consumer/superproject outcomes 完成。
+design_ref: docs/supreme/specs/2026-09-15-echo-agent-sdk-independent-repository/design.md
+design_sections:
+  - ref: design.md § 分层与事实权威
+    digest: sha256:4c31df4d9543ca16db861326f8aa93451c40a99b9f1c81ff94cb02d11c6945f5
+  - ref: design.md § 兼容性合同
+    digest: sha256:6c30d2c07b918199e7dde03317971239f8ddd3a0737916dd2aba00ea42def8cd
+  - ref: design.md § 文档、ADR 与历史归属
+    digest: sha256:5d72a7c5ab1b196d6888a243ded7db1e4befd920b087dc075ce20770f0fcb408
+  - ref: design.md § CI 与门禁边界
+    digest: sha256:0e9e818db60b1e1271a351c66bc28171dd12780cef39d40d9d08f10524f620a5
+  - ref: design.md § 异常与边界场景
+    digest: sha256:bbefb154cb0733f3118a4e98fdd5c1e6ea26dd3188c2d05f6b41afacf2ac66d8
+  - ref: design.md § 验收标准
+    digest: sha256:7c463a2e8f5d63c3906fbc73bf8c97e5081a473fc3c49c863e600b66d7c1a367
+delivery_ref: docs/supreme/specs/2026-09-15-echo-agent-sdk-independent-repository/plans/delivery-map.md#sdk-clean-framework-pin
+todos:
+  - id: purify-protocol-dependency
+    summary: 将 echo-sdk-protocol 收敛为纯 wire/schema/catalog crate，移除
+      echo_agent/echo_core 依赖和 framework 类型转换，补 protocol-only 编译与字段 round-trip
+      证据。
+    files:
+      - echo-sdk-protocol/Cargo.toml
+      - echo-sdk-protocol/src/
+      - echo-sdk-protocol/tests/
+      - contracts/sdk/schema/
+      - contracts/sdk/fixtures/
+    acceptance:
+      - protocol manifest 无 echo_agent/echo_core dependency；protocol-only cargo
+        check/test、schema export 和 golden fixtures 全部通过。
+  - id: pin-host-framework-revision
+    summary: 把 echo-sdk-host 固定到已推送 framework extraction revision，并在 Host adapter
+      中集中保留 framework 类型转换、runtime feature advertisement 和错误边界。
+    files:
+      - echo-sdk-host/Cargo.toml
+      - echo-sdk-host/src/
+      - echo-sdk-host/tests/
+      - Cargo.toml
+      - Cargo.lock
+    acceptance:
+      - cargo tree/metadata 证明单向 protocol -> Host -> framework；Host
+        standard/core/extension/facade/cancel/recovery E2E 通过且无 sibling path。
+  - id: split-accepted-contract-and-telemetry
+    summary: 从现有 parity/inventory 产物中分离 accepted external_contract blocking artifact
+      与完整 Rust public inventory telemetry，更新生成器、fixtures、digest 和 negotiation
+      校验。
+    files:
+      - contracts/sdk/parity-manifest.json
+      - contracts/sdk/parity-manifest.schema.json
+      - contracts/sdk/public-api.txt
+      - contracts/sdk/source-contract.json
+      - echo-sdk-protocol/src/inventory.rs
+      - echo-sdk-protocol/src/capability.rs
+      - scripts/check-sdk-contracts.sh
+      - scripts/export-language-sdk-catalog.sh
+    acceptance:
+      - 仅 accepted external_contract 进入 blocking digest；Rust inventory drift
+        生成独立 non-blocking report，已有 Host/Rust-only 和 deferred scope 被保留。
+  - id: align-language-ci-and-docs
+    summary: 同步 TypeScript、Python、Java SDK、shared artifacts、README、SDK docs、ADR 和 CI
+      到精确 framework pin 与新的 contract boundary。
+    files:
+      - sdks/
+      - docs/sdk/
+      - README.md
+      - README.zh.md
+      - .github/workflows/rust-ci.yml
+      - scripts/check-language-sdks.sh
+      - MIGRATION-SOURCE.md
+      - docs/adr/
+    acceptance:
+      - 三语言 source/contract tests、examples/quickstarts、CI workflow 和 docs links
+        均不依赖相邻 framework checkout，并只检查 accepted external contract。
+  - id: verify-and-deliver-sdk-clean-pin
+    summary: 执行 SDK 全部适用门禁、独立 review、commit/push 和远端 SHA/依赖 provenance 对账。
+    files:
+      - Cargo.lock
+      - Cargo.toml
+      - echo-sdk-protocol/
+      - echo-sdk-host/
+      - contracts/sdk/
+      - sdks/
+      - docs/
+      - scripts/
+    acceptance:
+      - 所有适用命令零失败、零警告、零格式差异；任务分支 commit 使用关闭 GPG 签名方式并推送，远端 SHA 与 framework pin
+        可复核。
+artifact_id: plan:fafc9e44-086d-4489-9bf9-89becf9e6554
+lifecycle: ready
+---
+## Notes
+
+本结果使用已推送的 framework extraction commit 作为唯一 dependency provenance；合同生成先保留 source-of-truth，再由 accepted external contract 和独立 Rust inventory telemetry 两条门禁分别验证。Protocol adapter 不拥有 framework runtime 状态或第二套执行 authority。

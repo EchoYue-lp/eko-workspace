@@ -13,7 +13,7 @@
 
 使用上述Git对象读取源码与已提交交付材料，没有重新运行历史CI、Host或产品测试。下文“已交付”表示固定材料及相应实现支持的历史范围，不表示本次新运行。
 
-本维护树从固定workspace提交建立，只修改原压缩验收记录并新增本文。primary仍在原分支，14份未跟踪docs、已修改压缩验收、ZCode与三个gitlink漂移均未被本维护提交归位或删除。Exa的暂不推送/不合main边界不变。当前GUI主题、工具清单、业务代码、SDK/CLI正式文档由原owner继续维护。
+首阶段维护提交`00e0afc48bccc1571a38020ab9a4042fc9e50fb1`从固定workspace提交建立，只修改原压缩验收记录并新增本文。该切点primary仍在原分支，14份未跟踪docs、已修改压缩验收、ZCode与三个gitlink漂移均未被归位或删除。后继维护只将这14份原字节纳入下述历史档案并保留来源导航；实际本机归位以独立操作回执为准。Exa的暂不推送/不合main边界不变。当前GUI主题、工具清单、业务代码、SDK/CLI正式文档由原owner继续维护。
 
 ## 已保存的PR18尾节
 
@@ -63,7 +63,7 @@ R2的本地scope问题已有SDK `4acd5b81cf3f64b17a7aed546d4aaa2e145e52cb`及[AD
 
 旧Plan06虽为ready，其主体不是尚待从零开发。原Plan硬写`1754877996778afac4e4db77ce37c330496760ea`，正式历史extraction pin为`27c7701e1eb116db1076da7f84bb68898544a44c`，当前Host manifest精确pin `f7bac62eee04a963f92a3e4308b6ea2336e91cc0`。当前SDK接受及后继完整门禁见固定交付记录；accepted 5621 identities/454 routes与4项非阻断遥测保留各自范围，不重跑旧pin、不自动刷117产物、不由本文更改Plan lifecycle。未来A2A/LSP合同退役属于新产品收敛结果。
 
-SDK固定main的`MIGRATION-SOURCE.md:198-199`仍文字定位到superproject的`docs/supreme/specs/2026-09-15-echo-agent-sdk-independent-repository/`。该topic的8份原文件目前确实存在于primary，尚未在固定workspace main被跟踪；不能写成“文件不存在、没有价值”。后续整体归档前须保全这条来源定位的可恢复去向，或由SDK文档owner另行更新其正式定位；本维护范围不改SDK原文件。本文提供字节索引与本机恢复位置，并不将8份旧计划复制为新的产品权威。
+SDK固定main的`MIGRATION-SOURCE.md:198-199`仍文字定位到superproject的`docs/supreme/specs/2026-09-15-echo-agent-sdk-independent-repository/`。首阶段快照中，该topic的8份原文件确实存在于primary，尚未在固定workspace main被跟踪。后继维护将原字节保存为`.original`历史数据，并在这个原topic目录提供[来源索引](../../specs/2026-09-15-echo-agent-sdk-independent-repository/README.md)，让SDK原有目录定位仍可用；不是把原文件写成从未存在或没有价值。本维护不改SDK原文件、不把8份旧计划复制为新的产品权威。
 
 ## Unified Task/Subagent后继范围
 
@@ -80,7 +80,7 @@ SDK固定main的`MIGRATION-SOURCE.md:198-199`仍文字定位到superproject的`d
 ## 归档候选与导航条件
 
 1. parallel-remediation三份：本报告保存第13节后继说明与原字节索引后，可由协调者在精确源提交/恢复依据完成时成组归档primary副本。r1/r2仍被contract相对引用，必须保持同组或在目标checkout已有对应正式文件；本次不提前移除。
-2. SDK拆仓八份：源码迁移与旧Plan的原状态可作为历史归档；先保全前述MIGRATION来源定位和Plan06后继验收映射。未完成该项前保留原位source，不用info/exclude隐藏。
+2. SDK拆仓八份：源码迁移与旧Plan原状态已纳入历史原件档案，原目录来源索引保留MIGRATION定位及Plan06后继映射；可在原件校验与归位候选独审通过后回收primary未跟踪副本，不用info/exclude隐藏。
 3. unified三份：kernel已交付的旧Plan可历史归档；设计/map中尚需核对的执行边界须已被现有工具/领域插件治理接管，原始SHA及恢复位置继续可查。不能因新GUI设计存在就废弃Task/SDK基础能力。
 4. compression修改：有效尾节已进入本维护快照；是否把primary切回、恢复或与main归位由协调者后续执行，本次没有修改原件。
 
@@ -92,14 +92,25 @@ SDK固定main的`MIGRATION-SOURCE.md:198-199`仍文字定位到superproject的`d
 
 - `primary-files-original.tar.gz`：SHA-256 `e4893de22bee9b437ae960ad51f4fb30af397288cad650033d5818c504ed149c`，1697338 bytes；保存302个原始普通文件，包括本文14份docs及compression修改原件。
 - `initial-inventory.json`：原path/status、SHA-256、size、mode、mtimeNs；`maintenance-receipt.json`：逐项归档/原位保留理由，固定SHA-256 `ec02c9e0315f88e54c79112b477e970b85d734a3ff1ec9599c5b4db9b4509bb6`。
-- 当前处置数为302=287移除+15普通文件原位保留；另4个独立仓目录状态行保持。root从301未跟踪降到15：14份docs加ZCode；4项未暂存仍为compression与3个gitlink漂移。289/13是恢复r1/r2前的旧阶段，不作为当前计数。
+- 首次文件维护结束时的处置数为302=287移除+15普通文件原位保留；另4个独立仓目录状态行保持。当时root从301未跟踪降到15：14份docs加ZCode；4项未暂存为compression与3个gitlink漂移。289/13是恢复r1/r2前的更早阶段。后继归位另记自己的真实处置数，不回写这份历史收据冒充其当时已完成。
 - 302原件完整读回与完整隔离恢复演练已核hash/mode/mtimeNs；当前287移除项又单独完整恢复演练。两份报告恢复见`navigation-restoration.json`，旧阶段receipt另存，不改归档原字节。
 - `restore.py --destination <明确恢复目录> --selection all`可恢复全部302原件；`--selection removed`只恢复当前287移除项，**不包含原位保留的14份docs**。恢复器遇到不同内容的既有文件拒绝覆盖；后续原件归档后须使用本文path索引或在隔离目录选all恢复，不假定removed清单自动更新。
 
 上述路径是本机原件定位，未随Git提交分发；原件不可获得时不能把本报告当作恢复文件本身。另一个legacy_cleanup的`legacy-integration-history`由其owner独占，本任务不写入或更改其回执。
 
-## 本维护提交的验收边界
+## 首阶段维护提交的验收边界（00e0afc）
 
-直接检查覆盖：两文件允许范围、main旧正文及原用户尾节逐字节一致、15源文件未改变、14文档原始hash逐项存在于归档索引、PR18 tree一致、相对文档导航和固定来源提交可解析。完成独立审查及task范围语义验证后才允许本地提交；本次无push、merge、PR、Issue关闭、包发布或部署。
+首阶段直接检查覆盖：两文件允许范围、main旧正文及原用户尾节逐字节一致、15源文件未改变、14文档原始hash逐项存在于归档索引、PR18 tree一致、相对文档导航和固定来源提交可解析。该阶段已通过独立审查及task范围语义验证后本地提交；无push、merge、PR、Issue关闭、包发布或部署。
 
 没有Cargo编译/测试或自有target产物；cargo clean不适用。没有业务实现、examples或官网行为变化；正式产品文档和官网仍由所属owner按后续结果同步，不为本历史资料报告复制产品说明。文档验收不冒充原生GUI、SSH、真实IM、新Host或全项目验证。
+
+
+## 后继归位候选与历史档案
+
+[历史原件档案](archive/README.md)保存上表14份原始文档，逐文件字节SHA与原primary一致；`.original`保留原内容并避免旧ready Plan成为新执行入口。SDK原topic的[目录索引](../../specs/2026-09-15-echo-agent-sdk-independent-repository/README.md)把既有MIGRATION定位引向8份原件。parallel三份在档案内成组保存；目标checkout还保留固定main同路径的contract/r1/r2，活跃相对导航仍可解析。unified未闭合边界继续交给当前工具/领域插件治理，没有改旧Plan状态或委派策略。
+
+前置恢复已读取`legacy-integration-history/final-audit.json`、`recovery-index.json`与`retirement-receipt.json`：W4及其四个私有submodule、两bare证据库与私有cold linked checkout已由原owner回收；9库strict import/full fsck均0、146归档payload回收后复核通过。primary CLI原`3dad583c9aad7d9df8e7a5db00631bd2db6557bb`、`c5bf87033872f15b37e105e8e22a12c9320e177c`、`b85ec037c6ec33e46bf998ba59407aab1566ef5b`均完整保全；本任务只读这些回执，未写其目录。
+
+下面是须先独审的可逆本机操作候选，不是已执行记录：再次备份并逐项验证primary这14原件、压缩修改、原HEAD/index及stash；检查精确路径无占用或并发改变；确认本地维护提交及恢复包完整，提交父列表严格只有已审首阶段提交；回收本任务已完成managed维护worktree以释放分支；把15份原件同盘移入恢复位置，以独占创建写回原HEAD的compression基线（原路径若有新文件则拒绝覆盖），然后用不递归submodule的普通Git switch进入同一维护分支。任一步失败即保留真实回执和恢复位置，不做hard reset、不清stash、不push/merge main，也不覆盖其它任务文件。
+
+四个子仓refs/config/index不在此操作范围。切入维护树的目标gitlink仍为固定已接受主线（framework51726454、CLIc262cfed、SDK0930eef9、websitea926ef7c）；原primary子仓HEAD若不变，仍会显式显示其checkout差异。ZCode继续原位保留、未跟踪可见；不通过ignore隐藏或提交私有子仓指针来制造零差异。子仓对齐由协调者另行独占处理，不能把该候选声称为已完成四仓构建或全工作区干净。

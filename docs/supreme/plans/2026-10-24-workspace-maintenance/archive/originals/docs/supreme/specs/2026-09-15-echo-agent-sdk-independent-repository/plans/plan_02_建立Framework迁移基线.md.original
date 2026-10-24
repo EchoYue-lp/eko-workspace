@@ -1,0 +1,71 @@
+---
+schema_version: 4
+slug: echo-agent-sdk-independent-repository/framework-migration-baseline
+outcome:
+  summary: echo-agent 当前本地提交和重叠的未提交 framework/SDK
+    改动在隔离任务分支中形成可复核、已推送的精确迁移基线，且用户原工作树保持不变。
+  acceptance:
+    - 隔离工作树从当前 echo-agent HEAD 建立并无损包含原工作树的全部 tracked 修改，原分支、index、未跟踪文件和 status
+      未被改变。
+    - 迁移基线中的 framework、Host、protocol、合同和三语言源码彼此一致，所有适用 echo-agent 合并前门禁、SDK
+      合同及语言验证零失败。
+    - 迁移基线 commit 使用非 main 任务分支和关闭 GPG 签名的提交方式，远端分支可按完整 SHA 解析且与本地一致。
+out_of_scope:
+  - 在此 Outcome 中删除 echo-agent 的 SDK 文件或改变仓库所有权。
+  - 将现有任务分支直接 merge 到 main。
+  - 修改或提交用户当前 fix/Echoyue/turn-terminal-delivery-settlement 工作树。
+  - 创建 echo-agent-sdk submodule 或改动其它子仓库。
+design_ref: docs/supreme/specs/2026-09-15-echo-agent-sdk-independent-repository/design.md
+design_sections:
+  - ref: design.md § 目标行为
+    digest: sha256:92ae576059568ae7b1883f2600e9d314e3bb1d509ce0e0db41f13276e21e43fc
+  - ref: design.md § 文档、ADR 与历史归属
+    digest: sha256:5d72a7c5ab1b196d6888a243ded7db1e4befd920b087dc075ce20770f0fcb408
+  - ref: design.md § CI 与门禁边界
+    digest: sha256:0e9e818db60b1e1271a351c66bc28171dd12780cef39d40d9d08f10524f620a5
+  - ref: design.md § 当前工作树存在未完成 SDK 改动
+    digest: sha256:352d8bc629970097bec22db47367e301267b7248381d495b391e7f4ad27de7d4
+  - ref: design.md § 复用与实现约束
+    digest: sha256:8433d41a70261b3933bd3eaf06b02eaa1311bd2658f5021367caddb296aec4c6
+  - ref: design.md § 验收标准
+    digest: sha256:7c463a2e8f5d63c3906fbc73bf8c97e5081a473fc3c49c863e600b66d7c1a367
+delivery_ref: docs/supreme/specs/2026-09-15-echo-agent-sdk-independent-repository/plans/delivery-map.md#framework-migration-baseline
+todos:
+  - id: isolate-current-framework-state
+    summary: 建立专用 echo-agent 任务 worktree，并把当前工作树的 tracked 修改无损投影到该分支，不接触用户原工作树。
+    files:
+      - echo-agent/
+      - echo-agent-worktrees/echo-agent-sdk-migration-baseline/
+    acceptance:
+      - 隔离分支以当前 HEAD 为基线，tracked diff 与源工作树逐文件一致，源工作树 status 前后不变。
+  - id: close-baseline-consistency
+    summary: 核对并闭合当前 framework 与 SDK 重叠改动的编译、生成合同和语言投影一致性，只修复迁移基线无法验证的问题。
+    files:
+      - echo-agent-worktrees/echo-agent-sdk-migration-baseline/echo-integration/
+      - echo-agent-worktrees/echo-agent-sdk-migration-baseline/echo-orchestration/
+      - echo-agent-worktrees/echo-agent-sdk-migration-baseline/echo-sdk-host/
+      - echo-agent-worktrees/echo-agent-sdk-migration-baseline/echo-sdk-protocol/
+      - echo-agent-worktrees/echo-agent-sdk-migration-baseline/contracts/sdk/
+      - echo-agent-worktrees/echo-agent-sdk-migration-baseline/sdks/
+    acceptance:
+      - 生成物由唯一入口刷新且 framework、Host、protocol、shared catalog 与三语言 API 没有未解释漂移。
+  - id: verify-framework-migration-baseline
+    summary: 按 echo-agent 当前规则完成 Rust workspace、feature topology、SDK contract、真实
+      Host 进程和三语言源码的适用完整门禁。
+    files:
+      - echo-agent-worktrees/echo-agent-sdk-migration-baseline/Cargo.toml
+      - echo-agent-worktrees/echo-agent-sdk-migration-baseline/Cargo.lock
+      - echo-agent-worktrees/echo-agent-sdk-migration-baseline/scripts/
+      - echo-agent-worktrees/echo-agent-sdk-migration-baseline/.github/workflows/
+    acceptance:
+      - 所有适用 formatter、clippy、test、no-default/feature matrix、contract 和 language
+        SDK 命令在最后一次相关修改后零失败。
+  - id: deliver-baseline-branch
+    summary: 提交并推送精确迁移基线，记录本地、远端 SHA 与源工作树保持状态。
+    files:
+      - echo-agent-worktrees/echo-agent-sdk-migration-baseline/
+    acceptance:
+      - 任务分支 commit 已关闭 GPG 签名并推送；git ls-remote 返回同一完整 SHA，用户原工作树仍保持初始分支和修改集合。
+artifact_id: plan:8aa14836-42dd-4a4d-9851-031f40091b02
+lifecycle: abandoned
+---

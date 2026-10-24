@@ -1,0 +1,100 @@
+---
+schema_version: 4
+slug: echo-agent-sdk-independent-repository/standalone-product
+outcome:
+  summary: echo-agent-sdk 仓库独立交付完整、可构建且兼容边界收敛的 SDK 产品，并将通过验证的任务分支推送到远端。
+  acceptance:
+    - 从远端独立 clone 的 echo-agent-sdk 在没有相邻 framework checkout 时可解析精确 echo_agent
+      revision，并通过全部适用 Rust、合同、真实 Host 进程和三语言门禁。
+    - echo-sdk-protocol 的依赖图不包含 echo_agent、echo_core 或其它 echo framework
+      crate，echo-sdk-host 单向适配 protocol 与 echo_agent。
+    - 运行时协商 digest 只覆盖 accepted external contract；Cargo.lock、Git revision 和完整
+      Rust public inventory 仅作为 provenance/非阻断遥测。
+    - SDK-owned 文件历史可追溯到原 echo-agent commit，新仓库初始 README commit 保留，任务分支已经推送且远端
+      SHA 与本地一致。
+out_of_scope:
+  - 从 echo-agent 删除迁出资产或修改 framework CI。
+  - 更新 echo-agent-cli、echo-website 或 lp-agent submodule。
+  - 把源码优先 SDK 改为预编译 Host 或发布 npm、wheel、JAR。
+  - 改变 Agent、Task、Subagent、ACP 或现有扩展方法的业务语义。
+design_ref: docs/supreme/specs/2026-09-15-echo-agent-sdk-independent-repository/design.md
+design_sections:
+  - ref: design.md § 目标行为
+    digest: sha256:92ae576059568ae7b1883f2600e9d314e3bb1d509ce0e0db41f13276e21e43fc
+  - ref: design.md § 系统边界
+    digest: sha256:58a74239562555c3a7101650be426afbfe6a93c3bf139b2c8b48630abe500cb8
+  - ref: design.md § 分层与事实权威
+    digest: sha256:4c31df4d9543ca16db861326f8aa93451c40a99b9f1c81ff94cb02d11c6945f5
+  - ref: design.md § 核心结构与数据流
+    digest: sha256:6efa688e23d29ada05a55eda2d001285a3f8c91c4abc7d93bd7be5042b1317dc
+  - ref: design.md § 兼容性合同
+    digest: sha256:6c30d2c07b918199e7dde03317971239f8ddd3a0737916dd2aba00ea42def8cd
+  - ref: design.md § 文档、ADR 与历史归属
+    digest: sha256:5d72a7c5ab1b196d6888a243ded7db1e4befd920b087dc075ce20770f0fcb408
+  - ref: design.md § CI 与门禁边界
+    digest: sha256:0e9e818db60b1e1271a351c66bc28171dd12780cef39d40d9d08f10524f620a5
+  - ref: design.md § 复用与实现约束
+    digest: sha256:8433d41a70261b3933bd3eaf06b02eaa1311bd2658f5021367caddb296aec4c6
+  - ref: design.md § 验收标准
+    digest: sha256:7c463a2e8f5d63c3906fbc73bf8c97e5081a473fc3c49c863e600b66d7c1a367
+delivery_ref: docs/supreme/specs/2026-09-15-echo-agent-sdk-independent-repository/plans/delivery-map.md#sdk-standalone-product
+todos:
+  - id: import-sdk-history
+    summary: 在新仓库保留初始 commit 的同时导入 SDK-owned 历史与完整源码边界，形成可独立检出的 Rust workspace 和产品目录。
+    files:
+      - echo-agent-sdk/Cargo.toml
+      - echo-agent-sdk/Cargo.lock
+      - echo-agent-sdk/echo-sdk-protocol/
+      - echo-agent-sdk/echo-sdk-host/
+      - echo-agent-sdk/contracts/sdk/
+      - echo-agent-sdk/sdks/
+      - echo-agent-sdk/docs/sdk/
+    acceptance:
+      - 新仓库包含完整 SDK 产品资产且 Git history 能追溯原路径；manifest 不依赖相邻目录或未固定 branch。
+  - id: purify-protocol-boundary
+    summary: 把 framework domain 到 wire DTO 的转换收归 Host adapter，使 protocol 成为纯
+      wire/schema 合同并保持字段级无损行为。
+    files:
+      - echo-agent-sdk/echo-sdk-protocol/
+      - echo-agent-sdk/echo-sdk-host/src/
+      - echo-agent-sdk/echo-sdk-host/tests/
+    acceptance:
+      - 依赖 DAG 证明 protocol 不依赖任何 echo framework crate；事件、失败和 Hook 等迁移转换的字段级与
+        round-trip 测试通过。
+  - id: separate-contract-authorities
+    summary: 将 accepted external contract、运行时协商 digest、build provenance 和完整 Rust
+      inventory 遥测分离为互不越权的事实源。
+    files:
+      - echo-agent-sdk/contracts/sdk/
+      - echo-agent-sdk/echo-sdk-protocol/src/
+      - echo-agent-sdk/echo-sdk-protocol/tests/
+      - echo-agent-sdk/sdks/shared/
+    acceptance:
+      - 确定性合同重算只让 external surface 进入阻断 digest；非 external Rust API
+        漂移只产生可审阅的非阻断报告。
+  - id: establish-independent-product-gates
+    summary: 建立新仓库独立规则、文档、生成入口和 CI，使 Rust Host、合同及三语言 SDK 从同一 SDK revision 可验证。
+    files:
+      - echo-agent-sdk/AGENTS.md
+      - echo-agent-sdk/README.md
+      - echo-agent-sdk/README.zh.md
+      - echo-agent-sdk/docs/
+      - echo-agent-sdk/scripts/
+      - echo-agent-sdk/.github/workflows/
+      - echo-agent-sdk/sdks/
+    acceptance:
+      - 新仓库冷启动文档、ADR、示例和 CI 覆盖 protocol、Host、external
+        contract、TypeScript、Python、Java、跨平台编译及 dependency policy。
+  - id: verify-and-push-sdk-branch
+    summary: 在独立 clone 语境完成所有适用门禁并交付远端任务分支，保存可复核的版本、依赖、合同和测试证据。
+    files:
+      - echo-agent-sdk/Cargo.toml
+      - echo-agent-sdk/Cargo.lock
+      - echo-agent-sdk/.github/workflows/
+      - echo-agent-sdk/contracts/sdk/
+      - echo-agent-sdk/sdks/
+    acceptance:
+      - 全部执行命令零失败、零警告、零格式差异；本地 commit 已显式关闭 GPG 签名并推送到对应远端任务分支。
+artifact_id: plan:881bf291-4bcb-4d62-9c1b-a5e56649d495
+lifecycle: abandoned
+---
