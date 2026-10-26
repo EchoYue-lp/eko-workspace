@@ -1,5 +1,7 @@
 # 根内收敛下一动作与交付依据
 
+当前并行执行：F/CLI修复程序化delegate把已绑定max1/2覆盖为legacy3的缺口，生产最小候选已静态审查，真实Fork/EKO三消费者旧生产RED进行；SDK按Plan04受控采用已有1eac40fb候选全闭包，269退役/5352保留、23route与39op精确差集已在根实际0，独立pin f7bac的locked metadata0，定向验证及Host准备开始。两线互不读写彼此源码，不等待有效要求A/B模型成本裁决；完整矩阵按窗口、最多两focused，各自保全/clean。当前真实通过范围不扩到后继修复、SDK完整新资格或框架物理删除。
+
 2026-10-27当前接续：CLI正式材料局部对账已提交421972b，工作树干净；精确两路径官方artifact/task/显式语义0、globalClosure not_checked，旧任务归档与后继真实owner退出均有回执。工具结果回退预算已按现实现和同源retained binary实际3/3核销，根审计8feaddc保留旧原文，其它工具治理未关闭。当前有效要求路线的额外模型调用成本与主模型协议改造取舍已询问用户、仍待答；不将推荐当采用，不开始依赖该裁决的新写入。真实微信扫码也待实测，原生仍epoch14。所有源码、引用、分支与恢复材料维持既定保护范围，26项和Goal保持开放。
 
 2026-10-27末版动作：CLI本地集成检查点 `9bcc1fc…` 已保存126路径，树 `0c7492e6…` 与795输入匹配。epoch15末版渠道68/68、无渠道37/37，GUI caller/六类导出/fmt/diff通过且最终零编译警告；全前端75文件580项、真实类型/Tauri构建、全lint/格式0，文档parity69对/57 ADR。必要制品保全后准确clean0移除16.2GiB、target不存在；旧失败/19项warning及误报更正保留。当前无非忽略未跟踪源码，余两份正式semantic差异单列；原风险绑定等待最终冻结复评。下一步继续有效要求/替换/作用域/独立覆盖，已运行的epoch14扫码与手机消息由用户实测；当前窗口未加载本提交。新源码里程碑、原生、完整门禁/main/CI各自结算，26项整体仍开放。执行与恢复入口为CLI `.echo-semantic/local/core-repair-20261027/epoch-15/batch-return.json`、`.echo-semantic/local/local-milestones-20261027/integration-checkpoint/commit-receipt.json`。
