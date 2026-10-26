@@ -219,6 +219,10 @@ epoch08恢复入口为 `echo-agent-cli/.echo-semantic/local/root-consumer-reasse
 
 #### 下一可独立交付切片：primary verification实际模型请求的工具曝光
 
+**后继核对：本标题保留原切片入口，三控制已在epoch11实际3/3通过，不再等待开发。** 原选择器为`primary_verification_model_tools_default_scope/read_file_bound/disjoint_bound`，原list/run均0、无ignored；当前相关factory、曝光与snapshot路径已核连续性，后继required上下文校验及完整整合资格分别保留。原表是具名历史范围，不能因此倒退为未测，也不借旧三项重标当前fresh全矩阵。
+
+当前下一切片改为真实`tool_search`激活后的第二次`ChatRequest.tools`：在同一原factory/execute_run消费者内，首请求必须实际不含已注册的延迟`list_dir`；允许和排除它的两个hard范围分别核真实搜索回执、第二次请求与原16,000bytes/4,000估算token上限，目标目录工具不执行。精确候选仅修改既有`executor/tests.rs`及必要私有fixture，仍在根内ignored待唯一CLI writer合流，未编译/未当通过；不复活历史专业Profile或新增曝光机制。完整证据与原三项连续性见CLI`.echo-semantic/local/remaining-tool-consumer-audit-20261027/剩余工具曝光消费核对.md`，候选见`tool-search-request-consumer-20261027/`。
+
 这是Plan02及既有tool-inventory“曝光一致性”交接中的有界消费证据切片，归现有builtin-tool-convergence，不重盘全工具、不新建权限/曝光实现。当前只读源码支持以下差距：
 
 | 层次 | 现有实现 / 定位 | 本切片要补的证据 |

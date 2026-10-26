@@ -288,4 +288,4 @@ ubuntu真实成功只结算该账号与路径，Goal要求的 `echo@111.229.245.
 
 工程回收已累计51=外部41+内部10，原路径合计22.24GiB；internal-reclaim/postcheck确认仅剩5主检出+4host路径，无failure。本轮不新增删除，refs/stash/tag/Exa/恢复材料继续保留。精确SHA、回执路径及下一动作见[下一动作表的当前切点](../../../plans/2026-10-26-root-convergence/next-actions.md#原生epoch10与后继源码增量的当前切点)。只同步局部证据，不重新GET、运行构建、修改计划生命周期或外部Issue。
 
-工具治理下一有界切片沿Plan02和原工具清单的“曝光一致性”推进：现源的factory/注册和tool_exposure预算测试已有，primary verification的unattended主路径也已注入visible/allowed；下一步直接核该consumer最终ModelRequest.tools及正常/收窄/无交集控制，补齐候选目录统计到真实模型请求的证据缺口。复用原TaskRuntime/snapshot，不新建曝光或审批机制，不把该一条路径推广到全部Subagent/Academic/恢复/SDK；具体范围见[下一动作表](../../../plans/2026-10-26-root-convergence/next-actions.md#下一可独立交付切片primary-verification实际模型请求的工具曝光)。
+工具治理的primary verification三控制已在epoch11实际3/3通过，覆盖缺省、read_file收窄与无交集的最终ModelRequest.tools；相关曝光实现和原测试连续性已有后继核对，不能继续列为待开发，也不冒当前整树fresh资格。下一有界证据切片是原tool_search激活后第二次实际模型请求：复用原factory/execute_run/metadata recorder，分别核目标list_dir被hard范围允许和排除、首请求真实延迟、搜索回执消费及第二请求/原预算；当前仅有ignored候选，未应用或编译，不当通过。依旧不新建曝光/审批机制，不把这一consumer推广到全部插件、Subagent、恢复或SDK，完整builtin-tool-convergence依赖与验收不变；原切片及后继范围见[下一动作表](../../../plans/2026-10-26-root-convergence/next-actions.md#工具与性能剩余证据)。

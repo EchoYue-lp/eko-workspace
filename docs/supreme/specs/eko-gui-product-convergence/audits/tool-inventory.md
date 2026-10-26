@@ -30,6 +30,14 @@
 
 详细类型、最终重试与结果链、现有准确命令及范围见框架`.echo-semantic/local/web-search-error-classification-20261027/具名风险核对.md`，SHA `cb0ad70a4096f7b7bf0c32a9b7d4f4f3f39703dbe0045cfee79997f19fa8c3ae`。SDK的显式DuckDuckGo factory与direct Host不走同一central retry，且仍固定其独立框架pin，不能由本地框架静态核对取得SDK或真实服务资格。旧原文、Exa hold及其它工具治理义务保留。
 
+## 2026-10-27 后继核验：primary verification实际请求
+
+该消费者的缺省、`read_file`收窄及非空无交集三个控制，已由epoch11的原factory/execute_run到模型API实际3/3通过，0 failed/0 ignored；list/run自然0，不再列为待开发。原`followup-tools-green.log` SHA为`492924bbcfce121366ee06106b9e47154f16b9403ddf537124475208213ad0bc`，前后1358项源清单逐字相同；只记录工具名/定义字节和原估算token门槛，不保存模型正文，不编造原log未给出的实测数值。
+
+当前F f3c5/CLI 612的主要曝光路径与原件连续，原三测试主体未改；F think的后继required校验只借用最终请求但可能阻止到达模型，故当前整合/失败结算资格仍须各自取证，不能把整树说成epoch11或fresh全矩阵。精确逐路径核对见CLI`.echo-semantic/local/remaining-tool-consumer-audit-20261027/剩余工具曝光消费核对.md`。本轮只读，不重跑保留binary或新建Cargo target。
+
+下一处真实未闭合的消费证据是`tool_search`激活到第二次实际请求，允许/排除延迟工具两控制仍仅ignored候选，尚未应用/编译。原§9泛化的verification差距须按上述三项扣除；原AcademicResearch初始四搜索是旧切点，当前General/plugin化后不能照旧名造新测试。完整插件、Subagent、恢复和SDK范围继续未证，不以这个具名局部结果关闭整体工具治理。
+
 ## 1. 输入、源码身份与证据等级
 
 执行来源为 [Plan02](../plans/plan_02_tool-inventory-and-exa-boundary.md)，artifact_id `plan:92c06a40-2352-4be1-893b-c30d70d83dee`；设计与依赖见 [Design](../design.md)、[Delivery Map](../plans/delivery-map.md)。用户明确将已独审的五仓合同内容作为实施基线；主线及 CI 收口仍归协调者。

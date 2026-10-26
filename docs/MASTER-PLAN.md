@@ -15,7 +15,7 @@
 | Framework | `f3c5af6443fff36dd7088dcb32a665b5fc173489`；完整目标委派policy不被legacy max3覆盖，depth冲突派发前拒绝，缺policy保持原行为。旧生产真实max1启动actor2的RED自然101；修复后F7与真实EKO消费者CLI8共15项通过，精确4/2路径artifact/task/显式语义0、独审通过，globalClosure not_checked。官网已按该精确源同步310份受控Markdown。 | 全workspace/条件矩阵、main/CI及新压缩依赖正式修复。合理公共API不因EKO未用删除。 |
 | EKO | 当前文档后继`612050b42d31b55f6ce04c5b329b04d7114fee8b`，运行时代码与原源码`75fdab8fa38218d164171d1733307435e4dedfdf`相同。五份中文说明已修正GUI首推、app-core渠道owner和ADR0056引用，保留旧历史全文/命令块；parity、源码回读、独审与精确5路径artifact/task/显式语义0，globalClosure not_checked。此前`9bcc1fc`的epoch15渠道68/无渠道37、GUI caller/六类导出、Root前端75文件580项及类型构建/lint/fmt资格不因文档续期。输入仍为稳定来源绑定原TaskRun，耐久确认先于tracked mailbox。 | 当前有效要求全集、Interpreted/Applied、替换/作用域、独立原始要求覆盖率、完整矩阵、风险consumer复评及main/CI。Accepted不能充当Applied；未重构建原生。 |
 | SDK | 根`525453fc`上的既有`1eac40fb`去依赖候选已受控采用：64文件＋29删除及现AGENTS，共94路径；accepted精确退役269、保留5352不变，route454→431、退役39操作，仍固定独立`f7bac62`源。本根109测试、14政策单测、catalog/fmt与新Host构建各自通过，源独审通过。 | fresh官方扫描4 vulnerability/10 unsound真实失败，完整Rust/三语/collector未跑；候选未提交，旧520/三语资格不续期。两formal材料后继由原owner受控收尾，不能借重绑解除安全门禁。 |
-| 官网 | 当前本地`fcfbd7019f29c332cdb144152ef2947c5e1bf3c4`，精确12路径；八页产品说明和首页EKO区已对齐GUI/IM/cron、工作空间、领域方法、嵌套与输入边界，显式绑定F f3c5/EKO 612050b，CLI来源138项。F310镜像、Framework区及渲染/路由未变。原47测试/类型/lint保其切点，后继正文独审和必要增量校验通过；最终双源/docs/site/全格式及Root原完整build均0，验证326静态路由。 | Playwright、main/CI及部署未做，原生EKO/微信/SSH不在官网资格内。首build因遗漏PubMed自然1，补回真实工具说明后同原检查及完整build0；临时合同格式及重复SSR模板的准备失败分别保原件，不放宽断言或风险政策。 |
+| 官网 | 当前本地`fcfbd7019f29c332cdb144152ef2947c5e1bf3c4`，精确12路径；八页与首页EKO区、F310镜像及138项CLI来源已按原范围核对。最终双源/docs/site/全格式、Root完整build及326静态路由均0；原47测试/类型/lint保其切点。后继原浏览器E2E在同一381文件源清单上实际15通过/0失败/0重试，1项desktop不适用mobile-only检查在mobile通过；两viewport截图已审、自有preview正常退出并清理140个可再生缓存文件。 | main/CI及部署未做，原生EKO/微信/SSH不在网站资格内。首build的PubMed遗漏、临时合同格式和SSR模板准备失败保原件，不放宽断言或风险政策。浏览器回执见官网`browser-acceptance-20261027/qualification.json`。 |
 
 所有源码里程碑仅本地保存：**不push、不merge、不关闭Issue、不发布、不部署，不提交指向未推送子提交的顶层gitlink**。现分支由主线程统一index/commit，各写入者按文件独占。后继任务修改后应重新核源，不能因HEAD相邻而续旧票。
 
@@ -31,7 +31,7 @@
 
 1. **安全依赖正式采用待答**：两vendor隔离探针及独审已完成：F/独立SDK全feature metadata分别自然0且来源唯一；真实父包压解3/3通过、零编译warning。同1378条官方DB及原四项ignore的SDK advisory-only由14项告警变0，五源投影保真实包身份；完整yanked仍不合格。`zstd-safe`嵌套公开类型身份改变，虽未直接进入SDK原5352 accepted，实际Host/data与新来源资格仍须正式验证。已向用户展示“F唯一两vendor＋五origin，SDK后继同正式可恢复revision根patch”的采用方案，尚待答，不改live pin/manifest/锁。旧f7bac的Tokio告警不转报live F已修1.53.3为新增；不重复探针或复制整18-crate闭包。原件见F`.echo-semantic/local/zstd-patch-probe-20261027/隔离实验结论.md`及`zstd-public-boundary-20261027/公共合同影响与采用边界.md`。
 2. **有效要求路线待答**：A独立无工具判定增加请求与等待、结果持久复用；B并入主模型响应需扩流式/框架接口。尚未采用任何路线。两个方案都沿同一TaskRuntime写完整来源/作用域/替换关系，复用既有tool admission安全点，避免新store/调度器；并发/恢复/模型步版本及无Plan场景仍需正式设计与真实验收。
-3. **已闭合的独立里程碑**：EKO五份中文源说明与官网八页投影已分别本地提交并完成各自当前检查；维护复核没有新增可删refs/worktree。真实微信/SSH/原生按用户操作反馈推进。两项路线裁决后继续依赖修复与有效要求链，源码稳定再集中完整门禁、依赖consumer复评、examples适用编译/最终soak及获准后的main/CI。
+3. **当前独立实现**：任务详情存在同run旧initial载入覆盖已确认新Goal、旧计划完成数冒当前目标进度两个具名缺口，已有真实前端RED，正在沿既有载入/刷新代次、真实Goal receipt和计划版本修复；不等两项路线裁决，不新建store。primary verification原三请求控制已核实际3/3，移出待开发；下一激活后二次模型请求仍仅测试候选，待唯一writer合流。官网浏览器资格、EKO中文源与资源维护各自已结算。真实微信/SSH/原生按用户反馈推进；源码稳定后再统一完整门禁和获准后的main/CI。
 4. **退役前置**：消费者去依赖、保留能力/GUI/IM/cron/共享恢复及适用main/CI成立后才晋升A2A/LSP/TUI/独立CLI/REPL/JSONL实际退役。SDK固定pin与保留API分别核验；外部echo-semantic工具合同修复继续明确排除，保留原校验阻塞。不能用删除候选或Issue关闭制造历史缺陷已修复。
 
 ### 工具治理与上下文证据
