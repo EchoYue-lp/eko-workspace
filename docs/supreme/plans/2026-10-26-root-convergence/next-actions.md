@@ -58,7 +58,7 @@ P1/P2/N1/N2四恢复场景的具名通过保留；长reflect第三次仍失败�
 | `docs/supreme/specs/eko-gui-product-convergence/plans/plan_12_steer-responsiveness.md` | `683f71c1b60cc764afd09416c88c98c5ca3783a067692c575c2dcbce79c4e368` |
 | `docs/supreme/specs/eko-gui-product-convergence/plans/plan_13_task-list-dialog.md` | `de48a5828f557402dc16c0e39a4ab637047eaf9a74102cd1c67a8a059d97d3e3` |
 | `docs/supreme/specs/eko-gui-product-convergence/plans/plan_14_effective-requirements.md` | `36f6808dea0a97ba9ce188136762df3982ee07dc0fc8964dd00e3788e29af085` |
-| `docs/supreme/plans/2026-10-26-root-convergence/issue-finding-ledger.md` | `042c9d5a2829f160455160049780ae5a5347bcafa6a04b4619ad6f39b3bfbadc` |
+| `docs/supreme/plans/2026-10-26-root-convergence/issue-finding-ledger.md` | `d2a4f5c85c28b36fef95b0c1a5b8cbdb164ec2dac5e75adc88f36a601eab8eb7` |
 
 本文件路径为 `docs/supreme/plans/2026-10-26-root-convergence/next-actions.md`。提交前主线程按精确路径读回，若其它作者在交接后修改，不得继续使用旧SHA证明新内容。
 
@@ -80,7 +80,7 @@ P1/P2/N1/N2四恢复场景的具名通过保留；长reflect第三次仍失败�
 
 设置/import `262e7a6` 的精确暂存447输入独立验证为92/92、lint/format/build均0、独审C0/I0/M0；原一次未知原因超时、单例与完整后继结果分别保留。侧栏清单 `96495df` 的精确暂存447输入为91/91、lint/format/tsc均0、独审C0/I0/M0。CLI `80f3a72`、framework `05023bc`、SDK `525453f` 仅提交AGENTS的主目录与中文约定。没有改变在途Rust字节、push、merge或晋升顶层gitlink；当前CLI其余源码差异继续保留。这些提交不代替完整工程、native和main CI。
 
-长reflect默认栈第三次仍SIGABRT；按debug的累计三次无效修复门禁停止新补丁，准备调用图与有限修复/架构路线裁决，完整13项不计通过。有效要求Plan14与其它独立工作继续。本文后续旧HEAD与epoch文字均属于其具名观察点。
+长reflect默认栈第三次仍SIGABRT；epoch10末binary原13项为9绿（1–4、9–13）、2红（5/8）、2未执行（6/7），必要制品保全后准确target已clean7.2GiB。用户已回复参考根内ZCode完成微信接入；按此新方向回到模式分析，再修复已定位的扫码timeout/Ready显示和长控制/输入归属反例，不重复要求路线二选一。完整13项不计通过。有效要求Plan14与其它独立工作继续；两默认target另已clean0、原占用约0.756GiB，保护与恢复见workspace-inventory。本文后续旧HEAD与epoch文字均属于其具名观察点。
 
 ## 当前源码、执行与证据边界
 
