@@ -6,6 +6,8 @@
 
 ## 当前切点追加与状态维护交接
 
+主线程epoch13后继：旧消费真实RED3已取得，修复后11组15项均通过（框架4/EKO11），无编译警告。正式任务与普通聊天的缺失来源暂停/恢复、硬工具范围、超长原文引用和实际读取尾部均有具名证据；最近4条仍不是完整有效要求。5处准确cfg和压缩夹具历史入口修正已审，原失败保留。必要制品保全后官方clean0移除2.3GiB、target不存在，框架7路径本地提交 `69296a4d…`。GUI epoch14正构建而未启动；输入接纳ABC未采用，真实账号/原生/main/CI与完整26项不关闭，外部Issue观察不变。
+
 主线程后继epoch12：同一末版二进制 `3244fa80…` 原13项全部选中并通过，新增mixed-root与same-root拒绝控制另列2/2。旧epoch10的9/2/2与epoch12首次browser确认超时是历史反例，原失败未改写；browser仅夹具补原pool/plugin绑定，等待与断言不变。末版fmt/diff0，必要制品保全后官方clean0移除1.7GiB、准确target不存在，见CLI `.echo-semantic/local/core-repair-20261026/epoch-12/batch-receipt.json`。真实微信、新native、完整26项仍未完成。epoch13已采用12源/4正式文档的有界引用与可恢复暂停候选并开始真实红绿，当前只有静态资格；原GitHub观察和外部Issue状态不变。
 
 2026-10-26 主线程已核18份里程碑清单，交付图与全部14份计划首次入Git核验共15条命令自然0；只证明文档结构/绑定，不是业务重审。CLI设置/import的9路径已本地提交 `262e7a6`，侧栏清单3路径随后提交 `96495df`；CLI `80f3a72`、framework `05023bc`、SDK `525453f` 只同步AGENTS规范，所有Rust字节未因这些提交改变。未push/merge/gitlink晋升，不将本地提交扩大为main/CI或新原生Rust资格。
