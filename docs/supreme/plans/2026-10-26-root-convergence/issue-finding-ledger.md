@@ -6,7 +6,7 @@
 
 ## 当前切点追加与状态维护交接
 
-2026-10-27当前：官网`8990261`已完成精确F f3c5受控源同步，EKO旧c262投影完整保留；不能据F单源绿票宣称当前双源合格。SDK的94路径、原4vulnerability/10unsound真实阻塞继续保留。隔离两vendor候选取得双metadata0、真实压解3/3及SDK同DB/原政策advisory-only的14→0；完整yanked仍不合格，未改live来源/pin/风险政策，未将SDK Finding标resolved。SDK本批与探针均已保全并准确clean0，分别移除3.1GiB/441.8MiB。下文“等待清理/来源待验证”均是原切点，不覆盖当前限定证据；外部Issue观察仍固定2026-10-26，不刷新、不关闭。
+2026-10-27当前：EKO五份中文源`612050b`及官网`fcfbd70`已本地提交；官网八页投影、138项CLI来源与F310受控镜像精确核对，最后双源/全格式/326路由完整build均0，旧c262投影不再作为当前来源。首PubMed遗漏和准备失败保原件，修复未放宽静态断言；本地网站资格不升级为main CI/部署或原生验收。SDK94路径及原4vulnerability/10unsound阻塞继续保留；隔离两vendor探针14→0仍仅同DB/原政策advisory-only，完整yanked未合格，正式采用待答，未改live来源/pin/风险政策或SDK Finding。SDK本批与探针的3.1GiB/441.8MiB准确clean回执保留。外部Issue观察仍固定2026-10-26，不刷新、不关闭；下文具名历史切点不覆盖当前限定证据。
 
 2026-10-27后继：真实Subagent policy丢失已由Ff3c5af64/CLI75fdab8局部修复，原业务RED101、F7/CLI8、源码独审、精确4/2路径artifact/task/显式语义0均保，globalClosure not_checked、原生与mainCI未验；准确clean0移除2.8GiB。Web源码旧风险也已补本轮原有exact3/3，对应HTTP/retry/最终结果范围，未覆盖SDKdirect/真实服务。SDK去依赖已在根采用94路径并静审，首109及Host构建0；新鲜官方依赖扫描4vulnerability/10unsound阻塞仍真实保留，不接受风险/改ignore、不将旧候选绿续为当前，后继修复来源与pin待验证。有效要求路线A/B仍待用户答复。本文不刷新外部Issue观察或关闭任一正式Finding。
 

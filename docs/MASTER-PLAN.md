@@ -15,7 +15,7 @@
 | Framework | `f3c5af6443fff36dd7088dcb32a665b5fc173489`；完整目标委派policy不被legacy max3覆盖，depth冲突派发前拒绝，缺policy保持原行为。旧生产真实max1启动actor2的RED自然101；修复后F7与真实EKO消费者CLI8共15项通过，精确4/2路径artifact/task/显式语义0、独审通过，globalClosure not_checked。官网已按该精确源同步310份受控Markdown。 | 全workspace/条件矩阵、main/CI及新压缩依赖正式修复。合理公共API不因EKO未用删除。 |
 | EKO | 当前文档后继`612050b42d31b55f6ce04c5b329b04d7114fee8b`，运行时代码与原源码`75fdab8fa38218d164171d1733307435e4dedfdf`相同。五份中文说明已修正GUI首推、app-core渠道owner和ADR0056引用，保留旧历史全文/命令块；parity、源码回读、独审与精确5路径artifact/task/显式语义0，globalClosure not_checked。此前`9bcc1fc`的epoch15渠道68/无渠道37、GUI caller/六类导出、Root前端75文件580项及类型构建/lint/fmt资格不因文档续期。输入仍为稳定来源绑定原TaskRun，耐久确认先于tracked mailbox。 | 当前有效要求全集、Interpreted/Applied、替换/作用域、独立原始要求覆盖率、完整矩阵、风险consumer复评及main/CI。Accepted不能充当Applied；未重构建原生。 |
 | SDK | 根`525453fc`上的既有`1eac40fb`去依赖候选已受控采用：64文件＋29删除及现AGENTS，共94路径；accepted精确退役269、保留5352不变，route454→431、退役39操作，仍固定独立`f7bac62`源。本根109测试、14政策单测、catalog/fmt与新Host构建各自通过，源独审通过。 | fresh官方扫描4 vulnerability/10 unsound真实失败，完整Rust/三语/collector未跑；候选未提交，旧520/三语资格不续期。两formal材料后继由原owner受控收尾，不能借重绑解除安全门禁。 |
-| 官网 | 已本地提交`8990261001d686bee84c9ffc9ee4ad1acb2788e6`，49路径；同步器改用固定Git源清单和blob，排除ignored/未采用文档；F310份镜像、47项focused、类型/lint/格式/文档与F单源校验、326路由发现均通过，独审通过。EKO旧c262投影的120条来源/8页及原状态整体保留。 | 正在校对八个产品页与首页EKO区，最终显式绑定已修正的612050b源文档；未取得的新投影资格不提前晋升。当前双源检查原自然1保留，完整build/e2e、main/CI及部署未做。 |
+| 官网 | 当前本地`fcfbd7019f29c332cdb144152ef2947c5e1bf3c4`，精确12路径；八页产品说明和首页EKO区已对齐GUI/IM/cron、工作空间、领域方法、嵌套与输入边界，显式绑定F f3c5/EKO 612050b，CLI来源138项。F310镜像、Framework区及渲染/路由未变。原47测试/类型/lint保其切点，后继正文独审和必要增量校验通过；最终双源/docs/site/全格式及Root原完整build均0，验证326静态路由。 | Playwright、main/CI及部署未做，原生EKO/微信/SSH不在官网资格内。首build因遗漏PubMed自然1，补回真实工具说明后同原检查及完整build0；临时合同格式及重复SSR模板的准备失败分别保原件，不放宽断言或风险政策。 |
 
 所有源码里程碑仅本地保存：**不push、不merge、不关闭Issue、不发布、不部署，不提交指向未推送子提交的顶层gitlink**。现分支由主线程统一index/commit，各写入者按文件独占。后继任务修改后应重新核源，不能因HEAD相邻而续旧票。
 
@@ -29,9 +29,9 @@
 
 ### 当前推进顺序
 
-1. **安全依赖正式候选评审**：两vendor隔离探针已完成：F/独立SDK全feature metadata分别自然0且来源唯一；真实父包压解3/3通过、零编译warning。五源canonical registry-origin投影保留原包名/version/checksum；同1378条官方DB及原四项ignore的SDK advisory-only由14项告警变0，未增加风险接受。完整yanked检查仍有五项index诊断，不能称完整依赖门禁通过。探针基底是SDK原F f7bac，旧Tokio告警保留，未改live F/SDK manifest、锁、vendor或正式pin；下一步核对公开类型身份、保留消费者和正式单owner采用边界，不重复包发现/冷编，不复制整18-crate闭包。原件见F`.echo-semantic/local/zstd-patch-probe-20261027/隔离实验结论.md`。
+1. **安全依赖正式采用待答**：两vendor隔离探针及独审已完成：F/独立SDK全feature metadata分别自然0且来源唯一；真实父包压解3/3通过、零编译warning。同1378条官方DB及原四项ignore的SDK advisory-only由14项告警变0，五源投影保真实包身份；完整yanked仍不合格。`zstd-safe`嵌套公开类型身份改变，虽未直接进入SDK原5352 accepted，实际Host/data与新来源资格仍须正式验证。已向用户展示“F唯一两vendor＋五origin，SDK后继同正式可恢复revision根patch”的采用方案，尚待答，不改live pin/manifest/锁。旧f7bac的Tokio告警不转报live F已修1.53.3为新增；不重复探针或复制整18-crate闭包。原件见F`.echo-semantic/local/zstd-patch-probe-20261027/隔离实验结论.md`及`zstd-public-boundary-20261027/公共合同影响与采用边界.md`。
 2. **有效要求路线待答**：A独立无工具判定增加请求与等待、结果持久复用；B并入主模型响应需扩流式/框架接口。尚未采用任何路线。两个方案都沿同一TaskRuntime写完整来源/作用域/替换关系，复用既有tool admission安全点，避免新store/调度器；并发/恢复/模型步版本及无Plan场景仍需正式设计与真实验收。
-3. **独立并行事项**：官网F同步已完成，继续EKO产品源审查与投影；工具治理事实对账、可恢复维护并行。真实微信/SSH/原生按用户操作反馈推进。稳定源冻结后集中完整门禁、依赖consumer复评、examples适用编译/最终soak及获准后的main/CI。
+3. **已闭合的独立里程碑**：EKO五份中文源说明与官网八页投影已分别本地提交并完成各自当前检查；维护复核没有新增可删refs/worktree。真实微信/SSH/原生按用户操作反馈推进。两项路线裁决后继续依赖修复与有效要求链，源码稳定再集中完整门禁、依赖consumer复评、examples适用编译/最终soak及获准后的main/CI。
 4. **退役前置**：消费者去依赖、保留能力/GUI/IM/cron/共享恢复及适用main/CI成立后才晋升A2A/LSP/TUI/独立CLI/REPL/JSONL实际退役。SDK固定pin与保留API分别核验；外部echo-semantic工具合同修复继续明确排除，保留原校验阻塞。不能用删除候选或Issue关闭制造历史缺陷已修复。
 
 ### 工具治理与上下文证据
@@ -44,7 +44,7 @@ epoch13必要上下文真实RED3→GREEN15（F4/EKO11）限定证明有界完整
 
 - 每批自有target、最多两focused、jobs≤2/debug0；相邻同冻结源验证组成一批，保原日志/真实出口和必要制品、确认无读者后准确cargo clean。free<5GiB停止新构建；完整矩阵/性能测量按协调窗口串行，未跑Cargo不为形式clean。
 - epoch15官方clean0移除16.2GiB；原生14为3.8GiB；深度/Web批2.8GiB；SDK受阻批3.1GiB；zstd隔离探针为441.8MiB，各target已移除、必要制品原字节保全。数字为各批官方输出，不相加冒APFS净收益；未运行Cargo的官网/文档工作不为形式清理。
-- 已回收51个非host旧worktree（外41＋内10），原路径22.24GiB与恢复包成本分别记录。余5主检出＋4host路径；host queued归档仍未确认不得冒已回收或手工删除。当前66 branch仅比原65新增官网任务分支`fix/Echoyue/website-source-sync`；18 stash逐SHA/顺序、123 tag均与旧清单相同，Exa`4343f0b7…`及pre-retirement固定tag保持保护。没有新增可删refs/worktree；官网owner释放后，仅回收1109文件的可再生Node编译缓存（allocated 10,293,248 bytes），日志/制品/manifest保留，准确回执见根`.echo-semantic/local/maintenance-current-20261027/node-cache-cleanup.json`。
+- 已回收51个非host旧worktree（外41＋内10），原路径22.24GiB与恢复包成本分别记录。余5主检出＋4host路径；host queued归档仍未确认不得冒已回收或手工删除。当前66 branch仅比原65新增官网任务分支`fix/Echoyue/website-source-sync`；18 stash逐SHA/顺序、123 tag均与旧清单相同，Exa`4343f0b7…`及pre-retirement固定tag保持保护。没有新增可删refs/worktree；官网前后两批owner释放后分别回收1109文件（allocated 10,293,248 bytes）与2989文件（allocated 24,903,680 bytes）的准确自有Node/Vite/TS缓存，日志/制品/manifest和新旧dist保留，不相加冒APFS净收益。回执分别为根`.echo-semantic/local/maintenance-current-20261027/node-cache-cleanup.json`及官网`eko-product-projection-build-20261027/completed-handoff.json`。
 - 完成交接的4个旧项目聊天已按宿主回执归档，当前Goal及待答验收由Root继续。聊天归档、Git工作树删除、缓存清理和refs清理分别结算；未改原用户数据或配置凭据。
 - 正式Issue观察仍绑定2026-10-26 API切点：F #32–35/#188/#189 open、#55 closed/completed，16个具名PR已merged；未作新外部写入，不借局部semantic更新关闭宽Finding。局部`scope=task/globalClosure=not_checked`与全局/原生/CI分别保留。
 
