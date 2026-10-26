@@ -6,6 +6,8 @@
 
 ## 当前切点追加与状态维护交接
 
+2026-10-27后继：真实Subagent policy丢失已由Ff3c5af64/CLI75fdab8局部修复，原业务RED101、F7/CLI8、源码独审、精确4/2路径artifact/task/显式语义0均保，globalClosure not_checked、原生与mainCI未验；准确clean0移除2.8GiB。Web源码旧风险也已补本轮原有exact3/3，对应HTTP/retry/最终结果范围，未覆盖SDKdirect/真实服务。SDK去依赖已在根采用94路径并静审，首109及Host构建0；新鲜官方依赖扫描4vulnerability/10unsound阻塞仍真实保留，不接受风险/改ignore、不将旧候选绿续为当前，后继修复来源与pin待验证。有效要求路线A/B仍待用户答复。本文不刷新外部Issue观察或关闭任一正式Finding。
+
 2026-10-27语义与工具后继：两份CLI Rule/Evidence已精确提交 `421972b…`，官方正常缺owner迁移归档、两路径stagedartifact/task和最后显式语义均0；源锚为已提交9bcc，历史正文原样保留，Rule继续high/needs_review、globalClosure not_checked、Finding不变。CLI工作树干净，验证收据保全；预检已消费、continuation不存在，提交导致旧session观察pending单列，未伪改起始快照。工具预算项经当前F69296源码/祖先和同源保留binary三项实际验证，已在根审计提交8feaddc中核销；不是provider真实token、完整工具治理或main/CI结案。有效要求理解路线的新增调用成本与流式改造取舍待用户答复，未擅自采用。外部Issue观察不刷新，26项整体继续开放。
 
 2026-10-27末版后继：CLI已本地提交 `9bcc1fc…`，126路径树 `0c7492e6…` 与已核候选一致；795输入匹配。epoch15末版渠道68/68、无渠道37/37分别通过，严格零编译警告；GUI caller、六类真实导出、fmt/diff0。Root独立全前端75文件580项、真实类型/Tauri页面构建、全lint/格式均0，parity69对/57 ADR。两个最终制品保全后准确clean0移除16.2GiB、target不存在；初始夹具失败、19项条件编译警告、残余import及旧零警告误报的更正均保留，末版不借旧票。两份正式semantic差异保留未提交，外部Issue观察不刷新。原生仍epoch14，真实扫码待反馈，完整有效要求/Applied/独立覆盖、完整门禁/风险复评/main/CI及26项仍开放；未push/merge/gitlink晋升。

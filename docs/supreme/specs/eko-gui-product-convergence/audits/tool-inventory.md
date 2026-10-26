@@ -20,6 +20,16 @@
 
 这里结算的是原HeuristicTokenizer估计预算的回退／inline范围，未验证provider真实计费token、完整请求、spill成功preview、富媒体、SDK direct、原生或main CI。Web失败分类、其它曝光与消费者去依赖仍按各自证据推进；Exa继续本地保留、不推送、不合main。子仓正式中文streaming文档已包含该实现合同，本轮仅更新顶层阶段审计，不新增公共API、示例或官网行为。
 
+## 2026-10-27 后继核验：Web错误分类
+
+原§4.3/§9的“WebSearch把provider Err一律投影为retryable Transient”也已在`fcc8a7d1…`修复，当前框架69296已继承。生产HTTP helper保留typed HTTP/传输原因：认证类错误为Permanent，408为Timeout，429/5xx为Transient并保存Retry-After；不按错误文本猜HTTP状态。WebSearch通过原`ToolFailure::from_error`保留最终failure/status，ToolManager依据`allows_automatic_retry`、副作用/恢复政策与原等待上限决定是否重试。最终ReAct事件仍保留原`ToolResult`，模型侧可读错误文本不取代typed分类。
+
+本轮首先逐路径核对19项输入和真实消费者，没有把源码读取写成fresh Web测试通过：现有`testing,files`保留二进制不含web，依赖crate的Provider单测也不在root库测试二进制中；旧976项通过仅见提交说明，具名原始回执本轮未定位。后继已在深度修复同一冻结批次实际取得三个原有exact控制各1/1、自然退出0且无忽略：`web::search::tests::direct_search_preserves_complete_remote_failure_and_status`、`web::providers::brave::tests::actual_http_manager_stops_auth_and_waits_for_rate_limit`及`agent::react::run::pipeline::tests::react_tool_pipeline_preserves_web_remote_failure_for_the_caller`。前两项在`echo_tools`的web配置，最后一项在root `echo_agent`的testing,web配置，实际选中和退出分别记录，不借上节预算3/3替代。
+
+因此，该具名项按“现实现已修、WebSearch typed结果／本地HTTP与central retry／ReAct最终结果的focused 3/3”接续，退出待开发队列。源码未因本轮验证改变；当前框架本地检查点为`f3c5af6443fff36dd7088dcb32a665b5fc173489`，其中新增的是独立的深度策略修复。Web原始结果见框架`.echo-semantic/local/subagent-bound-policy-fix-20261027/r3-webtools-controls.json`和`r3-webpipeline-controls.json`，必要制品已保全，准确自有target官方clean0移除2.8GiB；不能扩成真实上游服务、所有Provider、SDK direct或main CI通过。
+
+详细类型、最终重试与结果链、现有准确命令及范围见框架`.echo-semantic/local/web-search-error-classification-20261027/具名风险核对.md`，SHA `cb0ad70a4096f7b7bf0c32a9b7d4f4f3f39703dbe0045cfee79997f19fa8c3ae`。SDK的显式DuckDuckGo factory与direct Host不走同一central retry，且仍固定其独立框架pin，不能由本地框架静态核对取得SDK或真实服务资格。旧原文、Exa hold及其它工具治理义务保留。
+
 ## 1. 输入、源码身份与证据等级
 
 执行来源为 [Plan02](../plans/plan_02_tool-inventory-and-exa-boundary.md)，artifact_id `plan:92c06a40-2352-4be1-893b-c30d70d83dee`；设计与依赖见 [Design](../design.md)、[Delivery Map](../plans/delivery-map.md)。用户明确将已独审的五仓合同内容作为实施基线；主线及 CI 收口仍归协调者。

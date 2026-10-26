@@ -1,5 +1,9 @@
 # 根内收敛下一动作与交付依据
 
+最新交付：Subagent策略桥修复已本地提交F`f3c5af64…`/CLI`75fdab8…`，F7+CLI8共15focused通过、精确4/2路径artifact/task/显式语义0且globalClosure not_checked，必要制品保全后准确clean0移除2.8GiB。Web具名3/3另列，不冒SDKdirect或真实服务。SDK根首109与Host构建已0，但fresh zstd安全门禁仍阻塞；不启动完整矩阵/三语。下一独立行动是保全清理SDK本批，并验证框架唯一源码owner的两vendor＋SDK两精确Git来源选择候选；该候选尚无包发现/编译/扫描通过，来源见F`.echo-semantic/local/zstd-dependency-feasibility-20261027/`。有效要求A/B调用成本路线及真实微信扫码仍待用户答复；完整Goal不关闭。
+
+当前验证后继：深度旧生产已真实允许max1下的actor2，取得业务反例；最小修复后的框架4项通过，EKO三真实消费者及后继检查进行。SDK根内首109项通过，但fresh官方依赖扫描发现zstd系列4项vulnerability/10项unsound，逆依赖要求使单锁更新不足；不接受/ignore新风险，不默认复制SDK vendor或改固定pin。SDK完整矩阵/三语暂不启动，当前Host自然结算后保全clean；上游单一责任修复与精确继承作为必要后继，原始报告在SDK`.echo-semantic/local/sdk-consumer-root-integration-20261027/fresh-dependency-blockers.json`。本段替代下段“等待完整矩阵窗口”的当前调度依据，不改旧通过范围。
+
 当前并行执行：F/CLI修复程序化delegate把已绑定max1/2覆盖为legacy3的缺口，生产最小候选已静态审查，真实Fork/EKO三消费者旧生产RED进行；SDK按Plan04受控采用已有1eac40fb候选全闭包，269退役/5352保留、23route与39op精确差集已在根实际0，独立pin f7bac的locked metadata0，定向验证及Host准备开始。两线互不读写彼此源码，不等待有效要求A/B模型成本裁决；完整矩阵按窗口、最多两focused，各自保全/clean。当前真实通过范围不扩到后继修复、SDK完整新资格或框架物理删除。
 
 2026-10-27当前接续：CLI正式材料局部对账已提交421972b，工作树干净；精确两路径官方artifact/task/显式语义0、globalClosure not_checked，旧任务归档与后继真实owner退出均有回执。工具结果回退预算已按现实现和同源retained binary实际3/3核销，根审计8feaddc保留旧原文，其它工具治理未关闭。当前有效要求路线的额外模型调用成本与主模型协议改造取舍已询问用户、仍待答；不将推荐当采用，不开始依赖该裁决的新写入。真实微信扫码也待实测，原生仍epoch14。所有源码、引用、分支与恢复材料维持既定保护范围，26项和Goal保持开放。
@@ -74,7 +78,7 @@ P1/P2/N1/N2四恢复场景的具名通过保留；长reflect第三次仍失败�
 | `docs/supreme/specs/eko-gui-product-convergence/plans/plan_12_steer-responsiveness.md` | `683f71c1b60cc764afd09416c88c98c5ca3783a067692c575c2dcbce79c4e368` |
 | `docs/supreme/specs/eko-gui-product-convergence/plans/plan_13_task-list-dialog.md` | `de48a5828f557402dc16c0e39a4ab637047eaf9a74102cd1c67a8a059d97d3e3` |
 | `docs/supreme/specs/eko-gui-product-convergence/plans/plan_14_effective-requirements.md` | `36f6808dea0a97ba9ce188136762df3982ee07dc0fc8964dd00e3788e29af085` |
-| `docs/supreme/plans/2026-10-26-root-convergence/issue-finding-ledger.md` | `f7b7c61e5ba071d841b05158ef3a20bc9bfb6fc851c1c60827d1f49adf4bedb5` |
+| `docs/supreme/plans/2026-10-26-root-convergence/issue-finding-ledger.md` | `7dee33f34012feb765f6cd31265d7d6aaad2ac0f67b794ab891989ead068106e` |
 
 本文件路径为 `docs/supreme/plans/2026-10-26-root-convergence/next-actions.md`。提交前主线程按精确路径读回，若其它作者在交接后修改，不得继续使用旧SHA证明新内容。
 

@@ -18,9 +18,15 @@ CLI 前端事件检查点已本地提交 `88ab429307ea01df802b8f20558aca8b8251fc
 
 当前有效要求的自动理解路线存在一次真实产品取舍：独立无工具判定会增加新输入的请求和等待，持久结果可复用；并入主模型响应则需更广的流式输出与框架接口改造。已向用户询问，尚未采用任何路线。两者共同的accepted/applied版本及工具安全边界已完成只读核对，不把已有projector或返回`()`的callback当成现成应用合同。准备材料位于CLI `.echo-semantic/local/effective-requirements-registry-options-20261027/`；等待答复期间工程维护和证据核验继续。
 
-当前有两条不依赖该裁决的执行线。第一条修复真实Subagent策略传递缺口：GUI/TaskRun捕获的上限正确，但ReactAgent两种程序化delegate inner会以depth重建固定max3，覆盖原任务max1/2；最窄生产修复保持public签名及缺省legacy行为，已有完整目标策略则原样保留并拒绝depth冲突，已经静态双审，真实Fork与EKO只读/写入/附件回归开始旧生产RED，尚无新通过结论。来源与不变量在框架`.echo-semantic/local/subagent-bound-policy-fix-20261027/`，原TaskRun产品上限和通用框架合理上限分别保留。
+Subagent完整策略桥缺陷现已修复并本地提交：框架`f3c5af6443fff36dd7088dcb32a665b5fc173489`四路径、EKO`75fdab8fa38218d164171d1733307435e4dedfdf`两路径。两种显式runtime-context程序化入口原样保留目标policy三字段，depth冲突在派发前拒绝；缺policy保持原legacy，目标actor不重复计层。原max1启动actor2的真实业务RED自然101保留，修复后框架7项、EKO8项共15项通过且零warning，覆盖真实Fork及readonly/writer文本/落盘附件、原primary与配置。源码/文档独审通过，精确4/2路径artifact/task/最终显式语义分别0，scope task/globalClosure not_checked；必要制品保全后准确clean0移除2.8GiB。原失败夹具及准备命令失败原件保留。EKO生产接线未改、两仓工作树干净；官网相关受控镜像仍待稳定源同步，不将其写成不适用。该修复不代表当前epoch14原生已加载或SDK新依赖问题已解决。依据在框架`.echo-semantic/local/subagent-bound-policy-fix-20261027/`。
 
-第二条按Plan04把已审SDK候选`1eac40fb…`完整接入当前根SDK：93候选blobs原样恢复并保当前AGENTS规则，实际静态差集为退役269/保留5352无变化、454→431 routes、39操作退役；不是从零重写。locked/offline/allfeatures metadata已实际0，653包、framework pin精确`f7bac62…`，来源为其独立干净Git缓存，不读正在修改的本机框架。当前定向验证/Host准备进行，旧候选520及三语资格只保历史，根内新资格仍待。恢复与源冻结在SDK`.echo-semantic/local/sdk-consumer-root-integration-20261027/`。两线分别持源码/target，最多两条focused；完整SDK矩阵等协调窗口，批后保全并准确clean。没有push/merge或框架物理退役。
+同批另取得Web错误分类三个原有exact控制3/3：WebSearch typed结果、本地HTTP/central retry、ReAct最终ToolResult分别验证，源码已有修复而未新增分类器；这与工具预算的保留binary3/3是不同证据。SDK direct、真实Provider服务、完整工具治理和main CI仍按各自范围，原始结果与工具审计后继段保留。
+
+第二条按Plan04把已审SDK候选`1eac40fb…`完整接入当前根SDK：候选64文件及29删除原样采用，另保当前AGENTS规则，实际静态差集为退役269/保留5352无变化、454→431 routes、39操作退役；不是从零重写。locked/offline/allfeatures metadata已实际0，653包、framework pin精确`f7bac62…`，来源为其独立干净Git缓存，不读正在修改的本机框架。当前定向验证/Host准备进行，旧候选520及三语资格只保历史，根内新资格仍待。恢复与源冻结在SDK`.echo-semantic/local/sdk-consumer-root-integration-20261027/`。两线分别持源码/target，最多两条focused；完整SDK矩阵等协调窗口，批后保全并准确clean。没有push/merge或框架物理退役。
+
+SDK本轮后继：原候选93路径实际为64个文件及29个删除，AGENTS另算，共94路径；源独审通过，本根protocol/core RPC/inventory首109项实际通过且零警告。fresh官方RustSec数据库`a78282a1…`扫描自然1，报告zstd系列4个vulnerability及10个unsound，不是网络失败，未新增ignore/接受风险。逆链为固定框架数据能力→Polars0.55.2→arrow/parquet→zstd0.13/safe7/sys2；官方修复zstd0.14.3/safe8.2不在父要求范围，单锁更新不能闭合。暂停完整SDK矩阵/三语，待Host准备自然结算后保全并准确clean；先核单一上游源码责任和后继继承方式，不默认在SDK复制两套父crate或悄改pin。原109项、去依赖静态差集及旧候选资格各保范围，SDK整体/依赖合格仍未成立。原始诊断见SDK同目录`fresh-dependency-blockers.json`。
+
+SDK新Host现已自然构建0、零warning并先保存在target外，缓存清理和批次归还待原owner最终回执；不为已知依赖阻塞的快照再启动完整矩阵。安全修复的只读可行性已完成：官方Polars最新Rust发布0.55.2及所查main仍要求zstd0.13，当前使用API在安全链中签名保留。优先候选为框架唯一持有两父crate源码、框架根path patch、SDK根两条Git patch引用同一框架精确来源并同步pin；不采用在SDK复制第二份源码或默认vendor整个18-crate逆闭包。Cargo包发现、根patch统一替换、编译、全feature图、风险与许可证/duplicate及公开合同保真仍待隔离验证，不能把静态可行性称安全修复。材料在框架`.echo-semantic/local/zstd-dependency-feasibility-20261027/`。
 
 epoch13后继：必要上下文的旧消费者3个真实反例均自然失败；修复后的11组、15项定向验证通过，其中框架4项、EKO11项，零编译警告。覆盖有界原文引用、真实模型请求与分页尾部、硬工具范围，以及正式任务/普通聊天的缺失来源暂停和原路径恢复；仍只投影最近4条，不代表持续有效要求与独立覆盖链完成。5处channel-only wrapper补齐准确cfg，保留无feature消费者；压缩夹具改经原invocation传入同一历史，原预算和断言不变。原失败与准备错误保留。两个必要二进制保全后官方clean0移除2.3GiB、准确target不存在。框架7路径已本地提交 `69296a4dea1047be7fb91b7ab06a839ee57dda7e`，未推送/合并；证据见CLI `.echo-semantic/local/core-repair-20261026/epoch-13/batch-receipt.json`。
 
