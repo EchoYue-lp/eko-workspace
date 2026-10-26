@@ -8,7 +8,7 @@
 
 2026-10-26 主线程已核18份里程碑清单，交付图与全部14份计划首次入Git核验共15条命令自然0；只证明文档结构/绑定，不是业务重审。CLI设置/import的9路径已本地提交 `262e7a6`，侧栏清单3路径随后提交 `96495df`；CLI `80f3a72`、framework `05023bc`、SDK `525453f` 只同步AGENTS规范，所有Rust字节未因这些提交改变。未push/merge/gitlink晋升，不将本地提交扩大为main/CI或新原生Rust资格。
 
-P1/P2/N1/N2具名恢复验证绿保持；epoch10末binary的原13项目前9绿（1–4、9–13），5长reflect仍SIGABRT、8scope mismatch失败，6/7未执行，批次已clean7.2GiB。用户随后明确参考根内ZCode完成微信接入；先按该方向回到模式分析，扫码timeout与GUI Ready识别已定位、尚待修复验证。完整13项和原文/有效要求两项原失败继续开放，不新增风险豁免或外部Issue操作，也不更改原GitHub观察切点。ubuntu真实成功与echo支持义务仍分别验收。
+P1/P2/N1/N2具名恢复验证绿保持；epoch10末binary的原13项为9绿（1–4、9–13），5长reflect仍SIGABRT、8scope mismatch失败，6/7未执行，批次已clean7.2GiB。用户指定参考根内ZCode后，epoch11框架扫码真实RED2→GREEN2、EKO原认证producer真实RED1→最终7/7、GUI Ready组件23/23分别通过；没有扩大35秒请求/300秒challenge或重放数字码。实际工具曝光3项通过；原文冷重开/真实压缩/普通控制各1项通过，但超长投影和真实可恢复暂停仍未闭合，完整有效要求链继续开放。epoch11两个必要二进制保全后准确target已官方clean0、移除8.0GiB；原编译与夹具失败保留。旧13项未被该批重跑，不用新通过覆盖5/8失败或6/7缺证。新组合前端148资产未加载，真实扫码/手机收发未验。不新增风险豁免、外部Issue操作或GitHub观察切点；ubuntu真实成功与echo支持义务分别验收。
 
 本线仅在next-actions和本文追加当前澄清，随后冻结其它交接文档，不改Design、Delivery Map、全部Plan/hash、旧reconciliation、tool-inventory或主线程独占的MASTER/AGENTS。主线程接管这两份后继状态与候选SHA；next-actions旧808…和本文旧5f364…不再代表新增字节，提交前须按实际文件刷新。本线不stage/commit/gitlinks，不运行Cargo或重新GET。
 

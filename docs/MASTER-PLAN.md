@@ -22,11 +22,13 @@
 - 首个本地源码里程碑为 CLI `262e7a684956503d2d4a75670467db0bedb694e3`：设置与导入清理共 9 路径，从精确暂存快照独立导出 447 个前端输入验证，92/92、lint、格式及含类型检查的构建通过，独审 C0/I0/M0。首轮同组的一次未知原因超时原件保留，单例及完整同组后继通过不被描述为源码修复。该提交未包含核心 Rust 和其它未完成 GUI 功能；恢复入口是 CLI `.echo-semantic/local/local-milestones-20261026/settings-imports/`。
 - 后继 CLI `96495df2a81885fcb97fd6dd8f723990a4dfb139` 提交侧栏清单修复与中文说明共 3 路径，精确暂存快照 91/91、lint、格式与类型检查通过，独审 C0/I0/M0。CLI `80f3a72`、framework `05023bc`、SDK `525453f` 仅提交各自 AGENTS 的主目录与中文约定；这些 Git 提交不改变在途 Rust 验证输入，顶层 gitlink 仍未晋升。
 
-- ZCode 参考固定在根内干净源码 `3c5b227649371507ddc4eb46ac5133afe6db1cab`。扫码、消息和 GUI 三线只读对照已经找到长轮询超时提前结束 challenge、微信 Ready evidence 未识别两个具体缺口，正在原接口上补回归与修复；保留 EKO 数字校验、凭据 generation、原 owner 与持久化承诺，不照搬参考实现的弱确认边界。当前未新增通过的认证/原生验收。
+- ZCode 参考固定在根内干净源码 `3c5b227649371507ddc4eb46ac5133afe6db1cab`。框架扫码超时已按真实 RED2→GREEN2 修复；EKO 原认证 producer 真实 RED1→最终 7/7，通过后仍保留原二维码、35秒请求/300秒绝对过期、取消、凭据 generation 和数字码不重放。GUI 识别 `weixin_authenticated_poll` 的 23 项回归与独审通过，最新组合前端 `deaafde5…` 保全 148 资产、453 输入无漂移，尚未加载原生。不照搬 ZCode 的弱 ACK 或最新 context 替换冻结身份。epoch11 原先编译错误和夹具 6/7 失败原件保留，修正后重验；两个必要二进制保全后准确 target 已官方 clean 退出0、移除8.0GiB。证据见 CLI `.echo-semantic/local/core-repair-20261026/epoch-11/batch-receipt.json`。这不代替真实扫码、手机消息、原13项或新原生验收。
+- Framework 扫码超时修复已本地提交 `4e0785adbbe62df8c179a323a35399d89cdbadf5`，仅2路径；审查后同源保留二进制2/2、格式及差异检查再次通过，framework工作树干净；未推送或晋升gitlink。
+- epoch11 实际 primary verification 的 `ChatRequest.tools` 三项控制分别通过，仅结算该工具治理切片。Plan14 完整原文的冷重开、真实压缩和普通控制各1项通过，但超长原文会撑满受保护上下文的审查问题仍开放；有界引用候选还需证明真实 invocation 可读，以及关键缺失能经原 TaskRuntime 暂停并恢复。没有将默认工具范围放宽、普通 Failed 当 Paused，或把最近4条原文当完整有效要求链。
 - 两处旧默认缓存已串行官方清理：CLI 原分配 631,898,112 bytes、framework 180,080,640 bytes，两命令自然退出 0、准确目录移除；13 份必要制品的 SHA/mode 不变，原生与 fixture 未重启。原占用合计约 0.756 GiB，与主机 `df` 净变化分开；历史 producer 出口仍未知。恢复与对账见 `workspace-inventory.md` 及 `.echo-semantic/local/default-target-handoff-20261026/execution/`。
 - 未完成 CLI 源码另做有界恢复包：`80f3a72` 基线的 97 份 tracked 差异与 24 份非忽略未跟踪文件共 121 份逐项压缩/回读，SHA/mode 匹配且捕获前后无漂移；包 SHA `3874e8c6…`，位于 CLI `.echo-semantic/local/local-milestones-20261026/uncommitted-source/`。这只是该切点的恢复保护，不是绿色提交；不含 ignored 用户数据或凭据。其后一份已保全的可再生 Python 缓存已删除，源码保留。
 
-下一步按顺序：按用户新指示对照 ZCode 微信实链，先修复已定位的扫码长轮询超时与 GUI Ready 识别，再依据真实证据闭合长控制默认栈和 scope mismatch 反例、完成原 13 项微信消费者验证；核心线同时继续 Plan14 的完整原文、有效要求、关键恢复失败处理和独立覆盖检查；前端、工具治理、交付对账与可恢复清理按文件归属并行。通过的切片及时本地提交，稳定版本再集中完成 GUI/SSH/微信原生矩阵。A2A/LSP 外部校验工具修复继续排除，实际入口退役仍受消费者、恢复与集成验收前置条件约束。26 项结果继续对账，不以局部通过关闭整体 Goal。
+下一步按顺序：先将已验证的 ZCode 参考扫码超时与 GUI Ready 修复作本地里程碑提交，再依据真实证据闭合长控制默认栈和 scope mismatch 反例、完成原 13 项微信消费者验证；核心线同时继续 Plan14 的完整原文、有效要求、关键恢复失败处理和独立覆盖检查；前端、工具治理、交付对账与可恢复清理按文件归属并行。通过的切片及时本地提交，稳定版本再集中完成 GUI/SSH/微信原生矩阵。A2A/LSP 外部校验工具修复继续排除，实际入口退役仍受消费者、恢复与集成验收前置条件约束。26 项结果继续对账，不以局部通过关闭整体 Goal。
 
 ## 2026-10-16 SDK 全能力治理（2026-10-22 联合验收）
 
