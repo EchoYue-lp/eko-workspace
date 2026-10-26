@@ -6,6 +6,10 @@
 
 ## 2026-10-26 唯一开发根与 GUI 收敛
 
+最新后继：epoch12 末版二进制 `3244fa80…` 的原13项微信消费者全部通过，新增混合日志两项另列2/2；准确选择、原等待与断言、默认栈均保留。共用分派实测入口帧从1,543,184B降至15,248B，reflection为72,688B，只是单入口序言，不是future大小或整链峰值。首轮browser确认2.11秒失败保留，补齐测试夹具原Extension所需pool/plugin绑定后，原用例与整套13复验通过。末版fmt/diff0，必要二进制、源码与自然出口保全后，官方clean0移除1.7GiB、准确target不存在。证据见CLI `.echo-semantic/local/core-repair-20261026/epoch-12/batch-receipt.json`；真实扫码/手机消息、新native、完整工程仍未验收。
+
+Plan14有界原文引用、最终模型请求可读性、formal与普通chat原暂停/恢复组合12源和4正式文档已静态独审并采用；epoch13正在执行旧消费RED与修复GREEN，当前不宣称新行为通过。稳定来源的耐久接受与首轮全文绑定仍在独立候选准备；下文旧9/2/2、epoch与候选措辞保留其具名历史时点，不能替代本段后继状态。完整26项和Goal继续开放。
+
 用户已指定唯一开发目录 `/Users/ls/MyWork/code/ylp_agent_learn/lp-agent`。外部 worktree 停止开发，仅作为冻结迁移来源；新实现、测试、日志与恢复材料写在本目录内，不再创建外部开发目录。
 
 - 根 framework 为 `chore/Echoyue/root-workspace-convergence`，起点 `9c5e202dcbd20a7de3c017a3ee8adada3e400b86`；根 EKO 同名分支起点 `780ddd0d25c2eac5d1471cb3e5012c9d2f6b3cf9`。原 main、Exa 分支和 `pre-retirement-2026-10-24` tags 保留；没有 merge、push 或发布。

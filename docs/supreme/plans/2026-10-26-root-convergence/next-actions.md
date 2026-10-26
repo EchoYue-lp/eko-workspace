@@ -1,5 +1,9 @@
 # 根内收敛下一动作与交付依据
 
+最新后继：epoch12末版 `3244fa80…` 原13项微信消费者全部通过，新增混合日志控制另列2/2；旧9/2/2与首轮browser超时保留历史原件。默认栈、原等待与断言不变，browser只补测试运行时pool/plugin绑定；末版fmt/diff0。必要制品保全后官方clean0移除1.7GiB、准确target不存在，证据见CLI `.echo-semantic/local/core-repair-20261026/epoch-12/batch-receipt.json`。真实扫码/手机消息、原生与完整工程仍未验收。
+
+有界原文及关键上下文暂停/恢复组合12源、4正式文档静态独审通过，已由主线程采用，epoch13开始3个旧消费RED与具名GREEN，尚无新行为结论。原输入来源、TaskRun耐久接受、首轮全文与跨run幂等继续独立准备；不把recent4或此候选当完整有效要求。所有live Rust冻结，其它agent只写根内ignored候选；下文旧切点不替代本段后继状态，26项和Goal继续开放。
+
 更新切点：2026-10-26 主线程epoch11扫码/工具/原文定向验证与准确clean、最新前端148资产保全及累计51项回收，Asia/Shanghai。本文是四线并行的工程接续入口；Design、Delivery Map 和精确 Plan 仍分别拥有目标行为、结果依赖和执行验收。本文不代替 TaskRuntime、用户授权或子仓正式文档，不关闭外部 Issue。
 
 ## 输入、替换关系与本轮范围
@@ -58,7 +62,7 @@ P1/P2/N1/N2四恢复场景的具名通过保留；长reflect第三次仍失败�
 | `docs/supreme/specs/eko-gui-product-convergence/plans/plan_12_steer-responsiveness.md` | `683f71c1b60cc764afd09416c88c98c5ca3783a067692c575c2dcbce79c4e368` |
 | `docs/supreme/specs/eko-gui-product-convergence/plans/plan_13_task-list-dialog.md` | `de48a5828f557402dc16c0e39a4ab637047eaf9a74102cd1c67a8a059d97d3e3` |
 | `docs/supreme/specs/eko-gui-product-convergence/plans/plan_14_effective-requirements.md` | `36f6808dea0a97ba9ce188136762df3982ee07dc0fc8964dd00e3788e29af085` |
-| `docs/supreme/plans/2026-10-26-root-convergence/issue-finding-ledger.md` | `8b30d8d013de1eb9e780985534e615aa75fa44b6c9816358bb18d7e020ed741e` |
+| `docs/supreme/plans/2026-10-26-root-convergence/issue-finding-ledger.md` | `1edf6ed1599a14903bb86116fd3ec365136e234a1de4a66620e866196495c205` |
 
 本文件路径为 `docs/supreme/plans/2026-10-26-root-convergence/next-actions.md`。提交前主线程按精确路径读回，若其它作者在交接后修改，不得继续使用旧SHA证明新内容。
 

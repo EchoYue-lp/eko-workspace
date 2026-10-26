@@ -6,6 +6,8 @@
 
 ## 当前切点追加与状态维护交接
 
+主线程后继epoch12：同一末版二进制 `3244fa80…` 原13项全部选中并通过，新增mixed-root与same-root拒绝控制另列2/2。旧epoch10的9/2/2与epoch12首次browser确认超时是历史反例，原失败未改写；browser仅夹具补原pool/plugin绑定，等待与断言不变。末版fmt/diff0，必要制品保全后官方clean0移除1.7GiB、准确target不存在，见CLI `.echo-semantic/local/core-repair-20261026/epoch-12/batch-receipt.json`。真实微信、新native、完整26项仍未完成。epoch13已采用12源/4正式文档的有界引用与可恢复暂停候选并开始真实红绿，当前只有静态资格；原GitHub观察和外部Issue状态不变。
+
 2026-10-26 主线程已核18份里程碑清单，交付图与全部14份计划首次入Git核验共15条命令自然0；只证明文档结构/绑定，不是业务重审。CLI设置/import的9路径已本地提交 `262e7a6`，侧栏清单3路径随后提交 `96495df`；CLI `80f3a72`、framework `05023bc`、SDK `525453f` 只同步AGENTS规范，所有Rust字节未因这些提交改变。未push/merge/gitlink晋升，不将本地提交扩大为main/CI或新原生Rust资格。
 
 P1/P2/N1/N2具名恢复验证绿保持；epoch10末binary的原13项为9绿（1–4、9–13），5长reflect仍SIGABRT、8scope mismatch失败，6/7未执行，批次已clean7.2GiB。用户指定参考根内ZCode后，epoch11框架扫码真实RED2→GREEN2、EKO原认证producer真实RED1→最终7/7、GUI Ready组件23/23分别通过；没有扩大35秒请求/300秒challenge或重放数字码。实际工具曝光3项通过；原文冷重开/真实压缩/普通控制各1项通过，但超长投影和真实可恢复暂停仍未闭合，完整有效要求链继续开放。epoch11两个必要二进制保全后准确target已官方clean0、移除8.0GiB；原编译与夹具失败保留。旧13项未被该批重跑，不用新通过覆盖5/8失败或6/7缺证。新组合前端148资产未加载，真实扫码/手机收发未验。不新增风险豁免、外部Issue操作或GitHub观察切点；ubuntu真实成功与echo支持义务分别验收。
