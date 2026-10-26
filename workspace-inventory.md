@@ -2,6 +2,8 @@
 
 ## 2026-10-27 原生切换与聊天收尾
 
+后继开发批次已清理：Subagent策略修复F`f3c5af64…`/CLI`75fdab8…`两个本地提交后均clean，精确自有target官方clean0移除2.8GiB、必要制品/原失败保全。SDK去依赖候选94路径在根冻结、未提交，源与候选差集/恢复原件均已保；首109测试与新Host构建通过，fresh zstd安全门禁4vulnerability/10unsound失败保留，不再运行完整矩阵。SDK Host已target外保全，准确target官方clean0移除3.1GiB且不存在，待上游单一来源修复和后继资格。两个数字是官方各批清理输出，不按相加冒主机净收益。当前SDK真实脏状态属于未完成成果，不删除或用旧候选扫描覆盖；两目录分别保留`subagent-bound-policy-fix-20261027/`与`sdk-consumer-root-integration-20261027/`原始回执。
+
 后继维护：CLI两份正式semantic材料已局部对账并提交421972b，CLI现无未跟踪或未提交差异。旧无owner预检与continuation经官方正常迁移归档逐byte回读，新任务精确两路径检查和显式验证0、scope task/globalClosure not_checked；提交后预检已消费且continuation不存在。旧session观察因HEAD变化为pending与待释放任务分别记录，未改历史snapshot。回执在CLI `.echo-semantic/local/formal-checkpoint-20261027/`。各子仓本轮未push/merge，顶层三gitlink继续保留修改，未提交未推送子提交指针；下文两formal未提交的文字只保其历史时态。
 
 用户已选择“立即切换（已保存草稿）”。旧原生及旧服务均自然退出0，五处原数据权威59文件/链接离线备份回读后，新原生 `16415c11…` 启动并置前；148资产匹配 `deaafde5…`。epoch14必要制品保存在target外，准确编译target已官方clean0、移除3.8GiB。旧SSH活连接不继承，微信扫码等待用户实测。详见CLI `.echo-semantic/local/gui-native-next-20261026/build-epoch14/`；下文旧PID43779/53333保留其观察时态，不代表它们仍在使用。
