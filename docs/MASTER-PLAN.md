@@ -6,13 +6,17 @@
 
 ## 2026-10-27 唯一开发根与 GUI 收敛
 
-用户已明确选择“立即切换（已保存草稿）”。原生 epoch14 构建自然退出0、零编译警告，1961个输入无漂移；二进制 `16415c117cf341817ae8eda418d1b7224cb5152d776c221bad1169f924d6285e` 已保全，准确自有 target 官方 clean 退出0、移除3.8GiB。旧窗口及旧页面服务均自然退出0，没有强制终止；五处原数据权威共59个文件/链接完成离线备份和哈希回读后，新窗口 PID31459 已启动并由系统确认置前，148份前端资产与 `deaafde5…` 清单逐项匹配。当前等待个人微信扫码实测反馈，不能据启动日志宣称在线或手机消息已验收。SSH活连接不继承，原 `ssh-test` 需用户在GUI重连。原生制品属于 epoch14，**不包含正在验证的 epoch15 输入耐久接纳改动**。恢复与当前运行回执见 CLI `.echo-semantic/local/gui-native-next-20261026/build-epoch14/`。
+用户已明确选择“立即切换（已保存草稿）”。原生 epoch14 构建自然退出0、零编译警告，1961个输入无漂移；二进制 `16415c117cf341817ae8eda418d1b7224cb5152d776c221bad1169f924d6285e` 已保全，准确自有 target 官方 clean 退出0、移除3.8GiB。旧窗口及旧页面服务均自然退出0，没有强制终止；五处原数据权威共59个文件/链接完成离线备份和哈希回读后，新窗口 PID31459 已启动并由系统确认置前，148份前端资产与 `deaafde5…` 清单逐项匹配。当前等待个人微信扫码实测反馈，不能据启动日志宣称在线或手机消息已验收。SSH活连接不继承，原 `ssh-test` 需用户在GUI重连。原生制品属于 epoch14，**不包含后继 epoch15 输入耐久接纳改动**。恢复与当前运行回执见 CLI `.echo-semantic/local/gui-native-next-20261026/build-epoch14/`。
 
 CLI 前端事件检查点已本地提交 `88ab429307ea01df802b8f20558aca8b8251fc11`，精确七路径树 `1cc65cfb…` 独立验证34/34、真实项目 `tsc -b`、lint和格式均通过。旧处理器加新测试的反向控制为6失败/28通过；最初对空引用根执行的 `tsc --noEmit` 不计类型验证，原记录保留。暂存快照已通过Git树/归档保全后回收，没有删除原node_modules或未提交源码。证据见 CLI `.echo-semantic/local/local-milestones-20261027/event-checkpoint/`。
 
 输入来源耐久接纳与已采用的GUI/微信/SSH/任务历史消费者已整合为CLI本地检查点 `9bcc1fc052326acc13b4223e64a51fcc867f1ccf`，126路径树 `0c7492e6…` 与核验候选一致，795个相关输入逐项匹配。epoch15最终渠道配置68项、无渠道配置37项分别通过、无失败/忽略/编译警告，六类真实类型导出及GUI caller、格式/差异检查通过；Root独立全前端75文件580项、真实类型构建、Tauri页面构建、全lint/格式通过，文档parity69对/57 ADR。旧GUI/IM顺序的两个真实反例、初始夹具失败、19项无渠道警告及先前误报的更正保留原件，最终资格只用末版真实回执。两份最终测试制品保全后准确官方clean0移除16.2GiB、target不存在，源码/锁/465前端资格输入无漂移，见CLI `.echo-semantic/local/core-repair-20261027/epoch-15/batch-return.json` 和 `.echo-semantic/local/local-milestones-20261027/integration-checkpoint/commit-receipt.json`。
 
-该切片只建立稳定输入、目标TaskRun绑定和持久接纳顺序，**不代表已进入模型、已应用为约束或完整有效要求链**。CLI非忽略未跟踪源已接入检查点，剩两份正式semantic Rule/Evidence差异独立保留；原六项风险及lock不改，consumer绑定待最终冻结后的正式复评。当前原生仍为独立epoch14，未加载9bcc1fc。持续要求、替换/作用域、独立覆盖率、真实GUI/SSH/微信矩阵、完整工程、examples适用编译/最终soak、官网同步和main/CI仍未完成；没有push、merge或gitlink晋升。
+该切片只建立稳定输入、目标TaskRun绑定和持久接纳顺序，**不代表已进入模型、已应用为约束或完整有效要求链**。CLI非忽略未跟踪源已接入检查点；后继两份正式semantic材料已本地提交 `421972bbb02e7fa39e8e4079a48b28dcea5cc719`，绑定精确9bcc源码并保留历史正文。官方正常流程已归档无owner旧记录、用真实新owner完成精确两路径artifact/task及显式语义验证；`scope=task/globalClosure=not_checked`，宽Rule仍`high/needs_review`，没有关闭Finding。提交后CLI工作树干净，预检已消费、continuation不存在；旧session观察因提交变化显示pending不等于仍有待释放任务。原六项风险及lock不改，consumer绑定待最终冻结后的正式复评。当前原生仍为独立epoch14，未加载9bcc1fc。持续要求、替换/作用域、独立覆盖率、真实GUI/SSH/微信矩阵、完整工程、examples适用编译/最终soak、官网同步和main/CI仍未完成；没有push、merge或gitlink晋升。
+
+工具治理后继：结果回退预算早已由`fcc8a7d1…`修复并进入当前框架69296；本轮沿最终ToolResult消费者核实，复用与当前1,028个框架输入逐SHA相同的保留二进制，三个原有exact控制3/3通过，其中一个覆盖64组合。没有新编译或target，不重复造修复。顶层审计已提交 `8feaddc1…`，该具名项退出待开发队列；provider真实token、其它曝光、Web失败分类、SDK/native/main仍按各自范围验收。
+
+当前有效要求的自动理解路线存在一次真实产品取舍：独立无工具判定会增加新输入的请求和等待，持久结果可复用；并入主模型响应则需更广的流式输出与框架接口改造。已向用户询问，尚未采用任何路线。两者共同的accepted/applied版本及工具安全边界已完成只读核对，不把已有projector或返回`()`的callback当成现成应用合同。准备材料位于CLI `.echo-semantic/local/effective-requirements-registry-options-20261027/`；等待答复期间工程维护和证据核验继续。
 
 epoch13后继：必要上下文的旧消费者3个真实反例均自然失败；修复后的11组、15项定向验证通过，其中框架4项、EKO11项，零编译警告。覆盖有界原文引用、真实模型请求与分页尾部、硬工具范围，以及正式任务/普通聊天的缺失来源暂停和原路径恢复；仍只投影最近4条，不代表持续有效要求与独立覆盖链完成。5处channel-only wrapper补齐准确cfg，保留无feature消费者；压缩夹具改经原invocation传入同一历史，原预算和断言不变。原失败与准备错误保留。两个必要二进制保全后官方clean0移除2.3GiB、准确target不存在。框架7路径已本地提交 `69296a4dea1047be7fb91b7ab06a839ee57dda7e`，未推送/合并；证据见CLI `.echo-semantic/local/core-repair-20261026/epoch-13/batch-receipt.json`。
 

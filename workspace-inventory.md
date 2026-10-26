@@ -2,6 +2,8 @@
 
 ## 2026-10-27 原生切换与聊天收尾
 
+后继维护：CLI两份正式semantic材料已局部对账并提交421972b，CLI现无未跟踪或未提交差异。旧无owner预检与continuation经官方正常迁移归档逐byte回读，新任务精确两路径检查和显式验证0、scope task/globalClosure not_checked；提交后预检已消费且continuation不存在。旧session观察因HEAD变化为pending与待释放任务分别记录，未改历史snapshot。回执在CLI `.echo-semantic/local/formal-checkpoint-20261027/`。各子仓本轮未push/merge，顶层三gitlink继续保留修改，未提交未推送子提交指针；下文两formal未提交的文字只保其历史时态。
+
 用户已选择“立即切换（已保存草稿）”。旧原生及旧服务均自然退出0，五处原数据权威59文件/链接离线备份回读后，新原生 `16415c11…` 启动并置前；148资产匹配 `deaafde5…`。epoch14必要制品保存在target外，准确编译target已官方clean0、移除3.8GiB。旧SSH活连接不继承，微信扫码等待用户实测。详见CLI `.echo-semantic/local/gui-native-next-20261026/build-epoch14/`；下文旧PID43779/53333保留其观察时态，不代表它们仍在使用。
 
 原生验收材料聊天 `01a17706-f46b-7d22-8df4-0fa5369b25b4` 已确认idle、末轮completed且七份材料交接完整，随后宿主回执确认归档；验收责任由Root继续，Goal与待答扫码问题未被取消。此后继不把聊天归档等同Git工作树删除。
