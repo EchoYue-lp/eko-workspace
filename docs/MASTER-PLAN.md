@@ -13,9 +13,9 @@
 | 所属仓库 | 本地状态与真实资格 | 仍未完成 |
 | --- | --- | --- |
 | Framework | `f3c5af6443fff36dd7088dcb32a665b5fc173489`；完整目标委派policy不被legacy max3覆盖，depth冲突派发前拒绝，缺policy保持原行为。旧生产真实max1启动actor2的RED自然101；修复后F7与真实EKO消费者CLI8共15项通过，精确4/2路径artifact/task/显式语义0、独审通过，globalClosure not_checked。官网已按该精确源同步310份受控Markdown。 | 全workspace/条件矩阵、main/CI及新压缩依赖正式修复。合理公共API不因EKO未用删除。 |
-| EKO | `75fdab8fa38218d164171d1733307435e4dedfdf`；此前`9bcc1fc`保存126路径GUI/微信/SSH/任务输入恢复，`421972b`局部语义对账。epoch15渠道68/无渠道37、GUI caller、六类类型导出及Root前端75文件580项/真实类型构建/lint/fmt分别通过。输入按稳定来源绑定原TaskRun，耐久确认先于tracked mailbox。 | 当前有效要求全集、Interpreted/Applied、替换/作用域、独立原始要求覆盖率、完整矩阵、风险consumer复评及main/CI。Accepted不能充当Applied。 |
+| EKO | 当前文档后继`612050b42d31b55f6ce04c5b329b04d7114fee8b`，运行时代码与原源码`75fdab8fa38218d164171d1733307435e4dedfdf`相同。五份中文说明已修正GUI首推、app-core渠道owner和ADR0056引用，保留旧历史全文/命令块；parity、源码回读、独审与精确5路径artifact/task/显式语义0，globalClosure not_checked。此前`9bcc1fc`的epoch15渠道68/无渠道37、GUI caller/六类导出、Root前端75文件580项及类型构建/lint/fmt资格不因文档续期。输入仍为稳定来源绑定原TaskRun，耐久确认先于tracked mailbox。 | 当前有效要求全集、Interpreted/Applied、替换/作用域、独立原始要求覆盖率、完整矩阵、风险consumer复评及main/CI。Accepted不能充当Applied；未重构建原生。 |
 | SDK | 根`525453fc`上的既有`1eac40fb`去依赖候选已受控采用：64文件＋29删除及现AGENTS，共94路径；accepted精确退役269、保留5352不变，route454→431、退役39操作，仍固定独立`f7bac62`源。本根109测试、14政策单测、catalog/fmt与新Host构建各自通过，源独审通过。 | fresh官方扫描4 vulnerability/10 unsound真实失败，完整Rust/三语/collector未跑；候选未提交，旧520/三语资格不续期。两formal材料后继由原owner受控收尾，不能借重绑解除安全门禁。 |
-| 官网 | 已本地提交`8990261001d686bee84c9ffc9ee4ad1acb2788e6`，49路径；同步器改用固定Git源清单和blob，排除ignored/未采用文档；F310份镜像、47项focused、类型/lint/格式/文档与F单源校验、326路由发现均通过，独审通过。EKO旧c262投影的120条来源/8页及原状态整体保留。 | EKO当前75fd源码的产品说明审查与显式投影同步；当前双源检查因旧EKO文档自然1，不冒双源全绿。完整build/e2e、main/CI及部署未做。 |
+| 官网 | 已本地提交`8990261001d686bee84c9ffc9ee4ad1acb2788e6`，49路径；同步器改用固定Git源清单和blob，排除ignored/未采用文档；F310份镜像、47项focused、类型/lint/格式/文档与F单源校验、326路由发现均通过，独审通过。EKO旧c262投影的120条来源/8页及原状态整体保留。 | 正在校对八个产品页与首页EKO区，最终显式绑定已修正的612050b源文档；未取得的新投影资格不提前晋升。当前双源检查原自然1保留，完整build/e2e、main/CI及部署未做。 |
 
 所有源码里程碑仅本地保存：**不push、不merge、不关闭Issue、不发布、不部署，不提交指向未推送子提交的顶层gitlink**。现分支由主线程统一index/commit，各写入者按文件独占。后继任务修改后应重新核源，不能因HEAD相邻而续旧票。
 
