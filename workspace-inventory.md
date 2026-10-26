@@ -1,5 +1,15 @@
 # 工作区收敛与恢复清单
 
+## 2026-10-27 原生切换与聊天收尾
+
+用户已选择“立即切换（已保存草稿）”。旧原生及旧服务均自然退出0，五处原数据权威59文件/链接离线备份回读后，新原生 `16415c11…` 启动并置前；148资产匹配 `deaafde5…`。epoch14必要制品保存在target外，准确编译target已官方clean0、移除3.8GiB。旧SSH活连接不继承，微信扫码等待用户实测。详见CLI `.echo-semantic/local/gui-native-next-20261026/build-epoch14/`；下文旧PID43779/53333保留其观察时态，不代表它们仍在使用。
+
+原生验收材料聊天 `01a17706-f46b-7d22-8df4-0fa5369b25b4` 已确认idle、末轮completed且七份材料交接完整，随后宿主回执确认归档；验收责任由Root继续，Goal与待答扫码问题未被取消。此后继不把聊天归档等同Git工作树删除。
+
+本次只读刷新宿主附件：`eko-workspace-maintenance/lp-agent` 为archived_worktree；`eko-gui-product-convergence/lp-agent` 仍为active worktree。此前queued请求仍不能计为回收，没有手工删除host目录。累计51个实际回收、原refs/stash/Exa/tag及恢复包保护范围不变。回执见根 `.echo-semantic/local/native-switch-status-20261027/coordination-and-host-observation.json`。
+
+epoch15已完成并归还：渠道68/68、无渠道37/37及GUI caller、真实导出和格式检查通过，两个最终制品在target外回读一致，无读者后官方准确clean0移除16.2GiB、target不存在。保留原始失败及警告更正，主机df约37.6GiB可用是观察值，不作为本批独占净收益。CLI126路径已本地提交 `9bcc1fc…`，非忽略未跟踪源归零，仅余两份正式semantic tracked差异；顶层三gitlink仍因未推送子检查点而保留修改，未晋升。源码维护、缓存清理和正式main交付分别结算，见CLI `.echo-semantic/local/core-repair-20261027/epoch-15/batch-return.json`。
+
 ## 2026-10-26 两处默认 target 接管核对
 
 本轮只读核查 CLI 与 framework 默认 target，未执行 clean、压缩、去重或提交。准确 cwd/manifest/target 参数见[clean 二元清单](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/default-target-handoff-20261026/clean-pair.json)，完整依据见[接管说明](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/default-target-handoff-20261026/接管说明.md)。协调者可依据当前缓存内容、消费者与制品保全证据接管官方 clean，执行前仍须在串行窗口再检查无新使用者及漂移；本线不执行，无需重新征求人类许可。

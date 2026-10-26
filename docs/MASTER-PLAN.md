@@ -10,7 +10,9 @@
 
 CLI 前端事件检查点已本地提交 `88ab429307ea01df802b8f20558aca8b8251fc11`，精确七路径树 `1cc65cfb…` 独立验证34/34、真实项目 `tsc -b`、lint和格式均通过。旧处理器加新测试的反向控制为6失败/28通过；最初对空引用根执行的 `tsc --noEmit` 不计类型验证，原记录保留。暂存快照已通过Git树/归档保全后回收，没有删除原node_modules或未提交源码。证据见 CLI `.echo-semantic/local/local-milestones-20261027/event-checkpoint/`。
 
-输入来源耐久接纳ABC的17路径候选已采用到根内，epoch15独占共享Rust写入及验证。原GUI、IM两个入口旧顺序均真实触发“持久确认前调用mailbox”的反例；修复版21项及新增绑定metadata呈现控制尚在验证，首次运行有3个resume夹具因缺少原Subagent深度策略资格失败，保留失败并核对真实创建路径，不放宽生产门禁。正常类型导出与消费者验证仍未完成。该切片只建立稳定输入、目标TaskRun绑定和持久接纳顺序，**不代表已进入模型、已应用为约束或完整有效要求链**。持续要求、替换/作用域、独立覆盖率、真实GUI/SSH/微信矩阵、完整工程和main/CI仍未完成。
+输入来源耐久接纳与已采用的GUI/微信/SSH/任务历史消费者已整合为CLI本地检查点 `9bcc1fc052326acc13b4223e64a51fcc867f1ccf`，126路径树 `0c7492e6…` 与核验候选一致，795个相关输入逐项匹配。epoch15最终渠道配置68项、无渠道配置37项分别通过、无失败/忽略/编译警告，六类真实类型导出及GUI caller、格式/差异检查通过；Root独立全前端75文件580项、真实类型构建、Tauri页面构建、全lint/格式通过，文档parity69对/57 ADR。旧GUI/IM顺序的两个真实反例、初始夹具失败、19项无渠道警告及先前误报的更正保留原件，最终资格只用末版真实回执。两份最终测试制品保全后准确官方clean0移除16.2GiB、target不存在，源码/锁/465前端资格输入无漂移，见CLI `.echo-semantic/local/core-repair-20261027/epoch-15/batch-return.json` 和 `.echo-semantic/local/local-milestones-20261027/integration-checkpoint/commit-receipt.json`。
+
+该切片只建立稳定输入、目标TaskRun绑定和持久接纳顺序，**不代表已进入模型、已应用为约束或完整有效要求链**。CLI非忽略未跟踪源已接入检查点，剩两份正式semantic Rule/Evidence差异独立保留；原六项风险及lock不改，consumer绑定待最终冻结后的正式复评。当前原生仍为独立epoch14，未加载9bcc1fc。持续要求、替换/作用域、独立覆盖率、真实GUI/SSH/微信矩阵、完整工程、examples适用编译/最终soak、官网同步和main/CI仍未完成；没有push、merge或gitlink晋升。
 
 epoch13后继：必要上下文的旧消费者3个真实反例均自然失败；修复后的11组、15项定向验证通过，其中框架4项、EKO11项，零编译警告。覆盖有界原文引用、真实模型请求与分页尾部、硬工具范围，以及正式任务/普通聊天的缺失来源暂停和原路径恢复；仍只投影最近4条，不代表持续有效要求与独立覆盖链完成。5处channel-only wrapper补齐准确cfg，保留无feature消费者；压缩夹具改经原invocation传入同一历史，原预算和断言不变。原失败与准备错误保留。两个必要二进制保全后官方clean0移除2.3GiB、准确target不存在。框架7路径已本地提交 `69296a4dea1047be7fb91b7ab06a839ee57dda7e`，未推送/合并；证据见CLI `.echo-semantic/local/core-repair-20261026/epoch-13/batch-receipt.json`。
 
@@ -42,7 +44,7 @@ Plan14有界原文引用、最终模型请求可读性、formal与普通chat原�
 - 两处旧默认缓存已串行官方清理：CLI 原分配 631,898,112 bytes、framework 180,080,640 bytes，两命令自然退出 0、准确目录移除；13 份必要制品的 SHA/mode 不变，原生与 fixture 未重启。原占用合计约 0.756 GiB，与主机 `df` 净变化分开；历史 producer 出口仍未知。恢复与对账见 `workspace-inventory.md` 及 `.echo-semantic/local/default-target-handoff-20261026/execution/`。
 - 未完成 CLI 源码另做有界恢复包：`80f3a72` 基线的 97 份 tracked 差异与 24 份非忽略未跟踪文件共 121 份逐项压缩/回读，SHA/mode 匹配且捕获前后无漂移；包 SHA `3874e8c6…`，位于 CLI `.echo-semantic/local/local-milestones-20261026/uncommitted-source/`。这只是该切点的恢复保护，不是绿色提交；不含 ignored 用户数据或凭据。其后一份已保全的可再生 Python 缓存已删除，源码保留。
 
-下一步按顺序：完成epoch15稳定输入/耐久接纳的原入口红绿、类型导出和消费者回归，保存必要制品后准确clean；按验证范围形成下一份本地源码里程碑。用户并行验收已切换的epoch14个人微信扫码与手机消息，后续再逐项验GUI/SSH完整矩阵。核心随后继续Plan14的当前有效要求、替换/作用域、计划与证据影响及独立覆盖检查；工具治理、交付对账和可恢复清理按文件归属并行。epoch12原13项与epoch13有界原文/暂停恢复的既有通过按各自源码保留，不机械重跑或冒充当前整体验收。A2A/LSP外部校验工具修复继续排除，实际入口退役仍受消费者、恢复与集成验收前置条件约束；26项结果和整体Goal继续开放。
+下一步按顺序：从已提交的9bcc1fc继续Plan14当前有效要求、替换/作用域、计划与证据影响及独立覆盖检查；已有应用接缝比较报告只作设计准备，不自动把所有Accepted输入永久化。用户并行验收已切换的epoch14个人微信扫码与手机消息，后续集中验GUI/SSH完整矩阵。两份正式semantic后继对账、工具治理及可恢复清理按文件归属推进；稳定合流点再完成完整矩阵、风险复评、examples/官网同步和获准后的main/CI。epoch12原13项、epoch13有界恢复及epoch15各配置通过保留各自范围，不冒当前整体或原生资格。A2A/LSP外部校验工具修复继续排除，实际入口退役仍受消费者、恢复与集成验收前置条件约束；26项结果和整体Goal继续开放。
 
 ## 2026-10-16 SDK 全能力治理（2026-10-22 联合验收）
 
