@@ -2,7 +2,27 @@
 
 > **跨仓库当前事实源**。本文只记录阶段状态、前向路线、分层边界、验收门和可核验证据；不再保存逐轮实施日志。
 > EKO 是本机个人助理：`echo-agent` 是独立可复用框架，`echo-agent-sdk` 是独立 SDK 产品，`echo-agent-cli` 是应用层，`echo-website` 是官网。
-> 最后更新：2026-10-22（四个子仓本轮验收已闭合，顶层集成按下列精确指针；历史阶段保留原验收范围）。
+> 最后更新：2026-10-26。当前开发与迁移状态见下节；后文 2026-10-22 联合验收仅保留历史范围，不代表当前 GUI 收敛 Goal 已完成。
+
+## 2026-10-26 唯一开发根与 GUI 收敛
+
+用户已指定唯一开发目录 `/Users/ls/MyWork/code/ylp_agent_learn/lp-agent`。外部 worktree 停止开发，仅作为冻结迁移来源；新实现、测试、日志与恢复材料写在本目录内，不再创建外部开发目录。
+
+- 根 framework 为 `chore/Echoyue/root-workspace-convergence`，起点 `9c5e202dcbd20a7de3c017a3ee8adada3e400b86`；根 EKO 同名分支起点 `780ddd0d25c2eac5d1471cb3e5012c9d2f6b3cf9`。原 main、Exa 分支和 `pre-retirement-2026-10-24` tags 保留；没有 merge、push 或发布。
+- 原 `project-workspaces` 的微信/IM/cron/SSH 候选与 `task-list-dialog` 的运行历史/Steer/Goal 候选已迁入根 EKO，15 个重叠文件逐项整合；框架既有集成提交已在根检出。当前 EKO 含未提交差异，尚未完成完整 Rust、GUI 原生及整体验收。
+- 补齐队列编辑的 input revision 与 queue revision CAS、稳定顺序和恢复测试；GUI 不能通过编辑或派发接管 channel-bound 输入，避免丢失原渠道的账号、generation、context 与恢复意图。Goal 修改复用原暂停/安全点和 CAS，不能以请求返回冒充成功；前端交互回归与独立审查继续进行。
+- 外部 Weixin epoch-07 在编译期间因开发根变更中断，未进入 P1 测试，不能计为通过或测试失败。日志保留，专用 target 已 `cargo clean`（移除 2.8 GiB）。原 digest `0a35680…` 的授权不冒充整合后新源码的正式验证。
+- 用户随后批准根 consumer `b0b83f38…`，lock `3fb8955b…`、856 包和同六项风险不变。epoch-08 队列回归 3/3 通过、微信 P1 recover 栈溢出的历史原件保留；批次已清理 5.0 GiB。epoch-09 定向修复缩小原驱动 future 栈占用，补齐测试夹具的真实生命周期绑定和分类响应；再以原 generation cut 回收已经真实完成的首轮 launcher，解除 renderer 等待。P1/P2/N1/N2 与五项相邻 generation/renderer/HITL 控制分别按原具名测试通过，未扩大线程栈或等待时间。epoch-09 target 已清理 7.2 GiB；当前 epoch-10 的原长 `/reflect` 控制第三次修复（私有同步 future 工厂）后仍在默认栈上 SIGABRT；已按 debug 累计三次无效修复门禁停止新补丁，准备调用图与路线裁决。13 项消费者矩阵未全绿，不能将四项恢复通过扩大为完整微信验收。当前证据在根 EKO `.echo-semantic/local/core-repair-20261026/`。
+- 五仓共 60 个 worktree 的补丁、非忽略源文件、refs/tag/stash 已备份到 `.echo-semantic/local/workspace-convergence-20261026/archive-inventory/`；五份 bundle 的独立恢复核验通过。外部 ignored 证据已归档到同主题 `ignored-evidence/`：47 份压缩包、100,726 成员，含 12 个保留二进制原字节与 mode，回读通过。清理线已实际回收 51 个非 host 工作树（外部 41 个、根内旧副本 10 个），原路径合计占用约 22.24 GiB；这不等于扣除恢复包和并发构建后的磁盘净增量。根内追加恢复包约 5.85 GiB，含稀疏文件恢复说明及回读证据。原 refs/stash、Exa 和保留 tag 未删除。保留五个主检出和四个 host 路径；host 归档请求仅返回排队，尚未确认回收。恢复入口和范围见根 `workspace-inventory.md`、归档 `RESTORE.md` 及 `reclaim-execution/postcheck.json`、`internal-reclaim/postcheck.json`。
+- 设计与实施输入已迁入 `docs/supreme/specs/eko-gui-product-convergence/`，Plan12 承接 Steer/Goal 控件，Plan13 承接任务历史列表，新 Plan14 承接完整有效要求链；均保持待验收状态。当前完整 26 项结果、写入责任和下一步见 `docs/supreme/plans/2026-10-26-root-convergence/next-actions.md`，旧 `reconciliation.md` 保留其历史切点。
+- GUI 的转录结算事件、失败后序号重试、终态后的迟到快照保护已修复，避免回复完成后仍占用执行槽而把下条消息误作 Steer。四路径 114 项相关回归与独审通过；普通聊天不再显示内部 `Execution path` 信息，后端原始事件保留。侧栏在创建并进入工作空间时同步 canonical 清单，并阻止迟到初始化覆盖；用户确认“刷新后已显示 ssh-test”。
+- 原生 `b330bf25…` 二进制已保全，构建零警告、输入无漂移，准确 target 已清理 6.8 GiB；当前窗口保留用户 SSH 状态。掩码密码、只测登录、创建时验证目录已接入真实系统 OpenSSH。用户确认 `ubuntu@111.229.245.175` 的登录测试与创建成功，目录为 `/home/ubuntu/ssh-test`；这只验收该账号的登录与工作空间创建，不代替 Goal 中 `echo@` 的目标支持和终端中文、resize、全屏程序、Ctrl-C、exit、断线及多会话矩阵。密码不进入聊天、模型、日志或持久配置。
+- 设置取消总览、默认进入模型，以五组导航组织；Steer 增加键盘上移/下移并沿用原队列 CAS。设置相关 154 项、键盘 38 项分别通过；统一 Tauri 模块导入的相关 116 项与独审通过。最新组合 `build:tauri` 自然退出 0，两条混合导入提示消失，453 个输入无漂移，148 资产独立保全（清单 `bfe04835…`）；没有压制警告。该组合候选尚未加载进当前原生页面，既有 `25d8584a…` 前端及 SSH 未重启。原生完整 HITL/Task/Goal/Steer、真实微信扫码与收发、完整工程门禁和 main CI 仍未完成；合成 IPC 或受控模型不能替代人的操作记录。
+- 用户更新 Goal 后明确要求及时本地里程碑提交。主线程统一维护 index，只提交已通过对应 focused 验证的精确切片，保留其余已接纳差异；不执行 push、merge、关闭 Issue、发布或部署，不提交指向未推送子提交的顶层 gitlink。
+- 首个本地源码里程碑为 CLI `262e7a684956503d2d4a75670467db0bedb694e3`：设置与导入清理共 9 路径，从精确暂存快照独立导出 447 个前端输入验证，92/92、lint、格式及含类型检查的构建通过，独审 C0/I0/M0。首轮同组的一次未知原因超时原件保留，单例及完整同组后继通过不被描述为源码修复。该提交未包含核心 Rust 和其它未完成 GUI 功能；恢复入口是 CLI `.echo-semantic/local/local-milestones-20261026/settings-imports/`。
+- 后继 CLI `96495df2a81885fcb97fd6dd8f723990a4dfb139` 提交侧栏清单修复与中文说明共 3 路径，精确暂存快照 91/91、lint、格式与类型检查通过，独审 C0/I0/M0。CLI `80f3a72`、framework `05023bc`、SDK `525453f` 仅提交各自 AGENTS 的主目录与中文约定；这些 Git 提交不改变在途 Rust 验证输入，顶层 gitlink 仍未晋升。
+
+下一步按顺序：完成长控制路线裁决，获裁决后按所选路线闭合默认栈反例并完成原 13 项微信消费者验证；核心线同时继续 Plan14 的完整原文、有效要求、关键恢复失败处理和独立覆盖检查；前端、工具治理、交付对账与可恢复清理按文件归属并行。通过的切片及时本地提交，稳定版本再集中完成 GUI/SSH/微信原生矩阵。A2A/LSP 外部校验工具修复继续排除，实际入口退役仍受消费者、恢复与集成验收前置条件约束。26 项结果继续对账，不以局部通过关闭整体 Goal。
 
 ## 2026-10-16 SDK 全能力治理（2026-10-22 联合验收）
 

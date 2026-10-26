@@ -12,6 +12,10 @@
 
 技术栈总览:Rust 后端(`echo-agent` 框架 + `echo-agent-cli` 应用)+ React/TypeScript 前端 + Tauri 桌面壳。
 
+### 当前迭代的开发目录与并行边界
+
+用户已指定唯一开发目录 `/Users/ls/MyWork/code/ylp_agent_learn/lp-agent`，四个子仓仍在各自目录内独立维护。源码、工程文档、构建产物、验证回执与恢复材料必须位于该主目录内，不新建外部 worktree；已有外部目录只作冻结迁移来源，成果与必要证据归档回主目录后按依赖和恢复校验结果清理。同一主目录可以多会话并行，但必须按文件明确单一写入责任；验证某一快照期间冻结它及所依赖的源码。
+
 ---
 
 ## 产品定位与安全边界(做安全决策前必读)
@@ -28,11 +32,12 @@
 
 - **数据持久化:echo-agent-cli(EKO)不需要 SQLite。** 本地个人 cowork 场景,对话历史/记忆用文件或内存实现即可。**禁止**给 echo-agent-cli 引入或保留 SQLite 依赖(`SqliteStore` / `SqliteConversationStore` / echo-state 的 `sqlite` feature 在 CLI 侧不启用);也**禁止**把"SQLite schema 变更/迁移/前端契约"当作成本或风险来反对改动——本项目尚处开发阶段,无迁移、无兼容负担(见"代码清理"节,过时代码/旧 schema 可直接删)。echo-state 的 `sqlite` feature 仅供框架其它复用方,**echo-agent-cli 不启用**。
 
-- **多模式核心能力对等:TUI 与 GUI 是功能完全一样的 Agent 完全体,只是交互方式不同。** 参考标杆:Claude Code 是纯 TUI 产品,广受全球开发者欢迎——证明 TUI 能成为主力 Agent 交互形态。因此 EKO 的 TUI、GUI(以及 CLI/channel)必须对复杂任务/plan/subagent/任务运行时/工具/HITL/记忆/附件等**核心 Agent 能力保持对等**。**禁止以"某模式不需要"为由拒绝给该模式接入核心能力。** 代码里若出现"X 模式 doesn't use Y"之类的注释/None 传参,那是**待补的缺口,不是产品定位**——不得把它当成"该模式刻意不要"来解读、更不得当成反对接入的理由。各模式共享同一套核心能力(如阶段 2 的 `drive_chat` 统一驱动),差异只在渲染/事件层。
-- **纯界面布局能力不要求跨 surface 复制。** 只有依赖某种界面形态才成立的布局、窗口编排、侧栏或多面板交互,可以由对应 surface 独有;这类例外不得改变底层 Agent 能力、状态权威或其它 surface 已有行为。`Side Conversation` 明确定义为 GUI 的侧栏/并行面板能力:只由 GUI/Tauri 暴露创建、树形导航和支线管理入口,TUI、CLI/JSONL 与 channel 不新增 Side Conversation 专用命令或 wire contract,并继续保留各自已有的普通 conversation、Subagent 和 `/fork` 等行为。不得把这条例外扩展成任意产品能力的 surface 缺失理由。
+- **当前产品目标是 GUI 主入口，继续保留 IM 收发和 cron 后台触发。** 用户已批准从 EKO 退役独立 TUI、REPL、CLI/JSONL 产品入口，不再扩张待退役入口的能力对等目标。GUI 内置终端、Agent shell、桌面最小启动参数、构建命令与独立 SDK Host stdio 不属于该退役范围。先让 GUI/app-core 接管 IM、cron、共享启动/退出和恢复 owner，再删除旧入口；不能按 `src/cli` 目录名连带删除共享能力。GUI、IM、cron 继续保留 Task/Subagent、工具、HITL、记忆、附件与共享恢复。
+- **能力目标与当前实现分别验收。** 固定分支和 `pre-retirement-2026-10-24` tag 保留完整旧能力；退役设计或文案不代表实现已经删除。A2A/LSP 是具名批准的跨仓退役，仍须先解除消费者依赖并验证保留契约；不得据此删除其它合理框架公开 API。外部 echo-semantic 工具合同修复继续排除，原校验阻塞保留。
+- **纯界面布局能力不要求跨 surface 复制。** `Side Conversation` 仍为 GUI 的侧栏/并行面板能力，提供创建、树形导航和支线管理；IM 的普通 conversation、Subagent 和既有 fork 行为继续保留，不新增 Side Conversation 专用 channel wire contract。现存终端入口的普通对话行为随入口退役核对，不能反向成为长期保留旧入口的理由，也不能连带删除底层共享能力。
 - **Agent 协作由 AI 自动组织。** 跨会话通信、主/子 Subagent 消息与协作组编排由 Agent 使用既有工具和运行时完成。GUI 不提供要求用户手动选地址、发送协作消息、维护 Agent 组或管理投递收据的页面/控制台。用户参与并行探索使用 Sidechat 或 Forkchat；既有对话、任务/Subagent 结果呈现及 HITL 保持其核心能力。
 
-> 历史教训:agent 看到 `main.rs` 里 `task_runtime_store — TUI doesn't use the task runtime`(传 None)+ TUI 固定 Chat 模式,就推断"TUI 是轻量交互终端、刻意不接 TaskRuntime",并据此建议取消 TUI 的 complex 接入。这是把**当前的缺口**误读成**产品定位**。用户澄清:TUI 目标是与 GUI 功能对等的完全体(对标 Claude Code)。定位已固化于此,不得再把"TUI 不需要 X"当理由。
+> 历史教训:不得把某入口当前未接入 TaskRuntime 误读成底层能力不需要。后继用户已明确批准退役独立终端入口；当前必须验证的是共享能力由 GUI/IM/cron 接管完整，不能沿用旧入口长期扩张目标来阻止退役。
 
 > 历史教训:agent 多次把"动 SQLite schema/迁移"当作反对 DomainProfile 合并等改动的理由,又在清理 SQLite 死字段时把 `SqliteStore`/`SqliteConversationStore` 当"活代码保留"——都是没记住"echo-agent-cli 不需要 SQLite"这一定位,退回到线上服务的迁移思维。定位已固化于此,不得再犯。
 
@@ -150,6 +155,8 @@
 ---
 
 ## 代码、文档与示例同步(强制)
+
+**文档语言统一使用中文。** 后续新增或修改的设计、计划、说明、验收清单和交付报告均使用中文，不再为形式新增英文副本。代码、命令、API/协议标识及原始日志保留原文；历史证据不因翻译而改写。本规则同样适用于四个子仓库。
 
 ### 文档归属边界(强制)
 
@@ -402,24 +409,12 @@ CI 精简不降低本地提交门禁;任何新增跨平台或依赖策略风险�
   内将其作为明确 residual 记录，待整个重构完成后统一重新测量和优化。任何阈值调整都
   必须是独立、可审阅的后续决策，不能混入合流提交。
 
-### 按磁盘压力 cargo clean,保留增量编译缓存
+### 构建并发与批次后 cargo clean
 
-**背景**:Rust 编译产物（`target/` 目录）极其占空间。本项目两个 Rust 子仓库多次编译及 feature 矩阵验证，累计可能占用大几十 GB。本机磁盘空间有限（约 460GB），不清理会很快耗尽。
-
-**规则:不再每次任务结束强制 `cargo clean`。** 默认保留 `target/` 增量缓存,避免下一任务从零编译。提交前先按需检查:
-
-```bash
-df -h .
-du -sh echo-agent/target echo-agent-cli/target 2>/dev/null
-```
-
-满足任一条件时再清理:
-
-- 可用磁盘空间低于约 50 GiB。
-- 两个 `target/` 合计超过约 60 GiB。
-- 构建缓存损坏、工具链大版本切换,或用户明确要求清理。
-
-清理时只清理造成压力的 workspace;只有两个仓库都明显膨胀时才分别执行 `cargo clean`。`cargo clean` 必须放在全部验证之后,清理后不再重复编译验证。
+- 每个 Cargo 编译/测试批次结束后及时 `cargo clean` 准确自有 target，替代默认保留增量缓存的历史策略。相邻且针对同一冻结快照的验证命令可组成一批；先将原始日志、真实退出状态和必要制品保存在 target 外，再确认没有活动 cargo/rustc/测试子进程/Host 或其它读取者，最后清理并记录回执。
+- 同机最多两条 focused Rust 批次，jobs 不超过 2，dev/test debuginfo 关闭；完整 Rust/GUI/语言矩阵和正式性能测量按协调窗口串行。各批次使用位于唯一主目录内的独立 `CARGO_TARGET_DIR`，禁止清理其它会话或 primary 的缓存。
+- 批次前后记录 `df`/`du`。可用空间低于 5 GiB 时停止新构建，优先清理已确认无使用者的自有可重建缓存；清理失败必须明确报告，不能声称已释放。
+- 未运行 Cargo 的文档/只读工作不为形式执行清理。工作树、分支、未提交/未跟踪源码、stash、保留 tag 和证据原件按独立维护流程处理，不能借 `cargo clean` 删除。
 
 ---
 
@@ -442,6 +437,8 @@ du -sh echo-agent/target echo-agent-cli/target 2>/dev/null
 ## Worktree 并行开发与合并规范
 
 **背景**：本项目使用 git worktree 在 `echo-agent/.worktrees/` 和 `echo-agent-cli/.worktrees/` 下创建隔离工作区，实现多 feature 并行开发。worktree 模式高效但也有**多个容易踩的坑**——以下规则是实战中沉淀的，必须遵守。
+
+本次用户已收紧为唯一主目录开发：本节保留既有工作树的维护、恢复与交付约束，不授予创建新外部工作树的权限。新会话复用主目录和分配的文件写权，不自动 checkout、合并或清理其它会话的工作。
 
 ### 1. Cargo.toml 路径：合并前必须改回相对路径
 
