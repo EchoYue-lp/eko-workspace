@@ -1,6 +1,8 @@
 # 根内收敛下一动作与交付依据
 
-最新交付：Subagent策略桥修复已本地提交F`f3c5af64…`/CLI`75fdab8…`，F7+CLI8共15focused通过、精确4/2路径artifact/task/显式语义0且globalClosure not_checked，必要制品保全后准确clean0移除2.8GiB。Web具名3/3另列，不冒SDKdirect或真实服务。SDK根首109与Host构建已0，但fresh zstd安全门禁仍阻塞；不启动完整矩阵/三语。下一独立行动是保全清理SDK本批，并验证框架唯一源码owner的两vendor＋SDK两精确Git来源选择候选；该候选尚无包发现/编译/扫描通过，来源见F`.echo-semantic/local/zstd-dependency-feasibility-20261027/`。有效要求A/B调用成本路线及真实微信扫码仍待用户答复；完整Goal不关闭。
+最新交付：官网已本地提交`8990261`，精确F f3c5的310份受控Markdown同步、同步器/来源回归及相关47项focused通过，EKO旧c262的120条来源/8页原投影整体保留。F/CLI深度修复原15项资格不变。SDK根首109及Host构建0，随后准确clean0移除3.1GiB；其live zstd安全门禁仍阻塞，94路径采用差异保留未提交。两vendor隔离探针已完成全feature双metadata0、真实父包3/3、五origin投影及SDK原政策下14→0的advisory-only实证；完整yanked仍不合格，正式pin/manifest/锁未改，必要制品保全后准确clean0移除441.8MiB。下一步是正式候选的公开类型/消费者/来源评审，以及EKO当前产品说明与官网投影同步；不重复探针或把局部扫描冒全gate。有效要求A/B调用成本路线及真实微信扫码仍待用户答复；完整Goal不关闭。当前总表见[MASTER-PLAN](../../../MASTER-PLAN.md)，探针原件为F`.echo-semantic/local/zstd-patch-probe-20261027/`。
+
+以下“尚无包发现/正在构建/等待清理”等段落保留其具名历史时点，由上段和MASTER当前总表替代，不代表重新排队或尚未执行；未取得的消费者、完整门禁、原生和main/CI资格仍明确开放。
 
 当前验证后继：深度旧生产已真实允许max1下的actor2，取得业务反例；最小修复后的框架4项通过，EKO三真实消费者及后继检查进行。SDK根内首109项通过，但fresh官方依赖扫描发现zstd系列4项vulnerability/10项unsound，逆依赖要求使单锁更新不足；不接受/ignore新风险，不默认复制SDK vendor或改固定pin。SDK完整矩阵/三语暂不启动，当前Host自然结算后保全clean；上游单一责任修复与精确继承作为必要后继，原始报告在SDK`.echo-semantic/local/sdk-consumer-root-integration-20261027/fresh-dependency-blockers.json`。本段替代下段“等待完整矩阵窗口”的当前调度依据，不改旧通过范围。
 

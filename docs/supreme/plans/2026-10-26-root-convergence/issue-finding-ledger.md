@@ -6,6 +6,8 @@
 
 ## 当前切点追加与状态维护交接
 
+2026-10-27当前：官网`8990261`已完成精确F f3c5受控源同步，EKO旧c262投影完整保留；不能据F单源绿票宣称当前双源合格。SDK的94路径、原4vulnerability/10unsound真实阻塞继续保留。隔离两vendor候选取得双metadata0、真实压解3/3及SDK同DB/原政策advisory-only的14→0；完整yanked仍不合格，未改live来源/pin/风险政策，未将SDK Finding标resolved。SDK本批与探针均已保全并准确clean0，分别移除3.1GiB/441.8MiB。下文“等待清理/来源待验证”均是原切点，不覆盖当前限定证据；外部Issue观察仍固定2026-10-26，不刷新、不关闭。
+
 2026-10-27后继：真实Subagent policy丢失已由Ff3c5af64/CLI75fdab8局部修复，原业务RED101、F7/CLI8、源码独审、精确4/2路径artifact/task/显式语义0均保，globalClosure not_checked、原生与mainCI未验；准确clean0移除2.8GiB。Web源码旧风险也已补本轮原有exact3/3，对应HTTP/retry/最终结果范围，未覆盖SDKdirect/真实服务。SDK去依赖已在根采用94路径并静审，首109及Host构建0；新鲜官方依赖扫描4vulnerability/10unsound阻塞仍真实保留，不接受风险/改ignore、不将旧候选绿续为当前，后继修复来源与pin待验证。有效要求路线A/B仍待用户答复。本文不刷新外部Issue观察或关闭任一正式Finding。
 
 2026-10-27语义与工具后继：两份CLI Rule/Evidence已精确提交 `421972b…`，官方正常缺owner迁移归档、两路径stagedartifact/task和最后显式语义均0；源锚为已提交9bcc，历史正文原样保留，Rule继续high/needs_review、globalClosure not_checked、Finding不变。CLI工作树干净，验证收据保全；预检已消费、continuation不存在，提交导致旧session观察pending单列，未伪改起始快照。工具预算项经当前F69296源码/祖先和同源保留binary三项实际验证，已在根审计提交8feaddc中核销；不是provider真实token、完整工具治理或main/CI结案。有效要求理解路线的新增调用成本与流式改造取舍待用户答复，未擅自采用。外部Issue观察不刷新，26项整体继续开放。
