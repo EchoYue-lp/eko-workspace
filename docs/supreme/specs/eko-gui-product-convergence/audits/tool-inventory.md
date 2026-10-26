@@ -2,6 +2,24 @@
 
 本报告交付 `tool-inventory-and-exa-boundary` 的跨仓阶段清单。它记录定义、注册、曝光、消费者与读取链，不替代各仓正式 API/ADR，不修改工具、不裁决新的委派政策，也不表示 A2A/LSP 已退役或五仓 main/CI 已交付。
 
+## 2026-10-27 后继核验：结果回退预算
+
+下文§1–§10保留原审计切点。其中§4.3与§9的“spill失败后按四倍字符数回退可能超预算”具名项，已由框架提交 `fcc8a7d1cc8bced22d05d848b79aa664e1b51799` 修复，当前本地 `69296a4dea1047be7fb91b7ab06a839ee57dda7e` 已继承；该方法及相关回归体与引入提交逐字一致。四倍字符数仅作候选上界，原HeuristicTokenizer会对头部、说明和尾部整体计数；零预算、小预算及原8,000-token spill失败回退均有明确处理，省略部分不会被描述成仍可完整读取。
+
+已沿真实消费者核对：[snapshot处理](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent/src/agent/snapshot.rs)经[TruncationStage](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent/src/agent/react/run/pipeline.rs)写入`ctx.output`和最终`ToolResult.output`，随后由tools phase放入`Message::tool_result`并发出`AgentEvent::ToolResult`。这项核对覆盖最终使用的字符串，不能仅以UTF-8不panic代替预算保证。
+
+本轮复用现成保留测试二进制 `a70d5287aa5ef7a7c3e534acf87b48e50fd44480d6b3a1d309e0b71ec4d052f1`，其1,028个框架输入与当前源码逐SHA相同。配置为`no-default-features; testing,files; lib`、原默认栈；三个原有exact控制各选中1项、各通过1项，均自然退出0且无忽略：
+
+| 原有测试名（共同前缀`agent::react::run::pipeline::tests::`） | 本次实际覆盖 |
+| --- | --- |
+| `truncation_stage_fallback_honors_token_budget_for_unicode_and_tiny_limits` | ASCII／中文／emoji／混合文本、八种预算及artifact禁用／故障的64组合 |
+| `truncation_stage_records_inline_output_metrics` | 正常短ASCII结果与原inline指标 |
+| `truncation_stage_falls_back_when_spill_directory_is_unwritable` | 默认预算下真实spill不可写回退 |
+
+因此，这个具名项应按“当前实现已修、同源保留二进制focused 3/3”接续，退出后续待开发队列；原审计原文和历史失败保留。实际回执为框架`.echo-semantic/local/tool-fallback-budget-20261027/final-receipt.json`，SHA `560da19f6e5eb8f0c08c3a181f157c4092dd67d51435ec26f1052edde69ea330`。本轮没有新增生产代码、重新Cargo编译或创建target，`cargo clean`不适用。
+
+这里结算的是原HeuristicTokenizer估计预算的回退／inline范围，未验证provider真实计费token、完整请求、spill成功preview、富媒体、SDK direct、原生或main CI。Web失败分类、其它曝光与消费者去依赖仍按各自证据推进；Exa继续本地保留、不推送、不合main。子仓正式中文streaming文档已包含该实现合同，本轮仅更新顶层阶段审计，不新增公共API、示例或官网行为。
+
 ## 1. 输入、源码身份与证据等级
 
 执行来源为 [Plan02](../plans/plan_02_tool-inventory-and-exa-boundary.md)，artifact_id `plan:92c06a40-2352-4be1-893b-c30d70d83dee`；设计与依赖见 [Design](../design.md)、[Delivery Map](../plans/delivery-map.md)。用户明确将已独审的五仓合同内容作为实施基线；主线及 CI 收口仍归协调者。
