@@ -11,5 +11,5 @@ outcomes:
       的新原生验收。
     depends_on:
       - run-attempt-isolation
-design_revision: sha256:cf48cdfd8ff35688e97fa68bf66fb3c7429294a650b2966329595761822483f9
+design_revision: sha256:773d16c9ed2f04eef90b6fe45cd11499ab5f4caf0beb41794d3f5b3b58ccf81c
 ---

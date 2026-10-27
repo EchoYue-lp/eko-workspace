@@ -32,7 +32,7 @@ design_sections:
   - ref: design.md § 任务列表弹窗
     digest: sha256:6cfa1b6c5898e639e83e7f77d659dd009677adc9ac37126cd5bfbafd0d759e30
   - ref: design.md § 唯一 Goal、用户修改权与原文恢复
-    digest: sha256:9ef2dc8f4bdfaa1d9e11f9927c5ef350ff749a4b45fa4cfb308244ee77d02893
+    digest: sha256:735f5f8f2b4579dfbdffbf31cbb19ef5ac458ec832084ebcbaa6542f0588ceaa
   - ref: design.md § 测量与持续回归
     digest: sha256:9ce2b5788eed53f142334b396eaf369ff071833ebfdd0f9851844d40e1954392
   - ref: design.md § 12. 复用结论与完成标准

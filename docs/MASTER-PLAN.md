@@ -8,9 +8,9 @@
 
 已保存的本地切片：CLI首页`3edd520`（标题/卡片/顶部入口）；CLI聊天与设置`9e58e706`（机器人/空壳/流式状态、表单与焦点）；Framework原guidance队列`0e404185`（同scope/Run隔离）。对应source/staged/final各0、独审pass，均是task范围，globalClosure未检查；未push/merge、未晋升gitlink。UI组合77文件629测试/lint/format0；后继仅修3处无效测试参数，22定向及真实类型/普通与Tauri前端构建均0，458前端输入无漂移。真实CSS浏览器不等新桌面加载，当前未启动新版原生。
 
-Framework I1四源已提交，EKO helper/transfer的真实RED/GREEN候选已准备、尚未新Cargo；真实只读工厂/I2与新Tauri继续按依赖。Framework zstd456、source1/402及SDK94候选/原4漏洞10unsound继续独立保留。CLI原六风险fresh实际锁/registry-origin两报告各自然1、0漏洞/恰6项，完整身份无增减变化；旧b0源全集不可复原，当前321输入与锁已逐成员保全，复评采用仍待用户，不自动改policy。
+Framework I1四源与EKO消费者均已交付：EKO `0ebd8984` 的旧4项真实RED、13组34项GREEN、两例子/fmt、source/staged/final均0，独审通过。用户已批准本轮继续原六风险；原六Python方法及actual/canonical两正式gate为0，scanner自然1、零漏洞、恰原六项，consumer d38f9a06…与policy97c2…单独绑定，旧b0全集缺失仍保留。I2正式Plan02已ready/独审/原工具0，Framework真实readonly schema旧行为已自然101；应用真实factory、raw十三条早期原文和Tauri canonical旧行为验证按同一OLD源码窗口推进。Framework zstd456/source1/402与SDK94/原4漏洞10unsound继续独立保留。
 
-旧Framework已终结target在保全binary/日志并核无reader后准确clean0，移除2388文件/888.9MiB，target不存在；chat/settings自有服务已结束，截图/日志保留。没有清用户数据/未知pycache/refs/其它缓存。原SSH echo支持、ubuntu局部实测、微信/GUI/IM/cron/退役保留合同及完整矩阵/mainCI资格仍分开验收。
+旧Framework已终结target在保全binary/日志并核无reader后准确clean0，移除2388文件/888.9MiB，target不存在；chat/settings自有服务已结束，截图/日志保留。I1应用target也已准确clean0且保全完整，但pre-reader检查漏做的顺序偏差单列保留，不回填资格。没有清用户数据/未知pycache/refs/其它缓存。原SSH echo支持、ubuntu局部实测、微信/GUI/IM/cron/退役保留合同及完整矩阵/mainCI资格仍分开验收。用户新Goal将focused上限改为5、jobs≤5，四份相关AGENTS已同步；重型矩阵仍独占。新Worktree的HEAD-only边界已确认，分叉子主题Design/Plan独审通过，尚非功能验收。
 
 ## 2026-10-27 当前交接：工程验证、正式门禁与原生分别结算
 

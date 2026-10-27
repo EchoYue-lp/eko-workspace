@@ -39,7 +39,7 @@ design_sections:
   - ref: design.md § 运行中的追加输入（Steer）
     digest: sha256:d461e3bdbe7a126228e65a72069ca7dc201882caedd2a5a093b6236cd374ccf1
   - ref: design.md § 唯一 Goal、用户修改权与原文恢复
-    digest: sha256:9ef2dc8f4bdfaa1d9e11f9927c5ef350ff749a4b45fa4cfb308244ee77d02893
+    digest: sha256:735f5f8f2b4579dfbdffbf31cbb19ef5ac458ec832084ebcbaa6542f0588ceaa
   - ref: design.md § 10. 异常与边界验收场景
     digest: sha256:f028430a0b75b26899c68a1a5ed27f687da9f70ce63aa96ce0d46ec11216132c
   - ref: design.md § 12. 复用结论与完成标准

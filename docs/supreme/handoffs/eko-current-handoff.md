@@ -26,7 +26,7 @@
 | 品牌 | Eclip `/ˈɛk.lɪp/`，猫头图标用于品牌位置；技术仓库名、`com.eko.desktop`、二进制名、协议和 `.eko` 数据位置保留 | 用户品牌会话已实现后交主流程采用，CLI／官网已本地提交。不能把源码提交当旧窗口已更新。 |
 | 首页 | 主标题**把想法变成成果**；删除“继续上次对话”卡，从明确最近任务／工作空间继续 | 用户在本会话候选问答中明确选择该句，覆盖旧“EKO，和你一起把事做好”和品牌-only标题方案。 |
 | 顶部分叉 | **删除顶部“新建支线对话”入口** | 用户明确要求，覆盖旧的保留并澄清顶部入口建议；不误删已有 Side Conversation 历史、恢复或底层 API。当前六文件 WIP 已实现。 |
-| 回复处分叉 | 每轮**完整回复末尾**一个入口，评估并落实当前工作空间／新 Worktree 两形式 | 用户截图是方向与需求，现有源码只完成普通历史 fork；dirty 继承、Goal／模型继承及非 Git／SSH 边界仍未裁决，不可静默补入。 |
+| 回复处分叉 | 每轮完整回复末尾一个入口，当前工作空间／新Worktree；新Worktree从HEAD创建、不带未提交/untracked | 用户已在新会话明确从上一次Git提交开始；其它沿原普通fork的历史前缀/新空闲会话合同，旧运行/Goal/owner不克隆。正式子主题设计/计划在审，功能尚未实现。 |
 | 聊天呈现 | 去 assistant 左侧小机器人，修空消息外壳留白，正文对齐；工具／执行紧凑、详情可展开，不能吞真实状态 | 用户 Codex 参照截图；52px 空壳根因已真实浏览器复现。正式 MessageBubble 还未修。 |
 | 设置 | 具体表单统一排版、间距、控件、分组和保存反馈；基础配置常显；IM 独立 | 基础／IM 已提交，设置美化只有候选，没有成功视觉验证。模型仍默认入口，不恢复总览。 |
 | SSH | 原目标 `echo@111.229.245.175` 支持义务保留；后继用户使用 `ubuntu`，密码仅 GUI 输入 | 用户确认 ubuntu 测试连接、`/home/ubuntu/ssh-test` 创建／进入及刷新后侧栏显示成功；不替代 echo 账号或完整终端／远程操作验收。 |
@@ -38,7 +38,7 @@
 | 发布／部署 | 主流程纳品牌进后继构建；**没有**授权执行包发布／官网部署 | 用户交接的“下一次构建发布”按既有明示边界做制品准备，不作为外部写入授权。 |
 | 清理／资源 | 最多两个 focused Cargo，jobs≤2、debug=0、自有准确 target；每批先保原件／制品，确认无 reader 后及时 cargo clean | 交接本身用户明确“勿新增编译／重启／清理”，因此此刻只保全而未 clean；新协调者接管后续办。 |
 
-**接管后替换关系：** 原有效要求A/B选择已由最新用户裁决撤回，不再待选，也不将其叫作旧B采用。Fork两形式的文件改动继承仍待裁决，其余优先保留现普通fork语义；依赖风险与实际精确合同冲突（第8节）仍待具体复评。这些不阻塞独立UI实现。
+**接管后替换关系：** 原有效要求A/B已撤回，不称旧B采用；Fork的HEAD-only边界和本轮CLI同六风险均已获用户明确选择，见本文件后继原答复与机器回执。当前没有这三个问题的待决项，原生/SSH/微信实际人工验收及受保护外部动作资格仍独立。
 
 ## 3. 五仓现场与每一项未提交内容
 
@@ -199,7 +199,9 @@ F `.echo-semantic/local/zstd-safe-chain-implementation-20261027/`：28实际Rust
 - 完整GUI／HITL／tasklist／SteerGoal／历史大数据／主题／窗口／恢复、完整workspacefeatureexamples／精确mainCI都未因局部结果通过。性能ready24／blocked8只是准备分类，正式基准静默窗口未完成；新增IM平台／发行目标／包发布／官网部署按需及授权，外部动作未执行。
 - 26项Outcome的逐项未完成对账保存在 `docs/supreme/plans/2026-10-26-root-convergence/2026-10-27-current-handoff.md` 第“26项剩余结果对账”；该列表范围继续有效，但HEAD／当前进程／当前子任务状态以本文件重新观察为准。
 
-## 8. 依赖风险与当前指令冲突（未裁决）
+## 8. 依赖风险：原缺口与本轮明确复评
+
+本节下文保留交接时历史冲突。**当前CLI后继已闭合**：用户明确本轮继续原六依赖；锁3fb/856包、321输入consumer d38f9a06…、policy97c2…，原六Python方法与actual/canonical两原gate均0，scanner自然1/0漏洞/恰六/无no-fetch/ignore。最新官方源SSH fresh复核3279c999与两报告一致；这不是风险修复/未来自动续期，旧b0全集未复原仍保。Framework/SDK独立合同不继承本许可。
 
 本轮最新用户AGENTS替换文字明确写 Framework只锁`7607c1458036adc04e64858215e21d45f7f8ae1ffa992ad82fba97e7a72aa528`、CLI锁`d2e7b7ebc035d35940f20fd9a95628a37ddf13bba2c1d5c828cdac142ae41680`。当前磁盘实际F锁为`c48e0a273f6ac000836d7781744dbba3270f8ff08b00c8814c6998ce6b7cadc6`，CLI锁`3fb8955b56e86eb4bef2454d3328b6ef8eb7f36d7663806387f3b990244e7ed6`（856包），最新用户要求又强调按真实当前精确合同。正式历史文档证明7607／d2e7是过去锁，但**不能因此静默重写最新用户的精确指令**。
 
@@ -295,6 +297,32 @@ Framework四源已提交`0e404185c8f252da3e335c35547e52249c74dc65`，3个既有m
 新CLI依赖复评实际锁与canonical视图官方扫描各自然1、零漏洞/恰原6警告，完整身份新增/缺失/变化均0；官方HTTPS失败及首镜像HEAD失败原件保留，后继SSH fresh至官方3279c999后各scanner实际fetch同源本地镜像，未关fetch/yanked/增ignore。根`dependency-reassessment-exact-facts-20261027/`保存完整比较、321输入及锁322成员可恢复包，逐bytes/mode/hash回读；旧b0全集未复原。当前用户复评问题已明确为本次继续原六风险，不将扫描或数量相同自动晋升policy。用户尚未答前保留待决，不阻塞源码/测试准备。
 
 原GUI产品Design/Map与17份实际文件改动已独审pass C0/I0/M0，新Plan15及14份ready和Map机械校验全0；旧abandoned14保历史不冒现绑定0。CLI ADR0037/0048/runtime正式说明候选待下一scope采用。`/root/steer_goal_validation`只在自有ignored目录准备原store/tests.rs边界回归及既有原文/恢复证据对账，不与I1的executor/tests.rs冲突，不运行额外Cargo。
+
+### 2026-10-27T16:06:45+08:00 运行验证窗口
+
+Root20文档已本地提交`8481d8dddb6d6ff014cf644631dbc8a5d79867b1`，source/staged/final0；没有提交README/outputs/gitlinks。新前端149资产已逐SHA保全于CLI `gui-presentation-takeover-20261027/frontend-artifacts/`，manifest `9a2a7a73b43a6980e8cb93b5f80cd25533707448a1860c096b1de69d6e6841d6`，不等桌面二进制。
+
+CLI新共享scope为`i1-goal-runtime-integration-20261027`，7精确路径正常record0；root已采用Plan15的store/tests两回归和ADR0037/0048/runtime三中文说明。`/root/run_control_i1_eko`是唯一Rust批次owner，先test-only RED再最小GREEN，target在该任务目录下、jobs2/devtestdebug0/incremental0/TMPDIR与TS_RS_EXPORT_DIR均在主目录；相关Rust/manifest/lock冻结。执行只取得行为资格，六风险正式接受仍待用户，不用编译通过替代riskgate/新原生；原先“未澄清前不开Cargo”的协调暂缓由具体fresh复评事实取得后更新为“风险收口仍待答、独立focused行为验证继续”，不改变风险policy。
+
+Plan15的真实13输入后早期原文→最终模型组合缺口由`/root/steer_goal_validation`只在ignored候选准备compact_context.rs回归；它没有正式写权，须root在I1安全切点扩scope并冻结新epoch后采用，不能编译中并写。Fork是否带当前未提交文件改动仍待用户选择；原术语问法已用蓝按钮/红按钮示例解释，不据沉默采用推荐。
+
+### 2026-10-27T16:23:28+08:00 六风险用户后继裁决
+
+用户已明确回复“继续保留原六个依赖，完成本次修复和验证（推荐）”。这替代前文同六风险“尚待答”的当前状态，只覆盖本轮具体修复与同六项完整身份，不是以后迭代/新锁/新风险的自动续期。根`dependency-reassessment-exact-facts-20261027/user-decision-current-iteration.json`保存具名裁决与原始扫描身份；最终consumer冻结后仍须做实际锁/registry-origin正式精确gate、原六测试及来源回读，不把用户同意叫作风险已修复/扫描零warning。旧b0全集缺失与所有原失败保留，SDK/Framework不继承本例外。
+
+### 2026-10-27T16:59:42+08:00 分叉文件边界已裁决
+
+用户明确回复“不要，从上一次 Git 提交开始。”，新Worktree从源目标HEAD创建，不带未提交/未跟踪改动；它们留原目录。此答复覆盖前文同问题“待选”状态；当前工作空间模式沿原共享目录。原普通fork的历史前缀/新空闲conversation、旧Goal/运行owner不克隆等既有行为保留。原答复与问题保存于`fork-two-forms-20261027/user-decision-head-only-worktree.json`，正式方案/实现由root后继派单一owner，不把本裁决冒充功能已实现。
+
+### 2026-10-27T17:19:32+08:00 下一源码窗口与最终已交付切片
+
+EKO I1/Goal边界/本轮风险维护11路径已本地提交`0ebd8984be26affc32a130df7a26b128494d6c65`，正常source/staged/final0、独审与风险增量pass C0/I0/M0；F对应`0e404185`。34测试/两例子/fmt0与旧1797输入绑定原policy03cf；后继97c2的风险合同增量分别验证，不能把两个快照合叫整树无漂移。清理准确target自然0、保全binary与后置事实均在，但预clean reader检查漏做的顺序异常继续单列，不补造原日志或前置资格。
+
+最新Goal文件为用户`9f3ff216…/goal-objective.md`，与前一版唯一差别是focused≤5/jobs≤5。Root及F/CLI/SDK四份AGENTS资源条款已同步；历史批次jobs2仍合法，重型矩阵/性能测量仍独占一套，低于5GiB不启动新构建。
+
+当前Framework scope `readonly-i2-implementation-20261027`允许13精确路径（12I2文件+已由root更新的AGENTS）；唯一writer`/root/readonly_i2_framework`正在旧readonly生产的真实schema RED，正式生产保持0e，GREEN在ignored准备。CLI scope `next-runtime-repairs-20261027`允许33精确路径，完整owner分表在CLI同任务`record-command.json`：raw10由`/root/steer_goal_validation`、I2九由`/root/readonly_i2_eko`、工具历史14由`/root/chat_ui_refresh`。各writer先正式test-only RED，不在旧源验证时偷偷切生产GREEN；AppCore两RED（早期原文入口+真实EKO工厂）与Tauri nested调用RED待完整OLD源冻结后使用独立target并行，所有OLD结束后才统一放GREEN依赖窗。
+
+Raw唯一Design/Plan15细化5文件已独审pass/原artifact0，仍同Outcome；正式Raw源码尚未GREEN。Native Plan02 `plan:542d2e91-1c4f-4337-9029-6421e5660b10`正式ready/独审pass/Map与Plan1/2验证0，Plan1未因旧cleanup缺口自动completed。工具历史候选TS96/类型828源0，但后端RED尚待实际GUI批次；不把TS候选冒native通过。Fork独立子主题两文档已创建并在审，HEAD-only用户裁决已闭合，不新store/执行器/旧Goal克隆。以上新文档/规则尚在本地后继差异，root后续按正常门禁统一保存；未晋升gitlink、未push/merge/发布/部署。
 
 ## 附录 A：原 Goal 完整原文（逐字保留，不改写）
 

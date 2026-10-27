@@ -139,7 +139,7 @@ outcomes:
       可由智能体在尚未建立时设置，已有 Goal 仅由用户显式修改或结束，保持原任务版本、输入幂等和失败恢复边界。
     depends_on:
       - product-boundary-contract
-design_revision: sha256:e71e681b75fc782e7fff20a6537adbb1a4a86cea308368c415ce02075527f8b1
+design_revision: sha256:20fc5982b07537f1ae15a0dfaf9b5ca0f0d63e26e683e77c29f3b99bd5f31141
 ---
 # 可并行执行安排
 

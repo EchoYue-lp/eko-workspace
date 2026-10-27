@@ -20,7 +20,7 @@ out_of_scope:
 design_ref: docs/supreme/specs/native-subagent-depth-repair/design.md
 design_sections:
   - ref: design.md § 问题与目标
-    digest: sha256:c6d44aa92febbb7a327467fad423d91bcd2573229a3d157943a5395983344d7c
+    digest: sha256:9b7bcd510cf1cd7847ce8b6aeab18288d71c17778ce2c25e36f2af1e7879abf8
   - ref: design.md § 目标行为与范围
     digest: sha256:e5fb5b07fc65dff37f6a46d15016114e9290e5fb23f0031b06df401eaf4f26ca
   - ref: design.md § 系统边界与复用依据

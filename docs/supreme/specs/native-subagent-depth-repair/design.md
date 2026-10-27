@@ -8,7 +8,7 @@ carrier: markdown
 
 ## 问题与目标
 
-本设计细化[GUI 产品收敛设计的 Subagent 政策](../eko-gui-product-convergence/design.md#唯一-goal-与当前有效要求)，修复两处已经由原生运行暴露的实现接缝。产品关系继续是 `TaskRun → PlanTask → SubagentRun`：主智能体为第 0 层，EKO 默认最大总层数为 1，GUI 可选 1、2、3；新配置只影响新运行，框架通用复用方保留自己的上限。
+本设计细化[GUI 产品收敛设计的 Subagent 政策](../eko-gui-product-convergence/design.md#唯一-goal用户修改权与原文恢复)，修复两处已经由原生运行暴露的实现接缝。产品关系继续是 `TaskRun → PlanTask → SubagentRun`：主智能体为第 0 层，EKO 默认最大总层数为 1，GUI 可选 1、2、3；新配置只影响新运行，框架通用复用方保留自己的上限。
 
 同一 conversation 的两个独立运行 `taskrun:9c54a00f-d788-4e05-b059-0a73e5f09b11` 与 `taskrun:63da81cc-6563-4512-8b00-aaaa21b47418` 已分别持久绑定上限 3，使用同一个 `native-depth-probe`、revision 1、attempt 1。前一运行的真实只读 reviewer 启动后搜索不到 `agent_tool`，没有到第二层；后一运行在派发前收到 `attempt 1 already started`，实际 child 未启动。两个 Run 的 claim/execution 均不同，因此不能以同一 attempt 重放解释第二次拒绝，也不能把问题归因于 GUI 未保存。
 

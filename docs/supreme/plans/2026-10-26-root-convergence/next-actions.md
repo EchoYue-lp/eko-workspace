@@ -4,7 +4,7 @@
 
 唯一当前状态与文件owner见[当前交接](../../handoffs/eko-current-handoff.md)。首页`3edd520`、聊天/设置`9e58e706`与Framework scoped guidance `0e404185`已各自本地提交，正常task门禁和独审通过；不冒原生、完整Goal、mainCI或发布。旧A/B有效要求解释路线已由用户撤回：Steer沿主模型/历史，已有Goal只有用户改删，无Goal可初始化，不造独立解释器或强制更新链。执行原文/恢复及Goal边界用[精确Plan15](../../specs/eko-gui-product-convergence/plans/plan_15_steer-context-and-goal-authority.md)，旧abandoned Plan14仅历史。
 
-下一批先合流EKO Run/helper与scoped guidance的旧生产RED→GREEN及现有Goal边界/原文恢复验证；一次冻结相邻Rust输入，jobs≤2/debug0、自有target批后保全/准确clean。当前仅候选准备，不将风险扫描当正式接受；CLI同六风险已fresh扫描/完整身份比较/当前321源保全，用户复评仍待。真实工厂I2、fork两形式未定的文件改动继承、新Tauri/SSH/微信及SDK/退役/完整门禁按明确依赖并行，不重复已通过同源UI629测试。下方旧PID/HEAD和“未提交／待A/B”的描述只保历史。
+EKO Run/helper与scoped guidance已本地提交`0ebd8984`，34项定向、两例子/fmt、正常门禁和独审已过；本轮同六风险已获用户确认并通过两正式gate，清理准确target为0但pre-reader漏检查偏差保留。下一批做真实工厂I2、raw十三条早期输入的可发现引用和canonical工具历史恢复，先在共同OLD源码取得行为RED再切GREEN。各文件单writer，最多5focused/jobs≤5/debug0、独立target，保全、成功核reader、准确clean分调用。Fork的HEAD-only边界也已明确；新原生/SSH/微信/SDK/退役/完整门禁按真实依赖并行，不重复未变的UI629测试。下方旧PID/HEAD和“未提交／待A/B”的描述只保历史。
 
 ## 2026-10-27 最新执行入口
 

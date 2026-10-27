@@ -210,6 +210,20 @@ Pi 官方 agent-core 将 steer 与工作自然结束后的 followUp 区分；本
 
 压缩与重启恢复继续让主模型取得必要历史和完整输入原文，不把最近四条或短预览当作全部历史。长文本保留可校验的完整原文或可读取引用，末尾限制不能因预览截断消失。Goal、必要原文或执行范围加载失败时重读并核对当前版本；仍无法恢复则暂停相关副作用并报告缺失项。普通辅助信息可降级，但旧投影仅在证明版本匹配时复用；不为此新增结构化意图解释协议。
 
+当前实现的完整原文已经保存在 journal，但近期 capsule 只呈现四条、近期状态只保留八条。十三条输入后的早期原文即使仍可由工程代码查询，也不能据此认定最终模型知道怎样读取它。恢复目标因此包含**可发现的原始输入历史入口**：主模型在有界上下文中取得一个沿现有 `InputResourceRef` 表达的完整源事实入口，通过既有 `read_artifact` 分页读取原文或各源的不可变原文引用；不把全部历史正文塞入 capsule，不增加模型工具或 Framework API。
+
+原始输入历史是同一 journal 的派生读模型。复用应用现有 `HistoryProjection` 的增量追加、完整重建和段校验能力，为原始输入扩展一个来源族及必要薄读取接缝；该来源族当前尚未实现，不能把已有 artifact/review 投影当作现成原文索引。派生文件可丢弃并从原 journal 重建，不拥有输入接纳、消费、Goal、计划或语义要求状态。它只保存已发生的源事实和完整原文引用，理解仍由主模型结合历史完成。
+
+一次历史快照必须绑定原 RunAuthority 持有的 journal identity、运行/工作空间归属和固定观察序号切点，并据源字节与 SHA 校验；只按相同 run_id 或 head 序号不能证明仍是同一代来源。沿既有有界事件读取分批扫描到该切点，不把一个结果页的 limit 或近期投影当完整历史；并发追加的后继输入不混入旧快照，下一次原模型上下文刷新取得新的入口。派生缓存自己的 `through_sequence`、段计数和 hash chain 必须与准确来源及切点一致，不能单独用暖 cursor 证明冷重建后的来源仍有效。原文文件的内容身份以该来源族实际包含的最后源事件序号及内容为准：普通工具事件只推进全局观察位置时，不向源文件加入变化的全局 head 或时钟而触发重写，仍可复用已证明覆盖本次观察位置的相同原文入口。
+
+`RunInputAccepted` 保留原稳定输入地址、input_id、revision、负载身份及原校验/幂等规则；旧 `RunSteerRecorded` 仅有其实际字段时，以原 journal identity 与事件序号标明记录来源。接纳事实与原文投递记录分别表达，不凭相同文本或 turn 合并成一个输入，不进行语义去重、分类或替换，也不将 Accepted 宣称为主模型已理解或执行。初始输入原文可与用户后来显式修改的 canonical Goal 不同，不能用最新 Goal 的文字或摘要否定合法旧来源。派生入口及其记录数不能成为新增的有效要求分母或统一验收状态。
+
+发布的入口和原文引用按准确来源、源事件切点及内容身份保持不可变，沿既有原子物化与 `InputResourceRef` 的路径/大小/SHA 规则构造；同一字节的重复刷新不改写已有文件身份。主模型已取得的完整旧快照和 reader cursor 继续读取原快照，新输入发布新引用，不能覆盖旧路径造成旧/新混读。跨 Run、journal 重建或工作空间换代不能挪用旧 descriptor/cursor；原 reader 的身份与 SHA 拒绝规则继续成立。派生缓存缺失或损坏可从准确 journal 重建；若损坏重建更换了文件身份，旧 cursor 必须明确拒绝并从无 cursor 重新读取，不能假称旧 cursor 仍有效。源及缓存路径来自本机 TaskRuntime 产品数据根，不取 invocation cwd，也不交给 SSH 项目文件系统读取。源不可读、无法验证或最终真实工具范围缺少 `read_artifact` 则沿原 `required_context_unavailable` 暂停相关新副作用，并保留原 owner、Goal 与 expected-resume 路径；不降级为空历史、不放宽工具正上界。
+
+验收必须让十三条以上输入后的早期限制及长原文尾部在真实压缩、最终模型请求和冷重开后由主模型沿该入口实际读取；单独证明 journal 有全文或单条当前长输入能读，不能拼成这项资格。跨读取页、并发追加、相同文本的合法重复、不同 Run/来源代际、旧 cursor、派生缓存删除/损坏与关键源失败分别保留正反控制。分页和 token 行为复用现有 reader 合同，不另造新产品上限；原文入口不改 Goal/revision/hash，也不自动更新计划或验收。
+
+本次取舍参考 [Claude Code 上下文说明](https://code.claude.com/docs/en/how-claude-code-works.md) 对压缩可能丢失早期细节的边界、[会话说明](https://code.claude.com/docs/en/sessions.md) 对保留 transcript 与恢复上下文的区分，以及 [Anthropic 上下文工程说明](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) 的轻量引用与按需工具读取模式。它们支持“原件持久保留、模型按引用读取”，不证明 EKO 已具备上述原文入口或来源快照合同。2026-10-27 三份官方原件均实际 HTTP200，SHA 和访问失败边界保存于 `echo-agent-cli/.echo-semantic/local/steer-goal-validation-20261027/raw-history-references/receipt.json`；Web reader 的404与首次 urllib 的403不算成功依据。EKO 选择沿现有文件原文、journal 与 reader 补齐可发现性，不新增独立理解请求或全部原文常驻模型窗口。
+
 主模型和交付审查仍应对照原 Goal、对话历史及实际交付物检查遗漏和未验证项；现有程序检查命令结果、文件 hash、显式版本和证据存在，语义审查判断是否满足用户意图。两者分别成立，但不再要求每条 Steer 先形成独立机器“有效要求”分母，也不强制串联要求更新、计划调整与验收调整。普通问答和短小实现仍可直接完成，不强迫建立复杂 DAG。
 
 Subagent 默认不得再次派发 Subagent；用户可在 GUI 配置嵌套，最大三层、默认嵌套深度零。若已有 UI 用包含首层的总层数表达默认一层，适配必须证明与“子智能体默认不再派发”一致，不得借不同计数口径放开委派。复用既有 delegation policy 和实际工具资格约束，不能仅修改提示词，也不把框架合理的默认上限改成 EKO 产品常量。

@@ -412,7 +412,7 @@ CI 精简不降低本地提交门禁;任何新增跨平台或依赖策略风险�
 ### 构建并发与批次后 cargo clean
 
 - 每个 Cargo 编译/测试批次结束后及时 `cargo clean` 准确自有 target，替代默认保留增量缓存的历史策略。相邻且针对同一冻结快照的验证命令可组成一批；先将原始日志、真实退出状态和必要制品保存在 target 外，再确认没有活动 cargo/rustc/测试子进程/Host 或其它读取者，最后清理并记录回执。
-- 同机最多两条 focused Rust 批次，jobs 不超过 2，dev/test debuginfo 关闭；完整 Rust/GUI/语言矩阵和正式性能测量按协调窗口串行。各批次使用位于唯一主目录内的独立 `CARGO_TARGET_DIR`，禁止清理其它会话或 primary 的缓存。
+- 同机最多五条 focused Rust 批次，jobs 不超过 5，dev/test debuginfo 关闭；完整 Rust/GUI/语言矩阵和正式性能测量按协调窗口串行。各批次使用位于唯一主目录内的独立 `CARGO_TARGET_DIR`，禁止清理其它会话或 primary 的缓存。
 - 批次前后记录 `df`/`du`。可用空间低于 5 GiB 时停止新构建，优先清理已确认无使用者的自有可重建缓存；清理失败必须明确报告，不能声称已释放。
 - 未运行 Cargo 的文档/只读工作不为形式执行清理。工作树、分支、未提交/未跟踪源码、stash、保留 tag 和证据原件按独立维护流程处理，不能借 `cargo clean` 删除。
 
@@ -531,3 +531,9 @@ rm -f .worktrees/fix/Echoyue/echo-agent  # 删除临时 symlink
 - Rust crate 名用下划线:`echo_agent`(不是 `echo-agent`),`cargo check -p echo_agent`。
 - 代码风格:与周围代码一致(命名、注释密度、惯用法)。注释和 commit message 可用中文。
 - 用户指令优先级 > 本文件 > 技能 > 默认行为。当用户在对话中给出与本文件冲突的具体指令时,遵循用户当次指令。
+
+## 2026-10-27 本轮 CLI 六项依赖风险的用户复评
+
+用户在新协调会话明确批准“继续保留原六个依赖，完成本次修复和验证”。本轮CLI实际锁为`3fb8955b56e86eb4bef2454d3328b6ef8eb7f36d7663806387f3b990244e7ed6`（856包），运行隔离/Goal边界本次GREEN consumer为`d38f9a06ca1df7f042295d579bf8144ab3a741a92b6b5bd99fb104941c58ecd9`（321输入），机器policy SHA为`97c2fbe65910328dcc8ba83e5e8ae09d19ea28ded3f4bb8df3a2f0cd2fb34225`；唯一机器身份与中文用户裁决仍看`echo-agent-cli/.cargo/accepted-dependency-risks.json`和原`dependency-risk-decision.md`本日后继。旧b0完整消费源未复原已明确告知，本次直接按当前完整来源复评，不伪称旧基准小增量已证明；原六完整name/version/source/checksum/advisory/kind不变。
+
+这替代本文件CLI旧d2e7及其它历史锁/consumer的当前时态；Framework49组和SDK独立例外不继承本项。scanner自然1与精确gate0分别保原件，原六测试和actual-lock/canonical-origin两原门禁实际通过后才有本切片风险资格；本轮后继源变化需复核暴露面、冻结并跑精确gate，锁/身份/范围变化重新裁决，不扩大以后迭代风险接受。Rust/前端/文档/mainCI/原生门禁不变。对应CLI AGENTS已同文义同步。
