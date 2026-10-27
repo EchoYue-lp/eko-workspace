@@ -28,13 +28,13 @@ out_of_scope:
 design_ref: docs/supreme/specs/eko-gui-product-convergence/design.md
 design_sections:
   - ref: design.md § 4. 系统边界与唯一权威
-    digest: sha256:e1430cc82e11f733fff0050ba572561937893ca3317cb0cd6b63bb8f08faa381
+    digest: sha256:ad6ce63a85bbe1cf1d9a175e78b800f0070d97aeac24069fd4c0ba455d1c817f
   - ref: design.md § IM 与定时任务管理
     digest: sha256:0d9fc52c40b8eff51cac3a953a25738351f53e00ae3728e7fdab947d383aa9fa
   - ref: design.md § HITL 弹窗
     digest: sha256:6d1ace366e78550f0a0eda37546aab3abd4c7597fa872e4a6ddd1ae9e7febb49
   - ref: design.md § 10. 异常与边界验收场景
-    digest: sha256:6f59f80f3c5fe48e08bac490651377bf47f90e5dbde6560e47c4e5d16d9fcde5
+    digest: sha256:f028430a0b75b26899c68a1a5ed27f687da9f70ce63aa96ce0d46ec11216132c
 delivery_ref: docs/supreme/specs/eko-gui-product-convergence/plans/delivery-map.md#im-cron-gui-control
 todos:
   - id: relocate-shared-channel-runtime

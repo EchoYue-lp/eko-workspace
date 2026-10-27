@@ -22,11 +22,11 @@ out_of_scope:
 design_ref: docs/supreme/specs/eko-gui-product-convergence/design.md
 design_sections:
   - ref: design.md § 1. 文档定位与已确认目标
-    digest: sha256:0f17d2cbbec5131fac3d3c4b955710ddcf09a84c2872177492af6425a4a7ac4f
+    digest: sha256:1fd53dab610685fe4efdd18d746769d34d71defe89f09020d4724cd28637703f
   - ref: design.md § 2. 已固定基线与当前事实
     digest: sha256:280479f678d0b5f130eb4852b8ff24c0b120d8dd64931611fc40a8113665cfa4
   - ref: design.md § 4. 系统边界与唯一权威
-    digest: sha256:e1430cc82e11f733fff0050ba572561937893ca3317cb0cd6b63bb8f08faa381
+    digest: sha256:ad6ce63a85bbe1cf1d9a175e78b800f0070d97aeac24069fd4c0ba455d1c817f
   - ref: design.md § 5. 入口收敛与 A2A/LSP 退役
     digest: sha256:c9c8f28566cfe1936dad26af7d33c6ec5a8fa0a0b9af1215b1ae3d8e7cffc09d
   - ref: design.md § 工程收尾
@@ -89,7 +89,6 @@ todos:
 artifact_id: plan:323eb7f6-d95b-48f0-a3d7-c29dbf4823df
 lifecycle: ready
 ---
-
 ## Notes
 
 当前只执行“固化产品与退役边界”这一结果。三个 Todo 按同一结果结算，文档贡献可以按以下范围并行，验收不拆成多份独立通过：

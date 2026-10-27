@@ -9,34 +9,34 @@ outcome:
       原事实展示来源、状态、等待原因、真实进度、时间、产物与操作回执；未知值不虚构，accepted/no-op/rejected
       与物理结算有明确区别，迟到结果不串 Workspace、run 或 task。
     - 列表/详情与 composer 消费同一 canonical Goal/plan revision
-      及覆盖报告；目标修改后原详情不能继续显示旧计划/旧证据为当前完成，结束未结算不冒物理停止。多 Steer/Goal 写操作由 Plan12
-      的原控制链拥有，完整有效要求由 Plan14 拥有，三者不可互相借测试关闭。
+      及既有完成报告；用户显式修改目标后不得把旧计划/证据当当前完成，结束未结算不冒物理停止。普通Steer不自动改Goal，不强制生成要求覆盖报告；多Steer/Goal用户写操作由Plan12原控制链拥有，原文恢复与目标权限由当前独立结果拥有，不能互借测试关闭。
     - 保留每页20项PlanTask呈现；原后端运行查询及事件历史均返回有限页和明确后续位置，不全Vec拉回截断、不虚构total，读取失败不冒完整结果。列表相关查询与渲染的同源测量、合法单图1/10/50/100及具名run/事件集合和真实Tauri验收完成后才能交付；完整performance-baseline继续作为整个Goal的独立必要结果。
     - 适用前端行为/类型/lint/格式/构建、所改 Rust 查询/IPC
-      与独立审查通过；正式双语文档、examples/官网适用性对账，并按所属仓规则完成交付门禁。
+      与独立审查通过；中文正式文档、examples/官网适用性对账，并按所属仓规则完成交付门禁。
 out_of_scope:
   - 不新增 Task/Todo/Conversation/Subagent store、状态机、并行任务
     CRUD、调度器或数据库，不改变原任务准入、权限、取消/物理结算和 revision 权威。
   - 不重新实施780已有计划任务样式/Modal/20项分页及已覆盖的详情行为；不改聊天首页、HITL、微信/其它IM、cron配置或远程项目执行/认证。
   - 不在本结果实施
     memory/history、工具或存储性能优化，不把10k事件当10k合法PlanTask，不修改性能阈值、规避单图约束或以客户端截断声称服务端分页。
-  - 不扩Framework/SDK公共API、Cargo依赖/锁、全局主题或TaskRun领域模型；复用原EKO运行/事件有限页及已有控制回执，只消费Plan12/Plan14的canonical变化，不在列表另造Goal/Steer写入、要求store或journal合同。不发布、推送、合main或关闭其它Outcome。
+  - 不扩Framework/SDK公共API、Cargo依赖/锁、全局主题或TaskRun领域模型；复用原EKO运行/事件有限页及已有控制回执，只消费原用户Goal/Plan
+    canonical变化及现有真实完成报告，不在列表另造Goal/Steer写入、要求store或journal合同。不发布、推送、合main或关闭其它Outcome。
 design_ref: docs/supreme/specs/eko-gui-product-convergence/design.md
 design_sections:
   - ref: design.md § 4. 系统边界与唯一权威
-    digest: sha256:e1430cc82e11f733fff0050ba572561937893ca3317cb0cd6b63bb8f08faa381
+    digest: sha256:ad6ce63a85bbe1cf1d9a175e78b800f0070d97aeac24069fd4c0ba455d1c817f
   - ref: design.md § 首页与工作空间导航
     digest: sha256:d3885ae131866409bf68ec9f0573af0f57bec76beab6a3af087ba073008c4198
   - ref: design.md § 统一视觉和信息层级
     digest: sha256:ae3294ad6b1fdac64513ac849bf6f49a48364a90ce2d945221959a39ff3b5862
   - ref: design.md § 任务列表弹窗
-    digest: sha256:7ac0fd1ae1a0128ff6e30f398576e891b1e7c65573709f2af0708cb8bbcb78b5
-  - ref: design.md § 唯一 Goal 与当前有效要求
-    digest: sha256:2d810ec9aca486a6a1ef7d20ceb15490a9dfa04ef58be81941fa955cfe83ad12
+    digest: sha256:6cfa1b6c5898e639e83e7f77d659dd009677adc9ac37126cd5bfbafd0d759e30
+  - ref: design.md § 唯一 Goal、用户修改权与原文恢复
+    digest: sha256:9ef2dc8f4bdfaa1d9e11f9927c5ef350ff749a4b45fa4cfb308244ee77d02893
   - ref: design.md § 测量与持续回归
     digest: sha256:9ce2b5788eed53f142334b396eaf369ff071833ebfdd0f9851844d40e1954392
   - ref: design.md § 12. 复用结论与完成标准
-    digest: sha256:1e7084072aa642175303e9e30b436fb4f9b2aa0e460d654bb4e74abb3ad51815
+    digest: sha256:dd74230b9cea6cf427b38cca7a67a65623738040aabaf5adc2e7d5f72ebf5269
 delivery_ref: docs/supreme/specs/eko-gui-product-convergence/plans/delivery-map.md#task-list-dialog
 todos:
   - id: discover-and-select-formal-task-runs
@@ -86,9 +86,7 @@ todos:
       - echo-agent-cli/web-frontend/src/stores/taskRuntimeStore.test.ts
       - echo-agent-cli/web-frontend/src/components/layout/ContextPane.test.tsx
       - echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/store/tests.rs
-      - echo-agent-cli/docs/en/architecture/runtime.md
       - echo-agent-cli/docs/zh/architecture/runtime.md
-      - echo-agent-cli/docs/en/architecture/overview.md
       - echo-agent-cli/docs/zh/architecture/overview.md
     acceptance:
       - 先完成精确历史run选择、formal-vs-turn、跨Workspace/generation迟到、typed no-op/失败/late
@@ -96,16 +94,18 @@ todos:
       - 使用经原TaskRevisionService/PlanValidator接受并冻结字节身份的GUI数据；分别测1/10/50/100合法单图、10/100/1000
         run集合与独立10k/100k事件历史，不将setState型fixture或超上限Todo当性能证据。
       - 消费列表相关query与GUI基线，按同源输入取得Tauri/WebView支持的常用和最小窗口、浅/深色下的列表/详情/加载/空/错/长标题/键盘焦点及高数据量结果；jsdom、浏览器观测（若使用）与原生证据分开，缺项保留未完成，不互相替代。
-      - 正式双语说明解释Workspace内普通任务会话与TaskRuntime运行列表的区别，列出查询和结算边界；examples无公共API改动时记录不适用，官网按最终合格EKO源统一镜像，不手补旧pin。
+      - 中文正式说明解释Workspace内普通任务会话与TaskRuntime运行列表的区别，列出查询和结算边界；examples无公共API改动时记录不适用，官网按最终合格EKO源统一镜像，不手补旧pin。
 schema_version: 4
 artifact_id: plan:b814efe9-63c9-4946-9cb5-ee75e7d8af68
 lifecycle: ready
 ---
 ## Notes
 
+2026-10-27 仅按用户新裁决修订当前同一Outcome：已有Goal的改/删由用户显式操作；普通Steer交主模型按历史理解并按需调整计划；执行取消保历史Goal。不新增解释器/权限状态或统一要求/计划/验收流水线，原输入/原生/性能验收继续。
+
 源码实现以 EKO780 已冻结并通过工程检查的主题、Modal、任务投影与控制接口为基线，复用已有每页20项的 PlanTask 与详情行为；GUI基础本身尚待的原生视觉反馈仍保留。本结果补齐正式运行历史发现、精确选择、有限事件读取与类型化回执。运行分页不保证底层ID枚举/authority恢复为常量成本，须如实测量，不把transport有界称作索引优化。
 
-2026-10-26 接续以根 framework9c5、EKO780加已迁入dirty源码为准，旧外部v7 focused与零selected DTO命令不冒当前根完整资格。Plan12的37项controls或新的Goal/CAS回归也不结算本结果的历史run选择、DTO、合法高数据量/同源测量和真实Tauri义务。Plan14即使先通过原文修复，也不证明完整有效要求/覆盖报告已经可用；列表只呈现后端实际提供的事实。
+2026-10-26 接续以根 framework9c5、EKO780加已迁入dirty源码为准，旧外部v7 focused与零selected DTO命令不冒当前根完整资格。Plan12的37项controls或新的Goal/CAS回归也不结算本结果的历史run选择、DTO、合法高数据量/同源测量和真实Tauri义务。旧Plan14的原文修复只保留具名历史资格；其独立理解/强制覆盖Outcome现已撤销。列表只呈现后端实际提供的事实，不等待或伪造新的统一要求覆盖报告。
 
 任务组件与 taskRuntimeStore 的写入由协调者显式分配；共享 endpoints 仅 taskRuntimeApi 段、ContextPane/RightRail 仅任务目标段、只读查询和生成类型串行合流。核心Rust交汇由核心线拥有；GUI仅有next-actions所列六路径（ChatPanel及控件测试、双语guide、NewTaskDialog及工作空间a11y测试）的写权，Hook/Hook tests、Store/API仍属中央集成接缝。Plan引用文件不代表自动取得writer权限，没有接管前只读核对，不与两线并发改其文件。入口复用“任务运行”，保持侧栏普通“新建任务/最近任务”的Conversation语义。
 

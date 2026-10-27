@@ -31,12 +31,6 @@ outcomes:
       内保持唯一，修改按 revision/CAS 立即刷新权威投影并使旧计划/证据失效，删除以结束当前目标运行实现。
     depends_on:
       - product-boundary-contract
-  effective-requirements:
-    ships: 在同一 TaskRuntime
-      中持久保存完整原始要求及来源、范围、版本和替换关系，幂等连接输入接纳、上下文消费与目标/计划/证据更新，压缩和冷恢复保留仍有效约束，关键上下文缺失时暂停相关副作用，并以独立原始要求分母检查工作项、交付物及验证证据的覆盖。
-    depends_on:
-      - product-boundary-contract
-      - steer-responsiveness
   im-cron-gui-control:
     ships: 在 GUI 中管理已有 IM 渠道的配置与连接，并完成定时任务启停、执行、结果与恢复的共享运行时接线。
     depends_on:
@@ -128,7 +122,7 @@ outcomes:
       - gui-home-navigation
       - steer-responsiveness
       - new-im-channel
-      - effective-requirements
+      - steer-context-and-goal-authority
       - performance-baseline
       - domain-plugin-runtime
       - measured-storage-optimization
@@ -140,7 +134,12 @@ outcomes:
     ships: 在网站制品、正式源镜像和部署目标获明确授权后部署官网，核对实际访问结果及其对已交付能力和历史版本的描述。
     depends_on:
       - release-artifact-qualification
-design_revision: sha256:97233f9e54882b4462ccbe061ebf9db212c863cde184eddf9376a065da2bdec3
+  steer-context-and-goal-authority:
+    ships: 普通 Steer 通过既有持久输入与历史交给主模型理解和按需调整计划，必要原文在压缩与冷恢复后可读取；初始 Goal
+      可由智能体在尚未建立时设置，已有 Goal 仅由用户显式修改或结束，保持原任务版本、输入幂等和失败恢复边界。
+    depends_on:
+      - product-boundary-contract
+design_revision: sha256:e71e681b75fc782e7fff20a6537adbb1a4a86cea308368c415ce02075527f8b1
 ---
 # 可并行执行安排
 
@@ -266,15 +265,15 @@ R1 启动中断恢复、R2 本地 SDK 子句柄与压缩 PR18 已有后继提交
 
 包发布与官网部署在各自制品核验、范围确认和外部动作授权后可以独立推进。设计中的全部目标仍在本图跟踪，未纳入某次版本的项目不标为已完成。需要新的架构/公共合同选择时返回设计澄清，避免执行计划悄悄新增产品承诺。
 
-## 2026-10-26 原计划接续与已批准要求
+## 2026-10-27 用户裁决与原计划承接
 
-当前 Plan12 在原 steer-responsiveness 结果内承接 composer 多 Steer 和唯一 Goal 控制；Plan13 保留正式历史运行、有限 run/event 查询与准确回执的结果，并消费 canonical Goal/证据新鲜度，不能因 controls 新增测试通过就关闭列表/原生/高数据量验收。完整有效要求已由用户明确选中，新增 effective-requirements 结果及 Plan14，复用原 TaskRuntime；原文修复、有效投影、关键读取失败、目标/证据连接和独立覆盖均须成立，不能将第一切片等同全链完成。
+2026-10-27 用户新裁决取代原独立理解与强制有效要求/计划/验收流水线。普通 Steer 由主模型结合历史理解并按需调整计划；新输入不自动改已有 Goal。旧 Plan14 的原 Outcome 被撤销，原文、失败与实现切片保留为历史，不能作为当前执行来源或称已完成。当前图以 steer-context-and-goal-authority 承接仍有效的完整原文/压缩冷恢复与目标用户权限边界，当前结果总数保持26；不将旧 A/B 选择继续列为待决，也不把裁决称为旧 B 路线采用。
 
 builtin-tool-convergence 的默认委派行为以最新完整 Goal 为准：Subagent 默认不能再次派发、GUI 可配置最多三层、默认嵌套零。旧 ADR0034/0039 的差异按此裁决统一实际工具曝光和恢复策略；如 UI 总层数含首层，应验证默认一层与嵌套零同义，不再以旧冲突要求用户重复选方向。框架可复用上限仍与 EKO 产品默认分开。
 
-四条当前线路的实际文件 ownership、证据切点、剩余12项微信命令及完整 Goal 的执行顺序见[根内下一动作](../../../plans/2026-10-26-root-convergence/next-actions.md)。本图依赖是最终交付依赖；不阻塞独立前端、文档、归档或源码切片准备。有效要求的原文/恢复切片可在 Steer 主链真实源码和回执上并行准备，最终仍须与该控制链集成验收。
+四条当前线路的实际文件 ownership、证据切点、剩余12项微信命令及完整 Goal 的执行顺序见[根内下一动作](../../../plans/2026-10-26-root-convergence/next-actions.md)。本图依赖是最终交付依赖；不阻塞独立前端、文档、归档或源码切片准备。原文/恢复与Goal权限沿既有已交付持久输入主链并行准备；完整composer控制/视觉验收不是源码技术前置，各自真实消费者仍须集成验收。
 
-外部 echo-semantic 工具合同修复排除；已有最终退役 semantic 自然1及来源/合同阻塞继续保留，排除不等于豁免。用户最新允许且要求及时本地里程碑commit，Git暂存/提交由主线程唯一协调；本交付对账线不自行stage或commit。push/merge、关闭Issue、发布或部署仍禁止。全部26项及Plan14未完成范围继续对账，局部提交不等于完整验收；Exa本机提交与保留tag继续保护。
+外部 echo-semantic 工具合同修复排除；已有最终退役 semantic 自然1及来源/合同阻塞继续保留，排除不等于豁免。用户最新允许且要求及时本地里程碑commit，Git暂存/提交由主线程唯一协调；本交付对账线不自行stage或commit。push/merge、关闭Issue、发布或部署仍禁止。全部26项当前结果及被撤销Plan14的历史/原文切片分别对账，局部提交不等于完整验收；Exa本机提交与保留tag继续保护。
 
 ## 2026-10-26 原生epoch10后继证据切点
 

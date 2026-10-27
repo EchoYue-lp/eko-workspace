@@ -1,5 +1,11 @@
 # 根内收敛下一动作与交付依据
 
+## 新会话已接管：本节覆盖下方历史“当前”表述
+
+唯一当前状态与文件owner见[当前交接](../../handoffs/eko-current-handoff.md)。首页`3edd520`、聊天/设置`9e58e706`与Framework scoped guidance `0e404185`已各自本地提交，正常task门禁和独审通过；不冒原生、完整Goal、mainCI或发布。旧A/B有效要求解释路线已由用户撤回：Steer沿主模型/历史，已有Goal只有用户改删，无Goal可初始化，不造独立解释器或强制更新链。执行原文/恢复及Goal边界用[精确Plan15](../../specs/eko-gui-product-convergence/plans/plan_15_steer-context-and-goal-authority.md)，旧abandoned Plan14仅历史。
+
+下一批先合流EKO Run/helper与scoped guidance的旧生产RED→GREEN及现有Goal边界/原文恢复验证；一次冻结相邻Rust输入，jobs≤2/debug0、自有target批后保全/准确clean。当前仅候选准备，不将风险扫描当正式接受；CLI同六风险已fresh扫描/完整身份比较/当前321源保全，用户复评仍待。真实工厂I2、fork两形式未定的文件改动继承、新Tauri/SSH/微信及SDK/退役/完整门禁按明确依赖并行，不重复已通过同源UI629测试。下方旧PID/HEAD和“未提交／待A/B”的描述只保历史。
+
 ## 2026-10-27 最新执行入口
 
 **Goal 与 26 项 Outcome 继续开放。** 本节覆盖下文旧切点的当前时态，历史正文与原失败不改写；[本轮交接](2026-10-27-current-handoff.md)列明剩余结果及证据范围。仅在主目录按文件单一写入，验证期间冻结相关源码。

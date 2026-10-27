@@ -15,9 +15,9 @@ out_of_scope:
 design_ref: docs/supreme/specs/eko-gui-product-convergence/design.md
 design_sections:
   - ref: design.md § 1. 文档定位与已确认目标
-    digest: sha256:0f17d2cbbec5131fac3d3c4b955710ddcf09a84c2872177492af6425a4a7ac4f
+    digest: sha256:1fd53dab610685fe4efdd18d746769d34d71defe89f09020d4724cd28637703f
   - ref: design.md § 4. 系统边界与唯一权威
-    digest: sha256:e1430cc82e11f733fff0050ba572561937893ca3317cb0cd6b63bb8f08faa381
+    digest: sha256:ad6ce63a85bbe1cf1d9a175e78b800f0070d97aeac24069fd4c0ba455d1c817f
   - ref: design.md § 统一视觉和信息层级
     digest: sha256:ae3294ad6b1fdac64513ac849bf6f49a48364a90ce2d945221959a39ff3b5862
 delivery_ref: docs/supreme/specs/eko-gui-product-convergence/plans/delivery-map.md#gui-visual-foundation

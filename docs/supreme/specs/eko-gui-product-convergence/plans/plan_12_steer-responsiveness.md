@@ -15,9 +15,9 @@ outcome:
       均有匹配结果或真实未执行事实，已启动调用保留实际结果、资源和物理结算，Stop 仍走原取消入口。
     - composer 上方多条 Steer 的编辑、拖拽排序、删除和立即执行均使用原持久输入身份及 input/queue
       revision；冲突、渠道归属保护、失败草稿、迟到回执和重启恢复有反例与正常控制，不用删除重提或前端临时数组代替权威更新。
-    - 同一 TaskRun 的唯一 Goal 修改经过原暂停/安全点和 expected_goal_revision CAS，成功立即刷新
-      canonical projection 并使旧
-      Plan/GoalRequirement/受影响证据失效；删除结束当前目标运行，拒绝或未结算时保留真实状态，不写空 Goal、不伪报物理停止。
+    - 已有 Goal 的修改/结束只接受用户显式操作，使用原暂停/安全点和 expected_goal_revision CAS；成功立即刷新
+      canonical projection，用户目标变化后的旧 Plan/GoalRequirement/受影响证据按原版本规则失效。普通
+      Steer/模型工具不更新 Goal，普通执行取消保留历史 Goal；拒绝或未结算不写空目标、不伪报物理停止。
     - 真实调用链的反例、正常控制、前端行为/类型/格式、框架定向验证、独立审查及真实 Tauri
       运行中追加输入验收通过；正式文档、示例与官网同步按所属仓对账，精确快照和模拟/原生范围分列。
 out_of_scope:
@@ -30,20 +30,20 @@ out_of_scope:
     回答或停止。
   - 不抢占已启动模型或物理工具，不丢 future、伪造结果或自动重放未知副作用；不修外部 echo-semantic
     工具，不新增依赖/权限门控/SQLite，也不执行发布、部署或未授权 main/push。
-  - 完整有效要求的独立分母、长期约束与替换投影、压缩恢复和缺失关键上下文门禁由 effective-requirements 独立结果承接；本结果不能凭
-    Goal CAS 或输入控件的定向通过关闭那组义务。
+  - 完整原文/压缩冷恢复与初始Goal/用户修改权的消费者证明由 steer-context-and-goal-authority
+    独立结果承接；本结果不实施独立意图模型、结构化有效要求解释或统一强制要求/计划/验收流水线，也不凭控件定向通过关闭其它恢复与原生义务。
 design_ref: docs/supreme/specs/eko-gui-product-convergence/design.md
 design_sections:
   - ref: design.md § 4. 系统边界与唯一权威
-    digest: sha256:e1430cc82e11f733fff0050ba572561937893ca3317cb0cd6b63bb8f08faa381
+    digest: sha256:ad6ce63a85bbe1cf1d9a175e78b800f0070d97aeac24069fd4c0ba455d1c817f
   - ref: design.md § 运行中的追加输入（Steer）
-    digest: sha256:3c805cc87fb2cb74ed14e0e3cf44cd8d64c51e8349d378aaaf3ffc0801a5c590
-  - ref: design.md § 唯一 Goal 与当前有效要求
-    digest: sha256:2d810ec9aca486a6a1ef7d20ceb15490a9dfa04ef58be81941fa955cfe83ad12
+    digest: sha256:d461e3bdbe7a126228e65a72069ca7dc201882caedd2a5a093b6236cd374ccf1
+  - ref: design.md § 唯一 Goal、用户修改权与原文恢复
+    digest: sha256:9ef2dc8f4bdfaa1d9e11f9927c5ef350ff749a4b45fa4cfb308244ee77d02893
   - ref: design.md § 10. 异常与边界验收场景
-    digest: sha256:6f59f80f3c5fe48e08bac490651377bf47f90e5dbde6560e47c4e5d16d9fcde5
+    digest: sha256:f028430a0b75b26899c68a1a5ed27f687da9f70ce63aa96ce0d46ec11216132c
   - ref: design.md § 12. 复用结论与完成标准
-    digest: sha256:1e7084072aa642175303e9e30b436fb4f9b2aa0e460d654bb4e74abb3ad51815
+    digest: sha256:dd74230b9cea6cf427b38cca7a67a65623738040aabaf5adc2e7d5f72ebf5269
 delivery_ref: docs/supreme/specs/eko-gui-product-convergence/plans/delivery-map.md#steer-responsiveness
 todos:
   - id: acknowledge-one-durable-draft
@@ -86,7 +86,7 @@ todos:
       - 切换 Workspace/Conversation、同 ID 换
         generation、编辑新稿及进程恢复不串输入；保留附件、中文/emoji和旧 retained/rejected 回执清理的直接反例。
   - id: edit-or-end-one-canonical-goal
-    summary: 在 composer 上方修改或结束唯一 Goal，使安全点、版本失效与失败反馈沿原 TaskRuntime 闭合。
+    summary: 在 composer 上方由用户显式修改或结束唯一 Goal，沿原 TaskRuntime 处理安全点、版本与失败反馈。
     files:
       - echo-agent-cli/web-frontend/src/components/chat/ChatPanel.tsx
       - echo-agent-cli/web-frontend/src/components/chat/ChatPanel.controls.test.tsx
@@ -98,12 +98,12 @@ todos:
       - echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/store/runtime.rs
       - echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/completion_gate.rs
     acceptance:
-      - 修改使用已有 update_task_run_goal/update_run_goal、expected_goal_revision 和
-        canonical 投影；运行中等待原暂停/安全点，CAS 冲突与持久化失败明确返回，保留编辑草稿，不用调用返回布尔值冒成功。
+      - 用户修改使用已有 update_task_run_goal/update_run_goal、expected_goal_revision 和
+        canonical 投影；运行中等待原暂停/安全点，CAS 冲突与持久化失败明确返回，保留编辑草稿，不用调用返回布尔值冒成功。普通 Steer
+        由主模型结合历史理解并按需调整计划，不自动写 Goal。
       - 新 revision 成功后立即刷新同一 run，并使旧 Plan、GoalRequirement 与受影响证据失效；旧
         Subagent/轮询晚回不能把旧版本恢复成当前完成，未受影响证据须核验后复用。
-      - 删除沿原取消/结束当前运行实现；拒绝、等待结算和未知均保留原目标与真实操作状态，不写空 Goal、不物理抹除
-        journal，不留下可继续执行的无目标运行。
+      - 用户删除/结束沿原取消/结束当前运行实现；拒绝、等待结算和未知保留真实操作状态，不写空Goal、不物理抹除journal。普通执行取消保留goal/revision/hash，不将取消解释为模型编辑或历史删除Goal。
       - 修改和结束覆盖跨 Workspace/run/generation 迟到、重复点击、并发 CAS、失败重试、运行/暂停/终态与重启恢复，既有
         Stop/HITL/渠道 owner 保留。
   - id: consider-steer-before-unstarted-tools
@@ -133,9 +133,7 @@ todos:
       - echo-agent/src/agent/react/run/stream_channel.rs
       - echo-agent/src/agent/react/run/phases/tools.rs
       - echo-agent/docs/adr/0003-tracked-steer-lifecycle.md
-      - echo-agent/docs/en/10-streaming.md
       - echo-agent/docs/zh/10-streaming.md
-      - echo-agent-cli/docs/en/architecture/runtime.md
       - echo-agent-cli/docs/zh/architecture/runtime.md
     acceptance:
       - 在同一原 identity/queue_revision/attempt → tracked Accepted/Drained
@@ -147,16 +145,18 @@ todos:
       - 真实 Tauri 场景分别观察已收到、等待、进入上下文与明确失败/未知，并操作多条编辑/排序/删除/立即执行、唯一 Goal
         修改/结束；运行中仍可编辑新稿和使用独立 Stop；保存新源码及截图/事件/回执依据，明确受控模型与真实服务范围，不用 Hook
         或浏览器模拟代替原生体验。
-      - 在所属子仓更新生命周期/流式和 EKO 正式双语说明，架构行为沿既有 ADR
+      - 在所属子仓更新生命周期/流式和 EKO 中文正式说明，架构行为沿既有 ADR
         记录；核对可执行示例和官网镜像是否受影响并明确同步归属，独立源码/行为审查及所属仓适用合流门禁完成，既有未授权外部发布和宽治理状态不借本结果关闭。
 artifact_id: plan:a7405e25-3e08-436b-bc70-a64d0dcb0db3
 lifecycle: ready
 ---
 ## Notes
 
+2026-10-27 仅按用户新裁决修订当前同一Outcome：已有Goal的改/删由用户显式操作；普通Steer交主模型按历史理解并按需调整计划；执行取消保历史Goal。不新增解释器/权限状态或统一要求/计划/验收流水线，原输入/原生/性能验收继续。
+
 原 S1 的 `0607e1b2`、41 项 Hook 检查与后继 S2/S3 回执保留各自历史范围。2026-10-26 在同一 steer-responsiveness Outcome 内按用户已批准的 composer 多 Steer/唯一 Goal 行为修订此原文件，保留 artifact_id 与 delivery_ref，并修正已落入 Map 而原 summary 尚未同步的文字。当前根为 framework `9c5e202d`、EKO `780ddd0` 加已采用 dirty 增量；37 项 controls 与35项渠道组合检查只是限定前端证据，epoch08 queue已3/3通过，P1 recover子进程stack overflow/cargo101，batch确认无活动target进程、clean0及target_removed；核心线诊断中。原根 Rust 101 和外部 epoch07 中断记录继续保留，不据旧源码/摘要关闭本计划。
 
-核心 Rust 线统一拥有 conversation_input、journal、app_state、共享任务运行时及 chat/task_runtime IPC；正在验证时冻结这些输入。GUI 线当前仅拥有 echo-agent-cli 内六路径：web-frontend/src/components/chat/ChatPanel.tsx、ChatPanel.controls.test.tsx，docs/en/guides/gui-task-runtime-panel.md、docs/zh/guides/gui-task-runtime-panel.md，以及最小 IME 修复的 web-frontend/src/components/workspace/NewTaskDialog.tsx、WorkspaceDialogs.a11y.test.tsx。useTauriChat.ts、useTauriChat.test.tsx、taskRuntimeStore 与共享 API/endpoints/生成类型仍属中央集成接缝，未经另派不得写入；Todo files 表示实现涉及范围，不授予 GUI Hook 或其它文件写权。有效要求实现选择 Plan14，不将其全部义务暗中并入一次 GUI 控件修复。
+核心 Rust 线统一拥有 conversation_input、journal、app_state、共享任务运行时及 chat/task_runtime IPC；正在验证时冻结这些输入。GUI 线当前仅拥有 echo-agent-cli 内六路径：web-frontend/src/components/chat/ChatPanel.tsx、ChatPanel.controls.test.tsx，docs/en/guides/gui-task-runtime-panel.md、docs/zh/guides/gui-task-runtime-panel.md，以及最小 IME 修复的 web-frontend/src/components/workspace/NewTaskDialog.tsx、WorkspaceDialogs.a11y.test.tsx。useTauriChat.ts、useTauriChat.test.tsx、taskRuntimeStore 与共享 API/endpoints/生成类型仍属中央集成接缝，未经另派不得写入；Todo files 表示实现涉及范围，不授予 GUI Hook 或其它文件写权。原 Plan14 已被2026-10-27用户裁决撤销；当前原文/恢复及Goal权限证明由新交付结果承接，不把独立意图理解或强制流水线义务并入GUI控件。
 
 epoch09 诊断源码已冻结；核心同意该诊断与单一 GUI 可执行 build 并行，合计最多两条 focused Rust，各自 jobs≤2、dev/test debug=0、根内独立 target。完整矩阵和正式性能测量不开。GUI 留存 binary 并明确释放源码使用窗口后，核心才修改生产源码；构建许可不扩大 GUI 六路径或中央 Hook 的写权。
 

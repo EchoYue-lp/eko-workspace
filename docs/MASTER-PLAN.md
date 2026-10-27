@@ -1,5 +1,17 @@
 # EKO 总纲（MASTER-PLAN）
 
+## 2026-10-27 新协调者接管与用户裁决（当前入口）
+
+唯一当前交接与后继状态见[eko-current-handoff](supreme/handoffs/eko-current-handoff.md)。新主会话`01a17c1f-939d-7311-bba9-41e529912138`已于15:12:28（Asia/Shanghai）核验并接管；旧会话停派发、停源码写，后继idle。以下各旧“当前”段落保留历史范围，不与唯一交接入口竞争。Goal和26个当前Outcome仍未整体验收。
+
+用户最新裁决：普通Steer由主模型结合历史理解、在执行中按需调整计划；不新增独立理解模型或统一强制“有效要求→计划→验收”流程，新输入不自动改Goal。无Goal时智能体可设置初始Goal，已有Goal只能用户显式修改或结束。取消执行保留Goal历史，不因此新加取消权限层。原完整输入、耐久接纳、幂等、压缩/冷恢复和关键读取失败保护继续。旧A/B已撤回，旧Plan14由原CLI标abandoned；现精确执行入口为[Plan15](supreme/specs/eko-gui-product-convergence/plans/plan_15_steer-context-and-goal-authority.md)，Design/Map及14份ready计划已同步并机械校验0、独审pass，实际运行验收仍待。
+
+已保存的本地切片：CLI首页`3edd520`（标题/卡片/顶部入口）；CLI聊天与设置`9e58e706`（机器人/空壳/流式状态、表单与焦点）；Framework原guidance队列`0e404185`（同scope/Run隔离）。对应source/staged/final各0、独审pass，均是task范围，globalClosure未检查；未push/merge、未晋升gitlink。UI组合77文件629测试/lint/format0；后继仅修3处无效测试参数，22定向及真实类型/普通与Tauri前端构建均0，458前端输入无漂移。真实CSS浏览器不等新桌面加载，当前未启动新版原生。
+
+Framework I1四源已提交，EKO helper/transfer的真实RED/GREEN候选已准备、尚未新Cargo；真实只读工厂/I2与新Tauri继续按依赖。Framework zstd456、source1/402及SDK94候选/原4漏洞10unsound继续独立保留。CLI原六风险fresh实际锁/registry-origin两报告各自然1、0漏洞/恰6项，完整身份无增减变化；旧b0源全集不可复原，当前321输入与锁已逐成员保全，复评采用仍待用户，不自动改policy。
+
+旧Framework已终结target在保全binary/日志并核无reader后准确clean0，移除2388文件/888.9MiB，target不存在；chat/settings自有服务已结束，截图/日志保留。没有清用户数据/未知pycache/refs/其它缓存。原SSH echo支持、ubuntu局部实测、微信/GUI/IM/cron/退役保留合同及完整矩阵/mainCI资格仍分开验收。
+
 ## 2026-10-27 当前交接：工程验证、正式门禁与原生分别结算
 
 **GUI 收敛 Goal 继续开放，26 项 Outcome 尚未整体验收。** 唯一开发根仍为 `/Users/ls/MyWork/code/ylp_agent_learn/lp-agent`。本节和[阶段交接](supreme/plans/2026-10-26-root-convergence/2026-10-27-current-handoff.md)是最新工程状态；以下旧章节保留当时切点，不能用其中“尚未验证／正在实施”覆盖本节，也不能把局部通过扩大为完整交付。正式产品与公共 API 事实仍由所属子仓维护。

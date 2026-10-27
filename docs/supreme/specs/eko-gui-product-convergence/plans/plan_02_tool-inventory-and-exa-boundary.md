@@ -20,7 +20,7 @@ design_sections:
   - ref: design.md § 2. 已固定基线与当前事实
     digest: sha256:280479f678d0b5f130eb4852b8ff24c0b120d8dd64931611fc40a8113665cfa4
   - ref: design.md § 4. 系统边界与唯一权威
-    digest: sha256:e1430cc82e11f733fff0050ba572561937893ca3317cb0cd6b63bb8f08faa381
+    digest: sha256:ad6ce63a85bbe1cf1d9a175e78b800f0070d97aeac24069fd4c0ba455d1c817f
   - ref: design.md § 工具的统一语义
     digest: sha256:5b0b172fe617df162c9e94a499e31811b770495ace98a22d550885deb9654a1f
 delivery_ref: docs/supreme/specs/eko-gui-product-convergence/plans/delivery-map.md#tool-inventory-and-exa-boundary

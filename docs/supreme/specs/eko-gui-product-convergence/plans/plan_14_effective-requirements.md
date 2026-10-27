@@ -12,7 +12,8 @@ outcome:
       CI缺项仍未完成。
 out_of_scope:
   - 不新建要求/任务/Goal store、平行调度器、第二套DAG/完成状态机或SQLite；不把所有Steer永久化，不强迫问答/短实现建立复杂计划。
-  - composer多Steer与手动唯一Goal控制由Plan12交付；本结果沿原输入身份和TaskRuntime接线，不接管GUI独占六路径、中央Hook/Hook tests或Store/API，也不在验证期间修改其冻结Rust输入。
+  - composer多Steer与手动唯一Goal控制由Plan12交付；本结果沿原输入身份和TaskRuntime接线，不接管GUI独占六路径、中央Hook/Hook
+    tests或Store/API，也不在验证期间修改其冻结Rust输入。
   - 不改Exa
     hold、依赖风险策略、外部echo-semantic工具合同，不扩大SDK公共API或权限门控；本地里程碑提交由主线程唯一协调Git暂存/提交，本线不自行stage或commit，push/merge、关闭Issue、发布或部署仍禁止。
 design_ref: docs/supreme/specs/eko-gui-product-convergence/design.md
@@ -89,9 +90,12 @@ todos:
         CI。
 schema_version: 4
 artifact_id: plan:638b311e-e284-4489-814f-d0bc01e93f5a
-lifecycle: ready
+lifecycle: abandoned
 ---
 ## Notes
+
+2026-10-27 用户明确撤销独立意图理解及统一强制“有效要求更新 → 计划调整 → 验收调整”方案；普通 Steer 交主模型结合历史处理，已有 Goal 仅用户显式修改/结束。**本 Plan 的原 Outcome 不再交付，仅保留原文和具名历史证据，不是当前执行来源，也不表示完成。** 完整原文、输入幂等、必要上下文压缩/冷恢复及用户 Goal 权限继续由当前交付图中的新结果承接。原 design_sections 与 delivery_ref 保留当时身份，不刷新摘要伪装仍适配当前设计；历史结构可解析，当前设计/交付绑定预期失配。
+
 
 本计划承接已批准完整Goal及2026-10-26四线持续授权。原文take2000、event_rebuild最近8条、compact最近4条、projector读取降空及PlanTask反推要求为核心线已定位的输入；修改前核最新调用点。先交付完整原文、冷重开与真实压缩切片，剩余来源/范围/替换、关键失败和独立覆盖仍属于本Outcome，不得移出以关闭整个Goal。
 
