@@ -1,5 +1,21 @@
 # EKO／Eclip 当前协调权交接
 
+## 2026-10-28 当前：1490 新快照已核，EKO继续实际消费者验证
+
+唯一完整总Goal仍是原26项全部未完成加本轮native改造；本会话继续协调、审查和集成，实际实现由9个新创建独立会话按文件责任并行承担，不因局部通过缩小目标。
+
+Framework epoch08 已明确PUBLISHED_READY，Root逐1490编译输入与19审查路径SHA零漂移，并核HEAD/index、12套原run/log/input哈希及自然0、两位独审pass返回。唯一索引 `framework/repair-epoch08/published-source-inputs.json` SHA `fe585a476b8c515c98ebacf6740cb5195c433487f6692ce878c16e1e2dc77fac`。当前pending22、ReAct407（含资源3）、legacy17、File30、原预算Raw1、Driver42及echo_orchestration完整lib537、focused Clippy/fmt均真实0；Driver原37/5行为RED及更早30/10原件保留。42/537存在覆盖重叠，不相加冒完整Goal次数；Provider104/Core5为各自未变源的命名切点，完整输入差异已明列，不充当前全矩阵。
+
+Root已将共享登记改为 `OPEN_PUBLISHED_EPOCH08_EKO_CONTINUING_BATCH` 并立即通知EKO复用原两个target，EKO已登记CLI/F冻结并启动getter10。F源码/HEAD/index保持冻结，只有EKO整批实际返回并经Root核准才释放；单命令结束或无PID不自释。Root新鲜核验原件在 `.echo-semantic/local/shared-framework-readers-20261027/root-published-epoch08-readback.json`，当前登记仍以该目录 `active.json` 为准。Framework自有epoch08 target另已保全并准确clean0，不存在目标目录；不解除EKO源冻结。
+
+EKO已正式合流performance catalog-v2与bounded query两补丁，Python43/Node8/72命令契约及格式静态0，尚非性能测量。Tauri主选择已修为GUI default-run且GUI bin置首，保console显式入口；实际内嵌App仍待构建。资源链新增2个真实owned Fork组合与1个显式手工SSH绑定测试候选已独审pass交EKO：物理释放全部source持有者/Weak空、FileStore冷重开、实际分页reader逐bytes/SHA、删除原件再Fork、HEAD-only与目标无Run/Goal。候选静态不冒Rust/native；原真实readonly工厂2项在epoch10已覆盖1/2/3层及越权零调用，但factory已变，须新源复验，GUI真实模型资格另列。
+
+SDK仍仅在同一保全full32d Host上执行原完整语言发现集合，F source reader已关闭，无新Host/pin资格。扩大测试真实发现旧final尾断言/ACK夹具及共享搜索oracle差异，原失败保留后按原生终态修夹具；框架原Permanent单次停止策略未改，旧oracle不能要求盲重试。SDK Host丢失公开retryable的实际暂态RED已定位，最小SearchProvider映射候选复用原RemoteFailure/中央retry，待新Host编译及实际GREEN；Timeout+Never原32d单次停止已真通过，Root错误推断已撤回，不能补造RED。语言最终全集、collector与正式精pin/accepted/source/fresh仍分别待验。
+
+当前仅功能稳定快照与部分消费者资格，不是93路径提交闭合、source402修复、全部旧checkpoint来源可证明、current examples/完整feature矩阵、正式性能、GUI/SSH/个人微信实际收件、main/CI、发行或发布部署通过。外部工具合同排除、各仓精确依赖政策、Exa本地保留与禁push/merge/Issue关闭/发布部署不变。Root仅保存三份中文协调文档，不纳产品源码、README品牌/outputs、native设计或未推送gitlink；文档不改变API/示例/官网行为，因此本切片无需新增产品示例或网站源。
+
+以下旧日期与旧源切点只保历史；可执行下一步以本段、当前共享登记及具名最新回执为准。
+
 ## 2026-10-28 当前：以真正published1489为唯一新读窗
 
 唯一当前来源：`.echo-semantic/local/parallel-executors-20261027/framework/repair-epoch07/published-ready.json`明确status=PUBLISHED_READY、ready=completed；published-source-inputs.json共1489路径，SHA0b14e25a9a593987cccab5367fbb4c53ba1fceb21f6dabaa4c682c91a910e87d。Root已fresh逐文件0漂移并直接核最后hybrid RED101→GREEN5／Core445／fmt0的原run，回执shared-framework-readers-20261027/root-published-epoch07-readback.json。正式登记published-epoch07-reopen-receipt.json、active=OPEN_PUBLISHED_EPOCH07_FIXED_SOURCE_FOR_EKO_AND_SDK。
