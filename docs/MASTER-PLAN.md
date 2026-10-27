@@ -1,5 +1,27 @@
 # EKO 总纲（MASTER-PLAN）
 
+## 2026-10-27 当前交接：工程验证、正式门禁与原生分别结算
+
+**GUI 收敛 Goal 继续开放，26 项 Outcome 尚未整体验收。** 唯一开发根仍为 `/Users/ls/MyWork/code/ylp_agent_learn/lp-agent`。本节和[阶段交接](supreme/plans/2026-10-26-root-convergence/2026-10-27-current-handoff.md)是最新工程状态；以下旧章节保留当时切点，不能用其中“尚未验证／正在实施”覆盖本节，也不能把局部通过扩大为完整交付。正式产品与公共 API 事实仍由所属子仓维护。
+
+| 线路 | 最新确认 | 未完成与下一动作 |
+| --- | --- | --- |
+| 基础配置与 IM | EKO 本地提交 `7045853c0442f2a556f268bdafa8a4081b00d5f1`：基础配置常显，QQ／飞书从配置表单移入独立 IM 渠道入口，复用原配置、密钥与连接逻辑；6 路径独审 C0/I0/M0，原 source/staged/final 检查均 0，globalClosure 为 not_checked。品牌交接后的同一前端组合 75 文件、608 项通过，格式、lint、类型与 Vite 构建均 0、源码无漂移。 | 新原生尚未加载本次设置与品牌组合，不能据组件测试宣布桌面全验收。 |
+| 品牌与官网 | 应用 32 路径品牌已本地提交 `1a3551a0dac37463b8dd2848fb73b82d4d9f3c07`，官网 30 路径已本地提交 `83ff57fd24c7beaebd82939138f756edf5d5e32b`；应用另含桌面诊断的两处字符串更新。品牌会话交接报告官网 49 项、浏览器 15 项及两端构建通过，主流程分别完成本地提交门禁。 | 两仓品牌已分别本地保存；新 Tauri 桌面制品尚未重建，官网未部署。保留根 README 与 `outputs/branding/`，各仓分开收尾，不混入其它运行时修复。 |
+| Framework zstd | 456 路径候选含 445 个官方 vendor 文件；28 项实际 Rust、16 项来源控制、14 项政策控制、demo46、格式、实际锁与五源完整 audit、deny 四类别及正式精确风险 caller 均 0。冻结清单 `dcb8c4b3…`、完整 diff `f6c00927…`；准确 clean 0，移除 6672 文件／3.6GiB。 | **正式 sourceTask 仍自然退出 1／402 项**：两项启发信号和 400 个 vendor 逐路径依据缺口。独查确认原工具无合法目录来源展开入口；外部 echo-semantic 修复不纳 Goal，不增 exclusion、不造形式 Evidence。候选未 stage／commit、未形成新正式 revision；逐 456 文件 bytes／mode／hash 回读保全已通过。 |
+| SDK | 保持 `525453fc` 与原 94 路径消费者去依赖候选；原 5352 保留身份、431 routes、39 项已退役操作边界不变，仍独立 pin `f7bac62`。 | 原 fresh 扫描 4 漏洞／10 unsound 未被当前 Framework 候选替代。待正式可恢复 Framework 来源后再执行 SDK 后继 Plan，核 Host pin、五源来源检查、真实 Host Parquet 与三语言合同；当前未改 pin、未提交。 |
+| 原生深度 | epoch16 的本地 HELLO／HITL 用户确认正常并由真实 journal 双核；默认总层数 1 的实际链路通过。新 Run 保存 3 已真实生效，旧 Run 仍绑定 1。 | 深度 3 尚未通过：跨 Run attempt 投影丢 Run 身份；真实 readonly reviewer 工厂过滤 `agent_tool`。已完成根因调查，下一独立 Design／Plan 修复原 identity、guidance 与受限只读委派，不随机改 task ID、不清 registry 规避。独立推进不等待 zstd 外部工具阻塞解除。 |
+
+原生仍为 epoch16 的 binary `f3fedd879…`、148 资产 `70c64653…`，当前记录的 native PID 56017／fixture 55840；这组制品没有上述后继界面与待实施深度修复。SSH 的 `ubuntu@111.229.245.175:22 /home/ubuntu/ssh-test` 登录测试、创建及刷新侧栏已有用户确认；完整终端、远程项目操作和个人微信扫码／手机收件仍待验收。有效要求路线 A／B 仍待用户选择，未默认采用，Accepted 不能当作 Applied。
+
+当前顺序：品牌两仓已完成本地保存，官网来源元数据后继与原生深度正式设计可并行；随后深度失败回归→原权威最小修复→真实只读工厂验证→适时统一 Tauri 重建。新制品保全与准确 clean 后，切换前再核当前草稿／未答交互及维护时机。zstd 保留工具阻塞；SDK 等正式来源；有效要求、完整 GUI／IM／cron／SSH、退役保留合同、性能与发行各自按依赖推进。
+
+维护最近清单为五仓 66 分支、18 stash、123 tag；51 个旧 worktree 已可恢复回收，9 个注册路径由 5 主检出及 4 host 路径组成，host queued 不算已归档。Exa `4343f0b7…`、固定分支／tag、恢复包及当前品牌材料继续保护；本次没有新增 refs 或 worktree 删除。仅本地里程碑：不 push／merge、关闭 Issue、发布／部署，不晋升指向未推送子提交的顶层 gitlink。
+
+后继入口：[下一动作](supreme/plans/2026-10-26-root-convergence/next-actions.md)、[本轮有限阶段报告](supreme/plans/2026-10-26-root-convergence/2026-10-27-current-handoff.md)。以下正文整体保留历史内容，其当前时态以本节为准。
+
+---
+
 > **跨仓库当前事实源**。本文只记录阶段状态、前向路线、分层边界、验收门和可核验证据；不再保存逐轮实施日志。
 > EKO 是本机个人助理：`echo-agent` 是独立可复用框架，`echo-agent-sdk` 是独立 SDK 产品，`echo-agent-cli` 是应用层，`echo-website` 是官网。
 > 最后更新：2026-10-27。当前开发与迁移状态见下节；后文 2026-10-22 联合验收仅保留历史范围，不代表当前 GUI 收敛 Goal 已完成。
