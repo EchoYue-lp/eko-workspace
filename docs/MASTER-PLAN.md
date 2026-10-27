@@ -1,5 +1,31 @@
 # EKO 总纲（MASTER-PLAN）
 
+## 2026-10-28 当前：最终快照已发布，两条消费者重新接入
+
+Framework已明确PUBLISHED_READY／ready completed，最终索引为framework/repair-epoch07/published-source-inputs.json，1489路径／SHA0b14e25…；Root逐SHA0漂移及末轮自然退出核验后正式开放EKO／SDK两个独立focused窗。最后hybrid source归属反控真0过1失败／101→5全绿，完整Core445／fmt0；metadata3、State358、ReAct404、Provider104、原六页7调用2压缩完整UTF8重构及真实归档只读恢复资格均分列在published-ready，不扩为全Goal／全矩阵。
+
+Frame产品源码／编译docs／vendor／manifest／lock／HEAD和index现保持冻结；EKO按原持续target恢复Raw／readonly／tool及native history／Fork／IM／domain／HITL／task_history／Subagent，SDK按独立controlled完整profile重建Host、原9Rust控制与三语stdio／正确profile quickstart。正式SDK f7／0dac仍不变，Source path dirty1489不冒正式精pin／fresh；两reader整批具名归还前Frame不改源。Root误开prepared1489已立即暂停并核无新Cargo，真实事件回执单独保留，不回填为正式published。
+
+EKO正式前端Plan13＋Subagent v4去重9文件131项／types／lint／format0；Fork后端与只读历史导入已接、真实冷恢复回归待Cargo。Workspace资源journal绑定修复候选和Gov pending旧控制恢复8文件18测试候选仍属后继，不能冒编译或恢复已完成。所有旧26＋新增native、原生／SSH／微信／性能、source402／SDK风险与pin、完整矩阵／mainCI及外部授权保持未完。
+
+## 2026-10-28 共享读窗已收回，进入框架集中修复
+
+Frame1475输入切点的原生33／Provider104／TurnDriver2均真实0、零warning；旧Core5／ReAct21失败仍保留，不能据新增用例声明完整通过。SDK同一保全Host SHA`41a88976…`已由TS／Python／Java各完成标准Handshake、两次受控模型调用、9条实际stdio事件，live与journal replay完整envelope逐字段相等、最后唯一Settled；Root已读回三原件SHA及HostSHA。该正控仅是本根dirty Frame1475，不是正式f7新pin／fresh／source402或完整SDK矩阵资格。
+
+EKO epoch06提供了通用框架真RED：真实read_artifact／pipeline完整得到六页62004字节，但一次压缩把未入模的11814字节工具页整组淘汰，实际模型只有50190字节，框架仍Final／Settled。cursor／notice等测试协议接缝已独立修正，window8000／page2000／recent400及原输出／safety预算未放大。cwd薄适配已修但后端消费者仍须新源GREEN，不能称Raw／readonly／tool已完成。
+
+SDK和EKO全部实际读者均以原句柄／PID／lsof／制品哈希收口交回；Root已明确释放F1475，当前不得再用旧索引启动消费者。Frame开始一批测试先行修复：优先未消费Tool组保留，再Stop block／重复continue、非流式unknown owner、晚phase、Steer批准投影及Core5／ReAct21迁移；不新增执行器／Goal store／意图模型，不放大预算。发布新稳定索引并由Root开窗后，EKO继续原完整统一消费者批。源窗口唯一当前记录：`.echo-semantic/local/shared-framework-readers-20261027/active.json`及其具名release回执。完整Goal保持active，原26和全部新增未完事项不缩减。
+
+## 2026-10-27 前端完整切片已本地保存（后继当前）
+
+EKO 新本地提交 `080e0b698c664105f789f522779a985f93b4f71b` 保存36个前端实现／回归／中文说明，加一份既有会话语义资产，共37路径。正文不再依旧Think信号改型，原生候选与已发布回答分开，工具／Reasoning／等待状态按明确事实呈现；Hook／Plugin／Cron／HITL迟到回执与身份边界一并收敛。第四轮独审C0/I0/M0，审后25文件260项、类型／lint／格式0；36源SHA未变。原正常source四项失败保留，补真实资产消费约束及机器识别的GUI观察状态信号后，source／staged／final task均0，globalClosure not_checked。准确回执：`.echo-semantic/local/frontend-complete-milestone-20261027/commit-receipt.json`。
+
+EKO写权已明确交回新执行会话继续未编译Rust。原raw／readonly／tool历史后端、Guard转换与Unknown冷恢复、两类Fork、SDK正式pin、真实native／SSH／微信和完整矩阵／mainCI均未由前端通过关闭。SDK另有旧pin桥接2项与Protocol3项focused通过、新增历史字段不续用旧票；Framework正常高风险登记已恢复，Core72路径最小冻结供同一Frame owner持Provider真实HTTP RED→GREEN批，运行时作者V6场景与实现继续合流。原source402不绕过，所有发布／部署仍未执行。
+
+Provider P4后继已核实际收口：`providers/p4-complete-and-release.json`记14:48自然clean0、target不存在、必要制品回读一致，RED151源均可精确恢复。旧103项只保该切点，后继两项phase／空槽边界补丁虽独审0finding，仍需Frame当前相邻native批重拍源后实际执行；不另开冷target、不把P4当live/native资格。EKO等待条件已从“P4未完”更新为“Frame新运行时稳定源码冻结”，原后端验证优先级不变。
+
+原保护pycache已由新会话证明为当前HEAD源码逐字节可再生缓存，备份／scratch／独立回读、fresh身份与reader检查后只删除准确一文件，目录及恢复原件保留；不是整项legacy资源清理完成。协调者三文档后继状态当前只更新记录，不从本段文字推断其自身新门禁／提交已完成。
+
 ## 2026-10-27 完整总 Goal 与九会话并行执行
 
 唯一完整目标见[总 Goal](supreme/goals/eko-eclip-complete-iteration-2026-10-27.md)，包含原26结果全部未完成及新增原生消息、唯一执行终态、长任务进度；不以新需求替换旧任务。用户明确要求协调者负责调度和集成，实际实现由新创建的9个独立会话并行承担。[执行会话表](supreme/handoffs/eko-parallel-executors-20261027.md)记录真实身份和文件责任；后继第9会话专责Framework完整执行场景与恢复回归，主写者继续独占既有运行时文件。各仓主写者整合领域作者补丁，不能无限积压候选。下方旧切点只保历史。

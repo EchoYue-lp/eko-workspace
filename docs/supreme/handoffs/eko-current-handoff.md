@@ -1,5 +1,35 @@
 # EKO／Eclip 当前协调权交接
 
+## 2026-10-28 当前：以真正published1489为唯一新读窗
+
+唯一当前来源：`.echo-semantic/local/parallel-executors-20261027/framework/repair-epoch07/published-ready.json`明确status=PUBLISHED_READY、ready=completed；published-source-inputs.json共1489路径，SHA0b14e25a9a593987cccab5367fbb4c53ba1fceb21f6dabaa4c682c91a910e87d。Root已fresh逐文件0漂移并直接核最后hybrid RED101→GREEN5／Core445／fmt0的原run，回执shared-framework-readers-20261027/root-published-epoch07-readback.json。正式登记published-epoch07-reopen-receipt.json、active=OPEN_PUBLISHED_EPOCH07_FIXED_SOURCE_FOR_EKO_AND_SDK。
+
+Frame声明全部产品源码／compiled docs／vendor／manifest／lock／HEAD／index冻结，仅ignored收据／只读验证／自身准确target保全及clean；EKO与SDK各有整批reader租约，任何源修复都须实际归还后Root明确释放。EKO使用原cargo-target、主根TMP／TSRS／EKO_DATA_DIR；SDK用自有独立controlled target与真实现有完整profile，不改正式f7／0dac或借CLI风险例外。Source path HEAD0e4＋dirty1489不是正式SDK新pin来源资格。此前prepared SHA45e误开已立即暂停，EKO81／SDK24证明没有启动任何新Cargo/Host，真实进程匹配为空后归还；回执epoch07-early-open-suspension-release.json保留，不再使用该旧索引。
+
+当前固定资格：Frame metadata3真RED→GREEN／State358／ReAct404／Provider104／原Raw六页7调用2压缩与archive只读0；EKO前端实际131及types/lint/fmt0，Rust／native／ts-rs生成仍待。Fork只读导入及两处adapter_generated:false机械接缝已正式接；Workspace资源来源实际修复尚候选，Gov v5八文件18测试仅ignored独审C0I0M0，后继仍须真实生产／EKO来源getter接线。全部原26与新增8目标、source402／新pin／fresh／native／SSH／微信／性能／完整矩阵／mainCI／外部动作均未以此关闭。
+
+## 2026-10-28 当前：两个消费者读窗已交回，F源码可修
+
+Root已核SDK三语实际原件与同一Host：标准Handshake无摘要覆盖，各2次受控模型请求／9事件，live与原journal replay完整envelope相等，Host SHA`41a88976b80f88c81c204be603195d79822bbce66522bb19fad308f3283bbe06`。SDK源码适配器与旧f7明确拒绝测试是同实现；真实来源为path0e4＋dirty1475，正式pin f7／0dac锁不变、正式来源／fresh／完整矩阵未通过。原证据见SDK任务`native-three-language-controlled-evidence.json`和Root `shared-framework-readers-20261027/root-stdio-three-language-readback.json`。
+
+EKO仍未通过Raw／readonly／tool整组。epoch06与独立原Frame复现已分清：原reader／pipeline六页全成功、范围连续与全文62004字节SHA一致；压缩后第二页11814字节未入任一真实模型请求，实际仅50190字节，而Frame仍给Final／Settled。根因候选在原`select_recent_tail`只保护最新user输入，未消费的新Tool整组大于soft recent allowance时被淘汰。精确证据：EKO线`framework-unseen-tool-page-repro.md`与`raw-multipage-compaction-red-receipt.json`。原8k／页2000／recent400／输出及安全预算未放大；测试cursor省略、notice解包与cwd修复不能替代此生产缺口GREEN。
+
+EKO `epoch06-handoff-to-root.json`、`eko-shared-readers-stopped-epoch06.json`与SDK `sdk-framework-reader-release.json`均明确全部真实reader退出，Root又核原件／制品SHA与当前进程；Frame自己的5binary／45logs／1475源tar和三个target也已准确clean0。**Root现已明确解除F1475全部源写冻结**，具名回执`shared-framework-readers-20261027/release-for-next-framework-repair.json`；active.json已改closed，不因旧无PID状态自行放行。EKO／SDK暂停一切后继F源码读取，待新的source索引及Root明确重开。
+
+Frame集中实际修原压缩机制与已备Stop／非流式owner／晚phase／Steer及旧回归候选，按真实测试先RED后GREEN；原33／104／2仅旧切点，旧Core3pass5fail／ReAct372pass21fail未解除。候选／静态check／真实旧归档无受影响控制调用样本均不冒恢复完成；历史只读归一与真实生产接线继续推进。原source402、SDK新pin、原生／SSH／微信、完整矩阵/mainCI和发行均保持未完成；Root总Goal active。
+
+## 前端37路径本地里程碑后的当前切点
+
+EKO最新本地提交 `080e0b698c664105f789f522779a985f93b4f71b`：36前端／中文说明源加既有会话Asset，共37路径，完整含Native时间线／真实操作时钟／旧说明标签／工具详情／Hook／Plugin／Cron／HITL及对应回归。四轮独审最终C0/I0/M0、审后25文件260项0失败0跳过，真实app类型／lint／格式0；36源SHA不变。首source4项（展示观察状态信号及三消费者未建模）原件保留，真实作者扩既有Asset、Root如实声明GUI观察状态信号后，source／staged／final task均0；不改外部工具、exclude或运行时权威。回执：`.echo-semantic/local/frontend-complete-milestone-20261027/commit-receipt.json`。未push／merge／晋升gitlink／发布部署。
+
+Root已明确交回EKO真实SID恢复backend scope；原未编译Rust、历史Guard Transform＋Unknown raw块、性能、Fork候选均保护排除，没有将前端260与其它109／19／36次数相加。pycache已按原证明仅删准确一个可再生文件，备份／scratch可恢复、源码/index不变，原件在EKO线`pycache-cleanup/deletion-receipt.json`；其余legacy资源仍未全部核销。
+
+Framework的ADR缺状态章已用正常仅文档scope修复并clear，原high/publicAPI/newProtocol/architecture信号登记0；旧失败不回填准入。Core72路径已由Frame冻结，Provider的原始工具坐标／refusal种类公共来源结构已进入同一合同。P4由Frame真实owner持独立target执行真实HTTP两反控RED→GREEN及providers全回放，未取得自然出口前不称通过；其它读取integration的Cargo暂停，非依赖实现和SDK独立窗继续。SDK旧pin桥接2项／协议3项0，227输入零漂移并保全／核reader／准确clean；新增历史字段后须另验，不冒正式新pin／安全资格。
+
+P4实际已于14:48收口，`providers/p4-complete-and-release.json`确认clean0／准确target不存在／制品回读一致，Core冻结已释放；RED151源可逐SHA恢复。EKO已明确不用再等P4本身。Provider后继两项晚phase／空槽生产及测试patch独审0finding，交Frame在其当前相邻native批的无reader切点合流、重拍输入并实际运行三HTTP及全provider；旧103／只读candidate pass不代替新源GREEN。未另开provider冷target，等待Frame新运行时稳定窗口才启动EKO后端。
+
+运行时作者V6已交31场景及单一ReAct增量，实际真GREEN仍待Frame合流验证。新执行只canonical消息事实，旧记录／断点只读归一，不注册旧工具／假成功／重放副作用。历史重载需原approved投影与ChatEventLog实际发布事实，provider phase、raw块、已保存Candidate及TraceCompleted不能代替真实确认。原Goal全部旧26与新增native保持active；原文／只读工厂／工具历史Rust、native／SSH／微信、source402、SDK精确pin、完整矩阵/mainCI与发行仍未完成。
+
 ## 2026-10-27 并行执行会话启动后的集成切点
 
 官网新本地提交 `d0464b7fa921a84490801a15d28b345be8f9f3f2` 已保存7路径政策与页面同步：原生切换／原文恢复仍标待验，原完整审阅身份不伪续期。真实官网owner先保全并正常clear0，Root用本真实SID接管后完成source/staged/final task0、适用格式/docs/site0及本地commit；383构建输入与659预览文件逐SHA相同，独审pass。完整上游source检查仍1（Framework dirty），globalClosure not_checked；未push/mainCI/部署、未晋升gitlink。凭证：`.echo-semantic/local/website-policy-milestone-20261027/commit-receipt.json`。首格式命令误含无parser的生成TXT退出2已保原件，纠正为6份可格式化源；TXT仍由原discovery/site检查，不改checker。

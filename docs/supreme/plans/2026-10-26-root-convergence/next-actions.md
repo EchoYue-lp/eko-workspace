@@ -1,5 +1,25 @@
 # 根内收敛下一动作与交付依据
 
+## 2026-10-28 当前：立即执行两条已开的实际消费者批
+
+Frame真正published-ready已到，Root fresh1489路径SHA0漂移及末轮hybrid5／Core445／fmt自然0已核，新窗正式OPEN_PUBLISHED_EPOCH07_FIXED_SOURCE_FOR_EKO_AND_SDK。必须用published-source-inputs.json／0b14e25…，旧prepared45e误开记录已闭合且没有新编译，禁止复用旧索引。Frame正式源和HEAD/index保持冻结，唯一writer只做ignored保全和准确自身clean，直到两个整批reader具名返回Root释写。
+
+EKO现在沿原持续target优先原Raw earliest steer／compact_context／长Goal，再readonly真实factory深度／cwd、tool／IM／domain／HITL／native history／Fork source关闭冷读／task_history三新控制／Subagent真实sink重开；SDK独立完整profile controlled Host／原9Rust故障窗口／同Host三语stdio及Java正确telemetry profile。各自normal scope与准确输入／target／句柄、jobs≤5/debug0/free≥5GiB；失败须实际根因，修源只在读者安全点，保真原日志／后继重拍。不重复无变化的正式前端131。
+
+Gov pending恢复8文件18测试与EKO来源方法真实接线下一阶段，Workspace资源journal绑定候选及时审后合流，delivery原Plan08有界query合法数据与安静测量后继；不等整个Goal才执行当前下游。Root继续审查统一本地保存，适用完整门禁、source402、SDK正式精pin/fresh、native/SSH/个人微信手机收件、性能及外部授权均单独完成，不从focused票推关闭。
+
+## 2026-10-28 当前依赖顺序
+
+SDK当前Frame三语真实stdio有限正控已通过并归还F源码reader；EKO epoch06也已安全交回，Root已明确释放1475源。当前Frame可写，EKO／SDK不得继续拿旧索引开新Cargo。Frame在一次新相邻批先实际复现并修未入模新Tool组被提前淘汰（保8k／页2000／recent400和既有hard预算），同时合已审Stop／非流式unknown owner／late phase／Steer与Core5／ReAct21迁移；所有旧实际失败必须原集合修到0，新增41不替代。
+
+新源稳定后Root按真实索引重开共享读窗：EKO继续Raw13／长Goal／reader、readonly真实工厂层数与cwd、tool GUI、原生历史Guard冷恢复、IM／domain／HITL／Fork统一序列；SDK后续只对最终新源／正式精确pin继续验证，旧dirty1475的3×2模型／3×9事件及同Host正控不冒正式来源／fresh／全矩阵。性能须当前源harness与独占窗，GUI／SSH／手机微信与外部发布授权仍后继具名处理。完整Goal不提前完成。
+
+## 前端37路径保存后的下一推进
+
+EKO前端完整切片已本地保存`080e0b6`，37路径／第四轮独审C0I0M0／审后260项及类型lint格式0／正常task门禁0。Root已交回EKO编辑权；后继按新HEAD正常接回backend WIP，不重复已消费单pycache清理许可，不把前端票当Rust或native。
+
+Frame同一真实SID的Provider P4已收口／明确释放／准确clean0，151源RED可恢复；旧103只保原切点。后继两项phase／空槽patch在当前native相邻批无reader切点合流、重拍源后实际运行三HTTP和全provider，不另开冷target。Frame新运行时稳定输入冻结后，EKO统一Rust窗优先原raw／readonly／tool后端，再IM／domain／HITL等去重后的同批序列；不再等待已结束P4。运行时V6与31场景、legacy控制工具历史／断点归一、SDK历史/终态DTO及精确pin继续按真实依赖合流；不以旧20／92／436或静态检查代替新源通过。性能需当前harness编译与后继静默窗，原source402／SDK风险与人工／外部最后步骤分别保留。完整Goal不提前完成。
+
 ## 完整总 Goal 的当前并行安排
 
 执行[完整总 Goal](../../goals/eko-eclip-complete-iteration-2026-10-27.md)，保留旧26结果和新增原生切换。协调者维护分工、冻结与集成，9个真实新执行会话承担实现，身份和写权见[会话表](../../handoffs/eko-parallel-executors-20261027.md)；新增执行场景作者并行准备Framework真实回归，避免主写者同时承担所有实现与场景。以下旧顺序不要求所有任务排队。
