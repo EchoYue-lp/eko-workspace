@@ -1,5 +1,15 @@
 # 根内收敛下一动作与交付依据
 
+## 完整总 Goal 的当前并行安排
+
+执行[完整总 Goal](../../goals/eko-eclip-complete-iteration-2026-10-27.md)，保留旧26结果和新增原生切换。协调者维护分工、冻结与集成，9个真实新执行会话承担实现，身份和写权见[会话表](../../handoffs/eko-parallel-executors-20261027.md)；新增执行场景作者并行准备Framework真实回归，避免主写者同时承担所有实现与场景。以下旧顺序不要求所有任务排队。
+
+- Framework／Provider优先闭合实际Message/Delta到事件、历史恢复的无损合同、完整响应判断与唯一结算；不按工具有无改文字phase，不提前泄漏整段校验候选。准确源码冻结后开放EKO原raw／readonly／tool及报告策略Rust验证。
+- EKO主写者已合流cron三源，继续正式源组合验证，并及时接Hooks／Plugin、Workspace／SSH／Fork和性能接缝精确增量；不覆盖共享文件当前WIP。IM／cron作者继续原有序队列和Terminal结算下的原生消费。
+- SDK独立protocol focused已3测试及唯一生成器0、34固定输入零漂移，已保全制品／核reader／准确clean释放窗口；继续三语言消息消费与语言包自包含核验。新Host精确pin与正式安全来源保持真实前置，旧pinParquet控制不冒新pin资格。
+- 官网7路径已本地提交 `d0464b7f`，正常task门禁通过，完整上游source仍pending、未部署。delivery继续原harness恢复、问题／资源／发行准备；正式性能需独占窗口，不能把准备分类当测量。
+- Root总Goal／交接／Master／next六文档通过具名短源冻结重新盘点、正常门禁和本地保存；具体结果以实际Git和`root-doc-coordination-freeze-20261027/commit-receipt.json`为准，不纳业务源或gitlink。门禁结束立即释放正式源写入，ignored候选、只读与已有测试继续并行。全部原失败和人工／外部最后步骤继续保留，总Goal不提前完成。
+
 ## 新会话已接管：本节覆盖下方历史“当前”表述
 
 唯一当前状态与文件owner见[当前交接](../../handoffs/eko-current-handoff.md)。首页`3edd520`、聊天/设置`9e58e706`与Framework scoped guidance `0e404185`已各自本地提交，正常task门禁和独审通过；不冒原生、完整Goal、mainCI或发布。旧A/B有效要求解释路线已由用户撤回：Steer沿主模型/历史，已有Goal只有用户改删，无Goal可初始化，不造独立解释器或强制更新链。执行原文/恢复及Goal边界用[精确Plan15](../../specs/eko-gui-product-convergence/plans/plan_15_steer-context-and-goal-authority.md)，旧abandoned Plan14仅历史。

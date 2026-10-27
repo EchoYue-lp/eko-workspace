@@ -1,5 +1,19 @@
 # EKO／Eclip 当前协调权交接
 
+## 2026-10-27 并行执行会话启动后的集成切点
+
+官网新本地提交 `d0464b7fa921a84490801a15d28b345be8f9f3f2` 已保存7路径政策与页面同步：原生切换／原文恢复仍标待验，原完整审阅身份不伪续期。真实官网owner先保全并正常clear0，Root用本真实SID接管后完成source/staged/final task0、适用格式/docs/site0及本地commit；383构建输入与659预览文件逐SHA相同，独审pass。完整上游source检查仍1（Framework dirty），globalClosure not_checked；未push/mainCI/部署、未晋升gitlink。凭证：`.echo-semantic/local/website-policy-milestone-20261027/commit-receipt.json`。首格式命令误含无parser的生成TXT退出2已保原件，纠正为6份可格式化源；TXT仍由原discovery/site检查，不改checker。
+
+八个执行会话已实际推进：EKO已把IM／cron已审三源精确合入正式源；Hooks／Plugin两个已审面板补丁七源、Workspace／SSH／Fork五增量与性能Framework4／EKO13接入候选已转所属主写者及时合流。它们的局部测试、候选和未编译范围分别见各线coordination，不冒整体交付。SDK-only protocol focused两准确命令已0（3协议测试／111候选生成），34固定输入零漂移、accepted/pin/lock未改；制品保全后lsof自然1且双输出空，独立准确clean0／1601文件628.4MiB，target不存在、窗口已释放。原件为SDK `.echo-semantic/local/sdk-native-consumer-20261027/protocol-run.json`、分段清单和reader-check.json；不冒新Host或新pin资格。Framework／EKO Rust需当前真实输入冻结安全点，前端／渠道／三语言等独立任务继续。
+
+协调检查当前进行中Frame接缝发现：单request拼正文、按tool改phase、Unknown候选提前公开和旧Think/Token重复投影仍需清理；已交主写者和provider作者处理，不把临时合同当最终语义。EKO真实持久块恢复、SDK运行时终态字段亦已转Frame，保原一个ReAct与物理结算。上述是进行中源码观察，未宣称最终缺陷已修或全量通过。
+
+Root目标／分工／交接／Master／next六文档此前source因并行子仓保护输入漂移未通过，原121项及前序失败保留；本批用具名短源冻结重盘点和正常门禁，只保存六份协调文档，不扩大allow或造验证，不纳业务源／gitlink。结果及提交身份以`.echo-semantic/local/root-doc-coordination-freeze-20261027/commit-receipt.json`和实际Git为准。门禁结束立即释放各正式源writer，ignored候选／只读／已有测试不停止。总Goal继续active，人工native／SSH／微信、SDK正式pin／source402、完整矩阵/mainCI及发布部署缺口均保持。
+
+> **当前唯一总 Goal**：[本轮完整迭代总 Goal](../goals/eko-eclip-complete-iteration-2026-10-27.md)。它包含原26结果全部未完成和新增原生消息／唯一执行终态／长任务进度。原“native-message-execution”Goal文件只保留子目标，不能替代总目标。
+>
+> **用户最新执行方式**：本会话只负责协调、分工、依赖、冻结、审查和集成；真正任务执行者现为9个新创建独立local会话，详见[并行执行会话表](eko-parallel-executors-20261027.md)。初始wait已核前8个均active；后继第9会话 `01a17d8e-23e1-78a3-9d3e-0d8b57c31bef` 专责Framework真实执行场景／恢复回归，新wait亦active。旧临时Subagent执行者已交回冻结，旧代码／候选／失败保留。各repo正式主写入者为Frame、EKO、SDK、官网执行会话，领域作者并行实现并及时合流，公共文件不得两人写。
+
 > **唯一当前入口；新协调者已完成只读核验并接管。** 本文件是跨仓协调与阶段状态，正式产品／API 文档仍在所属子仓。旧的 `2026-10-27-current-handoff.md`、MASTER、next-actions 仅作具名历史来源，不是与本文件竞争的另一份最新状态。
 >
 > 旧主会话：`01a162f1-952b-7773-8b8f-e4a3e4ca8e7a`（lp-agent迭代总调度）。新主会话：`01a17c1f-939d-7311-bba9-41e529912138`。

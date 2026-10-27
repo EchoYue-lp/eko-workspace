@@ -1,5 +1,15 @@
 # EKO 总纲（MASTER-PLAN）
 
+## 2026-10-27 完整总 Goal 与九会话并行执行
+
+唯一完整目标见[总 Goal](supreme/goals/eko-eclip-complete-iteration-2026-10-27.md)，包含原26结果全部未完成及新增原生消息、唯一执行终态、长任务进度；不以新需求替换旧任务。用户明确要求协调者负责调度和集成，实际实现由新创建的9个独立会话并行承担。[执行会话表](supreme/handoffs/eko-parallel-executors-20261027.md)记录真实身份和文件责任；后继第9会话专责Framework完整执行场景与恢复回归，主写者继续独占既有运行时文件。各仓主写者整合领域作者补丁，不能无限积压候选。下方旧切点只保历史。
+
+官网已新增本地里程碑 `d0464b7fa921a84490801a15d28b345be8f9f3f2`：7路径纠正主模型Steer／用户Goal权威，同步首页、聊天和原文／原生待验收说明。独审pass，383构建输入和659预览逐SHA保持同源，适用格式、docs/site、source/staged/final task均0。官网完整上游来源检查仍自然1（Framework dirty），manifest保留原完整审阅身份并明确pending；不称完整source、native、main/CI或部署通过。本地回执：`.echo-semantic/local/website-policy-milestone-20261027/commit-receipt.json`；未push，顶层gitlink不晋升。
+
+EKO已合流已审cron三源，原生时间线与报告策略仍在实现；Hooks／Plugin七源、Workspace／SSH／Fork增量和性能原harness接入由对应主写者及时核基底合流。SDK-only协议focused两命令已0：3项协议测试覆盖身份、阶段、原生reasoning、完整u64与坏身份／额外字段反控，唯一生成器产出111候选；34固定输入零漂移，未改accepted/pin/lock。必要二进制保全后空reader核验与独立精确clean0，窗口已释放；这是Protocol候选资格，非新Host或新pin通过。Framework／EKO相关Rust批次等真实依赖冻结安全点；前端、渠道、三语言、官网工程材料继续并行。恢复消息块与运行时最终结算合同须穿过真实持久路径，不以UI测试、块phase/complete或模型final充当执行完成。
+
+总Goal保持active；原生、SSH、微信、全部provider、完整矩阵、SDK精确pin与安全来源、退役保留合同和发行结果均未由这些局部里程碑关闭。Root六份目标／交接／总表文档此前的正常source因并行子仓受保护输入漂移失败；原失败保留。本批在具名短源冻结内重新盘点和运行门禁，只保存这六文档，不扩大允许范围、不提交业务源或gitlink。后继正式门禁与提交身份见`.echo-semantic/local/root-doc-coordination-freeze-20261027/commit-receipt.json`及实际Git，不从本段文字推断通过。
+
 ## 2026-10-27 新协调者接管与用户裁决（当前入口）
 
 唯一当前交接与后继状态见[eko-current-handoff](supreme/handoffs/eko-current-handoff.md)。新主会话`01a17c1f-939d-7311-bba9-41e529912138`已于15:12:28（Asia/Shanghai）核验并接管；旧会话停派发、停源码写，后继idle。以下各旧“当前”段落保留历史范围，不与唯一交接入口竞争。Goal和26个当前Outcome仍未整体验收。
