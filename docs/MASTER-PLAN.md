@@ -13,7 +13,7 @@
 | 所属仓库 | 本地状态与真实资格 | 仍未完成 |
 | --- | --- | --- |
 | Framework | `f3c5af6443fff36dd7088dcb32a665b5fc173489`；完整目标委派policy不被legacy max3覆盖，depth冲突派发前拒绝，缺policy保持原行为。旧生产真实max1启动actor2的RED自然101；修复后F7与真实EKO消费者CLI8共15项通过，精确4/2路径artifact/task/显式语义0、独审通过，globalClosure not_checked。官网已按该精确源同步310份受控Markdown。 | 全workspace/条件矩阵、main/CI及新压缩依赖正式修复。合理公共API不因EKO未用删除。 |
-| EKO | 当前本地`18779753b27448ee0752c0aeeac075cba30a0a27`，精确五路径修复规范Goal防回退与历史计划进度；真实CAS回执、双视图读取恢复和跨run载入保留同一权威。六文件127项focused、Root完整前端75文件599项、lint/格式/tsc/Vite、独立复审及五路径artifact/task/显式final均0；465源清单前后相同，globalClosure not_checked。中文指南同步，旧RED与夹具错误分别保全。父`612050b`五份中文说明和更早epoch15/depth的Rust资格各保原切点，本次无Rust修改，不借599项重验后端。 | 当前有效要求全集、Interpreted/Applied、替换/作用域、独立原始要求覆盖率、完整矩阵、风险consumer复评及main/CI。Accepted不能充当Applied；未重构建原生。 |
+| EKO | 当前本地`a366d984d1397532ee16da05b0c7efc23deac53b`，只扩私有工具请求回归，生产代码承接`1877975`的规范Goal/历史进度修复。新增搜索激活消费者与原三项共4工具测试、另原depth1项均0，7次实际模型请求最大14833bytes/3708估算tokens，原16000/4000门槛未变；同批当前GUI build零warning、1365输入前后相同、fmt/check与精确一源正常final0，独审同c5候选。原127focused/599全前端及五路径final仍绑187；全局闭合未检查，源码与日志/制品已保全。 | 当前有效要求全集、Interpreted/Applied、替换/作用域、独立原始要求覆盖率、完整矩阵、风险consumer复评及main/CI。Accepted不能充当Applied；新原生已启动但完整人工验收未取得。 |
 | SDK | 根`525453fc`上的既有`1eac40fb`去依赖候选已受控采用：64文件＋29删除及现AGENTS，共94路径；accepted精确退役269、保留5352不变，route454→431、退役39操作，仍固定独立`f7bac62`源。本根109测试、14政策单测、catalog/fmt与新Host构建各自通过，源独审通过。 | fresh官方扫描4 vulnerability/10 unsound真实失败，完整Rust/三语/collector未跑；候选未提交，旧520/三语资格不续期。两formal材料后继由原owner受控收尾，不能借重绑解除安全门禁。 |
 | 官网 | 当前本地`16b3d2f3bf6fefc643bc079082b218cab68887a1`，仅一份来源清单两值重绑至EKO1877975和指南SHA；138来源逐Git blob吻合，其余全部tracked不变。Root轻量审查、双源check及正常单路径artifact/task/final均0，globalClosure not_checked。八页、首页EKO区及F310镜像承接父`fcfbd701`；原326路由完整build和同381源清单15项浏览器通过/0失败/0重试仍绑定该父切点，未为元数据重跑。原1项desktop的mobile-only跳过在mobile通过；截图与清理回执保留。 | main/CI及部署未做，原生EKO/微信/SSH不在网站资格内。首build的PubMed遗漏、临时合同格式和SSR模板准备失败保原件，不放宽断言或风险政策。原浏览器回执见`browser-acceptance-20261027/qualification.json`，后继单清单见`eko-goal-source-binding-20261027/`。 |
 
@@ -21,17 +21,19 @@
 
 ### 原生与用户实测
 
-当前原生epoch14制品SHA`16415c117cf341817ae8eda418d1b7224cb5152d776c221bad1169f924d6285e`，1961输入构建0/零warning；148前端资产匹配`deaafde5…`。用户已选择“立即切换（已保存草稿）”；旧原生/服务自然退出0，五处权威59文件/链接离线备份读回后，新窗口已启动置前。制品属于pre-epoch15，**不含后继输入耐久接纳、f3c5/75fd深度修复或1877975的GUI修复**；不能把后继单测资格追授该窗口。
+当前原生为epoch16：新binary SHA`f3fedd879bc361da5f6068d7005ea84e014448a8072f218031723e4a0f5b9f12`，F f3c5/CLI a366对应1365构建输入，当前GUI命令零warning；新148资产`70c64653…`在真实build:tauri后HTTP逐项回读一致。用户本轮再次确认维护窗口，旧epoch14与fixture原监督各自然0、原子进程消失后，五处权威59文件离线复制、哈希和scratch恢复回读0（`2212327f…`），新native PID56017/session6402、fixture55840/session81795已启动。Swift首Quit未找到应用自然2与旧owner自然0分开保留，首activate0但未置前也未冒通过；后继AppleScript实际前台PID56017。新制品已含durable输入、深度policy及187界面修复，但启动/置前与599组件资格不证明真实IPC或人工行为全通过。旧epoch14/原148及原备份保留。
 
 用户已确认布局方向、`ubuntu@111.229.245.175:22 /home/ubuntu/ssh-test`登录测试及创建成功、刷新后sidebar显示；它们各绑定原制品，不是完整SSH项目/终端矩阵。新进程不能继承SSH活连接，密码只在GUI输入。Goal中原`echo@`支持义务与ubuntu实测分别保留。
 
-微信扫码实测已询问，尚待用户反馈；授权保存、authenticated poll Ready、手机收件和HITL分别验收。GUI/SSH/微信完整矩阵、定时结果通知和新原生仍未完成。运行、备份及验收入口为CLI`.echo-semantic/local/gui-native-next-20261026/build-epoch14/`与其`当前运行与验收.md`。不以受控模型或IPC测试替代人的操作结果。
+epoch16本地具名人工验收：用户在本轮确认`NATIVE_HELLO`、同对话`NATIVE_HITL`两项正常，回复与忙碌结束正常、HITL弹窗出现。该回执只覆盖这两项本地GUI交互；不扩为SSH、微信、深度或完整任务/Goal验收。原件为新原生主题下`native-local-hello-hitl-human-acceptance.json`，SHA`a4d991a8…`。
+
+微信扫码实测已询问，尚待用户反馈；授权保存、authenticated poll Ready、手机收件和HITL分别验收。epoch16启动的四条warning均为ssh-test未建立连接及相关渠道恢复pending，需GUI重新连接后核原作用域；无panic，不称所有恢复已完成。新受控深度fixture经三轮独审和13离线控制具名通过，但原生层级尚未执行；上限工具不曝光必须结合原RunCreated绑定、真实depth/lineage及下一层零调用判断。完整GUI/SSH/微信、定时结果通知和新原生矩阵仍开放。入口为CLI`.echo-semantic/local/gui-native-epoch16-preparation-20261027/`及其`maintenance-switch/`，旧epoch14资料保持历史，不用受控模型输出替代实际结果。
 
 ### 当前推进顺序
 
-1. **安全依赖正式采用待答**：两vendor隔离探针及独审已完成：F/独立SDK全feature metadata分别自然0且来源唯一；真实父包压解3/3通过、零编译warning。同1378条官方DB及原四项ignore的SDK advisory-only由14项告警变0，五源投影保真实包身份；完整yanked仍不合格。`zstd-safe`嵌套公开类型身份改变，虽未直接进入SDK原5352 accepted，实际Host/data与新来源资格仍须正式验证。已向用户展示“F唯一两vendor＋五origin，SDK后继同正式可恢复revision根patch”的采用方案，尚待答，不改live pin/manifest/锁。旧f7bac的Tokio告警不转报live F已修1.53.3为新增；不重复探针或复制整18-crate闭包。原件见F`.echo-semantic/local/zstd-patch-probe-20261027/隔离实验结论.md`及`zstd-public-boundary-20261027/公共合同影响与采用边界.md`。
+1. **安全依赖方案已采用，正式设计与修复进行中**：用户明确选择A，批准F唯一维护polars-arrow、polars-parquet两份官方包补丁及五origin合同，SDK在F取得正式可恢复revision后同步Host pin、根patch及来源断言，不复制vendor、不增ignore或风险接受。隔离F/SDK metadata0、真实压解3/3及同1378DB/原政策advisory-only14→0仍仅探针资格，完整yanked未合格；正式实现、原5352保留合同和Parquet/Host消费仍须验证。`zstd-safe`嵌套公开类型身份变化在正式ADR记录，不能称全RustAPI等价。当前CLI856锁及实际GUI生产指纹均无Polars/zstd，该SDK数据链阻塞不扩成GUI功能验收前置，也不冒CLI新风险复评已过。旧f7bac的Tokio告警不转报live F1.53.3为新增；不重复探针或复制整18-crate闭包。正式设计入口为`docs/supreme/specs/zstd-safe-chain-repair/design.md`，设计/ADR与地图已独审，Framework Plan已开始实施；正式修复资格仍待后继验证，原探针与公共边界原件保留。
 2. **有效要求路线待答**：A独立无工具判定增加请求与等待、结果持久复用；B并入主模型响应需扩流式/框架接口。尚未采用任何路线。两个方案都沿同一TaskRuntime写完整来源/作用域/替换关系，复用既有tool admission安全点，避免新store/调度器；并发/恢复/模型步版本及无Plan场景仍需正式设计与真实验收。
-3. **独立里程碑与下一切片**：任务详情的旧Goal回退、旧计划冒当前进度已由`1877975`局部修复；复审发现的跨run载入被吞同样取得三RED并修复，完整599项前端绿不代替原生验收。primary verification原三请求控制已核实际3/3，移出待开发；下一激活后二次模型请求仍仅测试候选，独审通过但未应用/编译，待唯一writer合流。官网`16b3d2f`已完成后继来源manifest重绑，正文未改；真实微信/SSH/原生按用户反馈推进，完整门禁、依赖consumer复评与获准后的main/CI仍待后继。
+3. **当前执行**：精确[Framework修复Plan](supreme/specs/zstd-safe-chain-repair/plans/plan_01_framework安全依赖链.md)已校验并交唯一writer实施；两份正式设计与所属地图已独审，用户A不再待答。SDK后继由同主题交付图依赖F真实可恢复修订，不先改pin。工具激活后二次请求已由a366实际闭合，不再列候选；完整工具治理/其它消费者不随四项自动通过。epoch16已装新组合，真实GUI/SSH/微信按实际反馈继续；完整门禁、风险复评和获准后的main/CI仍待后继。data/git目录组织建议只读完成，未获实施指令，不夹入依赖修复。
 4. **退役前置**：消费者去依赖、保留能力/GUI/IM/cron/共享恢复及适用main/CI成立后才晋升A2A/LSP/TUI/独立CLI/REPL/JSONL实际退役。SDK固定pin与保留API分别核验；外部echo-semantic工具合同修复继续明确排除，保留原校验阻塞。不能用删除候选或Issue关闭制造历史缺陷已修复。
 
 ### 工具治理与上下文证据
@@ -44,6 +46,7 @@ epoch13必要上下文真实RED3→GREEN15（F4/EKO11）限定证明有界完整
 
 - 每批自有target、最多两focused、jobs≤2/debug0；相邻同冻结源验证组成一批，保原日志/真实出口和必要制品、确认无读者后准确cargo clean。free<5GiB停止新构建；完整矩阵/性能测量按协调窗口串行，未跑Cargo不为形式clean。
 - epoch15官方clean0移除16.2GiB；原生14为3.8GiB；深度/Web批2.8GiB；SDK受阻批3.1GiB；zstd隔离探针为441.8MiB，各target已移除、必要制品原字节保全。数字为各批官方输出，不相加冒APFS净收益；未运行Cargo的官网/文档工作不为形式清理。
+- 本轮工具与GUI同冻结批次准确clean0移除6900文件/5.1GiB，目标不存在；GUI及测试binary合计约1GiB和20小生产指纹在target外保全，1365输入无漂移。epoch16前端609个自有Node/npm缓存4,058,784逻辑bytes已无读者后清理；新旧资产、制品和备份不删。F正式修复后续使用新独立target，不能重用已清目录冒旧资格。
 - 本轮GUI验收与提交收尾中，Root与唯一writer分别确认无读者并清理2675文件（allocated 21,495,808 bytes）和2084文件（logical 13,202,068 bytes）的自有Node缓存；原始失败、源清单、回执与新dist保留。无Cargo批次，不执行形式clean；对应CLI`gui-canonical-goal-refresh-fix-20261027/root-frontend/cache-cleanup-receipt.json`及`postcommit-owner-cleanup-receipt.json`。
 - 已回收51个非host旧worktree（外41＋内10），原路径22.24GiB与恢复包成本分别记录。余5主检出＋4host路径；host queued归档仍未确认不得冒已回收或手工删除。当前66 branch仅比原65新增官网任务分支`fix/Echoyue/website-source-sync`；18 stash逐SHA/顺序、123 tag均与旧清单相同，Exa`4343f0b7…`及pre-retirement固定tag保持保护。没有新增可删refs/worktree；官网前后两批owner释放后分别回收1109文件（allocated 10,293,248 bytes）与2989文件（allocated 24,903,680 bytes）的准确自有Node/Vite/TS缓存，日志/制品/manifest和新旧dist保留，不相加冒APFS净收益。回执分别为根`.echo-semantic/local/maintenance-current-20261027/node-cache-cleanup.json`及官网`eko-product-projection-build-20261027/completed-handoff.json`。
 - 完成交接的4个旧项目聊天已按宿主回执归档，当前Goal及待答验收由Root继续。聊天归档、Git工作树删除、缓存清理和refs清理分别结算；未改原用户数据或配置凭据。

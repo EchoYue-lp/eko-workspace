@@ -6,6 +6,8 @@
 
 ## 当前切点追加与状态维护交接
 
+2026-10-27 工具、原生与依赖后继：CLI`a366d984`已本地提交单一测试源，4工具消费者＋独立depth1共5项实际0/零warning，7次模型请求原预算保留；当前GUI同批build0，1365输入一致，必要制品与20指纹保全后准确clean0移除5.1GiB。用户本轮确认后旧owner各自然0、五处59文件离线/SHA/scratch回读0，新epoch16已启动并实际置前；不是GUI/SSH/微信/深度全矩阵通过。用户另明确采用zstd方案A，正式设计/ADR及地图的独审和任务级验证通过，Framework先修、SDK依赖其正式revision；原SDK4漏洞/10unsound仍未实际解除，不改风险接受或Issue/Finding状态。网站当前16b仍绑原Ff3/CLI187，等F正式提交后一次同步；不绕清洁源门禁或重贴原fcf build/浏览器票。有效要求理解A/B仍待答，外部Issue观察保持2026-10-26。
+
 2026-10-27 GUI后继：CLI`18779753`已本地提交精确五路径；同run规范Goal防回退、真实CAS后读取失败恢复、跨run新载入及旧计划历史进度有受控RED与后继验证。六文件127项focused、Root完整75文件599项、格式/lint/tsc/Vite、独立复审和五路径正常artifact/task/final均0，globalClosure not_checked；旧失败与夹具错误分开保留。官网`16b3d2f`仅单manifest两值重绑，138来源吻合、正文/其它tracked不变，双源及正常final0，原build/浏览器票仍绑fcf。原生epoch14未含此修复，完整后端、真实微信/SSH、main/CI与有效要求链仍开放。两作者分别清理自身可再生Node缓存，未跑Cargo不为形式clean；SDK94路径与原安全阻塞、既有外部Issue观察和正式Finding状态不变，不借局部提交关闭任何条目。
 
 2026-10-27当前：EKO五份中文源`612050b`及官网`fcfbd70`已本地提交；官网八页投影、138项CLI来源与F310受控镜像精确核对，最后双源/全格式/326路由完整build均0，旧c262投影不再作为当前来源。首PubMed遗漏和准备失败保原件，修复未放宽静态断言；本地网站资格不升级为main CI/部署或原生验收。SDK94路径及原4vulnerability/10unsound阻塞继续保留；隔离两vendor探针14→0仍仅同DB/原政策advisory-only，完整yanked未合格，正式采用待答，未改live来源/pin/风险政策或SDK Finding。SDK本批与探针的3.1GiB/441.8MiB准确clean回执保留。外部Issue观察仍固定2026-10-26，不刷新、不关闭；下文具名历史切点不覆盖当前限定证据。

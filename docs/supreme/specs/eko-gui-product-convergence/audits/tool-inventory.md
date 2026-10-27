@@ -36,7 +36,9 @@
 
 当前F f3c5/CLI 612的主要曝光路径与原件连续，原三测试主体未改；F think的后继required校验只借用最终请求但可能阻止到达模型，故当前整合/失败结算资格仍须各自取证，不能把整树说成epoch11或fresh全矩阵。精确逐路径核对见CLI`.echo-semantic/local/remaining-tool-consumer-audit-20261027/剩余工具曝光消费核对.md`。本轮只读，不重跑保留binary或新建Cargo target。
 
-下一处真实未闭合的消费证据是`tool_search`激活到第二次实际请求，允许/排除延迟工具两控制仍仅ignored候选，尚未应用/编译。原§9泛化的verification差距须按上述三项扣除；原AcademicResearch初始四搜索是旧切点，当前General/plugin化后不能照旧名造新测试。完整插件、Subagent、恢复和SDK范围继续未证，不以这个具名局部结果关闭整体工具治理。
+后继`a366d984d1397532ee16da05b0c7efc23deac53b`已把`tool_search`激活到第二次实际请求的单一新增测试合入本地：正/负两run首请求均只有read_file/tool_search，正向实际搜索回执后第二请求新增list_dir，排除它的负向仍原两工具；目标目录工具不执行。原三请求测试主体、单请求和预算保留并同批重跑，4个工具消费者case全0/0ignored，另既有depth/hard-bound1项单列0。7次模型请求最大14833bytes/3708估算tokens；1365构建输入前后相同、同批GUI编译零warning，fmt/check和精确一源artifact/task/final均0，globalClosure not_checked。必要制品/原日志保全后准确clean0移除5.1GiB，目标不存在；回执在CLI`tool-search-request-consumer-20261027/actual-implementation/`。本次仍不证明list_dir执行、provider真实token、所有插件/Subagent/恢复/SDK曝光，完整工具治理继续开放。
+
+原§9泛化的verification差距须扣除上述具名控制；原AcademicResearch初始四搜索是旧切点，当前General/plugin化后不能照旧名造新测试。不以这个局部结果关闭整体工具治理。
 
 ## 1. 输入、源码身份与证据等级
 

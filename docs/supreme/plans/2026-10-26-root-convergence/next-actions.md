@@ -1,6 +1,6 @@
 # 根内收敛下一动作与交付依据
 
-最新交付：EKO已本地提交`18779753b27448ee0752c0aeeac075cba30a0a27`，五路径修复旧initial/CAS回执回退Goal、双视图读取恢复及旧计划进度；另一run更新不再吞掉新run载入。六文件127项focused、完整前端75文件599项、lint/格式/tsc/Vite、独立复审和五路径正常final均0，globalClosure not_checked。原生仍epoch14，不能借当前前端绿续期该窗口或后端资格。父`612050b`中文源与官网`fcfbd70`正文保持；官网`16b3d2f3bf6fefc643bc079082b218cab68887a1`已将138来源中guide摘要和reviewedRevision重绑，单文件轻量审查、双源check及正常final0，其余tracked未变。原326路由build与15项浏览器通过仍绑fcf切点，未重跑。SDK94路径及真实依赖阻塞继续保留；有效要求A/B路线、两vendor正式采用和微信实测仍待答，不先改live pin、锁或风险政策。下一工具搜索实际请求候选已独审，尚未应用/编译；完整总表见[MASTER-PLAN](../../../MASTER-PLAN.md)，Goal继续开放。
+最新交付：CLI当前`a366d984d1397532ee16da05b0c7efc23deac53b`仅工具请求测试后继，生产代码承接`1877975`；4个工具消费者及另1个depth均0，7请求最大14833bytes/3708估算tokens，同冻结GUI build0/零warning、1365输入一致、fmt/check及正常一源final0。原187的127focused/599全前端仍保其切点。用户再次同意维护后，epoch16已真实安装：新binary f3fedd879…/新148资产70c64653…，旧监督各自然0，五处59文件离线与恢复回读0，新native56017/fixture55840已启动置前，真实GUI/SSH/微信/深度矩阵尚未取得。官网仍16b3d2f绑定Ff3/CLI187；a366的138文档未变，待F正式提交后一次同步，不能为清洁源门禁撤回F正在实施的修复。原326路由与浏览器15保fcf切点。用户已采用两vendor五源方案A，设计及精确Framework Plan已验证并开始实施；SDK94与原安全失败仍保，F正式可恢复revision前不改其pin。有效要求理解A/B和微信手机实测仍待答，完整总表见[MASTER-PLAN](../../../MASTER-PLAN.md)，Goal继续开放。
 
 以下“尚无包发现/正在构建/等待清理”等段落保留其具名历史时点，由上段和MASTER当前总表替代，不代表重新排队或尚未执行；未取得的消费者、完整门禁、原生和main/CI资格仍明确开放。
 
