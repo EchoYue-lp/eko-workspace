@@ -1,5 +1,21 @@
 # EKO 总纲（MASTER-PLAN）
 
+## 2026-10-28 21:00 后继：按当前active Goal续跑，从已提交WIP恢复并行
+
+本次Goal续跑输入要求继续，Root先完整重读原附件cd30e66并读取控制面，get_goal实际为active、updatedAt为2026-10-28 13:00:40Z，晚于维护结束。按当前续跑要求恢复完整旧26＋原生消息／统一终态／长任务进度，并保六工具分类、跨会话typed输入及NoCompat等后继裁决；没有由助手改写Goal内容。下方维护暂停段是已保存历史切点，不再代表本次运行状态。
+
+Root fresh核：顶层9ed211b，F e0cda8f9、CLI d17f886、SDK6cb12d3、官网a4b5，四子仓均clean、无旧Cargo/App/awake，空间约42GiB；只保留四未推送gitlink差异。原必要制品、认证后微信数据、旧失败及缺失旧10二进制事实保持。先前WIP例外仅适用已保存检查点，不能作为未来跳过正常门禁的许可。
+
+10个既有实际App执行会话已按原边界恢复，仍是Root协调和统一stage/commit、各仓唯一正式writer；没有新外部worktree或临时Subagent替代执行会话。F先正常收敛四metadata项目提案，再接已审canonical消费者v04、微信当前协议修复与19反控；只在原ReAct/Store/CAS替代后退旧兼容，不将runtimeFinal通知删除。当前44项目缺口与外部#10分开，真实原API结果为准，旧aftertask不能追标新HEAD。新Rust批次由Root依据精确命令/源冻结开窗，当前尚未开放下游F消费者。
+
+CLI唯一writer正在正式按函数三方合流Provider前端NoCompat、Workspace当前对象/-z/明确位置、Gov typed跨chat和六工具分类；保V5/b529/actualcapture，不整文件回退。领域作者只写ignored候选并协助真实组合检查；需要新临时路径先在正确子仓核check-ignore，禁止再把scratch副本放入非忽略生产目录。EKO当前非流式已由F证明沿原driver/native journal，同组合正控覆盖后同时退两个无native Fork旁路，不能从Candidate/String/cronRunJournal补造成功。
+
+SDK保原formal f7/0dac，先完成完整rich Message/invocation/history的实际实现和最终审查，三语/Protocol/Host/accepted合同逐项核对，不将Rust inventory遥测扩成三语承诺。新Framework同源consumer、正式精pin及来源资格由后继准确窗口分别取得。Provider、IM/cron、Workspace、文档官网和性能执行者并行补真正受影响范围；原24/59与新12/17性能准备不冒实测。
+
+IM已发现一个必须同步的真实旧反控：原Weixin channel把合法msgs＋cursor但无ret的载荷当Unknown，按腾讯当前optional-ret合同应转正控，另以显式null/空无关对象保持Unknown负控，保ACK后cursor与单poller owner。现场原payload形状仍未捕获，不宣手机修好；诊断在原client边界最小脱敏。旧saved-auth不得重复扫码或被旧140覆盖，任何新App/poller会消费backlog，须由Root在后续具名启动切点处理。当前无新App/微信业务调用/真实SSH连接或性能测量。
+
+后继验证采用相邻、准确、冻结源码批次；每个batch结束保全原日志/自然出口/必要制品，核原reader后独立准确clean。完整Goal尚未完成；不push/merge/发布/关闭Issue、不晋升未推指针，不用当前恢复或旧局部GREEN替代正式源/SDK pin/native/完整矩阵/mainCI资格。
+
 ## 2026-10-28 当前：用户暂停迭代，全部现有源码已本地 WIP 保存
 
 **原完整Goal已由用户要求设置为paused，不恢复功能推进。** 用户又明确允许“先把现有代码全部做成本地WIP提交”，仅作为本轮“检查全通过才能提交”的具名保存例外。Root已用普通git commit、显式关GPG提交Framework `e0cda8f95e6695a99c04ded2285057b5fa68d9f3`（623路径）、EKO `d17f88614b626d32a6176491b3bc60c92a84287f`（181）、SDK `6cb12d3af1649edb8dda1f6d19fe017e06bb8004`（161），提交后四个子仓均干净，官网仍为原 `a4b5ec1d…`。各stage blob与先前实际恢复验证的快照SHA逐字节相同。顶层另有源码恢复检查点c128fa1a、候选工程包6419eabe、原README／品牌／设计草案WIP484ccb9a；不晋升未推送子仓指针，顶层仅保留具名gitlink差异。无push／merge／发布，无no-verify／commit-tree或修改hooks。
