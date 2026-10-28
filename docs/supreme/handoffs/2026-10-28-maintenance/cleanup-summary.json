@@ -1,0 +1,87 @@
+{
+  "at": "2026-10-28T12:01:03.492137+00:00",
+  "goalStatus": "paused",
+  "codeWipCommits": [
+    {
+      "at": "2026-10-28T11:49:41.049847+00:00",
+      "repository": "echo-agent",
+      "before": "0e404185c8f252da3e335c35547e52249c74dc65",
+      "commit": "e0cda8f95e6695a99c04ded2285057b5fa68d9f3",
+      "stagedPaths": 623,
+      "stagedEveryBlobMatchesExactPreservedSHA": true,
+      "workingTreeClean": true,
+      "ordinaryGitCommitExit": 0,
+      "commitGpgsign": false,
+      "explicitUserWipException": ".echo-semantic/local/user-maintenance-cut-20261028/wip-commit-explicit-user-authorization.json",
+      "failedChecksKeptInCommitBody": true,
+      "pushMergePublish": false,
+      "GoalStatus": "paused"
+    },
+    {
+      "at": "2026-10-28T11:49:41.600540+00:00",
+      "repository": "echo-agent-cli",
+      "before": "080e0b698c664105f789f522779a985f93b4f71b",
+      "commit": "d17f88614b626d32a6176491b3bc60c92a84287f",
+      "stagedPaths": 181,
+      "stagedEveryBlobMatchesExactPreservedSHA": true,
+      "workingTreeClean": true,
+      "ordinaryGitCommitExit": 0,
+      "commitGpgsign": false,
+      "explicitUserWipException": ".echo-semantic/local/user-maintenance-cut-20261028/wip-commit-explicit-user-authorization.json",
+      "failedChecksKeptInCommitBody": true,
+      "pushMergePublish": false,
+      "GoalStatus": "paused"
+    },
+    {
+      "at": "2026-10-28T11:49:43.126942+00:00",
+      "repository": "echo-agent-sdk",
+      "before": "525453fc9b9448358cc8a2f46bbcf401b10943ec",
+      "commit": "6cb12d3af1649edb8dda1f6d19fe017e06bb8004",
+      "stagedPaths": 161,
+      "stagedEveryBlobMatchesExactPreservedSHA": true,
+      "workingTreeClean": true,
+      "ordinaryGitCommitExit": 0,
+      "commitGpgsign": false,
+      "explicitUserWipException": ".echo-semantic/local/user-maintenance-cut-20261028/wip-commit-explicit-user-authorization.json",
+      "failedChecksKeptInCommitBody": true,
+      "pushMergePublish": false,
+      "GoalStatus": "paused"
+    }
+  ],
+  "rootWipCommit": "484ccb9a63fddcf8cb6c10edafdb94acf5c513a2",
+  "EkoOfficialClean": {
+    "exit": 0,
+    "removedFiles": 6726,
+    "reportedSize": "4.3GiB",
+    "exactTargetAbsent": true,
+    "receipt": "echo-agent-cli/.echo-semantic/local/eko-successor-integration-epoch19-20261028/maintenance-exact-owned-target-clean.log"
+  },
+  "rootArchivedGeneratedCacheLogicalBytesRemoved": 2263756,
+  "ownerDerivedCacheLogicalBytesRemoved": 214461985,
+  "rootRestoreScratchLogicalBytesRemoved": 160640629,
+  "removedPaths": [
+    "outputs/branding/echoleap/ragdoll-reference/.tools",
+    "node_modules/.vite/vitest/da39a3ee5e6b4b0d3255bfef95601890afd80709/results.json",
+    "echo-agent-sdk/.echo-semantic/local/sdk-native-consumer-20261027/rich-message-overrides-candidate-20261028/uv-cache",
+    "echo-agent-sdk/.echo-semantic/local/sdk-native-consumer-20261027/rich-message-overrides-candidate-20261028/typescript-example-build",
+    "echo-agent-sdk/.echo-semantic/local/sdk-native-consumer-20261027/rich-message-overrides-candidate-20261028/java-static-classes",
+    "echo-agent-sdk/.echo-semantic/local/sdk-native-consumer-20261027/rich-message-overrides-candidate-20261028/pytest-cache",
+    ".echo-semantic/local/parallel-executors-20261027/workspace/native-ui-continuation-20261028/swift-cache",
+    ".echo-semantic/local/parallel-executors-20261027/workspace/native-product-fixes-candidate-20261028/frontend-test/.vite-cache",
+    ".echo-semantic/local/user-maintenance-cut-20261028/restore-source-check",
+    ".echo-semantic/local/user-maintenance-cut-20261028/pending-package-restore",
+    ".echo-semantic/local/user-maintenance-cut-20261028/apply-probe"
+  ],
+  "userOwnSpaceCleanupNotAttributed": true,
+  "preserved": [
+    "actual raw failures/logs",
+    "current necessary binaries andsourcearchives",
+    "provider signed/encrypted replay",
+    "user data/auth credentials/new generation",
+    "pre-retirement tag/old source restore materials",
+    "allcurrent frozen candidate patch engineering archives"
+  ],
+  "missingOldArtifacts": "6EKO+4F old binary paths absent before attempted cleanup, unknown cause/no regenerated evidence",
+  "sourceAndUserDataRemoved": false,
+  "noPushMergePublish": true
+}

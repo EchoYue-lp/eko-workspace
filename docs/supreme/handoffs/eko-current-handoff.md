@@ -1,5 +1,17 @@
 # EKO／Eclip 当前协调权交接
 
+## 2026-10-28 当前：用户暂停迭代，全部现有源码已本地 WIP 保存
+
+**原完整Goal已由用户要求设置为paused，不恢复功能推进。** 用户又明确允许“先把现有代码全部做成本地WIP提交”，仅作为本轮“检查全通过才能提交”的具名保存例外。Root已用普通git commit、显式关GPG提交Framework `e0cda8f95e6695a99c04ded2285057b5fa68d9f3`（623路径）、EKO `d17f88614b626d32a6176491b3bc60c92a84287f`（181）、SDK `6cb12d3af1649edb8dda1f6d19fe017e06bb8004`（161），提交后四个子仓均干净，官网仍为原 `a4b5ec1d…`。各stage blob与先前实际恢复验证的快照SHA逐字节相同。顶层另有源码恢复检查点c128fa1a、候选工程包6419eabe、原README／品牌／设计草案WIP484ccb9a；不晋升未推送子仓指针，顶层仅保留具名gitlink差异。无push／merge／发布，无no-verify／commit-tree或修改hooks。
+
+原失败与未完成没有抹除：提交前F原task45项（44项目资料＋外部#10）、EKO原source3项及旧风险绑定、SDK原source1项及formal f7／0dac未闭合都记录在WIP正文与恢复清单；本轮没有借WIP授权假source0、SDK新pin、完整native、mainCI或Goal完成。canonical消费者／微信当前协议／NoCompat／跨会话／六工具分类等未合流候选只在工程包保全，旧兼容取消不冒matched。
+
+本轮最低必要补验已经自然结束：ChatEventLog46/0、2ignored；两显式IO各1/0；实际DTO捕获1/0及normal/Guard×single/multi共32原件＋INDEX，原件驱动前端16/16；native历史25/0、3ignored（SSH／quiet性能／capture opt-in，capture已独立跑过）。均零编译告警，仅这些实际输入范围有效。原桥日志路径提前拒绝1保原，同字节日志按原入口重跑16/16，没有改DTO或放宽检查。
+
+源码／新二进制／原始日志与50成员捕获归档保全后，原EKO全部supervisor和reader真实结束，准确own cargo clean0移除6726文件、4.3GiB，target已不存在；Root复核并正式关闭F全部读窗，没开放新feature窗口。原GUI fixture按原handle正常退出0、1420/1451无监听；旧App退出原因与退出码未知，未重启或还原认证。Root又在保全/无reader条件下清了精确自有生成缓存与恢复演练副本；用户自己清理的空间不算Root释放。六旧EKO raw和四旧F binary当前缺失单列，未补造原件或归因。
+
+唯一维护恢复入口：[保存与恢复清单](2026-10-28-maintenance/保存与恢复清单.md)及对应pending-packages索引。恢复迭代必须由用户明确要求；先核当前HEAD／index／真实进程与原blocked预检，不自动改SDKpin、旧Evidence或原Goal。该节覆盖下方历史“active／正在编译／待提交”的旧时态，历史原文仍保。
+
 ## 2026-10-28 17:11 后继：六组工具已由用户裁决，B2保持有界验证
 
 用户在Root实际选择“采用这六组（推荐，页面更简洁）”：任务与协作、文件与代码、命令与运行、搜索与浏览、数据与文档、记忆与技能。分类已裁决，覆盖下文求方案的旧时态。Runtime实际执行会话01a17d8e-23e1-78a3-9d3e-0d8b57c31bef负责设计／ADR和实现验证候选；EKO唯一正式writer按函数合流，Gov继续跨会话typed来源、输入右对齐及发送跳转。实施要求是来源标签独立、分类批量仅可选项、EKO后端拒绝关闭系统必需项；复用ToolControlService／pool generation和原内存保存，不扩跨重启持久化，不把Builtin或初始曝光等同全部必需。上述新功能尚未验收通过。
