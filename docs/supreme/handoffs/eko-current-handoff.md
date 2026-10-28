@@ -1,5 +1,26 @@
 # EKO／Eclip 当前协调权交接
 
+## 2026-10-29 当前维护切点：暂停迭代，现有源码全部本地保存
+
+用户最后明确要求先停止迭代、提交现有代码并清理中间产物，且已允许带着真实未过检查保存本地 WIP。先前将平台 active 状态当成恢复迭代的依据不充分；该判断已撤回。当前平台完整 Goal 为 **paused**，原文、全部未完成项和既有用户裁决保持，只有用户明确要求后才恢复功能工作。下方“21:00恢复并行”等段落保留为历史，不能再作为当前执行授权。
+
+| 仓库 | 当前本地 HEAD | 当前资格 |
+| --- | --- | --- |
+| Framework | 684ad1d9d0de9bff57e27e4c04f04232c6af9f1f | 正常16路径里程碑；119项定向测试与受影响复验、四crate lint，当前source/final/staged0；非完整矩阵 |
+| EKO | df405760208fbf88fffd2304d72dd5e00a88902c | 追加90路径WIP，已保真实编译101，0测试执行；不算验收通过 |
+| SDK | 959b0da9d48fc0c8fc65a458ab115d82541be4a0 | 追加35路径WIP；Host后续验证未运行，formal f7/0dac不变 |
+| 官网 | a4b5ec1d85579164fd065a59b2372b905b3dff2d | 沿用原已保存提交，本次没有新增源码 |
+
+四子仓已逐项核对，提交后工作区与暂存区均干净。EKO/SDK的暂存blob、最终commit blob与维护快照逐SHA一致；tracked补丁在隔离Git index实际恢复，未跟踪文件tar逐字节与mode回读。原 e0cda8f9/d17f886/6cb12d3 WIP及更早恢复提交保留，未重写历史。所有提交普通git commit并显式关闭GPG，没有no-verify或伪造final。
+
+EKO在途第一条app-core检查已经自然退出101：prepared_turn.rs:2214测试夹具把&str传给要求String的Message::user，测试尚未运行；后14条未启动。原source21项、旧风险绑定拒绝和未完成Fork旁路仍保留，WIP保存不将它们改为通过。SDK仅完成metadata-only预检，controlled副本、Cargo metadata/tree/Host测试均未启动；Protocol114、Java27和六项生成检查只保各自原输入资格。
+
+各实际执行会话已收到并按维护优先级冻结源码与候选，不继续命令链。Framework原target已清；EKO新target在原监督终态、无cargo/rustc、准确target lsof为空、日志与退出记录已保全后，由Root准确cargo clean自然0，移除3754文件、1.3GiB；未生成可执行测试制品，没有补造。用户自行清理量不计入本轮结果。SDK没有启动新的编译target。
+
+当前未采用的control/storage/ProviderError/Runtime及精确风险候选按[冻结源码包索引](2026-10-29-maintenance/frozen-candidate-source-index.json)保全，共464文件，压缩包SHA为94f5b335ff439c32847dda193bea416b4aa000329a8e6ea9a175f6c53053ce54；成员字节、SHA和mode已实际读取核对。该包只用于恢复和三方审查，不表示采用、编译或测试通过。原始日志、历史失败、认证后微信数据、必要二进制与旧恢复入口仍保留；不以本次维护补齐旧缺失原件。
+
+唯一恢复说明继续看[保存与恢复清单](2026-10-28-maintenance/保存与恢复清单.md)。不push、merge、关闭Issue、发布或部署；顶层四个未推送gitlink差异明确保留，不晋升指针。整体交付、外部#10/旧402、SDK新pin、真实桌面/SSH/手机收件、全量矩阵与mainCI全部按原缺口继续记录。
+
 ## 2026-10-28 21:00 后继：按当前active Goal续跑，从已提交WIP恢复并行
 
 本次Goal续跑输入要求继续，Root先完整重读原附件cd30e66并读取控制面，get_goal实际为active、updatedAt为2026-10-28 13:00:40Z，晚于维护结束。按当前续跑要求恢复完整旧26＋原生消息／统一终态／长任务进度，并保六工具分类、跨会话typed输入及NoCompat等后继裁决；没有由助手改写Goal内容。下方维护暂停段是已保存历史切点，不再代表本次运行状态。
