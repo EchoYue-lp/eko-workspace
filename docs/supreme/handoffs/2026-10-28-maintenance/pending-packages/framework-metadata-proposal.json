@@ -1,0 +1,130 @@
+{
+  "at": "2026-10-28T11:40:51.807703+00:00",
+  "package": "framework-metadata-proposal",
+  "originalDirectory": ".echo-semantic/local/parallel-executors-20261027/framework/maintenance-save-cut-20261028/metadata-44-proposal",
+  "archive": "framework-metadata-proposal.tar.gz",
+  "archive_sha256": "2ced0f216381065e94fd83ea5d82014d78b0426c5ba14f13e80028a7a0520e88",
+  "archive_bytes": 42274,
+  "file_count": 19,
+  "logical_bytes": 137907,
+  "files": [
+    {
+      "path": "apply-check/.echo-semantic/assets/asset.approved-a2a-lsp-source-retirement.md",
+      "bytes": 5128,
+      "sha256": "10268747e6f985ddaa57d9f11cf649e54ed6f49aef32fd650b0a2c1497711635",
+      "mode": 420
+    },
+    {
+      "path": "apply-check/.echo-semantic/evidence/evidence.native-control-retained-contracts-equivalence.md",
+      "bytes": 16479,
+      "sha256": "9fcd93cb03669a62e748c8d92d9b5f49ceb76068b1ea501c0789383a2cc83db9",
+      "mode": 420
+    },
+    {
+      "path": "apply-check/.echo-semantic/findings/finding.native-control-tools-retirement.md",
+      "bytes": 4791,
+      "sha256": "483bdcde41b0c2699be0fc476c34febe99b1ec8525cfa5c35b686041fb26ce60",
+      "mode": 420
+    },
+    {
+      "path": "apply-check/.echo-semantic/maps/map.agent-session-turn.md",
+      "bytes": 14206,
+      "sha256": "fe5a3108592f4b4937e0961a864a1ca0256d79f64b42783c4e3952034f26d409",
+      "mode": 420
+    },
+    {
+      "path": "base/.echo-semantic/evidence/evidence.native-control-retained-contracts-equivalence.md",
+      "bytes": 14212,
+      "sha256": "9783fb400d9e2e721d9cf37baf9919a4763ffa4277dc51f352e482aef3c769c3",
+      "mode": 420
+    },
+    {
+      "path": "base/.echo-semantic/findings/finding.native-control-tools-retirement.md",
+      "bytes": 3123,
+      "sha256": "5c9eb5b8d9a53e314b654716ecbc8e9b51fd42c3eddf9f2697f2cb62d1eb4c22",
+      "mode": 420
+    },
+    {
+      "path": "base/.echo-semantic/maps/map.agent-session-turn.md",
+      "bytes": 10057,
+      "sha256": "c536b6da901ed003d82353b8ccf4d753bf766469dde5cac9d01ed3578c3f7b57",
+      "mode": 420
+    },
+    {
+      "path": "binding-provenance.json",
+      "bytes": 7266,
+      "sha256": "4b9a4eb87858dde210c542f6d983712e53719b88ae53697853fa4eeec7f6a129",
+      "mode": 420
+    },
+    {
+      "path": "candidate/.echo-semantic/assets/asset.approved-a2a-lsp-source-retirement.md",
+      "bytes": 5128,
+      "sha256": "10268747e6f985ddaa57d9f11cf649e54ed6f49aef32fd650b0a2c1497711635",
+      "mode": 420
+    },
+    {
+      "path": "candidate/.echo-semantic/evidence/evidence.native-control-retained-contracts-equivalence.md",
+      "bytes": 16479,
+      "sha256": "9fcd93cb03669a62e748c8d92d9b5f49ceb76068b1ea501c0789383a2cc83db9",
+      "mode": 420
+    },
+    {
+      "path": "candidate/.echo-semantic/findings/finding.native-control-tools-retirement.md",
+      "bytes": 4791,
+      "sha256": "483bdcde41b0c2699be0fc476c34febe99b1ec8525cfa5c35b686041fb26ce60",
+      "mode": 420
+    },
+    {
+      "path": "candidate/.echo-semantic/maps/map.agent-session-turn.md",
+      "bytes": 14206,
+      "sha256": "fe5a3108592f4b4937e0961a864a1ca0256d79f64b42783c4e3952034f26d409",
+      "mode": 420
+    },
+    {
+      "path": "independent-review.json",
+      "bytes": 852,
+      "sha256": "f705cf80e4c491721ebb9b9095a92762c33a4ac2b8bfa0524d56405748804bab",
+      "mode": 420
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 1902,
+      "sha256": "2087b8885442d7cbbfc9acc63fe96035f3ffaec317f4785a15e567410438fa73",
+      "mode": 420
+    },
+    {
+      "path": "metadata-only.patch",
+      "bytes": 16848,
+      "sha256": "ff2d6239e6b3ff93fe333ce9657880b8079d645334fbd9730291627b6f33a3c4",
+      "mode": 420
+    },
+    {
+      "path": "metadata-proposal-apply-check.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": 384
+    },
+    {
+      "path": "metadata-proposal-isolated-apply.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": 384
+    },
+    {
+      "path": "run.json",
+      "bytes": 2176,
+      "sha256": "363300badabc5bbd319209c08e4cfbe8ffcad01e6d8baac99cfdf759190f481d",
+      "mode": 384
+    },
+    {
+      "path": "schema-check.json",
+      "bytes": 263,
+      "sha256": "fd88f6dda01870c3f8d8ba7cd660384bb5674736ca73159e9eaaf4858bc014e1",
+      "mode": 420
+    }
+  ],
+  "actualScratchExtractionAndFullBytesModesHashMatch": true,
+  "productionAdoption": false,
+  "goalStatus": "paused",
+  "qualification": "冻结候选/提案工程保全，保留原有通过/未审/未执行边界；不晋升实际产品资格"
+}

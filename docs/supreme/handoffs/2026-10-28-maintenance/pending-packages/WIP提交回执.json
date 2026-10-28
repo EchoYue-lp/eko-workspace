@@ -1,0 +1,47 @@
+[
+  {
+    "at": "2026-10-28T11:49:41.049847+00:00",
+    "repository": "echo-agent",
+    "before": "0e404185c8f252da3e335c35547e52249c74dc65",
+    "commit": "e0cda8f95e6695a99c04ded2285057b5fa68d9f3",
+    "stagedPaths": 623,
+    "stagedEveryBlobMatchesExactPreservedSHA": true,
+    "workingTreeClean": true,
+    "ordinaryGitCommitExit": 0,
+    "commitGpgsign": false,
+    "explicitUserWipException": ".echo-semantic/local/user-maintenance-cut-20261028/wip-commit-explicit-user-authorization.json",
+    "failedChecksKeptInCommitBody": true,
+    "pushMergePublish": false,
+    "GoalStatus": "paused"
+  },
+  {
+    "at": "2026-10-28T11:49:41.600540+00:00",
+    "repository": "echo-agent-cli",
+    "before": "080e0b698c664105f789f522779a985f93b4f71b",
+    "commit": "d17f88614b626d32a6176491b3bc60c92a84287f",
+    "stagedPaths": 181,
+    "stagedEveryBlobMatchesExactPreservedSHA": true,
+    "workingTreeClean": true,
+    "ordinaryGitCommitExit": 0,
+    "commitGpgsign": false,
+    "explicitUserWipException": ".echo-semantic/local/user-maintenance-cut-20261028/wip-commit-explicit-user-authorization.json",
+    "failedChecksKeptInCommitBody": true,
+    "pushMergePublish": false,
+    "GoalStatus": "paused"
+  },
+  {
+    "at": "2026-10-28T11:49:43.126942+00:00",
+    "repository": "echo-agent-sdk",
+    "before": "525453fc9b9448358cc8a2f46bbcf401b10943ec",
+    "commit": "6cb12d3af1649edb8dda1f6d19fe017e06bb8004",
+    "stagedPaths": 161,
+    "stagedEveryBlobMatchesExactPreservedSHA": true,
+    "workingTreeClean": true,
+    "ordinaryGitCommitExit": 0,
+    "commitGpgsign": false,
+    "explicitUserWipException": ".echo-semantic/local/user-maintenance-cut-20261028/wip-commit-explicit-user-authorization.json",
+    "failedChecksKeptInCommitBody": true,
+    "pushMergePublish": false,
+    "GoalStatus": "paused"
+  }
+]

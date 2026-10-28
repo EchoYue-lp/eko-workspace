@@ -1,0 +1,151 @@
+{
+  "package": "cross-chat-original-bases",
+  "archive": "cross-chat-original-bases.tar.gz",
+  "archive_sha256": "3222a24b995ca78b88c513b853f87c8c323d4a73837fa59d8716d413858b2842",
+  "archive_bytes": 410381,
+  "file_count": 23,
+  "logical_bytes": 2319712,
+  "files": [
+    {
+      "path": "docs/zh/features.md",
+      "bytes": 17203,
+      "sha256": "fe0947c9d1bd20dfcff990f07d84517c7533df134f1b68c1a22888eec7cdfb6a",
+      "mode": 420
+    },
+    {
+      "path": "docs/zh/adr/0047-automatic-agent-collaboration.md",
+      "bytes": 1978,
+      "sha256": "86317a3ac1fa96801f551f45aa32f554ef61d03a175e7ab57fbcae0d772cf4a2",
+      "mode": 420
+    },
+    {
+      "path": "echo-agent-app-core/src/channel_runtime.rs",
+      "bytes": 705681,
+      "sha256": "c44705f3fad667ae1c950f7c7f969ecf94aa3b55d7811e324f2383a2259c6ea7",
+      "mode": 420
+    },
+    {
+      "path": "echo-agent-app-core/src/conversation_projection.rs",
+      "bytes": 26070,
+      "sha256": "419b8e56ac9096314de755f2a3140731cdcf65a42266b38cc27517fe6351dd12",
+      "mode": 420
+    },
+    {
+      "path": "echo-agent-app-core/src/agent_control.rs",
+      "bytes": 134026,
+      "sha256": "e742bd0ca6da05628491e6935fb7c5d792870961dc064015baf416472b1ed36d",
+      "mode": 420
+    },
+    {
+      "path": "echo-agent-app-core/src/chat_driver.rs",
+      "bytes": 254780,
+      "sha256": "f72ceffdf781c346887426349aa52de3bc876c0e32c42c3a0a8abedff29cd1f9",
+      "mode": 420
+    },
+    {
+      "path": "echo-agent-app-core/src/prepared_turn.rs",
+      "bytes": 83850,
+      "sha256": "20d17249576d7d46b67d0052278ddb6501d0afe52b5dd126c970842abf52089e",
+      "mode": 420
+    },
+    {
+      "path": "echo-agent-app-core/src/agent_pool/tests.rs",
+      "bytes": 143957,
+      "sha256": "842ba5e07658818aa57c67923c64bb97c095254211003b3500da2f988c394f1e",
+      "mode": 420
+    },
+    {
+      "path": "echo-agent-app-core/src/state/app_state.rs",
+      "bytes": 317189,
+      "sha256": "e55f11280dd2f305bf98b5e433bfaca7eef6404341152a72c996f1d76880dffb",
+      "mode": 420
+    },
+    {
+      "path": "echo-agent-app-core/src/prepared_turn/provenance.rs",
+      "bytes": 16364,
+      "sha256": "5c124348e8c08e0399c6c7ceaaa6d1990bf4884086a2e20dfee51cdabc3887a0",
+      "mode": 420
+    },
+    {
+      "path": "web-frontend/src/types/api.ts",
+      "bytes": 31894,
+      "sha256": "dc2ea5e3f754eb54de7c46c427c529945d5f50f263f0167a43cf49d61330fe41",
+      "mode": 420
+    },
+    {
+      "path": "web-frontend/src/stores/conversationStore.ts",
+      "bytes": 42671,
+      "sha256": "4adda16f54171b516f03b24970f05577777504b5655f51a6d02fd5dc9cb91dd5",
+      "mode": 420
+    },
+    {
+      "path": "web-frontend/src/stores/chatStore.ts",
+      "bytes": 20783,
+      "sha256": "9c31520d5149511bcf454a8d51fb4875f326d4bd357684e620b822d0c1061192",
+      "mode": 420
+    },
+    {
+      "path": "web-frontend/src/api/endpoints.ts",
+      "bytes": 113303,
+      "sha256": "b13d325e3c4a9b9c4362df90727b9a609d2f6e0e948a7a8f3cac5dd2dd59003b",
+      "mode": 420
+    },
+    {
+      "path": "web-frontend/src/components/chat/MessageBubble.tsx",
+      "bytes": 23666,
+      "sha256": "386c2b4b28916bd24c1ab819938cd771b1ae3555918ad828b8c30f74e4bedf94",
+      "mode": 420
+    },
+    {
+      "path": "web-frontend/src/components/chat/ChatPanel.tsx",
+      "bytes": 53105,
+      "sha256": "11ddf0b0ccd6fe1febaa13172a1505e6bfe6d8fdf94764da4640ba829f5bd7a7",
+      "mode": 420
+    },
+    {
+      "path": "web-frontend/src/components/chat/ToolExecutionGroup.tsx",
+      "bytes": 4266,
+      "sha256": "9b36d5df57126a651e6f1141be7073bad981ddfe2b00a4b727dd40b8c5ed67ad",
+      "mode": 420
+    },
+    {
+      "path": "src/tauri/mod.rs",
+      "bytes": 23568,
+      "sha256": "cf4dccc399c953ae57d34358ba83f9fe3a58607708d47590004519802837b14a",
+      "mode": 420
+    },
+    {
+      "path": "src/tauri/commands/conversations.rs",
+      "bytes": 131998,
+      "sha256": "4bf6aea68daa1d39165064318240ab88363046a4760ac6f966551e205535d894",
+      "mode": 420
+    },
+    {
+      "path": "echo-agent-app-core/src/state/workspace.rs",
+      "bytes": 39505,
+      "sha256": "e60e022c6c5668713f68061cb068b144ea675b239366535cf2f06873bd85bd2b",
+      "mode": 420
+    },
+    {
+      "path": "echo-agent-app-core/src/conversation_archive.rs",
+      "bytes": 31929,
+      "sha256": "08f58fefbb0d4b0bd142d66df6c1fa47409a250a18d6f5e862e7139415eadf27",
+      "mode": 420
+    },
+    {
+      "path": "web-frontend/src/components/chat/ChatPanel.controls.test.tsx",
+      "bytes": 33444,
+      "sha256": "21828c2b999a654a7af4c670cbe5ebdf81e869eecce4fdb9025762ddeaebc008",
+      "mode": 420
+    },
+    {
+      "path": "web-frontend/src/stores/conversationStore.test.ts",
+      "bytes": 68482,
+      "sha256": "04ca8c61a0629bf10835b82e149c01d6044b1324072b844ad66a0ab07a70d8bd",
+      "mode": 420
+    }
+  ],
+  "actualBaseExtractionAndPatchRestoresAll32CandidateFiles": true,
+  "productionAdoption": false,
+  "reason": "Some frozen cross-chat base hashes predate final EKO bytes; keep exact source base, no overwrite of currentWIP"
+}
