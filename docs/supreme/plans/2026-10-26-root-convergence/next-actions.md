@@ -1,5 +1,17 @@
 # 根内收敛下一动作与交付依据
 
+## 2026-10-29 当前续跑批次
+
+本次Goal消息明确继续，控制active；从维护提交b1cd578受控恢复完整目标，下方旧暂停段保留历史。
+
+1. EKO已最小修prepared_turn测试String类型，新292输入冻结，执行已明确准入的15 app-core命令/31定义；结果按原日志/自然退出/实际匹配数记录。F684保持冻结。
+2. SDK已完成当前959/F684副本locked完整图读取，执行新准入Host lib list＋5个输入/physical selector；formal f7/0dac及accepted边界不变，完整reverse Status与Task/Subagent资格另验。
+3. Gov的10份当前导航metadata候选在EKO安全切点采用，重取source17原官方结果；精确风险五项严格子集按当前consumer复查、绑定和fresh扫描，不继承旧通过。
+4. app-core批后复用原GUI三个nonstream/无native Fork测试，先取真实RED/正控，再关闭两处无native旁路；保持真实driver/cold/publication证据，禁止补造成功。
+5. Framework/Runtime/Provider仅在ignored基底组合当前coherent迁移及consumer补丁，原读窗真实结束后由Root给下一正式源窗；随后依原完整计划接SDK/示例/官网/全矩阵和真实验收。
+
+所有原26及native/六工具/跨会话/NoCompat义务持续。Root协调和统一本地提交，执行者按文件单writer；原失败、认证后微信数据与必要恢复资料保留。无新App/真实IM/SSH或quiet性能窗口，不push/merge/发布或晋升未推送gitlink。
+
 ## 2026-10-29 当前执行顺序：维护保存后停止
 
 当前Goal paused。本轮现有源码已分别保存：Framework684ad1d9（正常里程碑）、EKO df405760（90路径WIP）、SDK959b0da9（35路径WIP）、官网a4b5ec1d沿用。四子仓干净，EKO在途检查101原件及准确1.3GiB清理已收口，后继18/Provider/Runtime候选冻结并保全。平台active不是人类恢复授权；下方旧待办不得自动派发。

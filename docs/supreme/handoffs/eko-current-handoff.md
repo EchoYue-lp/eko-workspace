@@ -1,5 +1,19 @@
 # EKO／Eclip 当前协调权交接
 
+## 2026-10-29 本次受控续跑：维护完成后恢复完整 Goal
+
+本次新的Goal续跑输入明确要求继续；Root完整重读原附件cd30e66，控制面实际为active（updatedAt1793206185），已将这一新指令和当前Git/进程事实记录在`.echo-semantic/local/controlled-goal-resume-20261029/resume-receipt.json`。按本次明确续跑切点恢复原26全部未完成＋原生消息/唯一终态/进度＋六工具分类/跨会话/NoCompat等后继，Goal内容未被助手改写。下方维护paused段仍是准确历史；当前状态为active，整体目标未完成。
+
+起点为顶层维护提交b1cd578、Framework684ad1d9、EKO df405760、SDK959b0da9、官网a4b5ec1d；本次恢复前四子仓clean、无compiler，空间约42GiB。此前WIP保存和清理已完成，未来沿正常预检/验证/提交门禁执行。Root继续协调/审查/统一本地提交，实际代码由既有执行会话按仓/文件单writer推进，所有源码、副本和target在主目录内。
+
+EKO唯一正式增量目前只是prepared_turn测试夹具的&str→String转换，断言不变；已核新292构建输入与273consumer 2dc13b7…，F684正式源冻结。原app-core15命令/31测试定义已获新的精确准入，首项直接编译当前harness并运行；新结果尚未交回，原编译101/0tests保留。当前正常source实际1/17，均为退役main/CLI/TUI/legacy模块的资料引用；Gov已形成10对象最小导航补丁并独审C0/I0/M0，EKO在读者安全点正常采用后再取官方结果，历史观察/unknown/旧结果不变。风险旧六项绑定仍未闭合，原五严格子集由性能执行者做当前暴露复查，不将focused测试当风险接受或source通过。
+
+SDK已在不可变副本上实际完成locked默认/选定profile metadata及tree；选定profile全resolve372包/372node/1056edge、当前目标tree283身份，controlled658包锁4a99字节未变。Root已逐SHA复核SDK1260＋F2806原源/副本和8项正式保护输入，随后仅开放Host lib list＋5条Message输入/physical owner测试。正式f7/0dac、accepted/inventory边界保留；尚无新Host运行通过，完整reverse native Status/Task/Subagent链仍有确定缺口，不据输入测试赋成功或newpin资格。
+
+Framework执行者在ignored基底组合control/storage/ProviderError/Runtime与当前consumer迁移，正式F684在EKO整批读窗内保持冻结。Runtime、Workspace、治理和精确风险线并行提供不冲突的具体增量；已有GUI三条nonstream driver→cold/import/refork及plainText无native负控复用原定义，待app-core安全切点明确开下一阶段。App/真实微信/SSH、quiet性能、新发行、push/merge与未推gitlink晋升尚未开放；其原目标与待验项持续保留。
+
+动态窗口看`shared-framework-readers-20261027/active.json`和各原handle/进程实际状态，状态文件不代替真实存活检查。本段只记录跨仓协调事实，原source17/风险、外部#10/旧402、全量矩阵、真实桌面/手机/SSH、SDK正式来源及mainCI缺口全部按各自证据继续收敛。
+
 ## 2026-10-29 当前维护切点：暂停迭代，现有源码全部本地保存
 
 用户最后明确要求先停止迭代、提交现有代码并清理中间产物，且已允许带着真实未过检查保存本地 WIP。先前将平台 active 状态当成恢复迭代的依据不充分；该判断已撤回。当前平台完整 Goal 为 **paused**，原文、全部未完成项和既有用户裁决保持，只有用户明确要求后才恢复功能工作。下方“21:00恢复并行”等段落保留为历史，不能再作为当前执行授权。
