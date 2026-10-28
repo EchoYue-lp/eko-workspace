@@ -537,3 +537,18 @@ rm -f .worktrees/fix/Echoyue/echo-agent  # 删除临时 symlink
 用户在新协调会话明确批准“继续保留原六个依赖，完成本次修复和验证”。本轮CLI实际锁为`3fb8955b56e86eb4bef2454d3328b6ef8eb7f36d7663806387f3b990244e7ed6`（856包），运行隔离/Goal边界本次GREEN consumer为`d38f9a06ca1df7f042295d579bf8144ab3a741a92b6b5bd99fb104941c58ecd9`（321输入），机器policy SHA为`97c2fbe65910328dcc8ba83e5e8ae09d19ea28ded3f4bb8df3a2f0cd2fb34225`；唯一机器身份与中文用户裁决仍看`echo-agent-cli/.cargo/accepted-dependency-risks.json`和原`dependency-risk-decision.md`本日后继。旧b0完整消费源未复原已明确告知，本次直接按当前完整来源复评，不伪称旧基准小增量已证明；原六完整name/version/source/checksum/advisory/kind不变。
 
 这替代本文件CLI旧d2e7及其它历史锁/consumer的当前时态；Framework49组和SDK独立例外不继承本项。scanner自然1与精确gate0分别保原件，原六测试和actual-lock/canonical-origin两原门禁实际通过后才有本切片风险资格；本轮后继源变化需复核暴露面、冻结并跑精确gate，锁/身份/范围变化重新裁决，不扩大以后迭代风险接受。Rust/前端/文档/mainCI/原生门禁不变。对应CLI AGENTS已同文义同步。
+
+## 2026-10-29 F15当前CLI五项严格子集的候选绑定
+
+本节只覆盖CLI旧3fb/d38f和较早7659候选的当前绑定时态，原人类“继续保留原六个依赖，完成本次修复和验证”的原话及失败保留，不称用户新批准五项。bincode1.3.3因具名终端入口/syntect闭包退役离开当前锁；剩余五项完整name/version/source/checksum/advisory/kind是原接受六项的严格子集，不接受新风险或以后自动续期。Framework/SDK独立合同不继承此项。
+
+本候选只绑定CLI锁SHA256`399509eeb951c87d407ffd949c60ac4c5b7dcc460a189e078a25f8287f4e2a4f`（768包）、Root指定GUI3后consumer`d027ea4999a8bcbdc8d6262d4cfdd64f4669565135547e2b0e540e0baa01af9e`（273输入），原freeze SHA为`20dc7b2019f78f2bfd5a3b8fbfcfbbedabab8d34b29e6afb13a8e5a3194fcb96`（292构建来源＋14元数据），机器身份仍看CLI `.cargo/accepted-dependency-risks.json`。原human来源、完整321→273复查、此前两次test-only增量以及本次GUI3生产差异均见原风险决策本日后继和ADR0062。6a17→d027实际删除两处no-native成功早退，统一原publication校验与错误传播；源码复查没有新增依赖/native桥或原五风险完整身份，但它是production语义收紧，不能沿旧6a票直接续期。当前实际重算两读并精确绑定d027；后继非Rust文档索引不改变collector的判断也须用两读事实，不给再后来源码签票。正式采用和fresh actual/canonical门禁仍待Root＋唯一writer正常处理，GUI行为/source票不是风险gate。
+
+checker要求当前固定五项完整warning集合，4/6/少项/重复/字段/settings/漏洞/yanked/扫描错误都阻断；原六方法保留并有缺warning和settings反控，scanner命令/URL/fetch/yanked/ignore不改。候选控制和source复评不代表正式actual/canonical门禁通过；原官方scanner自然1与最终精确gate结果继续分列。正式采用仅由唯一owner在reader安全点正常预检，必要Rust验证结束且source稳定后Root另排两原gate。任何source/lock/consumer漂移须具体复核，任何新风险/身份/范围扩大交Root，不自行续期。其它编译、fmt、文档、native、mainCI和发布门禁不变。
+
+
+### 2026-10-29 当前绑定的真实门禁结果
+
+上述d027/399509五项严格子集已由唯一CLI writer正式采用。原actual-lock和canonical-origin两次调用均保持默认fresh fetch、完整官方输出与自然scanner退出1；独立精确风险gate实际各退出0。两报告均为0漏洞、4项unmaintained及1项unsound，五完整身份与原接受集严格相等，数据库报告commit为`40f5be6fb12ed93fc591bf4ab23b7d793b3f2239`、1381条；Root已对原raw、原caller出口和当前输入逐项复核。原DB六份未跟踪RUSTSEC-0000草稿的存在已如实保留记录，未修改或忽略它们，未将scanner自然1改称零warning审计。
+
+本段只将上节“候选/待正式采用和fresh gate”的本切点时态更新为已采用、已验证；不新增人类风险接受，不把风险标resolved，不续期未来source/lock/consumer变化。原human原话、全身份与暴露复评、真实失败、原six来源及各仓独立合同继续有效；Rust/文档/原生/全矩阵/SDK来源/mainCI和整体Goal仍分别验收。
