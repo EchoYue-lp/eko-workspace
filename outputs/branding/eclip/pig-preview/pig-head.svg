@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Eclip · 简笔小猪头像试稿</title>
+  <desc id="desc">天蓝色圆角底，奶白色圆猪头，柔软的小耳朵、两只小眼睛和带两个鼻孔的粉色椭圆猪鼻子。</desc>
+  <defs>
+    <linearGradient id="sky" x1="512" y1="0" x2="512" y2="1024" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#91D7F8"/>
+      <stop offset="1" stop-color="#70BFEA"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="224" fill="url(#sky)"/>
+  <g transform="rotate(-6 512 512)">
+    <path d="M304 438C254 430 225 373 239 286C242 264 257 255 278 263C336 284 377 329 390 379L304 438Z" fill="#FFFEFB"/>
+    <path d="M720 438C770 430 799 373 785 286C782 264 767 255 746 263C688 284 647 329 634 379L720 438Z" fill="#FFFEFB"/>
+    <path d="M278 304C274 346 284 380 312 398L348 367C332 338 309 317 278 304Z" fill="#F2AFBD"/>
+    <path d="M746 304C750 346 740 380 712 398L676 367C692 338 715 317 746 304Z" fill="#F2AFBD"/>
+    <path d="M512 330C340 330 222 444 222 576C222 710 338 789 512 789C686 789 802 710 802 576C802 444 684 330 512 330Z" fill="#FFFEFB"/>
+    <path d="M408 492V515M616 492V515" stroke="#326C8A" stroke-width="28" stroke-linecap="round"/>
+    <rect x="389" y="550" width="246" height="156" rx="78" fill="#F2AFBD"/>
+    <ellipse cx="471" cy="627" rx="14" ry="23" fill="#B96985"/>
+    <ellipse cx="553" cy="627" rx="14" ry="23" fill="#B96985"/>
+    <path d="M488 736C500 748 524 748 536 736" stroke="#326C8A" stroke-width="12" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,6 +1,8 @@
-# EKO Workspace
+# Eclip Workspace /ˈɛk.lɪp/
 
-`eko-workspace` is the Git superproject for the EKO local AI assistant. It keeps the framework, SDK product, application, and website as four independent repositories while pinning a known-compatible commit of each repository in one place.
+`eko-workspace` 是 Eclip 本地个人 AI 助理的顶层 Git 仓库。**Eclip /ˈɛk.lɪp/** 读作 **EK-lip**，两个音节。**听见你的声音，让想法飞跃。**
+
+本仓库统一固定四个独立子仓库的已知兼容提交；应用的品牌与图标说明由 [产品仓库](echo-agent-cli/design/branding/README.md) 长期维护。
 
 This repository is not a monorepo or a Cargo workspace. Each submodule keeps its own history, branches, releases, tests, and remote repository.
 
@@ -10,8 +12,8 @@ This repository is not a monorepo or a Cargo workspace. Each submodule keeps its
 |---|---|---|
 | `echo-agent/` | [echo-agent](https://github.com/EchoYue-lp/echo-agent) | Reusable Rust Agent framework |
 | `echo-agent-sdk/` | [echo-agent-sdk](https://github.com/EchoYue-lp/echo-agent-sdk) | Rust Protocol/Host, TypeScript/Python/Java SDKs, accepted contracts, documentation, and CI |
-| `echo-agent-cli/` | [echo-agent-cli](https://github.com/EchoYue-lp/echo-agent-cli) | EKO CLI, TUI, desktop application, and frontend |
-| `echo-website/` | [echo-website](https://github.com/EchoYue-lp/echo-website) | EKO website and public documentation |
+| `echo-agent-cli/` | [echo-agent-cli](https://github.com/EchoYue-lp/echo-agent-cli) | Eclip 桌面应用、共享应用核心与前端（旧终端入口处于退役迁移期） |
+| `echo-website/` | [echo-website](https://github.com/EchoYue-lp/echo-website) | echo-agent 与 Eclip 官网及对外文档 |
 
 Cross-project instructions and architecture documents live in `AGENTS.md` and `docs/`.
 
