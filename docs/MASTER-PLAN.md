@@ -1,5 +1,22 @@
 # EKO 总纲（MASTER-PLAN）
 
+## 2026-10-28 13:46 后继当前：十条真实执行线与完整门禁
+
+总Goal保留旧26结果的全部未完成及全部原生切换。已新建第10个实际执行会话“EKO 全量迭代：性能基准与实测优化”（01a180d8-4005-77c2-adbe-dbae6540f218），从delivery接走Plan08和实测存储优化；delivery继续真实桌面、官网、资源和发行。Root只负责协调、审查与集成，各仓正式源码仍由唯一writer采用领域增量，按文件并行。
+
+Framework已实际采用具名A2A/LSP完整30及最终15文稿／矩阵，当前锁1442bf…获显式locked全feature metadata0，676包和25个公开feature；最初锁生成命令未捕获仍保原观察。完整重型门禁同一自有target连续执行：两轮Clippy真实101后的私有carrier及fixture／bytecount局部修复保原件，v04全Clippy和严格panic检查0；首次全test只到learning28／文档13通过2失败即101，其余未被该次覆盖。两处退役文档期望已修并独审，现v05在原集合复验；旧绿不追标新源。准确阶段／新源码索引以active及owner run为准，不由此给EKO/SDK/性能新增Cargo读窗。
+
+EKO已正式合MissingPhase／Reasoning四生产及ADR，前端相关27与fresh类型／lint／格式0，独审0生产finding；final-without-status的3个合法已发布Reasoning保留、最终正文／完成／选定Fork仍严格拒绝，旧oracle及其后继均保。Steer原现场已证同input实际drained／settled并进入主模型历史；前端重复请求的真实RED及旧projection-owner问题修到完整Hook91／0，后端Goal／CAS／drain未改。当前整套前端首轮780通过、1测试缺jsdom环境失败／4项跳过，已修环境并复跑，不冒整套通过。新资源Rust原15＋2共17尚待后继窗口，不能以这些前端票替代。
+
+普通历史4096窗口／真正retention的耐久投影已有同ChatEventLog＋原FileCheckpointStore候选；Root追加确认单页Pending直达IPC错误的caller缺口，作者正在同包闭合有界自动续读及多页冷首用，尚无当前Cargo／性能或完整恢复通过。终端62原件／基线／patch／tag已核；仅真实源码删除准入Finding可限定解析，不能把删后编译、原生或全部退役状态提前matched。正式物理删除是否落地以EKO新回执为准。SDK1和4文稿实际已合，269机器段及正式f7／0dac仍保，受控旧234／三语言资格不冒删后新Git精pin。
+
+source09／F5908的保全签名App已真实运行，HELLO、HITL草稿重开及提交、工具文字分区、当前工作空间Fork持久数据和UI重开已留证；仅是这一旧输入的有限基线。随后系统再次自动锁屏，Root已请用户再次解锁，既有权限有效，未重启／还原数据。终端、Settings、NewWorktree、60秒等待、真实模型／SSH／微信手机收件及新修源码App仍未完整验收。官网导航三源及正常派生已落地，工程检查通过，四条旧类型定义相关语义错误正逐项区分项目映射与外部合同，不新增排除；中文手工产品投影和自动镜像须遵守真实上游来源。
+
+性能已交完整原分母的24数据集／59调用准备与绑定、离线控制；当前测量样本0，release／安静窗口尚未开放，正核新增history主路径的覆盖和IO成本观测。所有原失败、Source外部聚合#10与旧zstd全scope402、精确风险／完整矩阵／正式SDK来源／native和mainCI缺口继续保留。没有push／merge／Issue关闭／发布部署或未推送gitlink晋升。当前唯一动态准入仍看shared-framework-readers-20261027/active.json及具名回执；本节覆盖下方历史当前时态，完整Goal active。
+
+本切片只更新四份跨仓协调文档；不改变产品API／例子／官网行为，无需为此新增产品示例或网站代码。
+
+
 ## 2026-10-28 当前：已启动签名桌面基线，旧读窗关闭并行集成后继
 
 [完整总 Goal](supreme/goals/eko-eclip-complete-iteration-2026-10-27.md)仍包含原26项全部未完成和全部原生切换，成功标准未缩减。Root只协调、审查、依赖与集成；9个实际新会话承担实现，源码按仓／文件单一写入。普通Steer由主模型结合历史处理，已有Goal仅用户改删，Fork新Worktree从捕获HEAD开始等用户裁决持续有效。

@@ -15,6 +15,7 @@
 | governance | EKO 全量迭代：工具 插件 Hook 与能力退役 | `01a17d6c-eb8a-7162-aa71-d096b3ffec4b` | active |
 | delivery | EKO 全量迭代：官网 文档 性能 资源与发行验收 | `01a17d6c-ee85-78e3-b3a1-a6fc67ffc818` | active |
 | runtime-acceptance | EKO 全量迭代：Framework 执行场景与恢复回归 | `01a17d8e-23e1-78a3-9d3e-0d8b57c31bef` | active |
+| performance | EKO 全量迭代：性能基准与实测优化 | `01a180d8-4005-77c2-adbe-dbae6540f218` | active |
 
 ## 文件责任与正式源窗口
 
@@ -25,8 +26,10 @@
 - IM／cron作者：渠道、个人微信、scheduler与专属面板／命令／恢复，公共状态和接口变更交EKO主写入执行会话合流。
 - 工作空间／SSH／Fork作者：项目、SSH／终端、Worktree／资源迁移和分叉完整结果，公共AppState／conversations／chat UI交EKO主写入执行会话合流。
 - 工具／插件／Hook／退役作者：独立能力治理、消费者验证和专属退役；Frame Think/Final和公共facade归Frame主写入者，EKO共享文件归EKO主写入者。
-- 官网／工程作者：官网正式源，及性能／资源／问题／发行证据和可合入中文材料；总Goal／唯一交接／Master／next／本表由协调者维护。
+- 官网／工程作者：官网正式源、真实桌面制品监督与原生验收，以及资源／问题／发行证据和可合入中文材料；性能已交独立performance会话。总Goal／唯一交接／Master／next／本表由协调者维护。
 - 执行场景／恢复作者：后继新建第9个真实执行会话，制作真实ReAct的进度续跑、工具优先、校验、取消与持久恢复等完整场景回归和必要修复精确增量；新测试先在本线候选交付，既有core/types/phases/react_loop/snapshot仍由Framework主写者独占。由其及时整合并在同批稳定target执行，不另造executor或抢repo预检。
+
+- 性能作者：第10个实际会话负责精确Plan08及实测存储优化，复用原runner与完整数据／样本分母；以ignored精确patch交Framework／EKO唯一writer，源码稳定后由Root开放独占release与quiet窗口；准备不计测量。
 
 当前本机预检记录每repo只允许一个活跃owner（已读安装器 `record-preflight.mjs` 的owner匹配合同），所以各repo正式源由上述主执行会话持真实SID，领域作者并行交真实实现和定向验证，主写入执行会话及时整合。不能伪SID、改外部工具或用这个局部约束让所有工作等待；独立repo及候选实现／数据／回放／文档／审查持续并行，候选不得无限积压。
 
