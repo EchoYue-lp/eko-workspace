@@ -330,7 +330,7 @@ cargo check -p echo-agent-app-core --no-default-features --locked
 
 ```bash
 cd echo-agent
-for feature in acp a2a mcp lsp sqlite telemetry topology subagent web media \
+for feature in acp mcp sqlite telemetry topology subagent web media \
   data statistics channels git database rag chart; do
   cargo check -p echo_agent --no-default-features --features "$feature" --locked || exit 1
 done

@@ -1,20 +1,26 @@
 # EKO 总纲（MASTER-PLAN）
 
-## 2026-10-28 当前：SDK完整受控验收通过，框架进入16路径短源集成窗
+## 2026-10-28 当前：已启动签名桌面基线，旧读窗关闭并行集成后继
 
-完整总Goal仍包含原26项全部未完成和本轮native改造；Root只协调、审查、依赖与集成，实际任务由9个新创建独立会话并行执行。局部测试与交接均不代整体完成。
+[完整总 Goal](supreme/goals/eko-eclip-complete-iteration-2026-10-27.md)仍包含原26项全部未完成和全部原生切换，成功标准未缩减。Root只协调、审查、依赖与集成；9个实际新会话承担实现，源码按仓／文件单一写入。普通Steer由主模型结合历史处理，已有Goal仅用户改删，Fork新Worktree从捕获HEAD开始等用户裁决持续有效。
 
-SDK在同一真实Framework1490切点完成原 `check-language-sdks.sh` 全入口：TS387项（386通过、1个Windows跳过）、Python462通过／1平台跳过／18subtests、Java327项零失败／1平台跳过及82份fresh XML，原3quickstarts全0。新full Host SHA `01e34d1e…f8c1c` 与同源collector `53ac572f…6a9af` 的必需哈希门槛未改。SearchProvider公开retryable桥接真RED→GREEN：默认5项严格区分永久/never单次停止与typed暂态由原中央kernel三次attempt，模型只发起一次tool call。补跑Host完整lib先真227/7／101，确认7项原负控明示绑定旧f7来源；迁为固定字段深比的新native往返正控后，最终234／0失败／0忽略／0过滤／自然0、零编译warning，Source/Git guard原样实际通过。机械Delta测试编译错误原件亦保留，不给Framework强加Serialize。Root逐1248源／1490+19／binary和logSHA、实际4exec lsof空／process0／新旧target不存在核验，SDK全部reader已关闭；这仍是受控path来源，不是正式新Gitpin、accepted producer、source402／fresh或完整平台门禁。
+Framework正式16路径已采用：默认test opt-level=1保留断言、溢出检查和正常unwind；原依赖前缀／AST、锁／vendor与19个运行时路径字节未变。实际10例子check、文档15及原组合7合同均自然0、零编译／链接warning；根manifest的profile变化单列，不重写旧456保护清单。已发布source10为1490输入／35审阅路径，索引SHA `590824d2…95188`。此前ReAct407、Pending22、File30、Provider104等保留各自输入资格，不冒本次完整矩阵。
 
-Framework当前已验证10例子中的原9个corrected features check0；原四模块7合同在未优化数据图出现真实Apple ld warning，最小data独立图仍超16MiB。依据同源SDK有效opt1配置作保断言／溢出检查／正常unwind对照，data1与原组合7均真实0、零编译/链接warning，组合EH由34,340,908 B降为12,103,348 B。原两次feature编译101、旧opt0警告与全部原件不回填。Root接受最小测试profile方向；正式根profile／feature声明／demo15失效CoT调用／中文说明仍须下一正常源采用及默认profile实测，不能把env诊断票当源码默认已修。
+EKO source09实际资源完整15、GUI历史16、native冷读2、tamper1、Raw1、IM20、Subagent2、scheduler16及相关前端28均0；次数按selector记录，不能相加成独立总数。真实source未补status／approved、完整Message摘要、精确原envelope重放、关闭fixture漏接原command-cell服务、异步wrapper栈溢出及首次失败原件全保。Getter／真实readonly工厂含1／2／3层有定向资格，仍非真实模型深度验收。原两准确target均已实际clean0且不存在；Root fresh核F1490＋35／CLI1103／HEAD/index无漂移、实际Cargo/rustc为空后，按 `shared-framework-readers-20261027/root-eko-epoch18-reader-release.json` 正式关闭旧读窗。后继输入改变后必须重新发表索引，不能沿用旧票。
 
-EKO在1490切点已有getter10、真实readonly工厂2（含1/2/3层、工具正上界、越界零调用）、原scheduler12真实通过。资源链抓到并已修全Message摘要不一致、非最终合法无status历史被拒等接缝，严格未改写source的Fork／copy／删源／cold／reFork与合法进度正文仍在验证。关闭诊断的真30秒RED停在product-data、首receipt=None：手工AppFixture漏接bootstrap已创建的原command-cell service，导致其原projection flow未由正常shutdown结算；正常compose已接线，先复用原 `.with_command_cell_runtime(...)` 修fixture，不清registry、早drop或放宽physical receipt/Weak。新增scheduler4生命周期控制已交回主写，合法编辑生成新definition版本，旧occurrence冻结目的地不能随新配置改投；待完整16项实际复验。进度测试首先检查真实source approved形状，不能补status/approved或回写source换取通过。新版内嵌App构建队列已绑定原target，必要当前行为通过后继续真实桌面／SSH／微信验收。
+真实Tauri制品已完成Vite149资源、打包和本地adhoc签名，whole App保全／strict deep验签／模式字节哈希／系统动态库检查及clean后再核均0。主程序SHA `2675598a…556e7`、whole manifest `7503416e…2d1f9`，准确保全入口 `delivery/native-release-preparation-20261028/local-app-build/artifact-ready-for-root.json`。首次版本不匹配自然1、随后真实警告构建保原件；正式npmAPI精确2.12.4、任务内官方Tauri CLI2.12.4以及现有React分组补react-dom/client后，最终构建自然0且编译／STATIC／chunk warning为0；Rust锁3fb895…未改。Task工具链不改全局CLI／产品依赖；raw Cargo输入不冒实际测过的签前bundle。
 
-SDK和Frame示例reader都已Root实际核关闭；EKO诊断自然结束后亦具名交回短窗。Root重新核1490+19零漂移、HEAD/index匹配、两准确target真实lsof自然1且双空、全部Cargo/rustc/test/Host进程0，才将共享登记改为 `CLOSED_EPOCH08_ALL_READERS_RETURNED_EXACT16_F_SOURCE_INTEGRATION_RELEASED`。唯一源窗回执是 `.echo-semantic/local/shared-framework-readers-20261027/epoch08-all-readers-returned-profile-docs-source-window.json`；Frame唯一writer获准正常采用已独审16路径包（manifest `fd7337f8…44992`／patch `cadc60e0…b7129a`），只涉及测试profile、required features、demo15、中文docs/注释。原运行时／provider／loop／API／锁/vendor依赖字节不改；根manifest原dependency前缀与AST须保持，旧456保护清单原件不重算，明确列profile-only摘要变化。EKO原两target仅为这项具体必要相邻源迭代暂停保留，不得新增F依赖reader；Frame实际10例子与7合同／格式／审查后发布新索引，Root fresh核再立即重开EKO。
+签名App已沿原受控fixture实际启动并保持原exec监督：fixture session77376／PID60591监听1420和1451，App session22793／PID60669使用保全程序与原场景数据。原五处140文件已逐字节／mode／mtime独立备份及scratch回读，启动后数据是新世代，不能旧快照覆盖。用户已解锁并开启ChatGPT辅助功能／屏幕录制，delivery已实际核OS两权限为true、原App在前台且首页显示就绪，截图已保存；当前仍在正常GUI选择本地目录，未把首页就绪冒Workspace绑定或模型／工具smoke通过。先在GUI选择并核回本地scenario工作空间，再进行受控操作；源registry旧SSH选择不能由--project假定覆盖。配置QQ／飞书／微信均关闭，无自动外发。完整原生、真实SSH、微信扫码与手机收件仍各自待验。
 
-官网由所属新执行会话并行整合具名控制工具退役的源同步修补，历史ADR／迁移说明／合法同名自定义工具继续保留，不造通用禁词validator。Framework新默认构造已不注册两控制工具，但SDK正式旧f7仍继承旧行为，不能拿受控1490通过掩盖正式pin未切换。source402外部工具合同排除及原阻塞不变，不造证据／扩大排除；全部旧checkpoint来源可证明、当前完整feature/workspace矩阵、正式性能、GUI/IM/cron真实运行、SSH/个人微信手机收件、main/CI、发行发布部署仍逐项待验。Exa本地保留，禁push／merge／Issue关闭／发布部署和未推送gitlink晋升不变。
+新发现已交相邻后继批：合法已批准且实际发布的Unknown＋tool正文和statusless Reasoning被历史filter漏掉；空delta的Signed.thinking／Opaque公开summary被前端空content过滤，新增真实Vitest RED已保。Workspace作者交同原Untouched链的两场景与严格负控，EKO唯一writer修转换／共用可见内容／折叠展示，不泄露raw密文／签名、不猜phase、不放宽final确认。普通source loader另把全部Message配最后4096条event，旧pub即使仍在盘也可能丢确认；默认真实裁剪亦缺native锚点。runtime作者交两条隔离复现，EKO沿已有有界journal／恢复原语闭合，禁止无界载入或另造store／owner。当前签名App可做旧输入基线，不能当修后制品。
 
-本切片只更新原三份中文协调文档，不改变产品API／示例／官网行为，故无新的产品示例或网站代码；README品牌、outputs、native设计、四gitlinks和其它未知改动全部保护。后续短窗结束以 `shared-framework-readers-20261027/active.json`、各具名回执及新发布索引核实；下方旧日期/source/PID只保历史。
+旧Goal具名退役不再停候选：Root已在实际reader安全点向Framework唯一writer派发已审完整30（不重复采用split），SDK唯一writer薄投影1，EKO唯一writer终端入口62；治理作者同步中文文档／ADR／示例材料。保GUI／IM／cron／共享恢复／startup-error回归、GUI PTY／Agent shell／桌面四参数／SDK Host stdio、identifier与数据路径；不覆盖npm2.12.4与React修复。各仓先正常预检正式合流，Cargo／锁及删后保留面验证在新源发表后按相邻批执行，静态候选通过不等于删后编译通过。
+
+SDK受控同源完整三语及三个quickstarts已实际0；Host完整lib234／0失败／0忽略／0过滤和默认SearchProvider五个真实重试控制均0，原失败保留。全部SDK旧reader、准确新旧target已核关闭并clean。正式f7 pin／0dac锁不因受控path结果改变，SDK薄投影退役后另核新组合。Framework项目级路径依据与两控制工具退役六项有限合同证据已正常绑定；原整scope source自然1现只剩具名外部全局聚合合同#10，旧zstd全scope402另保。未修外部工具／扩大排除／伪造source0，正式新Git source与SDK精pin仍未取得。
+
+官网实际3路径源链检查修复已本地提交a11744e4，57测试／lint／docs／站点构建326路由及正常task门禁0；324正式镜像未被dirty-source材料替代，最终来源同步仍后继。正式性能安静测量、完整workspace／all-features／条件平台矩阵、精确当前消费源依赖风险门禁、保留合同与原生全场景仍未完成。Exa本地保留，不push／merge／Issue关闭／发布部署，不晋升未推送gitlink。本切片同步三份跨仓状态，并将顶层AGENTS现有feature loop删除已退役a2a／lsp两词，与Framework所属规则同步；其余验证门禁原样保留。没有新的产品/API/例子/官网行为，故无需为该协调切片新增产品示例或网站代码。
+
+当前准入以 `shared-framework-readers-20261027/active.json`、具名回执和最新发布索引为准；本节覆盖下方历史“当前”的时态，旧证据不回写。完整Goal保持active。
 
 ## 2026-10-28 当前：最终快照已发布，两条消费者重新接入
 
