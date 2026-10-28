@@ -1,20 +1,20 @@
 # EKO 总纲（MASTER-PLAN）
 
-## 2026-10-28 当前：1490 新快照已核，EKO继续实际消费者验证
+## 2026-10-28 当前：SDK完整受控验收通过，框架进入16路径短源集成窗
 
-唯一完整总Goal仍是原26项全部未完成加本轮native改造；本会话继续协调、审查和集成，实际实现由9个新创建独立会话按文件责任并行承担，不因局部通过缩小目标。
+完整总Goal仍包含原26项全部未完成和本轮native改造；Root只协调、审查、依赖与集成，实际任务由9个新创建独立会话并行执行。局部测试与交接均不代整体完成。
 
-Framework epoch08 已明确PUBLISHED_READY，Root逐1490编译输入与19审查路径SHA零漂移，并核HEAD/index、12套原run/log/input哈希及自然0、两位独审pass返回。唯一索引 `framework/repair-epoch08/published-source-inputs.json` SHA `fe585a476b8c515c98ebacf6740cb5195c433487f6692ce878c16e1e2dc77fac`。当前pending22、ReAct407（含资源3）、legacy17、File30、原预算Raw1、Driver42及echo_orchestration完整lib537、focused Clippy/fmt均真实0；Driver原37/5行为RED及更早30/10原件保留。42/537存在覆盖重叠，不相加冒完整Goal次数；Provider104/Core5为各自未变源的命名切点，完整输入差异已明列，不充当前全矩阵。
+SDK在同一真实Framework1490切点完成原 `check-language-sdks.sh` 全入口：TS387项（386通过、1个Windows跳过）、Python462通过／1平台跳过／18subtests、Java327项零失败／1平台跳过及82份fresh XML，原3quickstarts全0。新full Host SHA `01e34d1e…f8c1c` 与同源collector `53ac572f…6a9af` 的必需哈希门槛未改。SearchProvider公开retryable桥接真RED→GREEN：默认5项严格区分永久/never单次停止与typed暂态由原中央kernel三次attempt，模型只发起一次tool call。补跑Host完整lib先真227/7／101，确认7项原负控明示绑定旧f7来源；迁为固定字段深比的新native往返正控后，最终234／0失败／0忽略／0过滤／自然0、零编译warning，Source/Git guard原样实际通过。机械Delta测试编译错误原件亦保留，不给Framework强加Serialize。Root逐1248源／1490+19／binary和logSHA、实际4exec lsof空／process0／新旧target不存在核验，SDK全部reader已关闭；这仍是受控path来源，不是正式新Gitpin、accepted producer、source402／fresh或完整平台门禁。
 
-Root已将共享登记改为 `OPEN_PUBLISHED_EPOCH08_EKO_CONTINUING_BATCH` 并立即通知EKO复用原两个target，EKO已登记CLI/F冻结并启动getter10。F源码/HEAD/index保持冻结，只有EKO整批实际返回并经Root核准才释放；单命令结束或无PID不自释。Root新鲜核验原件在 `.echo-semantic/local/shared-framework-readers-20261027/root-published-epoch08-readback.json`，当前登记仍以该目录 `active.json` 为准。Framework自有epoch08 target另已保全并准确clean0，不存在目标目录；不解除EKO源冻结。
+Framework当前已验证10例子中的原9个corrected features check0；原四模块7合同在未优化数据图出现真实Apple ld warning，最小data独立图仍超16MiB。依据同源SDK有效opt1配置作保断言／溢出检查／正常unwind对照，data1与原组合7均真实0、零编译/链接warning，组合EH由34,340,908 B降为12,103,348 B。原两次feature编译101、旧opt0警告与全部原件不回填。Root接受最小测试profile方向；正式根profile／feature声明／demo15失效CoT调用／中文说明仍须下一正常源采用及默认profile实测，不能把env诊断票当源码默认已修。
 
-EKO已正式合流performance catalog-v2与bounded query两补丁，Python43/Node8/72命令契约及格式静态0，尚非性能测量。Tauri主选择已修为GUI default-run且GUI bin置首，保console显式入口；实际内嵌App仍待构建。资源链新增2个真实owned Fork组合与1个显式手工SSH绑定测试候选已独审pass交EKO：物理释放全部source持有者/Weak空、FileStore冷重开、实际分页reader逐bytes/SHA、删除原件再Fork、HEAD-only与目标无Run/Goal。候选静态不冒Rust/native；原真实readonly工厂2项在epoch10已覆盖1/2/3层及越权零调用，但factory已变，须新源复验，GUI真实模型资格另列。
+EKO在1490切点已有getter10、真实readonly工厂2（含1/2/3层、工具正上界、越界零调用）、原scheduler12真实通过。资源链抓到并已修全Message摘要不一致、非最终合法无status历史被拒等接缝，严格未改写source的Fork／copy／删源／cold／reFork与合法进度正文仍在验证。关闭诊断的真30秒RED停在product-data、首receipt=None：手工AppFixture漏接bootstrap已创建的原command-cell service，导致其原projection flow未由正常shutdown结算；正常compose已接线，先复用原 `.with_command_cell_runtime(...)` 修fixture，不清registry、早drop或放宽physical receipt/Weak。新增scheduler4生命周期控制已交回主写，合法编辑生成新definition版本，旧occurrence冻结目的地不能随新配置改投；待完整16项实际复验。进度测试首先检查真实source approved形状，不能补status/approved或回写source换取通过。新版内嵌App构建队列已绑定原target，必要当前行为通过后继续真实桌面／SSH／微信验收。
 
-SDK仍仅在同一保全full32d Host上执行原完整语言发现集合，F source reader已关闭，无新Host/pin资格。扩大测试真实发现旧final尾断言/ACK夹具及共享搜索oracle差异，原失败保留后按原生终态修夹具；框架原Permanent单次停止策略未改，旧oracle不能要求盲重试。SDK Host丢失公开retryable的实际暂态RED已定位，最小SearchProvider映射候选复用原RemoteFailure/中央retry，待新Host编译及实际GREEN；Timeout+Never原32d单次停止已真通过，Root错误推断已撤回，不能补造RED。语言最终全集、collector与正式精pin/accepted/source/fresh仍分别待验。
+SDK和Frame示例reader都已Root实际核关闭；EKO诊断自然结束后亦具名交回短窗。Root重新核1490+19零漂移、HEAD/index匹配、两准确target真实lsof自然1且双空、全部Cargo/rustc/test/Host进程0，才将共享登记改为 `CLOSED_EPOCH08_ALL_READERS_RETURNED_EXACT16_F_SOURCE_INTEGRATION_RELEASED`。唯一源窗回执是 `.echo-semantic/local/shared-framework-readers-20261027/epoch08-all-readers-returned-profile-docs-source-window.json`；Frame唯一writer获准正常采用已独审16路径包（manifest `fd7337f8…44992`／patch `cadc60e0…b7129a`），只涉及测试profile、required features、demo15、中文docs/注释。原运行时／provider／loop／API／锁/vendor依赖字节不改；根manifest原dependency前缀与AST须保持，旧456保护清单原件不重算，明确列profile-only摘要变化。EKO原两target仅为这项具体必要相邻源迭代暂停保留，不得新增F依赖reader；Frame实际10例子与7合同／格式／审查后发布新索引，Root fresh核再立即重开EKO。
 
-当前仅功能稳定快照与部分消费者资格，不是93路径提交闭合、source402修复、全部旧checkpoint来源可证明、current examples/完整feature矩阵、正式性能、GUI/SSH/个人微信实际收件、main/CI、发行或发布部署通过。外部工具合同排除、各仓精确依赖政策、Exa本地保留与禁push/merge/Issue关闭/发布部署不变。Root仅保存三份中文协调文档，不纳产品源码、README品牌/outputs、native设计或未推送gitlink；文档不改变API/示例/官网行为，因此本切片无需新增产品示例或网站源。
+官网由所属新执行会话并行整合具名控制工具退役的源同步修补，历史ADR／迁移说明／合法同名自定义工具继续保留，不造通用禁词validator。Framework新默认构造已不注册两控制工具，但SDK正式旧f7仍继承旧行为，不能拿受控1490通过掩盖正式pin未切换。source402外部工具合同排除及原阻塞不变，不造证据／扩大排除；全部旧checkpoint来源可证明、当前完整feature/workspace矩阵、正式性能、GUI/IM/cron真实运行、SSH/个人微信手机收件、main/CI、发行发布部署仍逐项待验。Exa本地保留，禁push／merge／Issue关闭／发布部署和未推送gitlink晋升不变。
 
-以下旧日期与旧源切点只保历史；可执行下一步以本段、当前共享登记及具名最新回执为准。
+本切片只更新原三份中文协调文档，不改变产品API／示例／官网行为，故无新的产品示例或网站代码；README品牌、outputs、native设计、四gitlinks和其它未知改动全部保护。后续短窗结束以 `shared-framework-readers-20261027/active.json`、各具名回执及新发布索引核实；下方旧日期/source/PID只保历史。
 
 ## 2026-10-28 当前：最终快照已发布，两条消费者重新接入
 
