@@ -1,5 +1,17 @@
 # EKO 总纲（MASTER-PLAN）
 
+## 2026-10-28 17:11 后继：六组工具已由用户裁决，B2保持有界验证
+
+用户在Root实际选择“采用这六组（推荐，页面更简洁）”：任务与协作、文件与代码、命令与运行、搜索与浏览、数据与文档、记忆与技能。分类已裁决，覆盖下文求方案的旧时态。Runtime实际执行会话01a17d8e-23e1-78a3-9d3e-0d8b57c31bef负责设计／ADR和实现验证候选；EKO唯一正式writer按函数合流，Gov继续跨会话typed来源、输入右对齐及发送跳转。实施要求是来源标签独立、分类批量仅可选项、EKO后端拒绝关闭系统必需项；复用ToolControlService／pool generation和原内存保存，不扩跨重启持久化，不把Builtin或初始曝光等同全部必需。上述新功能尚未验收通过。
+
+Root逐项重核F2805／索引0e598／HEAD及Git index零漂移，EKO整批reader租约仍开。B1两条retention实证RED→GREEN与native25通过／2具名ignored仅属于原切点。B2原94929自然101是三处测试类型导入错误、0测试；已最小改用公开AgentEvent::phase()取得同Terminal值，断言不变。actual DTO capture6398已合、1057源／metadata／已有二进制已保；真实capture／16项前端原件重放仍待执行，不能升级29／89 fixture资格。
+
+低盘准备64089因最后5GiB断言自然1，未启动Cargo。Delivery两处自有闲置产物先归档、实际解压核SHA／mode／size／mtime，再移除原物；归档／首轮漏解压失败／回执保留，signed App267559／fixture／认证后新数据均保。Root 09:11Z观测约9.25GiB空闲、真实compiler0后解除B2 hold；每条新重命令仍需实测≥5GiB、原reader终态和同源freeze。仅原target完成Core channels/test-utils、privateIO2、真实capture／16重放和必要GUI组，再保全／核reader／准确clean／具名交回。NoCompat／crosschat／六分类不无限并入此批，新App等下一F与当前CLI完整源一次重建。
+
+微信由用户亲扫且真实授权；手机16:29与16:40输入未获回复。原GUI16:43:45真实Stop传输，未Forget／logout／清enabled，旧140快照不得覆盖新认证数据。腾讯官方npm2.4.10完整性已核，optional ret规则与旧parser有确定源码差异；现场仅证解码后ret=None且无非零归一化错误，缺键／null／原类型尚未捕获，不据HTTP200或空对象变Ready。IM作者ignored准备presence/type/code/hash诊断与当前协议反控，无新poller或F热写。
+
+NoCompat只退兼容专用旧格式／控制工具路径。用户明确保留的runtime最终回答事件／回调／校验／收尾继续由唯一运行时触发，FinalAnswer通知不得机械当FinalAnswerTool删除；Guard安全正文、新版本cold／import／Fork／恢复／幂等与provider签名回传保留。各领域实际迁移当前producer／consumer后退旧支路，EKO统一处理legacy_eko_history接缝。完整原26＋新增native Goal仍active；本段仅协调落盘，产品ADR／代码／例子／官网归所属执行者同步，不给予源码／native／SDK正式pin／mainCI／发布资格，无push／merge／发布部署或未推送gitlink晋升。
+
 ## 2026-10-28 最新人类Goal编辑：不维护旧兼容，完整实现新功能
 
 用户已亲自编辑平台Goal，当前原文附件02372f06／SHAcd30e66…，与上一个原文只有末尾“不需要考虑任何兼容问题，只把功能完美实现”的新增。原字节归档 `docs/supreme/handoffs/2026-10-28-user-edited-goal-original.md`；完整总Goal已据此同步。10个实际新会话已收到明确差异，不把助手建议当人类更新；其余旧26未完、native迁移和既有Steer／Goal／Fork裁决不变。
