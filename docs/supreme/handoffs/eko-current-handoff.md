@@ -1,5 +1,18 @@
 # EKO／Eclip 当前协调权交接
 
+## 2026-10-28 最新人类Goal编辑：不维护旧兼容，完整实现新功能
+
+用户已亲自编辑平台Goal，当前原文附件02372f06／SHAcd30e66…，与上一个原文只有末尾“不需要考虑任何兼容问题，只把功能完美实现”的新增。原字节归档 `docs/supreme/handoffs/2026-10-28-user-edited-goal-original.md`；完整总Goal已据此同步。10个实际新会话已收到明确差异，不把助手建议当人类更新；其余旧26未完、native迁移和既有Steer／Goal／Fork裁决不变。
+
+旧wrapper/schema/控制工具历史或旧断点的兼容专用分支，在当前reader结束后依替代路径退役；取消的旧兼容义务如实记retired/cancelled，不虚报matched。名字带legacy但仍由当前writer生成的格式、现版本的新history/cold/import/Fork/恢复/幂等/provider签名与合理框架能力不能误删。源码冻结仍生效，原记录、失败、恢复包/tag/数据保全；外部工具合同排除和风险合同没有被此次NoCompat豁免。
+
+EKO原2 retention问题已真实A RED→B各1/0；B1完整native25/0、2具名ignored（真实SSH、独占manualperf），B2已接Provider完整8/最小import修复，正在Core/test-utils编译并修实证类型错误，未用compile失败当产品RED。旧原source/ledger保原，新切点重拍。F2805/index0e598在EKO整批租约中保持冻结。
+
+新GUI用户明确行为是跨会话交互进时间线、发送记录点击目标、所有Agent输入右对齐，Gov领域作者在新typed来源上实际实现；显示不改变人类身份／Goal权威或编辑权限。93工具折叠分类、批量启用及系统必需项不可关的具体taxonomy仍是人类求方案阶段，由Runtime会话brainstorm，不按初拟组名直接build。当前代码／资料不因“旧来源无法识别”降低新功能；不做旧wrapper双轨猜测。
+
+本节覆盖下方历史兼容承诺当前时态，原文不回填；完整Goal仍active，不从局部测试／提交／授权保存推整轮完成。Root仅Goal／协调写入，源码由实际执行会话单writer。没有push／merge／发布部署或未推子提交gitlink晋升。
+
+
 ## 2026-10-28 13:46 后继当前：十条真实执行线与完整门禁
 
 总Goal保留旧26结果的全部未完成及全部原生切换。已新建第10个实际执行会话“EKO 全量迭代：性能基准与实测优化”（01a180d8-4005-77c2-adbe-dbae6540f218），从delivery接走Plan08和实测存储优化；delivery继续真实桌面、官网、资源和发行。Root只负责协调、审查与集成，各仓正式源码仍由唯一writer采用领域增量，按文件并行。
