@@ -1,0 +1,644 @@
+{
+  "at": "2026-10-28T11:32:32.780463+00:00",
+  "repository": "workspace",
+  "base_head": "ebba50870024afae1d29a84b8d5a59d8e464f124",
+  "scope": [
+    "README.md",
+    "docs/supreme/specs/native-message-execution/design.md",
+    "outputs/branding"
+  ],
+  "patch_sha256": "8bea41ac069f2b468189b4f2f931cf1c7582a0465e27e46ec197ff12109397bb",
+  "patch_bytes": 6629822,
+  "gzip_sha256": "2d7e74de9bcc23e2a3cacef704869c259e717fa12937184dae6fe05ad51507fb",
+  "gzip_bytes": 4236865,
+  "files": {
+    "README.md": {
+      "kind": "file",
+      "bytes": 3078,
+      "sha256": "6f0e08131069ec0f905308b3c7e647cf042abaddb47210a86cb8667082b08947",
+      "mode": 420
+    },
+    "docs/supreme/specs/native-message-execution/design.md": {
+      "kind": "file",
+      "bytes": 3906,
+      "sha256": "453639f2cb082edb545b2829b32cd7a8b8708b746c2d01ddbe786b6a9c94430d",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/create-assets.cjs": {
+      "kind": "file",
+      "bytes": 3333,
+      "sha256": "ea4e5d8ab7f37dcce3885e1e5df1251e643a633bacf0e6c06dc532ab6d92f9af",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/create-soft-direction.cjs": {
+      "kind": "file",
+      "bytes": 2090,
+      "sha256": "f8bae6485c97f234ab328b00c2525a0a263ad335eae93570af381d445956d035",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-icon-dark-1024.png": {
+      "kind": "file",
+      "bytes": 57934,
+      "sha256": "9920d8a722d2f2abd6e701b54a2f63667b665aad9341c1c5bb6203e82b852c50",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-icon-dark-128.png": {
+      "kind": "file",
+      "bytes": 3746,
+      "sha256": "7642293248e5058fc5a4c9d571bad3e3c7de5261eaa7d2ee25ca95fb31751547",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-icon-dark-16.png": {
+      "kind": "file",
+      "bytes": 551,
+      "sha256": "1b452f0827bf813a15a3f46f6d284047764038c65515fe3507c5cbe898dc1e0f",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-icon-dark-256.png": {
+      "kind": "file",
+      "bytes": 8183,
+      "sha256": "3087a3529b491af2834d07fd92962065f8fb87a21d4ca24c117b1f42ce5fcea3",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-icon-dark-32.png": {
+      "kind": "file",
+      "bytes": 951,
+      "sha256": "d1d1bfe82dc9cee2b91002ec6e067037b1f64ce1a383e3cbdc8f2753e4230f7c",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-icon-dark-512.png": {
+      "kind": "file",
+      "bytes": 21404,
+      "sha256": "9ad5fbd60c69a768a5132b76c3dc3d1f2ed4e5551ef8a4d6d5ff11b98315514f",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-icon-dark-64.png": {
+      "kind": "file",
+      "bytes": 1830,
+      "sha256": "dc14e36b9b37402da6770cd6269b5377d35640c595413b2799b5d988476f8e6b",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-icon-dark.svg": {
+      "kind": "file",
+      "bytes": 776,
+      "sha256": "1dc4c839b3599d49ae351d75321fe64661f1bdd51fe9ad5914432c3d37e73c44",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-icon-light-1024.png": {
+      "kind": "file",
+      "bytes": 56775,
+      "sha256": "3412b342afec1f2532819ab570229ba4e46aa2f888bb971b34c5db99690dc0fe",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-icon-light-128.png": {
+      "kind": "file",
+      "bytes": 3656,
+      "sha256": "7028d15eecd23b4de1dfb86ab2e0acbd3d96148b012eeabdc4efa0593314c14e",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-icon-light-16.png": {
+      "kind": "file",
+      "bytes": 541,
+      "sha256": "afa513833a9feaee9bdc8add8d71bbf3e4cfb01c6ad0517c5ebbbd6b13046ec1",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-icon-light-256.png": {
+      "kind": "file",
+      "bytes": 8055,
+      "sha256": "da174b6ab079a15ed13145f1c3614c2902db24338a11dc916b6b05418845e096",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-icon-light-32.png": {
+      "kind": "file",
+      "bytes": 956,
+      "sha256": "5541c8462e344d26ff673f3cdce0d620263b79561adbb303e436a51bfd03a6b9",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-icon-light-512.png": {
+      "kind": "file",
+      "bytes": 20925,
+      "sha256": "14ac2cff872bf9f478af8e97cf7999d4b4716fce5ad5b7fadc1826b9d15f2661",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-icon-light-64.png": {
+      "kind": "file",
+      "bytes": 1803,
+      "sha256": "d90d452f4c7e04583bb4ad6eb16112499da105f0c0fcbf1cc49e0bfc4d9ba414",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-icon-light.svg": {
+      "kind": "file",
+      "bytes": 776,
+      "sha256": "c2db182cbaf906164fdfb065b307501d65b940cb9242b8abad6cc69c06449f59",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-logo-dark.svg": {
+      "kind": "file",
+      "bytes": 703,
+      "sha256": "be91d2d65a5f96fff32356007410cc7e69e4b35a02cdfd39cce3a64066aba2e7",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-logo-light.svg": {
+      "kind": "file",
+      "bytes": 703,
+      "sha256": "4425da511a7871bae106eb15adf5519f93b2800a740310afade5ff5722087dc1",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-logo.png": {
+      "kind": "file",
+      "bytes": 23487,
+      "sha256": "f6e1dff1521d120deac272e18cccdafccaaa528f31115d6f71962230341a68b8",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-soft-clay-1024.png": {
+      "kind": "file",
+      "bytes": 50242,
+      "sha256": "d4151f7cd35e750c5faed3f1113936dd46026fb3071dbb786e64b387882a5259",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-soft-clay-128.png": {
+      "kind": "file",
+      "bytes": 3325,
+      "sha256": "af79ff731ddd5e3bf01d70868d25a99e0913fc421d1e5cdce09e9ed7da5f903b",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-soft-clay-16.png": {
+      "kind": "file",
+      "bytes": 472,
+      "sha256": "b7be9471139e3e9d41d8ee94a988ffffd6b3a359f5fa34d81e0306dd37b96dbe",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-soft-clay-256.png": {
+      "kind": "file",
+      "bytes": 7291,
+      "sha256": "3aa7d9b7daa51454e733f94388dd5e5ca231a4ae0ac49678e600ed03ef99d5d4",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-soft-clay-32.png": {
+      "kind": "file",
+      "bytes": 873,
+      "sha256": "85a84968d8c7449d66499b5f8f0eacd7d5e1b1bdc56ed64fb8efc497000f385d",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-soft-clay-512.png": {
+      "kind": "file",
+      "bytes": 18421,
+      "sha256": "b5edc3f66d5c6032cfdd32290521e66bd4fda5614a2514889e03ef124f19c91d",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-soft-clay-64.png": {
+      "kind": "file",
+      "bytes": 1605,
+      "sha256": "49a6099de978a0bcca6d3fb47d80097bf1f4ce224c24e3a58d18888a92211c05",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-soft-clay-icon.svg": {
+      "kind": "file",
+      "bytes": 553,
+      "sha256": "38f3031510c3f76c00447277e61a24f54a2021d8fe1bfd5a1881c6afc2fff971",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-soft-clay-logo.png": {
+      "kind": "file",
+      "bytes": 21319,
+      "sha256": "adb136e41691990ba9ff33dc671ee823e07c0e62da223cfb7237952a842bb7f7",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-soft-clay-logo.svg": {
+      "kind": "file",
+      "bytes": 596,
+      "sha256": "a14959a05529c5b00b51e64a076c514a181d5203414250d361e7d5b5919c4f20",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-soft-clay-symbol.svg": {
+      "kind": "file",
+      "bytes": 410,
+      "sha256": "0338292dfd7f916c957aad68026a422bf5f9924208527a521353b33f3367365e",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-soft-ink-1024.png": {
+      "kind": "file",
+      "bytes": 50923,
+      "sha256": "129ddb3644bf4d7d6d479132533abb46fa00d7c0da5b3c54964c1b840194b3f3",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-soft-ink-128.png": {
+      "kind": "file",
+      "bytes": 3406,
+      "sha256": "2c5a94c1a425a4a0abe521ed1ee040fe76d6ccdc6e599a6319048e718ea60a70",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-soft-ink-16.png": {
+      "kind": "file",
+      "bytes": 485,
+      "sha256": "7e44f4ec5052ec5fedd0d798f41aa47f1adda0de090ffcbf61034f20532fcdba",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-soft-ink-256.png": {
+      "kind": "file",
+      "bytes": 7486,
+      "sha256": "661d55e985a6c2d07198e284abbd1df246cf8e2d41d7312e5e73e5427705d52b",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-soft-ink-32.png": {
+      "kind": "file",
+      "bytes": 905,
+      "sha256": "991443eed540cf63a1f83aafd16052735a7030895040b0bb530601597d6f0e97",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-soft-ink-512.png": {
+      "kind": "file",
+      "bytes": 18769,
+      "sha256": "e864cca29035de1cb8108ed3c1a0e7c59b69cb2bb835f9c6ae6301e3ac8af64c",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-soft-ink-64.png": {
+      "kind": "file",
+      "bytes": 1652,
+      "sha256": "fe3b224c2b6cb0fee436e3b3a27fdaa481499c2ee09594e8bd3358a83c7b8f11",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-soft-ink-icon.svg": {
+      "kind": "file",
+      "bytes": 553,
+      "sha256": "6d68dd990a37c8c8ddf30e9e3608f665850621e2d1ac46de05f6fb5f47c25fa9",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-soft-ink-logo.png": {
+      "kind": "file",
+      "bytes": 20888,
+      "sha256": "cad84cf0d59a25c8a457b9181148200e422a641756ca11332bd4d55f7b9f7200",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-soft-ink-logo.svg": {
+      "kind": "file",
+      "bytes": 596,
+      "sha256": "7607901fc38cdb1ad4640c8b468c3aee91c2abd30d06f25be960d70645db1c58",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-soft-ink-symbol.svg": {
+      "kind": "file",
+      "bytes": 410,
+      "sha256": "a1cb494a5d4ae3fbb19ebc7fd50c2047e96cc0e37866f0df61202a76c29b79a7",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-symbol-mono.svg": {
+      "kind": "file",
+      "bytes": 536,
+      "sha256": "57b654da945937dde903cac55364b7e6b8d6e06a603183afbcca588fa7eb68b8",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-symbol.png": {
+      "kind": "file",
+      "bytes": 26296,
+      "sha256": "b688cf91cbc5c9a43c11563119ce928bd7d0358b86b14cd86d12979de5bf82a9",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/echoleap-symbol.svg": {
+      "kind": "file",
+      "bytes": 521,
+      "sha256": "94a4f3c06d31ff2414d1d824a9c0c1fab3a467ef96bf255be92805be57e74949",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/minimal-cat/echoleap-cat-1024.png": {
+      "kind": "file",
+      "bytes": 50080,
+      "sha256": "4529ee199f5472a98f16f9c90122a226ae2f050ee9623eb9073f134a0dfc3cf9",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/minimal-cat/echoleap-cat-128.png": {
+      "kind": "file",
+      "bytes": 3724,
+      "sha256": "7f432cfc589c89c02839e1509f3e93bef1e82220118759c1ff57b0f06e117a21",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/minimal-cat/echoleap-cat-256.png": {
+      "kind": "file",
+      "bytes": 8037,
+      "sha256": "97b4b408718c6e0464933c78a75e349b49caebf2326ce9aa5e2fcf948098795f",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/minimal-cat/echoleap-cat-32.png": {
+      "kind": "file",
+      "bytes": 910,
+      "sha256": "013cb079f8dadf83a921ebf1ebd67b16bd64db6f4f0d94c3e720c66883cb4fe8",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/minimal-cat/echoleap-cat-512.png": {
+      "kind": "file",
+      "bytes": 19160,
+      "sha256": "b9f696c9d793b77cb708b34de06ed13399f568935fb8075e4c6c22883278f1be",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/minimal-cat/echoleap-cat-64.png": {
+      "kind": "file",
+      "bytes": 1805,
+      "sha256": "94a23331852d826a852bb904168679f9ecf5ed7b592d6d6b89411feee03e582f",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/minimal-cat/echoleap-cat.svg": {
+      "kind": "file",
+      "bytes": 1541,
+      "sha256": "bda8f4f959b87c5b09e8a4ee4d9c9b5a098b59063b6a7a1529c65503e1247bf1",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/minimal-cat/render.cjs": {
+      "kind": "file",
+      "bytes": 647,
+      "sha256": "abe7f8958c6f792819b3accd1e2396b46a12986d2751ece73e0c4d81348e3c53",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-head/echoleap-ragdoll-head-1024.png": {
+      "kind": "file",
+      "bytes": 137028,
+      "sha256": "ad41152510d956218451a803567489a3ffe528700a606fb4e6a8f469a40319b3",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-head/echoleap-ragdoll-head-128.png": {
+      "kind": "file",
+      "bytes": 11291,
+      "sha256": "9c4a5d7ec149208429ee836ad8e12e1c49e980a35baa560d319cbb563cd39b35",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-head/echoleap-ragdoll-head-256.png": {
+      "kind": "file",
+      "bytes": 26711,
+      "sha256": "16b51500b625d3a25954bd8b3b82210c5d93535b73cc262c1688febf11e5e401",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-head/echoleap-ragdoll-head-32.png": {
+      "kind": "file",
+      "bytes": 1506,
+      "sha256": "dfab2a0987de24d137cfe26314725b5df09659a912005bfc7246002e9179e964",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-head/echoleap-ragdoll-head-512.png": {
+      "kind": "file",
+      "bytes": 61006,
+      "sha256": "ca949c401fa67806174fea101c473ce662dd888da506efb951def6fd1199a573",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-head/echoleap-ragdoll-head-64.png": {
+      "kind": "file",
+      "bytes": 4051,
+      "sha256": "bc2d1ad6b1c417d4781282f343bba274fc7bc5df599fce48b589cffda455c20a",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-head/echoleap-ragdoll-head-v2-1024.png": {
+      "kind": "file",
+      "bytes": 111712,
+      "sha256": "21d557c5b64245070df14cbf6cd09bf0d6ee2f1abdb508a06354ab4552f10fee",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-head/echoleap-ragdoll-head-v2-128.png": {
+      "kind": "file",
+      "bytes": 8799,
+      "sha256": "058d39600e5d6cba769bf1b3bf464bbf42ed4d47817456a061be6eb5696e8fe3",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-head/echoleap-ragdoll-head-v2-256.png": {
+      "kind": "file",
+      "bytes": 20668,
+      "sha256": "9d2118b10b394a8a266effbcce8b747ed7d0906f4327eee2f784e0173586252e",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-head/echoleap-ragdoll-head-v2-32.png": {
+      "kind": "file",
+      "bytes": 1269,
+      "sha256": "c046cd19b435ebf5cacb67f10c15df8a172b728d16daa148abc05a4c713205a0",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-head/echoleap-ragdoll-head-v2-512.png": {
+      "kind": "file",
+      "bytes": 47714,
+      "sha256": "f92765a37903a559ff196003bb3a2c9c57a019b95666f640afe1e8e6e1b1dd85",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-head/echoleap-ragdoll-head-v2-64.png": {
+      "kind": "file",
+      "bytes": 3409,
+      "sha256": "3a90faf05ace068de96d7d628bacd3ee45e056c00b10b2e34286aa1a9a7aba1d",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-head/echoleap-ragdoll-head-v2.svg": {
+      "kind": "file",
+      "bytes": 7076,
+      "sha256": "7cec142feaa247874b2d7154ea5ba4a3dff82327c004741cef518fc026001658",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-head/echoleap-ragdoll-head.svg": {
+      "kind": "file",
+      "bytes": 8944,
+      "sha256": "fd1364675f5668c9f77c1846b7ad8525d8d5feb67f5b2ab77dae1518154bfb77",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-head/render-v2.cjs": {
+      "kind": "file",
+      "bytes": 638,
+      "sha256": "9672339c72493ddb60144fdad7fb561861532164a27bccac8f10788ff9390b1f",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-head/render.cjs": {
+      "kind": "file",
+      "bytes": 615,
+      "sha256": "d12964f69af19f485e9b1708ca1eeb7d930e871123bdccbf44500f1b9839d965",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-reference/echoleap-ragdoll-cartoon-1024.png": {
+      "kind": "file",
+      "bytes": 109900,
+      "sha256": "a4897be353c40e4eaa66108e886c62a0f0c2e554daa3ba2edc4270c8606b74b0",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-reference/echoleap-ragdoll-cartoon-128.png": {
+      "kind": "file",
+      "bytes": 9422,
+      "sha256": "5e675c6a0a3fbaf2d4a08cf903ab97833353cb2aa9bd65ae409cfd7d52aac93f",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-reference/echoleap-ragdoll-cartoon-256.png": {
+      "kind": "file",
+      "bytes": 21045,
+      "sha256": "7d1be543ca815d974c4e762c4eb9570b38d9408bb072f14fb6f59eacbd867cb9",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-reference/echoleap-ragdoll-cartoon-512.png": {
+      "kind": "file",
+      "bytes": 47230,
+      "sha256": "521c8f3aa293e24584724a8936d26226c6ebc927328ca20bc8e5fc5656c2f565",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-reference/echoleap-ragdoll-cartoon-64.png": {
+      "kind": "file",
+      "bytes": 4097,
+      "sha256": "53bab44ff7b90e45fb9b61f3924eaf0aacddc3c26bbf4e05601da7090d51d042",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-reference/echoleap-ragdoll-cartoon.svg": {
+      "kind": "file",
+      "bytes": 7369,
+      "sha256": "797abe45e605d4d955e0518e6688060f91c89032d2e56d56ec56828bbd725fef",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-reference/echoleap-ragdoll-portrait.svg": {
+      "kind": "file",
+      "bytes": 666318,
+      "sha256": "5fa548b4425ae5c78a14e2060edcd303a4364c077d1c49ec8453484bb5a3f004",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-reference/echoleap-ragdoll-simplified.svg": {
+      "kind": "file",
+      "bytes": 546092,
+      "sha256": "72331805432ee985877f9103094adce2e4de4042eb6294a15596530858b91c21",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-reference/head-mask.png": {
+      "kind": "file",
+      "bytes": 8291,
+      "sha256": "43848f222352200cd2b2a6d0e6ff8ec282cc2a9009e382753432a6c43e52d048",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-reference/head-mask.svg": {
+      "kind": "file",
+      "bytes": 651,
+      "sha256": "17f32ff088c5e59d4d435b9739b1a34fd0c2a0f160c983c328e801f50a24785f",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-reference/prepare-reference.py": {
+      "kind": "file",
+      "bytes": 731,
+      "sha256": "92c1248e0c6b8229afa4e42764aed99edcc60ef84d879fda88881d23a1825328",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-reference/reference-head-crop.png": {
+      "kind": "file",
+      "bytes": 349846,
+      "sha256": "cd7399557c0691b14dde699c499f5364d6bf2d9fe62943611d8d056deeda9fa0",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-reference/reference-head-cutout.png": {
+      "kind": "file",
+      "bytes": 328978,
+      "sha256": "0bf303b3b998c8ff283943ad606df479a5e03c02876b8b80463926eede23ee52",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-reference/reference-head-on-sky.png": {
+      "kind": "file",
+      "bytes": 629290,
+      "sha256": "52720a2617c764fab871a5eb702106e8249538ce63a30937f02aecf3924dbd05",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-reference/render-cartoon.cjs": {
+      "kind": "file",
+      "bytes": 763,
+      "sha256": "aa1426bf58fa307abcb26df98aa3b961b9c3641027eaf80ebe63919127b08506",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-reference/render-vectors.cjs": {
+      "kind": "file",
+      "bytes": 679,
+      "sha256": "614fcd707457592675fc57ee82f1a3cee306d9e83229ff873c722a8c0defa2fb",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-reference/trace-input-portrait.png": {
+      "kind": "file",
+      "bytes": 115509,
+      "sha256": "62c384e7457c60fa7064a1a0399851990fefe226f977170b82a6156cfe35669e",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-reference/trace-input-simplified.png": {
+      "kind": "file",
+      "bytes": 77096,
+      "sha256": "88ee34cbdefa0acba0110c5e0f2c484b068c16891c79245948ddc131ef1951f8",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-reference/traced-portrait.svg": {
+      "kind": "file",
+      "bytes": 665300,
+      "sha256": "1907cffcc80b358e57af4452ff00440e5f8033e6ff2d85d12767bb1768317f56",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-reference/traced-simplified.svg": {
+      "kind": "file",
+      "bytes": 545201,
+      "sha256": "f4a2ad527befe1a110714fb0ca7db70bded012433012da923b7ea71863a373a2",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-reference/vectorize-reference.py": {
+      "kind": "file",
+      "bytes": 2235,
+      "sha256": "248ea8765774948b8b11be4c3d4761f51a1445e08cf05e6659424472182b4b14",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll-reference/working-grid.png": {
+      "kind": "file",
+      "bytes": 351353,
+      "sha256": "e04a4dd9f118dfbf9ebb743b9af7ca5c03fb4d3f2df83555b2bad9f68d47f9b2",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll/echoleap-ragdoll-preview.png": {
+      "kind": "file",
+      "bytes": 114388,
+      "sha256": "945b09d5759434e532439b7b2fcea772536fade12a362f4af88ecdbaf790e92d",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll/echoleap-ragdoll-transparent.png": {
+      "kind": "file",
+      "bytes": 113258,
+      "sha256": "8a8ff118b2df8bac632bd17e2e8c703158f60c4647c828404528295f937b042a",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll/echoleap-ragdoll.svg": {
+      "kind": "file",
+      "bytes": 8395,
+      "sha256": "5446c5d2ff19de0f65983c612e999e580df1b42d428c3efa7c89a560a1f46751",
+      "mode": 420
+    },
+    "outputs/branding/echoleap/ragdoll/render.cjs": {
+      "kind": "file",
+      "bytes": 693,
+      "sha256": "aac383b850e6b00edb049ae0502a07308d58408744b31eb81e9830cbc9bfbeda",
+      "mode": 420
+    },
+    "outputs/branding/eclip/pig-preview/pig-head-1024.png": {
+      "kind": "file",
+      "bytes": 53059,
+      "sha256": "92be81cfc1b56ec5385ff48fac8d8ea4be08432be7ca8568a747017514f04f6f",
+      "mode": 420
+    },
+    "outputs/branding/eclip/pig-preview/pig-head-128.png": {
+      "kind": "file",
+      "bytes": 4012,
+      "sha256": "2c64d61436dd0c67d4e41c52d9fc7128811a6f5aac6512762794f483fec10762",
+      "mode": 420
+    },
+    "outputs/branding/eclip/pig-preview/pig-head-32.png": {
+      "kind": "file",
+      "bytes": 1015,
+      "sha256": "7934e04439a8ed07d967efaf26c54554793938d40b98df5dfbb0a06a4c066c13",
+      "mode": 420
+    },
+    "outputs/branding/eclip/pig-preview/pig-head-512.png": {
+      "kind": "file",
+      "bytes": 20342,
+      "sha256": "c1e84864ca10245051eee9c53cf642a2efca955fcc904445a094763bb06403e7",
+      "mode": 420
+    },
+    "outputs/branding/eclip/pig-preview/pig-head.svg": {
+      "kind": "file",
+      "bytes": 1670,
+      "sha256": "dd42959b8d0b7b2315ddd201f64443a6e6b2ecab99cb0b7a6c8cb4657461a334",
+      "mode": 420
+    }
+  },
+  "restore_check": {
+    "actual_git_archive_and_git_apply": true,
+    "all_file_bytes_modes_links_and_deletions_match": true,
+    "checked_paths": 103,
+    "source_before_after_identical": true,
+    "production_not_modified": true
+  },
+  "qualification": "可恢复源码保全；不代表候选采用、编译、语义校验、原生验收或发布通过",
+  "scratch_and_logs": ".echo-semantic/local/user-maintenance-cut-20261028/restore-source-check/workspace",
+  "no_push_merge_or_gitlink_promotion": true
+}

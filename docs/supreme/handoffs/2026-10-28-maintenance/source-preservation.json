@@ -1,0 +1,75 @@
+{
+  "at": "2026-10-28T11:32:32.789940+00:00",
+  "goal_status": "paused",
+  "user_request": "暂停迭代，先提交现有代码并清理中间产物",
+  "repositories": [
+    {
+      "repository": "echo-agent",
+      "base_head": "0e404185c8f252da3e335c35547e52249c74dc65",
+      "patch_sha256": "258227c872929478ae73cb33ca0ee8b45313be2839236c28748731b7044de68a",
+      "patch_bytes": 4797142,
+      "gzip_sha256": "b8c27dc5d673a7f1618b20e61414c2013b160a10476fc3045b549fa9433a94b9",
+      "gzip_bytes": 945740,
+      "restore_check": {
+        "actual_git_archive_and_git_apply": true,
+        "all_file_bytes_modes_links_and_deletions_match": true,
+        "checked_paths": 2821,
+        "source_before_after_identical": true,
+        "production_not_modified": true
+      }
+    },
+    {
+      "repository": "echo-agent-cli",
+      "base_head": "080e0b698c664105f789f522779a985f93b4f71b",
+      "patch_sha256": "2db6b297e834cfe41776f2c15a287c669a1618b3b5882d165e3d9158215b6211",
+      "patch_bytes": 2933581,
+      "gzip_sha256": "5fd3d8acdde294b51c3fd1b63fb7a6661e08e2287ca4159fc721398219b9ab3d",
+      "gzip_bytes": 629459,
+      "restore_check": {
+        "actual_git_archive_and_git_apply": true,
+        "all_file_bytes_modes_links_and_deletions_match": true,
+        "checked_paths": 1111,
+        "source_before_after_identical": true,
+        "production_not_modified": true
+      }
+    },
+    {
+      "repository": "echo-agent-sdk",
+      "base_head": "525453fc9b9448358cc8a2f46bbcf401b10943ec",
+      "patch_sha256": "f8fe2b47f90e35170f65793d2e7e99c3a915a09c979dcf6b703266b20681261b",
+      "patch_bytes": 11713092,
+      "gzip_sha256": "010388b1661019937a44afdd78fa619e1d80eca63ae782052c6d78f5ba8807c5",
+      "gzip_bytes": 882002,
+      "restore_check": {
+        "actual_git_archive_and_git_apply": true,
+        "all_file_bytes_modes_links_and_deletions_match": true,
+        "checked_paths": 1283,
+        "source_before_after_identical": true,
+        "production_not_modified": true
+      }
+    },
+    {
+      "repository": "workspace",
+      "base_head": "ebba50870024afae1d29a84b8d5a59d8e464f124",
+      "patch_sha256": "8bea41ac069f2b468189b4f2f931cf1c7582a0465e27e46ec197ff12109397bb",
+      "patch_bytes": 6629822,
+      "gzip_sha256": "2d7e74de9bcc23e2a3cacef704869c259e717fa12937184dae6fe05ad51507fb",
+      "gzip_bytes": 4236865,
+      "restore_check": {
+        "actual_git_archive_and_git_apply": true,
+        "all_file_bytes_modes_links_and_deletions_match": true,
+        "checked_paths": 103,
+        "source_before_after_identical": true,
+        "production_not_modified": true
+      }
+    }
+  ],
+  "website": "HEAD a4b5ec1d85579164fd065a59b2372b905b3dff2d clean at maintenance cut; no new diff",
+  "excluded": [
+    "ignored用户数据/授权/配置/真实消息",
+    "build targets/二进制/巨大原始日志",
+    "子仓Gitlink晋升",
+    "root node_modules测试缓存"
+  ],
+  "code_in_product_worktrees_unchanged": true
+}
