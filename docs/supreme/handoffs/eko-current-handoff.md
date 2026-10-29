@@ -22,6 +22,10 @@ SDK后继首片已正常保存 `b0c597bd17de6428694658257ef8ac530b3756a3`（53�
 
 后继Framework r02冻结127d233e/2831最小production check0/零warning，8文件差异与scope见原entry/资格回执。Provider metadata目标56通过，当前225两个旧tuple精确错误变体断言正在test-only修正后收口，不宽Err或改生产。Root为SDK full producer额外冻结原合同nightly-2026-08-06：专用主目录RUSTUP_HOME、66110成员全比对、真实rustdoc JSON61探针0；普通Rust继续stable私有epoch。这个环境不能替Git source前置、完整producer/mainCI或正式新pin资格。具体私有路径、hash与恢复读窗见任务总表，所有已运行会话继续，不重新创建/派发已经在途的批次。
 
+最新EKO前端独立18路径已正常保存 `f8fbf3697bf5e7976ee1cd271570766269935bb5`。HEAD896+准确18的独立1077文件副本实际344/0/0、types/lint/format0，Root辅助只读独审C0/I0/M0，当前normal r02 source/final0及317项taskEvidence逐SHA无漂；18暂存/commit blob均匹配freeze19b61374，未夹全部Rust与4个native前端文件。内容为crosschat时钟/缺失来源、HITL晚到错误/焦点、private真实组件性能接缝，原件见CLI `frontend-independent18/root-return.json` 与Root `root-frontend18-review-20261029/commit-proof.json`。已释放读窗，唯一writer沿新HEAD继续后端两失败；没有以此授新App/SSH/手机/paint或完整矩阵。
+
+Provider r05原协议225实际全绿，Root核2828快照/原log/225唯一段/外存库及正式integration依赖一致；旧223/2和warning失败保原。全diff域A后继又发现Anthropic/Responses缺native ID时内部fallback进入Source的未覆盖风险，两原作者正补实际RED与最小修复，旧225不认证新源。Critic屏障失败已由真实diag定因为测试Store漏转发原ACK、模型未调用，修后同两函数仍待。SDK继续strict/ACP及完整生成准备，真实file-Git preview须待正常Framework新commit，正式0dac锁不得自动继承4a的+95/-92 registry变化；26动态profiles及私有nightly环境边界见任务总表。源码审查、完整门禁与真实验收继续，不回退暂停，也不把局部里程碑当总完成。
+
 ## 当前维护状态：代码已保存，完整 Goal 暂停
 
 本轮以用户“先暂停迭代，提交全部现有代码并清理中间产物”及明确的本地 WIP 许可为准。平台 Goal 已设置为 **paused**，内容及全部未完成要求保留；本次维护结束后不自动恢复功能工作。下方受控续跑段记录此前切点，不是本轮恢复授权。
