@@ -1,10 +1,14 @@
 # EKO 总纲（MASTER-PLAN）
 
-## 2026-10-29 最新执行状态：明确恢复完整并行迭代
+## 2026-10-30 最新执行状态：完整迭代继续，Framework 新反例验证
 
 用户最新 Goal 已明确本次更新即恢复授权，替换下方旧暂停时态。Root `01a18588-9a70-7552-912f-477ac52cbe39` 复用十个真实执行会话及原候选/失败继续；唯一现场仍为本主目录，不新建外部 worktree。当前完整分工、原 26 项及新增原生消息/终态/进度/六工具组/跨会话范围见[任务总表](supreme/handoffs/2026-10-29-active-resume/任务总表.md)，最新现场见[唯一交接](supreme/handoffs/eko-current-handoff.md)。
 
-恢复时先读唯一交接顶部“当前执行快照”，再核实际句柄。EKO最后取消收尾已获r10真实后继GREEN：原24/stale＋新rate2及旧aggregate/rate共28p0f0ignore，compile0/W0；同binary原24在原5秒内实际driver/renderer/deferred EOF/execute-claimed/pump全返回。Root核1078源/模式、raw/binary/28名字及七marker0漂，原43失败仍需最终同源workspace复验。原八门已开，fmt两门/fullClippy/strict前四项均0/W0；当前cargo23526/rustc23548/23549执行workspace编译，不重启。风险有限新调用边C0/I0/M0，不签最终票，policy/原fresh双scan后置；SDK3fcb8d0 clean、F fresh依赖0/source8未闭保持。四Swift helper已编译0/诊断0B，未执行AX/App；五仓64REST原件完整、21旧main checks成功/top无记录、203Finding无变化，一次无效schema原raw覆盖缺口如实保。误建测试worktree经归档1077 SHA/mode回读后正常移除，branch/对象保留；capture/App/native/pin/global/producer/main/发布仍待。
+恢复时先读唯一交接顶部“当前执行快照”，再核实际句柄。EKO r10原28/实体EOF已绿，八条原门禁已结束七通过/workspace2214p3f14ignore/101；required86与原43失败名在该源实际日志均ok，但不冒完整workspace绿。11实际bin的SHA/size/mode全回读、官方clean0/target不存在，Root proof c1444c28…；capture/App暂待真实新F组合，R11仅三test输入修正/诊断源审未运行。F source8已分清合法仓内工作：8Asset五组独立只读审查发现六代码及当前文稿反例，不能用40resolved或旧4183绿清父状态；原前7的旧20path Eq误用也需真实保留/退出义务材料，不再先判全部外部无解，不伪matched/unknown或修工具。F sole writer接唯一heavy窗，R23＋机械Provider seam/test-only四包before源447b0646…/2836经Root全hash/mode0漂，真实r02 cargo79435及rustc后继在途，尚无行为RED；原launcher TypeError不当RED。六问题最小修复/新测试及文稿同步在真实推进，Tool expected Arc公开Rust签名的SDK边界已查，with_base_dir解析残余仍须完整解决，glob候选两个新边界先修。Provider初始GUI fixture9953…已Root选择但未启动/30离线限定，4Swift helper编译不等native；真实配置仅allowlist确认、269+4非原子备份/旧140不可覆，旧Token7和payload2三份不可冒当前Reader可读。SDK3f clean/正式pin、source/Gov、最终consumer/双fresh/App/native/SSH/手机/quiet/main/发布仍待；无push/merge/gitlink晋升。
+
+F首批实际结果已返回：四包test-only编译0/W0、真实opt_level1/debug0，17=6p11f0ignore，Root raw/receipt/4bin和失败名均核同，proof4ab84626…。Green r03 no-run自然0却四artifact全fresh且实际4bin同before，Root已拒其新源资格并保原0；官方仅4package clean已自然0、四旧exe在重建前真实消失/依赖暖cache保，distinct r04实际cargo99908重建同源01db/op1/debug0，必须fresh=false/新bin后才取后继，尚无修后GREEN。TP3 with_base_dir/source事实hook与既有SDK custom effects保真、glob原支持UNC prefix仍是明确未闭边界，不用局部case绿或旧4183绿代整目标；完整重型窗仍F唯一持有，EKO/SDK不另Cargo。
+
+以下为分阶段保存记录，涉及“当前／正在”的字样仅表示各自历史切点，不覆盖上方本次实查。
 
 最新工程切点：Framework R20 的前 22 条工程命令均自然退出 0、无编译警告；完整 workspace/all-target/all-feature 测试为 4183 通过、0 失败、4 忽略，288 项必需名称和独立 45 项 Subagent 场景全部实际通过。两项性能忽略和两项条件式真实服务忽略分别保留。原官方依赖扫描两次在 GitHub fetch 超时，源码语义门禁仍未通过，不能称整个框架已交付。66 件必要制品已保存并由 Root 重新核验，准确自有 target 官方清理成功。独占构建资源已交 SDK：冻结 R20 框架与 SDK c9d07ca，最小私有锁解析后正执行完整 stdio Host、Rust 与原三语言端到端批次；正式 pin、锁、风险合同和 producer 未因此晋升。EKO 同源最终 GUI 批次继续准备，真实 App、SSH、手机收件、性能、main CI、发布部署及完整 Goal 均未完成。
 
