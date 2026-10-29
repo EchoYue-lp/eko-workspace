@@ -4,7 +4,7 @@
 
 用户最新 Goal 已明确本次更新即恢复授权，替换下方旧暂停时态。Root `01a18588-9a70-7552-912f-477ac52cbe39` 复用十个真实执行会话及原候选/失败继续；唯一现场仍为本主目录，不新建外部 worktree。当前完整分工、原 26 项及新增原生消息/终态/进度/六工具组/跨会话范围见[任务总表](supreme/handoffs/2026-10-29-active-resume/任务总表.md)，最新现场见[唯一交接](supreme/handoffs/eko-current-handoff.md)。
 
-恢复时先读唯一交接顶部“当前执行快照”，再沿会话和原始机器文件确认在途任务。最新：EKO前端原三门已0、884p0f4skip，reader/原件Root复核后窗口已还SDK。SDK原Rust566/03..09已0，语言首轮TS396p14f1skip、PY473p11f1skip＋18subtests、Java337总10fail2error1skip保原、三quickstarts未到；SDK统一修复/独审、focused及原完整caller继续，Provider原consumers只读因果已交，不重复未影响Rust。EKO完整Rust/GUI/App未开。下方历史不代最新指令或资格。
+恢复时先读唯一交接顶部“当前执行快照”，再沿会话和原始机器文件确认在途任务。最新：SDK语言r06／bf71469d…/1294已独审、task source0和TS25/PY26/Java21 focused全0，原完整caller在途（TS全410p0f1Windows skip及quickstart已执行，Py完整继续）；66 Rust/锁未改，复用原Rust566/03..09/A99/12249精确范围，旧失败不抹。EKO前端三门0/884p4skip已交窗，4skip为原性能suite条件fixture未供，完整Rust/GUI/App待后继窗口。下方历史不代最新指令或资格。
 
 最新工程切点：Framework R20 的前 22 条工程命令均自然退出 0、无编译警告；完整 workspace/all-target/all-feature 测试为 4183 通过、0 失败、4 忽略，288 项必需名称和独立 45 项 Subagent 场景全部实际通过。两项性能忽略和两项条件式真实服务忽略分别保留。原官方依赖扫描两次在 GitHub fetch 超时，源码语义门禁仍未通过，不能称整个框架已交付。66 件必要制品已保存并由 Root 重新核验，准确自有 target 官方清理成功。独占构建资源已交 SDK：冻结 R20 框架与 SDK c9d07ca，最小私有锁解析后正执行完整 stdio Host、Rust 与原三语言端到端批次；正式 pin、锁、风险合同和 producer 未因此晋升。EKO 同源最终 GUI 批次继续准备，真实 App、SSH、手机收件、性能、main CI、发布部署及完整 Goal 均未完成。
 
