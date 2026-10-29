@@ -6,10 +6,10 @@
 
 ### 当前执行快照：SDK 原07失败后的根因与完整重验
 
-- **完整 Goal 仍 active，当前开放 EKO 三阶段 focused Cargo 时片。** SDK会话 `01a17d6c-e195-7f90-a8a4-8da3dc80a009` 正在原07失败后的源码修复/审查，暂不新Cargo；Root已把register-red→red→green交EKO唯一writer，完成即把Cargo还SDK，不开两套完整矩阵。原SDK失败快照为r02／1290／manifest095deb10…，配Framework R20／2833／39a20c5e…。实际03–06及正确task-scope source均0；原07首Host lib237p/12f/0ignore，其余15原bin补充309p/8f/0ignore（含Protocol完整228pass）单列，原07仍101，08–10未开始，不沿旧PID重启。
+- **完整 Goal 仍 active，SDK r03 已取回唯一完整重型窗口。** EKO三阶段focused已取得两个actualRED101→两个exactGREEN0，原bin/raw/源码与reader由Root实核后，于16:00:19Z结束时片；EKO不再Cargo。SDK会话 `01a17d6c-e195-7f90-a8a4-8da3dc80a009` 从已冻r03／1290／64f77ef7…和readyd2d1fc71…直接执行focused原20、当前Host/lint、原07完整及08/09/10。前失败快照095deb10…的Host237p/12f和其余15bin309p/8f（Protocol228pass）保原、不追标；Framework仍不可变R20／2833／39a20c5e…，私锁65aec不变。当前task source-r03已0/globalnotchecked，正常final/完整runtime尚未完成。
 - **SDK 正在同保存测试库诊断并迁移当前入口。** Root已授权补本次consumer-root执行输入、修SDK自有FailedEvalAgent到既有typed入口、迁移相关上下文/原生状态/ownership测试生产者；保原cause、终态权威、断言和时间预算。另准对原07其余已编译SDK targets完整诊断，随后稳定新源、必要Host/lint及原07完整重跑，再08/collector/原三语入口与正常final。旧095/Hostd9f2/失败库2ac002a7不追标后继源；新源与在途句柄看该SDK会话和Q4原件。
 - **Framework 已冻结交回 R23／2836／e3852f08…。** 非文档代码与已通过工程R20相同；前22工程0、4183p0f4ignored、doc4/0与policy14/0各保准确范围。当前source/final仍1/8，三次原fresh依赖扫描均网络失败，第三次为git-fetch接收超时；没有正常F commit、SDK新Git/pin、官网新来源或正式风险资格。不得伪改旧Eq/unknown或重试同一网络条件。
-- **EKO 仅三阶段 focused 已开窗，完整GUI/App批次尚未开放。** HEAD7f3加原capture/Box八路径，CLI `final-consumer-proposal-r15/R20执行入口.md` 已审；只准独立phase register-red→red→green，不调用run，不提前frontend/full gates/capture/bundle/risk/final。两原实际RED后才合已审production hunk，GREEN后保全/reader结束立即把Cargo还SDK，准确自有target留作相邻最终批次，不清SDK缓存。余86函数/完整workspace/GUI/frontend/capture五case和Tauri `.app`仍待SDK完整批次保全/clean与Root下一开窗，不等F合法Git才做受控同源功能验证。
+- **EKO 两实际缺口已RED→GREEN，完整GUI/App批次尚未开放。** HEAD7f3后现10路径：原capture/Box八路径加tool_control/MCP测试；RED/GREEN仅tool_control两个批准生产hunk不同，两项测试字节一致，Root重哈两保存bin及四raw均等。selector初始模块名拼错已具名修正为product_policy_tests并保setup失败，不冒行为RED；当前86/27清单与commands/config已同步准确名字。Rootfresh EKO target lsof1/stdout0/stderr0、全局compiler[]后归还SDK窗口，自有target作为相邻最终批次保留，EKO只非Cargo收口。余86函数/完整workspace/GUI/frontend/capture五case和Tauri `.app`仍待SDK完整批次保全/clean与Root下一开窗，不等F合法Git才做受控同源功能验证。
 - **独立交付已接管。** 九项准确历史缓存全清且原件不漂；tagless workspace保留。四个参数化Swift helper仅源审/静态通过，未Swift/AX/App/SSH/TCC运行。原7个Issue各fresh一次GET均0且仍open，203份Finding源重哈一致；其它仓旧空列表及release/main/CI未刷新。真实App、手机收件、SSH、正式quiet性能、正式SDK producer/pin、当前main CI、发布部署仍待，既有微信认证不动。
 
 ### 本次恢复后的演进记录（以下按发生顺序保留历史）
