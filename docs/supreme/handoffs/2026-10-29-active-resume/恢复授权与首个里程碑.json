@@ -1,0 +1,37 @@
+{
+  "observed_at": "2026-10-29T11:37:26.329466+08:00",
+  "user_authority_original": "user-goal-original.txt",
+  "original_sha256": "a522eccf5128797abddf1b4e197a2502fd13fe957c172a16f3411f3df9ee4ac1",
+  "original_bytes": 35690,
+  "coordinator": "01a18588-9a70-7552-912f-477ac52cbe39",
+  "goal_status": "active",
+  "authority": "用户明确恢复完整并行迭代；旧维护暂停已替换",
+  "website_milestone": {
+    "head": "7f1d9214a2da2edd8d8f823e3544c30db8d4e7a4",
+    "paths": [
+      {
+        "path": "README.md",
+        "sha256": "dd85ca40a1ae23f37c3417c40afede0f6506551f1d3dbf75a9e522124d31faaf"
+      },
+      {
+        "path": "docs-sync-manifest.json",
+        "sha256": "6f21994439894f8c305ae5a04f419e1c1b483eeffe31741726b959bef99a1f04"
+      },
+      {
+        "path": "public/llms-full.txt",
+        "sha256": "e808d540b279bb006f11982f0940f8abfd9788f8f1fe711bcbef7d7376d3c4d8"
+      },
+      {
+        "path": "src/docs/content/eko/zh/capabilities.md",
+        "sha256": "9706989ba160745010731e6758ba01652aef816e787ae05e520076fdb4a2ccd6"
+      }
+    ],
+    "commit_blobs_verified": true,
+    "handoff_sha256": "692c7416f533165952a87859f59d7bc8bb46287141367b439090f61e57548427",
+    "review": "原独立审查及Root非语义增量复核",
+    "verification": "原22输入及61单测/工程/task source/normal final均逐原件核对",
+    "published": false,
+    "deployed": false
+  },
+  "remaining": "任务总表.md，整体未完成，不继承SDK正式pin/native/mainCI资格"
+}
