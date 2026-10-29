@@ -54,6 +54,10 @@ Framework当前A最后7协议反控及真实Root→Filecold链收束，已知Roo
 
 Root已审SDK Q4原0dac最小私锁解析：653nodes/2339edges、635保留registry无漂，必要Zstd3升级＋Polars2 source转原vendor；正式pin/lock/accepted8未变，不继承F或CLI风险。SDK01/02实际0后，F target关闭条件实核，SDK唯一大型runtime03已真实启动（stdio fullHost no-default/sdk-facade-all/locked，session46639），入口SDK Q4 `runtime-full-r20-results/runtime-heavy-active-operation.json`，source39a/SDKc9冻结，私有1991/jobs2/debug0/自有target；后原03..10逐自然结果推进。F/EKO/性能/P均不得另开Cargo/重型/quiet直至Root解除，源码/静态准备继续。SDK功能轨道不等F Git milestone，但正式producer/pin/source风险及真实App/发布仍另轨待验；不要重启现handle或缩Goal，当前整体active未完。
 
+后继治理已实际 source/final 各 1／8，R22 whole `d40a4add…`／2836仅比工程R20多六semantic MD，Root逐全员哈希/模式核无漂移、非semantic未变；新open Finding正规rebind失败，旧限定Eq/unknown不伪闭。官网发现ADR0101初稿状态旧时态，已交唯一writer两hunk文档修正，后继manifest另列，未重Rust。SDK原03真实stdio Host自然0/无warning/arm64保存SHA0df085d9…已Root重哈；04为0，05实际101枚举布局诊断。SDK已正常预检做五路径最小Box修复及源审，后继SDK1290 e2753567…、其余1285不变，wire/schema实际1p0f/42filtered；新box-r01 controller/ready272835a8…重跑03与原后续，旧c9 Host/失败保留，不冒full三语或正式pin资格。
+
+EKO R20可执行入口与86去重必需名已源审、syntax/inspect自然0，未Cargo。原两项行为RED→GREEN、仓库全workspace/gui/frontend、capture五case及真实Tauri debug `.app`共用target；下一资源窗由Root在SDK完整批次保全/clean后实核开放，准确入口为CLI `final-consumer-proposal-r15/R20执行入口.md`。资源真实候选5.2488GiB中tagless workspace3.452GiB排除，Root核51原件后只开放9个准确旧cache约1.7968GiB，不动现SDK target/TC/原件/认证；未验回收不预算成净df。完整原目标继续active，未push/merge/晋升gitlink/发布部署。
+
 ## 当前维护状态：代码已保存，完整 Goal 暂停
 
 本轮以用户“先暂停迭代，提交全部现有代码并清理中间产物”及明确的本地 WIP 许可为准。平台 Goal 已设置为 **paused**，内容及全部未完成要求保留；本次维护结束后不自动恢复功能工作。下方受控续跑段记录此前切点，不是本轮恢复授权。

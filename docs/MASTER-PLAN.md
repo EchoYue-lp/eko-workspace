@@ -6,6 +6,8 @@
 
 最新工程切点：Framework R20 的前 22 条工程命令均自然退出 0、无编译警告；完整 workspace/all-target/all-feature 测试为 4183 通过、0 失败、4 忽略，288 项必需名称和独立 45 项 Subagent 场景全部实际通过。两项性能忽略和两项条件式真实服务忽略分别保留。原官方依赖扫描两次在 GitHub fetch 超时，源码语义门禁仍未通过，不能称整个框架已交付。66 件必要制品已保存并由 Root 重新核验，准确自有 target 官方清理成功。独占构建资源已交 SDK：冻结 R20 框架与 SDK c9d07ca，最小私有锁解析后正执行完整 stdio Host、Rust 与原三语言端到端批次；正式 pin、锁、风险合同和 producer 未因此晋升。EKO 同源最终 GUI 批次继续准备，真实 App、SSH、手机收件、性能、main CI、发布部署及完整 Goal 均未完成。
 
+后继切点：Framework 六份 semantic 材料完成真实引用/格式修正，正常 source/final 仍各失败 8 项，不虚改旧等价或 open Finding；官网另发现一处 ADR 初稿时态缺口，文档修正交唯一 writer。SDK 完整 stdio Host 已实际构建成功并保存，原05全量 Clippy 暴露 Protocol 枚举布局错误；五路径最小 Box 修复已源审，wire/schema 定向实际通过，正按新源码重跑 Host 和原完整批次。EKO 同 R20 的 RED/GREEN、完整 workspace/GUI/frontend、86 必需函数、真实捕获与 Tauri `.app`入口已就绪，等待 SDK 释放资源；现仍没有新的原生 App/SSH/手机或正式性能资格。准确来源、原失败、清理边界和下一负责人均沿任务总表/唯一交接，不把阶段结果缩成完整 Goal。
+
 Framework 接已验证 v03 继续存储和运行时，SDK 继续原生输出/真实终态与三语言，EKO 合流 SSH 前端及其它独立增量；Provider、IM/cron、治理、运行时场景、官网和性能准备并行。第一个本地里程碑是官网 `7f1d921`：四文件精确复核后正常提交，复用原 61 测试、工程/source/final 真实 0；未部署。SDK 23 路径既有未暂存改动保留；当前通过不替代完整矩阵、SDK 精确 pin、真实 App/SSH/手机收件、正式性能、main CI 和发布。正常提交门禁恢复，旧维护 WIP 许可不续期，不 push/merge/关闭 Issue/发布部署或晋升未推送 gitlink。
 
 EKO 后继本地里程碑 `9a8f754` 已保存 SSH 迟到认证修复和终端回归/ADR 四文件，Root 核最终 blob 同原已审63项候选，保真实SSH/桌面缺口；未夹带其它未验Rust。Framework v03 memory129/audit4 实际通过后，唯一writer已在正式任务分支合流原生迁移和Provider增量，新增源仍需各自验证。SDK真实Host首编译暴露20个适配错误，已保101/0测试原件并进入修复；原115 source错误已定位为局部owner闭包合同问题，与正式f7来源及旧402分开，不借此伪造通过或扩大工具修复范围。
