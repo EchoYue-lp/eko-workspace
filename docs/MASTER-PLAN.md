@@ -18,6 +18,8 @@ SDK首53路径已正常本地保存 `b0c597b`，受控v03 Host9方法、同Host�
 
 SDK第二片43路径已本地保存 `a2da104`：消息/Delta/九字段观察、Empty、工具错误位、既有ToolChoice字段四合法值已在Ff327/2831+SDKr04组合下Host7+D2one与三语/Protocol实际通过，Root核43个commit blob及524evidence；正式pin/全SDK/Parquet另验，已释放源供继续完整消费者。Framework同一f327 metadata4函数现4/0/0，最小production check0，两个EOF协议后继仍在独立实际批次。EKO当前前端crosschat组合344通过与Rust新夹具编译错误分列，未借前端票称原生通过。完整目标与十线持续并行，重型矩阵/真实App/SSH/手机/quiet/mainCI/发布仍未完成。
 
+Framework后继r02/2831冻结127d233e已最小production check0/零warning，与f327只8路径；下游按真实未影响Core/Serde差异复用或选新源，当前未授完整矩阵。SDK完整生成器所需精确nightly-2026-08-06/JSON61已由Root在主目录内另行冻结，并以真实rustdoc探针验证61；这只解除工具环境前置，不伪Git来源、不启动重型producer。原稳定工程继续隔离1.99.1，两个私有环境各自只读；当前所有未完成义务保持。
+
 ## 当前：按用户要求暂停迭代，仅完成保存与清理
 
 完整 Goal 已实际设置为 **paused**，原26项、原生消息／唯一终态／进度及后继裁决均保留。当前四子仓提交分别为 Framework 684ad1d9、EKO a71a7542、SDK fa153f93、官网 4258701；SDK 最后一个测试文件已按明确授权做本地 WIP，保留源码检查实际 1／115 阻塞和未执行的完整门禁。四子仓源码及 index 干净，顶层四个未推送 gitlink 差异按授权保留。
