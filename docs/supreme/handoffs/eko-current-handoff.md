@@ -8,6 +8,10 @@
 
 本次首个实际保存里程碑为官网 `7f1d9214a2da2edd8d8f823e3544c30db8d4e7a4`：六组工具、长任务安全点汇报与 A2A/LSP 退役说明；Root 复核 4 blob、22 验证输入、原 61 单测及工程/source/final 原件后正常本地提交。未部署，未晋升顶层未推 gitlink。Framework 与 SDK 各自独立 focused 窗口，EKO 同时合流可用 SSH 前端切片；Provider 首可采用组合已交 Framework，不等待整个框架完成。完整矩阵、正式 SDK pin、source115/外部402、原生 App/SSH/手机收件、性能和发布仍未完成。
 
+后继 EKO `9a8f75416d961390b968c564635bda0e51e0b27d` 已正常本地提交四文件 SSH 认证竞态切片：原 PTY 退出后拒绝迟到成功复活，同步回归和 ADR0051。原63项/独审/类型/lint/格式日志与实际4个提交blob吻合；483前端输入仅隔离cacheDir一行不同，未重复运行或冒真实SSH。其它prepared_turn/project_ssh及治理后继仍各属其未完成快照。Framework正式源已开始三方采用，旧v03当前16/133通过不能晋升为新Provider/metadata整体通过；SDK正在修真实Host编译20错，source115的7owner闭包工具问题单列。所有精确入口和剩余验收以任务总表及各原件更新，不从本段推断活动句柄。
+
+治理后继四文件已独立保存为 EKO `896653e61c0855256bbadda384bba6149b49ff3a`。当前精确回执为CLI `.echo-semantic/local/eko-resume-20261029/tool4-current-im-owner-return.json`，不是此前IM改变依赖前的旧票：当前正常source/final0、271输入核对、正式270/0/0与4个blob均实核。Root未夹带IM消费者或prepared_turn/project_ssh未验Rust；EKO短读窗已释放，后继原生调用点继续。各批次的进程存活、资源和source版本仍按原句柄/实际源判断，不能从本地提交外推原生或整个Goal完成。
+
 ## 当前维护状态：代码已保存，完整 Goal 暂停
 
 本轮以用户“先暂停迭代，提交全部现有代码并清理中间产物”及明确的本地 WIP 许可为准。平台 Goal 已设置为 **paused**，内容及全部未完成要求保留；本次维护结束后不自动恢复功能工作。下方受控续跑段记录此前切点，不是本轮恢复授权。
