@@ -12,6 +12,8 @@
 
 治理后继四文件已独立保存为 EKO `896653e61c0855256bbadda384bba6149b49ff3a`。当前精确回执为CLI `.echo-semantic/local/eko-resume-20261029/tool4-current-im-owner-return.json`，不是此前IM改变依赖前的旧票：当前正常source/final0、271输入核对、正式270/0/0与4个blob均实核。Root未夹带IM消费者或prepared_turn/project_ssh未验Rust；EKO短读窗已释放，后继原生调用点继续。各批次的进程存活、资源和source版本仍按原句柄/实际源判断，不能从本地提交外推原生或整个Goal完成。
 
+后继发生全局Rust工具链滚动更新的真实环境故障。Root没有写全局工具链，已在主目录ignored范围冻结完整1.99.1副本并逐70033成员核对，专用rustup-home/custom toolchain与实际sysroot调用均已验证；各线已收到准确环境绑定并复开focused。路径、原clean1/ENOENT101和旧1.99.0结果的资格区别见任务总表“Rust工具链隔离切点”。共享副本各线不得更新/安装/删除；完整后继门禁绑定新epoch，旧结果保原不追标。
+
 ## 当前维护状态：代码已保存，完整 Goal 暂停
 
 本轮以用户“先暂停迭代，提交全部现有代码并清理中间产物”及明确的本地 WIP 许可为准。平台 Goal 已设置为 **paused**，内容及全部未完成要求保留；本次维护结束后不自动恢复功能工作。下方受控续跑段记录此前切点，不是本轮恢复授权。
