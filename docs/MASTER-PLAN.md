@@ -12,6 +12,8 @@ EKO 治理四文件又保存为 `896653e`：冷恢复歧义、Unknown、增量�
 
 全局Rust工具链由1.99.0滚动到1.99.1的中途缺件故障已保原失败；Root未改全局，改在主目录内冻结完整工具链副本并验证70033成员及真实sysroot，后继Rust批次绑定任务自定义 `eko-native-1.99.1`。各线已复开focused、源码/JS持续并行；旧compiler结果不追标、新完整门禁仍待各稳定组合执行，隔离回执与路径见任务总表。
 
+SDK首53路径已正常本地保存 `b0c597b`，受控v03 Host9方法、同Host三语stdio、channels控制及三语言值/示例组分别通过；Root核53个commit blob、505 source输入与75原件引用，当前task source0/独审0。正式f7/0dac和accepted5352/431未变，不冒完整SDK/新pin/Parquet/mainCI；旧115窄scope与402原件保留，当前扩大scope的6个fixture依据正常补齐后source0。首片冻结已释放，下一metadata直接按Frame不可变API并行，不等B域/allfeatures。Provider独立旧源RED已真实28目标4pass/24fail、无编译/警告或坏夹具，GREEN仍待两处真实路径闭合。
+
 ## 当前：按用户要求暂停迭代，仅完成保存与清理
 
 完整 Goal 已实际设置为 **paused**，原26项、原生消息／唯一终态／进度及后继裁决均保留。当前四子仓提交分别为 Framework 684ad1d9、EKO a71a7542、SDK fa153f93、官网 4258701；SDK 最后一个测试文件已按明确授权做本地 WIP，保留源码检查实际 1／115 阻塞和未执行的完整门禁。四子仓源码及 index 干净，顶层四个未推送 gitlink 差异按授权保留。
