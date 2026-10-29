@@ -40,6 +40,16 @@ Framework当前A最后7协议反控及真实Root→Filecold链收束，已知Roo
 
 最新已取得的完整工程结论：r15／31ff4bf7／2833已通过原heavy03全workspace/alltarget/allfeature Clippy与heavy04生产严格Clippy，两条均自然0、validation0、零warning、源码前后无漂；Root已核原raw/receipt并存两门证明。此前r13 Provider测试12lint及r14固定事件Vec1lint皆已作仅测试同值整理，所有自然101仍按原revision保留。当前真正启动heavy05全workspace/alltargets/allfeatures测试，日志在F task `heavy-logs-r15/heavy-05-core-5.log`、状态在 `heavy-active-operation.json`，283必需名字与各bin实际结果待核。后继doc/nodefault/15feature/依赖、源码治理旧合同阻塞、合法F Git及SDK/native等仍未完成，不能用两门Clippy绿外推。继续原独占窗口，不重启同handle，不同时开其它重构建。
 
+最新实际失败切点：r15原heavy05已自然101，65已完成bin小计1496p/13f/1ignore，learning76真实通过、59个示例0tests仅构建，主rootlib1420/13/1；Cargo未到后workspace/P255，06以后停。Root43/45 Subagent函数ok、2integration未跑，新background/MCP属性已真实ok但不覆盖另外旧teammate失败。Root派生解析器正则吃换行的漏读已在r02 observer报告更正、原raw不动，准确per-bin报告在 `root-full-framework-window-20261029/r15-full05-natural101-per-bin-and-Subagent45-r02.json`。
+
+当前不是重启整矩阵：F同target r16仅3testfile加实际HTTP/typederror/events诊断、选6函数编译在途，P诊断HTTP4、Runtime诊断Subagent/Team7并交ignored函数hunk，F处理stream2。PackageRoot-only诊断union差异明确，不冒原全workspace票；所有旧断言、响应事实、owner/物理EOF/预算保留，真实根因证实后最小修复/新源/必要原gate复验。独占仍F，其他线不新Cargo；继续读取同task actual-operation/真实进程，不能把旧snapshot/hash或1434root测试当全仓完成。Source14工具退役合同、新Git、SDK/GUI/native各缺口仍独立保留。
+
+原13项失败现已在r17因果复验闭合：真实r16 6函数0/6和HTTP9capture证明成功fixture缺id、close实际Other债务、JsonObject旧negative目标错误；Runtime7保原事件/typed输入/有效执行身份后修夹具。r17完整220a9921／2833、原workspace union no-run实际rootlib二进制，原13＋9控制实际22/0/0（0.06s、1412filtered），原raw ed177269、外存库bab5b598与proof9833e7d1已保存。编译仍有unused self真实warning，因此只授因果运行，不授工程零warning或完整05。所有reader终态后仅删import成r18，正在fullfmt并原03/04/05全量复验；06以后仍待，资源继续Framework独占。Root证明及原始失败入口见任务总表，正常source旧合同/Git/SDK/native缺口仍独立，不能以22项替总Goal。
+
+最新整05仍未过：r18／388794e6前4门重新全部0/W0，Root lib1433/0/1、原13闭合，随后Core490/1/0，原Cargo停止。失败已actual A/B+只读probe证明是测试通用词native误匹配TMPDIR源注释，r19仅fixture哨兵/exact来源断言，不改Resolver/原环境。F趁无Cargo安全点从准确原artifact串行补查后继r18库，汇总aaaa82d8：Integration525/1、Execution352/0、Orch543/4、State父400/0、Tools258/0/2；Macro原dyld观察错误补冻结child env后0case构建/loader通过，不计功能。原05与手工补查scope分开；当前共6个真实失败（Core1/Anthro缺id正例1/Orch旧typed4）集中准备新源，未开06。两个性能ignored待实测，Tools两个live ignored待条件资格，均不抹；源/原件/所有自然码保。继续Framework独占、不冷建新target/不逐crate反复重编，最后原24整链仍要逐条自然0，原source治理/Git/SDK/native各缺口不外推。
+
+当前唯一工程运行切点已到r20／39a20c5e／2833：Core、Anthro与两pipeline共4个测试文件完成六失败最小修复，生产字节未改，源审/精确base/after/原断言保真；原01..04重新全部自然0／validation0／零warning，Root已实核，05在原target/原24argv/原env运行，观察288必需名称及独立45。r18余4integration补查7/0/0已保存，但不替原05；原六失败、原13失败、所有分scope/raw/observer问题均保。接续只读最新actual-operation/真实进程，不用旧r15/r18或定向22票冒新全量绿；06以后、source治理旧合同、合法Git与SDK/native等仍未完成。Framework独占继续，其他线仅静态准备。
+
 ## 当前维护状态：代码已保存，完整 Goal 暂停
 
 本轮以用户“先暂停迭代，提交全部现有代码并清理中间产物”及明确的本地 WIP 许可为准。平台 Goal 已设置为 **paused**，内容及全部未完成要求保留；本次维护结束后不自动恢复功能工作。下方受控续跑段记录此前切点，不是本轮恢复授权。
