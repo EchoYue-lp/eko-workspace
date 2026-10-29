@@ -50,6 +50,10 @@ Framework当前A最后7协议反控及真实Root→Filecold链收束，已知Roo
 
 当前唯一工程运行切点已到r20／39a20c5e／2833：Core、Anthro与两pipeline共4个测试文件完成六失败最小修复，生产字节未改，源审/精确base/after/原断言保真；原01..04重新全部自然0／validation0／零warning，Root已实核，05在原target/原24argv/原env运行，观察288必需名称及独立45。r18余4integration补查7/0/0已保存，但不替原05；原六失败、原13失败、所有分scope/raw/observer问题均保。接续只读最新actual-operation/真实进程，不用旧r15/r18或定向22票冒新全量绿；06以后、source治理旧合同、合法Git与SDK/native等仍未完成。Framework独占继续，其他线仅静态准备。
 
+最新资源已切SDK：Framework原R20前22工程全自然0／W0，05完整4183p0f4ignore、288必需名和45 Subagent全actualok，06 allfeature doc4/0；四ignore按两性能/两条件live分别保。23原官方scanner两次仅GitHub网络1，独立policy14/14自然0，未冒审计/整24绿；源码最新12项及0.5 retire决策/旧等价验收区别仍保。66件2.5GB已外存，Root重哈全等，freshreader0后官方精准clean0/20316files7.3GiB/target不存在，约29.47GiB；F不再Rust，只正式semantic资料正常收尾，新MD全源不能追标不可变39a。
+
+Root已审SDK Q4原0dac最小私锁解析：653nodes/2339edges、635保留registry无漂，必要Zstd3升级＋Polars2 source转原vendor；正式pin/lock/accepted8未变，不继承F或CLI风险。SDK01/02实际0后，F target关闭条件实核，SDK唯一大型runtime03已真实启动（stdio fullHost no-default/sdk-facade-all/locked，session46639），入口SDK Q4 `runtime-full-r20-results/runtime-heavy-active-operation.json`，source39a/SDKc9冻结，私有1991/jobs2/debug0/自有target；后原03..10逐自然结果推进。F/EKO/性能/P均不得另开Cargo/重型/quiet直至Root解除，源码/静态准备继续。SDK功能轨道不等F Git milestone，但正式producer/pin/source风险及真实App/发布仍另轨待验；不要重启现handle或缩Goal，当前整体active未完。
+
 ## 当前维护状态：代码已保存，完整 Goal 暂停
 
 本轮以用户“先暂停迭代，提交全部现有代码并清理中间产物”及明确的本地 WIP 许可为准。平台 Goal 已设置为 **paused**，内容及全部未完成要求保留；本次维护结束后不自动恢复功能工作。下方受控续跑段记录此前切点，不是本轮恢复授权。
