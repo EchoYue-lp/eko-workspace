@@ -4,7 +4,7 @@
 
 用户最新 Goal 已明确本次更新即恢复授权，替换下方旧暂停时态。Root `01a18588-9a70-7552-912f-477ac52cbe39` 复用十个真实执行会话及原候选/失败继续；唯一现场仍为本主目录，不新建外部 worktree。当前完整分工、原 26 项及新增原生消息/终态/进度/六工具组/跨会话范围见[任务总表](supreme/handoffs/2026-10-29-active-resume/任务总表.md)，最新现场见[唯一交接](supreme/handoffs/eko-current-handoff.md)。
 
-恢复时先读唯一交接顶部“当前执行快照”，再核实际句柄。EKO物理r05/c54f7452…/1078已编译0；原43失败逐名全部入选，37通过、6仍失败，另两个现版本只读与坏工具历史控制通过。app-core focused为28p6f/0ignore/2195filtered/101，GUI为11p0f/0ignore/134filtered/0，不冒完整workspace绿。Root逐1078文件SHA/mode、两个实际harness与raw核对无漂，proof d18c86a6…。原IM/Workspace/Runtime三会话分别只读余4/1/1的实际因果，唯一EKO writer继续修，风险线同时有限复核r03→r05。SDK3fcb8d0/clean、F fresh依赖0/source8未闭保持；风险6380旧端点不自动续期，capture/App/native/pin/global/producer/main/发布仍待。根内测试linked worktree已记录保护。
+恢复时先读唯一交接顶部“当前执行快照”，再核实际句柄。EKO物理r05/c54f7452…/1078已编译0；原43失败逐名全部入选，37通过、6仍失败，另两个现版本只读与坏工具历史控制通过。app-core focused为28p6f/0ignore/2195filtered/101，GUI为11p0f/0ignore/134filtered/0，不冒完整workspace绿。Root逐1078文件SHA/mode、两个实际harness与raw核对无漂，proof d18c86a6…。三域余4/1/1有限因果及风险增量均已交齐；EKO已实际修四个测试文件，r06物理35dc2f21…/1078、独审C0/I0/M0、Root全hash/mode0漂，正由cargo94332/rustc94338实编译原6＋两必要反控，尚无新GREEN。SDK3fcb8d0/clean、F fresh依赖0/source8未闭保持；风险旧端点不自动续期，capture/App/native/pin/global/producer/main/发布仍待。根内测试linked worktree已获精确条件式归档/正常移除授权，实际未清理。
 
 最新工程切点：Framework R20 的前 22 条工程命令均自然退出 0、无编译警告；完整 workspace/all-target/all-feature 测试为 4183 通过、0 失败、4 忽略，288 项必需名称和独立 45 项 Subagent 场景全部实际通过。两项性能忽略和两项条件式真实服务忽略分别保留。原官方依赖扫描两次在 GitHub fetch 超时，源码语义门禁仍未通过，不能称整个框架已交付。66 件必要制品已保存并由 Root 重新核验，准确自有 target 官方清理成功。独占构建资源已交 SDK：冻结 R20 框架与 SDK c9d07ca，最小私有锁解析后正执行完整 stdio Host、Rust 与原三语言端到端批次；正式 pin、锁、风险合同和 producer 未因此晋升。EKO 同源最终 GUI 批次继续准备，真实 App、SSH、手机收件、性能、main CI、发布部署及完整 Goal 均未完成。
 
