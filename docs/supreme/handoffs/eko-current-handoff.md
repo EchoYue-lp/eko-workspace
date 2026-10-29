@@ -26,6 +26,8 @@ SDK后继首片已正常保存 `b0c597bd17de6428694658257ef8ac530b3756a3`（53�
 
 Provider r05原协议225实际全绿，Root核2828快照/原log/225唯一段/外存库及正式integration依赖一致；旧223/2和warning失败保原。全diff域A后继又发现Anthropic/Responses缺native ID时内部fallback进入Source的未覆盖风险，两原作者正补实际RED与最小修复，旧225不认证新源。Critic屏障失败已由真实diag定因为测试Store漏转发原ACK、模型未调用，修后同两函数仍待。SDK继续strict/ACP及完整生成准备，真实file-Git preview须待正常Framework新commit，正式0dac锁不得自动继承4a的+95/-92 registry变化；26动态profiles及私有nightly环境边界见任务总表。源码审查、完整门禁与真实验收继续，不回退暂停，也不把局部里程碑当总完成。
 
+后继Critical2已在a8d7图实际list/run2/0，Root核raw及保存库一致，原ACK wrapper根因用两方法转发闭合，原managed/CAS/5秒/取消断言未改。C拓扑2、default doc4、Core lateSource reasoning4也各有限范围通过，A域Responses 13项仍真实5/8，nativeID/nullable/replay及Root请求D1剥离时点须实测闭合。两份AGENTS的显式全feature doctest命令已按唯一writer及Root同切点同步、独审0；这补齐原examples链，default4不替allfeatures，规则回执在 `root-doctest-gate-sync-20261029/`。SDK继续真实stdio Host/三语新增用例，EKO32源审0后同warm跑pool/Gov；没有新heavy或整体完成资格。
+
 ## 当前维护状态：代码已保存，完整 Goal 暂停
 
 本轮以用户“先暂停迭代，提交全部现有代码并清理中间产物”及明确的本地 WIP 许可为准。平台 Goal 已设置为 **paused**，内容及全部未完成要求保留；本次维护结束后不自动恢复功能工作。下方受控续跑段记录此前切点，不是本轮恢复授权。
