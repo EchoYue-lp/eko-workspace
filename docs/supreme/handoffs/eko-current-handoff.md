@@ -32,6 +32,8 @@ Provider r05原协议225实际全绿，Root核2828快照/原log/225唯一段/外
 
 Framework当前A最后7协议反控及真实Root→Filecold链收束，已知Root normalD1四函数16参数及DeepSeek opaque单函数8HTTP实际通过；原13 Responses也因果全绿，后继源票不互借。原0.5源码治理首检14项保真，本地精确依据正常补；该安装不支持新retirement合同，删除全等价/动态闭包剩余若仍阻必须保外部工具边界，不能伪final或擅WIP。完整工程矩阵、真实新F Git来源、最终消费者/Tauri/SSH/手机/quiet/mainCI/发布继续未完，不用本地里程碑结束Goal。
 
+当前已进入Framework独占完整工程窗口：最终r08源1b9f9336／2833逐字节吻合formal，最后P7和Root→Filecold→nextHTTP真实链均绿。P结束8自有target官方clean0，SDK/EKO/性能/P已无新构建；Root准入精确24命令，首fmt及check已实际0。续接必须读F task `heavy-active-operation.json`／`heavy-run.json` 和真实进程，不重启在途Clippy或同时开其它重构建；后续未完成项继续按命令顺序。formal源、文稿、AGENTS和lock冻结，source治理补正只ignored准备；工具旧合同阻塞独立保真，不赋newF commit/Gitproducer或整体完成。精确入口和预算看任务总表，完整Goal保持active。
+
 ## 当前维护状态：代码已保存，完整 Goal 暂停
 
 本轮以用户“先暂停迭代，提交全部现有代码并清理中间产物”及明确的本地 WIP 许可为准。平台 Goal 已设置为 **paused**，内容及全部未完成要求保留；本次维护结束后不自动恢复功能工作。下方受控续跑段记录此前切点，不是本轮恢复授权。
