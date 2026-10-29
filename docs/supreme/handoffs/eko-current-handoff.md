@@ -34,6 +34,8 @@ Framework当前A最后7协议反控及真实Root→Filecold链收束，已知Roo
 
 当前已进入Framework独占完整工程窗口：最终r08源1b9f9336／2833逐字节吻合formal，最后P7和Root→Filecold→nextHTTP真实链均绿。P结束8自有target官方clean0，SDK/EKO/性能/P已无新构建；Root准入精确24命令，首fmt及check已实际0。续接必须读F task `heavy-active-operation.json`／`heavy-run.json` 和真实进程，不重启在途Clippy或同时开其它重构建；后续未完成项继续按命令顺序。formal源、文稿、AGENTS和lock冻结，source治理补正只ignored准备；工具旧合同阻塞独立保真，不赋newF commit/Gitproducer或整体完成。精确入口和预算看任务总表，完整Goal保持active。
 
+完整工程最新切点：r08 heavy03原101／6lint经4文件等价修复，r09同门禁已跨这6项但又自然101／3项（think条件、IterOutcome与public testing StreamChunk布局），后续04/05等仍停，未宣全量绿。r10最薄Box整理已A/B源审0、fmt0，Message/Delta/wire值不变，EKO4构造由其owner准备、SDK无真实构造。当前无在途Cargo时，Root批准已审Runtime后台Fork深1–4 test-only及同owner MCP快照来源薄修一次并下一完整源，避免heavy后反复全量；尚无实际运行票，EKO投影/分类须在最终同源批先test-only旧生产取RED。精确hunk/hash/属性和源审入口见任务总表。继续持有Framework独占资源，新源重跑原24命令与实际mandatory核对，不恢复其它Cargo；原r08/r09全部失败/快照不回写。SDK完整功能轨道改为可先受控path验fullHost/Parquet/完整三语，合法Git前置只保正式producer/pin/来源门禁，具体Q4新入口亦见总表。
+
 ## 当前维护状态：代码已保存，完整 Goal 暂停
 
 本轮以用户“先暂停迭代，提交全部现有代码并清理中间产物”及明确的本地 WIP 许可为准。平台 Goal 已设置为 **paused**，内容及全部未完成要求保留；本次维护结束后不自动恢复功能工作。下方受控续跑段记录此前切点，不是本轮恢复授权。
