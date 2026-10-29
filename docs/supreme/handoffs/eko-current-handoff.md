@@ -62,6 +62,10 @@ EKO R20可执行入口与86去重必需名已源审、syntax/inspect自然0，�
 
 资源九项实际全0且exact9路径不存在、原件SHA无差，taglessworkspace不动；du1.7968与df观测26.3626→27.6233GiB分列，非归因净回收。原生工具只读清点确认现存Swift/AX脚本，多数仍旧PID60669/exe，必须最终App签后绑定新身份、源码epoch及具名数据根；工程isolated-data不是人工验收根。当前TCC/录屏权限未实探、无App/SSH/手机新事实，真实密码与手机观察需后续GUI/本人参与，保护既有微信认证。EKO同源入口准备已完成、仍待SDK完整资源窗交回；完整Goal active继续。
 
+最新SDK稳源r02 manifest095deb10…/1290、c9后仅7改；Host SHAd9f2c451…/227716592B/755、dep-info47新0旧及原03/04/05/06自然0/W0均Root实核，旧cached0/两轮Clippy101与DIR观察1保原。机器续跑改看Q4 `runtime-full-r20-results/box-r02/runtime-heavy-active-operation.json`；原07已启动PID2755/session91973，后08/09/10持续，别重启或用旧bc2/0df追标。当前task source已正确`--task-scope`实际0/raw7ec5104b…/4MB/globalnotchecked；Root明确本轮自有7归属后官方refresh/decide0，保原clean0和错scope29/过早final1，不伪用户新答复、不改maps。正常final等完整runtime结束，不提前消费；正式pin/global/risk/producer仍未验。
+
+F原23第三次具名fresh仍git-fetch接收超时，scanner/caller1，raw973acd73…/366B、DB99670cfc…前后不变，R23及锁/策略/基线不漂、不新target；原`r03-fresh-dependency-result.json`12290cc1…已交。无新风险诊断、无r03新policy14或整24资格，不再连续retry。workspace已交4个参数化Swift helper，当前入口 `native-ui-current-binding-20261029/README.zh.md`，Root核当前/旧源码及当前清单SHA吻合，独审/静态0；没有运行Swift/AX/App/SSH/权限探测，尚待最终App身份与真实数据根监督绑定。完整Goal继续active。
+
 ## 当前维护状态：代码已保存，完整 Goal 暂停
 
 本轮以用户“先暂停迭代，提交全部现有代码并清理中间产物”及明确的本地 WIP 许可为准。平台 Goal 已设置为 **paused**，内容及全部未完成要求保留；本次维护结束后不自动恢复功能工作。下方受控续跑段记录此前切点，不是本轮恢复授权。

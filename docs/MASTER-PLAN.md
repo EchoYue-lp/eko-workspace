@@ -10,6 +10,8 @@
 
 最新收束：Framework R23 已修 ADR 初稿状态并冻结，代码与已通过 R20 工程输入相同，正常源码门禁仍失败 8 项，HEAD 未提交。SDK 阻止了旧缓存 Host 的一次自然0误认，保存原件、官方定向清理两个 SDK 包后已实际重建新 Host；后继完整 Clippy 又暴露九处 Host 布局/等价写法诊断，继续正常修复，不提前授完整SDK资格。九项历史缓存已准确清理并核原件，未知/缺TAG目标保留；原生辅助入口已只读核清，新 App 仍须形成后绑定当前身份与数据根。EKO 最终同源批次随 SDK 真正保全/clean 交回立即排期，完整目标及所有人工/外部未验范围保持。
 
+SDK 当前 r02 七路径修复已通过原03真实Host重建、04格式、05完整和06严格Clippy，正确任务范围源码检查也实际0；完整Rust07正运行，后续collector/完整三语及真正final仍待，正式pin/global/风险/producer资格未晋升。Framework 第三次fresh依赖扫描仍在git fetch接收超时，原source8项继续阻断。原生辅助四源码已参数化并完成静态审查，当前无Swift/App/SSH运行资格；最终EKO/App批次准备就绪，资源窗仍只给SDK，完整目标保持active。
+
 Framework 接已验证 v03 继续存储和运行时，SDK 继续原生输出/真实终态与三语言，EKO 合流 SSH 前端及其它独立增量；Provider、IM/cron、治理、运行时场景、官网和性能准备并行。第一个本地里程碑是官网 `7f1d921`：四文件精确复核后正常提交，复用原 61 测试、工程/source/final 真实 0；未部署。SDK 23 路径既有未暂存改动保留；当前通过不替代完整矩阵、SDK 精确 pin、真实 App/SSH/手机收件、正式性能、main CI 和发布。正常提交门禁恢复，旧维护 WIP 许可不续期，不 push/merge/关闭 Issue/发布部署或晋升未推送 gitlink。
 
 EKO 后继本地里程碑 `9a8f754` 已保存 SSH 迟到认证修复和终端回归/ADR 四文件，Root 核最终 blob 同原已审63项候选，保真实SSH/桌面缺口；未夹带其它未验Rust。Framework v03 memory129/audit4 实际通过后，唯一writer已在正式任务分支合流原生迁移和Provider增量，新增源仍需各自验证。SDK真实Host首编译暴露20个适配错误，已保101/0测试原件并进入修复；原115 source错误已定位为局部owner闭包合同问题，与正式f7来源及旧402分开，不借此伪造通过或扩大工具修复范围。
