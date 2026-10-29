@@ -58,6 +58,10 @@ Root已审SDK Q4原0dac最小私锁解析：653nodes/2339edges、635保留regist
 
 EKO R20可执行入口与86去重必需名已源审、syntax/inspect自然0，未Cargo。原两项行为RED→GREEN、仓库全workspace/gui/frontend、capture五case及真实Tauri debug `.app`共用target；下一资源窗由Root在SDK完整批次保全/clean后实核开放，准确入口为CLI `final-consumer-proposal-r15/R20执行入口.md`。资源真实候选5.2488GiB中tagless workspace3.452GiB排除，Root核51原件后只开放9个准确旧cache约1.7968GiB，不动现SDK target/TC/原件/认证；未验回收不预算成净df。完整原目标继续active，未push/merge/晋升gitlink/发布部署。
 
+当前F最终冻结R23 whole e3852f08…/2836，R22之后只ADR0101两hunk历史说明；Root正式全成员hash/mode0漂，Rust/config/lock/examples未变，但nonsemantic摘要因含ADR已变c4434f1f…，不追标R20工程39a。当前source/final仍1/8，最终总包 `final-r23-handoff.json` SHA b05d2c4a…已接管，F不再重复source/Cargo/资料派生。SDK修后03首遇缓存复用自然0但仍旧0df，保原不追标；92件SDK材料外存后官方两包clean0、5280非SDK指纹不变，真正新编译03自然0/2m15s，Host227722720B/755/SHAbc2e89f6…已Root重哈，dep-info47新0旧。原05后继实际101，Host私有NativeEvent布局+Default写法+7测试借用正由SDK唯一writer等价修复；活入口仍Q4 `runtime-full-r20-results/box-r01/`，后续新快照/具名attempt按实际原件，不用旧bc2追标再后源码。
+
+资源九项实际全0且exact9路径不存在、原件SHA无差，taglessworkspace不动；du1.7968与df观测26.3626→27.6233GiB分列，非归因净回收。原生工具只读清点确认现存Swift/AX脚本，多数仍旧PID60669/exe，必须最终App签后绑定新身份、源码epoch及具名数据根；工程isolated-data不是人工验收根。当前TCC/录屏权限未实探、无App/SSH/手机新事实，真实密码与手机观察需后续GUI/本人参与，保护既有微信认证。EKO同源入口准备已完成、仍待SDK完整资源窗交回；完整Goal active继续。
+
 ## 当前维护状态：代码已保存，完整 Goal 暂停
 
 本轮以用户“先暂停迭代，提交全部现有代码并清理中间产物”及明确的本地 WIP 许可为准。平台 Goal 已设置为 **paused**，内容及全部未完成要求保留；本次维护结束后不自动恢复功能工作。下方受控续跑段记录此前切点，不是本轮恢复授权。
