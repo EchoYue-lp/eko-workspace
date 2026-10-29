@@ -16,6 +16,10 @@
 
 SDK后继首片已正常保存 `b0c597bd17de6428694658257ef8ac530b3756a3`（53路径，含5新fixture），取件 `native-output-resume-fa153-20261029/first-slice-root-return.json`。Root核53个最终blob、505 evidence和75原件引用；受控v03 Host9/同Host三语stdio各1/channels1及语言组均按其实际epoch限定，正常task source0/globalnotchecked、独审0，不变正式f7/0dac/5352/431。原窄scope115历史错误在当前真实扩大任务中未复现，fixture6依据正常补齐后source0，不修或冒修外部工具；原115/402与新正式pin/全矩阵另保。SDK正式写冻结已释放，可直接实施下一metadata，不等Frame全仓；准确profile和剩余义务看任务总表及原件。
 
+后继Provider兼容图已实际169/0/0，source/fixture/真实Agent与publisher边界见任务总表；不授D1或整个正式源资格。Frame正式已薄合三协议metadata，最后partial新generation导入续跑的失败经真实诊断定位到测试缺配套runtime cursor/CAS，不改变生产required-context拒绝；原4函数3pass/1fail及诊断原件保留，待合法fixture实际复验。SDK新的Message/delta/Empty/bounded cause片继续，既有accepted tool_choice字段需承接Core合法具名Function值；Root实施判定与新的独立Rust身份接受分开。EKO原生、跨chat、HITL和性能入口仍由唯一writer合流；完整门禁/新App/真人/发布未完成。
+
+最新SDK43路径已正常保存 `a2da104fe94d32fa620d95be6338ccd002f91d2c`，Root核43最终blob/524当前evidence，Host7+D2one/三语/Protocol及正常source均按f327+SDKr04限定，未改formal pin/5352/431，源冻结已释放。取件为SDK `metadata-transport-next-slice-20261029/metadata-second-slice-root-return.json`；准确manifest及未验事项见任务总表。Framework f327/2831已最小check0/zero warning，metadata原4现同图4/0/0；早期3/1诊断原件不回绑，protocol两个EOF后继仍在单独56定义批验证，命名warning与顺序误启原件保留后按新同义源修复。EKO current前端344通过与appcore新DeltaMessage夹具缺field编译失败分别处理，无GUI/手机/SSH资格。Root保持active，未push/merge/发布部署/晋升未推gitlink，继续后继完整矩阵和真实验收。
+
 ## 当前维护状态：代码已保存，完整 Goal 暂停
 
 本轮以用户“先暂停迭代，提交全部现有代码并清理中间产物”及明确的本地 WIP 许可为准。平台 Goal 已设置为 **paused**，内容及全部未完成要求保留；本次维护结束后不自动恢复功能工作。下方受控续跑段记录此前切点，不是本轮恢复授权。

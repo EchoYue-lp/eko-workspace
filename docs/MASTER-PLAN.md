@@ -14,6 +14,10 @@ EKO 治理四文件又保存为 `896653e`：冷恢复歧义、Unknown、增量�
 
 SDK首53路径已正常本地保存 `b0c597b`，受控v03 Host9方法、同Host三语stdio、channels控制及三语言值/示例组分别通过；Root核53个commit blob、505 source输入与75原件引用，当前task source0/独审0。正式f7/0dac和accepted5352/431未变，不冒完整SDK/新pin/Parquet/mainCI；旧115窄scope与402原件保留，当前扩大scope的6个fixture依据正常补齐后source0。首片冻结已释放，下一metadata直接按Frame不可变API并行，不等B域/allfeatures。Provider独立旧源RED已真实28目标4pass/24fail、无编译/警告或坏夹具，GREEN仍待两处真实路径闭合。
 
+后继两处真实Agent/publisher前置已通过，Provider r04无D1兼容图原169全绿；旧r03单个EOF时点测试失败保留，仅修创建期/迭代期合法错误位置，真实HTTP与零成功断言不变。三协议metadata/导入续跑与最终组合仍待验。SDK下一片同时无损承接已accepted `ChatRequest::tool_choice` 字段的新合法Function值，不能用旧String DTO拒绝作为终局；不自动接受整个新枚举API族，正式pin/accepted来源仍独立。当前完整Goal继续active，重型矩阵等待准确冻结和资源独占。
+
+SDK第二片43路径已本地保存 `a2da104`：消息/Delta/九字段观察、Empty、工具错误位、既有ToolChoice字段四合法值已在Ff327/2831+SDKr04组合下Host7+D2one与三语/Protocol实际通过，Root核43个commit blob及524evidence；正式pin/全SDK/Parquet另验，已释放源供继续完整消费者。Framework同一f327 metadata4函数现4/0/0，最小production check0，两个EOF协议后继仍在独立实际批次。EKO当前前端crosschat组合344通过与Rust新夹具编译错误分列，未借前端票称原生通过。完整目标与十线持续并行，重型矩阵/真实App/SSH/手机/quiet/mainCI/发布仍未完成。
+
 ## 当前：按用户要求暂停迭代，仅完成保存与清理
 
 完整 Goal 已实际设置为 **paused**，原26项、原生消息／唯一终态／进度及后继裁决均保留。当前四子仓提交分别为 Framework 684ad1d9、EKO a71a7542、SDK fa153f93、官网 4258701；SDK 最后一个测试文件已按明确授权做本地 WIP，保留源码检查实际 1／115 阻塞和未执行的完整门禁。四子仓源码及 index 干净，顶层四个未推送 gitlink 差异按授权保留。
