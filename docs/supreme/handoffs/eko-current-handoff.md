@@ -28,6 +28,10 @@ Provider r05原协议225实际全绿，Root核2828快照/原log/225唯一段/外
 
 后继Critical2已在a8d7图实际list/run2/0，Root核raw及保存库一致，原ACK wrapper根因用两方法转发闭合，原managed/CAS/5秒/取消断言未改。C拓扑2、default doc4、Core lateSource reasoning4也各有限范围通过，A域Responses 13项仍真实5/8，nativeID/nullable/replay及Root请求D1剥离时点须实测闭合。两份AGENTS的显式全feature doctest命令已按唯一writer及Root同切点同步、独审0；这补齐原examples链，default4不替allfeatures，规则回执在 `root-doctest-gate-sync-20261029/`。SDK继续真实stdio Host/三语新增用例，EKO32源审0后同warm跑pool/Gov；没有新heavy或整体完成资格。
 
+最新EKO32正常保存 `7f3ee41c92caaf805d6ac34469a7aed8390cff81`（parent f8fbf369），剩missingEOF/pool两失败以原断言闭合，v10编译0/零warning，pool1/Gov4各1/Task3/ChatDriver39/domain35实际0，重叠不相加；原v7组与2 private I/O ignored按旧scope保。Root核32源/67原件、315当前taskEvidence、最新normal source/final0及全部commit blob，CLI clean。SDK32随后保存 `c9d07cafd54cc118edc414f4c492a907f1c8f586`，最终manifest4d2eb2a7/正常task32 source0/独审0/525当前evidence和全部32blob均实核，正式8项pin/lock/accepted未变，SDK clean。真实14ec stdio三语whole-loop/HTTP正反控制与Host6/Protocol227按任务总表限定，不冒fullSDK或最新F，已释放两仓读窗。
+
+Framework当前A最后7协议反控及真实Root→Filecold链收束，已知Root normalD1四函数16参数及DeepSeek opaque单函数8HTTP实际通过；原13 Responses也因果全绿，后继源票不互借。原0.5源码治理首检14项保真，本地精确依据正常补；该安装不支持新retirement合同，删除全等价/动态闭包剩余若仍阻必须保外部工具边界，不能伪final或擅WIP。完整工程矩阵、真实新F Git来源、最终消费者/Tauri/SSH/手机/quiet/mainCI/发布继续未完，不用本地里程碑结束Goal。
+
 ## 当前维护状态：代码已保存，完整 Goal 暂停
 
 本轮以用户“先暂停迭代，提交全部现有代码并清理中间产物”及明确的本地 WIP 许可为准。平台 Goal 已设置为 **paused**，内容及全部未完成要求保留；本次维护结束后不自动恢复功能工作。下方受控续跑段记录此前切点，不是本轮恢复授权。

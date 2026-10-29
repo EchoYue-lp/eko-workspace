@@ -22,6 +22,8 @@ Framework后继r02/2831冻结127d233e已最小production check0/零warning，与
 
 EKO后继独立前端18路径已正常保存 `f8fbf369`：crosschat原接收时间/缺失来源、HITL迟到错误与焦点、private性能接缝。独立HEAD896+18实际344/0/0和类型/lint/格式0；Root独审0、新当前source/final0与317输入、最终18blob均吻合，未夹未验Rust/native4，读窗已释放。Framework原协议225在精确r05源实际全绿后，独审另发现Anthropic/Responses的native Source假ID风险，已回到两协议原作者补RED/修复，225不替新风险闭合。Critic测试原ACK wrapper不足已实际定位，修后复验仍待；正常Framework本地提交/full heavy、SDK正式来源/全合同、最终App和真实验收继续推进，不缩完整目标。
 
+EKO32后继已正常保存7f3ee41，原pool及missingEOF失败闭合、Gov四控制与受影响组实际通过，Root核315evidence及全部blob；SDK32也保存c9d07ca，strict无损值传、真实stdio/HTTP三语控制和故障收尾经最终源审/原source0，Root核525evidence及32blob，两个工作区clean。Framework A最后协议/真实cold链和原0.5治理约束继续收束；不支持的retirement格式不伪造，外部source阻断不冒通过。完整矩阵/正式SDK来源/最终App/SSH/手机/quiet与发布等原范围继续，准确资格见任务总表，不以局部提交缩小目标。
+
 ## 当前：按用户要求暂停迭代，仅完成保存与清理
 
 完整 Goal 已实际设置为 **paused**，原26项、原生消息／唯一终态／进度及后继裁决均保留。当前四子仓提交分别为 Framework 684ad1d9、EKO a71a7542、SDK fa153f93、官网 4258701；SDK 最后一个测试文件已按明确授权做本地 WIP，保留源码检查实际 1／115 阻塞和未执行的完整门禁。四子仓源码及 index 干净，顶层四个未推送 gitlink 差异按授权保留。
