@@ -4,6 +4,16 @@
 
 用户新目标附件 `2c78ec8b-2451-41df-98e1-20b5eb2543b1/goal-objective.md` 已明确授权“立即恢复完整迭代并行执行”，不再等待用户另说继续。该裁决替换下方旧暂停与误恢复记录的当前时态，历史原文仍保留。唯一当前协调者为 `01a18588-9a70-7552-912f-477ac52cbe39`；本次复用十个既有执行会话、原候选和验证，不重做维护、不回退已保存成果。
 
+### 当前执行快照：SDK 原07失败后的根因与完整重验
+
+- **完整 Goal 仍 active，当前开放 EKO 三阶段 focused Cargo 时片。** SDK会话 `01a17d6c-e195-7f90-a8a4-8da3dc80a009` 正在原07失败后的源码修复/审查，暂不新Cargo；Root已把register-red→red→green交EKO唯一writer，完成即把Cargo还SDK，不开两套完整矩阵。原SDK失败快照为r02／1290／manifest095deb10…，配Framework R20／2833／39a20c5e…。实际03–06及正确task-scope source均0；原07首Host lib237p/12f/0ignore，其余15原bin补充309p/8f/0ignore（含Protocol完整228pass）单列，原07仍101，08–10未开始，不沿旧PID重启。
+- **SDK 正在同保存测试库诊断并迁移当前入口。** Root已授权补本次consumer-root执行输入、修SDK自有FailedEvalAgent到既有typed入口、迁移相关上下文/原生状态/ownership测试生产者；保原cause、终态权威、断言和时间预算。另准对原07其余已编译SDK targets完整诊断，随后稳定新源、必要Host/lint及原07完整重跑，再08/collector/原三语入口与正常final。旧095/Hostd9f2/失败库2ac002a7不追标后继源；新源与在途句柄看该SDK会话和Q4原件。
+- **Framework 已冻结交回 R23／2836／e3852f08…。** 非文档代码与已通过工程R20相同；前22工程0、4183p0f4ignored、doc4/0与policy14/0各保准确范围。当前source/final仍1/8，三次原fresh依赖扫描均网络失败，第三次为git-fetch接收超时；没有正常F commit、SDK新Git/pin、官网新来源或正式风险资格。不得伪改旧Eq/unknown或重试同一网络条件。
+- **EKO 仅三阶段 focused 已开窗，完整GUI/App批次尚未开放。** HEAD7f3加原capture/Box八路径，CLI `final-consumer-proposal-r15/R20执行入口.md` 已审；只准独立phase register-red→red→green，不调用run，不提前frontend/full gates/capture/bundle/risk/final。两原实际RED后才合已审production hunk，GREEN后保全/reader结束立即把Cargo还SDK，准确自有target留作相邻最终批次，不清SDK缓存。余86函数/完整workspace/GUI/frontend/capture五case和Tauri `.app`仍待SDK完整批次保全/clean与Root下一开窗，不等F合法Git才做受控同源功能验证。
+- **独立交付已接管。** 九项准确历史缓存全清且原件不漂；tagless workspace保留。四个参数化Swift helper仅源审/静态通过，未Swift/AX/App/SSH/TCC运行。原7个Issue各fresh一次GET均0且仍open，203份Finding源重哈一致；其它仓旧空列表及release/main/CI未刷新。真实App、手机收件、SSH、正式quiet性能、正式SDK producer/pin、当前main CI、发布部署仍待，既有微信认证不动。
+
+### 本次恢复后的演进记录（以下按发生顺序保留历史）
+
 当前分工、原 26 项及五项新增要求、证据入口和剩余验收统一看[任务总表](2026-10-29-active-resume/任务总表.md)。恢复实查五仓 HEAD 未变、index 为空；SDK 23 路径与官网 4 路径是上一安全冻结保留的未暂存改动，不能沿旧“全部 clean”摘要推断当前现场。约 56 GiB 空闲，恢复前无构建、App 或 SSH 进程。Framework v03 的一个 fixture 迁移及其 16 项通过、SDK 原 reverse-status 行为失败、各领域候选和真实日志全部续接。
 
 本次首个实际保存里程碑为官网 `7f1d9214a2da2edd8d8f823e3544c30db8d4e7a4`：六组工具、长任务安全点汇报与 A2A/LSP 退役说明；Root 复核 4 blob、22 验证输入、原 61 单测及工程/source/final 原件后正常本地提交。未部署，未晋升顶层未推 gitlink。Framework 与 SDK 各自独立 focused 窗口，EKO 同时合流可用 SSH 前端切片；Provider 首可采用组合已交 Framework，不等待整个框架完成。完整矩阵、正式 SDK pin、source115/外部402、原生 App/SSH/手机收件、性能和发布仍未完成。
