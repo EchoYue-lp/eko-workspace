@@ -4,7 +4,15 @@
 
 用户新目标附件 `2c78ec8b-2451-41df-98e1-20b5eb2543b1/goal-objective.md` 已明确授权“立即恢复完整迭代并行执行”，不再等待用户另说继续。该裁决替换下方旧暂停与误恢复记录的当前时态，历史原文仍保留。唯一当前协调者为 `01a18588-9a70-7552-912f-477ac52cbe39`；本次复用十个既有执行会话、原候选和验证，不重做维护、不回退已保存成果。
 
-### 当前执行快照：SDK二十项已过，注册失败分支仍open，旧31已冷归档
+### 当前执行快照：SDK二十一项通过，App r04构建已自然结束、保全中
+
+- SDK当前621673c2…/1ac0f96c…源已完成原Cargo P014p0f、Base13p0f、正确Shell4p0f，均无ignored，compiler W0；结果9b44b244…、三raw及实际ok名字经Root核回。源码增量独审73e36005…pass/C0I0M0闭合07da注册Err同owner unknown强持与send-attempt口径；真实RED838a3adb…保三故障前提与提前drop反例，新的故障正控保无Host proof时unknown、不用foreign cleanup冒物理闭合。full生成器没有读取外部已存JSON的原入口，仍需原26profile流程，无旧14flags/新skip/allow；原3h34仅参考不作新ETA。唯一后继e26ce0e8…已绑定源码/21/bin/raw、原full+语言export精argv与环境；该有限重型batch排在本次App之后，未启动full/Host/三语After，正式3f/f7/0dac与风险不变。
+- App r04在22:43:22.310Z合法冷spawn，free6,495,539,200B≥5GiB、busy=[]，原source/dist guard0；真实60322→60824→60852→60855，process-tree1b049f0b…及原ps95ef3f85…/birth均在E的新r04目录。原8f/8e/ce、GUI重复实参/--bins、release/jobs2/debug0/inc0和封存154dist不改。owned strict native6bfc/report30d9及prepared a6ae/af045用于新epoch；63a旧G8/bffd来源不回写。实际CLI 22:43:22.311—23:04:51.572Z、child 22:43:23.440—23:04:49.381Z均自然0且无signal/error/trunc；完整Cargo raw无编译warning/error，CLI原no-sign提示独立保留。真实App已产出，postsourceguard0/PASS/errors[]、1078/F2850/154dist无漂。Root已读parent6491290f…/child1de1f68c…原回执与Finished release，保全中，尚未sign/probe/launch或签native/NoRun资格，不清本App target。
+- 独立旁路tool83366/Python60533已原caller656b486b…自然0/无signal/error/trunc，22:42:48.295—23:04:59.608Z保134连续samples；退出因原supervisor及其已观测family消失，stop-request记录already_closed，不倒说该请求触发结束。root60322出生身份与READY相符，source19cd/launcher823c、实际首sample/原native API结果保全；不进App stdout捕获链、不控制构建。SDK结束focused批次的exact T已官方whole clean0（00d4a68d…），当前absent，59保护项与1059外置证据stat不漂，三bin只依赖系统库。22:53:21.490—22:53:22.500Z的global free3,450,122,240→4,851,863,552B只作共享观察；EKO新旁挂r04-resource-maintenance-sdk-own-clean-20261031-r01.json/9a344469…引用该receipt，原采样不改，不把跳增归App或全独归SDK。后继SDK正常cold成本已明确接受，App保全及相邻验证窗口仍占用唯一heavy槽。
+
+本次更新前Top1e634faa…，F340/EKO6c/SDK3f/官网f38保持各正式保存点，用户IDE/Framework精分支push两选择仍pending，无signal/push。旧31冷归档与restore-map/48历史JSON维护保原；完整Goal active且未完成，原26及新增、真实GUI/SSH/微信/IMcron、全部性能/正式SDK/风险、mainCI/发行发布部署及用户数据保护继续。以下均为各历史切点。
+
+### 二十项通过历史切点：注册失败分支仍open，旧31已冷归档
 
 - SDK冻结8087/3954已实际Protocol4p0f、Base Host12p0f、正确Shell同实际binary4p0f；票84c5ed86…/三份原raw均经Root核SHA、实际ok名字与摘要。Shell Cargo行为因fresh空间不足未spawn，不能签原Cargo已0。源码增量审07da8a72…仍block/C0I1M1，尚需保发送尝试后响应回调注册失败的同exact owner/unknown及资源；标记不是成功enqueue或执行receipt。新增故障控制首轮编译通过但停外层driver未触发目标Err，timeout不作RED，作者正沿官方task actor失败入口继续取证，未假闭合。typed DELETE三语After/full producer/export/精确guard/正式来源和风险各保持原缺口。
 - 精确SDK Host旧包已官方clean0，25唯一普通路径/25inode已删、Frame/Protocol/第三方保留；原50 file entries为重复列名，旧提案不改，实票b42aead2…记录free观察+274,931,712B。Framework的W/cold-archives/c07-formal31-20261031-r01/归档亦实际0：handoff954a71ef…、tar cbab25af…/136,662,366B、map bdd7f485…、restore31.py216fd936…。全部31 tar成员SHA/size/mode/集合及抽恢复验证0后才精确unlink，独审e2e5db61…pass；原热31现不存在，父目录保留，后续须恢复映射，不回写旧manifest/raw/receipt。21:56:40Z窗口free5,689,356,288B、共享df观察+387,350,528B即已还SDK槽；P1/G8/raw/source/recovery154/工具链/全部targets/用户数据不动。

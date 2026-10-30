@@ -4,7 +4,11 @@
 
 用户最新 Goal 已明确本次更新即恢复授权，替换下方旧暂停时态。Root `01a18588-9a70-7552-912f-477ac52cbe39` 复用十个真实执行会话及原候选/失败继续；唯一现场仍为本主目录，不新建外部 worktree。当前完整分工、原 26 项及新增原生消息/终态/进度/六工具组/跨会话范围见[任务总表](supreme/handoffs/2026-10-29-active-resume/任务总表.md)，最新现场见[唯一交接](supreme/handoffs/eko-current-handoff.md)。
 
-当前后继：SDK冻结8087/3954的Protocol4、Base Host12、正确Shell实际binary4共20项已自然通过，最小票84c5ed86…及原raw已Root核回；Shell原Cargo行为未启动的事实单列。07da8a72…增量审查仍block/C0I1M1：发送尝试后响应注册失败尚缺同owner的unknown强持；发送尝试也不能写成成功入队receipt。新增故障控制首轮只停外层driver而未触及目标分支，原timeout保留，不作RED，正改用官方task actor失败入口取证。三语After/full producer/export/精确guard和正式pin/风险仍待闭合。
+当前后继：SDK R03同冻621673c2/1ac0f96c的原Cargo Protocol4、Base13、Shell4共21项已自然0/W0，票9b44b244…/原raw经Root核回，增量独审73e36005…pass/C0I0M0。注册Err已用同owner保unknown，真实RED838a3adb…与新正控保留；无Host proof不补物理闭合。下一原full+export无外部JSON缓存官方入口，参考旧实耗3h34而非新ETA；已排App后有限批次，handoff e26ce0e8…，未启动full/三语After或改正式pin/风险。
+
+App r04已22:43:22.310Z真实冷启动：free6,495,539,200B、busy空、原source/dist guard0；60322→60824→60852→60855链及PS/birth保全，输入8f/8e/ce、strict reader6bfc/prepared a6ae不变。独立资源旁路source19cd/launcher823c真实运行，已实际CLI/child自然0、完整Cargo无编译warning，postsourceguard0，App已产出；保全和原生资格核验仍待完成，未sign/probe/launch。为留空间，SDK exact T已官方whole clean0/现absent，必要21三bin及历史源/证据T外不漂；窗口22:53:21.490—22:53:22.500Z的free观察+1,401,741,312B，由EKO旁挂9a344469…单列，不误归App。两个必要人类选择仍待答，原26及新增和全部真实验收义务保持。
+
+R02二十项通过历史切点：SDK冻结8087/3954的Protocol4、Base Host12、正确Shell实际binary4共20项已自然通过，最小票84c5ed86…及原raw已Root核回；Shell原Cargo行为未启动的事实单列。07da8a72…增量审查仍block/C0I1M1：发送尝试后响应注册失败尚缺同owner的unknown强持；发送尝试也不能写成成功入队receipt。新增故障控制首轮只停外层driver而未触及目标分支，原timeout保留，不作RED，正改用官方task actor失败入口取证。三语After/full producer/export/精确guard和正式pin/风险仍待闭合。
 
 资源后继已实际完成：同SDK T仅Host旧包官方clean0（25唯一路径，旧50条重复列名不回写），观察free增加274,931,712B。Framework旧31制品全量冷归档/抽恢复后移除热副本，包136,662,366B/cbab25af…、映射bdd7f485…、恢复脚本216fd936…，独审e2e5db61…限定pass；原31路径已不常驻，未来按restore-map恢复，P1/G8/raw/source/现恢复包及targets不动。窗口free5,689,356,288B、df观察+387,350,528B，不作独占归因。r04资源旁路19cd9325/823ce3cd已source-only审通过并自身短读0，尚未实际监测或构建；strict reader6bfc/prepared a6ae保持。两个人类选择仍待答，本地修复继续，完整Goal未完成。
 
