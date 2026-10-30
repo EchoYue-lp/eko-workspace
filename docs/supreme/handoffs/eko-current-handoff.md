@@ -4,7 +4,16 @@
 
 用户新目标附件 `2c78ec8b-2451-41df-98e1-20b5eb2543b1/goal-objective.md` 已明确授权“立即恢复完整迭代并行执行”，不再等待用户另说继续。该裁决替换下方旧暂停与误恢复记录的当前时态，历史原文仍保留。唯一当前协调者为 `01a18588-9a70-7552-912f-477ac52cbe39`；本次复用十个既有执行会话、原候选和验证，不重做维护、不回退已保存成果。
 
-### 当前执行快照：官网同步已保存，实际后端回放已独审，SDK迁移提案审查中
+### 当前执行快照：SDK有限迁移已准受控准备，Framework性能入口实际编译通过
+
+- **SDK方案层面已闭合并获有限准备授权。** 原SDK-facing独审r01为block/C0I1M1：Java同步catalog异常会越过CompletionStage，ADR缺独立决策说明；原报告a040f451…保原。作者r02已补三实际异步入口的failedFuture/关闭优先/未知操作边界及自包含ADR，独审r02 SHA2d2aa420…为设计pass/C0I0M0，不是运行票。Root裁决 `sdk-accepted11-r02-controlled-candidate-decision.json` SHA392f76ab…批准精确11退役＋3with_id接受/native新增Rustsource0的受控候选准备。唯一SDK作者新建u02副本，继承原1294/4784，先加现publicAPI测试与本有限批准ADR，冻结适配前代码；真实生成退休catalog后先RED，再最小adapter GREEN。原full update首次14flags、语言export/Host/语言执行仍等Root具体资源窗；不造catalog/seed、不改producer/parser/旧guard或正式pin。原u01自然1与formal3f/f7/0dac保护不变。
+- **Framework P1仅编译资格已实际完成。** F340/default＋files/release原两个harness的no-run后继自然0/W0，6m24s；2850源码SHA/bytes/mode无漂移。新rootlib `1e34df92…`（51,349,568B）与integration `25d78d09…`（9,556,224B）、metadata/系统loader及精确selector list0均保全。Root独证 `performance-F340-P1-release-independent-proof.json` SHA273802d9…逐原件核0，原selector只是list，未执行测量体。随后准确own target官方whole-clean0/absent，完成时free约6.07GiB/无heavy读者；不是以Removed逻辑量冒净释放。
+- **原警告和恢复过程独立保留。** 首轮编译自然0但有两项rust-objcopy加载LLVM警告，不计W0；同冻结objcopy原version为SIGABRT(-6)，仅进程DYLD_LIBRARY_PATH指准确冻结TC/lib后version0。原工具链/源码不改；原包clean首次Removed0、补release profile的21files清理、低空间拒spawn和准确whole-own清理均保原。后继是在真实free≥5GiB后仅该进程loader增量重编，不放宽warning/strip/资源门槛，不动系统swap或其它缓存。
+- **下游按真实前置推进。** 性能线已获仅conversation-10/100/1000三个纯Framework case的P2非计时metadata/seed窗口，须原准入、冻结和回读，无Cargo/quiet；memory/EKO/native依赖与原36/76/277分母保留，不以P1编译冒实测。EKO准备一次真实Tauri CLI macOS arm64 release App，供功能验收及后续性能资格，旧debug票保历史；这是工程profile，不是发行版本/平台/发布承诺。官方CLI实际追加--bins，原reader的命令选择差异由透明真实子Cargo观察器及原作者薄适配分别准备，不删实参或手造退出状态；原G8 test不补成no-run，完整sourcecapsule/App/capability/quiet仍待。
+
+F340/EKO6c0/官网f38仍正常本地保存且formal/index干净；顶层前三文档切点已保存1986c232。SDK新准备不改正式仓，未push/merge/gitlink晋升/发布部署。原26＋新增与真实GUI/SSH/手机/IMcron、正式SDK/Parquet、quiet、精确mainCI和发行义务保持；认证后用户数据、三旧runtime和固定历史不动。以下网站保存后及09:00段落均为各自历史切点。
+
+### 网站保存后切点：实际后端回放已独审，SDK迁移提案审查中
 
 - **官网已正常本地保存。** 新提交 `f38b784517e8af30dfaf1923be6f1dfff0b0a0c4`，父f397、tree41a17957…，formal/index干净。沿原同步入口把EKO投影更新至clean6c0，148来源逐Git blob一致、13中文来源变化、8页中3中文页更新；Framework340完整对象与322镜像不变。原16命令及staged artifact均自然0，61tests/338HTML/330派生正文按原范围保留。Root独核原raw/receipt和六个准确blob，保存票 `website-EKO6c0-local-commit-save-proof.json` SHA76256b70…；独审原生事件63bc8b10…直接归档原1532B，不把作者摘要代替独审。未推送或部署，task/globalnotchecked不授native或正式SDK资格。
 - **实际五场景backend capture已完成并独审通过。** 原retained G8 f796…测试binary直接运行原selector，实际1p0f0I/144filtered/3.77s；五case为该测试内部场景，41个原件包含index，另有1个INDEX marker。Unknown批准块1/2/0/0、持久Candidate与公开Settled分列；toolcase原24callback为22Agent＋2Tool，signed/redacted/opaque保值。原reader仅命令身份与选定回调顺序两函数实际0；完整fixture/sourcecapsule、TauriIPC/WebView/App及性能仍未验。作者票1ab2ef87…，Root独审 `eko-actual-backend-five-capture-independent-review-r01.md` SHAe92982f6…为限定pass。当前7713fc75…绑定准备已交原性能作者组合既有六private文件及真实descriptor，不回灌旧reader/JSDOM、不重复capture、不触认证后数据。
