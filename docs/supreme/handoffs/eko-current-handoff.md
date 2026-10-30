@@ -4,7 +4,17 @@
 
 用户新目标附件 `2c78ec8b-2451-41df-98e1-20b5eb2543b1/goal-objective.md` 已明确授权“立即恢复完整迭代并行执行”，不再等待用户另说继续。该裁决替换下方旧暂停与误恢复记录的当前时态，历史原文仍保留。唯一当前协调者为 `01a18588-9a70-7552-912f-477ac52cbe39`；本次复用十个既有执行会话、原候选和验证，不重做维护、不回退已保存成果。
 
-### 当前执行快照：官方release CLI已实际编译中，SDK下一批Before输入已冻结
+### 当前执行快照：首个release App已保全，精确环境修正的r03正实际冷编译
+
+- **r02真实构建已自然0，但保留W1。** 原CLI18:08:06.975→18:29:59.813Z、child18:08:08.050→18:29:55.923Z均自然0/无signal或截断，真实完整Eclip.app生成，postsourceguard0，1078/F2850/154dist无漂。唯一真实build-script警告是tauri-build2.7.3的STATIC_VCRUNTIME弃用，与原CLI的no-sign notice分列，未冒W0。same-volume COW保全wholeApp3文件177,682,616B，主bin177,558,224B/SHA57768352…，41feature fingerprints/428context/19dep-info与父子raw均保存；Root独证 `tauri-release-r02-actual-App-preservation-independent-proof.json` SHAea819ee4…核0，未签名、probe或启动App。
+- **r03只修真实macOS子进程环境边界。** 原CLI2.11.2跨平台传废弃Windows变量，tauri-build只要Some就警告，false不解决。准确packetffd2f0ff…/observerb937a159…/overridee5964272…经原生独审77740e10…source-only pass，Root已完整读源码及根因/非build引用。新观察器仅在固定darwin/arm64、真实CLI父进程/目标/cwd/toolchain范围记录parent原值、移除该一键给原runCommand子进程、记录实际环境差异并finally恢复；原argv和其它env不改，不patch供应商/源码/依赖或过滤raw。当前还是r03实际执行中，未继承source-only票成为W0。
+- **本批资源B已完成，新r03合法启动。** 局部A逻辑上界不足恢复5GiB，Root选择提案f6bc的准确own whole-clean B；原官方自然0/Removed6216files2.9GiB、targetabsent，502保全描述前后hash/mode/bytes0、前后sourceguard0。receiptb12fb930…记录实free492,204,032→2,979,250,176B，随后OS空间自然恢复单列，不把du/swap used当净释放。18:57:44.124Z r03真正spawn前freshfree6,083,272,704B≥5GiB/heavy0，tool49226/supervisor65957→CLI66166→observer66189→固定Cargo66192；B后为cold，未伪称warm。原前端/dist不重建，真实新PS raw/tree/lstart及receipt在`evidence/r03-process-tree-firstspawn/`；parent STATIC='true'，child actualRemovedKeys仅STATIC、其它变化为空，当前未有终态/新App资格。
+- **私有reader后继仍按真实原件收敛。** 已采用的两脚本30d9/406b和preparedbc9b保持；新r03候选曾因独立PID旁证和STATIC缺失分支的flags证明不足被block，旧候选不回写。后继优先跨核实际新监督器/tree/原ps raw与parent-child，不补旧字段或伪造PID；当前精确Some/removal分支与zero-removal未资格路径分清，源码推导不冒未记录env文本值。实际r03完整qualification仍待自然终态与原件，不为数据模板先重建第三个App。
+- **SDK Before夹具r02源码层已闭合，仍未运行Rust。** 新ticket a247d04d…/1302 manifest03444e62…/Host源57b9047c…，仅一测试源调整统一收尾、保原JoinHandle、真实remote返回后再结束连接/断言；原r01 block及旧源保留。独审 `sdk-u03-before-sandbox-delete-tests-independent-review-r02.md` SHA16018953…限定source-only pass，不签typecheck/cleanup/RED。Protocol四/Host十二及原typed DELETE生产尚未执行或修复，原I1 sealed pass/原u02证据和正式3f/f7继续冻结；下一SDK实际窗口先NoRun/list再Before。Perf另交EKO release NoRun三原命令/四binary角色相邻票a52a5c87…仅source-only，不与App或SDK并行开Cargo，不把G8旧test补成no-run。
+
+唯一heavy仍r03 App，原Root前三文档切点4fc336d0保历史；所有sign/probe/launch/auth、正式SDK/pin/风险/Source、真实平台/安静性能/mainCI/发行与外部动作均未因生成App而放行。两个具体资源用户问题仍pending，Root未signal两IDE或清Fprimary/SDK证据/global/oldtagless。完整原26＋新增和用户数据/三旧runtime/必要失败原件保护保持。以下r02启动段为历史切点。
+
+### r02启动切点：SDK下一批Before输入已冻结
 
 - **App重构建已真正启动。** 2026-10-30 18:08:06.974 UTC（北京时间10月31日02:08），真正spawn前freshfree5,374,468,096B≥5GiB、其它heavy为空；监督42864/tool6823，实际Tauri CLI43024→observer43043→固定冻结Cargo。原packet63a/observer8d9/override828与已封存前端不变，实际child逐字保留`build --bin echo-agent-tauri --locked --no-default-features -p echo-agent-cli --bins --features gui,gui,tauri/custom-protocol --release`，不删重复gui或CLI追加实参。实际进程树、TAURI_CONFIG/DYLD与父子raw由原观察器记录，当前编译中无终态，不称W0或App构建通过。尚未clang/probe、codesign、App启动、账号或clean；运行中跨5GiB不改写其合法启动票，也不额外开启另一套重构建。
 - **资源拒绝与恢复均保原。** 先前free不足导致的0spawn拒绝票6fbf62c5…和CLI主缓存清理9a06均保留。Root在自有新副本试过ditto透明压缩，实际flags0/分配字节未减，未替换原Before二进制；仅删除该实验新副本、raw/失败及回读原件保留，收尾票7a03cef6…。随后真实空间回到门槛，由EKO在真正spawn点再次核≥5后启动，不把du或Root瞬时观察代替门禁。两个IDE处理与Framework primary清理的具体用户问题仍pending，Root未signal IDE或清F primary/SDK证据；不是靠假许可推进。
