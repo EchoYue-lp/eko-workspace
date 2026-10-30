@@ -1,10 +1,14 @@
 # EKO 总纲（MASTER-PLAN）
 
-## 2026-10-30 最新执行状态：F、EKO与官网已本地保存，SDK合同和真实验收继续
+## 2026-10-31 最新执行状态：F、EKO与官网已本地保存，SDK合同和真实验收继续
 
 用户最新 Goal 已明确本次更新即恢复授权，替换下方旧暂停时态。Root `01a18588-9a70-7552-912f-477ac52cbe39` 复用十个真实执行会话及原候选/失败继续；唯一现场仍为本主目录，不新建外部 worktree。当前完整分工、原 26 项及新增原生消息/终态/进度/六工具组/跨会话范围见[任务总表](supreme/handoffs/2026-10-29-active-resume/任务总表.md)，最新现场见[唯一交接](supreme/handoffs/eko-current-handoff.md)。
 
-当前后继：SDK Sandbox 的真实 Before 已完成并保全：Protocol 原四项 2通过/2失败，Host 修正夹具类型后原十二项 0通过/12失败；两次 NoRun 均自然0、无编译诊断，实际 list 分别恰4/12，行为均自然101。Host 十一项停在首个 guard 观察，后续取消优先级等控制尚不能称已覆盖；原 E0609 编译失败单独保留。唯一交接为 `sdk-u03-consumer-fixes-20261030/before-slot-execution-r02-H01-typefix/Before-P01-H01-delivery-handoff.json`（SHA b1ef0e7c…），Root 已核原 raw/list 和六件交接原件，独立只读复核中。SDK 正沿同源、同暖 target 接续真实 Host 与三语言 typed DELETE 的 Before；完成后进入已批准的 I2/I3 与 typed DELETE 最小修复，不改正式 pin 或风险合同。
+当前后继：两组SDK实际Before已独审接管（bfce82bc…、418c37fc…）。R01实现冻结4376/68b3/eabf后，原Protocol4p0f，原Host6p6f/自然101；独审668ebed8…为block/C0I2M0，指出公开流式入口漏原JSON校验、未提交的预取消仍发cleanup。六取消/observer失败已定位到夹具串行处理阻塞取消分发，正按官方connection-owned spawn修正夹具，再取两真实入口RED并最小修复；原R01源/bin/raw和新失败票b1d5e418…保留，未宣GREEN。三语After、full producer/export与精确guard仍待实际结果，正式SDK3f/f7/0dac不变。
+
+新性能六组/33进程/450行已完成，独审018d298f…仅通过描述性记录；report6×自然2/incomplete，IDE峰值123.1%/47.7%使低负载未建立。严格r04 reader则已实际采用native6bfc/report30d9不写，23合成控制0、真实r03失败仍拒，新prepared source为a6ae304c…，EKO r04尚未重建。Framework340远端GET422/任务branch未发布，c03cb98e…列明24历史且排除保护Exa；Root已就仅该任务分支推送和IDE进一步处理分别询问人类，均待答，本地工作继续。原26及新增、其它70/36-76-277、正式来源/风险、真实平台、quiet、main/CI、发行及外部授权范围完整。
+
+Sandbox Before完成历史切点：SDK Sandbox 的真实 Before 已完成并保全：Protocol 原四项 2通过/2失败，Host 修正夹具类型后原十二项 0通过/12失败；两次 NoRun 均自然0、无编译诊断，实际 list 分别恰4/12，行为均自然101。Host 十一项停在首个 guard 观察，后续取消优先级等控制尚不能称已覆盖；原 E0609 编译失败单独保留。唯一交接为 `sdk-u03-consumer-fixes-20261030/before-slot-execution-r02-H01-typefix/Before-P01-H01-delivery-handoff.json`（SHA b1ef0e7c…），Root 已核原 raw/list 和六件交接原件，独立只读复核中。SDK 正沿同源、同暖 target 接续真实 Host 与三语言 typed DELETE 的 Before；完成后进入已批准的 I2/I3 与 typed DELETE 最小修复，不改正式 pin 或风险合同。
 
 资源维护仅透明压缩48份已结束的历史合同 JSON，逻辑 SHA/大小/模式/mtime 不变，物理 inode/压缩标志变化另记；文件分配量减少1,052,549,120B，独审 e8ef4efb…限定通过，不授产品性能或SDK资格。用户选择手动暂停 IDE 自动检查，并明确只准清 CLI 主 target；本次实查该目录已不存在，无重复 clean 或 IDE 信号。EKO r04 仍未获重建启动，原 r02 W1 App、r03 ENOSPC 与未知 child exit 保留。总 Goal 仍 active，原26及新增范围、真实平台、正式 SDK、安静性能、main/CI、发行和外部授权均继续验收。
 
