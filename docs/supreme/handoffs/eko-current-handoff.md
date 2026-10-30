@@ -4,7 +4,16 @@
 
 用户新目标附件 `2c78ec8b-2451-41df-98e1-20b5eb2543b1/goal-objective.md` 已明确授权“立即恢复完整迭代并行执行”，不再等待用户另说继续。该裁决替换下方旧暂停与误恢复记录的当前时态，历史原文仍保留。唯一当前协调者为 `01a18588-9a70-7552-912f-477ac52cbe39`；本次复用十个既有执行会话、原候选和验证，不重做维护、不回退已保存成果。
 
-### 当前执行快照：EKO正常保存6c0，SDK完整producer被11项accepted迁移约束阻断
+### 当前执行快照：官网同步已保存，实际后端回放已独审，SDK迁移提案审查中
+
+- **官网已正常本地保存。** 新提交 `f38b784517e8af30dfaf1923be6f1dfff0b0a0c4`，父f397、tree41a17957…，formal/index干净。沿原同步入口把EKO投影更新至clean6c0，148来源逐Git blob一致、13中文来源变化、8页中3中文页更新；Framework340完整对象与322镜像不变。原16命令及staged artifact均自然0，61tests/338HTML/330派生正文按原范围保留。Root独核原raw/receipt和六个准确blob，保存票 `website-EKO6c0-local-commit-save-proof.json` SHA76256b70…；独审原生事件63bc8b10…直接归档原1532B，不把作者摘要代替独审。未推送或部署，task/globalnotchecked不授native或正式SDK资格。
+- **实际五场景backend capture已完成并独审通过。** 原retained G8 f796…测试binary直接运行原selector，实际1p0f0I/144filtered/3.77s；五case为该测试内部场景，41个原件包含index，另有1个INDEX marker。Unknown批准块1/2/0/0、持久Candidate与公开Settled分列；toolcase原24callback为22Agent＋2Tool，signed/redacted/opaque保值。原reader仅命令身份与选定回调顺序两函数实际0；完整fixture/sourcecapsule、TauriIPC/WebView/App及性能仍未验。作者票1ab2ef87…，Root独审 `eko-actual-backend-five-capture-independent-review-r01.md` SHAe92982f6…为限定pass。当前7713fc75…绑定准备已交原性能作者组合既有六private文件及真实descriptor，不回灌旧reader/JSDOM、不重复capture、不触认证后数据。
+- **SDK已有具体有限迁移提案，尚未实施。** `sdk-u01-missing11-contract-migration-proposal-20261030/proposal.md` SHA0fd40c34…推荐精确11旧source/kind退出＋仅3个既有with_id方法接受，保10成员callback shared route及三语既有wire/可选call_id/unit/interrupted。native本批新增Rust source接受为0，原阻断wire/schema及完整消费义务保留，不自动接受另列50项或父树；set_store仅更新已有accepted签名。旧DELETE只保FeatureUnavailable/Never/原operation的最薄拒绝，不广告可执行route、不造request或接管managed owner；历史Plan04 guard保原0930→3f/f7端点和精确减法，当前实际生成diff另审。Draft ADR、精确14组原flags及必要源码范围已交SDK-facing独审，未批准flags/u02/新seed/正式pin。原u01自然1/0更新、formal3f/f7/0dac与private4784/5352/431继续冻结。
+- **资源窗口继续串行，独立准备并行。** Root已授性能线仅F340原两个release harness的P1 no-run窗口，要求当前冻结工具链/源码/锁、free≥5GiB、jobs2、准确自有target及保全后官方clean；授窗不等于编译已通过。EKO并行准备准确Tauri CLI macOS arm64 debug构建输入，SDK并行完成提案审查；未开始seed/quiet、新App或账号轮询。
+
+当前F340/EKO6c0/官网f38均正常本地保存；顶层协调文档前切点已保存517ec8f。完整原26＋新增、真实GUI/终端/SSH/手机/IMcron、正式SDK来源/合同/Parquet、quiet、精确mainCI、发行发布部署仍未完成。用户数据、三旧runtime、固定历史与所有外部动作边界保持。以下09:00及更早均为各自历史切点。
+
+### 09:00切点：EKO正常保存6c0，SDK完整producer被11项accepted迁移约束阻断
 
 - **2026-10-30 09:00 UTC后继，Goal保持active。** EKO已正常本地提交 `6c0bc7879bc2b3b0dd3b7dd086913405cbafe035`（父7f3/treec23a4a4…），formal clean/index空。精确58文件逐SHA/bytes/mode、原staged artifact0/errorswarnings0，功能审链组合561e8b37…pass；Root保存票 `eko-normal-local-commit-save-proof.json` SHAede38949…。原8Rust＋3frontend＋postSource均自然0，workspace2387p0f19I/93名；前端884p4skip、G8GUI142p0f3I分列，不改成全部真实环境通过。
 - **当前风险与文稿已有准确新资格。** policy703b/冻结consumer78e10-274/lock399原五身份不变；原8controls0、两fresh scanner自然1且恰原五warning/零漏洞、独立caller/gate各0，DB40f5→ee1a49实际fetch/原6draft保原。当前风险决定Doc1a0e已正常采用，原正常Source/final实际0、durable verification c34db0e…/task:f2ea4ef…/globalnotchecked；旧Doc2b61两张票不替新Doc，历史完整。Root独证27b71f34…/9fced3b0…/9cb2599b…/7fe87b61…分别保工程、风险、正式与暂存范围；不称风险修复/新接受或未来续期。
