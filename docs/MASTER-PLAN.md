@@ -4,9 +4,9 @@
 
 用户最新 Goal 已明确本次更新即恢复授权，替换下方旧暂停时态。Root `01a18588-9a70-7552-912f-477ac52cbe39` 复用十个真实执行会话及原候选/失败继续；唯一现场仍为本主目录，不新建外部 worktree。当前完整分工、原 26 项及新增原生消息/终态/进度/六工具组/跨会话范围见[任务总表](supreme/handoffs/2026-10-29-active-resume/任务总表.md)，最新现场见[唯一交接](supreme/handoffs/eko-current-handoff.md)。
 
-Framework 稳定 R15 已取得原24命令全部自然0；完整 workspace/all-targets/all-features 为4215通过、0失败、4忽略，另有 learning 全feature doctest4通过和原条件feature矩阵0。473个必要保全对象经Root回读，准确自有target官方clean0；原失败、4个真实服务/性能忽略和工程范围均保留。EKO固定197消费的原八门现也全部自然0，workspace为2385p0f19ignored、86唯一必需用例实际ok；11制品Root回读后exacttarget官方clean0。03:17 UTC重型窗口已正式交回Framework，四组修复的固定before源正按最小两NoRun计划实际编译，尚无新编译结果/行为RED；新源码完整门禁、正常source/final、合法新Framework提交和SDK正式新pin仍未闭。
+Framework旧稳定R15原24全0/4215p0f4ignored、EKO固定197原八门全0/workspace2385p0f19ignored与86唯一用例保持各自范围，必要制品已Root回读后准确clean。04:01 UTC最新：四组原API before实际41=16p25f，修后同41全转绿，加Store10及原27不重复控制共78p0f0ignored；16个已审文件已正常preflight正式接入，Root逐2841正式成员SHA/mode与已验证d702全同。新完整门禁首两格式0，第三Clippy因Glob一处let-and-return自然101，后续未启动；Fsole正在最小消除冗余绑定，保旧源/失败后另冻新源复验，不放宽lint。新完整工程、正常source/final、合法Framework提交/SDK精确pin及最终消费者仍未闭；下游受控Store/RPC与factory输入已冻结，不冒SDK/EKO实际通过。
 
-后续父菜单源码审查又发现真实缺口：公开 `Duration::MAX` 超时在 Provider 的 `Instant + Duration` 路径可能于HTTP前panic；README 原生Ollama承诺与实际三种协议适配不符，中文snapshot/rollback示例缺异步及Option处理。Framework唯一writer正在准备最小修复与原API反例，当前不启动第二重型批次、不修改EKO固定197。Provider/Docs保持needs_review；三菜单绑定已限定独审通过，两删除的限定保留/退出材料与Quality/Tools父菜单复核并行，不能凭工程全绿清除未知。最终capture/Tauri/App等待修复后的稳定组合，前端独立门禁继续。
+R15父菜单审查的历史发现与当时安排（完成情况以上方04:01实查为准）：公开 `Duration::MAX` 超时在 Provider 的 `Instant + Duration` 路径可能于HTTP前panic；README 原生Ollama承诺与实际三种协议适配不符，中文snapshot/rollback示例缺异步及Option处理。当时Framework唯一writer准备最小修复与原API反例，不启动第二重型批次、不修改EKO固定197。Provider/Docs保持needs_review；三菜单绑定已限定独审通过，两删除的限定保留/退出材料与Quality/Tools父菜单复核并行，不能凭工程全绿清除未知。最终capture/Tauri/App等待修复后的稳定组合，前端独立门禁继续。
 
 GUI普通用户消息工具栏已补键盘focus-within可见性，原24项focused及相关静态检查通过，真实桌面Tab/主题/响应式仍待。受保护authroot的三份旧runtime仍无安全移出资格，不移动、不覆盖认证或新建空root掩盖恢复问题。SDK3f/官网7f1各自已保存资格保留；完整Goal、native/SSH/手机收件、正式性能、main/CI、发布部署均未完成。没有push、merge、外部Issue写或gitlink晋升。
 
