@@ -1,8 +1,16 @@
 # EKO 总纲（MASTER-PLAN）
 
-## 2026-10-30 最新执行状态：完整迭代继续，Framework 新反例验证
+## 2026-10-30 最新执行状态：R15 原24通过，继续处理后续源码反例
 
 用户最新 Goal 已明确本次更新即恢复授权，替换下方旧暂停时态。Root `01a18588-9a70-7552-912f-477ac52cbe39` 复用十个真实执行会话及原候选/失败继续；唯一现场仍为本主目录，不新建外部 worktree。当前完整分工、原 26 项及新增原生消息/终态/进度/六工具组/跨会话范围见[任务总表](supreme/handoffs/2026-10-29-active-resume/任务总表.md)，最新现场见[唯一交接](supreme/handoffs/eko-current-handoff.md)。
+
+Framework 稳定 R15 已取得原24命令全部自然0；完整 workspace/all-targets/all-features 为4215通过、0失败、4忽略，另有 learning 全feature doctest4通过和原条件feature矩阵0。473个必要保全对象经Root回读，准确自有target官方clean0；原失败、4个真实服务/性能忽略和工程范围均保留。重型窗口现交 EKO：固定消费 R15/197，不热换依赖，当前 Rust 批自然结束后交回资源。正常source/final、合法新Framework提交和SDK正式新pin仍未闭。
+
+后续父菜单源码审查又发现真实缺口：公开 `Duration::MAX` 超时在 Provider 的 `Instant + Duration` 路径可能于HTTP前panic；README 原生Ollama承诺与实际三种协议适配不符，中文snapshot/rollback示例缺异步及Option处理。Framework唯一writer正在准备最小修复与原API反例，当前不启动第二重型批次、不修改EKO固定197。Provider/Docs保持needs_review；三菜单绑定已限定独审通过，两删除的限定保留/退出材料与Quality/Tools父菜单复核并行，不能凭工程全绿清除未知。最终capture/Tauri/App等待修复后的稳定组合，前端独立门禁继续。
+
+GUI普通用户消息工具栏已补键盘focus-within可见性，原24项focused及相关静态检查通过，真实桌面Tab/主题/响应式仍待。受保护authroot的三份旧runtime仍无安全移出资格，不移动、不覆盖认证或新建空root掩盖恢复问题。SDK3f/官网7f1各自已保存资格保留；完整Goal、native/SSH/手机收件、正式性能、main/CI、发布部署均未完成。没有push、merge、外部Issue写或gitlink晋升。
+
+以下段落保留先前执行切点；其中“当前／正在”不覆盖上方最新状态。
 
 恢复时先读唯一交接顶部“当前执行快照”，再核实际句柄。EKO r10原八门已结束7过/1失败（workspace2214p3f14ignored/101），11bins/1.837GB逐SHA-size-mode保全并官方clean0，capture/App待新F组合；原43和required86实际observedok不冒全量绿。F source8经8Asset独立审查发现六代码与当前文稿真反例；原PE13+telemetry2+Improve1已取得16实际GREEN，r03旧缓存资格拒绝保真。TP2/3 r06纠正fixture后五原API实际产品RED，Root proofef92c082…；F24获准路径已正常预检/正式合流并冻结r07(843050cc…/2836)，Root全hash/mode及24formal0漂，r07首次编译101的两新增test API用法已最小修正为r08(cdd4eaf3…/2836、Root0漂)，cargo16038/rustc16052正同root-only/op1debug0真实重编，尚无新组合GREEN。新public Rust事实hook/ownedArc/原read-map来源修复与SDK真实effects保真有精确范围，不自动扩accepted，原Eq/Finding/policy/lock/AGENTS/protected保持。glob源码控制已独审0但Windows未跑，TP/U7/受影响回归与完整矩阵/Source待；8Asset真实限制和两删除保留职责普通材料继续，不能改状态假闭。当前配置仅allowlist、269+4非原子backup/old140不覆，oldToken7/payload2三份Reader依赖未运行不兼容不迁移；fixture9953与4Swift compiled都未启动native。SDK3f正式pin、官网合法来源、最终App/SSH/手机/quiet/main/发布仍未完成；无push/merge/gitlink晋升。
 
