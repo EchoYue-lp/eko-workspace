@@ -4,7 +4,16 @@
 
 用户新目标附件 `2c78ec8b-2451-41df-98e1-20b5eb2543b1/goal-objective.md` 已明确授权“立即恢复完整迭代并行执行”，不再等待用户另说继续。该裁决替换下方旧暂停与误恢复记录的当前时态，历史原文仍保留。唯一当前协调者为 `01a18588-9a70-7552-912f-477ac52cbe39`；本次复用十个既有执行会话、原候选和验证，不重做维护、不回退已保存成果。
 
-### 当前执行快照：SDK三项实际缺口转入有限修复；App前端已过，CLI被空间门槛阻断
+### 当前执行快照：官方release CLI已实际编译中，SDK下一批Before输入已冻结
+
+- **App重构建已真正启动。** 2026-10-30 18:08:06.974 UTC（北京时间10月31日02:08），真正spawn前freshfree5,374,468,096B≥5GiB、其它heavy为空；监督42864/tool6823，实际Tauri CLI43024→observer43043→固定冻结Cargo。原packet63a/observer8d9/override828与已封存前端不变，实际child逐字保留`build --bin echo-agent-tauri --locked --no-default-features -p echo-agent-cli --bins --features gui,gui,tauri/custom-protocol --release`，不删重复gui或CLI追加实参。实际进程树、TAURI_CONFIG/DYLD与父子raw由原观察器记录，当前编译中无终态，不称W0或App构建通过。尚未clang/probe、codesign、App启动、账号或clean；运行中跨5GiB不改写其合法启动票，也不额外开启另一套重构建。
+- **资源拒绝与恢复均保原。** 先前free不足导致的0spawn拒绝票6fbf62c5…和CLI主缓存清理9a06均保留。Root在自有新副本试过ditto透明压缩，实际flags0/分配字节未减，未替换原Before二进制；仅删除该实验新副本、raw/失败及回读原件保留，收尾票7a03cef6…。随后真实空间回到门槛，由EKO在真正spawn点再次核≥5后启动，不把du或Root瞬时观察代替门禁。两个IDE处理与Framework primary清理的具体用户问题仍pending，Root未signal IDE或清F primary/SDK证据；不是靠假许可推进。
+- **Permission I1的限定独审已通过。** `sdk-u03-permission-I1-independent-review-r01.md` SHA1d09b08e…锁sealed-I1-after的9改/2新、三parse及原helper前后字节、真实Node/PY各61与小JDK57，C0I0M0。Root已接管该候选资格，I1不重复改/跑；不升TS dist、JUnit/Maven、Host、正式pin或整个SDK通过，原a439其它两Finding未关闭。
+- **Sandbox/DELETE下一批1302 Before输入就绪但未运行。** 精确ticketc0335015…/manifest7f617f7f…/patch46a62665…/delivery7448fdab…位于SDK `sdk-u03-consumer-fixes-20261030/sandbox-delete-before-preparation`。相对sealed-I1只增Protocol四控制、Host十二command-only proxy/ACP控制及子模块注册/完整ADR；I2/I3/DELETE生产仍u02字节、I1三parse及focused原件保持，未Cargo/Rust/Host/Maven。原formatter首轮check1及后继idempotence0保原，格式不是typecheck或行为RED；Root已派只读检查现API和失败清理，后继由同一Host窗口先真实RED再最小实现GREEN，不并行冷编多套Host。唯一重型窗口现归App。
+
+原26＋新增、SDK真实消费/Source/pin/风险、App/平台/手机/SSH/安静性能/mainCI/发行与外部授权义务完整。Root三文档前切点已保存3ef65d50，F340/EKO6c0/网站f38与SDK3f正式保护不变；认证数据、三旧runtime、必要原件与其它缓存不动。以下CLI空间拒绝和此前片段按历史保留。
+
+### CLI空间拒绝切点：SDK三项缺口转入有限修复，App前端已过
 
 - **SDK实际独审为block/C0I3M0，生成成功事实不改。** 报告 `sdk-u02-actual-contract-delta-independent-review-r01.md` SHAa4392d0b…明确三语Permission旧alias、新SandboxCommand句柄路由无Host authority、原命令按值serde提前丢同exactguard/cancel三项缺口；其余签名按真实shape保留，原u02 full0/export0不改失败。后继值投影/命令owner方案e33158b3…经限定设计独审7142a119…pass，Root已准唯一u03候选路线：单source/kind descriptor复用Value，真实raw process-local分类保留；guard/token交原CallbackInvocationOwner至真实physical closure，不新增wire handle/owner，不恢复旧alias。尚未Rust RED或修改这些生产路径，Before测试/ADR准备先行；原typed DELETE r02同后继窗口，后续fullupdate不带原14flags。
 - **Permission独立切片已实际取得RED。** 唯一u03路径为SDK `.echo-semantic/local/sdk-u03-consumer-fixes-20261030/candidate-sdk`，原u02不可变。Node原parser17通过/44失败、Python18通过/43失败，均为非canonical输入被接纳的行为失败，不是构建前提错误。Root明确只接纳default/plan/auto-edit/full-auto/auto/bubble/dont-ask/strict八ID，旧alias/ask/大小写/空白/未知拒绝，策略/default/输出不改。三语最小parser及直接测试/文档已交候选：同测试Node/Python各61p0f，小量JDK原enum编译0/行为14p43f→新enum编译0/57p0f；完整票14f7f7c3…/After1300 manifest1f477a58…/patch08624627…冻结交独审，尚未独审关闭I1，不授完整SDK或Host资格。未开Maven/Host/Cargo。
