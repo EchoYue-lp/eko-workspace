@@ -4,7 +4,16 @@
 
 用户新目标附件 `2c78ec8b-2451-41df-98e1-20b5eb2543b1/goal-objective.md` 已明确授权“立即恢复完整迭代并行执行”，不再等待用户另说继续。该裁决替换下方旧暂停与误恢复记录的当前时态，历史原文仍保留。唯一当前协调者为 `01a18588-9a70-7552-912f-477ac52cbe39`；本次复用十个既有执行会话、原候选和验证，不重做维护、不回退已保存成果。
 
-### 当前执行快照：Glob相对provider回归与工件隔离已验证，恢复正式目录完整门禁
+### 当前执行快照：新正式原24全通过并释放窗口，SDK已开始真实消费
+
+- **2026-10-30 05:46 UTC实查，完整Goal仍active。** 正式F/49d审计副本对应的原24命令全部自然0/零编译诊断/source_drift null；full05为4262p0f4ignored/93实际CargoRunning、2child摘要不叠，当前79唯一函数在原raw各一次ok。doc4p0f0ignored、NoDefault与15独立feature全0。Root原05独证d25de71a…、原24独证f323fc53…均由当前原raw/receipt独核，不把旧R15、d70278或39focused追标。旧Glob回归、5PID污染及全部诊断失败原件保持。
+- **本次依赖fresh和接受风险边界已核。** 原cargo-deny0.20.2真实自然0，742126B raw仍1f9ed6ab…、原caller0/恰原49组107身份/policy14实际0；lock1442/baselinea5a6无差，不扩风险或SDK/CLI例外。actual pluralDB FETCH_HEAD在新23区间05:33:40.028–45.667Z内于05:33:45.104587更新，HEAD仍ee1a49/原HTTPS origin。Root先误查singular旧库、广glob包含official无label回执的校验错误已保并纠正；它们不改变实际扫描，亦不构成零风险或warning修复。
+- **工程重型窗口已实际交接。** 必要31文件524,835,712B Root逐SHA-size-mode回读0；exactW target官方clean0/source_drift null，Removed23411files/6.5GiB是逻辑量，target不存在且无原Cargo/rustc/reader。旧52＋52＋26与失败Tools/PID等仍保，foreign/tagless/globalregistry/vendor源码不动。Root release独证18114760…/作者postproof4b9bd1f7…，当时free约11.7GiB。FKsole转纯normalmetadata/真实source与task绑定、五父r04和两删除finiteEq，再原Source/final；没有Source/final/合法新Git/native资格。
+- **SDK已获唯一slot并真正启动。** 新49d binding2d9c39…，SDK3f before d100/after d608，共同02＋真实RPC04、only explicit-discard工程before与01错误消费after，03不叠；sdk-extension-bridge最小profile/单owned target。before lockedmetadata实际0/stderr空，366packages/366nodes/1034edges，private65aec锁未变、Fpath准确49d（source=null属controlled path非Git）。首NoRun n01-before-norun wrapper92918/Cargo92926已运行，05:46实采正在编49d State/Integration，尚无SDK编译/实际list/目标RED票；formal3f/f7/0dac/accepted8不动。Fmetadata轻量并行，EKO下一个窗口不等SDK全producer，但此刻不Cargo/fullfront/App。完整26＋新增、正式pin/风险/真实SSH/手机/IMcron/quiet/mainCI/发行发布部署、三旧runtime/authroot保护均保持原未完边界。
+
+以下04:48及更早记录保留当时切点，不覆盖上方新工程资格和窗口归属。
+
+### 04:48切点：Glob相对provider回归与工件隔离已验证，恢复正式目录完整门禁
 
 - **2026-10-30 04:48 UTC后继实查，Goal仍active。** C05完整门禁前四项实际0，但原05自然101：旧正确用例 `source8_glob_default_path_provider_entries_preserve_root_shape` 因新Glob无根时额外请求current_dir/canonicalize而失败（Tools281p1f2ignored）；此外5个Hook PID输出写入immutable copy，receipt9fec4472…保 `source_drift=immutable membership changed`。原2841声明文件无missing或SHA/mode变化，旧污染2c4树/5PID留原，失败Tools实际bin及6份来源、5PID副本已target外保全/回读。两项根因、失败与恢复不混记，Root分类proof4eb91460…；不删工件补旧命令假绿。
 - **生产与调用环境已最小纠正并实际回归。** 只Glob入口在construction `base_dir.is_some()`时调用原scope resolver，普通cwd/默认相对provider不新增能力要求，显式根/递归guard/trait/旧fixture/断言不改；调用方显式设原 `ECHO_HOOK_DEADLINE_TEST_ROOT` 到W own fixtures，Hook源码与预算不变。新clean49d89c17…/2841与正式guard16cb1413…已normal采用/fmt检查；两个NoRun0/零诊断后，原失败1＋FS33＋Hook5共39实际0/零忽略/无source drift。qualified79ee7833…，Root逐原raw/39唯一名字、Hook环境、clean2841 membership/SHA/mode实核0错，独证 `3795ad84ffd3c7bd6a28a8d2445ce1281506cea9bb1969955c5841943a92c11e`。旧78仍属d702，当前39不替完整24。
