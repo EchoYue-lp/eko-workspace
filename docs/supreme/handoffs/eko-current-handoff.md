@@ -4,7 +4,18 @@
 
 用户新目标附件 `2c78ec8b-2451-41df-98e1-20b5eb2543b1/goal-objective.md` 已明确授权“立即恢复完整迭代并行执行”，不再等待用户另说继续。该裁决替换下方旧暂停与误恢复记录的当前时态，历史原文仍保留。唯一当前协调者为 `01a18588-9a70-7552-912f-477ac52cbe39`；本次复用十个既有执行会话、原候选和验证，不重做维护、不回退已保存成果。
 
-### 当前执行快照：首个release App已保全，精确环境修正的r03正实际冷编译
+### 当前执行快照：r03失败证据保留，SDK P01 NoRun已真实启动
+
+- **r03真实失败保留，不能签W0。** 18:57:44.125→19:17:02.709Z原parent自然1，完整834B raw在原runCommand `Socket.capture→fs.writeSync`抛ENOSPC；child只有20474B前缀，最终child receipt/original run均缺失，natural exit明确unobserved，不补0/101，也不由前缀零warning推出告警修复成功。没有新App/main，postsourceguard实际0/PASS/errors[]，1078/2850/154dist无漂；原进程实际全空，不把无人运行误作已知child退出码。票63377058…/terminal77bbd17c…与Root独证 `tauri-r03-ENOSPC-natural-terminal-independent-proof.json` SHA79f09947…分列失败、证据缺口和真实清理观察。原r02 W1 App、partial3493 context引用及旧raw/env/PS/birth均保全，target保留未clean，未sign/probe/launch。
+- **资源根因只报已观测事实。** 94b03877…票记录partial target du2036060KiB、deps/build/fingerprint角色及normal marker，不替Cargo断言缓存有效/fresh。已有运行中free2.04G→1.53G→0.475G散点保原；缺ENOSPC瞬时df、进程RSS峰值与写盘归因，不杜撰谁耗尽磁盘。退出后free曾回升6.67G，随后又低于5GiB；不是按瞬时回升自动重试。没有改supplier、优化级别、等待/stack或cache metadata来消错误。
+- **r04仅新attempt机械身份，未准运行。** 新packet8f953c78…/observer8e7eff03…/overridece63fcf6…使用全新child/parent/raw/PS目录，原r03失败指向不挪覆；Root独证 `tauri-r04-attempt-identity-mechanical-independent-proof.json` SHA4ce936a3…核body除两BINDING身份外逐字相同、命令/env/override只改相应路径，原7774逻辑审查仅复用于未变代码，不冒新独审/W0。保持现partial warm cache让正常Cargo自己判定，未clean合法依赖或恢复fingerprint。当前该候选没有新Cargo授权，SDK优先下一heavy。
+- **SDK Before已获具名条件GO但尚未spawn。** 固定1302/a247/0344/Host57b9及1601source-only pass，执行入口先P01真实NoRun/JSON artifact→actual list核4名字→原Before，再H01同理核12。新Root窗口只在freshfree≥5GiB/busy0和冻结输入满足时启动；实际最新拒绝free4,694,851,584B/差673,857,536B/busy0，0spawn，不把GO文件或预期RED改成运行成功。编译/警告/路径/feature与fixture_cleanup_unconfirmed不当目标RED；生产I2/I3/DELETE仍未写。I1 sealed有限pass保持，不重跑。
+- **资源重排后SDK P01已实际启动。** Root为避免失败批次warm缓存无限阻塞独立验证，按3493失败context/旧App及原raw保全回读后授权仅该own target官方whole-clean0/targetabsent；receipt0006666e…记录free4,218,966,016→6,051,987,456B，实际4007描述前后核0，未清其它路径。19:44:04Z super84598/Cargo84617/session85403/freshfree6,061,838,336B/busy0，原runCommand实际执行P01原命令只加NoRun/JSON两参数，当前编译中无结果票。新监督入口曾因Cargo正常untracked `.cargo-ok`误挡为driver2/0Cargo，原拒绝和tracked diff0保；未删marker/改正式guard，沿Root已准直接入口启动。SDK占唯一heavy，EKO r04不竞争，后续仍actual list4→原P01、H01同理12；未typecheck/RED或生产修复资格。
+- **私有reader r03b仅候选，原采用件未换。** bc045c1b…/nativef627…/patch26bea…复审及审后23tests/113synthetic controls0，Root独证bd9ee902…已核原生passa19d6a95…并归档旧block2d8796f0…。仅精确Some/removal与真实独立PS/tree/birth/外层监督接口；新r03真实失败交success_step自然拒绝，不造缺失child/terminal或fullqualification。owned406b/report30d9/preparedbc9不热写；r04将来若选择仍需按其精确输入做机械后继，不以当前candidate资格代运行。
+
+完整Goal仍active，SDK入口与两条具体用户资源选择继续处理，未signal IDE或清Fprimary/SDK证据/global/oldtagless。顶层三文档前切点2ba63e7f，F340/EKO6c0/网站f38/SDK正式3f-f7的保护与原26＋新增、所有实际平台/安静性能/正式SDK/mainCI/发行/外部授权义务保持。以下r03冷启动段仅保当时切点。
+
+### r03冷启动切点：首个release App已保全
 
 - **r02真实构建已自然0，但保留W1。** 原CLI18:08:06.975→18:29:59.813Z、child18:08:08.050→18:29:55.923Z均自然0/无signal或截断，真实完整Eclip.app生成，postsourceguard0，1078/F2850/154dist无漂。唯一真实build-script警告是tauri-build2.7.3的STATIC_VCRUNTIME弃用，与原CLI的no-sign notice分列，未冒W0。same-volume COW保全wholeApp3文件177,682,616B，主bin177,558,224B/SHA57768352…，41feature fingerprints/428context/19dep-info与父子raw均保存；Root独证 `tauri-release-r02-actual-App-preservation-independent-proof.json` SHAea819ee4…核0，未签名、probe或启动App。
 - **r03只修真实macOS子进程环境边界。** 原CLI2.11.2跨平台传废弃Windows变量，tauri-build只要Some就警告，false不解决。准确packetffd2f0ff…/observerb937a159…/overridee5964272…经原生独审77740e10…source-only pass，Root已完整读源码及根因/非build引用。新观察器仅在固定darwin/arm64、真实CLI父进程/目标/cwd/toolchain范围记录parent原值、移除该一键给原runCommand子进程、记录实际环境差异并finally恢复；原argv和其它env不改，不patch供应商/源码/依赖或过滤raw。当前还是r03实际执行中，未继承source-only票成为W0。
