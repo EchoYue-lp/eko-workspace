@@ -4,7 +4,11 @@
 
 用户最新 Goal 已明确本次更新即恢复授权，替换下方旧暂停时态。Root `01a18588-9a70-7552-912f-477ac52cbe39` 复用十个真实执行会话及原候选/失败继续；唯一现场仍为本主目录，不新建外部 worktree。当前完整分工、原 26 项及新增原生消息/终态/进度/六工具组/跨会话范围见[任务总表](supreme/handoffs/2026-10-29-active-resume/任务总表.md)，最新现场见[唯一交接](supreme/handoffs/eko-current-handoff.md)。
 
-当前后继：两组SDK实际Before已独审接管（bfce82bc…、418c37fc…）。R01实现冻结4376/68b3/eabf后，原Protocol4p0f，原Host6p6f/自然101；独审668ebed8…为block/C0I2M0，指出公开流式入口漏原JSON校验、未提交的预取消仍发cleanup。六取消/observer失败已定位到夹具串行处理阻塞取消分发，正按官方connection-owned spawn修正夹具，再取两真实入口RED并最小修复；原R01源/bin/raw和新失败票b1d5e418…保留，未宣GREEN。三语After、full producer/export与精确guard仍待实际结果，正式SDK3f/f7/0dac不变。
+当前后继：SDK冻结8087/3954的Protocol4、Base Host12、正确Shell实际binary4共20项已自然通过，最小票84c5ed86…及原raw已Root核回；Shell原Cargo行为未启动的事实单列。07da8a72…增量审查仍block/C0I1M1：发送尝试后响应注册失败尚缺同owner的unknown强持；发送尝试也不能写成成功入队receipt。新增故障控制首轮只停外层driver而未触及目标分支，原timeout保留，不作RED，正改用官方task actor失败入口取证。三语After/full producer/export/精确guard和正式pin/风险仍待闭合。
+
+资源后继已实际完成：同SDK T仅Host旧包官方clean0（25唯一路径，旧50条重复列名不回写），观察free增加274,931,712B。Framework旧31制品全量冷归档/抽恢复后移除热副本，包136,662,366B/cbab25af…、映射bdd7f485…、恢复脚本216fd936…，独审e2e5db61…限定pass；原31路径已不常驻，未来按restore-map恢复，P1/G8/raw/source/现恢复包及targets不动。窗口free5,689,356,288B、df观察+387,350,528B，不作独占归因。r04资源旁路19cd9325/823ce3cd已source-only审通过并自身短读0，尚未实际监测或构建；strict reader6bfc/prepared a6ae保持。两个人类选择仍待答，本地修复继续，完整Goal未完成。
+
+R01失败修复历史切点：两组SDK实际Before已独审接管（bfce82bc…、418c37fc…）。R01实现冻结4376/68b3/eabf后，原Protocol4p0f，原Host6p6f/自然101；独审668ebed8…为block/C0I2M0，指出公开流式入口漏原JSON校验、未提交的预取消仍发cleanup。六取消/observer失败已定位到夹具串行处理阻塞取消分发，正按官方connection-owned spawn修正夹具，再取两真实入口RED并最小修复；原R01源/bin/raw和新失败票b1d5e418…保留，未宣GREEN。三语After、full producer/export与精确guard仍待实际结果，正式SDK3f/f7/0dac不变。
 
 新性能六组/33进程/450行已完成，独审018d298f…仅通过描述性记录；report6×自然2/incomplete，IDE峰值123.1%/47.7%使低负载未建立。严格r04 reader则已实际采用native6bfc/report30d9不写，23合成控制0、真实r03失败仍拒，新prepared source为a6ae304c…，EKO r04尚未重建。Framework340远端GET422/任务branch未发布，c03cb98e…列明24历史且排除保护Exa；Root已就仅该任务分支推送和IDE进一步处理分别询问人类，均待答，本地工作继续。原26及新增、其它70/36-76-277、正式来源/风险、真实平台、quiet、main/CI、发行及外部授权范围完整。
 

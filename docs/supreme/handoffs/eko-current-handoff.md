@@ -4,7 +4,15 @@
 
 用户新目标附件 `2c78ec8b-2451-41df-98e1-20b5eb2543b1/goal-objective.md` 已明确授权“立即恢复完整迭代并行执行”，不再等待用户另说继续。该裁决替换下方旧暂停与误恢复记录的当前时态，历史原文仍保留。唯一当前协调者为 `01a18588-9a70-7552-912f-477ac52cbe39`；本次复用十个既有执行会话、原候选和验证，不重做维护、不回退已保存成果。
 
-### 当前执行快照：2026-10-31，SDK R01失败转debug，reader已实际采用
+### 当前执行快照：SDK二十项已过，注册失败分支仍open，旧31已冷归档
+
+- SDK冻结8087/3954已实际Protocol4p0f、Base Host12p0f、正确Shell同实际binary4p0f；票84c5ed86…/三份原raw均经Root核SHA、实际ok名字与摘要。Shell Cargo行为因fresh空间不足未spawn，不能签原Cargo已0。源码增量审07da8a72…仍block/C0I1M1，尚需保发送尝试后响应回调注册失败的同exact owner/unknown及资源；标记不是成功enqueue或执行receipt。新增故障控制首轮编译通过但停外层driver未触发目标Err，timeout不作RED，作者正沿官方task actor失败入口继续取证，未假闭合。typed DELETE三语After/full producer/export/精确guard/正式来源和风险各保持原缺口。
+- 精确SDK Host旧包已官方clean0，25唯一普通路径/25inode已删、Frame/Protocol/第三方保留；原50 file entries为重复列名，旧提案不改，实票b42aead2…记录free观察+274,931,712B。Framework的W/cold-archives/c07-formal31-20261031-r01/归档亦实际0：handoff954a71ef…、tar cbab25af…/136,662,366B、map bdd7f485…、restore31.py216fd936…。全部31 tar成员SHA/size/mode/集合及抽恢复验证0后才精确unlink，独审e2e5db61…pass；原热31现不存在，父目录保留，后续须恢复映射，不回写旧manifest/raw/receipt。21:56:40Z窗口free5,689,356,288B、共享df观察+387,350,528B即已还SDK槽；P1/G8/raw/source/recovery154/工具链/全部targets/用户数据不动。
+- EKO的r04资源旁路source19cd9325…/launcher823ce3cd…已source-only独审、实际自身短读0；原生审查事件ebb8da34…已Root按精确单行回读归档。它只为将来具名r04记录free与准确树/RSS/birth，不控制构建或补旧r03峰值，现未运行App/监测/性能。strict reader6bfc及prepared a6ae304c…保持；Framework任务分支发布与进一步IDE处理两个人类选择仍待答，未push或signal。当前完整Goal active/未完成，SDK本地debug不等该两项。
+
+本次更新前Top为c1619bfb…，F340/EKO6c/SDK3f/官网f38仍为各自正式保存点，原26及新增/其余70与36-76-277及真实平台、quiet、main/CI、发行与外部授权范围完整。下方保留各历史切点。
+
+### R01失败历史切点：2026-10-31，reader已实际采用
 
 - **SDK未取得整体GREEN。** Sandbox实际Before独审bfce82bc…及typed DELETE Before独审418c37fc…已接管，原首错覆盖限制保持。R01冻结入口4376c517…/manifest68b3d9eb…/15文件patch eabfdf54…；原Protocol After4p0f，Host After6p6f/自然101，raw7dc8702f…、新失败保全票b1d5e418…均在SDK的`after-focused-execution-r01/`。源码独审668ebed8…为block/C0I2M0：公开流式入站JSON校验遗漏、未提交的预取消仍发共享cleanup。作者定位到六取消/observer首错的共同夹具原因：串行handler等待原任务，阻塞后续取消；正改为官方connection-owned spawn，保原producer/response/cleanup等待，再对两真实入口取RED并最小修复。原R01源/bin/失败原件保留，顶层预期状态不作通过权威。三语After/full producer/export/guard后继尚待新结果，正式3f/f7/0dac及风险/I1sealed保持。
 - **性能六组仍为描述性。** 新result e9349fa8…及独审018d298f…核六runner/33进程0、450行（390测量＋60预热）与15分布；report6×自然2/incomplete。36观察5d7dfddd…具名heavy空，但IDE最高123.1%/47.7%，不授低负载或优化资格；三活动measurement-owner合法更新与旧索引历史SHA分列。lease20:45:07.337Z已释放后才还SDK槽，旧样本/raw不改，不自动重测。人类进一步IDE处理选择待答。
