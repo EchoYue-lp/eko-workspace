@@ -4,7 +4,9 @@
 
 用户最新 Goal 已明确本次更新即恢复授权，替换下方旧暂停时态。Root `01a18588-9a70-7552-912f-477ac52cbe39` 复用十个真实执行会话及原候选/失败继续；唯一现场仍为本主目录，不新建外部 worktree。当前完整分工、原 26 项及新增原生消息/终态/进度/六工具组/跨会话范围见[任务总表](supreme/handoffs/2026-10-29-active-resume/任务总表.md)，最新现场见[唯一交接](supreme/handoffs/eko-current-handoff.md)。
 
-05:46 UTC最新：正式F原24工程命令全部自然0/零编译诊断/源码无漂移，full4262p0f4ignored/93实际targets、当前79用例全ok；doc4/0、NoDefault/15features、原fresh依赖49组107身份/policy14全实际通过。Root原raw/24出口/实际DBfetch时序独核，锁和风险合同无扩大。必要31文件524MB回读后exacttarget官方clean0/absent，唯一slot已交SDK：lockedmetadata0/私有seed不变，before NoRun真正启动，尚无SDK目标RED/GREEN。Fsole并行正常metadata/Sourcefinal/合法Git前置，不能借工程票造source/pin/native。旧R15/EKO197、C05回归/污染失败保持当时范围；完整Goal、最终App/SSH/手机/quiet/mainCI/发行发布部署仍未完成。
+06:10 UTC最新：Framework正常本地提交 `340993201cc937fc8e4783b66be399ef9f14e3d5` 已保存、源码/index干净，200精确变更、原24工程与Task Source/final、staged artifact0；globalClosure保持not_checked。SDK同49d真实RPC从错误成功Null的101转为typed拒绝1p0f，原memory2＋新stdioHost上的TS32/PY2/Java2全0，正式3f/f7保护输入不动。SDK先完成保全/准确clean交EKO下窗；新Host Result代码与正式f7(unit)须和真实新pin整体处理。网站clean-source同步、SDK本地340来源提案并行，原26＋新增、正式pin/全SDK/EKO/native/quiet/mainCI/发布部署仍未完。
+
+05:46 UTC工程切点：正式F原24工程命令全部自然0/零编译诊断/源码无漂移，full4262p0f4ignored/93实际targets、当前79用例全ok；doc4/0、NoDefault/15features、原fresh依赖49组107身份/policy14全实际通过。Root原raw/24出口/实际DBfetch时序独核，锁和风险合同无扩大。必要31文件524MB回读后exacttarget官方clean0/absent，唯一slot已交SDK：lockedmetadata0/私有seed不变，before NoRun真正启动，尚无SDK目标RED/GREEN。Fsole并行正常metadata/Sourcefinal/合法Git前置，不能借工程票造source/pin/native。旧R15/EKO197、C05回归/污染失败保持当时范围；完整Goal、最终App/SSH/手机/quiet/mainCI/发行发布部署仍未完成。
 
 R15父菜单审查的历史发现与当时安排（完成情况以上方最新执行状态为准）：公开 `Duration::MAX` 超时在 Provider 的 `Instant + Duration` 路径可能于HTTP前panic；README 原生Ollama承诺与实际三种协议适配不符，中文snapshot/rollback示例缺异步及Option处理。当时Framework唯一writer准备最小修复与原API反例，不启动第二重型批次、不修改EKO固定197。Provider/Docs保持needs_review；三菜单绑定已限定独审通过，两删除的限定保留/退出材料与Quality/Tools父菜单复核并行，不能凭工程全绿清除未知。最终capture/Tauri/App等待修复后的稳定组合，前端独立门禁继续。
 
