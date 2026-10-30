@@ -4,7 +4,9 @@
 
 用户最新 Goal 已明确本次更新即恢复授权，替换下方旧暂停时态。Root `01a18588-9a70-7552-912f-477ac52cbe39` 复用十个真实执行会话及原候选/失败继续；唯一现场仍为本主目录，不新建外部 worktree。当前完整分工、原 26 项及新增原生消息/终态/进度/六工具组/跨会话范围见[任务总表](supreme/handoffs/2026-10-29-active-resume/任务总表.md)，最新现场见[唯一交接](supreme/handoffs/eko-current-handoff.md)。
 
-06:10 UTC最新：Framework正常本地提交 `340993201cc937fc8e4783b66be399ef9f14e3d5` 已保存、源码/index干净，200精确变更、原24工程与Task Source/final、staged artifact0；globalClosure保持not_checked。SDK同49d真实RPC从错误成功Null的101转为typed拒绝1p0f，原memory2＋新stdioHost上的TS32/PY2/Java2全0，正式3f/f7保护输入不动。SDK先完成保全/准确clean交EKO下窗；新Host Result代码与正式f7(unit)须和真实新pin整体处理。网站clean-source同步、SDK本地340来源提案并行，原26＋新增、正式pin/全SDK/EKO/native/quiet/mainCI/发布部署仍未完。
+06:20 UTC最新：Framework340和官网f3976bd本地里程碑均clean/index空。网站按正常F-only路径保存46文件，322镜像/338路线/330正文块、61tests/build及Task Source/final全0，EKO A71全投影保持。SDK窄片全部功能/保全/准确target clean已Root独核，原raw1.1GiB；EKO已获唯一窗口并实际启动r03/49d before NoRun，目标2RED→12GREEN仍待真实结果。SDK340组合提案限定独审0，仅准备受控本地Git来源，不动正式f7/锁/accepted，不执行新producer。原26＋新增、最终native/SSH/手机/quiet/正式pin/mainCI/发行发布部署均未完。
+
+06:10 UTC切点：Framework正常本地提交 `340993201cc937fc8e4783b66be399ef9f14e3d5` 已保存、源码/index干净，200精确变更、原24工程与Task Source/final、staged artifact0；globalClosure保持not_checked。SDK同49d真实RPC从错误成功Null的101转为typed拒绝1p0f，原memory2＋新stdioHost上的TS32/PY2/Java2全0，正式3f/f7保护输入不动。SDK先完成保全/准确clean交EKO下窗；新Host Result代码与正式f7(unit)须和真实新pin整体处理。网站clean-source同步、SDK本地340来源提案并行，原26＋新增、正式pin/全SDK/EKO/native/quiet/mainCI/发布部署仍未完。
 
 05:46 UTC工程切点：正式F原24工程命令全部自然0/零编译诊断/源码无漂移，full4262p0f4ignored/93实际targets、当前79用例全ok；doc4/0、NoDefault/15features、原fresh依赖49组107身份/policy14全实际通过。Root原raw/24出口/实际DBfetch时序独核，锁和风险合同无扩大。必要31文件524MB回读后exacttarget官方clean0/absent，唯一slot已交SDK：lockedmetadata0/私有seed不变，before NoRun真正启动，尚无SDK目标RED/GREEN。Fsole并行正常metadata/Sourcefinal/合法Git前置，不能借工程票造source/pin/native。旧R15/EKO197、C05回归/污染失败保持当时范围；完整Goal、最终App/SSH/手机/quiet/mainCI/发行发布部署仍未完成。
 

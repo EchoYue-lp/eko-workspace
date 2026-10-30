@@ -4,7 +4,15 @@
 
 用户新目标附件 `2c78ec8b-2451-41df-98e1-20b5eb2543b1/goal-objective.md` 已明确授权“立即恢复完整迭代并行执行”，不再等待用户另说继续。该裁决替换下方旧暂停与误恢复记录的当前时态，历史原文仍保留。唯一当前协调者为 `01a18588-9a70-7552-912f-477ac52cbe39`；本次复用十个既有执行会话、原候选和验证，不重做维护、不回退已保存成果。
 
-### 当前执行快照：Framework已正常保存340，SDK真实RPC与三语窄片通过
+### 当前执行快照：网站已正常保存F340镜像，EKO接续真实工厂验证
+
+- **2026-10-30 06:20 UTC，Goal仍active。** Framework `34099320…`、官网新本地提交 `f3976bd40c177647787904bae5fdf0165108ff17` 均clean/index空。网站精确46文件正常保存，原F-only同步/全部13步检查与Task Source/final自然0，61tests/338HTML；322镜像/338路线/330派生正文的资格保持实际范围。完整EKO A71投影/148来源/8页不变。Root独核全部46当前字节与13原raw/receipt、正常staged artifact0；独立review的原生1570B事件SHA179e6918…保原字节，不把handoff摘要冒原报告。保存回执 `website-F340-local-commit-save-proof.json` SHA b9639251…，未push/部署/晋升gitlink。
+- **SDK已实际释放窗口，EKO已接续。** 原sharedtarget官方clean0/真实absent，原raw为2346files/1.1GiB（作者一条口头1.4已更正，不改原raw）；before13＋after24和独立新Host均保全，Root逐SHA/size/mode、真实12handles/三语与freshXML、target/reader/资源独核0，proof1af2af45…。EKO唯一heavy窗口已授权并真正启动既定r03/49d before NoRun（原same2 tests、源码守卫与single target/jobs2/debug0/inc0/threads2），尚无新编译/目标2RED或after12GREEN资格，不追用旧197八门。Root一次ps观察因OS参数非法UTF8解码拒绝后已仅修观察decode；未停/重启作业，也非产品失败。
+- **SDK组合提案独审通过但尚未正式采用。** e9edcdf7…与三源码、pin/ADR组合限定review077cfae0…为C0/I0/M0。Root选择明确受控的真实本地Git340供下一组合准备，优先原producer本地来源入口、否则私有fileGit候选；不改工具/guard、不用URL重写伪远端可取，不执行新Cargo或producer。正式3f/f7/0dac/protected8不变，官方最小锁/完整26producer与accepted实际差异仍待窗口。最终App/SSH/手机/IMcron、quiet、正式pin/完整SDK、mainCI及发行发布部署、原26＋新增和用户数据保护均继续保留。
+
+以下06:10及更早记录保留各自切点。
+
+### 06:10切点：Framework已正常保存340，SDK真实RPC与三语窄片通过
 
 - **2026-10-30 06:10 UTC，完整Goal保持active。** F真实本地提交 `340993201cc937fc8e4783b66be399ef9f14e3d5` 已保存（父684、tree e6c28f37…），正式工作区干净、index空。精确200变更由Root统一提交，原24工程、Task Source/final和原artifact_contract staged均自然0；Source/final范围为task、globalClosure仍not_checked。Root保存回执 `c08-framework-local-commit-save-proof.json` SHA c83ef5a8…，独核198实际blob＋2删除及正常durable receipt，工程非semantic2261成员与49d相同。已审语义材料的14处后继由当前Source/final覆盖；Root两次自身核验范围假设拒绝及纠正保在f217/a7f1 proof，不改变原validator结果。
 - **SDK受控窄片已实际闭合。** 同49d/r02/common04：before NoRun0/W0、实际唯一RPC101（错误成功Null），after NoRun0/W0、新本地fresh=false制品、同RPC1p0f0i（typed拒绝并保原状态）；原Host memory两控制0。新stdio Host 53d53746…/65,177,824B build0/W0；最小TS32、PY2、Java2全通过，无failed/skipped。它们不是全SDK/Parquet/26producer/正式pin。SDK正式3f/f7/0dac/protected8保持；f7原setter实际返回unit，Result消费代码必须与真实新pin组合处理，不能仅落新Host代码造成正式依赖不匹配。当前先保全after制品并准确clean释放窗口，随后EKO原2RED→12GREEN工厂切片接续。
