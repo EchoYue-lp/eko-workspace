@@ -4,7 +4,16 @@
 
 用户新目标附件 `2c78ec8b-2451-41df-98e1-20b5eb2543b1/goal-objective.md` 已明确授权“立即恢复完整迭代并行执行”，不再等待用户另说继续。该裁决替换下方旧暂停与误恢复记录的当前时态，历史原文仍保留。唯一当前协调者为 `01a18588-9a70-7552-912f-477ac52cbe39`；本次复用十个既有执行会话、原候选和验证，不重做维护、不回退已保存成果。
 
-### 当前执行快照：网站已正常保存F340镜像，EKO接续真实工厂验证
+### 当前执行快照：EKO真实12全绿并接入，完整工程与风险绑定分路推进
+
+- **2026-10-30 06:53 UTC，完整Goal保持active。** EKO同r03/49d/newStore工厂真实before2个目标Arc反例101，after NoRun0/W0、新bin0c83…/545,896,512B及同2＋原10共12唯一case全部通过/0ignored；505依赖与11F制品保暖复用。Root独证 `eko-r03-after12-formal-adoption-independent-proof.json` SHA372bd39b…核新bin、原raw、formal1078与tested d826逐SHA/mode同源。按条件授权正常preflight/apply接入实际 **2生产Rust＋1测试Rust＋1runtime文档**，旧post-install候选被替代；四文件采用d6b037bb…/Task Source0，globalnotchecked与既有13unmapped/unknown保留，尚未EKO提交。Root旧“3生产”简称已在证明中纠正。
+- **原全量后继已实际运行。** c9e7529b…原8Rust＋3frontend＋postSource由原handle54266单批执行，前两fmt0/fullclippy在途，不把12focused或旧197八门追标新全量。继续相同cli-after物理SourceID/own暖target、原required86＋new12（union93）、原预算/threads2/逐步5GiB。前端只按既有lock/runtime校验后接入node_modules，未install/服务器。capture/Tauri/App/auth等后继仍HOLD。
+- **CLI风险复核已覆盖完整新consumer，而非仅factory。** source-only独审292f3e4f…为C0/I0/M0：d027原A71/273逐Git blob重现，新78e10…/274两读一致；全部1added/58modified（27生产、32测试）已审，Cargo/features/build/config/lock399与原五身份不变，未见扩大原GTK/glib/宏/notification-D-Bus暴露的具体反例。正式policy仍d027；仅已准ignored单字段候选ff3c1a9b…及中文追加准备，须8Rust0/源码稳定/collector复读后Root明确接管并跑原工具控制与fresh actual/canonical。不是新风险接受或未来续期。
+- **SDK仅前三metadata阶段已形成实际增量。** private fileGit340的m01原locked101原锁保留，m02官方最小resolve0、m03locked0且JSON相同；新锁47847d…，完整锁653→653/637条完整保留/16替换，归一后仅2条新optional边。16中包含11原Git来源、2Polars同版本来源及约束必需的Zstd三包0.13.3→0.14.3、safe7.2.4→8.2.0、sys2.0.16→2.1.2；不可压成纯SourceID机械换名。实际default仅366包/366node/1034edge，未验证fullprofile。Root独证67123d3a…的原raw/来源/锁核对通过，限定独审9f8e5c01…为pass；owned缓存约592MB、target未创建，无编译/producer/风险扫描。正式3f/f7/0dac/protected8、accepted与旧f7 guard/source-risk均不动，原完整26producer/Parquet/正式pin仍待窗口。
+
+F340及网站f397正常本地里程碑保持；原26＋新增、最终App/SSH/手机/IMcron、quiet、正式SDK/mainCI/发行发布部署和认证后数据/三旧runtime保护均未缩减，未push/merge/部署/gitlink晋升。以下06:20及更早记录只保各自切点。
+
+### 06:20切点：网站已正常保存F340镜像，EKO接续真实工厂验证
 
 - **2026-10-30 06:20 UTC，Goal仍active。** Framework `34099320…`、官网新本地提交 `f3976bd40c177647787904bae5fdf0165108ff17` 均clean/index空。网站精确46文件正常保存，原F-only同步/全部13步检查与Task Source/final自然0，61tests/338HTML；322镜像/338路线/330派生正文的资格保持实际范围。完整EKO A71投影/148来源/8页不变。Root独核全部46当前字节与13原raw/receipt、正常staged artifact0；独立review的原生1570B事件SHA179e6918…保原字节，不把handoff摘要冒原报告。保存回执 `website-F340-local-commit-save-proof.json` SHA b9639251…，未push/部署/晋升gitlink。
 - **SDK已实际释放窗口，EKO已接续。** 原sharedtarget官方clean0/真实absent，原raw为2346files/1.1GiB（作者一条口头1.4已更正，不改原raw）；before13＋after24和独立新Host均保全，Root逐SHA/size/mode、真实12handles/三语与freshXML、target/reader/资源独核0，proof1af2af45…。EKO唯一heavy窗口已授权并真正启动既定r03/49d before NoRun（原same2 tests、源码守卫与single target/jobs2/debug0/inc0/threads2），尚无新编译/目标2RED或after12GREEN资格，不追用旧197八门。Root一次ps观察因OS参数非法UTF8解码拒绝后已仅修观察decode；未停/重启作业，也非产品失败。
