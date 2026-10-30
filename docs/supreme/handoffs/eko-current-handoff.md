@@ -4,7 +4,15 @@
 
 用户新目标附件 `2c78ec8b-2451-41df-98e1-20b5eb2543b1/goal-objective.md` 已明确授权“立即恢复完整迭代并行执行”，不再等待用户另说继续。该裁决替换下方旧暂停与误恢复记录的当前时态，历史原文仍保留。唯一当前协调者为 `01a18588-9a70-7552-912f-477ac52cbe39`；本次复用十个既有执行会话、原候选和验证，不重做维护、不回退已保存成果。
 
-### 当前执行快照：EKO全量前四门通过，用户授权清理IDE缓存后续跑
+### 当前执行快照：EKO workspace 2387全绿，保全后清自有缓存续G6
+
+- **2026-10-30 07:50 UTC，Goal保持active。** 原G5 workspace自然0：外层11组最后父summary合2387 passed/0failed/19ignored；appcore2220p0f14I、GUI142p0f3I。原86与本次12的并集93个名字在本次raw各一次ok，child summary不叠；Root独证df03eb59…/ba5e45c4…分别核实际原raw、汇总/产品与93名。19ignored仍为显式live/性能/人工native等未验，不改成通过。
+- **原产品与后继拒绝分开。** 按实际Running保存全部9个bin，logical1,495,359,248B，逐SHA-size-mode/otool及9次--list均0；8558 metadata共11,260,226B回读0。APFS clone保独立字节，但不额外增加净可回收量。G6因实际约3.03GiB在spawn前拒绝、0tests，不是产品失败；原G1–G5五项自然0/W0与raw/checkpoint保原。
+- **Root已选并完成准确自有whole-clean。** 局部包量无法保证达5GiB，Root在新鲜source/锁/读者与保全核0后授权仅r03 own target官方clean。作者回执990ae05b…/Root独证34363dc8…，自然0、完成时targetabsent，实际free3,243,397,120→9,016,934,400B，净增5,773,537,280B（约5.38GiB）；不是du预报。postclean9个retained list/SHA均0。原同entry从G6/G7/G8＋3frontend＋postSource续跑，handle87415；空target由Cargo正常建TAG，未造前置，不重跑前五。此次不动foreign/primary/global/旧tagless/源码/认证数据。
+
+当前仅G1–G5已过，余门/正式风险重绑与fresh actual/canonical、capture/Tauri/App/auth、正式SDK/26producer/Parquet、quiet/mainCI/发行发布部署及原26＋新增仍未完成。政策候选表达独审609f0a1f…pass仅为候选，正式risk仍d027。以下07:23及更早保各自历史切点。
+
+### 07:23切点：EKO全量前四门通过，用户授权清理IDE缓存后续跑
 
 - **2026-10-30 07:23 UTC，Goal保持active。** 原full54266的fmt-write/fmt-check/fullclippy-all/strict-clippy四项均自然0/W0。原workspace未spawn、0case执行；其准入拒绝先被口头误归空间，原guard实际为free6,082,232,320B（约5.66GiB）合规但存在RustRover62222下Cargo/rustc。更正仅追加，原拒绝/guard/raw不改。随后IDE自动检查重启并使空间跌到约3.7GiB；不是EKO测试失败，不重跑四绿。
 - **用户已具体处理资源边界。** 用户先选择手动暂停IDE自动检查，Root未停止IDE；实际编译子树随后归零。Root初次宽列ps因comm截断漏识别Rover，已用直接PID/最后comm列纠正，未据错误观察启动命令。IDE primary target约3.76GiB，标准TAG、lsof无reader、仅Cargo产物/无bundle或测试exe；因AGENTS禁止自动清primary，Root先交具体选择，用户明确允许清理这一个 `/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/target`。
