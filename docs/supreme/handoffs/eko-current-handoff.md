@@ -4,7 +4,16 @@
 
 用户新目标附件 `2c78ec8b-2451-41df-98e1-20b5eb2543b1/goal-objective.md` 已明确授权“立即恢复完整迭代并行执行”，不再等待用户另说继续。该裁决替换下方旧暂停与误恢复记录的当前时态，历史原文仍保留。唯一当前协调者为 `01a18588-9a70-7552-912f-477ac52cbe39`；本次复用十个既有执行会话、原候选和验证，不重做维护、不回退已保存成果。
 
-### 当前执行快照：四组实际反例已修后转绿并正式接入，完整Clippy首轮待最小修正
+### 当前执行快照：Glob相对provider回归与工件隔离已验证，恢复正式目录完整门禁
+
+- **2026-10-30 04:48 UTC后继实查，Goal仍active。** C05完整门禁前四项实际0，但原05自然101：旧正确用例 `source8_glob_default_path_provider_entries_preserve_root_shape` 因新Glob无根时额外请求current_dir/canonicalize而失败（Tools281p1f2ignored）；此外5个Hook PID输出写入immutable copy，receipt9fec4472…保 `source_drift=immutable membership changed`。原2841声明文件无missing或SHA/mode变化，旧污染2c4树/5PID留原，失败Tools实际bin及6份来源、5PID副本已target外保全/回读。两项根因、失败与恢复不混记，Root分类proof4eb91460…；不删工件补旧命令假绿。
+- **生产与调用环境已最小纠正并实际回归。** 只Glob入口在construction `base_dir.is_some()`时调用原scope resolver，普通cwd/默认相对provider不新增能力要求，显式根/递归guard/trait/旧fixture/断言不改；调用方显式设原 `ECHO_HOOK_DEADLINE_TEST_ROOT` 到W own fixtures，Hook源码与预算不变。新clean49d89c17…/2841与正式guard16cb1413…已normal采用/fmt检查；两个NoRun0/零诊断后，原失败1＋FS33＋Hook5共39实际0/零忽略/无source drift。qualified79ee7833…，Root逐原raw/39唯一名字、Hook环境、clean2841 membership/SHA/mode实核0错，独证 `3795ad84ffd3c7bd6a28a8d2445ce1281506cea9bb1969955c5841943a92c11e`。旧78仍属d702，当前39不替完整24。
+- **后续改用准确正式编译路径，审计快照继续保。** 同一任务target与工具链/jobs2/opt1/debug0/原24范围不变；39终态后允许 `cwd=echo-agent`、manifest指正式Cargo.toml，去冗余显式--config，让原F配置自动加载一次。已实际核global只registry/source/net且无target重叠设置，原macOS target flags/相关env不变；记录正式CargoJSON/depinfo路径与49d审计副本/正式2841全字节守卫对等，不冒仍在旧snapshot编译。完整矩阵仍F独占，空间每新heavy实查≥5GiB；不足先准确保全/reader0后核own可清范围，不改floor或碰foreign缓存。SDK/EKO无并发Cargo、新正式pin与Source/final仍未闭。
+- **发行目标现有一份可审具体清单。** 官网ignored `发行目标与制品具体清单-20261030.md` SHA87cea15a…及独立审0aa51e2e…均Root实核（intake6d018bf6…）：逐F八crate、SDK Host/三语source-only包、Eclip和dist列实际版本/开关/命令/期望制品及缺口。旧台账“Root已确认正式多平台”无可核裁决引用，已在后继撤该含义；仅macOS arm64 debug App工程目标明确，正式版本/平台/registry/签名/渠道/部署仍待具体产物后的必要裁决。未构建、联网、发布或改变产品开关，原发行与部署义务未删除。
+
+以下04:01及更早快照保留当时真实范围，不覆盖上方最新切点。
+
+### 04:01切点：四组实际反例已修后转绿并正式接入，完整Clippy首轮待最小修正
 
 - **2026-10-30 04:01 UTC实查，完整Goal继续。** 原API before两NoRun实际0/零编译诊断，四个测试程序均fresh=false；41个实际唯一用例为16p25f0ignored。Provider6故障、Store4故障、FileRoot13故障与Hook2故障均从原raw核清，原函数首败不外推其余参数；Hook旧1秒动作实际4014ms才late-success/late-effect，另duplex触8秒外层guard，drop救援不算旧动作/清理通过。before4exe/必要库与来源共52文件526,767,863B经Root逐SHA-size-mode回读0错，真实reader0后四包官方clean0。Root独证 `076ac7005f90e437ea4d59cb3022a4d8b7efca7555512427741eaf758dcb8acf`。
 - **修后已有真实GREEN，资格限于对应输入。** 固定d702 after两NoRun0/零诊断，四个新bin的SHA均异before，实际51p0f0ignored，包含同41全转绿及Store新6/原4控制；另原Provider14与FS13具名控制实际全0，与51不重复，合78。Root after51独证 `918b7c37464406504a28fbcc0d63826090f7c5844464264470f504148d049c48`；Hook本次原1秒案例1008ms、原PID消失且late_effect=false，仅本观察，不承诺清理硬总界。F相对depinfo校验假设错误及顺序记录、Root错写after目录字面量的校验失败均保原并纠正，不当产品RED或stale证据。
