@@ -4,7 +4,9 @@
 
 用户最新 Goal 已明确本次更新即恢复授权，替换下方旧暂停时态。Root `01a18588-9a70-7552-912f-477ac52cbe39` 复用十个真实执行会话及原候选/失败继续；唯一现场仍为本主目录，不新建外部 worktree。当前完整分工、原 26 项及新增原生消息/终态/进度/六工具组/跨会话范围见[任务总表](supreme/handoffs/2026-10-29-active-resume/任务总表.md)，最新现场见[唯一交接](supreme/handoffs/eko-current-handoff.md)。
 
-07:50 UTC最新：EKO G5 workspace实际自然0/2387p0f19ignored、原86+new12并集93各一次ok；Root原raw/外层汇总/9实际bin+8558metadata独证df03/ba5e均通过，ignored不冒验收。G6资源拒绝前未spawn，已Root授权准确r03 own target whole-clean0/完成时absent，实际净回收5.38GiB/free8.40；source/锁/全部保全物不变，从G6及余门handle87415续，不重跑已过G1–G5、不伪空target/TAG。正式risk仍d027，候选表达609f已审但8门/稳定两读/fresh门仍待；全Goal/native/正式SDK/mainCI/发行继续。
+09:00 UTC后继最新：EKO正常本地提交6c0bc787…/clean-index空，58精确变更、原8Rust＋3front＋postSource0、fresh原五风险控制/两caller-gate0（scanner自然1）与新Doc1a0e正常Source/final0，Root ede38949…保存；风险未修复/不新接受。网站已派按clean6c0同步产品投影，EKO仅准备原实际backendcapture packet，App/auth未启动。SDK原u01实际26profile完成后11accepted源缺失拒绝/natural1，private0更新，保原并准确清own target；F当前合理替代能力有限源追踪e740已交，SDK契约处置及独审待，不能删11求绿。完整Goal、正式SDK/Parquet/native/SSH/手机/quiet/mainCI/发行发布部署继续。
+
+07:50 UTC切点：EKO G5 workspace实际自然0/2387p0f19ignored、原86+new12并集93各一次ok；Root原raw/外层汇总/9实际bin+8558metadata独证df03/ba5e均通过，ignored不冒验收。G6资源拒绝前未spawn，已Root授权准确r03 own target whole-clean0/完成时absent，实际净回收5.38GiB/free8.40；source/锁/全部保全物不变，从G6及余门handle87415续，不重跑已过G1–G5、不伪空target/TAG。正式risk仍d027，候选表达609f已审但8门/稳定两读/fresh门仍待；全Goal/native/正式SDK/mainCI/发行继续。
 
 07:23 UTC切点：EKO原full前四fmt/全clippy/strict已0W0；workspace前原拒绝真正因RustRover并行检查（当时5.66GiB合规），其后空间又跌<5，全部原拒绝/更正保留，无workspace执行/产品失败。用户先手动暂停IDE，再明确授权仅清formal CLI primary target；Root官方clean0/5934files3.9GiB逻辑量、formal1078清前后无漂移/r03暖cache保原，fresh无Rust读者/free约7.35后已明确只续未跑8命令。Finding后继仍203/仅两D状态变1，不宣全闭；其它正式风险/SDK/native/mainCI/发行和完整Goal继续。
 

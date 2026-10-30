@@ -4,7 +4,16 @@
 
 用户新目标附件 `2c78ec8b-2451-41df-98e1-20b5eb2543b1/goal-objective.md` 已明确授权“立即恢复完整迭代并行执行”，不再等待用户另说继续。该裁决替换下方旧暂停与误恢复记录的当前时态，历史原文仍保留。唯一当前协调者为 `01a18588-9a70-7552-912f-477ac52cbe39`；本次复用十个既有执行会话、原候选和验证，不重做维护、不回退已保存成果。
 
-### 当前执行快照：EKO workspace 2387全绿，保全后清自有缓存续G6
+### 当前执行快照：EKO正常保存6c0，SDK完整producer被11项accepted迁移约束阻断
+
+- **2026-10-30 09:00 UTC后继，Goal保持active。** EKO已正常本地提交 `6c0bc7879bc2b3b0dd3b7dd086913405cbafe035`（父7f3/treec23a4a4…），formal clean/index空。精确58文件逐SHA/bytes/mode、原staged artifact0/errorswarnings0，功能审链组合561e8b37…pass；Root保存票 `eko-normal-local-commit-save-proof.json` SHAede38949…。原8Rust＋3frontend＋postSource均自然0，workspace2387p0f19I/93名；前端884p4skip、G8GUI142p0f3I分列，不改成全部真实环境通过。
+- **当前风险与文稿已有准确新资格。** policy703b/冻结consumer78e10-274/lock399原五身份不变；原8controls0、两fresh scanner自然1且恰原五warning/零漏洞、独立caller/gate各0，DB40f5→ee1a49实际fetch/原6draft保原。当前风险决定Doc1a0e已正常采用，原正常Source/final实际0、durable verification c34db0e…/task:f2ea4ef…/globalnotchecked；旧Doc2b61两张票不替新Doc，历史完整。Root独证27b71f34…/9fced3b0…/9cb2599b…/7fe87b61…分别保工程、风险、正式与暂存范围；不称风险修复/新接受或未来续期。
+- **新后继并行已派。** 网站唯一owner按clean6c0和F340重新正常取EKO产品投影，不再沿旧dirty/A71前置等待，不升级native。EKO仅ignored准备原五个真实backend capture的准确selector/实际retainedharness/隔离data/out/前端reader；当前未执行capture/Tauri/App/SSH/poller或认证后数据。正式代码继续冻结，Root单独安排具体制品窗。
+- **SDK u01原完整生成器实际自然1。** 原26/26unique Rustdoc profile完成后，原accepted范围检查拒绝11缺失源身份；private更新0，5352/431/sourcecontract/4784锁均原样，未跑c01/export/autoaccept或改guard。必要exporter/库/depinfo/fingerprint15件88,869,531B及JSON61原件/时点样本保全后，准确own target官方clean0/absent/free约7.29G；票124c0719…，不能把26profile完成称fullupdate通过。只读F对照e740658c…已具名区分3无IDcallback shim→with_id、6旧Token/Think身份→原生message/status/usage、current_plan旧往返和legacy unmanaged delete；合理回调、managed/raw CRUD及签名职责当前保留。旧accepted seed却无这些替代身份，SDK逐11源/bridge-wire/退役替代处置与独审仍待，Root未授权删11求绿或恢复旧兼容第二路。
+
+F340/sitef397本地里程碑保持，所有push/merge/gitlink晋升/外部Issue修改/发布部署均未执行。原26＋新增、正式SDK pin/完整accepted/Parquet、真实GUI/终端/SSH/微信手机/IMcron、quiet、精确mainCI及发行仍未完成；用户认证后数据/三旧runtime/固定历史保护不变。以下07:50及更早仅保历史切点。
+
+### 07:50切点：EKO workspace 2387全绿，保全后清自有缓存续G6
 
 - **2026-10-30 07:50 UTC，Goal保持active。** 原G5 workspace自然0：外层11组最后父summary合2387 passed/0failed/19ignored；appcore2220p0f14I、GUI142p0f3I。原86与本次12的并集93个名字在本次raw各一次ok，child summary不叠；Root独证df03eb59…/ba5e45c4…分别核实际原raw、汇总/产品与93名。19ignored仍为显式live/性能/人工native等未验，不改成通过。
 - **原产品与后继拒绝分开。** 按实际Running保存全部9个bin，logical1,495,359,248B，逐SHA-size-mode/otool及9次--list均0；8558 metadata共11,260,226B回读0。APFS clone保独立字节，但不额外增加净可回收量。G6因实际约3.03GiB在spawn前拒绝、0tests，不是产品失败；原G1–G5五项自然0/W0与raw/checkpoint保原。
