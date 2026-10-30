@@ -4,7 +4,15 @@
 
 用户新目标附件 `2c78ec8b-2451-41df-98e1-20b5eb2543b1/goal-objective.md` 已明确授权“立即恢复完整迭代并行执行”，不再等待用户另说继续。该裁决替换下方旧暂停与误恢复记录的当前时态，历史原文仍保留。唯一当前协调者为 `01a18588-9a70-7552-912f-477ac52cbe39`；本次复用十个既有执行会话、原候选和验证，不重做维护、不回退已保存成果。
 
-### 当前执行快照：r03失败证据保留，SDK P01 NoRun已真实启动
+### 当前执行快照：P01已取得真实RED，H01夹具单行修正待资源重编
+
+- **P01原Protocol四控制已实跑。** 原NoRun自然0/W0，actual artifact PkgID为当前candidate的echo-sdk-protocol#0.1.0、fresh=false、features=[]、test opt1/debug0，2,192,544B executable SHAa75ef628…；原actual list自然0恰四名字，原行为自然101/2p2f/0ignored/0filtered。失败是错误invoke路由与第一个resource_guards注入未拒绝，未把后续循环参数说成已执行；完整原raw da4ded71…/票4c7360fc…及Root独证 `sdk-u03-P01-actual-NoRun-list-RED-independent-proof.json` SHAd39feab5…保真，不把RED归0或声称After已改。
+- **H01首先停在编译前提。** 原NoRun合法启动free5,547,016,192B/busy0，后自然101/0warning/1error E0609：夹具将ReactError误读为message字段。原raw0975839d…/票b52507d6…、Host57b9/manifest0344保原，没有Host executable/list12/行为RED。Root准且作者已apply仅该行error.to_string()，新Host3e3211f4…/1302 manifestda1c7d4f…/retry4bec06cc…/diff33d01b18…；断言、cleanup、token/资源控制及I2/I3/DELETE生产不改，standalonefmt check0不代编译修复验证。当前freshfree4,904,767,488B/busy0、差463,941,632B，0重试spawn；同slot条件授权持续但不降5GiB、不清valid依赖或跨其它缓存。原P01实际binary/票已target外保全8c873003…。
+- **全部精确续接已可审。** SDK沿原nightly/4784/F340/唯一target接续H01新NoRun→actual list12→原Before，类型/环境/cleanup未确认不算行为RED，真实Before完成才后继生产修复。Root已接管I1 sealed候选有限pass，未重I1或扩大Host资格。EKO r04仅8f95/8e7e/ce63机械新attempt，原r03未知childexit失败与r02 W1 App保，未获新retry/sign/probe/launch。root资源两问题仍pending，现不以保留暖缓存为由伪称执行，也不修改用户资源上界。
+
+Goal仍active且未完成；本切点没有重构建在跑，等待fresh5GiB/既有具名SDK窗口。Top前三文档前保存19885234，F340/EKO6c0/官网f38/SDK正式3f-f7保持；原26＋新增、全部平台/正式SDK/quiet/mainCI/发行与外部/用户数据/三旧runtime保护不缩。以下P01启动及更早均保各自历史切点。
+
+### P01启动切点：r03失败证据保留
 
 - **r03真实失败保留，不能签W0。** 18:57:44.125→19:17:02.709Z原parent自然1，完整834B raw在原runCommand `Socket.capture→fs.writeSync`抛ENOSPC；child只有20474B前缀，最终child receipt/original run均缺失，natural exit明确unobserved，不补0/101，也不由前缀零warning推出告警修复成功。没有新App/main，postsourceguard实际0/PASS/errors[]，1078/2850/154dist无漂；原进程实际全空，不把无人运行误作已知child退出码。票63377058…/terminal77bbd17c…与Root独证 `tauri-r03-ENOSPC-natural-terminal-independent-proof.json` SHA79f09947…分列失败、证据缺口和真实清理观察。原r02 W1 App、partial3493 context引用及旧raw/env/PS/birth均保全，target保留未clean，未sign/probe/launch。
 - **资源根因只报已观测事实。** 94b03877…票记录partial target du2036060KiB、deps/build/fingerprint角色及normal marker，不替Cargo断言缓存有效/fresh。已有运行中free2.04G→1.53G→0.475G散点保原；缺ENOSPC瞬时df、进程RSS峰值与写盘归因，不杜撰谁耗尽磁盘。退出后free曾回升6.67G，随后又低于5GiB；不是按瞬时回升自动重试。没有改supplier、优化级别、等待/stack或cache metadata来消错误。
