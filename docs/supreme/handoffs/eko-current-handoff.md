@@ -4,7 +4,15 @@
 
 用户新目标附件 `2c78ec8b-2451-41df-98e1-20b5eb2543b1/goal-objective.md` 已明确授权“立即恢复完整迭代并行执行”，不再等待用户另说继续。该裁决替换下方旧暂停与误恢复记录的当前时态，历史原文仍保留。唯一当前协调者为 `01a18588-9a70-7552-912f-477ac52cbe39`；本次复用十个既有执行会话、原候选和验证，不重做维护、不回退已保存成果。
 
-### 当前执行快照：P01已取得真实RED，H01夹具单行修正待资源重编
+### 当前执行快照：Sandbox真实Before已保全，接续同源Host与三语言DELETE
+
+- SDK 唯一交接是 `echo-agent-sdk/.echo-semantic/local/sdk-u03-consumer-fixes-20261030/before-slot-execution-r02-H01-typefix/Before-P01-H01-delivery-handoff.json`，SHA `b1ef0e7c1a95807516e50926f0da9cb55114b995f6fbd504cb82b419b8e2b7d6`。Protocol 为 NoRun0/W0/list4/原行为101（2通过2失败）；Host r03 为 NoRun0/W0/list12/原行为101（0通过12失败、221 filtered）。原 E0609 编译失败保留，不作行为 RED。Root 已核六件原件 SHA/大小及实际 Host raw/list，独立只读复核中；十一项只到首个 guard 失败，后续控制尚未覆盖，raw 无逐项远端计数，不补造。必要二进制已保存，selected 源与正式/I1/tool 绑定未变，原读者结束，暖 target 留给相邻批次。
+- 下一步由唯一 SDK writer 使用原 r02 ticket 的 Host build argv、原 nightly/jobs2/debug0/同 target，构建实际 stdio Host 后运行原三语言退休 DELETE 边界及 managed-retirement 控制。仅追加实际 JSON artifact 输出，不伪造 catalog 或恢复已退休路由制造 RED；语言构建失败单列前提。Before 保全和读者退出后，按已批准 e33158b3/7142 方案实施最小值投影、原 callback owner 资源保持及 typed DELETE。正式 SDK 3f/f7/0dac、风险与整体语言资格仍独立。
+- 资源维护48份历史 JSON 的执行票 f73d69b1…和独审 e8ef4efb…保留：逻辑内容、大小、模式、mtime 不变，物理存储变化另记，分配量减少1,052,549,120B；不算产品性能优化。用户选择手动暂停 IDE 自动检查，并授权仅清 CLI 主 target；本次实查该目录已不存在，无重复 clean 或 IDE 信号。EKO r04 仍仅准备，SDK 占唯一重型窗口；后继构建仍须真正启动前满足5GiB与无其它重型批次。
+
+完整 Goal 仍 active、未完成。本次文档更新前核对的五仓 HEAD 为 Top00e3/F340/EKO6c/SDK3f/官网f38，除四个既有 gitlink 外原源码及 index 干净；本次仅更新协调材料。原26与新增范围、真实 App/SSH/微信/IM/cron、安静性能、正式 SDK、main/CI、发行、发布部署和用户数据保护继续有效。下方均为各自历史切点。
+
+### H01资源等待历史切点：P01已取得真实RED，H01夹具单行修正待资源重编
 
 - **P01原Protocol四控制已实跑。** 原NoRun自然0/W0，actual artifact PkgID为当前candidate的echo-sdk-protocol#0.1.0、fresh=false、features=[]、test opt1/debug0，2,192,544B executable SHAa75ef628…；原actual list自然0恰四名字，原行为自然101/2p2f/0ignored/0filtered。失败是错误invoke路由与第一个resource_guards注入未拒绝，未把后续循环参数说成已执行；完整原raw da4ded71…/票4c7360fc…及Root独证 `sdk-u03-P01-actual-NoRun-list-RED-independent-proof.json` SHAd39feab5…保真，不把RED归0或声称After已改。
 - **H01首先停在编译前提。** 原NoRun合法启动free5,547,016,192B/busy0，后自然101/0warning/1error E0609：夹具将ReactError误读为message字段。原raw0975839d…/票b52507d6…、Host57b9/manifest0344保原，没有Host executable/list12/行为RED。Root准且作者已apply仅该行error.to_string()，新Host3e3211f4…/1302 manifestda1c7d4f…/retry4bec06cc…/diff33d01b18…；断言、cleanup、token/资源控制及I2/I3/DELETE生产不改，standalonefmt check0不代编译修复验证。当前freshfree4,904,767,488B/busy0、差463,941,632B，0重试spawn；同slot条件授权持续但不降5GiB、不清valid依赖或跨其它缓存。原P01实际binary/票已target外保全8c873003…。

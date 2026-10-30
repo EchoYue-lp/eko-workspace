@@ -4,7 +4,11 @@
 
 用户最新 Goal 已明确本次更新即恢复授权，替换下方旧暂停时态。Root `01a18588-9a70-7552-912f-477ac52cbe39` 复用十个真实执行会话及原候选/失败继续；唯一现场仍为本主目录，不新建外部 worktree。当前完整分工、原 26 项及新增原生消息/终态/进度/六工具组/跨会话范围见[任务总表](supreme/handoffs/2026-10-29-active-resume/任务总表.md)，最新现场见[唯一交接](supreme/handoffs/eko-current-handoff.md)。
 
-当前后继：SDK P01原NoRun0/W0/actual list4后原Before101/2p2f已取真实RED，Rootd39feab5核原路由和首runtime字段注入失败，不扩大参数人口/不改0。H01原NoRun101是夹具E0609编译前提，0warning1error，无Hbinary/list/行为RED；Root准单行message→to_string，Host3e32/manifestda1c/retry4bec冻结，断言/cleanup/生产不变，尚未新NoRun验证。实际free4,904,767,488B<5GiB/busy0，H01条件GO持续但0重试，不降上界或跨清缓存；I1限定pass、P01原件和EKO r03未知childexit失败/r02 W1 App/r04仅机械准备都保。当前无重构建在跑，原26＋新增/所有实际平台/正式SDK/quiet/mainCI/发行与外部/data边界完整。
+当前后继：SDK Sandbox 的真实 Before 已完成并保全：Protocol 原四项 2通过/2失败，Host 修正夹具类型后原十二项 0通过/12失败；两次 NoRun 均自然0、无编译诊断，实际 list 分别恰4/12，行为均自然101。Host 十一项停在首个 guard 观察，后续取消优先级等控制尚不能称已覆盖；原 E0609 编译失败单独保留。唯一交接为 `sdk-u03-consumer-fixes-20261030/before-slot-execution-r02-H01-typefix/Before-P01-H01-delivery-handoff.json`（SHA b1ef0e7c…），Root 已核原 raw/list 和六件交接原件，独立只读复核中。SDK 正沿同源、同暖 target 接续真实 Host 与三语言 typed DELETE 的 Before；完成后进入已批准的 I2/I3 与 typed DELETE 最小修复，不改正式 pin 或风险合同。
+
+资源维护仅透明压缩48份已结束的历史合同 JSON，逻辑 SHA/大小/模式/mtime 不变，物理 inode/压缩标志变化另记；文件分配量减少1,052,549,120B，独审 e8ef4efb…限定通过，不授产品性能或SDK资格。用户选择手动暂停 IDE 自动检查，并明确只准清 CLI 主 target；本次实查该目录已不存在，无重复 clean 或 IDE 信号。EKO r04 仍未获重建启动，原 r02 W1 App、r03 ENOSPC 与未知 child exit 保留。总 Goal 仍 active，原26及新增范围、真实平台、正式 SDK、安静性能、main/CI、发行和外部授权均继续验收。
+
+H01资源等待历史切点：SDK P01原NoRun0/W0/actual list4后原Before101/2p2f已取真实RED，Rootd39feab5核原路由和首runtime字段注入失败，不扩大参数人口/不改0。H01原NoRun101是夹具E0609编译前提，0warning1error，无Hbinary/list/行为RED；Root准单行message→to_string，Host3e32/manifestda1c/retry4bec冻结，断言/cleanup/生产不变，尚未新NoRun验证。实际free4,904,767,488B<5GiB/busy0，H01条件GO持续但0重试，不降上界或跨清缓存；I1限定pass、P01原件和EKO r03未知childexit失败/r02 W1 App/r04仅机械准备都保。当前无重构建在跑，原26＋新增/所有实际平台/正式SDK/quiet/mainCI/发行与外部/data边界完整。
 
 P01启动历史切点：r03原parent因原logger ENOSPC自然1，child只有partial20474B/exit回执缺失为unobserved，无新App，Root79f099核原件；sourceguard0、原进程全空、partial/fp与旧r02 W1 App保原，未clean/patch supplier/伪W0。资源94b只报du/free/swap散点，缺峰值/RSS归因明确；新r04仅attempt路径变化8f95/8e7e/ce63由Root4ce9机械核0，不准自动重试。此前SDK条件准入不足5GiB的0spawn拒绝保原；为让出独立验证资源，失败App own cache已官方clean0/4007保全核0，free恢复后19:44:04Z SDK P01 NoRun实际super84598/Cargo84617/session85403/freshfree6,061,838,336B/busy0启动。原入口untracked .cargo-ok误挡/driver2与tracked diff0保，未删标记或改正式guard；当前编译中，未actual list/RED或I2I3/DELETE生产资格。reader r03b source-onlypass/23tests113仍不采用或fullqualify，真实失败按原success_step拒；所有原26＋新增、实际平台/正式SDK/quiet/mainCI/发行与外部/data边界保持。
 
