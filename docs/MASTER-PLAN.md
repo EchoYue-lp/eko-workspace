@@ -1,5 +1,11 @@
 # EKO 总纲（MASTER-PLAN）
 
+2026-10-31 12:28 接续：SDK 原03 clippy（workspace/all-targets/all-features/locked/-D warnings）已自然0/W0，UTC04:21:49.135—04:24:50.076Z，完整raw d84faaaf…/19,196B、原caller5aaa46dc…、afterguard d528e8fb…与diagnostic0均保留。04曾因fresh不足5GiB而0spawn/guard1，非行为失败。首批1,857项元信息只含791项旧布局FP的口径已由5618ca32…补正：新增2,555项后3,346实际FP全部逐SHA保T外，dep-info原已保；原dc149及断言失败不覆盖，未补FP回target。
+
+本fullEX唯一准确cargo-target随后依Root具名授权官方whole clean0，UTC04:27:42.452—43.291Z/Removed5612files967.2MiB（原caller dfb20266…）。source/outside before与after四检查全0，T absent，4,488项T外保护无漂，after9a901791…记录fresh5,837,512,704B/heavy空。只有本批target清理，未动SDK primary工程证据、其它缓存或用户数据；净释放以实际读回为准。原04 cargo test --workspace --all-features --locked 已同target/同profile/jobs2真实冷编START（faf86881…，UTC04:27:56.87、43262→43319、session62360），启动fresh5,836,505,088B/源保护0/无竞编，目前在途，未签workspace测试或余14阶段通过；01/02/03未重跑，完整Goal active未完成。
+
+W1六组实测与背景限制沿上一段4155/90c2/bc4原件，未追加采样；SDK实际C精风险绑定eb61/独审3b6b与新9930/1753纯fmt冻结沿原scope复用，正式3f/f7/0dac仍不变。原生fd95失败1与窗口约束证据保原，Perf仅准备App局部可恢复autoHideDock候选，暂无新compiler/App GO。EKO另按原1047/0619排程准备无需native的W2六组与W3四组准确现有入口，不写P/产品、不seed/采样/编译；已具备数据则直接复用。其它70组、完整SDK/原caller/新Host/collector/三语/source-final、115/402、真实GUI/SSH/微信手机/IMcron/quiet/mainCI/发行发布部署均继续按完整原Goal验收。以下保留此前切点。
+
 2026-10-31 W1与SDK接续：W1原六组已实际完成，6runner与33child自然0，450行=390测量+60预热，UTC04:16:01.215—04:16:23.390Z/22.175s；lease bf41f7bc…先释放再作离线统计。原Node6×0、reader6×2保incomplete/errors空/failed空/compile recognized_success，固定required-matrix/RTL/native-paint三gap不改，CPU不决定report2。结果4155a31d…、中文读数90c2bdd0…与独审bc4a2409…限定通过：规模1000的hot list p50/p95为14.328167/15.459167ms，cold open+first-list p50为49.801750ms（hot N30/cold N10）。36次观察具名heavy全空，但openclaw125.8%、fseventsd78%等背景限制保原，不签整机solo/持续低负载/正式性能优化或薄N p99；其它70组/native仍待。
 
 SDK唯一C已实际采用精两文件基线/文档（eb61d567…/actual patch精ea2bb286…），原same raw721a的未改verifier0、policy14自测0，原7f0a及旧verify1保原，49/107/原接受/policy/tool/command不扩；新3e248/dc458只两文件差异，实际独审3b6bc63c…限定pass。原正式3f/f7/0dac/AGENTS/index不动。W1释放后Root已给原18阶段工程GO，源绑定票a8b5仅机械续85d，Root实际接管证明5448ba88…；完整工程/Host/collector/三语言尚无通过资格。
