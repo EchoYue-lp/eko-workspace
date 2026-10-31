@@ -1,5 +1,7 @@
 # EKO 总纲（MASTER-PLAN）
 
+最新受控来源与诊断：隔离SDK HTTPS340的原update/locked完整metadata已自然0（69ad3ac6…），真实锁c448由原478实际Cargo生成，只13 SourceID变化、653其它字段/依赖边不变，真实checkout340/treee6c28/tracked0；1302 copy/后验只有2manifest+1lock变，C/formal/183保护不漂，源锁独审8d80e7已限定通过，唯一C精三文件已实际接回（aea4495d…/原caller0），当前freeze c9d908/manifest387d、锁c448；正式3f/f7/0dac、风险/guard仍未采用或取得资格。桌面新终态baseline分类once b550实际setup0/App82869及launcher1，固定标签entry.viewport/Error-prefixed-fixed-exact，21B摘要cdf9；原1400×900校验未改，Memory与有限lease采样在新P工程，不签capability/GUI/性能。正核原probe窗口尺寸与CSS视口边界，未猜原因或放宽oracle。NoRun54821首条gui-lib已实际自然0/W0并产出87d364…，正保全/selected list/afterguard；其余两命令/四role完整资格未取得。时点free4,916,887,552B不足新heavy5GiB，下一命令先核资源，不提前启动。
+
 运行后继：原r05 App已于10:14实际自然0，退出原因未知；五lease空/旧CP-config元数据不漂，fixture仍原owner。新分类仅setup守卫失败未启动，按新终态基线准备successor；NoRun首条54821继续，不把App退出归因编译或记作GUI验收。
 
 2026-10-31 10:15 来源后继：人类已允许仅Framework340/24任务历史推至同名任务分支；Root actual push0、远端branch精340，main/tag/其它refs不变且Exa排除，官方HTTPS exact GET0/sha340/treee6c28一致（证明d9640157…）。旧10:04的422/ref404与此前pending只属历史。SDK正式pin/锁/风险尚未切换，main/CI未因此通过；精来源提案转下一受控验证。人类另选择自己退出两个IDE，未授权Agent kill/STOP，也未签安静采样成立。
