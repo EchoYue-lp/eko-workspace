@@ -1,5 +1,7 @@
 # EKO 总纲（MASTER-PLAN）
 
+运行后继：原r05 App已于10:14实际自然0，退出原因未知；五lease空/旧CP-config元数据不漂，fixture仍原owner。新分类仅setup守卫失败未启动，按新终态基线准备successor；NoRun首条54821继续，不把App退出归因编译或记作GUI验收。
+
 2026-10-31 10:15 来源后继：人类已允许仅Framework340/24任务历史推至同名任务分支；Root actual push0、远端branch精340，main/tag/其它refs不变且Exa排除，官方HTTPS exact GET0/sha340/treee6c28一致（证明d9640157…）。旧10:04的422/ref404与此前pending只属历史。SDK正式pin/锁/风险尚未切换，main/CI未因此通过；精来源提案转下一受控验证。人类另选择自己退出两个IDE，未授权Agent kill/STOP，也未签安静采样成立。
 
 ## 2026-10-31 最新执行状态：F、EKO与官网已本地保存，SDK合同和真实验收继续
