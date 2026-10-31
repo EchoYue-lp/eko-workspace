@@ -1,5 +1,17 @@
 # EKO／Eclip 当前协调权交接
 
+2026-10-31 15:47 当前工程切点：EKO同cut最小修复已取得真实GREEN，并已正常采用到正式CLI的4个文件。原10命令各1通过/0失败/0忽略/W0，只有首项重编app-core（4m33s），首runtime11.26s仅为correctness计时，不是性能收益；terminal04fb3105…、after保全be6d31fe…及限定独审c910770a…通过。before原republished运行时RED/九控制0与全部原失败继续保留，e185/d05e自身日志自然收尾补充不改旧件。实际before/after程序分别7f47/372c，原FP/profile3914811562547596171/features=[]、540缓存单位及1078/2850完整guard已核；无新依赖编译，不借测试GREEN签1000场景达标。
+
+正式CLI仍HEAD6c，sole writer在原branch/index空/clean/base0预检后正常apply69d8＋d3b5＋078a；cargo fmt all/check及diff-check全0，1078正式源码逐byte等于已验B，除四文件外0差、F内容/模式0差，无stage/commit。采用索引afa7f456…、terminal1dc877c6…；collector原两读为f17364a7…/274，相对78e仅1生产＋2cfg(test)输入变化，无增删。Root已核5a31/d8f43最小提案并授权正式policy consumer单字段绑定及原中文decision后继、原六控制和fresh actual/canonical两门；本段尚未取得新绑定或fresh结果，不把旧五风险接受扩大，不继承78e绿票，锁3995/768、完整身份/checker/settings不变。
+
+批后官方whole clean与更窄profile test dry-run都真实101，原因是B/target缺CACHEDIR.TAG。未补tag/未rm/未改工具/未伪whole-clean0；T仍保留，3749文件/688目录/0符号链接，逻辑1843672784B。Root已准备01f9d1af…逐文件清单及唯一目标手工方法例外提案，并向人类发异步问题；尚未获答，不执行该手工删除。原E0/cargo-target已实查absent，无旧缓存可重复清。清理阻塞不再阻正式源码、无编译风险门禁或r03隔离准备；SDK新heavy仍须fresh5GiB。
+
+三历史程序已完成210353730B冷包ae9832…/完整逐byte roundtrip0（before7f47、GREEN372c、旧r04 App主bin2a20），handoff43c06…/map2a6f…/restore473e…经独审f3f53984…通过。后继精3原hot leaf已实际unlink自然0，终态3d02b4b5…/operation4c5d42a6…；原父目录/FPdep/source/回执/r04其它App成员与具名r02/r05保护0，三旧执行路径现在缺失且requires_restore。最新fresh3527401472B仍低于5GiB，不将957898752B预算当净释放。未来重执行必须先选登记路径恢复并核原SHA/size/mode；旧r04还须重核wholebundle/source/launch，r05/r02/P1/G8及用户认证不动。
+
+SDK当前d683/b0db/27bf原18票已完成绑定fb944/da98/c5d/f6a6/cee7，并经23a88…限定独审通过；原18完整stage记录、fixedenv、停止规则和stage18 XML helper保持。实际04仅588通过/18程序/2Doc0case/W0，格式链不伪称当前重写fmt；03及05–18仍pending/HOLD，T已官方清完无暖态，不借旧opt2程序签新dev1Host/collector/三语。native元信息r03仅clang一次0/raw0，真实b270f806…/166000B/arm64/7系统依赖与160e3f75…packet已核；正在准备全新隔离runtime，尚无App/probe/AX/测量GO，r05旧6c制品诊断不冒新formal验收。
+
+原16领域插件的8/8具名场景已逐条连回既有末版raw73b1225d…及当前16源/PreparedPluginSet同字节，5e5a7cd4…核销仅该映射缺口，补测建议0，不相加Gov4/domain35或冒真实窗口。原11 HookCommand::Test仅补测试准备：r02入口2073/patchf00f，3个scoped_hook_test函数，已解fixture隔离source I1并获dc928源审；尚未typecheck/实际选中/执行/采用，不签行为GREEN。完整原26＋原生消息/统一终态/进度/六组工具/跨会话仍active未完成，115/402边界、真实GUI/SSH两账号/微信手机/IMcron、性能after、正式SDK/source/mainCI、发行发布部署均按各自事实继续。以下15:22等均为较早切点。
+
 2026-10-31 15:22 后继实测：EKO before已真正结束，原controller11937自然0与首Cargo101分别保留。第一项exact1/0ignored，冷编译6m22s后runtime14.77s触发 `healthy same-cut read republished`；其余九项按原序Cargo0、各exact1/0ignored，全批编译W0/error0。交付索引4ef86f99…、保全9affc7a6…与十份raw/START/caller均在target外，真实test程序7f47c704…/495,385,824B/0755、原FP/dep及profile3914811562547596171/features=[]已保。CLI1078＋只读F2850后置guard0，正式6c/F340 clean；这是新增回归的真实行为RED，不把原1000场景watchdog或编译失败充数。
 
 Root已核原raw和1c5d/0cf2源码独审，授权相邻GREEN后半窗（决定8e64b004…）：只在B副本正常应用69d8生产补丁，保原两测试、源依赖、target、features/profile/env和十个exact argv，另存after epoch与新真实制品。当前约3.1GB空闲按同target单app-core测试叶子暖编译处理，不声称满足新重构建5GiB；若闭包扩张或资源不足停止并保原。此处仅为执行授权，尚未取得GREEN终态；不授权formal采用、App、性能重测或其它target清理。原1000before数据、128容量、规模/校验/watchdog保持。
