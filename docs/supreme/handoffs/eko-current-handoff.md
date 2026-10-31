@@ -1,5 +1,15 @@
 # EKO／Eclip 当前协调权交接
 
+2026-10-31 当前续接：新版66760c3/F340 App的普通GUI已实际启动并由真人确认首页可见、进入微信页和发送消息；当前owner为51722/UID501/23:16:15出生，四lease归同一PID，store位于本次data/store.json。该实例是最新0a02主程序的独立CoW副本，不注入probe、不自动退出。首次启动49658因错误选择未配置的native:controlled而失败，173B crash.log及原输入/输出已保全；后继只把selector改为已有presentation:unused，正常bootstrap、scheduler、reconciliation与GUI IPC已实际到达。这个展示模型仍指向127.0.0.1:9，不能据GUI启动宣称模型执行成功。
+
+最新真人回报触发同Goal内修复：微信NATIVE_WAIT确实收到手机回传，但其内容暴露内部execution/input状态，随后模型网络失败、最终却显示cancelled；IM与定时任务均没有进入侧栏最近任务/运行历史。四张原图和原话已逐字节保存在`.echo-semantic/local/root-full-framework-window-20261029/user-IM-cron-history-report-20261031/`。EKO唯一正式writer与IM/cron领域作者已按文件边界并行追踪真实TaskRun/conversation写入、查询、投影、事件和终态映射，先复现再局部修复，不新增第二任务store/executor。后继源码修复须重新focused验证并构建最新App；当前667实例只保其原切点资格。
+
+重要数据权威：真人已经在本次`persistent-GUI-owner-66760c3-preparation-20261031-r01/isolated-runtime/data`连接微信、产生授权和会话；该目录不再是可丢弃的fixture。禁止按旧空root/disabled-channel模板覆盖它、清理、回滚认证或重新扫码；实际credential归属和当前配置版本由IM源路径及最小metadata确认，不输出密钥正文。51722保持运行等待后续安全点，不擅自改在用配置/重启/自动重试旧消息。用户截图没有原生红黄绿标题栏，已结束该点击请求；当前真人界面可见与旧44037未见分别记载，不签旧532ad或性能nativepaint/延迟。
+
+资源维护已落实最新人类“允许删除开发中间编译产物与旧制品、使用最新产物测试”授权：仅已结束workspace/backend-owner-runtime-20261029/cargo-target经11件/100595B必要元信息外置核回、两对旧harness实际SHA等值和独立C0/I0/M0审查后，以固定FD删除器单次自然0回收7494文件、1368子目录及根。该target已absent，4561外部对象、73小证据、保存程序、源码/日志/Auth/CP/Git/恢复材料无漂移；实际入口c7b411c8。删除前后可用空间4886970368→6290120704B，观察delta1403150336B；更晚8528175104B中的额外系统变化不归功删除。未冒官方cargo clean、未补TAG、未承诺完整warm恢复。SDK primary的5982是文件数，实际约224MB且为13+1工程raw/XML/fixture证据，继续保护。
+
+官网必要两文件来源同步已正常保存为1dade08c0ee155f4e634c215f81a5094f8c3e5db：148来源恰两中文哈希变化，8页正文/F340镜像不变；定向检查、正常Source/final、独审和staged artifact均0，task/globalClosure未检查，未冒本轮61unit/build或部署。原标准LS一次控制44037/open44033实际已结束，原driver1保留；仅bare-root URL判定修正后对相同raw的完整读回0，probe/PID/nonce/COMPLETE/restore与post reader0成立，非App OS exit0/paint。精10独立进程cold票92f420已准备但未获quiet GO；现因真人交互和新修复源冻结，不重seed/NoRun或把39c样本改称最新。完整Goal仍active未完成，原26及新增原生消息/终态/进度、GUI/SSH两账号/手机IMcron/完整性能/mainCI/发行发布部署义务继续。下方全部保留各自历史切点。
+
 2026-10-31 22:37 续接：最终66760c3＋F340 arm64 Release App已真实重建、整包保全和准确target官方清理完成。原Tauri parent在13:58:56.572–14:19:20.660Z自然0，Cargo子调用0/20m21s/compiler W0，原两条no-sign提示分列；新retained Eclip.app主程序0a02698a4b562ee135007cd1e0dfad85e8311254f89f9faab1ee83ec22cbbe30、177555040B/0755，Info com.eko.desktop/Eclip/echo-agent-tauri/1.0.0。实际FP profile精字符串854319013279132213/target2818530879649310454/features channels+gui，来源3928文件/155资源及25项外置编译上下文保真。完整3文件App已核回，所有原caller/raw闭合后生成索引503e42da；reader0后只本次新target官方clean0/6217files2.9GiB/T absent/516保护零漂，独立终态增量审pass C0/I0/M0，Root接受证明cdf5505c。它仅为production-mode-instrumented构建资格，未执行显式签名、安装或启动，不是stock发行/native/paint/mainCI通过。
 
 后继只准备一次标准GUI启动能力控制：官方NSWorkspace/open契约189eb2d2已核，open0为ACK、非AppPID/退出码/rusage；DYLD环境可传但目标限制及实际加载须真实marker+nonce/WebView回执，不因API契约预签旧激活问题已修。原child使用Popen PID与wait4，不能直接换成open后冒资源或成功；Workspace在独立owned lane准备受限NSWorkspace completion实际App owner/清理helper及driver，不能复写旧r03/r04/532ad。新App实际字段已可绑定，未知App exitstatus/rusage仍null；若不能安全拥有实际App则不得launch，所有真实运行仍待Root精审后一次GO。主构建已释放重型窗，清后5159665664B仅当时观察、下轮重型须fresh原门槛。原始认证/fixture13618/旧App/所有cold恢复材料不动，完整Goal active未完成，GUI/SSH两账号/手机IMcron、完整性能/RTL/OS paint/mainCI/发行发布部署均继续分别取证。下方为历史切点。
