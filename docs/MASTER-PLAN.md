@@ -1,5 +1,13 @@
 # EKO 总纲（MASTER-PLAN）
 
+2026-10-31 15:22 后继实测：EKO before已真正结束，原controller11937自然0与首Cargo101分别保留。第一项exact1/0ignored，冷编译6m22s后runtime14.77s触发 `healthy same-cut read republished`；其余九项按原序Cargo0、各exact1/0ignored，全批编译W0/error0。交付索引4ef86f99…、保全9affc7a6…与十份raw/START/caller均在target外，真实test程序7f47c704…/495,385,824B/0755、原FP/dep及profile3914811562547596171/features=[]已保。CLI1078＋只读F2850后置guard0，正式6c/F340 clean；这是新增回归的真实行为RED，不把原1000场景watchdog或编译失败充数。
+
+Root已核原raw和1c5d/0cf2源码独审，授权相邻GREEN后半窗（决定8e64b004…）：只在B副本正常应用69d8生产补丁，保原两测试、源依赖、target、features/profile/env和十个exact argv，另存after epoch与新真实制品。当前约3.1GB空闲按同target单app-core测试叶子暖编译处理，不声称满足新重构建5GiB；若闭包扩张或资源不足停止并保原。此处仅为执行授权，尚未取得GREEN终态；不授权formal采用、App、性能重测或其它target清理。原1000before数据、128容量、规模/校验/watchdog保持。
+
+before限定独审02c8cbde…通过。后继保全检查另发现helper自捕获日志在途0B、自然关闭后1057B；原caller自然0与最终14fce387…/1057B相符，其余60引用全SHA不变。旧9aff/4ef/log/caller不回写，e1854398…补充与Root逐项复核d05e920c…明确闭合此项，未改变测试、制品或源码结论。仅在十项GREEN实际全0/W0、完整后guard与target外必要保全闭合、真实reader0后，允许官方clean准确B/target；retained热程序与其它target仍保护，任何其它异常先停止清理。
+
+SDK原完整04的当前588通过/18程序/W0资格不变；该SDK准确自有target已在必要制品/4412元信息及9238个target外材料保全后官方whole clean0（556fef0d…），T当前absent，新03和05–18仍待，不能再称SDK暖缓存可直接续跑。SDK并行更新绑定d683/b0db/27bf的原18项执行票，暂不Cargo；Perf只获27e metadata-only r03单文件clang准备授权，无新App/probe/AX/测量授权；治理线核现有Issue/Finding可执行缺口，不重复115/402调查。完整原26＋新增、真实GUI/SSH两账号/微信手机/IMcron、最终性能/正式SDK/source/mainCI/发行发布部署继续未完成。以下旧“before在途/未运行”等为较早观察，由本段覆盖。
+
 2026-10-31 15:13 最新执行点：EKO恢复回归before首case已UTC07:12:52.487Z真实START，supervisor36730→Cargo36747、原handle11937；新独立B/target/jobs2/debug0/inc0、de5ab原exact selector/cwd/env，源1078 CLI+2850只读F/原锁/30路径依赖/正式6c与F340 clean、production仍base1c2的完整guard0，真正spawn前fresh5,424,918,528B。Root已用实际PID/birth复核在途，当前冷编译，尚无test runtime或新增行为RED/GREEN。before只d3b5测试补丁；只有真实目标republished运行时失败才expectedRED，编译错/告警/filtered0均不能充数；其余9控制同epoch顺序执行，真正非目标失败需保原停止。生产69d8尚未apply，GREEN和formal采用待真实before终态与保全后Root另准。SDK新03/05–18/Host仍明确hold，不能并发新重型；原完整SDK04当前588p0f/W0资格沿78e554原范围不扩。
 
 前置资源动作已实际完成：F精26热制品在881a包/9c87映射/c705恢复入口/完整roundtrip及495f独审后按白名单转冷（df46ea9a…/a523107e…），26旧hot当前缺、原manifest/源/refs与其余保护保原。另G8原f796…/345,011,008B/0755已完整打入2cdccfef…/61,636,519B固定单member包，ab301映射/ba497恢复/4b322全量逐byte回读经96957独审；Root只准原registered hot与本次verify两个程序leaf unlink，restore-receipt.json和目录均保。热转冷终态d4dbaad8…/27保护0，新actualfree5,432,594,432B为当时观察；原packet/capsule/历史不改，g8_test future执行必须先Root明选登记路径恢复并重核原SHA/size/mode，不再称hot-ready，不拿新release/GUI程序替代。当前metadata r03与新appcore before/GREEN不直接依赖G8。原auth/41refs/1000before数据/r05/NoRun源/primary/global均未动。Goal active未完成；以下为较早切点，空target/静态准备等状态以本段真实START覆盖。
