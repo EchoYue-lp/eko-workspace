@@ -1,5 +1,13 @@
 # EKO 总纲（MASTER-PLAN）
 
+2026-10-31 16:19 最新保存点：CLI已正常本地提交 `bc08ea4db89ec05071002fb0b76282d344ee2c4e`（parent6c），准确8文件blob等于已验切片b9f74f4b…，index/worktree clean，Root proof590c9cf1…；未push/merge或晋升gitlink。真实十项exact回归0/W0、fmt all/check0、当前八文件正常Source/final均passed/task/globalClosure not_checked。第八项仅修ADR0062缺少状态章节的既有格式合同，旧阶段状态保留；原风险8控制0、两官方fresh scanner各自然1/零漏洞/原五warning与独立gate/caller各0已独审74af0018…，f173/274＋lock3995/768＋policy3144精确绑定。Root/CLI AGENTS同段规则已同步，CLI版本已入本提交；Root规则随本次协调保存，不给新风险或未来来源续期。
+
+HookCommand::Test新增3项已在B新epoch实际执行：各exact1通过/0失败/0忽略/W0，原raw terminal097df26a…与最终入口9c74f178…；源仅既有extension_control/tests.rs的9f5→11ae/f00f，尚未正式采用，不混入bc08/f173资格。早先discovery参数/解析操作错误全保，不能计作行为RED。新实际test程序c23ac06c…/495479648B以6b2dd8d1…/78896910B单成员冷包完整解压逐byte/SHA/size/mode校验0，FPdep/profile/source与81个closed原件外置，未来须恢复后使用。
+
+人类已明确批准仅B/target手工清理方式例外，之前pending被此直接答复替换，不再重复确认。Gov完成新制品保全/reader0、3749文件/688目录/无symlink的当前manifest b576ca4a…及根inode/父FD/安全rmtree核对后，仅删除这一生成目录，manual terminal b86bad69…自然0、target实际absent，workspace/evidence/cold/旧原件保护0。原whole clean101与profile dryrun101继续原样，无补tag/FP/mtime伪写或其它target删除。较早01f9清单是Hook之前，不冒全内容未变。另旧r02主程序已精leaf转冷58c45ec4…，包302d7a…/restore ebb5可恢复；其原warning1/W0=false及未验strict/native/perf资格不改。
+
+最新fresh5381459968B仅为当时观察，不给后继自动准入。r03新隔离ready308c83…/单次条件GO a0d7c5a…已交EKO：Gov终态和fresh原auth/fixture13618/ports/输出空/lease/input守护0后，只用旧6c的r05制品做一次元信息诊断，未到的CSS/restore不补造；本段尚无该App终态。SDK下一窗仅在此原App自然结束、无竞争heavy/读者、C精d683/b0db输入保持且fresh≥5GiB后启动当前完整03和原05–18，原04的588结果复用，精fb944/da98票与原门槛不改；正式SDK3f/f7/0dac仍独立。全Goal active未完成，原26＋原生消息/统一终态/进度/六组工具/跨会话保留；性能after、完整合并门禁、真实GUI/SSH两账号/微信手机/IMcron、正式SDK/mainCI/发行发布部署继续逐项取证。以下旧“未获答/未提交/GREEN待跑”等均为历史切点。
+
 2026-10-31 15:47 当前工程切点：EKO同cut最小修复已取得真实GREEN，并已正常采用到正式CLI的4个文件。原10命令各1通过/0失败/0忽略/W0，只有首项重编app-core（4m33s），首runtime11.26s仅为correctness计时，不是性能收益；terminal04fb3105…、after保全be6d31fe…及限定独审c910770a…通过。before原republished运行时RED/九控制0与全部原失败继续保留，e185/d05e自身日志自然收尾补充不改旧件。实际before/after程序分别7f47/372c，原FP/profile3914811562547596171/features=[]、540缓存单位及1078/2850完整guard已核；无新依赖编译，不借测试GREEN签1000场景达标。
 
 正式CLI仍HEAD6c，sole writer在原branch/index空/clean/base0预检后正常apply69d8＋d3b5＋078a；cargo fmt all/check及diff-check全0，1078正式源码逐byte等于已验B，除四文件外0差、F内容/模式0差，无stage/commit。采用索引afa7f456…、terminal1dc877c6…；collector原两读为f17364a7…/274，相对78e仅1生产＋2cfg(test)输入变化，无增删。Root已核5a31/d8f43最小提案并授权正式policy consumer单字段绑定及原中文decision后继、原六控制和fresh actual/canonical两门；本段尚未取得新绑定或fresh结果，不把旧五风险接受扩大，不继承78e绿票，锁3995/768、完整身份/checker/settings不变。
