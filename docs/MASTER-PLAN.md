@@ -1,5 +1,13 @@
 # EKO 总纲（MASTER-PLAN）
 
+2026-10-31 W1与SDK接续：W1原六组已实际完成，6runner与33child自然0，450行=390测量+60预热，UTC04:16:01.215—04:16:23.390Z/22.175s；lease bf41f7bc…先释放再作离线统计。原Node6×0、reader6×2保incomplete/errors空/failed空/compile recognized_success，固定required-matrix/RTL/native-paint三gap不改，CPU不决定report2。结果4155a31d…、中文读数90c2bdd0…与独审bc4a2409…限定通过：规模1000的hot list p50/p95为14.328167/15.459167ms，cold open+first-list p50为49.801750ms（hot N30/cold N10）。36次观察具名heavy全空，但openclaw125.8%、fseventsd78%等背景限制保原，不签整机solo/持续低负载/正式性能优化或薄N p99；其它70组/native仍待。
+
+SDK唯一C已实际采用精两文件基线/文档（eb61d567…/actual patch精ea2bb286…），原same raw721a的未改verifier0、policy14自测0，原7f0a及旧verify1保原，49/107/原接受/policy/tool/command不扩；新3e248/dc458只两文件差异，实际独审3b6bc63c…限定pass。原正式3f/f7/0dac/AGENTS/index不动。W1释放后Root已给原18阶段工程GO，源绑定票a8b5仅机械续85d，Root实际接管证明5448ba88…；完整工程/Host/collector/三语言尚无通过资格。
+
+原18阶段实际START8a2d62d2…后，01 cargo fmt原0/raw0，但memory.rs由6349→6e0f多26B，afterguard真实1并停后继。精diffd3e5f4a8…只有测试中handle.write(...).await?链的换行；Root读原diff接受纯格式产物，不回退/重跑01、不抹guard1。后继freeze9930a1d8…/manifest1753abf5…/票cba9ae62…只改一成员源绑定、18原argv/env/selector不变；02 fmt-check实际0/raw0/afterguard0。03原all-target/all-feature clippy已UTC04:21:49实际START（9394b641…，35336→35401→35402，jobs2），fresh5,940,363,264B/无竞编/新源保护0，目前仍在途，其余阶段未签结果。风险扫描不重跑，正式源码接回、115/402、source/final与精mainCI继续各自验收。
+
+原生fd95 once已失败终态1：b4a416ff…/readback2313c6de…证明原请求content1400×932，但实际native1400×901、layout与CSS1400×869，visibleFrame高901；59项输入、原guard3及新owner0保真，未取得入口/capability/crop/PNG/native/性能成功。窗口约束只读审查61ebed4d…确认锁Tao无显式901clamp，公开AppKit合同支持屏幕约束解释但未动态捕获具体selector调用。Root只准Perf准备测量App内可恢复autoHideDock的最小新owned-probe候选，不改全局偏好/样式/原1400×900 oracle、不加sleep/重试，不准clippy在途另编译或App运行。原失败全部保原。原26＋新增、真实GUI/SSH/微信手机/IMcron/quiet及发行发布部署义务完整，Goal active未完成。以下各段保留历史切点。
+
 2026-10-31 NoRun批末后继：原第三条已自然0/W0（caller81d51698…、完整rawff0c9fba…），最后core_testutils_lib49b59a96…/143,666,992B/0755及实际FP/dep/profile/features已保T外，两条原exact list各1、after sourceguard0；单条post6db8e265…、聚合d30c321b…记录三原命令全部0/W0、四roles及九list各1。独审9ee55a83…限定pass/C0I0M0，仅编译/身份/选中准备，不是workload/native/性能通过。
 
 批末实际回执a7c8781a…/clean2f4c4759…：准确T的before/official whole clean/after均自然0，原文Removed3839files/1.3GiB，T absent，39,524项T外保护无漂，11:58:41+08 fresh6,137,896,960B/heavy空。原SDK514 mode字符串0o755与整数493误比导致的before-helper1及其原件保留；新successor只统一表示后通过，未减保护/改权限/改SDK，不手删或补TAG。原r05/P1/G8/四roles/numeric原件保全，fixture13618仍原owner运行。
