@@ -4,7 +4,13 @@
 
 用户最新 Goal 已明确本次更新即恢复授权，替换下方旧暂停时态。Root `01a18588-9a70-7552-912f-477ac52cbe39` 复用十个真实执行会话及原候选/失败继续；唯一现场仍为本主目录，不新建外部 worktree。当前完整分工、原 26 项及新增原生消息/终态/进度/六工具组/跨会话范围见[任务总表](supreme/handoffs/2026-10-29-active-resume/任务总表.md)，最新现场见[唯一交接](supreme/handoffs/eko-current-handoff.md)。
 
-当前后继：SDK R03同冻621673c2/1ac0f96c的原Cargo Protocol4、Base13、Shell4共21项已自然0/W0，票9b44b244…/原raw经Root核回，增量独审73e36005…pass/C0I0M0。注册Err已用同owner保unknown，真实RED838a3adb…与新正控保留；无Host proof不补物理闭合。下一原full+export无外部JSON缓存官方入口，参考旧实耗3h34而非新ETA；已排App后有限批次，handoff e26ce0e8…，未启动full/三语After或改正式pin/风险。
+当前后继：SDK R03原21项通过，源码621/1ac0冻结；完整26 profiles生成、语言导出及三语言After尚未启动，正式3f/f7/0dac与风险合同保持。EKO私有测量入口被Vite裁剪的问题已在helper dd2f修复，实际前端构建0，新manifest e2a6/155文件封存0ab2；正式6c产品调用链无需改变。实际sourceguard适配已采用，25方法/130控制0。effective override增量独审47cf通过后，唯一采用reader f1e；实际App-only读取自然0/recognized_success，结果51f286、源码身份49367/capsule75e31/nativechat313922仅取得native_build角色，仍缺benchmark NoRun/compile_receipt和完整原生资格。
+
+r05原CLI 00:14:08.907—00:20:01.682Z、子Cargo 00:14:09.944—00:20:00.606Z均自然0，完整Cargo W0；输入f639/21db/d2d3/62f3和前后155文件guard0真实绑定。新外置App主二进制9d34015f…、完整三文件177,682,616B，保全c620/独审365c通过。资源旁路40样本自然0；最小可用4,881,031,168B和最大进程RSS合计3,089,504KiB仅为采样观察。08:39北京时区，EKO作者实际启动fixture9953/PID13618与该App/PID13828，原认证dataRoot及五lease归属保留；CG见Eclip窗口。直接AX返回1项经role复核实为Application自身，不能算可操作窗口；初次System Events为0窗的历史不改。GUI可操作、HELLO、微信Ready及手机收件尚未确认；安全日志指向SSH工作空间通知恢复pending，不能说凭据过期或窗口未创建。当前可用4,806,144,000B<5GiB，新重构建不启动；两个人类选择仍待答，未push/signal。原26及新增完整Goal active。
+
+冷归档恢复入口已更新：F31冷存pass e2e5；SDK exact10 d1a928/map296d/restore3f224、独审8cb029，原10热路径已缺、回放需restore。F104 tar15697/mapbc807完整保全，旧restore516默认flatten碰撞已真实复现/保52 partial失败；新restore21e211按original_roots或显式group恢复，两组52完整验证0，metadata75cb纠正截短SHA，独审d64ccb pass。原raw/source/旧包/targets/userdata不动，不重标旧运行资格。
+
+SDK二十一项及r04终态历史切点：SDK R03同冻621673c2/1ac0f96c的原Cargo Protocol4、Base13、Shell4共21项已自然0/W0，票9b44b244…/原raw经Root核回，增量独审73e36005…pass/C0I0M0。注册Err已用同owner保unknown，真实RED838a3adb…与新正控保留；无Host proof不补物理闭合。下一原full+export无外部JSON缓存官方入口，参考旧实耗3h34而非新ETA；已排App后有限批次，handoff e26ce0e8…，未启动full/三语After或改正式pin/风险。
 
 App r04已22:43:22.310Z真实冷启动：free6,495,539,200B、busy空、原source/dist guard0；60322→60824→60852→60855链及PS/birth保全，输入8f/8e/ce、strict reader6bfc/prepared a6ae不变。独立资源旁路source19cd/launcher823c真实运行，已实际CLI/child自然0、完整Cargo无编译warning，postsourceguard0，App已产出；保全和原生资格核验仍待完成，未sign/probe/launch。为留空间，SDK exact T已官方whole clean0/现absent，必要21三bin及历史源/证据T外不漂；窗口22:53:21.490—22:53:22.500Z的free观察+1,401,741,312B，由EKO旁挂9a344469…单列，不误归App。两个必要人类选择仍待答，原26及新增和全部真实验收义务保持。
 
