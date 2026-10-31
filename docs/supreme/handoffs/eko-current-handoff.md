@@ -1,5 +1,13 @@
 # EKO／Eclip 当前协调权交接
 
+2026-10-31 NoRun批末后继：原第三条已自然0/W0（caller81d51698…、完整rawff0c9fba…），最后core_testutils_lib49b59a96…/143,666,992B/0755及实际FP/dep/profile/features已保T外，两条原exact list各1、after sourceguard0；单条post6db8e265…、聚合d30c321b…记录三原命令全部0/W0、四roles及九list各1。独审9ee55a83…限定pass/C0I0M0，仅编译/身份/选中准备，不是workload/native/性能通过。
+
+批末实际回执a7c8781a…/clean2f4c4759…：准确T的before/official whole clean/after均自然0，原文Removed3839files/1.3GiB，T absent，39,524项T外保护无漂，11:58:41+08 fresh6,137,896,960B/heavy空。原SDK514 mode字符串0o755与整数493误比导致的before-helper1及其原件保留；新successor只统一表示后通过，未减保护/改权限/改SDK，不手删或补TAG。原r05/P1/G8/四roles/numeric原件保全，fixture13618仍原owner运行。
+
+布局修正仅owned probe：6d860fd5…/patchf079…按当前native content-layout差一次补偿，并将原snapshot rect转换到当前可用内容区；CSS1400×900、样式/inset/scale/oracle/watchdog不变，源审b422a695…限定pass。实际单次clang4903b131…自然0/raw0，新6b1bf9c6…/112,288B；准备票2efd9d5e…与源不漂，真实绑定及隔离Apponce仍待。此次capability-only不产PNG，不签crop/屏幕约束或CSS达标；原bdd8失败1及433899观测保原。
+
+SDK轻量实际扫描e3baeaaa…：audit0、deny四项0、原policy14测试0，旧baseline verifier仍自然1/lock or policy changed。独审50959f83…确认原49组107重复身份与四ignore包版本/来源及advisory范围未扩张；不能据此称全锁相同，0dac→c448实有三zstd版本替换和13共同记录Source/checksum/依赖变化，全部485c413e…/cf1c4979…具体保留。C外两文件精绑定提案f2fd9245…/ea2bb286…仅拟改lock/pin/验证来源元数据和中文后继记录，旧7f0a、groups、policy/tool/command及人类风险接受保原；Root按既有Goal作本仓精审，尚未采用到C或运行候选gate。正式SDK仍3f/f7/0dac，完整工程/合同/全功能Host/三语言/source-final、115/402及真实平台/手机/SSH/quiet/mainCI/发行发布部署仍待，完整Goal active未完成。以下保留此前切点。
+
 2026-10-31 11:40 后继：numeric 79c 单次 clang 原自然0/raw0B，新61ccc282…/arm64/7项系统依赖已按真实票9e33绑定，Root机械核准47166b1f…。EKO一次新P隔离诊断实际setup0、App13049及launcher自然1，终态bdd8a743…保原FAILED/COMPLETE1/accepted=false；读数433899d4…显示native view/content/bounds1400×900、content_layout1400×868，CSS inner/document/visual1400×868、DPR2/zoom1/query无错。这是原entry.viewport失败后的读数，不回填throw瞬时，不签成功。post guard3、51项输入及模板无漂，新9lease全在P且终态无人读；原认证App未恢复，fixture13618仍由原owner运行。32点差额仅转入owned probe布局调查，产品源冻结、原1400×900 oracle不变。
 
 原第三条 test-utils release NoRun 已于UTC03:37:03.476Z实际START：30961、Node13926→Cargo13928，启动fresh6,509,268,992B/无其它heavy、准确T事前absent，full sourceguard PASS0（48148082…）、20选定源一致，START6c8284d8…。这是该条真冷编的启动事实，尚无终态；不重跑前两条、不还原FP。第二条两roles限定独审06c0e73a…已pass/C0I0M0，仍不授workload/native/性能。
