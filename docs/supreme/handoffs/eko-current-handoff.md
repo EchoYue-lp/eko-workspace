@@ -1,5 +1,15 @@
 # EKO／Eclip 当前协调权交接
 
+2026-10-31 19:11 续接：SDK 新035原14无default/bridge配置已实际1通过、26过滤、零失败/忽略/W0，实际cfg与原selector对账e5a9d5a6…、封存9f367045…和专属T官方clean0/absent结算0c46f865…保原。原15完整 `bash scripts/check-sdk-contracts.sh` 在10:46:42.886–10:59:22.391Z自然0，26个原Rustdoc profile、producer/catalog/retirement/隔离/HTTPS metadata和原五Protocol套件全执行，五summary分别3/5/43/84/10通过且零失败/忽略/过滤/W0，144产物保护0；接受6a16ac83…、封存9d157f0f…、metadata包5254c6fa…及官方clean结算b5237a67…已核原raw/native。后置helper的relative_path比较1仅以真实全字段补齐后0，原caller/失败不改、不重跑。这里的source0为C冻结源守护，不是正式SDK正常Source/final。原16正常dev opt1完整Host正在原监督30780/19:02:25出生下运行，Root实际ps复核；17–18与正式采用仍待。
+
+完整Issue/Finding对账已交付限定独审pass：治理 `full-issue-finding-current-20261031/最终对账入口.json` 为5bbd7539…、唯一索引9870e3ff…；203正式Finding（195 resolved/6 open/2 risk_accepted）与459件原链身份核对，未深审重演195项行为。五仓完整state=all分页含Framework101 Issue（94 closed/7 open），另外四仓当时仅PR；#188分页与既有单项open一致。6 open为4个具名A2A退役交付结算、physical消费者交付及历史来源缺口，精确剩余owner沿该索引，不重造台账或回写正式状态。Framework整任务本地PR草稿在F自有 `framework340-pr-local-draft-20261031`，正文a22d3f67…已核24提交/847路径（vendor447）与原门禁、文档/examples/官网同步及task/global边界；未发布PR，后续外部动作前须fresh核main/重复PR，squash类型按现有chore分支规则处理。
+
+SDK旧115归因已精确澄清：原raw2832de58…为89对象缺边界地图＋26行为缺归属地图，不是Rust符号不存在；旧排除标签不是因果证明。治理诊断入口f245b4a7…及未改0.5.0纯读取探针在同路径复现115，当前工具先补owner再沿强引用展开，新增依赖的owner未再次入闭包；SDK现存Map及反链合法，不补形式地图/删合法引用。1018语义/scope文件零漂移，未跑正常Source/final。原接口支持完整真实任务范围及基于真实跨边界链的现存owner `--semantic-ref`，原preflight绑定固定摘要、原Source/final执行完整校验，不扩大写权。全18/读者结束后由SDK sole按当前HEAD/base/有效新任务和真实变更声明必要依据、走原正常Source/final；不拿历史35路径或旧base凑scope、不预签会过。当前单文件局部工具缺陷未修，原115失败及历史运行态未重建的限制保留；402无原raw不猜同因，工具/schema/ignore不改。
+
+性能后继采用已证实的同源复用：P1 Framework2850源/lock1442/feature/profile/toolchain与F340全等，retained framework-lib 1e34df92…作为未变化对照，当前不用的integration仍保留。`materialization-after39c-preparation-20261031-r03/after39c-r03-preparation-entry.json` 为1d4ab753…，只保留EKO39c两个未来NoRun角色，命令/env与已审r02逐字段相等；旧r02/源/证明/失败不改。实际新EKO编译保全/准确官方clean后，才重绑F P1＋EKO39c组合来源、producer与旧6c数据再资格，再按原1000/cache128/全部校验/300s作after测量；先闭合任务物化性能再冷构建最终App，依赖新App的GUI/native另批。当前没有授予NoRun/producer/seed/测量/App窗口，App39c静态r02仍pass，真人点击532ad就绪未答。
+
+本切点基底Root6111d44／F340／CLI39c／SDK3f(f7/0dac)／官网f38，Top f60及SDK受控24保持冻结、四gitlink不晋升。完整原26＋原生消息/终态/进度/六组工具/跨会话Goal仍active未完成；正式SDK、真实GUI/SSH两账号/微信手机/IMcron、性能、精确main CI、发行发布部署继续分别验收。没有新增push/merge/Issue关闭/发布部署授权。下方为历史切点。
+
 2026-10-31 18:39 续接：SDK 新035原13双E2E在10:19:17.647–10:36:21.080Z自然0，实际core34＋facade11＝45通过，零失败/忽略/过滤/W0/source0；两实际程序与本次FP/rustc、独立--list的45名称和原raw成功名逐项相同，coverage a50077d9…、接受53127577…、metadata包6c24f67d…及reader0后专属T官方clean0/absent结算8d999f49…已核回，9817外置与受控24保护0。原14 no-bridge唯一selector已启动，监督1074/18:38:05出生由Root实际ps核对，启动前fresh6134689792B；14–18、正式SDK采用、完整合同/三语言/main CI仍未因此通过。
 
 CLI39c＋F340当前App静态重建准备已通过独立复审。入口为CLI自有 `.echo-semantic/local/tauri-arm64-release-App-39c28e7-F340-preparation-20261031-r01/run-prepared-App-build.mjs`，原packet cc56和delivery a3be保原；原唯一I1仅补精确SDK Host basename，new guard769821e1…、最小patch809ee7f5…、r02后继1284fce9…，27项实际匹配AST离线控制/prepare0，独审pass C0/I0/M0；不冒真实Host复现。3928源/155资源/28path及原生产配置/observer/保全边界不变，旧guard和失败均保原。execution/target仍absent，只具静态准备资格；构建、签名、启动、native/性能/发行均待实际执行，production-mode-instrumented不称stock分发包。
