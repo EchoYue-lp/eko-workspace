@@ -1,5 +1,13 @@
 # EKO／Eclip 当前协调权交接
 
+2026-11-01 当前续接：真人报告的IM/cron最近任务历史缺失、内部诊断刷屏和续接结果错误已完成源码修复，正常本地保存CLI 6fc282f9df33d7898ac95f84c8ff29cb2fce2e01；再以08047344d1bc1b29aed3a5d309618193bb92c91a保存两导航入口的静态Store导入及七suite浏览器夹具修正，原四条Vite警告归零。Root已逐blob核19及后继9路径、独审、原Source/final自然0和staged artifact0，globalClosure均not_checked；旧失败/错误调用/原日志不改。实际后端335选择为329pass＋6原release/性能ignored，原四定向＋真实Foreground续接＋两反控各1通过；完整前端891pass＋4原skip、后继175focused、真实Store四入口初始化无TDZ/网络/导航、GUIcheck自然0/W0。所有数字按实际范围，不合并为整Goal通过。
+
+风险只机械绑定本次74411914…/274与锁3995…/768、policyc199…；原五完整身份保持，两fresh官方scanner自然1/零漏洞/恰五warning，独立gate/caller0，原8controls实际0，后置两读不变并经独立核验，不新增风险接受。Top规则bed78…与CLIea4…追加同7b88事实块，Root已单独保存Top4278f167127cc2164a3f5dde58d48352cc30ed25，旧f60/525f均保历史。官网正式9b82f3b073ba11c805ef006b3e7307a96c4a036e已同步6fc来源、中文无plan规则例外与派生发现；新61unit/338build/来源检查/定向格式/Source-final/独审/artifact0，未部署；080仅导入和测试夹具、产品文档来源不变，后继只需精差异桥。
+
+最新App已真实进入唯一重构建窗口：采用已合格的`CLI/.echo-semantic/local/tauri-arm64-release-App-0804734-F340-static-nav-warning-20261101-r01/`，packet f2c4359a737d47d7386501b8db4b38c10eebf886484222573d8ebc3af733ace4、entry1daf7f36…；17:48:13.603Z实际START，Node47840→cargo-tauri47868→observer47880→frozenCargo47884→j2rustc，原exec81536。新源080＋F340，1080＋2850源/149新资产/14manifest28edge自然0漂；spawn前fresh8968044544B、无其它heavy，原arm64 release/debug0/inc0/frozen1.99.1生产recipe不改，observer只在Tauri注入的child局部移除STATIC_VCRUNTIME。编译尚在进行，不签完成、主程序SHA、App/native/安装/手机/性能/mainCI；不得重启本窗口或另开另一准备目录。旧6fc有警告包及未采用im-cron命名目录只作历史，不编第二份。
+
+当前真人GUI仍51722/0a02/source667，其`persistent-GUI-owner-66760c3-preparation-20261031-r01/isolated-runtime/data`已含最新真实微信授权、对话和CP，禁止因工程目录名而丢弃、旧模板覆盖、回滚认证、无故重扫码或在用配置热改。模型仍是展示地址127.0.0.1:9，手机截图只证明真实收发和失败回传；最新App保全且旧owner正常退出/lease结算后，再同root按已有GUI owned model mutation校准合法模型和真实复测历史/IM/cron。原Cancelled/journal不重写，标题栏请求已结束。最新App构建不读复制用户Auth/config/CP，也不提前启动或发消息。原旧target/过期测试程序的精确清理已完，日志/FP/必要新5607程序及恢复材料保持；本次新App target仅在真实保全和reader0后官方准确clean。完整Goal仍active未完成，原26及新增原生消息/终态/进度、SSH两账号、手机IMcron、完整性能/六原性能门槛、精确mainCI、发行发布部署义务继续，未新增外部授权。下方保留各自历史切点。
+
 2026-10-31 当前续接：新版66760c3/F340 App的普通GUI已实际启动并由真人确认首页可见、进入微信页和发送消息；当前owner为51722/UID501/23:16:15出生，四lease归同一PID，store位于本次data/store.json。该实例是最新0a02主程序的独立CoW副本，不注入probe、不自动退出。首次启动49658因错误选择未配置的native:controlled而失败，173B crash.log及原输入/输出已保全；后继只把selector改为已有presentation:unused，正常bootstrap、scheduler、reconciliation与GUI IPC已实际到达。这个展示模型仍指向127.0.0.1:9，不能据GUI启动宣称模型执行成功。
 
 最新真人回报触发同Goal内修复：微信NATIVE_WAIT确实收到手机回传，但其内容暴露内部execution/input状态，随后模型网络失败、最终却显示cancelled；IM与定时任务均没有进入侧栏最近任务/运行历史。四张原图和原话已逐字节保存在`.echo-semantic/local/root-full-framework-window-20261029/user-IM-cron-history-report-20261031/`。EKO唯一正式writer与IM/cron领域作者已按文件边界并行追踪真实TaskRun/conversation写入、查询、投影、事件和终态映射，先复现再局部修复，不新增第二任务store/executor。后继源码修复须重新focused验证并构建最新App；当前667实例只保其原切点资格。
