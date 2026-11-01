@@ -1,5 +1,11 @@
 # EKO／Eclip 当前协调权交接
 
+2026-11-01 原生SDK正式保存续接：36处测试/helper根修复已正常本地提交 `83ae59e407313d7130811478a74646865d9e8bd3`，parent eea，正式SDK源码/index干净；StageA837独立ref/source仍保原。Root逐1303完整源SHA/mode/Gitblob与其余1267原blob核回，当前Source26/Final27双自然0、精36路径、task:a7ea900…/0830f9d4…/globalnotchecked，独审C0、staged artifact/whitespace0。实际PY7/Node16/tsc/static/Ruff0；Java/真实Host/完整语言仍未执行，不挪StageA票。Root proof212411b2…。作者正准备与旧正式native生产源码精同的full Host53fcac84…（228005504B/0755，固定恢复成员sdk-dev1-host-53fc）及原完整语言入口，不借旧StageA d521或core5145，不新Cargo/启动重型。
+
+SDK837独立StageA新增main前范围复审现pass C0/I0/M0；eea44冲突是下一原生阶段，不是消费者先行退役切片的前置。现行仓规/已确认门禁没有单列canonical冷Git/Cargo fresh为必跑方法，保持披露未验，不人为新增硬闸或将旧128改0。完整官方HTTPS归档2783body及暖Git0、原工程组合/精风险/SourceFinal均按原范围接受；fresh SDK remote main0930精等base，具体后继main提案5ac4d8ea…已备，但现有SDK推送Draft问题仍pending、没有main权限。实际未来合入仍须再核head/base，并验证精main Linux/Windows CI全绿；不授发布/最终native/global票。
+
+当前Perf原86675/handle58509仍生成，最近报告6514完整audit，未有seed自然终态、两validate或新snapshot/manifest资格；原30/old partial archive/3600-300-5保护保持。Runtime只读研究建议将来优先考虑audit私有前缀精比/ID索引，引用LevelDB/Kafka官方源码，保全前缀读取/错误/耐久语义；未实现、未给收益结论，不改当前seed。App99009/fixture38255及两真人选择继续pending保护。最新受控入口Root/active-continuation-20261101-r136-SDK83-normal-StageA-main-ready-seed-still-live.json，完整Goal active未完成。
+
 2026-11-01 正式来源及原生SDK后继续接：canonical HTTPS Git暖获取mainf568已真实0，正式F137/index/source不变。官方HTTPS精008完整源码归档现真实GET0（254.46s、8956369B），完整gzip流/CRC0、2783个Git模式/blob身份/全部文件body逐一与本地008全等，共42255163逻辑B，Root proof65926773…。原coldGit空仓自然128/86.36s及第一次archive180s监督超时保原，不将此称canonical cold Git/Cargo fresh。第二次下载仅按实际源码量/传输速度安排420s取得源文件，不改任何seed或测试预算；不自动继续重试已取得的来源。
 
 SDK formal原生分支现由唯一writer在eea上修36个既有测试/helper临时根（含Root精补充的shared/testing/test_managed_retirement_backend.py），3JWT与Parquet差异不照搬。生产Rust/协议/锁/pin340/accepted5344/430/风险policy、StageA837树均冻结不改。精patch f30fbdaf…，Python7/Node16、tsc/static/正确cwd Ruff/format0，原失败保原；同reviewer pass C0/I0/M0。正常Source26已实际0、完整36路径、task:a7ea900…/digest0830f9d4…/globalnotchecked；Final27真实运行，勿重启，结束后Root精核再sole commit。Java/真实Host及完整语言明确后续窗口待验，不将StageA旧票挪成当前native验证。
