@@ -1,5 +1,11 @@
 # EKO／Eclip 当前协调权交接
 
+2026-11-01 新窗口拒绝及下一实际验证：SDK83语言入口r05经增审C0后Root精GOdd10已真实执行，但在payload前第二次fresh资源检查抛 ambiguous interpreter argv0，原handle73893/tool terminal1保留。Source/tools前guard0、两程序reader空，run/、原语言caller/raw/XML与quickstarts均未创建，实际Host/JVM/Cargo/语言selector全部NOT_RUN；r05不是语言测试失败，不复用旧计数。postguard0，正式83/source/index/837仍不变。拒绝index7d0e88a4…保全，原触发PID未捕获不猜；Root仅一次readonly诊断656行errors[]/heavy[]，不作为重试或原cause证明。SDK唯一writer获最小r06“错误进程元数据＋独立尝试输出”工程授权，旧r05冻结，不改分类/原payload/阈值/预算、不得记录完整参数/密钥，没有新runGO。
+
+H3单audit候选1f4b36e0…/patchcdf55e16…现source-only独审C0/I0/M0，14反控仍未编译；raw前缀/ID索引/identity FD内存开销及H1/H2仍在，不授内存有界/性能/3600通过。Perf已交46去重exact与单after combined NoRun准备，baseline复用r03-after f8e34/原A64+B7444真实角色/FP；不是旧d780或formal137全树，不重复baseline冷编。Root已准单after APFS COW材料化、仅audit变化，其余2850/mutation221/mode全比；实际source/program/FP未取到前不得预签。未执行H3 entry另存r02按原Goal/AGENTS 5GiB新构建线准备（单target旧同cfg实际约0.9G，新估1–2G），原助手8GiB准备和已执行seed8/3600-300-5都保原；当前仅材料化GO，尚无Cargo/test/dataGO。SDK重型在此focused批后再排，不因r05旧GO自动启动。
+
+Gov限定ROOT已知输出库存无可清候选，观察free6122991616B；约193MiB三输出虽无reader但owner/依赖未闭合均保留，SDK窗口全部cache/JavaTarget及双程序排除，无系统/HOME/用户/冷程序/Source/两partial操作，不解释共享卷下降因果。原3600失败/7864partial、old7845 archive/原30、App99009/fixture38255与两真人选择继续保持；完整Goal active未完成。最新受控入口Root/active-continuation-20261101-r138-SDK-r05-prepayload-refused-H3-focused-next.json，后继实际证据优先，下方窗口GO/live时态只保历史。
+
 2026-11-01 seed真实失败后继：原3600秒watchdog已实际触发，outer caller自然1，native86675退出状态-15/SIGTERM，naturalExit仍null；三PID86657/86658/86675 fresh均gone。新残件7864 Prepared/Settled/audit、pending0，Root已全SHA/JSON核回，原old7845及2owner archive另按mode/SHA/inode保全；两validate均未启动、snapshot/manifest/fixture absent，不是第31 qualified corpus。接受“真实失败”票ce2f277b…不改原码，不加预算、不自动retry。Root已派Framework唯一writer按Runtime官方研究做最小H3 audit私有缓存候选（精比原始前缀、同parser/flock/错误/repair/耐久、ID索引），只写新owned ignored单文件与相关tests，formal137/N两源和两次失败数据冻结；未编译、未采样、未采用。
 
 SDK83完整语言准备已恢复精同fullnative Host53fc…/228005504B/0755，collector4339…和491生产/合同输入、81+37FP均实际核对；旧StageA/core角色未借用。原r02仅准备preflight0，当前独审C0/I3/M0阻断：除旧seed外其它heavy未拒绝、entry/source-tools清单epoch未固定、exit0+truncated可误绿。Root已给sole writer三项最小r03修复及隔离反控GO，正常源码/selector/N/skip/预算不改；等待增审pass及fresh5GiB资源准入后再一次完整语言，不重编Rust。此时没有任何矩阵run GO，不能因seed gone冒资源排他或跳过三项。
