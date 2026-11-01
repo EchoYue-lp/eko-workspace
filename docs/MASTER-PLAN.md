@@ -1,5 +1,17 @@
 # EKO 总纲（MASTER-PLAN）
 
+2026-11-01 11:54 最新续接：完整 Goal 保持 active、未完成，原26项与原生消息/唯一终态/进度/六工具组/跨会话要求继续。当前正常本地组合为 Framework `3409932`、CLI `5132d6b63537892185a3ac48de2e66a9b9366731`、SDK `eea84945`、官网 `4badb0cffa10b54004b801c7a33d2e0e886da894`；保存本段前 Top `3c90af0`。四个 gitlink 仍未晋升，无新 push/merge/关闭 Issue/包发布或部署。
+
+**自动 Cron 本次真人验收未通过，根因已由实际数据与文件系统对照证实。** 用户答“已自动运行，但结果或历史异常”。11:18/11:19 两个真实 scheduled Run 均因 `create message log: File name too long (os error 63)` 失败；121字节 logical ID 经 hex 为245字节 key，消息文件262字节、原临时文件304字节。手动92字节 ID 的临时名246字节可写。Root最小OS对照为0/63/63，证明记录 `389b26f0…`；实际任务现 disabled/control revision4，两 Failed Run 原件保留且不重放，原手动成功仍有效。当前用户 App 63316 仍为旧61d3，原UserRoot/微信Auth与模型13618保持。
+
+EKO 历史入口后继已正常提交 `5132d6b`：无 transcript 的 Failed Run 可按准确 Run 读取并打开任务面板。独审发现同 activeId 的读取失败会误当本次成功，原五路径925通过票未作为完成提交；作者补真实双负控 RED 后扩原 loadConversation 本次成功 boolean，false停止读取Run/导航，保原toast/旧view/readonly与迟到隔离。当前相关158、完整928通过/4原skip，格式/lint/types/defaultbuild/正常Source-final均0，独立增量审 C0/I0/M0，Root精7blob/原caller/raw与实际stagedartifact0后GPGoff正常保存；proof `e5ef5a74…`。Rust collector744/锁399509/policyc199双读不变，无重复Rust矩阵/scanner；新App真人入口资格仍待。
+
+Framework 文件名修复在独立F340材料上取得两个真实 exact RED→GREEN；Core模块22、State模块45共67 distinct通过，0fail/0ignore/W0。首次State44p1f是新增manual旧hex种子目录错误，原程序/FP/raw/Source全保，只有三处测试目录改到真实base/conversations，生产前缀与断言不变后45p。最终diff `fa325523…`、机器结果 `223e9370…`；私有物理key超过219时用完整UTF8 ID的SHA256，短manual187路径保原；atomic临时名不拼target basename，公共encoder/逻辑ID/权限与耐久主体保留。独审 C0/I0/M0，完整保全回读、无reader后自有唯一T官方clean自然0/1512files464.2MiB且T absent。当前交唯一Framework writer正式三方采用及正常门禁，尚未正式提交，也不冒App/native/fullMatrix。
+
+F0 中间阶段 b788+Zstd 的511e锁已取得 fresh官方deny0、原49组/107身份精确比对0、五来源audit0，以及16+14控制、lockedmetadata、fmt、3消费者和Clippy W0。旧缺路径、缺TAG dry-run、LLVM strip warning与缓存恢复原件全保。当前Source尚未通过：独立复核将406项归为观察版本错配3、机器风险候选声明3、vendor完整relative路径依据400；三项应按现有合同修正，不改工具/ignore或冒外部source402修复。Root已交具体合法修法，S冻结/正常保存/原full24及SDK同13来源pin仍独立待完成，不将已通过focused移签整门禁。
+
+官网仅两metadata路径正常同步 CLI5132，148来源恰runtime变化；8页、其余147来源、396其它受控字节和383原构建输入不变，本次10命令/Source-final/独审/实际stagedartifact均0后本地提交 `4badb0c`，无重复旧61unit/338HTML构建或部署。Root已核真实native审查事件而非转述。SDK StageA本地13同revision装配仍等F0精确提交；Perf四测source-only审核通过但无编译/收益资格，30已验corpora与10k原3600超时保原。FS候选、F0、GUI/SSH两账号/手机IMcron/HITL/Subagent/长进度、最终性能、精确mainCI与发行发布部署继续各自验收。下方旧切点仅保其原始历史范围，不覆盖本段当前状态。
+
 2026-11-01 10:49 最新续接：完整 Goal 保持 active、未完成。正式本地组合仍为 Framework `3409932`、CLI `61d3ee31`、SDK `eea84945`、官网 `8f28b595`；Root 统一 stage/commit。四个子仓当前源码与 index 干净，不晋升四个未推送 gitlink，不新增 push、merge、关闭 Issue、包发布或官网部署。
 
 **新版 Cron 创建、手动运行和历史已获真人确认。** 用户对实际 61d3/F340 App 的答复为“创建和运行成功，历史可见”，原始确认保存在 `.echo-semantic/local/root-full-framework-window-20261029/latest-App61d3-real-human-Cron-create-run-history-confirmation-20261101-r01.json`（SHA-256 `55ac4339c4888df57a7a8a70080b0bce035854aaacd882b24ca9639fd3ba350d`）。这闭合原 `cronExpr` 创建错误和该手动流程，不代替自动触发、恢复、通知或完整 IM 验收；用户未单独确认已禁用。后继已只问一次 `* * * * *` 自动触发/新增历史/再禁用，当前仍待答复。实际 App PID 63316、原 data/project 和微信授权保持；本地验收模型 13618 不重启，不重复标题栏或模型配置问题。
