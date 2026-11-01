@@ -1,5 +1,22 @@
 # EKO 总纲（MASTER-PLAN）
 
+2026-11-01 08:44 最新续接：完整 Goal 继续 active、未完成，原26项及新增原生消息、统一终态、长任务进度、六组工具、跨会话要求全部保留。正式本地组合为 Framework `340993201cc937fc8e4783b66be399ef9f14e3d5`、CLI `61d3ee31c165517f5180aded814c10bdd35617eb`、SDK `eea84945edb401e63cd655a493a489f27b91fb51`、官网 `8f28b5951419b6125676b2b5efbe923f3ce86898`；保存本段前顶层为6f8c69a。Root统一正常本地提交，不晋升四个未推送gitlink，不新增push、merge、关闭Issue、发布或部署。
+
+真人已经确认“原记录可见，微信回复正常且出现新记录”，资格仅当前23f3 App、原微信授权数据与本地验收模型。后继真人 Cron 创建真实失败：`add_scheduler_task missing required key cronExpr`。根因是桌面创建分支传了顶层cron_expr，而锁定Tauri默认camelCase要求cronExpr，在handler前就失败；已由唯一EKO作者单行修正，REST、嵌套编辑、opaque历史游标和Rust不变。新9项合同在旧源码真实RED1失败/8通过，修后相关27项及完整前端910项通过、4原skip；格式/lint/类型/默认构建、正常task Source/final、独审C0I0M0和Root原暂存制品检查均0，精五路径正常本地保存61d3。JS真实bridge/源合同使用native边界mock，不能冒真Rust IPC。源码/原PNG/RED/GREEN入口为CLI `.echo-semantic/local/scheduler-create-IPC-argument-fix-20261101-r01/formal-frozen-final-handoff.json`。
+
+61d3新版arm64 Release App已按原成功A4 recipe实际启动，3937源（CLI1087/F2850）与149份本次Tauri资产均精绑定；fresh资源guard0/free12407058432B/noheavy后，于00:43:08.375Z启动，监督32780、cargo-tauri32918、observer32941、frozen Cargo32944，各实际birth已保。唯一target为A4/execution-scheduler-IPC-r01/cargo-target，当前等待原handle的真正终态、全App/FP/dep保全及Root审核清理，不冒编译成功。旧App75416、UserRoot微信Auth/config/mcp/project与模型13618保持，后继正常替换再验创建/手动运行/禁用/历史；旧标题栏和退出问题不重复问。Root具体GO为 `.echo-semantic/local/root-full-framework-window-20261029/App61d3-scheduler-IPC-original-release-build-Root-GO-20261101-r01.json`。
+
+Framework Stage0正常本地commit2f812/parent517资格保留；原24门禁01–04真实0，第05在00:33:14.455Z因ENOSPC链接/strip实际101，原raw/receipt保留，后续停止，非源码或profile失败。原warm target约5.1GiB完整保留，唯一Framework作者正在准备同argv/env/profile的05–24恢复入口与失败strip指纹定点重建证明；新Cron App完成、保全和准确清理后交回重型窗，不重跑无影响的01–04，不跳过失败或清整target。
+
+依据用户删除中间编译产物/旧制品授权，Root已对39个无读者的冷历史测试程序逐文件zstd归档、全量解压SHA/bytes核回，再移除未压缩副本；原程序13903794512B以2475936037B压缩字节完整保留，allocated差11427864576B约10.64GiB，不当作独占全盘物理收益。所有原模式/xattr/uid/gid/mtime和原路径恢复映射、source/raw/FP/恢复包保留；当前六性能角色、benchmark、用户数据、App、模型、工具链、新F0 target排除。Root最终索引为 `.echo-semantic/local/root-full-framework-window-20261029/cold-historical-programs39-lossless-storage-result-20261101-r01.json`，SHA8800be78…；r01平台xattr API失败在任何压缩/删除前，原失败不覆盖，实际成功为CLI r03及Framework r01。
+
+SDK StageA真正producer原export_schema自然0，精269退役/5352保留/431路由及其余保留对象不变已Root核回；相邻投影和3项原测试真实重捕0。Ruff两文件纯排版前后AST/mode等价，format/lint/formatcheck均0；117为producer授权路径范围，实际字节变更以当前manifest为准，不把117冒全部重写数。其独立旧target官方clean101缺TAG保原，后按用户广泛清理授权由Root准确删该缓存0、T absent，完整程序/FP/dep/raw已外置，非官方clean0。唯一SDK作者正集成保留Parquet测试/最小缺失helper及无Cargo语言检查，f7/0dac与原269边界不改；中间StageA完整Host/三语言/风险/main资格仍待，不继承正式eea/F340全18结果。
+
+性能已新增四份原080/F340后端非计时数据：runs1000、conversation1000×10、memory1000/history0、journal10000valid，原seed/validate/freeze均真实0。最新journal为1对象/10000event、25batch、header5+usage9995、sequence/checkpoint10000、tokens29985、12files/5787154B，manifest7914fc60…/datasetcab4be64…/结果496e4414…，独立validate是只读fixture而非boot/recovery。允许同原36/76/277队列继续小型non-timed准备，禁止计时/quiet/ratio/新61d3前端或App资格；100000/soak及正式完整测量仍未执行。官网61d3来源仅README/normal生成manifest两路径，148来源只runtime五行摘要变、8页/其余147/F对象/338routes保持；当前10条相关命令、独审、Source/final与Root暂存制品检查0后本地保存8f28b59。其余396文件/383构建测试输入与既有合格切点精同，旧61unit/build338结果已核回，未机械重跑或冒当前新执行；未部署。
+
+最新受控续接入口 `.echo-semantic/local/root-full-framework-window-20261029/active-continuation-20261101-r90-Cron61d3-fixed-F0-ENOSPC-cold39-restored-space.json` 为本轮较早保存，补充实际App32780/32944和官网8f28状态以上文为准。所有GUI/SSH两账号/手机IMcron完整场景、HITL/Subagent、正式性能、中间main依赖顺序/精确CI、发行发布部署义务继续。下方为本轮较早保存切点，仅保留历史来源与资格；其中“当前/待答复/正在运行”等时态不覆盖本段。
+
+
 2026-11-01 当前续接：完整Goal继续active，原26及新增原生消息、统一终态、长进度、六组工具与跨会话要求均保留。当前正式组合为Framework340993201cc937fc8e4783b66be399ef9f14e3d5、CLI23f3fe1f768111647254970a4ee3a67c20d24af4、SDKeea84945edb401e63cd655a493a489f27b91fb51、官网742db780c72e5eaff88db493c23381b02719a111；记录基底Rooted3c7a2。Root统一本地stage/commit，不晋升四个未推送gitlink，不新增外部push、merge、关闭Issue、发布或部署。
 
 真人IM/cron报告的历史缺失、内部诊断刷屏、失败误报取消和续接结果修复已保存于CLI6fc，静态导入/浏览器夹具后继080已保留。当前正式4c2另修“插件变更已提交但结果降级时GUI仍显示旧列表/配置”：复用原typed mutation真实提交事实刷新，保success=false、诊断和真正失败/回滚/validation及视图generation/迟到保护。精8路径、31focused、901完整unit/4原skip、格式/lint/types/defaultVite、正常task Source/final、独审C0I0M0与实际stagedartifact0后Root正常本地提交4c2；首轮Source材料错误和tsc2三查询typing错误完整保，三锚定regex修正后按新source重验。contentDigest37983380…/taskSnapshot10582d7a…，globalClosure not_checked。Rust/锁/consumer744前后各两读完全同，未重复Rust矩阵或风险scanner，也未接受新风险。
