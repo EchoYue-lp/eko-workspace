@@ -1,5 +1,9 @@
 # EKO 总纲（MASTER-PLAN）
 
+2026-11-02 新验收与本地闭包根因：main6cd精CI41317513674已完整终态failure，八项工程job全部SUCCESS，唯一语义job原14失败（官方终态Root206fd425…）。两文档修正的clean tracked验证视图已固定c0bc完整strict／change-evidence自然0，Root逐1229 bytes/mode/Gitblob及原caller/raw回读接受7ac2f666…；它与原含Node运行态现场区分保留，未删/移原session/preflight，原task140／runtime1／旧0930删除gap1不改签。
+
+installed repository Source实际仍139，已沿真代码和旧成功S18确认不是缺地图：139条110对象＋29行为各有合法owner、behavior也已被owner声明；SDK共9Maps，旧18加载9，新两doc context/evidence为0。唯一writer已获按官方query/read补9份只读map并绑定readonly evidence授权，mutable allowed仍精两doc；不写规范Maps或工具，不改e186/e765，Source0才立即原显式Final。旧140/139原件保持，尚不提交或称正常Final通过。Root/active-continuation-20261102-r151-canonicalFull0-local139-mapContextFix-inprogress.json为新切点。Rover95346正常请求0仍未实际退出，保存/退出提示真人题pending；9970保持打开、K2票就绪但无新quietGO/sample。完整Goal继续active未完成，原26及后继全保。
+
 2026-11-01 SDK自有13问题已实际完成有界修正：独立主根内source分支fix/Echoyue/sdk-stagea-semantic-materials以official main6cd为真实HEAD，1229文件逐blob保全后仅两语义文档应用已审patch，index空。固定c0bc原三模块直接调用的真实before/after保全：365文档special/strict均无错；旧base0930原14→1，11路径同次依据缺口0，只剩外部canonical delete-preflight接口gap；新base6cd仅两semantic差异、change-evidence0。业务source_digest始终source:e186，原e765/c152/task Source18Final19历史未重签，Root接受31eab7f6…。这不是完整仓级Source/Final或新main CI全绿，旧14/工具gap继续保留；已授权sole只对两doc走正常本地task Source/Final，尚未接受新gate结果、不stage/commit/push。formal83、S837与native44候选保持各自冻结。
 
 完整native44候选已Root实际1303完整bytes/mode/Gitblob回读0及独审pass（c99ec386…），五个新增focus仍待真实执行；E2E编译期CARGO_BIN_EXE不能用运行期环境变量偷换Host，相关最小真实构建入口由sole准备，未授重构建。SDK main CI已见Windows/依赖/协议/质量/库存/合同/语言分别成功，Host最后一次仍在跑；最新一次Root状态获取实际网络timeout1保留，不能冒全CI终态。Rover95346一次正常退出request0但真实仍未gone，保存/退出提示真人问题pending；Eclip9970继续打开，K2重测精票准备就绪、尚无quietGO/sample，不repeat/force。完整Goal active未完成；最新受控入口Root/active-continuation-20261101-r149-SDK-own13-actual14to1-normal-local-gates-pending.json。
