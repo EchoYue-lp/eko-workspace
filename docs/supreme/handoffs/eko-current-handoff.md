@@ -1,5 +1,9 @@
 # EKO／Eclip 当前协调权交接
 
+2026-11-01 H3实际编译续接：Root逐2851源SHA/mode与完整目录identity、5工具及保护快照接受实际source b2b55def…后，已GO单after combined NoRun（entry973bcd87…/RootGO51ccdd31…）。现真实handle65711/Node36180→Cargo36181/rustc live，单target新inode299612143、TAG由Cargo自然创建；不重建基线A64/B7444、不复制旧target。启动前free5686747136B满足原5GiB；当前已低于5，原已准入命令继续自然完成，不启动新heavy。编译完成后必须取两真实program/各自完整u64 FP/rootargv-cfg-profile/list及源/工具后guard供Root接受，未接受前不得46控制、seed/sample/restore/源码采用。勿因观察超时或旧目标指针重新启动。
+
+SDK r06仅诊断与独立admission/preflight/run-r06增量现静态独审C0/I0/M0（indexf1b85991…/entry9a8a383d…），7隔离控制保原、不记录fullargs/secret；661行readonly诊断errors[]只限当次，不解释旧r05拒绝。r06无源码/语言preflight或run，Source83/StageA837冻结，仍需H3整批terminal/必要保全/精clean释放后Rootfresh新GO，旧dd10已消费不可复用。两次seed失败/两partial、原30、App99009/fixture38255和两真人选择持续保留；完整Goal active未完成。最新受控入口Root/active-continuation-20261101-r139-H3-Cargo36181-live65711-SDK-r06-staticpass.json，后继原件优先，下方未材料化/未Cargo仅为历史。
+
 2026-11-01 新窗口拒绝及下一实际验证：SDK83语言入口r05经增审C0后Root精GOdd10已真实执行，但在payload前第二次fresh资源检查抛 ambiguous interpreter argv0，原handle73893/tool terminal1保留。Source/tools前guard0、两程序reader空，run/、原语言caller/raw/XML与quickstarts均未创建，实际Host/JVM/Cargo/语言selector全部NOT_RUN；r05不是语言测试失败，不复用旧计数。postguard0，正式83/source/index/837仍不变。拒绝index7d0e88a4…保全，原触发PID未捕获不猜；Root仅一次readonly诊断656行errors[]/heavy[]，不作为重试或原cause证明。SDK唯一writer获最小r06“错误进程元数据＋独立尝试输出”工程授权，旧r05冻结，不改分类/原payload/阈值/预算、不得记录完整参数/密钥，没有新runGO。
 
 H3单audit候选1f4b36e0…/patchcdf55e16…现source-only独审C0/I0/M0，14反控仍未编译；raw前缀/ID索引/identity FD内存开销及H1/H2仍在，不授内存有界/性能/3600通过。Perf已交46去重exact与单after combined NoRun准备，baseline复用r03-after f8e34/原A64+B7444真实角色/FP；不是旧d780或formal137全树，不重复baseline冷编。Root已准单after APFS COW材料化、仅audit变化，其余2850/mutation221/mode全比；实际source/program/FP未取到前不得预签。未执行H3 entry另存r02按原Goal/AGENTS 5GiB新构建线准备（单target旧同cfg实际约0.9G，新估1–2G），原助手8GiB准备和已执行seed8/3600-300-5都保原；当前仅材料化GO，尚无Cargo/test/dataGO。SDK重型在此focused批后再排，不因r05旧GO自动启动。
