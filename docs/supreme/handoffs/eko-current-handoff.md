@@ -1,5 +1,11 @@
 # EKO／Eclip 当前协调权交接
 
+2026-11-01 本地正常里程碑续接：Framework 文件名修复已保存 `1376c47c8c165aa589361b2d2ef9b8c41f3747a1`，parent340，正式源码/index干净。新正常filename task的Source/Final均自然0、完整覆盖两Rust与六metadata共8路径，digest0ef0b480…/task:ffde498…/globalClosure not_checked；独审C0/I0/M0及Root实际staged artifact/whitespace0。原67项/两个errno63 RED→GREEN所测两Rust字节不变；最后仅校准两份旧Evidence的历史evidence_refs并正常读取五张现有owner Map，未修改外部工具/schema/ignore、未新增117份形式Evidence。原r04退出1/127及旧六Eq范围全保，不授新native/main/CI资格。Root接受426089d4…；未推送此新提交。
+
+性能三NoRun完成批的两个精target现已各一次官方clean自然0：after inode299342913 Removed2777files/877.0MiB，before inode299357391 Removed2694files/824.5MiB；两路径fresh lstatENOENT，无补TAG/fallback/retry。Root在前后完整核回三保留程序、4052外置compiler context及精u64资料，source/data guards一致，接受f9f41a1d…。共享卷可用空间观测增加1742819328B，不排他归因。原source pair、30qualified corpora及7845pair失败完整。四paired group70子进程入口准备好，原classifier仍因App99009命中而不授quiet；non-timed history10000原3600秒完整seed重试入口正在审查，尚未执行。
+
+SDK837本地里程碑与bundle/ref保持；最终独审C0/I0/M0仅签Draft输入。Root已核官方HTTPS Git API commit008/tree及2783个非tree条目身份全等（f20a8cd8…），不等于cold Git/Cargo fresh；旧失败保留。已一次询问仅推送SDK同名任务分支并建Draft的许可，仍pending；正式eea及九原生后继不覆盖，真实三方44冲突+23自动路径另待。App99009/模型38255仍保护，18:18一次指定Cron增量显示disabled/rev4不变、新Run0，唯一真人题仍pending。完整Goal active未完成，最新受控入口Root/active-continuation-20261101-r133-F137-normal-clean2-SDK-Draft-pending.json；下方旧时态仅保历史。
+
 2026-11-01 18:20 里程碑续接：SDK StageA 正常保存为本地提交 `837e54addae916f852949bd61c6fb6bb01918cbd`，parent0930、独立任务分支fix/Echoyue/pre-main-consumer-retirement。Root实际核回1229业务文件/125差量、两原caller/raw及官方verification；修正后Source与Final均自然0、内容c152/task:e765、globalClosure not_checked，四metadata增审C0/I0/M0，原staged artifact/whitespace0。88M/15A/22D仅该StageA闭包；工程组合16原未变Rust/Host/合同检查加完整语言当前0保持原适用范围，旧失败不改。真实bundle已创建/verify并导入正式SDK同名ref；formal eea checkout、分支、九原生后继及5344/430保持干净不变，未push/merge或发布。StageA5352/431、pin008与当前formal340资格分开；下一步交精确PR材料与真实三方合流分析，不能整树覆盖eea。
 
 性能matched-before独立NoRun自然0/W0/E0，新程序eae29363…、profile精7169924071199656256、before源d780/2851已Root全SHA/mode核回；after target3301成员全content/mode不变。Root接受f1b194e8…；该票只签独立before角色，不签测量收益。此前after7444角色与history1000 validate真实1pass/0fail已接受334b731e…，未seed/sample/恢复或改300+5预算。作者继续准备原矩阵精确paired测量入口及两自有target保全/reader0/官方clean方案，尚无清理或计时；原30合格corpora及10000轴7845pair/3600s失败保留。
