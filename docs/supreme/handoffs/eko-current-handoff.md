@@ -1,5 +1,15 @@
 # EKO／Eclip 当前协调权交接
 
+2026-11-01 17:15 最新续接：完整 Goal 仍 active、未完成；原26项与全部后继范围保持。SDK StageA 本批已取得限定工程组合资格：r11原01–09/11–17共16项按未变Rust/Cargo/contract/工具/profile输入复用，r13原完整语言caller新执行自然0；TS370通过/1跳过，Python452通过/1跳过及18成功subtests，Java79份freshXML共383项、0失败/错误/1跳过，三个quickstart完成。全39测试输出根/JWT退役断言及第40个Parquet caller两行修复均独审C0/I0/M0；当前Source ec29dbc8…/1225文件68目录，Code888da83f…、binding2fc31c34…冻结，不称17项全新重跑或整个SDK交付通过。
+
+原r13 outer/result仍自然1/FAILED_STOPPED：原自有Python JUnit观察器把suite.tests471与453个testcase强等，实际pytest9.1.1将18个成功subtest计入suite但共用节点。原helper/XML/raw/失败全保；新独立observer按原caller自然0、argv/cwd/raw完整性、实际环境报告路径、before缺席/mtime及471=453+18、453=452+1严格复核自然0，缺依据/原caller失败/错cwd三个反控均拒绝1，独审C0/I0/M0。接受票Root/SDK-r13-composite-engineering-Root-accepted-20261101-r02.json（5a7e4bf0…）；不把原outer改0。原after-language context因观察器失败缺席，Gov仅按已审Plan前3Todo独立保全current context、必要native程序/producer/FP与原117生成物；暖T仍G/run-r10-formatted/cargo-target、inode299009928，只读，未获clean。完整保全待Root回读后再单次官方准确cargo clean，不造TAG或fallback。
+
+Java默认临时目录已由原18 child精JDK属性绑定ROOT原TMPDIR，79freshXML均核实。r12之前落在系统临时目录的21个自有fixture已COW归回ROOT，Root对237文件/4660079B完整SHA/mode与114引用回读接受f792c37f…后，仅退出精21旧根；42次原abs/canonical缺席与ROOT副本0漂移已独立接受a9484273…，不把逻辑字节当净释放。原日志不改、其它系统临时文件/附件不碰。
+
+StageA是SDK main0930基线上的独立A2A/LSP消费者退役步骤（pin008、5352/431），不是正式eea后继的纯测试补丁；eea保有9个原生消息/with_id/资源等后继（pin340、5344/430）。正式采用须保留eea原ref及全部已保存成果，按原阶段顺序和三方差量合流，不以S整树覆盖、静默删85个formal-only文件或复活最终旧控制工具。当前仅由SDK owner做O3只读采用/Source入口准备，S与正式SDK均无新写入。历史115/402仅按原时点资格，不直接推定当前StageA阻断或通过；正式HTTPS、当前Source/Final、main/CI、最终Native资格另验。
+
+PR201的授权push与Draft创建已完成，独立最终审查及组合24保持通过；另发的ready+squash合main授权仍pending，无main写入。F340文件名修复两Rust/四metadata仍有正常Source r04的127历史closure阻断，Final未跑。App99009/模型13618/UserRoot/Auth保护，新版自动Cron真人题仍pending。Provider三请求验收夹具的HTTP入口与无效结果出口在独立r03做真实小HTTP修复，不改live；Perf已完成5132/F340文件名组合上的matched-before/after静态rebase、四测试入口和30原corpora绑定，未编译/测量，等待清理后≥8GiB窗口。下方历史仅保原时点，不能覆盖本段资格。
+
 2026-11-01 16:10 最新续接：完整 Goal 保持 active、未完成，原26项及全部后继范围不缩。PR [#201](https://github.com/EchoYue-lp/echo-agent/pull/201) 的精确任务分支推送和 Draft 创建已按人类授权完成；最新最终独审 C0/I0/M0，Source/Final 与24项适用本地门禁资格保持。已另询问仅将精0087353转为ready并squash合main的授权，当前pending，没有main写入。上一许可不包含合并、发布或部署。精确提案在Root/framework-S008-final-PR-material-20261101-r01/merge-review-r01/proposal.md。
 
 SDK Root-r11已于16:06:23自然结束1，01–09及11–17共16项适用原caller全0，最后18原完整语言入口自然1；TS原371项为369pass/1fail/1skip，唯一失败是退役JWT映射仍要求9项，实际0。PY、Java及后继quickstarts未执行。postguard另真实发现S根target新增测试夹具目录，该路径不在原11个runtime输出根内；不得扩大ignore或把它当作sdks/java/target。原source560/Code6eb/e151/008/5352/431是该已结束执行的冻结输入，原失败/caller/raw/guard完整保留。唯一SDK writer已获最小修复GO：先外置保全测试产物，再修具名退出断言和既有helper的TMPDIR边界，不改Rust运行时/锁/合同/生成物或路径守卫。暖Cargo T仍为G/run-r10-formatted/cargo-target、inode299009928，待复用未变Rust资格重跑完整语言；没有clean或新重构建。
