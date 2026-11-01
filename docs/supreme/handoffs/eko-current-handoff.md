@@ -1,5 +1,21 @@
 # EKO／Eclip 当前协调权交接
 
+2026-11-01 13:13 最新续接：完整 Goal 保持 active、未完成，原26项及原生消息、唯一终态、进度、六工具组和跨会话要求全部保留。正式 HEAD 为 Framework `340993201cc937fc8e4783b66be399ef9f14e3d5`、EKO `5132d6b63537892185a3ac48de2e66a9b9366731`、SDK `eea84945edb401e63cd655a493a489f27b91fb51`、官网 `4badb0cffa10b54004b801c7a33d2e0e886da894`，更新前 Top `52ae7a2e8f6e7fb1dec8cb22604d070f59e2593b`。Framework 恰三份文件名修复未提交，全部 index 空；其它子仓干净，四个 gitlink 不晋升。本段覆盖下方旧切点的当前状态，不改历史事实，无新 push、merge、关闭 Issue、包发布或部署。
+
+**当前真实桌面已替换为 PID99009（UID501/PPID1，13:03:28出生）。** 唯一新版来源为 CLI5132 与 F340 的精确三文件修复 overlay，共3938源码/149前端资产。原 release 构建、afterguard、制品保全均实际自然0/W0；Root回读3895份FP/dep和六profile精确u64。准确自有 target 的官方 cargo clean 自然0（6211文件/2.8GiB），T absent、4411个保护对象无漂移。保全接受证明 `db3db861fff923d9c22379d124b3808858805a834963badc6db354b4edaf5150`。
+
+原 linker adhoc App 主程序 `06522347…` 的 strict codesign 实际1：缺少签名要求的资源，原件与失败保留。Root在独立保全副本执行本地 adhoc seal，自然0并 strict verify0，主程序为 `d41e77de9a3f6793799572e07f840b75dc54489c18db310d3f9b5119eeaaa62a`、176707600B/0755/arm64；证明 `5b7a95444166654bd80bac48e4ea5c8b030fc1781cff6cb27393b029b240635b`。这是本地验收制品，不是分发签名、公证或正式Framework Source通过。
+
+Root对精确旧63316仅发送一次public正常退出请求；旧PID消失，原data/project及17lease共19次fresh lsof均自然1且输出空。随后仅一次public open新版，ACK0、同一真实UserRoot/project和15lease归新99009，proof `3f02768bacedd6207c6cc4c8b5d78b8bdfcdf6346e76b46adfd5ac562e0dbe13`。config `b4579b93…`、MCP `d8e397af…`及微信授权/历史保原，模型13618/1451不重启；没有--model、DYLD、probe或私有激活。真实窗口可见、失败历史打开及新版自动Cron成功仍等已发出的唯一真人验收，不能由owner证明代签。
+
+自动Cron原11:18/11:19错误及两条Failed Run继续保留，不重放。文件名修复的实际67 distinct/Core22+State45、两个exact RED→GREEN、独审和官方clean0资格有效；正式F340三文件已与测试材料全2850成员逐字节/模式对齐并冻结。然而正式Source实际128项失败（1 session strategy、4 retired path、117 object map、6 behavior map），final未执行。原官方preflight与Source依赖图闭包现象已只读确认，不能 blanket补map、恢复退役源码、改工具/ignore或冒新 Source0；外部echo-semantic合同修复仍排除。因此三文件仍是已测本地候选，不正常提交、不冒main/CI。
+
+F0中间阶段已正常本地保存 `0087353fd78eb73ffaa68b255cf4ef807ca96d4a`（parent b788/tree5f789347），2783源码，精455变更的Source/final0、独审与实际stagedartifact0后GPGoff提交；Root恢复bundle verify/fetch0导入正式仓同名本地分支，formal F340和三dirty不动，proof `5009760faa334f067d61ffb571338a394f712d893d9192d8b2158de49798f3fa`。511e锁fresh deny0/同49组107身份、五来源audit0、16+14控制及3消费者/Clippy W0仍按实际原范围保留；不是完整24门禁。新的24入口在审，完整执行尚未启动；原失败及01–22旧票不能移签。
+
+SDK StageA已用正常Cargo与进程限定local Git路由装配全部13个canonical HTTPS来源到同一008，锁 `e151fb4587c99463e90c82dbe9d1d4f7e76747be1c7f6241d21b74a0e9976a62`；013→e151恰13 source变化，版本/checksum/依赖边不变，不冒HTTPS已发布/冷恢复。四份source断言/文档增量保5352 accepted、431 routes与生成物，独审C0/I0/M0。当前1225文件/68目录manifest `b714e906…`；Root新工程入口 root-engineering-r08-008 的prepare实际0，仅完整当前源/工具/008行政绑定已核，无Cargo、producer、Host、三语言或扫描。本批明确不包含独立风险门禁和semantic Source/final，旧11cd/0dac票只留历史、不可执行当前源。
+
+资源维护已实际完成：三份已完成Zstd程序1517515232B无损压成两个共享冷对象126804304B，三个角色各自完整流回读byte/SHA/size相等、无读者后仅删除精三热副本；33份原raw/FP/dep/来源小件零漂，暖target、当前App/UserRoot和工具链不动。作者实际入口d041a5d5、Root压缩对象/原始caller和回读/删除收据逐SHA确认；当前约5.8GiB，下一heavy仍fresh准入，不当作新测试通过。Perf四测仍仅source-only/未编译、30已验corpora及10k原3600超时保原。真实GUI、两账号SSH/终端/Fork、手机IMcron/HITL/Subagent/60秒与长等待、最终性能、精确main/CI和发行发布部署继续分别验收。
+
 2026-11-01 11:54 最新续接：完整 Goal 保持 active、未完成，原26项与原生消息/唯一终态/进度/六工具组/跨会话要求继续。当前正常本地组合为 Framework `3409932`、CLI `5132d6b63537892185a3ac48de2e66a9b9366731`、SDK `eea84945`、官网 `4badb0cffa10b54004b801c7a33d2e0e886da894`；保存本段前 Top `3c90af0`。四个 gitlink 仍未晋升，无新 push/merge/关闭 Issue/包发布或部署。
 
 **自动 Cron 本次真人验收未通过，根因已由实际数据与文件系统对照证实。** 用户答“已自动运行，但结果或历史异常”。11:18/11:19 两个真实 scheduled Run 均因 `create message log: File name too long (os error 63)` 失败；121字节 logical ID 经 hex 为245字节 key，消息文件262字节、原临时文件304字节。手动92字节 ID 的临时名246字节可写。Root最小OS对照为0/63/63，证明记录 `389b26f0…`；实际任务现 disabled/control revision4，两 Failed Run 原件保留且不重放，原手动成功仍有效。当前用户 App 63316 仍为旧61d3，原UserRoot/微信Auth与模型13618保持。
