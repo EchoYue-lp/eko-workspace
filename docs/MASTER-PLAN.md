@@ -1,5 +1,9 @@
 # EKO 总纲（MASTER-PLAN）
 
+2026-11-01 15:06 当前运行状态校准：SDK Root-r10/outer3207已自然结束1，第04 workspace/all-features测试自然101，后续05–18未执行；不再将48279称为live。01fmt/02fmt-check/03Clippy原0保留；facade_inventory真实83pass/8fail/0ignore，失败为具名A2A及其JWT退役后旧语言计数/分类断言未迁移。当前1225源码字节无变化，另有测试在S下留下空target目录，源守卫按真实目录漂移停止。SDK唯一writer已获最小修复与原失败selector focused验证GO，先保原失败程序/FP/.d/caller，再修具名退出断言及实际test/helper输出根；不恢复退役合同、不弱化其它83项/生成物/5352/431/e151/风险78c，不扩大ignore。G/run-r10-formatted/cargo-target inode299009928现在是需保留的失败批warm缓存，不执行clean，不作新通过票。Root只在新的完整源冻结与实测后恢复原04/后续门禁。
+
+F0 S008组合24、Source/final及官方clean0已完成；具名F340 RustHost65实际与独审C0/I0/M0保持，GUI计时/lastEventAt/60秒提醒源码复核亦无直接Finding但非真实界面验收。App99009/模型13618/原UserRoot与微信Auth/history保护。原生当前Cron真人题、精S008任务分支push/DraftPR授权题均pending；不重复问、不执行外部写，main合并/发布未授权。完整Goal仍active/未完成，原26及全部后继未完范围保留。最新准确SDK失败回执及职责见Root受控r118，历史与先前live切点按原时间保留。
+
 2026-11-01 14:45 最新续接：完整 Goal 保持 active、未完成，原26项与全部后继范围保留。更新前Top `910717e3a9387f240e420293fb484a3c78c43df9`；正式F340恰三份文件名修复dirty/index空，CLI5132、SDKeea、官网4bad均干净。四个gitlink仍不晋升，无新push/PR/merge/Issue关闭/发布部署。App99009、原UserRoot/微信Auth/history/configb457/MCPd8e3与模型13618保持；唯一新版autoCron+原Failed历史真人问题仍pending。
 
 **F0 S008组合24门禁已闭合并完成官方缓存清理。** 同一S008/2783/511e源码下原01–04精原成功回执复用，本次05–24真实20项各自然0/W0/guard0；outer82880于06:17:45.209Z结束0，无signal/error/truncation。Root逐原caller/raw接受`9775bde7495934c4ac0dc949fde41c1ed75baaf0cc5b76cdcc81b742d984d6a8`，不说24全部重跑。原r15 ENOSPC101/608B0644坏bench与所有旧失败另存，不被新0覆盖。新epoch411hot程序/native对象、306去重冷内容、9216元信息与79份原引用经Root接受`71829601…`后，官方cargo clean自然0，Removed11933files/9.4GiB、T lstatENOENT；Source2783与外置保护0漂。新T的TAG是Cargo自然创建，未补造/未fallback。F0旧T inode298959287已结束，不可再据旧清单清理其它cache。
