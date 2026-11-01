@@ -1,5 +1,11 @@
 # EKO／Eclip 当前协调权交接
 
+2026-11-01 23:28 性能与应用真实结果：原70children全部逐native 1p0f0i0m、原4group与final-reset均自然0，Root逐235引用和原样本/过程回读接受393519da…；60measurement＋10warmup不变。实际88条top8全有新RustRover95346，CPU267.2%–574.9%、load36.14–46.80，因此只能记descriptive／后台竞争，不能签quiet收益或H3效果。原受限raw/summary永不改签。Eclip已同包同U正常重开为9970／23:09:27／UID501／d41，实际26句柄／15lease、配置与Auth保，Root接受ede6f4f1…；原退出检查次数19不是新App lease数。
+
+用户又明确允许正常退出RustRover和Eclip重测70后重开Eclip。两helper仅literal身份差量经Root完整机械回读、各31控制/clang/inspect0；Rover95346已唯一normal request自然0/request_sent=true，但固定5秒及Root后续fresh ps仍同identity，提示未被观察，未force/kill/repeat。已发必要真人问题请查看保存／退出提示，当前pending。9970仍打开，不提前空关；其新正常退出GO尚未发。K2原70准备已check0／20个path-only差量与脚本逐字不变／旧raw全保，ticketf43b4322…、ready20e1419…，无新quietGO/sample。等Rover真实退出后再单次关9970、准入K2并测后重开，不能把首次请求0当实际退出。
+
+SDK完整44候选已独审C0/I0/M0且Root实际1303文件SHA/mode/blob回读0（c99ec386…），相对83仍6有效差异；5项新focus未跑，E2E编译期CARGO_BIN_EXE不能靠运行时Host环境变量伪复用。独立StageA own13两文件候选已独审与Root回读接受4c730b0e…，已给sole主根内main6cd后继写权，合法应用/小函数复验中，原S837／formal83／nativeC均保原。外部canonical删除preflight接口gap1继续排除，main语义CI1不冒全绿；Windows/依赖/协议/质量/合同/库存及语言已分别绿，Host job仍待终态。H3 ENOSPC失败ca5fa5…与旧双partial/原30持续保全，不自动重试。完整Goal active未完成，当前受控入口Root/active-continuation-20261101-r148-RustRover-normal-request0-stilllive-second70-ready.json。
+
 2026-11-01 22:46 SDK StageA主线授权已执行：用户另明确允许PR14转ready并squash，Root原命令均自然0；PR14现MERGED／nonDraft，精确main为6cd2e1b6191aa2ed932dd50b2c22065405eb25f7，sole parent0930、tree0f2ace2…精等837，GitHub签名verified，14:42:23Z合入。精main Rust CI 41317513674实际in_progress，Root watcher handle22247保原raw/caller；当前不提前签本阶段交付完成。正式83及837本地ref/index未变，不授发布或其它分支写；此前本PR合并问题不再pending，勿重复合并。
 
 SDK实际三方候选首批已解决27原冲突／17pending，6有效文件差量已交现有只读独审；正式两源保持。其余17允许逐项证明StageA语义已由native83覆盖后复用原精pin340／lock／生成输入及完整原件，禁止退回008、手改生成数或扩风险；观察纪元不得重签。H3原native87871／handle71146仍seed（最近4919条完整audit），未terminal／未post验证；低于5GiB不启新重构建，现存原命令沿原预算监督。App性能优先／测后原数据重开授权持续有效，等H3物理终态和准确paired准入，不提前空关。Cron 22:39 fresh只读再次核d41及两修复源一致、旧失败保留／disabled无新自动Run，索引358e0776…。完整Goal继续active未完成；受控入口Root/active-continuation-20261101-r145-SDK-main6cd-merged-CI41317513674-live.json。
