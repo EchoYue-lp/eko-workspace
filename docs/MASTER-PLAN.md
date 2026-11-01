@@ -1,5 +1,9 @@
 # EKO 总纲（MASTER-PLAN）
 
+2026-11-01 22:46 SDK StageA主线授权已执行：用户另明确允许PR14转ready并squash，Root原命令均自然0；PR14现MERGED／nonDraft，精确main为6cd2e1b6191aa2ed932dd50b2c22065405eb25f7，sole parent0930、tree0f2ace2…精等837，GitHub签名verified，14:42:23Z合入。精main Rust CI 41317513674实际in_progress，Root watcher handle22247保原raw/caller；当前不提前签本阶段交付完成。正式83及837本地ref/index未变，不授发布或其它分支写；此前本PR合并问题不再pending，勿重复合并。
+
+SDK实际三方候选首批已解决27原冲突／17pending，6有效文件差量已交现有只读独审；正式两源保持。其余17允许逐项证明StageA语义已由native83覆盖后复用原精pin340／lock／生成输入及完整原件，禁止退回008、手改生成数或扩风险；观察纪元不得重签。H3原native87871／handle71146仍seed（最近4919条完整audit），未terminal／未post验证；低于5GiB不启新重构建，现存原命令沿原预算监督。App性能优先／测后原数据重开授权持续有效，等H3物理终态和准确paired准入，不提前空关。Cron 22:39 fresh只读再次核d41及两修复源一致、旧失败保留／disabled无新自动Run，索引358e0776…。完整Goal继续active未完成；受控入口Root/active-continuation-20261101-r145-SDK-main6cd-merged-CI41317513674-live.json。
+
 2026-11-01 新人类授权已落实：用户允许SDK837指定分支push＋Draft，Root实际push自然0并创建Draft PR [#14](https://github.com/EchoYue-lp/echo-agent-sdk/pull/14)，fresh官方读回OPEN／isDraft=true／head837e54ad…／base main／mergedAt=null，正文精547716b7…逐字一致。接受票fee43cb7…；本次不含main合并或发布，正式83源／index未变。用户另明确选择“先测性能，结束后重开Eclip”，正常退出／原数据重开授权已成立，不再列为pending；当前H3 native87871仍完整seed，在它物理终态及paired真实准备就绪前不提前空关App。Workspace fresh准备75529057…只读核到原99009身份、helper和config不变，实际terminate/open仍未执行。
 
 针对截图两条“定时·失败”，Root fresh读取scheduler／occurrence原SHA均未变：两旧Run发生11:18／11:19，memory filename too long／errno63；修复已进入当前d41App，原67定向及旧RED→GREEN资格保留。但任务仍disabled／rev4，当前新版无新的自动Run，因此尚不签自动Cron实机闭合。旧失败如实保留，不改状态、不删除、不假称已成功；性能测后原数据重开再继续真自动触发验收。完整Goal继续active，最新受控入口Root/active-continuation-20261101-r143-SDK-DraftPR14-authorized-App-performance-first.json；下方SDK授权／App选择pending仅为历史。
