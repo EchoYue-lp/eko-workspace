@@ -1,5 +1,9 @@
 # EKO 总纲（MASTER-PLAN）
 
+2026-11-01 SDK自有13问题已实际完成有界修正：独立主根内source分支fix/Echoyue/sdk-stagea-semantic-materials以official main6cd为真实HEAD，1229文件逐blob保全后仅两语义文档应用已审patch，index空。固定c0bc原三模块直接调用的真实before/after保全：365文档special/strict均无错；旧base0930原14→1，11路径同次依据缺口0，只剩外部canonical delete-preflight接口gap；新base6cd仅两semantic差异、change-evidence0。业务source_digest始终source:e186，原e765/c152/task Source18Final19历史未重签，Root接受31eab7f6…。这不是完整仓级Source/Final或新main CI全绿，旧14/工具gap继续保留；已授权sole只对两doc走正常本地task Source/Final，尚未接受新gate结果、不stage/commit/push。formal83、S837与native44候选保持各自冻结。
+
+完整native44候选已Root实际1303完整bytes/mode/Gitblob回读0及独审pass（c99ec386…），五个新增focus仍待真实执行；E2E编译期CARGO_BIN_EXE不能用运行期环境变量偷换Host，相关最小真实构建入口由sole准备，未授重构建。SDK main CI已见Windows/依赖/协议/质量/库存/合同/语言分别成功，Host最后一次仍在跑；最新一次Root状态获取实际网络timeout1保留，不能冒全CI终态。Rover95346一次正常退出request0但真实仍未gone，保存/退出提示真人问题pending；Eclip9970继续打开，K2重测精票准备就绪、尚无quietGO/sample，不repeat/force。完整Goal active未完成；最新受控入口Root/active-continuation-20261101-r149-SDK-own13-actual14to1-normal-local-gates-pending.json。
+
 2026-11-01 23:28 性能与应用真实结果：原70children全部逐native 1p0f0i0m、原4group与final-reset均自然0，Root逐235引用和原样本/过程回读接受393519da…；60measurement＋10warmup不变。实际88条top8全有新RustRover95346，CPU267.2%–574.9%、load36.14–46.80，因此只能记descriptive／后台竞争，不能签quiet收益或H3效果。原受限raw/summary永不改签。Eclip已同包同U正常重开为9970／23:09:27／UID501／d41，实际26句柄／15lease、配置与Auth保，Root接受ede6f4f1…；原退出检查次数19不是新App lease数。
 
 用户又明确允许正常退出RustRover和Eclip重测70后重开Eclip。两helper仅literal身份差量经Root完整机械回读、各31控制/clang/inspect0；Rover95346已唯一normal request自然0/request_sent=true，但固定5秒及Root后续fresh ps仍同identity，提示未被观察，未force/kill/repeat。已发必要真人问题请查看保存／退出提示，当前pending。9970仍打开，不提前空关；其新正常退出GO尚未发。K2原70准备已check0／20个path-only差量与脚本逐字不变／旧raw全保，ticketf43b4322…、ready20e1419…，无新quietGO/sample。等Rover真实退出后再单次关9970、准入K2并测后重开，不能把首次请求0当实际退出。
