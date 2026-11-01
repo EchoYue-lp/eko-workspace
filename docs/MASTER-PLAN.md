@@ -1,5 +1,9 @@
 # EKO 总纲（MASTER-PLAN）
 
+2026-11-01 新人类授权已落实：用户允许SDK837指定分支push＋Draft，Root实际push自然0并创建Draft PR [#14](https://github.com/EchoYue-lp/echo-agent-sdk/pull/14)，fresh官方读回OPEN／isDraft=true／head837e54ad…／base main／mergedAt=null，正文精547716b7…逐字一致。接受票fee43cb7…；本次不含main合并或发布，正式83源／index未变。用户另明确选择“先测性能，结束后重开Eclip”，正常退出／原数据重开授权已成立，不再列为pending；当前H3 native87871仍完整seed，在它物理终态及paired真实准备就绪前不提前空关App。Workspace fresh准备75529057…只读核到原99009身份、helper和config不变，实际terminate/open仍未执行。
+
+针对截图两条“定时·失败”，Root fresh读取scheduler／occurrence原SHA均未变：两旧Run发生11:18／11:19，memory filename too long／errno63；修复已进入当前d41App，原67定向及旧RED→GREEN资格保留。但任务仍disabled／rev4，当前新版无新的自动Run，因此尚不签自动Cron实机闭合。旧失败如实保留，不改状态、不删除、不假称已成功；性能测后原数据重开再继续真自动触发验收。完整Goal继续active，最新受控入口Root/active-continuation-20261101-r143-SDK-DraftPR14-authorized-App-performance-first.json；下方SDK授权／App选择pending仅为历史。
+
 2026-11-01 22:20 当前切点：SDK83受影响Python方法纠正已真实完成。新entry955d…/RootGOe2a347…，两个中性图及原118–120三调用各自然0/W0、完整raw；pytest546P/1原skip＋18成功subtests（547 flat／header565）、后guard0，源1303/工具14/81＋37FP不变。两个实际14包Name-keyed完整图一致；旧r06整批0＋3warn及旧overlay unknown保持，不改签旧W0。Root接受a988dc05…；82930gone、双program reader0，外层26560实际0。外层cwd F/T差异经绝对payload路径及原cwd核对不影响语义；Root首次图数组顺序观察器1保留，同原数据按Name核对修正0，无test重跑。
 
 H3新完整100/10000单次seed现真实在途：独审C0/I0/M0及Root准备接受de6766a8…，精entry74970833…/新GOf62ec3db…；Node87841→Python87842→native87871，22:18:28出生，程序518b／源码b2b55。原flock内root＋两owner读者0后whole rename7864现场，新固定根从空生成；Root逐7file＋2owner的SHA/bytes/mode/inode及34旧7845／失败保护回读0（5da37e03…）。原100/10000/events10000/tail0/checkpointvalid与3600＋300＋300／5秒不变，旧EKO899df validator来源单列；snapshot/manifest及第31份资格待实际完整闭包，未测收益、未采用源码。其余heavy held至终态，不重启旧handle；最新入口Root/active-continuation-20261101-r142-SDK83-Python-W0-H3-native87871-live.json。
