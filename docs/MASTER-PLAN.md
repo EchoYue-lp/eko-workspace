@@ -1,5 +1,15 @@
 # EKO 总纲（MASTER-PLAN）
 
+本轮服务与诊断补注：原受控模型父13617/子13618已被实际ps确认消失，1420/1451均无监听，退出原因UNKNOWN。Root在独占恢复权后恢复同一9953f275…原baseline模型，不切r03：新PID38255、UID501、17:34:17出生、PPID1，1451实际归它监听，本地NATIVE_HELLO HTTP200；新日志在Root/fixture9953-service-recovery-20261101-r01/runtime。App99009仍实际存活，没有修改App配置/UserRoot或发送IM。13618不再列为live保护PID，38255是当前须保护模型owner；r03仍只协议ready。
+
+Perf A1原-vv NoRun正在自然编译，记录到第三方依赖额外warning，当前不授程序/FP资格或执行13；原raw全部保留，作者未过滤/修改registry/加allow。冻结Cargo官方文档明确双verbose额外显示dependency warning，Root在独立核对原repo零warning门禁与assistant取证入口之间的观测方法；任何第一方或仍适用的实际warning均不得冒0。尚未批准改命令、依赖、policy或重新构建。SDK准确target已清理的资格不受这条独立编译诊断影响。
+
+2026-11-01 17:30 最新资源与执行窗口：SDK本批必要保全已完整独立接受5a26ae63…（395原生角色、279冷对象全流、20262context与321外部证据）；随后唯一官方nightly cargo clean自然0，Removed26103files/9.3GiB，旧T dev16777234/inode299009928已lstatENOENT，无TAG补造/手工fallback。Root逐S1225源、冷279、context20262、外证321后核0漂，接受60698959…；共享卷statvfs实测增加9781534720B，不作排他回收归因。旧T的清理权不延伸新epoch，M2/uv/venv/JavaTarget/App/UserRoot/Auth及历史全部保留。下文“保全中/未clean”仅是原时点。
+
+Perf A focused独占窗口已真实启动：17:28:21+08，执行会话handle78926、Node32727→Cargo32729及实际rustc；仅对新matched候选Source f8e34a13…（2851readonly、mutation221c/f9dd）执行release/files/default/jobs2/debug0/incremental0的lib NoRun，原argv含--locked/-vv/JSON。准确入口仍ffd9d625…、pair9467bf07…，前检free10163871744B/无其它heavy/目标原absent，Cargo自然创建缓存。编译后必须实际程序/完整u64 FP/root cfg/profile/list供Root独立接受，未接受前不调用四exact+legacy1+Layer8共13；本窗口不含性能测量、integration/重建10kseed或正式采用。旧25d不可与新after比较，30corpora与原3600秒7845pair失败保持。
+
+SDK StageA独立0930任务的正常query/preflight/Source窗口现已释放，仅由唯一writer按O3准确入口执行；不改正式eea九后继，不拿5352/431覆盖eea5344/430，也不将历史115/402直接套作当前结论。新的Source/Final结果仍须实际取证。Provider r03已HTTP小验收及独审C0/I0/M0，只签协议ready，候选5f626ca8…与live隔离。PR201 main合并授权及App99009新版自动Cron真人题继续pending，不重复提问、不作main写入；完整Goal未完成。
+
 2026-11-01 17:15 最新续接：完整 Goal 仍 active、未完成；原26项与全部后继范围保持。SDK StageA 本批已取得限定工程组合资格：r11原01–09/11–17共16项按未变Rust/Cargo/contract/工具/profile输入复用，r13原完整语言caller新执行自然0；TS370通过/1跳过，Python452通过/1跳过及18成功subtests，Java79份freshXML共383项、0失败/错误/1跳过，三个quickstart完成。全39测试输出根/JWT退役断言及第40个Parquet caller两行修复均独审C0/I0/M0；当前Source ec29dbc8…/1225文件68目录，Code888da83f…、binding2fc31c34…冻结，不称17项全新重跑或整个SDK交付通过。
 
 原r13 outer/result仍自然1/FAILED_STOPPED：原自有Python JUnit观察器把suite.tests471与453个testcase强等，实际pytest9.1.1将18个成功subtest计入suite但共用节点。原helper/XML/raw/失败全保；新独立observer按原caller自然0、argv/cwd/raw完整性、实际环境报告路径、before缺席/mtime及471=453+18、453=452+1严格复核自然0，缺依据/原caller失败/错cwd三个反控均拒绝1，独审C0/I0/M0。接受票Root/SDK-r13-composite-engineering-Root-accepted-20261101-r02.json（5a7e4bf0…）；不把原outer改0。原after-language context因观察器失败缺席，Gov仅按已审Plan前3Todo独立保全current context、必要native程序/producer/FP与原117生成物；暖T仍G/run-r10-formatted/cargo-target、inode299009928，只读，未获clean。完整保全待Root回读后再单次官方准确cargo clean，不造TAG或fallback。
