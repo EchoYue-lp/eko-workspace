@@ -1,5 +1,19 @@
 # EKO 总纲（MASTER-PLAN）
 
+2026-11-01 14:45 最新续接：完整 Goal 保持 active、未完成，原26项与全部后继范围保留。更新前Top `910717e3a9387f240e420293fb484a3c78c43df9`；正式F340恰三份文件名修复dirty/index空，CLI5132、SDKeea、官网4bad均干净。四个gitlink仍不晋升，无新push/PR/merge/Issue关闭/发布部署。App99009、原UserRoot/微信Auth/history/configb457/MCPd8e3与模型13618保持；唯一新版autoCron+原Failed历史真人问题仍pending。
+
+**F0 S008组合24门禁已闭合并完成官方缓存清理。** 同一S008/2783/511e源码下原01–04精原成功回执复用，本次05–24真实20项各自然0/W0/guard0；outer82880于06:17:45.209Z结束0，无signal/error/truncation。Root逐原caller/raw接受`9775bde7495934c4ac0dc949fde41c1ed75baaf0cc5b76cdcc81b742d984d6a8`，不说24全部重跑。原r15 ENOSPC101/608B0644坏bench与所有旧失败另存，不被新0覆盖。新epoch411hot程序/native对象、306去重冷内容、9216元信息与79份原引用经Root接受`71829601…`后，官方cargo clean自然0，Removed11933files/9.4GiB、T lstatENOENT；Source2783与外置保护0漂。新T的TAG是Cargo自然创建，未补造/未fallback。F0旧T inode298959287已结束，不可再据旧清单清理其它cache。
+
+**SDK真正完整17正在Root-r10新冻结源上执行。** r09原第01 cargo fmt自然0，但sourceguard发现仅scalar.rs变化，按原约定FAILED_STOPPED；未编译/target未创建。唯一writer找回前773ab210…原字节，确认后58d23914…仅if链换行和尾空白，同nightly重放一致、原fmt-check自然0、独审C0/I0/M0。当前source `66f867e9…`/1225文件68目录，Code `fea2f846…`，其余1224、e151锁、13个canonical008来源、accepted5352/shared431/生成物和独立49组107风险78c全不变。原ac2/r09失败不改，不恢复不整洁源或放宽guard。
+
+Root-r10 runner `ca1ccdb8…`、queue `54035074…`真实prepare0/835B/无stderr及独审通过后，outer3207/RootPID48279于14:37:05实际启动，fresh12053422080B；inner为SDK G/run-r10-formatted。01fmt、02fmt-check及03全目标Clippy已自然0，04-workspace-all-features正编译，完整17未终结。SDK当前Target inode299009928、自然TAG存在，归Root本批独占；Source、metadata和Git行政index冻结，不能用旧r09票、不能另Cargo/clean或重启。Root实际入口为`.echo-semantic/local/root-full-framework-window-20261029/SDK-StageA-root-r10-actual-20261101-r01/`；后续按当前epoch保全、无reader与准确官方clean。
+
+**真实F340 Rust消费者65秒已通过独立复核C0/I0/M0。** 复用hot Host `514528f7…`（dev opt1/debug0、core/ACP/bridge，非full53fc），官方Python client/catalog和冻结r02 fixture3124独立16422/16453；Final65.182s，Terminal/settled65.183s，事件7条于65.184s自然耗尽，live/replay逐envelope相同，run.wait settled/completed，fixture真实request1。session/agent正常close、SDK关闭后Host0；fixture按测试owner SIGTERM/wait为-15，两者分列，最终PID/端口检查各自然1且输出空。原caller自然0/原raw完整，38件hash回读0。receipt llm_calls0按当前定义仅统计reported usage，本次usage_reported=false；不能拿它反推零请求，无需新增统计Finding。本票不外推GUI/IM/EKO TaskRun/60秒自然语言提醒/lastEventAt/商业Provider或当前StageA。
+
+框架S008阶段Source/final0及组合24已具备审阅条件，Root最终中文PR正文已在ignored材料准备。已向用户仅询问将精0087353任务分支推送并创建Draft PR的最后授权；当前pending，不含main merge/发布，不沿用旧F340分支push许可。具体正文：`.echo-semantic/local/root-full-framework-window-20261029/framework-S008-final-PR-material-20261101-r01/body.md`，32f207af…；分支fix/Echoyue/stage0-generic-diagnostics，当前远端main517已fresh只读核对，SDKmain0930同理。CI只由push main触发，PR无CI；合并后须核精确main CI，不预先称main或HTTPS消费者资格。
+
+正式F三文件Source128失败/final未执行/未正常提交仍单列，外部echo-semantic工具修复继续排除。当前SDK17、Source/final与本地保存、精确正式pin/mainCI，以及真正GUI、两SSH账号/终端/Fork、手机IMcron/HITL/Subagent/60秒进度、完整性能、发行平台制品/发布部署等继续未完。下方旧切点仅保原时间范围，不覆盖当前SDK进程或缓存epoch。
+
 2026-11-01 14:05 最新续接：完整 Goal 保持 active、未完成，原26项及全部后继要求保留。更新前 Top `556d5c3c30129cda66352fafb5ee886a11bbb46f`；正式组合仍为 Framework340、CLI5132、SDKeea、官网4bad，Framework恰三份文件名修复未提交/index空，其它子仓干净；不晋升四个gitlink，无新push/merge/关闭Issue/发布部署。当前真实App仍为99009（13:03:28出生、sealed d41e77de…）、原UserRoot/微信授权/历史保原，模型13618保护。新版自动Cron及原Failed历史的唯一真人验收问题仍pending，不重复标题栏、扫码或配置问题。
 
 F0 S008（2783源码、511e锁）的首次完整24实际运行中，01–04均自然0/W0；05在编译剥离时出现`LLVM ERROR: No space left on device`，最终bench `agent_bench-67fc4f9c87444d86`无法执行，原05自然101、源守卫0，06–24未跑。Root确认该bench为608B/0644、非MachO、SHA e90c6b50…，保持never-executed；zstd程序73d59242…仍与原成功字节一致，不能把三条warning说成三份程序全坏。不修改业务源码、断言、权限或警告门禁，原Root-r15/全部caller/raw/失败保原，完整24尚未通过。
