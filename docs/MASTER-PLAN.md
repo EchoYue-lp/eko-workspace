@@ -1,5 +1,19 @@
 # EKO 总纲（MASTER-PLAN）
 
+2026-11-01 14:05 最新续接：完整 Goal 保持 active、未完成，原26项及全部后继要求保留。更新前 Top `556d5c3c30129cda66352fafb5ee886a11bbb46f`；正式组合仍为 Framework340、CLI5132、SDKeea、官网4bad，Framework恰三份文件名修复未提交/index空，其它子仓干净；不晋升四个gitlink，无新push/merge/关闭Issue/发布部署。当前真实App仍为99009（13:03:28出生、sealed d41e77de…）、原UserRoot/微信授权/历史保原，模型13618保护。新版自动Cron及原Failed历史的唯一真人验收问题仍pending，不重复标题栏、扫码或配置问题。
+
+F0 S008（2783源码、511e锁）的首次完整24实际运行中，01–04均自然0/W0；05在编译剥离时出现`LLVM ERROR: No space left on device`，最终bench `agent_bench-67fc4f9c87444d86`无法执行，原05自然101、源守卫0，06–24未跑。Root确认该bench为608B/0644、非MachO、SHA e90c6b50…，保持never-executed；zstd程序73d59242…仍与原成功字节一致，不能把三条warning说成三份程序全坏。不修改业务源码、断言、权限或警告门禁，原Root-r15/全部caller/raw/失败保原，完整24尚未通过。
+
+失败缓存已先保全后精确清理：唯一旧T中475个MachO/ELF/native object/dylib及显式坏608对象分件冷存，324个去重内容对象743858346B；13837份FP/dep/native上下文22005668B完整外置。Root独立解压全部324对象、核对13837原/副本byte/SHA/mode及25份T外原记录，接受证明`d5ff355ebc8fe34101f97b53f531fd3daafefa25cda3d662ac403a6c64dc6590`。原角色、混合warm来源、坏bench/旧89冷包各自资格保持，不把475项移签为新S008测试或全warm恢复。
+
+官方cargo clean原样执行并因缺CACHEDIR.TAG自然101；原stderr与真实返回码保留。按用户本轮清编译产物/旧制品授权，Root只对旧T dev16777234/inode298645315进行FD限定fallback，删除17144文件、3066目录及8406017387B剩余可重建缓存，自然0且lstatENOENT；未补造TAG，未清其它目标、源码、原日志或用户数据。Root后置复核源码2783、外置元信息13837、冷对象324和外部原件25全0漂，可用空间恢复到13.26GB。此前另已冷存的四旧App主程序及三Zstd程序继续保原恢复入口，不重复删除。
+
+**同一T绝对路径现在归全新恢复批次，不能再用旧475清单或旧inode清理。** Root-r16已独审pass C0/I0/M1，M1由实际lstatENOENT证明闭合；清理后目标缺席分支的prepare自然0。实际05–24共20项于14:01:58启动，Root supervisor59313/session82880，Cargo69611；01–04按同一源码/工具/完整受控env/argv的精确原0回执复用，不称完整24重跑。新T inode298959287由Cargo自然创建，CACHEDIR.TAG真实存在；当前编译中，未有完整20项终态。Root实际入口为`.echo-semantic/local/root-full-framework-window-20261029/F0-S008-resume05-Root-r16-actual-20261101-r01/`，源/flags/警告阻断不变，旧r15失败不改。该批结束再按新epoch保存结果及准确clean，勿中断、重复或与SDK/Perf重构建并行。
+
+SDK StageA的独立fresh两audit、官方deny四项、原capture/独立49caller和14策略控制均实际自然0；仅SDK原49组107身份，其它诊断0，原政策/风险原话不扩，原件cb290481…及限定独审pass保真。Root已复核仅三字段的baseline机械绑定并授权六个元数据路径采用，采用结果0ec9c986…；canonical原verify0。当前完整source为ac2ce490…/1225文件68目录，Code1960、Rust/Cargo/e151锁/13个canonical008来源/accepted5352/shared431及生成物全不变，正式SDKeea和TopAGENTS不动。Root最终17项入口r09 runner19ea4073…/queue59629390…已实际prepare0/835B/无stderr、独审pass，目标尚未创建；不预建target或补TAG，full17/Host/三语言/当前Source-final/HTTPS发布/mainCI仍未执行，待F0恢复批完成清理与fresh资源准入。
+
+正式F三文件Source128失败/final未执行/未正常提交继续保留，外部echo-semantic合同修复仍排除。Provider会话正在只读核对下一组现有native HITL/Subagent/60秒与长等待控制，不能改live fixture/服务或提前请求真人重复操作。其余GUI、两SSH账号/终端/Fork、手机IMcron、最终性能、精确mainCI、发行版本平台/制品/发布部署等未完范围不缩。下方旧切点仅按原时间保留，不覆盖本段当前进程与缓存epoch。
+
 2026-11-01 13:13 最新续接：完整 Goal 保持 active、未完成，原26项及原生消息、唯一终态、进度、六工具组和跨会话要求全部保留。正式 HEAD 为 Framework `340993201cc937fc8e4783b66be399ef9f14e3d5`、EKO `5132d6b63537892185a3ac48de2e66a9b9366731`、SDK `eea84945edb401e63cd655a493a489f27b91fb51`、官网 `4badb0cffa10b54004b801c7a33d2e0e886da894`，更新前 Top `52ae7a2e8f6e7fb1dec8cb22604d070f59e2593b`。Framework 恰三份文件名修复未提交，全部 index 空；其它子仓干净，四个 gitlink 不晋升。本段覆盖下方旧切点的当前状态，不改历史事实，无新 push、merge、关闭 Issue、包发布或部署。
 
 **当前真实桌面已替换为 PID99009（UID501/PPID1，13:03:28出生）。** 唯一新版来源为 CLI5132 与 F340 的精确三文件修复 overlay，共3938源码/149前端资产。原 release 构建、afterguard、制品保全均实际自然0/W0；Root回读3895份FP/dep和六profile精确u64。准确自有 target 的官方 cargo clean 自然0（6211文件/2.8GiB），T absent、4411个保护对象无漂移。保全接受证明 `db3db861fff923d9c22379d124b3808858805a834963badc6db354b4edaf5150`。
