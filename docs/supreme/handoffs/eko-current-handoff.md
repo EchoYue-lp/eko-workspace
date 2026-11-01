@@ -1,5 +1,11 @@
 # EKO／Eclip 当前协调权交接
 
+2026-11-01 18:20 里程碑续接：SDK StageA 正常保存为本地提交 `837e54addae916f852949bd61c6fb6bb01918cbd`，parent0930、独立任务分支fix/Echoyue/pre-main-consumer-retirement。Root实际核回1229业务文件/125差量、两原caller/raw及官方verification；修正后Source与Final均自然0、内容c152/task:e765、globalClosure not_checked，四metadata增审C0/I0/M0，原staged artifact/whitespace0。88M/15A/22D仅该StageA闭包；工程组合16原未变Rust/Host/合同检查加完整语言当前0保持原适用范围，旧失败不改。真实bundle已创建/verify并导入正式SDK同名ref；formal eea checkout、分支、九原生后继及5344/430保持干净不变，未push/merge或发布。StageA5352/431、pin008与当前formal340资格分开；下一步交精确PR材料与真实三方合流分析，不能整树覆盖eea。
+
+性能matched-before独立NoRun自然0/W0/E0，新程序eae29363…、profile精7169924071199656256、before源d780/2851已Root全SHA/mode核回；after target3301成员全content/mode不变。Root接受f1b194e8…；该票只签独立before角色，不签测量收益。此前after7444角色与history1000 validate真实1pass/0fail已接受334b731e…，未seed/sample/恢复或改300+5预算。作者继续准备原矩阵精确paired测量入口及两自有target保全/reader0/官方clean方案，尚无清理或计时；原30合格corpora及10000轴7845pair/3600s失败保留。
+
+框架PR201精main f568/CI七绿已完成。App99009与原模型9953恢复owner38255实际存活，当前配置/微信认证/历史受保护；原autoCron真人题仍pending，仅安排一次只读增量观察，不重发、不代启用/触发。完整Goal继续active未完成，原26和新增范围全部保持。最新受控入口为Root/active-continuation-20261101-r132-SDK-837-local-milestone-matchedbefore-accepted.json；下方时态只保历史切点。
+
 2026-11-01 main交付最新续接：用户已明确批准PR201转ready并squash。普通合并因GitHub main-rule更新权限被拒1保原；核规则没有额外status/review条件且允许仓库角色后，在同一授权精范围用允许角色路径完成合并，无规则集修改。精main为f5688958960b985da4141212824abe7c74884f7c，tree5f7893474114b79811601eb9eaaade73f77f955e与已审008完全一致，soleparent51726454、GitHub签名verified。精CI [41294793482](https://github.com/EchoYue-lp/echo-agent/actions/runs/41294793482)七job现已全部SUCCESS（dependency-policy、Windows、Linux quality及四组Linux tests）；watch原caller自然0，fresh API终态已独立核验，接受票Root/framework-S008-authorized-main-merge-20261101-r01/exact-main-delivery-accepted.json（acb5113f…）。Stage0本阶段main交付已完成，不外推后继原生消息/物理退役、SDK、registry或完整Goal通过；008远端任务分支为SDK精pin来源暂保，不删。下方main授权pending/CI在跑仅是原时点。
 
 Perf A13已形成正常单-v NoRun0/W0与同源13实际各1p0f0i0m的有限接受662508a6…，原-vv1356及旧false不改；B performance_baseline新integration实际编译0/W0，独立程序7444a50b…/FP1a414420…/profile7169924071199656256已Root接受2394fd70…，精history1000 validate潜在repair仅原工作副本的GO已给唯一作者，仍不seed/sample/重建快照/抬300+5预算。Source/模型/数据保护与独占边界不变。
