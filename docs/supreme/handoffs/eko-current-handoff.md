@@ -1,5 +1,15 @@
 # EKO／Eclip 当前协调权交接
 
+2026-11-01 10:49 最新续接：完整 Goal 保持 active、未完成。正式本地组合仍为 Framework `3409932`、CLI `61d3ee31`、SDK `eea84945`、官网 `8f28b595`；Root 统一 stage/commit。四个子仓当前源码与 index 干净，不晋升四个未推送 gitlink，不新增 push、merge、关闭 Issue、包发布或官网部署。
+
+**新版 Cron 创建、手动运行和历史已获真人确认。** 用户对实际 61d3/F340 App 的答复为“创建和运行成功，历史可见”，原始确认保存在 `.echo-semantic/local/root-full-framework-window-20261029/latest-App61d3-real-human-Cron-create-run-history-confirmation-20261101-r01.json`（SHA-256 `55ac4339c4888df57a7a8a70080b0bce035854aaacd882b24ca9639fd3ba350d`）。这闭合原 `cronExpr` 创建错误和该手动流程，不代替自动触发、恢复、通知或完整 IM 验收；用户未单独确认已禁用。后继已只问一次 `* * * * *` 自动触发/新增历史/再禁用，当前仍待答复。实际 App PID 63316、原 data/project 和微信授权保持；本地验收模型 13618 不重启，不重复标题栏或模型配置问题。
+
+Framework 中间阶段 F0 已正常本地保存 `b7886878`（父 `2f812324`，基于原 F517，保留旧生产 API）。原完整队列新一轮 01–22 自然退出 0、编译 warning 0；23 的官方 scanner 自然退出 1，报告旧 Zstd 链漏洞，24 尚未执行。原 ENOSPC、缺少 origin/main 和 non-Git 测试夹具失败均保原，不移签为成功。89 个实际程序及 FP、dep、profile、原始命令共 3393 个归档成员已由 Root 全流回读 bytes/mode/SHA：归档 `09e7207a7f52166ccd1d6e9054b81e59778100226d47d6211c9ac9d4b41c2790`，Root 接受证明 `196c1707d04fd0115194dca676220dab2b37d8df9f56fc2c78a2d0b850feba33`。原暖 target 保留，未清理。
+
+当前 F0 仅复用 F340 现成两 Polars vendor、唯一五来源审计投影及消费者测试，候选锁 `511eb982…`。已明确列出官方 resolver 额外的 tempfile→getrandom 0.3.4 合法边，不声称跨平台等价；这不是新增风险接受。下一步实际 locked metadata、五来源投影/原控制及官方 scanner/audit；同 49 组/107 身份必须逐项保持，再审机械锁绑定和新完整门禁。SDK StageA 的官方在线解析及 locked-offline 复核均自然 0，候选锁 `013bded5…` 仅变两 Polars 来源与三 Zstd 身份；原 f7 runtime 与 Polars340 混合来源被唯一审计器实际拒绝 1，原件保留。按既有 ADR0100，下一步统一到修复后的精确 F0 revision；不删除 same-source guard，不把本地 Git 验证冒 HTTPS 发布或精确 main/CI。
+
+性能原准备形成 30 份已校验 corpus；memory100/history10000 的原 3600 秒 seed 超时，保留 7845 对 prepared/settled、零 pending 的 partial，不当作完整 10000 结果或速度样本。单次旧 history1000 原 validate 自然 0/1pass，整进程 user CPU 0.16204s、sys 0.014837s、peak RSS 36421632B，仅为工程诊断，无函数计数或耗时归因。严格前缀 fold 缓存四测候选与 13 项 focused 入口已准备，尚无 Cargo/新二进制/收益资格；后继遵守自身 8GiB 准入，不抢 F0 完整重型窗口。发行矩阵已完成只读 intake；版本/平台、分发签名、包发布和网站部署等最终具名操作继续未完成。下方保留旧切点，仅历史范围有效。
+
 2026-11-01 09:22 最新续接：完整Goal保持active、未完成，原26项及新增原生消息、唯一终态、进度、六组工具与跨会话要求继续。正式本地组合Framework3409932、CLI61d3ee31c165517f5180aded814c10bdd35617eb、SDKeea84945、官网8f28b595；保存本段前Top7167ae6。Root统一本地stage/commit，不晋升四个未推送gitlink，不新增push/merge/关闭Issue/发布部署。
 
 Cron创建原错误missing cronExpr已由唯一EKO作者定位为Tauri默认顶层camelCase与前端cron_expr不符，桌面分支单行修成cronExpr；REST、nested edit、opaque历史游标及Rust不变。旧源9项合同真实1fail/8pass，新相关27与完整910项通过/4原skip，格式/lint/types/defaultbuild/正常Source-final/独审/原staged artifact均0，精五路径正常保存61d3。原表达式0 0 1 1 *为后端支持的五段格式。JS真实bridge/native边界mock资格与实际新包分列，不冒真IPC人工验收。
