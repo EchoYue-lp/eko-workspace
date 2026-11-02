@@ -6,7 +6,7 @@
 
 ## 单一协调与当前授权
 
-旧Root `01a18588-9a70-7552-912f-477ac52cbe39` 只完成本次交接。新Root ID和启动状态以同目录 `coordinator-transfer.json` 为准；接手后新Root唯一拥有总表和统一stage／commit，不复制已有十条执行线。
+唯一Root已切换为 `01a19a4a-2815-7072-88b1-63ff005b2476`，平台完整Goal已建立active，无token预算；旧Root `01a18588-9a70-7552-912f-477ac52cbe39` 停止派单和stage／commit。十条既有执行线均已收到具体实施派单，未复制会话。接管fresh快照、14项接受票哈希回读及实际派单见同目录 `new-coordinator-ack.json`；原注册文件仍仅旧Root写入。
 
 平台旧Goal实测paused，用户本轮“现在请继续”撤销暂停。新协调会话应先明确建立active持续Goal，目标读取新版完整Goal文件；不得新设token预算，不把交接标完整迭代完成。不要尝试把旧Root的paused当继续等用户的理由，也不要擅自把旧Goal标complete。
 
@@ -16,13 +16,13 @@
 
 | 仓库 | 分支 | HEAD／状态 |
 | --- | --- | --- |
-| 顶层 | chore/Echoyue/workspace-maintenance | 本次交接提交前49fefbf032b95f1f7eaa067d73c374cd2d0133c6；仅四个未推送子仓gitlink差异，index空。本次文档提交后以git实际HEAD为准。 |
+| 顶层 | chore/Echoyue/workspace-maintenance | 交接提交5b4843289ece75b4b8a4ec1d442cef3d57ecc3b7；新Root接管时四个未推送子仓gitlink差异、旧Root独占注册更新，index空；本轮协调文档另存本地里程碑。 |
 | Framework | chore/Echoyue/root-workspace-convergence | 1376c47c8c165aa589361b2d2ef9b8c41f3747a1，clean |
 | EKO | chore/Echoyue/root-workspace-convergence | 5132d6b63537892185a3ac48de2e66a9b9366731，clean |
 | SDK | chore/Echoyue/root-workspace-convergence | 83ae59e407313d7130811478a74646865d9e8bd3，clean |
 | 官网 | fix/Echoyue/website-source-sync | 4badb0cffa10b54004b801c7a33d2e0e886da894，clean |
 
-官方main fresh核：Framework f5688958960b985da4141212824abe7c74884f7c（PR201／七CI绿）；SDK747be937226ce379d0abc04e0f3ba52029da5ed1（PR15／九CI绿）。本地formal源码HEAD不是remote main，两种资格不能混用；顶层四gitlink尚不晋升。
+官方main已由新Root在本轮用git ls-remote重核：Framework f5688958960b985da4141212824abe7c74884f7c（PR201／既有七CI绿）；SDK747be937226ce379d0abc04e0f3ba52029da5ed1（PR15／既有九CI绿）。本地formal源码HEAD不是remote main，两种资格不能混用；顶层四gitlink尚不晋升。
 
 ## 第一推动作：SDK真实主线接收
 

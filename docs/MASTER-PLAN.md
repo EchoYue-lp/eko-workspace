@@ -2,6 +2,8 @@
 
 更新时间：2026-11-02。用户已明确恢复完整Goal，并由新协调上下文接手。完整目标在 `docs/supreme/goals/eko-eclip-complete-iteration-2026-11-02.md`，现场与准确下一步在 `docs/supreme/handoffs/eko-current-handoff.md`；十执行线及权限见续接目录 `executors.md`。旧三天时间线原字节归入该目录 `history/`，当前表不以历史“live/paused/pending”覆盖最新事实。
 
+唯一Root为 `01a19a4a-2815-7072-88b1-63ff005b2476`，本会话平台Goal已active、完整范围不变、无token预算。十条现有执行线已实发恢复派单：SDK实际main747接收、Framework六冲突合流、CLI及领域文档／源码增量、官网同步和K2准入并行推进；尚未把派单记为实现完成。接管快照及14接受票哈希回读见续接目录 `new-coordinator-ack.json`。K2尚无quietGO，其正式采样前另收全owner工具空闲与App正常退出证明；其它工作仅在真实独占窗口暂停工具。
+
 ## 本轮实际已闭合的阶段
 
 - Framework PR201 精main f568，七CI成功，仅Stage0阶段。
