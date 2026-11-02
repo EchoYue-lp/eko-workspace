@@ -1,5 +1,9 @@
 # EKO 总纲（MASTER-PLAN）
 
+2026-11-02 用户最新优先事项已转磁盘清理并实际完成一批：暂停新构建／源码集成／接收根材料化，十执行线已停新IO。Root删124个旧Mach-O共27,719,663,128逻辑B、旧12程序专用归档766,908,171B、7个旧App／编译旁证／synthetic TMP根24,038文件、SDK旧fixture5982文件，以及8份旧／重复日志18,187,439B；F／CLI primary闲置target官方clean均自然0且三primarytarget现全部absent。含稀疏临时文件的逻辑长度不计作净释放；批3原分配约673MB。系统可用从新重点起约7.70GB至最终40.19GB，非所有增长排他归因，精清单／读者／删除缺席回执在Root同层../user-priority-disk-cleanup-20261102-r01，最终接受5b3dbc4c…。用户数据／微信Auth／历史／config／MCP、源码／Git／tags／stash／bundle均保，当前9970／38255继续运行；四正式子仓clean。旧124程序和8日志实物已退役，不再借旧路径存在或可恢复签新资格；索引／哈希及最新必要失败／成功保留。夹源码／Git的三混合归档不整删，不新造payload备份。
+
+SDK五focus在切清理重点前已真实通过：三语各2case＋Rust scalar1case＋fullfeature工具族E2E1case，共8实际通过／0skip，r02两个NoRun W0，真实三role程序T外4536件／272551594B Root逐全SHA/bytes/mode接受9f5a9d51…；随后本批T官方clean自然0／Removed6757files3.1GiB／旧inode299690396缺席，保留4536与源1303后检0，接受8a447cdd…。原r01 stripwarning1、局部DYLD恢复、原所有失败保原。真实main747接收根尚未materialize，不能把focused通过冒完整native采用。Rover95346一次normal request0仍最后读为live，保存／退出提示真人题pending，K2无新quietGO，9970保持打开。完整Goal active未完成，本轮按用户要求只清理，不立即新构建；新入口Root/active-continuation-20261102-r155-user-diskcleanup40GB-complete-research-held.json。
+
 2026-11-02 原生SDK新增focus已有实际增量：Python／TS／Java三个原JWT负控文件各2P／0F／0skip，Root逐原caller/raw/XML与前后输入回读接受46b4179b…／68ac5281…／c350025e…。TS精临时dist链接已恢复absent；Java新testclass真实javac生成并由原Surefire/Jupiter选中，旧testclasses不进实际classpath。生产仅复用formal83已核same-source输入，不能扩大成整个候选包或最终合同资格。
 
 两Rust单批原r01 NoRun自然0但实际1条strip warning：rust-objcopy在其LC_RPATH找不到root/libLLVM，Root发现完整143609472B库实际存在、stable/frozen同SHA2a8a4612…，局部DYLD正控0。原warning／8.3M程序／1015FP与.d等均T外全hash保（087e16a2…），Root官方仅clean -p echo-sdk-protocol自然0／7files7.9MiB，旧程序与FP缺席。r02唯一新增process-local DYLD=stable/lib，源码／锁／profile／strip／feature／工具不变；RootGO986b69f8…后实际handle33395／Node19966，protocol新NoRun0/W0＋exact scalar0已过，现full sdk-facade-all core_profile_e2e NoRun在途。精T旧inode299690396保同暖依赖，结束须新实际Host／harness／FP/raw保全回读后官方整Tclean；不自动retry／改测试。新完整realmain747源码接收与两doc当前native证据仍后续，预览独审仅历史承接范围通过。
