@@ -278,5 +278,90 @@
     "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/workspace/ssh-two-account-native-20261102-r01/GUI-manual-handoff-stop-ticket-20261102-r01.json",
     "sha256": "f1ce9dfac0f85deff2202e16ebaaf9f6d931269bf43bc36b8f3ff7f9512d41f0",
     "bytes": 7394
+  },
+  "weixin_send_observation_source_candidate": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/im-cron/weixin-send-error-observation-20261102-r01/交件入口.md",
+    "sha256": "7146b324d3d776a7b6068052a89975c0c32eea2b17dc794a5e2b2ed72efdf615",
+    "bytes": 6689
+  },
+  "cron_driver_missing_identity_proposal": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/runtime/cron-driver-source-identity-bridge-20261102/Driver首帧身份只读建议.md",
+    "sha256": "596b908b0d71a5a06db5e59bdc1e890a3d94bfad49d5cefdf2fa0f082f601a3f",
+    "bytes": 10712
+  },
+  "R2_get_typed_projection_contract_increment": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/providers/resume-20261102/r2-child-http-held-r01/successor-r02/contract-projection-r03/handoff.json",
+    "sha256": "dbf92995cb7b53af3a61691c1687c52f6d8ce07bf7fccaafe772e15a0e401f96",
+    "bytes": 6218
+  },
+  "SDK_stable5_admission": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/.echo-semantic/local/sdk-native-main747-engineering-r01/stable-window-r01/admission-result.json",
+    "sha256": "2a79def44adce21dc654d6a1364db9e9cd664e537b884ab26aaa081763d0a992",
+    "bytes": 8614
+  },
+  "sdk_main747_stable5_Root_clean": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/sdk-stable5-readback-r01/Root-accepted-stable5-clean.json",
+    "sha256": "5d3a52319143902c1ec2b3b128ce8c7caf3057ff4b001458035f39205366aae4",
+    "bytes": 7223
+  },
+  "sdk_main747_stable5_original": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/.echo-semantic/local/sdk-native-main747-engineering-r01/stable-window-r01/stable-five-result-index.json",
+    "sha256": "76b811393988030f964f428c6f6e871f1f5280ab33296137a5539735d533570b",
+    "bytes": 12064
+  },
+  "R2_timeout_design_fixed": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/framework-r2-private-observation-local-design-20261102-r01/r02-timeout-order-fix/delivery.json",
+    "sha256": "9497ba8d7b007d85d83877135feed913cd7e1f35fbef75872382a39912cf7f9e",
+    "bytes": 8827
+  },
+  "R2_timeout_review_pass": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/framework-r2-private-observation-framework-review-20261102-r01/r02-I1-timeout-order/review.md",
+    "sha256": "48b435c39b1e4e6cb1022b0abd8730020dce108ba50a367df1431ab09c64a6a8",
+    "bytes": 5891
+  },
+  "cron_Driver_cursor_proposal_fixed": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/runtime/cron-driver-source-identity-bridge-20261102/Driver首帧身份只读建议-r02-cursor门禁.md",
+    "sha256": "9f679cce77966701289ef649eea07dc423a7dab194cc66292a819db823fdf29d",
+    "bytes": 3336
+  },
+  "cron_App_publication_Source_candidate": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/cron-native-publication-candidate-20261102-r01/最小publication候选交接入口.json",
+    "sha256": "a7d2d728606c65af06d71e717ee739651b6510341b5a18c184e21a04d3658a49",
+    "bytes": 7717
+  },
+  "performance_one_B_case_prepared": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/performance/memory-reconcile-optimization-20261101-r01/four-test-candidate-r03-rebase-5132-F340-filename/memory10-history0-single-case-preparation-20261102-r01.json",
+    "sha256": "c93541afe202ed7df723a5a1fe827cdc53b46f0450fae923329c86f89f65cfef",
+    "bytes": 22380
+  },
+  "r2_owned_candidate_plan": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/governance/r2-private-observation-plan-20261102-r01/plan_01_跨仓私有观测候选与采用.md",
+    "sha256": "5aeeed835b4a9e4ba85d489109c934ef73d36b75c72552d75693859b5e8b20df",
+    "bytes": 10081
+  },
+  "sdk_source83_local_options": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/publication-source-options-r02/source83-options-entry.json",
+    "sha256": "9cb49fbb09cca34d85994abaa6fc7613962612dbb26e823c5b0efb310e07ac71",
+    "bytes": 32720
+  },
+  "cli_publication_test_only_Source": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/cron-native-publication-test-only-20261102-r01/test-only正式源冻结交接入口.json",
+    "sha256": "3df25281fb31b6bb03ad8cf1a50235a2b5b2ccf19793b25f94f9c76de00b70fd",
+    "bytes": 10391
+  },
+  "driver_real_red_r02": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent/.echo-semantic/local/framework-native-diagnostics-focused-20261102-r01/driver-red-r02-proof.json",
+    "sha256": "c8229939281f5d6790cedf7d6bba327e252f0a7abad2c5191deb80abcf15e837",
+    "bytes": 1051
+  },
+  "driver_whole55_green_raw": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent/.echo-semantic/local/framework-native-diagnostics-focused-20261102-r01/driver-whole-scope-green/raw.log",
+    "sha256": "b64955bdf9cd5b19c568ce3c926481b88efed407bbb6710ebb8d4abd65c9736e",
+    "bytes": 6090
+  },
+  "framework_Driver_test_only_initial": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent/.echo-semantic/local/framework-driver-first-frame-execution-bridge-20261102-r01/delivery-test-only-r02.json",
+    "sha256": "38822730a4f27a30afddf95bf4560125b064c54fcbb1d583efd905d6403563b5",
+    "bytes": 12332
   }
 }
