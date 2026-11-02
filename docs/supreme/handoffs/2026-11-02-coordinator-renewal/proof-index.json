@@ -363,5 +363,70 @@
     "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent/.echo-semantic/local/framework-driver-first-frame-execution-bridge-20261102-r01/delivery-test-only-r02.json",
     "sha256": "38822730a4f27a30afddf95bf4560125b064c54fcbb1d583efd905d6403563b5",
     "bytes": 12332
+  },
+  "framework_native_header_weixin_local_milestone": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/framework-focused70-readback-r01/local-milestone-c6239706.json",
+    "sha256": "b92e50f501178e6dc9c7c0ff7578bce30e7b7372d31e70208fc1cc2e758ad576",
+    "bytes": 2599
+  },
+  "framework_exact_user_manual_cleanup": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/framework-focused70-readback-r01/user-authorized-manual-cleanup-complete.json",
+    "sha256": "8901248abbb25cf77077185a360bbd40ee2d680f437f92d7c0deb26e2168a35a",
+    "bytes": 1192
+  },
+  "framework_focused70_final": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent/.echo-semantic/local/framework-native-diagnostics-focused-20261102-r01/delivery-current-source-final-r01.json",
+    "sha256": "8422f5121506dac3f6059f21893a6ef33743921366ef440d355147d33b6d8584",
+    "bytes": 7502
+  },
+  "SDK83_local_cold_recovery": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/SDK-source83-local-recovery-Root-accepted.json",
+    "sha256": "50963ed595e7f64f50d2da5de8c421671ce5b2d705cb8dd52fac7fc61bb3fb27",
+    "bytes": 2253
+  },
+  "R2_interface_cut_bound": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/governance/r2-private-interface-cut-20261102-r01/interface-cut.md",
+    "sha256": "224d175ca7a3c90eadd72d85bc9e892942c7381557e42282d89f050df233508c",
+    "bytes": 16969
+  },
+  "CLI_publication_bounded_consumer_GO": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/CLI-publication-bounded-consumer-review.json",
+    "sha256": "5eee3393036c12404123f1b119c01c96878a6abf36779de9cf2e379a8fd78b18",
+    "bytes": 2929
+  },
+  "CLI_current_c623_consumer_proposal": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/cron-native-publication-test-only-20261102-r01/metadata-only-proposal-r01/successor-c623-provenance-r01/c623当前consumer最终交付入口.json",
+    "sha256": "6a669f6f1fb194fd996b355292930ba32c27452ebf5b4f7c6c3061b5dbe6b9c7",
+    "bytes": 7165
+  },
+  "CLI_d5_root_actual_fresh_gate": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-publication-risk-network-r01/actual-lock.gate.json",
+    "sha256": "c8df7ad7038543473e37c795864d4b122aa79ae9e44d193c7d972b08049d5c96",
+    "bytes": 454
+  },
+  "CLI_d5_root_actual_fresh_caller": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-publication-risk-network-r01/caller.json",
+    "sha256": "122b7eb71fefdf528986bc832cd8fc76cb92a8bfbeb068bdc8cce7cb487b9c03",
+    "bytes": 698
+  },
+  "SDK_longid_source_only": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/long-conversation-id-current-source-packet-r01/source-only-entry.json",
+    "sha256": "ebcbb6e0ccdead931141a323f392d5784c2e275ddb6255e9db45ec8dcd05c488",
+    "bytes": 12421
+  },
+  "SDK_longid_materialized1305": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/long-conversation-id-current-source-packet-r01/materialization-r01/materialized-source-entry.json",
+    "sha256": "ea76001f3834a6e73bf9f25426d6554392d82b87ce056e3bdc602d1050acb23f",
+    "bytes": 9665
+  },
+  "R2_three_candidate_review_entry": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r2-three-candidate-source-review-r01/entry.json",
+    "sha256": "130793d622739de6992981b9c3cb826a0e6836c60681eee67cee35e197b25bce",
+    "bytes": 2920
+  },
+  "R2_controlled_pair_metadata": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/r2-validation-source-composition-20261102-r01/delivery.json",
+    "sha256": "19b81f17e4ceff9d2049b072770cf576eccc4f1a05770d0beb01acfd65e4c8b0",
+    "bytes": 41616
   }
 }

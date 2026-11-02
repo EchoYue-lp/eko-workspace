@@ -2,7 +2,7 @@
 
 更新时间：2026-11-02。用户已明确恢复完整Goal，并由新协调上下文接手。完整目标在 `docs/supreme/goals/eko-eclip-complete-iteration-2026-11-02.md`，现场与准确下一步在 `docs/supreme/handoffs/eko-current-handoff.md`；十执行线及权限见续接目录 `executors.md`。旧三天时间线原字节归入该目录 `history/`，当前表不以历史“live/paused/pending”覆盖最新事实。
 
-唯一Root为 `01a19a4a-2815-7072-88b1-63ff005b2476`，完整Goal持续active、无token预算，原范围不变。F `a8a8511d` 真实1376+f568双父/tree da783b；CLI20070保存指南/UI/Hook及R03局部里程碑，b04原全前端945P/4原性能opt-in未跑，R03 normal1P/owner3按原130、143、1验过。官网817对F a8/CLI20070/SDK83 cut原完整verify0/W0（61unit/15e2e/1原平台skip/338路由），本地clean、未部署。SDK真实747接收source7978完整三语已0/W0：TS473/Python547＋18subtest/Java345，各1原Windows skip，隔离包/三个quickstart/Parquet通过；原stable5亦0、18组589P/编译W0，已Root保全/精clean；完整合同/条件矩阵/main/发行资格仍另验。K2原70/复位/同App重开闭合但未测到加速。解锁后自动Cron真实scheduled一次Completed并在卡片显示全文，微信通知-2失败及主chat publication0已分别派候选修复；原任务收尾disabled/rev6，通知恢复。两SDK外部Source合同和本地83公开源仍OPEN。精原件见proof-index。
+唯一Root为 `01a19a4a-2815-7072-88b1-63ff005b2476`，完整Goal持续active、无token预算，原范围不变。F当前本地 `c6239706`，保a8的1376+f568双父；新增Driver/微信错误观测70方法及3Clippy/fmt/task Source-final/独审/Root产物0，clean未push；CLI20070保存指南/UI/Hook及R03局部里程碑，b04原全前端945P/4原性能opt-in未跑，R03 normal1P/owner3按原130、143、1验过。官网817对F a8/CLI20070/SDK83 cut原完整verify0/W0（61unit/15e2e/1原平台skip/338路由），本地clean、未部署。SDK真实747接收source7978完整三语已0/W0：TS473/Python547＋18subtest/Java345，各1原Windows skip，隔离包/三个quickstart/Parquet通过；原stable5亦0、18组589P/编译W0，已Root保全/精clean；完整合同/条件矩阵/main/发行资格仍另验。K2原70/复位/同App重开闭合但未测到加速。解锁后自动Cron真实scheduled一次Completed并在卡片显示全文，微信通知-2失败及主chat publication0已分别派候选修复；原任务收尾disabled/rev6，通知恢复。两SDK外部Source合同和本地83公开源仍OPEN。精原件见proof-index。
 
 ## 本轮实际已闭合的阶段
 
@@ -53,7 +53,7 @@ Framework、所有Provider、EKO、SDK、示例和官网要一起收敛：具名
 ## 立即实施顺序（可独立工作必须并行）
 
 1. SDK完整原三语言及包/Host/Parquet/quickstart已实际通过，Root核原件与reader0；stable5已真实0、589P，Root验7262保全并官方clean0/3.7GiB，后续nightly合同/条件features/fresh风险分批排。两外部Source合同和83公开源不靠工程通过代替，不改外部tool/schema/ignore。
-2. 自动Cron已取得真实scheduled→Completed→GUI卡片全文→禁用事实。F Driver已真实RED→GREEN并55P，Weixin真实private6/root6/ACK3已过，helper定向Clippy两处条件链正修与重验；CLI publication候选已独审并仅test-only两路径正式/Source0，等F组合冻结后核consumer并跑新Rust，不放宽reader/不补造终态。
+2. 自动Cron已取得真实scheduled→Completed→GUI卡片全文→禁用事实。F Driver真实RED→GREEN55P及Weixin6/6/3、3Clippy/fmt/Source-Final均0，已存本地c623；CLI publication候选已独审并仅test-only两路径正式/Source0，Root已核d5/274仅tests一项变，原3995/5风险不变，已授bounded consumer-only元数据及原双fresh gate后CLI RED→原3production GREEN，当前尚未新Rust，不放宽reader/不补造终态。
 3. R2 ca4e/c02ab局部设计已审，F timeout起点Important已修9497且复审pass，App1cd/parent gate dbf已接受；Gov轻量Plan已接，只先写私有接口cut，R2正式源/新锁仍未授。当前F focused独占其源冻结，SDK重型窗已释放。R03仅真实loopback library consumer，不冒App/R2/live-provider资格；F27及105321 bench末期pending。
 4. 原App47013 GUI由Workspace做ubuntu SSH；ubuntu已原GUI登录/创建进入，终端远端命令矩阵未验，echo独立保留。用户随后明确禁止自动操作Eclip，所有GUI改为其手点，按77项人工清单，不再抢屏。K3 history0票/新47013 helper已审，但新退出/采样未授权；K2不重跑同70。其余新App/GUI/手机IM/HITL/Subagent/恢复/corpora/IssueFinding/发行全保，外部操作最终提精scope。
 
@@ -62,3 +62,5 @@ GUI人工清单：[Eclip GUI 手动验证77项](supreme/acceptance/eko-eclip-gui
 ## 执行纪律
 
 同一主根、不新外部worktree；Root唯一stage/commit、各repo独立、所有commit显式GPGfalse；不晋升未push子repo指针。完整heavy/正式采样独占；最多5focused各独立T/jobs≤5/debug0、fresh<5GiB不启重构建；合理成批→必要target外保全→reader0→官方精clean，失败不造TAG或抹退出码。保持当前UserRoot/Auth，已删旧程序/归档不得假称可重放。十现有会话继续复用，新协调会话接手后旧Root不双写。
+
+当前局部阻塞：CLI d5风险controls8P、actual由Root原链重试已0，canonical因GitHub fetch仍未过，CLI NoRun未启动。独立SDK旧340长ID test-only副本正在单job实际NoRun，未取得行为RED；R2 plain组合/离线resolver19b81已完成，仅一条既有hyper-util边、包身份/features不变，新锁仍候选且无正式风险接受。完整Goal持续active，GUI全由用户手点。
