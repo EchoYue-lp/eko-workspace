@@ -10,7 +10,11 @@
 
 平台旧Goal实测paused，用户本轮“现在请继续”撤销暂停。新协调会话应先明确建立active持续Goal，目标读取新版完整Goal文件；不得新设token预算，不把交接标完整迭代完成。不要尝试把旧Root的paused当继续等用户的理由，也不要擅自把旧Goal标complete。
 
-新任务实施／验证／当前已接受候选正式接收的本地权限持续。具名远端授权PR201／SDK14／SDK15均已消费；新分支push／merge／publish／deploy需在结果具体可审后另问，不能复用。已有K2“正常退出IDE和Eclip重测70、结束原数据重开Eclip”授权有效；Rover95346现已不见，不重复旧退出请求。6历史会话归档和磁盘精删除已完成，不再重复。
+新任务实施／验证／当前已接受候选正式接收的本地权限持续。具名远端授权PR201／SDK14／SDK15均已消费；新分支push／merge／publish／deploy需在结果具体可审后另问，不能复用。K2“正常退出IDE和Eclip重测70、结束原数据重开Eclip”授权已执行消费；新App47013退出与K3采样尚无新授权。Rover95346现已不见，不重复旧退出请求。6历史会话归档和磁盘精删除已完成，不再重复。
+
+## GUI 人类操作边界
+
+用户最新两条指令：“现在不能操作 Eclip”，以及“所有需要在 GUI 验证的内容，给出一个清单，我个人手动点击验证”。涉及GUI的执行线已收到停止要求，Workspace已确认无在途GUI runner；不再请求GUI凭据或恢复抢屏。完整[手动清单](../acceptance/eko-eclip-gui-manual-checklist-2026-11-02.md)涵盖77项，按当前可做／待新版／待受控用例执行，结果按编号记录。Workspace停点票f1ce9d（key ssh_GUI_stopped_for_manual），现终端输入可能未回车，由用户亲自Ctrl+C清行。GUI暂停不等于后台Goal暂停，K3退出/采样权限仍false。
 
 ## 五仓 fresh 切点
 
@@ -18,9 +22,9 @@
 | --- | --- | --- |
 | 顶层 | chore/Echoyue/workspace-maintenance | 新Root接管已存52b40c8；四个未推送子仓gitlink差异不晋升，index空；当前进展文档独立保存。 |
 | Framework | chore/Echoyue/root-workspace-convergence | a8a8511d9ec2cd3da382bd5f7b151ac537374aa8，clean；真实双父1376+f568，tree da783b。独审、Runtime3/W0、fmt0、合流前task Source/final0及Root staged gate0；完整矩阵/new HEAD Source/remote/mainCI另验。 |
-| EKO | chore/Echoyue/root-workspace-convergence | b04c5923dc207869c22b17916874feb43fc19f94；6282指南/5c699工具页/068侧栏/b04 Hook已保存，正式13/47/11及对应task门禁0。b04全前端945P/4原opt-in skip/tsc/Vite/W0；R03已正式单test/policy/原风险决定WIP，当前NoRun在途，前端498不变。 |
+| EKO | chore/Echoyue/root-workspace-convergence | 20070d3f7171a95926bdd5c8153f5f382767fea2，clean；6282/5c699/068/b04及20070已保存。b04全前端945P/4原opt-in未跑/tsc/Vite/W0；20070 R03新normal1P/owner3 accepted/风险8及双fresh gate0/Source-final0/Root产物0/精clean0。非GUI/App/main资格。 |
 | SDK | chore/Echoyue/root-workspace-convergence | 83ae59e407313d7130811478a74646865d9e8bd3，clean |
-| 官网 | fix/Echoyue/website-source-sync | HEAD4badb0cffa10b54004b801c7a33d2e0e886da894；手写资料/镜像/派生WIP，原sync已对F a8/CLI068/SDK83 clean cut自然0，manifest 0dd634b1/322框架镜像/148 sourceFiles/8产品页；全站门禁及提交待收。 |
+| 官网 | fix/Echoyue/website-source-sync | 817eaa48ff8c8c6c32dc4ff576d70da0b9e7d2e8，clean；精F a8/CLI20070/SDK83 cut，manifest84d627/322镜像/148来源/8产品页；原完整verify0/W0、61 unit及15 e2e通过/1原平台skip、338路由，task Source-final/Root产物0；本地未部署。 |
 
 官方main已由新Root在本轮用git ls-remote重核：Framework f5688958960b985da4141212824abe7c74884f7c（PR201／既有七CI绿）；SDK747be937226ce379d0abc04e0f3ba52029da5ed1（PR15／既有九CI绿）。本地formal源码HEAD不是remote main，两种资格不能混用；顶层四gitlink尚不晋升。
 
@@ -34,15 +38,17 @@ SDK writer已实际materialize同C父目录的 `receiving-main747-source`／独�
 
 SDK9资料及一文件增量独审pass，静态matched限5328 entries/424完整routes/430限定投影，StageA e186保历史、5个before runtime UNKNOWN。canonical自然1/errors4→1（三本仓已消失，仅deletepreflight外部gap）；installed normal Source风险标识补齐后自然1/errors2→1（repository仍传task_digest，强制after=task:…与真source7978冲突），无合法同版本caller可闭合，Final未跑。独立strict补ADR0043/0044参数后自然0，不能代repository报告。215历史refs只本地formal83对象可恢复，747/现4远端heads/51tags均不含83，公开来源前置OPEN，不擅改epoch/parent/push。业务/pin/lock/accepted不变、8case不重跑、不改外部tool/schema/ignore。
 
+当前SDK完整原三语言窗口已实际0/W0且Root核原caller/raw/38引用、86新Java XML、Python548 flat、TS原summary和三quickstart：TS473P/1原Windows skip，Python547P＋18subtests/1原Windows skip，Java345P/1原Windows skip；三语Parquet各5次Host调用/2typed错误与隔离tgz/wheel/sdist/JAR消费通过，Host为opt2 d1f58而非发行Host。1303/933/source7978/pin340/c448/5344/430和程序/FP前后守卫0、reader0，Root票4aea552a（key sdk_main747_full_three_language）。未重跑原八focus或另跑Parquet。Root现已派下一唯一stable5原Rust门禁（fmt/check/featureless/clippy/alltargets-allfeatures），仍在执行准入／工程阶段；nightly完整合同/条件features/fresh风险/公开83与两外部Source合同另验，不由语言绿票覆盖。
+
 ## GUI／IM／cron和实际进程
 
-K2期间App9970已单次正常请求退出，原5秒观察首次ESRCH gone；U/data、U/project及17个当前/先前lease的19检查均自然1双空，不补OSexit/reap。K2终态及复位后已同包同U重开App47013（UID501/PPID1，kernelbirth1793590572/645579，11-02 11:36:12），d41程序SHA/config/MCP不变，同U26handles/15lease、真实AgentPool初始化。薄物理证明key `K2_App_reopen`；fixture38255/1420/1451保活，Rover未重开；业务恢复/手机/自动Cron不能由open0推断。当前App自动Cron验收窗口只交IM/cron线，Workspace保正常App动作owner；动作前仍fresh核身份。
+K2期间App9970已单次正常请求退出，原5秒观察首次ESRCH gone；U/data、U/project及17个当前/先前lease的19检查均自然1双空，不补OSexit/reap。K2终态及复位后已同包同U重开App47013（UID501/PPID1，kernelbirth1793590572/645579，11-02 11:36:12），d41程序SHA/config/MCP不变，同U26handles/15lease、真实AgentPool初始化。薄物理证明key `K2_App_reopen`；fixture38255/1420/1451保活，Rover未重开；业务恢复/手机/自动Cron不能由open0推断。自动Cron窗口已由IM线收尾释放；用户现已明确禁止所有Eclip自动GUI操作并要求全清单亲自手点；Workspace已确认无在途GUI runner、停在ubuntu工作空间/终端，所有AX/焦点/点击/输入/截图/窗口查询/退出重开均停止。后台工作继续，GUI只有用户手动验证。
 
 App：`echo-agent-cli/.echo-semantic/local/tauri-arm64-release-App-cron-final-combination-20261101-r01/execution-r01/retained-local-adhoc-sealed/Eclip.app`，main d41e77de9a3f6793799572e07f840b75dc54489c18db310d3f9b5119eeaaa62a，arm64、localadhoc seal已验，非分发公证。它包含两Rust filename fix27206…/ac24…；旧自动Cron两Failed来自修复前errno63，不能改旧状态假成功。
 
-原UserRoot：`echo-agent-cli/.echo-semantic/local/persistent-GUI-owner-66760c3-preparation-20261031-r01/isolated-runtime`。Auth／历史不可旧备份覆盖，不无故再扫码。config b4579b93…3475B0600，mcp d8e397af…23B0644；模型 `eko-native-validation-20261101:native-controlled` endpoint127.0.0.1:1451，原fixture9953f275…由Root持有，1420/1451。r03三请求长工具fixture只协议ready，未替换live。
+原UserRoot：`echo-agent-cli/.echo-semantic/local/persistent-GUI-owner-66760c3-preparation-20261031-r01/isolated-runtime`。Auth／历史不可旧备份覆盖，不无故再扫码。K2重开时config b4579b93…3475B0600、mcp d8e397af…23B0644；后续自动Cron通知经GUI暂开并恢复未启用，不再把旧config SHA冒当前字节不变；模型 `eko-native-validation-20261101:native-controlled` endpoint127.0.0.1:1451，原fixture9953f275…由Root持有，1420/1451。r03三请求长工具fixture只协议ready，未替换live。
 
-cron task ae3a72d3-21d2-4830-8e0b-21e603ff9622/definition0c93077d-f2e0-4792-a3e8-6c2dc754934b仍disabled/rev4/* * * * *，本轮零业务AXPress/新Run/通知；CGSession实测锁屏、loginwindow，Root已异步请用户解锁，未答前IM线不轮询/绕产品入口。解锁后fresh同47013身份继续启用→整分钟自动触发→结果/history/通知→禁用，不手动跑/不扫码。两旧Failed及原微信/手动Cron有限人工范围保真；两SSH账号和GUI凭据边界不变，echo fixture目录未具名，ubuntu仍/home/ubuntu/ssh-test。
+用户已解锁并明确继续；同App原GUI启用后，原task ae3a72d3/definition0c93077d在14:07:00按scheduled真实触发一次，原occ-fbeb…Run Completed，journal13–16/任务结果卡完整42字符回答/GUI历史均见；结束原GUI禁用disabled/rev6，临时本人通知恢复未启用，三旧Run SHA不变。通知attempt1真实failed/retryable=false/“Weixin rejected send: -2”，非Accepted、手机未知、不重发/重扫码；具体原因因原HTTP/errmsg丢失仍不足。主chat只有用户输入：原for_run raw execution_id=None、ChatEventLog publication0，不能把卡片全文冒主chat闭合。唯一入口c55bdcc3（key cron_after_unlock_actual）；CLI sole准备真实owner→sink/envelope/publication修复，IM仅准备F sender诊断候选，均未formal采用/运行。两SSH账号分验；ubuntu111.229.245.175:22 /home/ubuntu/ssh-test已登录/创建进入ubuntu-ssh-test-20261102，终端仅文本递送ACK、回车guard拒绝，远端id/pwd/Git及终端矩阵仍未验，echo fixture仍未具名，不能借认证。
 
 ## 性能与资源
 
@@ -60,4 +66,6 @@ K2准入/退出/采样/复位/重开完整本地步骤已闭合，后继只离�
 
 SDK旧main6cd语义14失败、本地task140/repository139和runtime条目拒绝1均保；后继own13两doc按固定canonical clean1229完整0、9既有Map只读补上下文、正常repository Source/Final0后合PR15／精main9绿。old0930删除preflight接口缺口仍是外部toolscope排除，不能新改外部工具／schema／ignore，也不能把历史gap当当前747已绿门禁失败。
 
-旧83646/33395/19966/seed/Runtime26551/20002/F Source65980/Final63124/SDK Source18404均terminal。R03原NoRun自然101/W0/E2且程序=[]，不是行为RED；精两处test修正已复审采用8db/实际consumer3cea（274只1文件、其余273不变），原决定/唯一policy字段同步，8控/Source0。旧cdef双gate0不续新源；3cea网络1全部保原，Root同checker/fresh/URL/flags传输观测实际gate0，约19.79s才连上GitHub；新canonical待结算，未改网络/审计策略。CLI唯一writer按既授条件续同T/无GUI/无channels/j2/debug0/inc0，list确1后才normal与owner控制，尚无运行票。F a8 clean/27工程队列待后续独占，105321 bench/literal all-target末期pending；K3票已独审、新47013 helper只准备无GO。R2现有桥不足，heldHTTP准备硬false，不拿主模型等待/时间邻近补绑定。Root唯一stage/commit，Goal不提前完成。
+当前无旧构建/Source句柄需恢复，别poll历史seed/NoRun/Source/Final。R03平台后继唯一最终入口5222e60c已Root核63ref，正式3文件dd438/policy54ae/原决定26a50保存20070，精consumer dd9c/274只1路径；normal1P，owner130/143/1各原事实，PID/reader0后官方clean0、3750files/1.7GiB，程序8c7bb9及2559 FP/dep-info T外保，task Source/Final0/globalClosure未查。旧编译101/normal1-0-1/网络/预检失败仍原scope，不能用当前成功改写。
+
+官网817本地里程碑已接收，源freeze/Node窗释放；SDK现独占stable完整Rust窗，F/CLI可准备候选但无Cargo/新App/全矩阵并发。R2唯一局部设计ca4e/c02ab已实际独审：F C0/I1/M0，发送前hash与reqwest timeout起点冲突须精修；App B与Provider627e固定cut在审，CLI r02只修精10字段ACK/trait名及ADR归属。B/case预算生产者均未实现，不能拿请求timeout或临时now+N冒case原预算，reader/R2仍false；原作者另存增量再定向审，不覆盖旧cut。K3票/47013新helper已审但退出/采样授权全false；两SDK外部合同与83公开源仍OPEN。Root唯一stage/commit，四未推送gitlink不晋升，完整Goal持续active。

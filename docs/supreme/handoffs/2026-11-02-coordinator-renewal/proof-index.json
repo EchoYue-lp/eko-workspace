@@ -198,5 +198,85 @@
     "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/runtime/r2-child-owner-source-interface-20261102/R2现有边界最终核对入口.json",
     "sha256": "f2bf9d57b037d7152f2c19a7a221fd6bacf42d38afc18e2165d1ddb7d7079f25",
     "bytes": 2071
+  },
+  "r03_library_local_milestone": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/CLI-R03-local-milestone.json",
+    "sha256": "a4a6001116852816730b254ef62997a9e221d65992968f63c0bc57de82ced55d",
+    "bytes": 3017
+  },
+  "r03_platform_final_delivery": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/r03-formal-controlled-focused-20261102-r01/R03_平台后继最终交付入口.json",
+    "sha256": "5222e60c5db03b89d6cd22b291427b3bd5e4e4ba5c867a184967a7f4bc544cfb",
+    "bytes": 28375
+  },
+  "website_20070_copy": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-website/.echo-semantic/local/website-native-source-refresh-20261102-r01/website-20070-verify-r01/copy-terminal.json",
+    "sha256": "61a8960ecddab8fa2645ae44bdec174c71c6e3ab1d20bdbc0b877ae3827111f0",
+    "bytes": 840
+  },
+  "R2_private_design_draft": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent/.echo-semantic/local/r2-child-http-private-observation-design-20261102-r01/delivery.json",
+    "sha256": "a514d87b24f357087307f211a84be537bf210dfb2f211b0b8a463e2f487e8862",
+    "bytes": 5397
+  },
+  "R2_private_fetch_options": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/governance/r2-cli-collector-safe-export-readonly-20261102-r01/Root_R2非控制取件A_B精范围入口-r02.json",
+    "sha256": "1d1a37e4000029d12b6b33573a939d27186ac873446a60a6e4db34c1f8f9b2be",
+    "bytes": 4064
+  },
+  "website_817_local": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/website-local-milestone-817eaa.json",
+    "sha256": "3428cf6ad4a942640931ec84b8dc797577bdf7c01c5165d118b593ea94eb151b",
+    "bytes": 2806
+  },
+  "website_20070_full_and_source_final": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-website/.echo-semantic/local/website-native-source-refresh-20261102-r01/website-20070-verify-r01/delivery.json",
+    "sha256": "5061a85eb3735535b4b4491827261c26344c69695269babac2f8562a3627ae6d",
+    "bytes": 12348
+  },
+  "website_readme_result_increment": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-website/.echo-semantic/local/website-native-source-refresh-20261102-r01/readme-status-r05/entry.json",
+    "sha256": "2fecd33de8bac3361d54e720038ea05207376bffc62c82c273e73d3214fc7f1e",
+    "bytes": 22791
+  },
+  "cron_after_unlock_actual": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/im-cron/cron-native-resume-20261102-r01/本次自动验收交件.md",
+    "sha256": "c55bdcc3bd5db93a470806802c5e8977540fda0d68726a553447ac170b7e8ffc",
+    "bytes": 5303
+  },
+  "R2_composite_design_for_review": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/framework-r2-private-observation-local-design-20261102-r01/delivery.json",
+    "sha256": "ca4e8a979009337cdfffedfa4c68bb4e55f7a0d746a26aef35187864a04bbe05",
+    "bytes": 8348
+  },
+  "R2_parent_gate_successor_source": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/providers/resume-20261102/r2-child-http-held-r01/successor-r02/handoff.json",
+    "sha256": "3cd782f6eafbf553c7a250c33dc7cde40321ef1370709e6c15b21424715f4c9f",
+    "bytes": 11029
+  },
+  "SDK_full_languages_admission": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/language-window-r01/admission-before.json",
+    "sha256": "4b861292080bef9b80cec0f5178a2112f3a5dba885f0a5d5db4a0b9054458fd5",
+    "bytes": 651826
+  },
+  "sdk_main747_full_three_language": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/SDK-main747-full-three-language-Root-accepted.json",
+    "sha256": "4aea552ad893b23b123ee8ae10fb5a98fe9dac5fb6a057b63578cf60f50f18e1",
+    "bytes": 3463
+  },
+  "sdk_main747_full_three_language_original": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/.echo-semantic/local/sdk-native-main747-engineering-r01/complete-language-result-index.json",
+    "sha256": "040cbaa42cb12dda48860343615982ddf436dd80f3f7766664369ea741f58805",
+    "bytes": 24025
+  },
+  "ssh_ubuntu_GUI_auth_prepared": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/workspace/ssh-two-account-native-20261102-r01/ubuntu-authentication-ready.json",
+    "sha256": "e199eec6e38fc7964e836645044109a39b16c61de27693adcafa684ffbbf02ab",
+    "bytes": 6648
+  },
+  "ssh_GUI_stopped_for_manual": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/workspace/ssh-two-account-native-20261102-r01/GUI-manual-handoff-stop-ticket-20261102-r01.json",
+    "sha256": "f1ce9dfac0f85deff2202e16ebaaf9f6d931269bf43bc36b8f3ff7f9512d41f0",
+    "bytes": 7394
   }
 }
