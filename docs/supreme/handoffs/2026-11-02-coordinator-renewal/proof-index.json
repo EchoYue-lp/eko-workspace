@@ -133,5 +133,70 @@
     "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/runtime/remaining-real-scenarios-20261102/Subagent恢复最小执行清单.md",
     "sha256": "bc33b323fed923592768454f47157222f14130a2154c83d18db3b0fe638673ed",
     "bytes": 10432
+  },
+  "cli_hook_formal": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/hook-event-catalog-formal-20261102-r01/formal-frozen-four-path-delivery.json",
+    "sha256": "540dcb14240958fb6cbf4282b4bf62a5949a77ffaf38e7ef5490b332915f0d24",
+    "bytes": 10508
+  },
+  "cli_full_frontend": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/CLI-full-frontend-Root-accepted.json",
+    "sha256": "756d55d47ff479be9331b6ed5d8e4dd0d0b7cb43fa0cf7ec5709f7f083c2938d",
+    "bytes": 1204
+  },
+  "sdk_gate_terminal": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/normal-and-canonical-terminal-r03.json",
+    "sha256": "e6f4c9128efac7f49c38744af9a9849f4f8db99e105808c2c141d7380e3adea9",
+    "bytes": 59720
+  },
+  "sdk_independent_strict": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/independent-strict-bound-authorities-result-r05.json",
+    "sha256": "1df6649abb85043ed3854387931c8e08176215946ffd8c56d1db83b6c8665edb",
+    "bytes": 5936
+  },
+  "sdk_publication_source_open": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/publication-source-readonly-r01/source83-reachability-and-existing-sources.json",
+    "sha256": "c2f70a6a53f8f97eb57aef4b8d039bf06d4e2ce691ec6f6dbdf7cb189ab13e96",
+    "bytes": 24229
+  },
+  "r03_norun_initial_failure": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/r03-formal-controlled-focused-20261102-r01/NoRun-r01-自然失败与最小修正交接入口.json",
+    "sha256": "51276a516502fc4c555c07de969de68d697e1f91a3bf54aa40ec40f23ae523d7",
+    "bytes": 20203
+  },
+  "r03_compile_fix_proposal": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/r03-formal-controlled-focused-20261102-r01/compile-errors-review-r01/最小测试编译修正审阅入口.json",
+    "sha256": "99a82729693bae282a61f2d70930c8be059f18056a0e141b5dac5a88570cc751",
+    "bytes": 2038
+  },
+  "K3_current_App_prepare": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/workspace/normal-quit-47013-K3-history0-prepare-20261102-r01/entry.json",
+    "sha256": "5139bfda88b862bfe86f97a439f9201e4d7cd4b2bf262c6405872b240e849a51",
+    "bytes": 18730
+  },
+  "R2_child_http_prepare": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/providers/resume-20261102/r2-child-http-held-r01/handoff.json",
+    "sha256": "6116a82678ed1f8dd50647cc317a7aedfdc8e08ed70355df6a9671aef82c0023",
+    "bytes": 10339
+  },
+  "r03_actual_debug_input": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/r03-formal-controlled-focused-20261102-r01/debug-r02-精采用与网络阻塞交接入口.json",
+    "sha256": "95bd5844d31a35dfd21c0b14916edc5c329ea7007c38734944389c8e16e9f00d",
+    "bytes": 8348
+  },
+  "r03_current_root_fresh_actual_gate": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r03-risk-network-transport-trace-r01/actual-lock.gate.json",
+    "sha256": "c8df7ad7038543473e37c795864d4b122aa79ae9e44d193c7d972b08049d5c96",
+    "bytes": 454
+  },
+  "r03_current_root_transport_observation": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r03-risk-network-transport-trace-r01/caller.json",
+    "sha256": "435744b29d0900066bc6a3171c019e7d7c4e30c2b8caa59b15bf121f1ab5f664",
+    "bytes": 648
+  },
+  "R2_exact_existing_boundary_gap": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/runtime/r2-child-owner-source-interface-20261102/R2现有边界最终核对入口.json",
+    "sha256": "f2bf9d57b037d7152f2c19a7a221fd6bacf42d38afc18e2165d1ddb7d7079f25",
+    "bytes": 2071
   }
 }
