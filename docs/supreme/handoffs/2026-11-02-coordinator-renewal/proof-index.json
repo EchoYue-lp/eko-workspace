@@ -83,5 +83,55 @@
     "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/workspace/normal-quit-9970-and-RustRover95346-r01/Root-actual-once/reopen/K2-same-App-reopened-physical-proof.json",
     "sha256": "398a3a5411e572b4872013cb80b04ed853d8d4eee5ed00a23fe3e11db6fa4156",
     "bytes": 3064
+  },
+  "framework_local_main_reception": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/framework-local-main-intake/local-main-reception-accepted.json",
+    "sha256": "c010d076f5fb3a3fa7bdf8cc823b39e740da14b2c30eca761991666b5b0cdb65",
+    "bytes": 1495
+  },
+  "framework_runtime3": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/runtime/scoped-guidance-next-attempt-20261102/focused-execution-r01/delivery.json",
+    "sha256": "1494e1d5e1c7537c9a6f7d6678fcf6bc96d63a3950148e58d3ff7e30ac84975a",
+    "bytes": 23571
+  },
+  "cli_guides_local": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/CLI-guides-local-milestone.json",
+    "sha256": "bc1ba02bcd84c1af05418311d06d69a8e009255b279359533ddd820d4eadc7a8",
+    "bytes": 1249
+  },
+  "cli_two_UI_local": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/CLI-two-UI-fixes-local-milestones.json",
+    "sha256": "5d39c24744e7c2e1d0bd00ba14db79cee086a9c80b6630f176b2228514657b29",
+    "bytes": 3175
+  },
+  "sdk_native_meta_increment": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/gatefix-r01/incremental-review-entry.json",
+    "sha256": "a7cfe3d32b807b2593627144fec1079fa62e71eb17058c2c634644bd9d839895",
+    "bytes": 2193
+  },
+  "sdk_canonical_and_normal_progress": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/normal-and-canonical-progress-r02.json",
+    "sha256": "f250c76c17da36ff06c6aca7ea3baccf001e8137ffd9a623f847f2f5e8c043b3",
+    "bytes": 6712
+  },
+  "website_common_clean_copy": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-website/.echo-semantic/local/website-native-source-refresh-20261102-r01/common-clean-copy-20261102-r01/copy-terminal.json",
+    "sha256": "dc47c3bac6a1e4da977c874c2e5e04e37f35efa9c2351e7725ce095a089d4cad",
+    "bytes": 916
+  },
+  "cron_locked_window": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/im-cron/cron-native-resume-20261102-r01/本次窗口实际回执.md",
+    "sha256": "e7d0ca011106283c9c66b582f2fd0c9314f3a31aec5548b645c8382aa6a078d2",
+    "bytes": 3674
+  },
+  "gui_fork_readiness": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/workspace/fork-head-only-source-and-case-readiness-20261102-r01/entry.json",
+    "sha256": "899d8dd671fa34fd29d1a53b27314f7dfc42496432eedc128e386189f266674c",
+    "bytes": 20885
+  },
+  "remaining_native_cases": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/runtime/remaining-real-scenarios-20261102/Subagent恢复最小执行清单.md",
+    "sha256": "bc33b323fed923592768454f47157222f14130a2154c83d18db3b0fe638673ed",
+    "bytes": 10432
   }
 }

@@ -2,7 +2,7 @@
 
 更新时间：2026-11-02。用户已明确恢复完整Goal，并由新协调上下文接手。完整目标在 `docs/supreme/goals/eko-eclip-complete-iteration-2026-11-02.md`，现场与准确下一步在 `docs/supreme/handoffs/eko-current-handoff.md`；十执行线及权限见续接目录 `executors.md`。旧三天时间线原字节归入该目录 `history/`，当前表不以历史“live/paused/pending”覆盖最新事实。
 
-唯一Root为 `01a19a4a-2815-7072-88b1-63ff005b2476`，本会话平台Goal已active、完整范围不变、无token预算，接管里程碑52b40c8。十线继续并行：SDK真实main747接收根已materialize，Framework六冲突结果及CLI两指南正在正式工作树接收，Gov工具页故障候选在RED/GREEN验证。K2原70/四组/复位已真实全0并释放，同包同U重开App47013已取物理证明；后台竞争仍在，无加速结论。接管初始14接受票见ACK，后继原件见proof-index；官网原同步器须等Root审查保存F/CLI新clean cut，不绕guard。
+唯一Root为 `01a19a4a-2815-7072-88b1-63ff005b2476`，平台完整Goal持续active、无token预算，原范围不变。新Root已保存本地里程碑：F `a8a8511d` 为真实1376+f568双父、获审tree da783b，Runtime3/W0、fmt和合流前task Source/final0；CLI `6282b1a` 两指南、`5c699b1` 工具目录恢复、`068b77d` 侧栏失败停止导航，正式13/47定向及各task Source/final、Root staged产物检查通过。均非remote main/完整矩阵/native/发行资格。原官网同步器已对F a8/CLI068/SDK83共同clean cut实际0，不绕guard。K2原70/复位/同App重开已闭合，仅描述性无加速；自动Cron因实测桌面锁屏等待解锁。SDK资料独审及一文件增量复核pass，原canonical自然1/errors4→1，三本仓项已实际消失、外部删除预检gap保原；正常repository预检/adopt/query0后Source运行中，Final待真实Source0。入口见proof-index；历史不堆入本表。
 
 ## 本轮实际已闭合的阶段
 
@@ -23,13 +23,13 @@
 | 4 | GUI视觉 | 已有前端与App里程碑；最终组合人工覆盖不足 | EKO／工作空间 | 浅深主题／响应式／键盘／焦点／可访问性。 |
 | 5 | 首页导航 | 品牌／最近任务／工作空间已落地部分验收 | EKO | 最新源码组合实际窗口与导航／历史一致性。 |
 | 6 | Steer | CAS／持久输入实现已有；最终真实运行矩阵待验 | EKO／Runtime | 普通Steer由主模型理解，不独立意图模型/强制要求流水线。 |
-| 7 | IM／cron管理 | 微信／手动Cron部分人工成功；新自动Cron未通过 | IM／cron／EKO | 当前disabledrev4；启用→整分钟触发→结果/history/通知→禁用，旧Failed保真。 |
+| 7 | IM／cron管理 | 微信／手动Cron保原范围；新自动Cron被真实锁屏挡在业务操作前 | IM／cron／EKO | 原任务disabled/rev4、零新Run/通知；Root已异步请解锁，随后同实例启用→自动触发→结果/通知→禁用，旧Failed保真。 |
 | 8 | 独立终端产品入口退役 | 用户已批准；正式最终收敛／接管仍需核 | EKO／Runtime | TUI/REPL/CLI/JSONL退役不连带GUI终端、Agent shell和SDKstdio。 |
-| 9 | A2A／LSP消费者去依赖与物理退役 | 先行SDK main747 CI全绿；已物化真实main747父链接收根1303/source7978 | SDK／Framework／EKO | 当前native Evidence/ADR、正常Source/Final及适用完整门禁；Framework六冲突接收按依赖收敛，未冒最终主线。 |
-| 10 | 工具收敛 | 六组/曝光/结果与错误预算已有阶段成果 | 治理／EKO | 工具真实性、canonical嵌套恢复、必需工具不可关、无第二权威。 |
-| 11 | Hook／ask | 既有实现及有限测试；最终native联动待验 | 治理／Runtime | Stop继续/取消/超时/竞争/过期/并行不补成功。 |
+| 9 | A2A／LSP消费者去依赖与物理退役 | SDK main747阶段CI保原；receiving1303/source7978及9资料+后继一文件独审通过；F已真实本地接收main | SDK／Framework／EKO | SDK正常repository Source/Final及c0bc原外部gap分列，正式全工程/主线资格未闭合，不借静态pass冒native。 |
+| 10 | 工具收敛 | 六组等阶段成果；目录回读未知恢复修复已正式5c699b1/13P | 治理／EKO | 显式reload成功才恢复UI操作，原后端/required权威保留；完整GUI/native与其余canonical嵌套恢复待验。 |
+| 11 | Hook／ask | 事件目录失败恢复候选11P/独审pass，尚未正式接收 | 治理／Runtime | 按原scope/sequence恢复events元数据，不执行Hook；其余Stop继续/取消/超时/竞争/过期/native待验。 |
 | 12 | HITL | 既有实现；完整GUI/IM跨surface待验 | 治理／IM／EKO | 输入/选择/审批/焦点与过期owner。 |
-| 13 | 任务列表／历史Run | IM/cron历史修复人工部分通过 | EKO／IM／性能 | 失败/planless归属、大数据量与性能、正确持久Run来源。 |
+| 13 | 任务列表／历史Run | IM/cron历史有限人工保原；侧栏读取失败错误导航已正式068b77d/47P | EKO／IM／性能 | 前端合同/task门禁已核，native/大数据量/性能及最终持久Run组合仍分别验收。 |
 | 14 | SSH终端 | 准备与局部实现；两个真实账号验收未齐 | 工作空间 | echo与ubuntu两义务分开，用户GUI认证、断线不回本机。 |
 | 15 | 项目工作空间 | 本地/远端/Fork代码已有里程碑 | 工作空间／EKO | HEAD-only worktree、不带脏改动、附件/原文跨源保全、双SSH owner。 |
 | 16 | 领域插件 | 实现及有限回归已有；真实全链待验 | 治理／Runtime | 绑定版本/身份，activate/retire/reviewer/foreground/subagent/resume一致。 |
@@ -52,10 +52,10 @@ Framework、所有Provider、EKO、SDK、示例和官网要一起收敛：具名
 
 ## 立即实施顺序（可独立工作必须并行）
 
-1. SDK真实base747接收已测C与main两doc历史，准确当前native退役证据＋正式Source/Final/适用门禁；现有八case输入不变不重跑。
-2. Framework按实际消费者去依赖状态收敛main，EKO／IM／cron跟进最终组合；其它领域按本表交真实增量。
+1. SDK在已审资料及最小证据增量上结算原canonical本仓3项修正/外部gap，并按正常repository Source/Final推进，八case不重跑、不改外部工具/schema/ignore。
+2. F a8同树稳定后，先收敛R03真实60秒consumer：原Rust两项漏检已修、holder两项异步信号/写证据异常仍Source block，未编译/serve；通过后排准确focused。正式工程队列已准备，长规模journal_bench/完整all-target运行留末期明确pending，不偷签NoRun为运行。
 3. K2原70窗口/复位/同包同U重开已实际闭合，Root重算308原件SHA/70原stdout-process/72观测；仅描述性对照，无加速或整机solo声明。窗口已释放，不重做同70；继续剩余corpora与已批准的实际缺口。
-4. 最新稳定组合App构建→真实GUI/终端/SSH/手机IM/自动Cron/HITL/Subagent/进度/恢复→36corpora／性能→IssueFinding／文档／examples／站点→具名发行制品，外部push/merge/publish/deploy最后问精scope。
+4. CLI下一接收Hook候选；官网对已复制cut做派生/资料验证，完整构建另排。桌面解锁后继续同App自动Cron；最新稳定组合App及GUI/SSH/手机IM/HITL/Subagent/进度/恢复、剩corpora、IssueFinding、发行仍保全范围，外部操作最后提精scope。
 
 ## 执行纪律
 

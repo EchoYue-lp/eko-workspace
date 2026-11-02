@@ -17,10 +17,10 @@
 | 仓库 | 分支 | HEAD／状态 |
 | --- | --- | --- |
 | 顶层 | chore/Echoyue/workspace-maintenance | 新Root接管已存52b40c8；四个未推送子仓gitlink差异不晋升，index空；当前进展文档独立保存。 |
-| Framework | chore/Echoyue/root-workspace-convergence | HEAD1376c47c8c165aa589361b2d2ef9b8c41f3747a1；唯一writer正在正式工作树接收f568六冲突结果，未stage／改HEAD，待冻结审查。 |
-| EKO | chore/Echoyue/root-workspace-convergence | HEAD5132d6b63537892185a3ac48de2e66a9b9366731；两任务指南WIP，正常Source及审查待收。 |
+| Framework | chore/Echoyue/root-workspace-convergence | a8a8511d9ec2cd3da382bd5f7b151ac537374aa8，clean；真实双父1376+f568，tree da783b。独审、Runtime3/W0、fmt0、合流前task Source/final0及Root staged gate0；完整矩阵/new HEAD Source/remote/mainCI另验。 |
+| EKO | chore/Echoyue/root-workspace-convergence | 068b77d9bdcf55cbee1a6623e65d067d563cd4a8，已作为官网clean复制切点；6282两指南/5c699工具页/068侧栏正式13/47定向及task Source/final/Root产物检查0。后继Hook正式接收已派，R03仍ignored修订，未授Cargo/serve。 |
 | SDK | chore/Echoyue/root-workspace-convergence | 83ae59e407313d7130811478a74646865d9e8bd3，clean |
-| 官网 | fix/Echoyue/website-source-sync | HEAD4badb0cffa10b54004b801c7a33d2e0e886da894；README／中文入门两文档WIP，原同步器因F/CLI未提交而拒绝，待Root保存新cut，不绕clean-source guard。 |
+| 官网 | fix/Echoyue/website-source-sync | HEAD4badb0cffa10b54004b801c7a33d2e0e886da894；手写资料/镜像/派生WIP，原sync已对F a8/CLI068/SDK83 clean cut自然0，manifest 0dd634b1/322框架镜像/148 sourceFiles/8产品页；全站门禁及提交待收。 |
 
 官方main已由新Root在本轮用git ls-remote重核：Framework f5688958960b985da4141212824abe7c74884f7c（PR201／既有七CI绿）；SDK747be937226ce379d0abc04e0f3ba52029da5ed1（PR15／既有九CI绿）。本地formal源码HEAD不是remote main，两种资格不能混用；顶层四gitlink尚不晋升。
 
@@ -30,9 +30,9 @@ SDK当前唯一writer会话见executors。C根：`echo-agent-sdk/.echo-semantic/
 
 五focus已经全部实际完成，共8case（3语言各2＋Rustscalar1＋工具族E2E1），不重跑已同输入验证。新Rust真实Host d1f58c…／test profileopt2，与旧full-language devopt1 Host53fc分角色；三实际程序和全部FP/.d共4536件在 `native-five-focus-20261102-r01/rust-recovery-r02-preserved/`，Root票key `rust_preservation`，精T官方clean0且不存在（key `rust_clean`）。原stripwarning1和局部DYLD修复保真；不能把旧cachedwarn当W0或为换目录重新冷编全部。
 
-SDK writer已实际materialize同C父目录的 `receiving-main747-source`／独立 `receiving-main747-git-admin`，分支 `fix/Echoyue/sdk-native-convergence`，真实HEAD/父链747；1303文件逐字节/大小/模式承接C，main747两doc原件保留，规范差量81A/145M/7D。当前业务摘要 `source:7978dbf32009e25a5544babee331004f8ab20373425ef17bfb2fa6e39866d028`；formal83/837/4af/C及pin340/lockc448/accepted5344/routes430未漂移，八case未重跑。接受入口 `receiving-main747-records-r01/materialization-entry.json` SHA26168809…（proof key `sdk_main747_materialized`）；当前native Evidence/ADR仍在写，未stage／commit，不冒正式主线完成。
+SDK writer已实际materialize同C父目录的 `receiving-main747-source`／独立 `receiving-main747-git-admin`，分支 `fix/Echoyue/sdk-native-convergence`，真实HEAD/父链747；初始1303文件承接C并保main两doc，差量81A/145M/7D，后继9规范资料后为81A/147M/7D（235）。业务摘要 `source:7978dbf32009e25a5544babee331004f8ab20373425ef17bfb2fa6e39866d028` 不变；formal83/837/4af/C及pin340/lockc448/accepted5344/routes430未漂移，八case未重跑。初始接受入口SHA26168809…（key `sdk_main747_materialized`）；后继已审资料/门禁见下一段，仍未stage/commit，不冒正式主线完成。
 
-current native静态业务digest7978dbf3…须在实际接收root重新合法验证；历史StageA Evidence用Git747锚恢复，保其source:e186 after和原静态场景，不能把它当native新增7删除／11退出／3with_id／5个旧场景的当前repair。先搜现有ADR0044和Evidence/Audit归属，以真实差量／当前验证修正文档，独审后冻结，再正常repository Source/Final＋适用完整门禁；不得靠新Map／假前置／新ignore求绿。
+SDK当前9份规范资料及后继一文件已独审pass；共同静态matched只限5328完整entry/424完整route/430限定投影，StageA e186保历史，5个before runtime UNKNOWN。原c0bc canonical自然1/errors4→1，三本仓项实际消失，仅余外部delete-preflight gap；installed0.5真实repository bootstrap/adopt235/query9Map/issues0/record/check均0，Source18404由SDK writer持有运行中，Final待真0，不把normal资格冒canonical0。业务933/source7978/pin340/lockc448/accepted5344/routes430不改，8case不重跑，不改外部tool/schema/exclusion/ignore；入口keys见proof-index。
 
 ## GUI／IM／cron和实际进程
 
@@ -42,7 +42,7 @@ App：`echo-agent-cli/.echo-semantic/local/tauri-arm64-release-App-cron-final-co
 
 原UserRoot：`echo-agent-cli/.echo-semantic/local/persistent-GUI-owner-66760c3-preparation-20261031-r01/isolated-runtime`。Auth／历史不可旧备份覆盖，不无故再扫码。config b4579b93…3475B0600，mcp d8e397af…23B0644；模型 `eko-native-validation-20261101:native-controlled` endpoint127.0.0.1:1451，原fixture9953f275…由Root持有，1420/1451。r03三请求长工具fixture只协议ready，未替换live。
 
-cron接管切点为 task ae3a72d3-21d2-4830-8e0b-21e603ff9622、definition0c93077d-f2e0-4792-a3e8-6c2dc754934b、disabled/rev4/* * * * *，last11-01 11:19:22；新App上已派IM线fresh→产品入口启用→自动触发→结果/history/通知→禁用，尚未回成功。微信收回复＋历史、Cron创建手动运行历史保用户原范围成功，不能当全部native。SSH两个账号echo与ubuntu@111.229.245.175:22／home/ubuntu/ssh-test独立保留，密码密钥只用户GUI输入。
+cron task ae3a72d3-21d2-4830-8e0b-21e603ff9622/definition0c93077d-f2e0-4792-a3e8-6c2dc754934b仍disabled/rev4/* * * * *，本轮零业务AXPress/新Run/通知；CGSession实测锁屏、loginwindow，Root已异步请用户解锁，未答前IM线不轮询/绕产品入口。解锁后fresh同47013身份继续启用→整分钟自动触发→结果/history/通知→禁用，不手动跑/不扫码。两旧Failed及原微信/手动Cron有限人工范围保真；两SSH账号和GUI凭据边界不变，echo fixture目录未具名，ubuntu仍/home/ubuntu/ssh-test。
 
 ## 性能与资源
 
@@ -60,4 +60,4 @@ K2准入/退出/采样/复位/重开完整本地步骤已闭合，后继只离�
 
 SDK旧main6cd语义14失败、本地task140/repository139和runtime条目拒绝1均保；后继own13两doc按固定canonical clean1229完整0、9既有Map只读补上下文、正常repository Source/Final0后合PR15／精main9绿。old0930删除preflight接口缺口仍是外部toolscope排除，不能新改外部工具／schema／ignore，也不能把历史gap当当前747已绿门禁失败。
 
-没有旧构建句柄需要恢复；83646/33395/19966及旧seed不可poll或重启。SDK已真实接收，继续当前native Evidence/ADR及正常repository Source/Final；Framework六冲突接收、CLI两指南及Gov工具页候选独审/验证、官网新cut同步和自动Cron窗口继续并行。新Root任何权限疑问先核Goal及已消费范围；本地实施/只读验证无需重复问用户，新外部写最后提精确proposal。
+所有旧构建/Source句柄均terminal，不poll83646/33395/19966/旧seed或已完成Runtime26551/20002/Source65980/Final63124；SDK当前Source18404只由其writer观察。F保持a8 clean；27项工程队列待Root独占窗，105321 journal_bench seed/literal all-target运行留末期未验。CLI下一Hook三文件候选11P；R03已修原两Rust断言漏检，holder仍Source block2（异步抛异常可丢Popen句柄、写证据失败阻断cleanup），正在同候选修正，未编译/serve/60s。SDK正常门禁、官网复制后收口继续；锁屏只停native依赖。Root唯一stage/commit，新外部写最后取精proposal，整个Goal不提前完成。
