@@ -68,5 +68,20 @@
     "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/user-priority-disk-cleanup-20261102-r01/batch07-user-explicit-five-files-deletion.json",
     "sha256": "bf832f5344d723b662edcb03f18986ac6474a831498aa42278a727595d855c8a",
     "bytes": 2382
+  },
+  "sdk_main747_materialized": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/materialization-entry.json",
+    "sha256": "26168809c13d8971dc3c07f08565f91168116c5d89850800e61f47ef75d870e8",
+    "bytes": 2300
+  },
+  "K2_current": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/K2-native70-Root-readback-accepted.json",
+    "sha256": "0ce919cde6f4adcf74f8f7390184cca91468f4c2bead5a3373eef8a3276f6527",
+    "bytes": 19954
+  },
+  "K2_App_reopen": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/workspace/normal-quit-9970-and-RustRover95346-r01/Root-actual-once/reopen/K2-same-App-reopened-physical-proof.json",
+    "sha256": "398a3a5411e572b4872013cb80b04ed853d8d4eee5ed00a23fe3e11db6fa4156",
+    "bytes": 3064
   }
 }
