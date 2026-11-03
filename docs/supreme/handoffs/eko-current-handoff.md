@@ -155,3 +155,23 @@ Provider新生产wire补充817/a2ae/98af原九methods/12内部scenarios只source
 A overlay r04（c259/6611）最终Rust C0/I2/M0、Python C0/I2/M0，Root c9764f记录四条真实source反例及新独占r02/r05修复GO：原lifecycle root未绑定、旧/cold cleanup盖掉原work首因、consumer快速退出绕过H前精消费事实、controls finally异常丢活holder句柄。修复仅现6文件职责，新旧目录分开，原r01所有byte/ref不改；复用原resource_scope_for_test/bind生命周期，无新owner机制。新pure control只定义不执行；0Cargo/HTTP/Popen/GUI/预算。作者两旧C0不是本cut已合格，仍等Root自身两reviewer定向复审后组合。
 
 Provider oracle新r02 e7bf（delta0d94/fullpatchb783/manifest69ab）仅test helper protocol×pre/post六格精断言，typed/fulltext/send0/无连接/postNone/drop/nofinish/9methods12scenarios/预算均不弱；Root原reviewer定向pass C0，原I1闭合，Root28refs已核7457。F已获准备-only下一独占source副本/完整epoch02恢复＋Provider2test文件patch；如需16manifest/31path机械重定位只改真实owned根，normal lockedoffline metadata不改2140/6df、包/features/graph正规化0差，不能借active/formal类型；无新compile/HTTP/风险接受/Runtime6件组合。
+
+## SDK 长 ID 真实 GREEN 与重型窗口转 CLI
+
+SDK controlled完整c623/65ae/test14b的NoRun自然0/W0/E0（34m20s）；新libtest25b45/251068128B、opt2/debug0/assert+overflow/30features、原profile7602318730472602302。压力曾2，NoRun自然结束并fresh恢复1后才actual-list1与sameprogram exact唯一1P/0F/0I（0.55s）；函数内5完整ID/7ops全走完，不冒5selected或stdioHost重启。原709b交件经Root e8c核8251物理refs/4161源/4038保全258281824B/4backend/真CargoJSON/FP；初Root读取count字段误用len TypeError已保说明并按整数值修读，无测试重跑。精T dev16777234/inode300033326/真TAG/fresh reader0后官方clean自然0 Removed6050files/2.5GiB，6e06后继经Root c995复核8316refs/8298个T外文件，target实际不存在，source/program/FP/.d/backend/raw/native全保。原old340 errno63及9c JSON loss不追改；新65ae风险、正式pin、publicSource、三语、stdio/main资格未授。
+
+Root fresh无Rust/memory1/free52%/34.02GB并再次核formald542/f6/d5两读/087/76d/dd438/684/c623 clean后，55c391授CLI原823ad bounded pipeline独占j2。基线NoRun已自然0/W0、实际新程序及2513 FP/dep-info保全；两个selector各list1，header1P，publication自然101明确original unattended producer did not publish cold history，这是目标行为RED，不是类型/fixture失败。sole继续只原684三production文件、tests087和strict reader/R03不变；后必须实际77d两读/consumer-only550675与原fresh gate，再GREEN/全executor及指定6个history恢复控制、clippy/fmt/source-final。无新GUI/旧payload重造/UUID补原生ID/提交/精clean授权。Root首个resource读脚本unpack ValueError在写票前已修，实际55c391准入原件保，无scope偷换。
+
+## A r05 四 finding 源码闭合与 Python8 实际通过
+
+新独立Runtime r02交件c390/cut7eb585经Root20refs核验、自身两路定向R1/R2和P1/P2均C0，c635记录closure；原r01/r04全部45files/旧C0与4finding不改。Root亲用未来原/usr/bin/python3 3.9.6 -B运行holder-controls.py pure一次，原raw Ran8 tests/0.024s/OK、natural0，六源后置SHA不变（c4ef票）。仅预算/精消费门槛/模拟同Popen异常保留单测，不是fixture/consumer/Popen/fault/180整case或Rust类型/物理join；旧c390的静态时态字段不重写。F sole已授新独占组合：以fac67 Provider3950完整源为base，只A四Rust hunks，另两Python引用Runtime原路径/OWNED/SHA不搬改；来源旧snapshot不写，后四metadata/锁/路径/类型和case packet只准备，当前CLI仍唯一heavy。
+
+fac67原Provider+Gov新pair准备已Root49原件及独立Source C0核；完整old3949/restoration3949/new3950、仅client修改/新wiretest、16manifest31相对path全新owned、四lockedmetadata0且同仓before/after逐字相同，2140/6df不变。NoRun/list/run仍null。Root根据client的cfg(test)probe会改变原16 controls共用测试helper，明确后继新integration程序在新9methods/12内部场景后回归原Provider16；sameprogram distinct25，不能把旧16+新16加为32独特方法，不因该条重复未改Runtime9或Gov20。
+
+## CLI 两目标 GREEN 与唯一 Clippy 负控修复
+
+CLI原684三production已实际精3bcf/97bf/d819，tests087/锁d542不变，原collector实际两读77d/274、policy550675只consumer字段变；Root fb263独立确认。sole已交77d原双gate0及时间顺序（4cdc小票，真实在fixedNoRun前）；不能因Root未在预定旧路径找到而冒未执行。新program两个exact全P、全executor actual-list/run79P/0F、6原strict history/resume/native projection selector各P，均保原。
+
+随后原Clippy自然101，唯一tests087:6012 clippy::replace_box：既有foreign-owner负控把Box整体替换，非生产行为缺陷。Root实读并形成仅`*native = Box::new(EventEnvelope::new(sameargs)?);`→`**native = EventEnvelope::new(sameargs)?;`，新test4f495；字段/Result传播/断言/场景/预算/ID全同、无Box地址比较，经独审C0。Root74650具体授权正常preflight采用，只有实际两读19ec/274、相对77d仅test一行变且其它273不变时，才policy consumer-only→19ec（预演b94）；原8controls/fresh双gate与新NoRun/两个exact+全executor79/Clippy/fmt/source-final仍须真实。原087/77d全部通过和Clippy101都保历史，不弱断言或allow。Root初次派票JS括号解析失败未执行任何工具，已分别保存真实74650并重发，不拿未写票作授权。新test-only源复评不新增依赖、五风险身份或锁，不需再问人类同一d542许可。
+
+F组合当前入口4f94（delivery-r03/source3951 manifest77d2/type92b5/case6f7c）经独立组合审C0：以Provider3950复制，只A三个Rust文件改+新模块，四metadata0/rawbyte同/16manifest31pathowned/锁2140+6df保。两Python原路径/SHA/OWNED不动；Root原Python8实际c4ef可复用，1pureRust、ignoredcase与所有新NoRun/list/program仍null。下一integration新9＋原16必要回归sameprogram distinct25，12内部场景不冒selected/旧16不凑32；Runtime9/Gov20和已过同cut Python8不无故重复。CLI仍唯一heavy，组合未运行，不继承正式19ec或77d风险资格。
