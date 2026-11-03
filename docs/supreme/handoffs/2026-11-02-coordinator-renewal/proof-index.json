@@ -428,5 +428,90 @@
     "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/r2-validation-source-composition-20261102-r01/delivery.json",
     "sha256": "19b81f17e4ceff9d2049b072770cf576eccc4f1a05770d0beb01acfd65e4c8b0",
     "bytes": 41616
+  },
+  "SDK_longid_old340_reference_drift_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/sdk-long-id-red-root-readback-r01/full-readback-with-reference-drift.json",
+    "sha256": "934f531ea6a9a73b6e871fb8d42da27249790a2389b3e8d505ffc3dbe708633b",
+    "bytes": 1943
+  },
+  "R2_three_lib_actual_norun_list": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/r2-validation-source-composition-20261102-r01/preparation-r01/focused-epoch01/delivery.json",
+    "sha256": "68bd55a60f7d1335a77a301f9793bc259e3e0bce9b25d1f67ca9846952778e26",
+    "bytes": 24019
+  },
+  "R2_three_lib_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r2-focused-norun-root-readback-r01/acceptance.json",
+    "sha256": "5ca1e2e4ba3932de72a8130e1470c9481bc0de8d626c55580c67bd3b46b9029f",
+    "bytes": 1342
+  },
+  "R2_AppCore_180s_Design": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/runtime/r2-appcore-case-180s-design-20261102-r01/design.md",
+    "sha256": "33ac625478abae808427279cf9a9a5b8856309f23f3ee0b3cbcb2215188310d9",
+    "bytes": 17940
+  },
+  "R2_AppCore_180s_Design_Root_accepted": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r2-appcore-design-root-review-r01/review-and-plan-go.json",
+    "sha256": "a02b18e73081ce14fa3e76528ed35c05a83e78df96bc53962685ba421022ca8b",
+    "bytes": 1544
+  },
+  "Tauri2124_isolated_official_tool": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/frozen-tauri-cli-2.12.4-20261102-r01/entry.json",
+    "sha256": "7b06489974cd68200763887b4ec3de3d7ea78cd9ac26d23cabcc34a138400f93",
+    "bytes": 10360
+  },
+  "Tauri2124_tool_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/tauri-2124-tool-root-readback-r01/acceptance.json",
+    "sha256": "3c94b00aa99c8a16e46efce7233ee64480c28930976c51022b8a880c3e637460",
+    "bytes": 766
+  },
+  "SDK_longid_guard_loss_corrected_delta": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/long-conversation-id-current-source-packet-r01/guard-overwrite-correction-r02/old340-red-final-delta-r02.json",
+    "sha256": "5261537cba52fb2b2394784beb7336fdb3476d56a39166e1664df491dc3db9bf",
+    "bytes": 15540
+  },
+  "SDK_longid_corrected_Root_clean_GO": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/sdk-long-id-red-correction-root-readback-r02/acceptance-before-official-clean.json",
+    "sha256": "9d335dbae0ade09bab41fb800f27327b6548746c9244bde75b866de0288d7cc1",
+    "bytes": 1823
+  },
+  "SDK_longid_old340_official_clean": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/long-conversation-id-current-source-packet-r01/official-clean-old340-r01/official-clean-successor-entry.json",
+    "sha256": "5a5d39b938242a352eeb824a11ea1555600d79be2814715d93dba3ecc0409570",
+    "bytes": 14847
+  },
+  "SDK_longid_old340_official_clean_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/sdk-old340-official-clean-root-readback-r01/acceptance.json",
+    "sha256": "518a86a9652f95a16dcc7574560bd7b0b9ec21aa9d9a8b51eb1300858608010d",
+    "bytes": 891
+  },
+  "SDK_longid_c623_source_preparation": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/long-conversation-id-current-source-packet-r01/green-source-c623-preparation-r01/controlled-c623-preparation-entry-corrected-r02.json",
+    "sha256": "79713e0c9f444587b816b0bd2228616eefbd23cb68845a7b2d0b439dc2357733",
+    "bytes": 13575
+  },
+  "SDK_longid_c623_source_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/sdk-green-c623-preparation-root-readback-r01/acceptance-source-only.json",
+    "sha256": "63567802ef00ac79116a46d6b97c318eb57ee0c654016fb0f1c3dd05a54b70a4",
+    "bytes": 1813
+  },
+  "R2_framework_distinct25_behavior": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/r2-validation-source-composition-20261102-r01/preparation-r01/focused-epoch01/behavior-r01/delivery.json",
+    "sha256": "a09895948beabef193d1fbf3899c6c0321657afdd733f8956595b84d9deb46fd",
+    "bytes": 4638
+  },
+  "R2_framework_distinct25_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r2-focused-behavior25-root-readback-r01/acceptance.json",
+    "sha256": "fbc176aff9d382eb414e90d784ca42d9df276cee7c1631025ff072e9e44a2311",
+    "bytes": 908
+  },
+  "R2_AppCore_180s_Plan": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/runtime/r2-appcore-case-180s-design-20261102-r01/plans/plan_01_AppCore真实consumer与单一180秒holder.md",
+    "sha256": "dfcf7ea5e9b0f00a22802a4116b609395d1600b937c584f7dd7d64314f1d810b",
+    "bytes": 12033
+  },
+  "CLI_fresh_canonical_new_yanked_block": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-publication-risk-network-canonical-r04/root-new-yanked-failure-classification.json",
+    "sha256": "c064ce7925dbcb534474e66ecb8b441c9ecba491716fd87e58cbdc0ef12115da",
+    "bytes": 2507
   }
 }

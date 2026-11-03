@@ -85,3 +85,33 @@ CLI已按Root精票5eee仅把consumer dd9c→d5a9668、全policy bd5d027，contr
 R2三Source候选29ee/541276/6b5d及Root组合入口130793已三路独审C0；Root已授F只ownedplain pair组合/normal offline resolver，不改正式F/CLI/Git。19b81实际source F2857/CLI1092、12/16path差量（CLI为20070+087/76d+原684受控futurepub＋Gov＋hook），helperhunk不覆盖pub；四metadata自然0，全部676/768包身份/checksum及每node features前后相同，仅native integration→hyper-util0.1.20边。候选F锁214083c3/CLI6df63b，old1442/3995及所有基线/decision原bytes保，不授风险接受；raw lock namegroups52/114、72/164不等官方deny49/107或CLI5已过。16manifest/31path edge都真指pair、无formal fallback；无编译/HTTP/native，独立组装复核在途。F只可准备后续精NoRun packet/owned ADR后继，尚无候选NoRun或formal新锁GO。
 
 原R2 nativecase runner/bootstrap/上游绝对预算仍不存在，Runtime仅在做A真实EKO app-core库内consumer与B用户手点GUI＋允许诊断的可行性比较；R03 holder c4d9仅有fixture readiness10秒deadline和自然consumer wait，没有可冒成R2整体的现成deadline。新case预算须Root以后按实方案单独决定，不用now+N填gate或改原first/idle/overall/取消5秒。GUI/App/AX/截图/焦点/退出重开严格只用户，不能以后台JS/RPC业务操作绕过。
+
+## 最新实际类型／行为证据
+
+SDK old340初NoRun真实0/W0（33m26s，libtest f670…/profile7602318730472602302/test=true/30features），list1后的首exact101是fixture enable_tools=false不符合ACP stdio MCP，不算行为RED。只在owned test改false→true，r02源222dd906/14b31c6（原f01f/8f4e冻结不覆盖）；warm NoRun真实0/W0（约6min），新libtest7c7ab97f… actual list1/exact0p1f/101，在首121B Cron ID原FileConversationStore create message log errno63取得目标RED，后4ID未运行。旧40709/51391均已gone，不用旧handle作liveness，actual-handle记录阶段结束。SDK正在保全原程序/FP/.d/原u64/失败后端；Root已只授后继controlled GREEN源准备：完整F精c623 Git树的owned纯source snapshot、同r02测试副本，仅13framework/vendor source映射至该本地snapshot真实path、normaloffline resolver/新lock/diff；不偷用workingtree、不伪HTTPS pin，不动正式7978/340/c448/235WIP，不编译Green或改业务代码，正式新pin/风险仍未授。
+
+R2 metadata pair19b81已经独立C0确认完整2857/1092源和真实路径/676+768节点features相等，仅既有hyper-util边。Root另授该controlled pair第一步F三lib NoRun/list-only j1/debug0/offline/locked（源/2140锁冻、无风险接受/正式采用/测试/HTTP）：可与SDK各j1总计2rustc，fresh内存不足不新开步骤。F已实际启动并推进到echo_integration，无warning/error但尚无类型终态；Cargo自行创建真实CACHEDIR.TAG。原packet afe250/准备fe436及两ownedADR片段保持。Gov20/telemetry双cfg及所有test执行仍未授，不能把这次NoRun当R2/native。
+
+后台case可行性fe77已完成，Root选A作为真实AppCore consumer独立slice，不冒GUI/App PID；B同GUI PID诊断入口依然缺。Runtime正在Design-only：新case上游单一Python holder预算180s before any admission、工作不晚D-5、清理min(first-stop+5,D)，原first30/idle60/overall与5秒取消不改；只对case自有Popen允许异常TERM/KILL/实际reap清尾，若D前未取得reap则记录硬180未闭合/真实超时/Unknown，不能假终态或称EKO物理join。Design并非代码/执行GO。
+
+隔离官方Tauri2.12.4工具已经Release线实做：Root local/frozen-tauri-cli-2.12.4-20261102-r01/entry.json SHA7b064899…；官方JS/native双包integrity/shasum、实际CLIversion/help、arm64加载及系统库闭包、独审C0均通过。原全局2.11.2/npm2.11.4不改，官网817不动；App packet-r02只备用，不build/launch/签名/keychain/GUI，待最终源码cut及Root独立窗口。canonical风险fetch仍未补齐当前0，Root已异步只询问网络条件、其它工作持续；不换URL/代理/预算/ignore或no-fetch。
+
+## 2026-11-03 Root 实际复核增量
+
+R2三lib原NoRun自然0/W0/E0、原CargoJSON绑定619864f9/d894e000/3caf7fbd，profile原u64 5631241865842084492（opt1/debug0/test=true）。四list逐名Provider16＋Runtime5/3/1，0 test-run；原68bd55交件与Root5ca1e2读4018refs/3949源/18保全成员已匹配，独审C0。Root已授同program/SHA/env逐精名25串行执行，首次失败停报；仅既定测试loopback允许，无新Cargo/Gov/CLI/logger初始化/App/nativecase/正式风险采用。原T保留等待后续。
+
+AppCore新180秒Design33ac625已Root全文及独审C0，review/Plan GO票a02b18。唯一Python T0在admission前、D=T0+180/W=D-10、首次S/C=min(S+5,D)不续；stop须继续持原drive/work/IO future，remaining未知不强杀。只本case Popen异常清尾，deadline后实得reap也不回称180合格/原owner join。真实typed root/Run/registry/File store/原factory/BootReconciler；parent图作用恰1，首child请求held导致child工具作用不可达，gap与GUI/B入口仍OPEN。目前只Plan，无代码/编译/HTTP/预算启动。
+
+SDK old340最终原入口27c328真实记录r02 exact0p1f/101、首121B Cron create message log errno63；首fixture101保原，后4ID未跑。Root读8144物理引用，两epoch各4038件/256923059B程序、完整原FP/.d及7602318730472602302字节均匹配；唯一after-exact-fixture-r02.guard引用期望9c133/25363B，后续脚本两次重写后为8d1b3/25019B。Root934f531保expected/actual，未把原交件签完整0、不补造9c原时刻检查；SDK正新目录纠正delta/当前守卫，不重编RED，不改27c/raw/旧凭据。原target未clean，真人此前只授F唯一target手删不可复用。GREEN仍只新owned完整c623 Git树/SDK r02测试副本/13同源真实path与normal offline metadata准备，正式7978/340/c448冻结，尚无GREEN编译或执行票。
+
+隔离官方Tauri2.12.4入口7b064899经Root重算59refs/两官方registry包SHA512及SHA1，票3c94b00。原version/help/arm64载入与系统库scope已核，packet executionAuthorized=false；无全局工具修改/App build/sign/launch/GUI/远端操作。工程文档更新只记录阶段证据；本次没有API/示例/官网产品行为变动，不新增examples/website业务修改。
+
+## 2026-11-03 后继实际收口与新风险阻断
+
+R2三program同env逐exact25仅一次已全25P/0F/0I/W0/25自然0（a098959）。Root逐读132原件/caller精args/每raw1test/自然receipt/严格序时/原list集合与每项3949 guard，票fbc176。三协议6仍synthetic scope控制，无生产chat_stream/R2/native资格。Gov20与AppCore no-telemetry/telemetry串行NoRun/list窗口已授；当前仅普通cfg正在编译，未启真实logger/UserRoot/app.log/exporter，不改任何源或锁，新锁风险仍未接受。
+
+SDK526153新delta准确披露两次旧guard脚本误复用（8d1b→7d7d），原9c完整JSON已不可恢复；当前d89只Nov3观察，不能回填Nov2。Root9d335核23 active refs/fresh reader0/dev+inode/真实TAG后精授权官方clean；原5a5d39后继自然0 Removed6050files/2.5GiB、原T实际不存在。Root518a86独立核9469refs及全部9452 T外文件SHA/bytes/mode，两个epoch各4038件/程序/完整FP/.d、原raw/native/backends不变，不把此clean签成旧27c完整physical closure。GREEN纠正入口79713已实做metadata，Root635678核4186refs、完整F c623精2856 Git blobs/mode及SDK1305/test14b；独审C0确认653包/638registry/13同源path/normalized graph及features差0、Protocol无FW依赖。新65ae仅候选，无GREEN NoRun/正式pin/风险接受票；SDK六相关锁中无async-executor，仅锁内容结论。
+
+AppCore180秒Plan dfcf7ea已Root全文接受后授owned source-only Build，原pair继续冻结。发现ScopedWorkspaceIoReceipt字段私有，Root实读后仅扩候选第五路径state/workspace.rs的cfg(test) pub(crate) workspace_io_receipt_for_test，使用同真实lease/identity，原resource_guards/非test实现不改；不得global/None/fake receipt。这是新增受控test seam，不代表编译、执行或正式API采用。
+
+CLI canonical r04已真正fetch/audit取得DB263a4d951a0867d4bddc29dddd6d59427c78f9a7/1402（自然5.326秒），0漏洞/原五warning身份不变＋新增yanked async-executor1.14.0，官方scanner1且原精gate以unknown/yanked类别自然1。Root c064ce逐项比对旧actual五项，不再把当前失败归为fetch。原3995锁/d5 consumer/bd5 policy/URL/proxy/budget/ignore/noFetch=false未改；旧actual0与所有旧网络1保原，当前canonical不能冒0。CLI只读排查真实reverse链/官方版本/最小修复，不自动接受第六项或跳过平台依赖。原网络条件问题已不影响定位，无需用户为当前阻塞再操作Eclip或重扫。
