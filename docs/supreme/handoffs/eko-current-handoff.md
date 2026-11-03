@@ -115,3 +115,9 @@ SDK526153新delta准确披露两次旧guard脚本误复用（8d1b→7d7d），�
 AppCore180秒Plan dfcf7ea已Root全文接受后授owned source-only Build，原pair继续冻结。发现ScopedWorkspaceIoReceipt字段私有，Root实读后仅扩候选第五路径state/workspace.rs的cfg(test) pub(crate) workspace_io_receipt_for_test，使用同真实lease/identity，原resource_guards/非test实现不改；不得global/None/fake receipt。这是新增受控test seam，不代表编译、执行或正式API采用。
 
 CLI canonical r04已真正fetch/audit取得DB263a4d951a0867d4bddc29dddd6d59427c78f9a7/1402（自然5.326秒），0漏洞/原五warning身份不变＋新增yanked async-executor1.14.0，官方scanner1且原精gate以unknown/yanked类别自然1。Root c064ce逐项比对旧actual五项，不再把当前失败归为fetch。原3995锁/d5 consumer/bd5 policy/URL/proxy/budget/ignore/noFetch=false未改；旧actual0与所有旧网络1保原，当前canonical不能冒0。CLI只读排查真实reverse链/官方版本/最小修复，不自动接受第六项或跳过平台依赖。原网络条件问题已不影响定位，无需用户为当前阻塞再操作Eclip或重扫。
+
+## GUI 人工清单补齐（2026-11-03）
+
+初版13组77项经只读覆盖审查发现4 Important/1 Minor，现已在同一清单增C06远端文件/Agent命令/产物同目标、E07分叉防重/迟到/部分成功恢复，扩A05主聊天输入法与输入来源、B03纯工具、B07长模型等待、L05隐藏/关窗保IMcron与真正退出/重开不重放的具名预期，更新为13组79项，原编号/勾选保留。L05依据既有CLI ADR0050:71–74/ADR0004，未发明新产品策略。C06/E07及异常链仍待具名用例/新版；用户只观察界面，精身份/join/字节由后台核证。11月2日Cron与最近已核d41窗口标为历史观察，不冒当前GUI确认。全程只改磁盘文档，未调用Eclip/AX/窗口查询/焦点/截图/退出重开。
+
+后继资源：R2普通AppCore原NoRun已自然0/W2/E0，wrapper因W0门禁1，无Gov list/test/telemetry；原实际features[]/profile3914811562547596171与program5e32f0f保T外，不沿F profile5631冒同一配置。Gov最小r02两.fetch_update→.try_update（2d275/c435ea）已Root逐字节核5f906，只有方法名变化，不抑制warning/不改测试；pair仍旧3949冻结，sole正在准备完整epoch01源恢复与epoch02方案，未apply/重编。SDK GREEN虽然源码及metadata独审C0，实际NoRun仍未授，等该资源窗和Root fresh准入。

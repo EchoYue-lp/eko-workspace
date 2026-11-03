@@ -513,5 +513,30 @@
     "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-publication-risk-network-canonical-r04/root-new-yanked-failure-classification.json",
     "sha256": "c064ce7925dbcb534474e66ecb8b441c9ecba491716fd87e58cbdc0ef12115da",
     "bytes": 2507
+  },
+  "GUI_manual_checklist_current79": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/docs/supreme/acceptance/eko-eclip-gui-manual-checklist-2026-11-02.md",
+    "sha256": "c836ef36435614ed222005353aeb3d43e3c3ae53e3216e521699b7c7676c449b",
+    "bytes": 23743
+  },
+  "GUI_manual79_coverage_Root_closure": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/gui-manual79-coverage-root-closure-r01/acceptance.json",
+    "sha256": "21963d8dba711f36f87fe0f037b653e32b0cb673b08f5ca2834929c2b2bdd3ba",
+    "bytes": 1224
+  },
+  "R2_Gov_two_atomic_rename_source_candidate": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/governance/r2-app-observation-candidate-20261102-r01/r02-atomic-try-update/delivery.json",
+    "sha256": "2d2753f441d0a8839f652f84e5007c60a0dbe46d4143fd4b94ffc3d831276e53",
+    "bytes": 2618
+  },
+  "R2_Gov_two_atomic_rename_Root_source_review": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r2-atomic-rename-root-source-review-r01/acceptance-source-only.json",
+    "sha256": "5f9064c43e70d4d8011f613ad7178587f3db57eab1691d231d2512f9dbe6e205",
+    "bytes": 1454
+  },
+  "R2_AppCore_original_norun_W2_terminal": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/r2-validation-source-composition-20261102-r01/preparation-r01/focused-epoch01/app-core-r01/terminal-warning-and-preservation.json",
+    "sha256": "6d8f914e86f90c088b17cc9b97bdd2523cf56eed917a91d2e8644dffe90e9839",
+    "bytes": 13785
   }
 }
