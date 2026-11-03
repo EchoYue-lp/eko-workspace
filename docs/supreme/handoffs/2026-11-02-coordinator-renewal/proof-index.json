@@ -516,8 +516,8 @@
   },
   "GUI_manual_checklist_current79": {
     "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/docs/supreme/acceptance/eko-eclip-gui-manual-checklist-2026-11-02.md",
-    "sha256": "c836ef36435614ed222005353aeb3d43e3c3ae53e3216e521699b7c7676c449b",
-    "bytes": 23743
+    "sha256": "750964c4f87537d50a4d8c76b4232fae29b70b926bf510891f873aef313867fe",
+    "bytes": 24288
   },
   "GUI_manual79_coverage_Root_closure": {
     "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/gui-manual79-coverage-root-closure-r01/acceptance.json",
@@ -753,5 +753,55 @@
     "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-publication-replace-box-test-fix-r01/Root-source-review-and-bounded-go.json",
     "sha256": "74650a887008c6324172a95ca34e2343db769307a55291cdfe1ccbaa3cfa2702",
     "bytes": 2127
+  },
+  "latest_client_current_formal_source_and_normal_SourceFinal": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/cli-publication-replace-box-19ec-actual-20261103-r01/app-source-freeze-r03/App最新版正式源码与SourceFinal交付入口.json",
+    "sha256": "7b1542a0671322e18ffdb65d3ced0dbed5b15c37da01dc5a4242b25c736b40bb",
+    "bytes": 17204
+  },
+  "latest_client_3945_source_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/latest-client-launch-user-request-20261103-r01/current-source-and-normal-gates-accepted.json",
+    "sha256": "da041202b399089a669f13a4afaa78b141e694160dae971de690c67dd8a9b11a",
+    "bytes": 765
+  },
+  "latest_client_human_launch_authority": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/latest-client-launch-user-request-20261103-r01/authority-and-launch-context.json",
+    "sha256": "56830893488d8fe8a41dd7aae5be0a1d4c1ef44fd0d564b95a144df273b03676",
+    "bytes": 2238
+  },
+  "latest_client_actual_ready_to_launch": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/latest-formal-arm64-App-20261103-r01/evidence/ready-to-launch.json",
+    "sha256": "dbe6f0f37e3b359df529d8fd87c0bbff0a86adf6bbed86f7317d061f2cfbebe2",
+    "bytes": 2970
+  },
+  "latest_client_actual_once_launch": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/latest-client-launch-user-request-20261103-r01/actual-launch-r01/launch-receipt.json",
+    "sha256": "f1626754e8832e3e1f89986093ea597fe03fe4c65daba1f3d8935c78d4b0d42a",
+    "bytes": 4435
+  },
+  "latest_client_startup_metadata_observation": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/latest-client-launch-user-request-20261103-r01/actual-startup-process-observation.json",
+    "sha256": "85117f927a90438535b8c91acf389e38d933656f0aa2ed65420a4819718474bf",
+    "bytes": 1312
+  },
+  "latest_client_final_build_and_preservation": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/latest-formal-arm64-App-20261103-r01/entry.json",
+    "sha256": "e8d1c9d5b0bf798ef06008a1dc19144d939a9cfe342c661724e5c25bd98da5d5",
+    "bytes": 9399
+  },
+  "latest_client_final_Root_4675_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/latest-App-final-build-Root-acceptance-20261103-r01/acceptance.json",
+    "sha256": "a16cc45cb497274f1d75bb599a82ac2cae5dc5855e8152e456988fa523baea67",
+    "bytes": 2208
+  },
+  "latest_client_GUI_manual_current_package_delta": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/latest-App-final-build-Root-acceptance-20261103-r01/manual-checklist-current-package-delta.json",
+    "sha256": "56ffdd227df107ebd1a927b7a04901a021a4fd16d8f8701afcb41ea59ba9feea",
+    "bytes": 1045
+  },
+  "latest_client_Root_CLI_19ec_rule_sync": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/latest-App-final-build-Root-acceptance-20261103-r01/root-CLI-19ec-governance-sync.json",
+    "sha256": "01825233c32ffd145c3b624fd7d5889b0ab6ca55e48d260fc20cb760367e571d",
+    "bytes": 940
   }
 }

@@ -1,8 +1,10 @@
 # EKO／Eclip 总纲：当前交付状态
 
-更新时间：2026-11-02。用户已明确恢复完整Goal，并由新协调上下文接手。完整目标在 `docs/supreme/goals/eko-eclip-complete-iteration-2026-11-02.md`，现场与准确下一步在 `docs/supreme/handoffs/eko-current-handoff.md`；十执行线及权限见续接目录 `executors.md`。旧三天时间线原字节归入该目录 `history/`，当前表不以历史“live/paused/pending”覆盖最新事实。
+更新时间：2026-11-03。用户已明确恢复完整Goal，并由新协调上下文接手。完整目标在 `docs/supreme/goals/eko-eclip-complete-iteration-2026-11-02.md`，现场与准确下一步在 `docs/supreme/handoffs/eko-current-handoff.md`；十执行线及权限见续接目录 `executors.md`。旧三天时间线原字节归入该目录 `history/`，当前表不以历史“live/paused/pending”覆盖最新事实。
 
 唯一Root为 `01a19a4a-2815-7072-88b1-63ff005b2476`，完整Goal未完成、无token预算，原范围不变。F当前本地 `c6239706`，保a8的1376+f568双父；新增Driver/微信错误观测70方法及3Clippy/fmt/task Source-final/独审/Root产物0，clean未push；CLI20070保存指南/UI/Hook及R03局部里程碑，b04原全前端945P/4原性能opt-in未跑，R03 normal1P/owner3按原130、143、1验过。官网817对F a8/CLI20070/SDK83 cut原完整verify0/W0（61unit/15e2e/1原平台skip/338路由），本地clean、未部署。SDK真实747接收source7978完整三语已0/W0：TS473/Python547＋18subtest/Java345，各1原Windows skip，隔离包/三个quickstart/Parquet通过；原stable5亦0、18组589P/编译W0，已Root保全/精clean；完整合同/条件矩阵/main/发行资格仍另验。K2原70/复位/同App重开闭合但未测到加速。解锁后自动Cron真实scheduled一次Completed并在卡片显示全文，微信通知-2失败及主chat publication0已分别派候选修复；原任务收尾disabled/rev6，通知恢复。两SDK外部Source合同和本地83公开源仍OPEN。精原件见proof-index。
+
+本轮供真人手验的最新客户端已构建并启动：2026-11-03 本机 arm64 Eclip 1.0.0，包标识 `c5488208`，来源为 Framework c623＋CLI20070当前19ec／b94／d542及已审publication修复、当前前端498文件。原两目标及executor79、Clippy/fmt、精风险双gate和正常Source/Final均通过；本次App构建自然0／RustW0E0、retained本机ad-hoc strict0，149前端assets与实际dep-info绑定，4593编译材料已保。Root唯一open自然0／精新PID27441及启动AgentPool日志已核；用户正手动验证GUI、配置真实LLM，后台不得再抢屏或自动退出重开。当前运行包与原d41历史分列，GUI/native业务/发布资格不由构建或open推导。
 
 ## 本轮实际已闭合的阶段
 

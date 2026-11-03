@@ -14,7 +14,7 @@
 
 ## GUI 人类操作边界
 
-用户最新两条指令：“现在不能操作 Eclip”，以及“所有需要在 GUI 验证的内容，给出一个清单，我个人手动点击验证”。涉及GUI的执行线已收到停止要求，Workspace已确认无在途GUI runner；不再请求GUI凭据或恢复抢屏。完整[手动清单](../acceptance/eko-eclip-gui-manual-checklist-2026-11-02.md)涵盖77项，按当前可做／待新版／待受控用例执行，结果按编号记录。Workspace停点票f1ce9d（key ssh_GUI_stopped_for_manual），现终端输入可能未回车，由用户亲自Ctrl+C清行。GUI暂停不等于后台Goal暂停，K3退出/采样权限仍false。
+用户最新两条指令：“现在不能操作 Eclip”，以及“所有需要在 GUI 验证的内容，给出一个清单，我个人手动点击验证”。涉及GUI的执行线已收到停止要求，Workspace已确认无在途GUI runner；不再请求GUI凭据或恢复抢屏。完整[手动清单](../acceptance/eko-eclip-gui-manual-checklist-2026-11-02.md)涵盖79项，按当前可做／待新版／待受控用例执行，结果按编号记录。Workspace停点票f1ce9d（key ssh_GUI_stopped_for_manual），现终端输入可能未回车，由用户亲自Ctrl+C清行。GUI暂停不等于后台Goal暂停，K3退出/采样权限仍false。
 
 ## 五仓 fresh 切点
 
@@ -22,7 +22,7 @@
 | --- | --- | --- |
 | 顶层 | chore/Echoyue/workspace-maintenance | 新Root接管已存52b40c8；四个未推送子仓gitlink差异不晋升，index空；当前进展文档独立保存。 |
 | Framework | chore/Echoyue/root-workspace-convergence | c62397061bbe7c22ed169d7277c3ed07c054df4d，clean；原a8后八路径本地fix。Driver55＋Weixin6/6/3共70方法真实通过，3定向Clippy/fmt/当前task Source-Final/独审/Root staged0；原官方clean缺工具环境1、缺TAG101保原，真人仅授权该T手删后已absent（8901248），非official clean0。源和Git状态冻给CLI回归；完整27/main另验。 |
-| EKO | chore/Echoyue/root-workspace-convergence | 20070d3f7171a95926bdd5c8153f5f382767fea2；现只tests及ADR0057两路径test-only WIP/Source0，production3/policy54/lock3995/R03未动，尚无新Rust。既有b04前端945P/4原opt-in未跑及R03有限资格保原；新版GUI/App/main另验。 |
+| EKO | chore/Echoyue/root-workspace-convergence | 20070d3f7171a95926bdd5c8153f5f382767fea2＋当前9路径WIP；publication684三生产、tests4f495/consumer19ec/policyb94/锁d542已精绑定。8controls/双freshgate、新NoRun W0/两目标GREEN/79scope/Clippy/fmt与正常Source-final通过；六额外回归复用77d原件。当前本机App c548已构建并Root唯一启动，GUI由用户手验，main/发布另验。 |
 | SDK | chore/Echoyue/root-workspace-convergence | 83ae59e407313d7130811478a74646865d9e8bd3，clean |
 | 官网 | fix/Echoyue/website-source-sync | 817eaa48ff8c8c6c32dc4ff576d70da0b9e7d2e8，clean；精F a8/CLI20070/SDK83 cut，manifest84d627/322镜像/148来源/8产品页；原完整verify0/W0、61 unit及15 e2e通过/1原平台skip、338路由，task Source-final/Root产物0；本地未部署。 |
 
@@ -175,3 +175,13 @@ CLI原684三production已实际精3bcf/97bf/d819，tests087/锁d542不变，原c
 随后原Clippy自然101，唯一tests087:6012 clippy::replace_box：既有foreign-owner负控把Box整体替换，非生产行为缺陷。Root实读并形成仅`*native = Box::new(EventEnvelope::new(sameargs)?);`→`**native = EventEnvelope::new(sameargs)?;`，新test4f495；字段/Result传播/断言/场景/预算/ID全同、无Box地址比较，经独审C0。Root74650具体授权正常preflight采用，只有实际两读19ec/274、相对77d仅test一行变且其它273不变时，才policy consumer-only→19ec（预演b94）；原8controls/fresh双gate与新NoRun/两个exact+全executor79/Clippy/fmt/source-final仍须真实。原087/77d全部通过和Clippy101都保历史，不弱断言或allow。Root初次派票JS括号解析失败未执行任何工具，已分别保存真实74650并重发，不拿未写票作授权。新test-only源复评不新增依赖、五风险身份或锁，不需再问人类同一d542许可。
 
 F组合当前入口4f94（delivery-r03/source3951 manifest77d2/type92b5/case6f7c）经独立组合审C0：以Provider3950复制，只A三个Rust文件改+新模块，四metadata0/rawbyte同/16manifest31pathowned/锁2140+6df保。两Python原路径/SHA/OWNED不动；Root原Python8实际c4ef可复用，1pureRust、ignoredcase与所有新NoRun/list/program仍null。下一integration新9＋原16必要回归sameprogram distinct25，12内部场景不冒selected/旧16不凑32；Runtime9/Gov20和已过同cut Python8不无故重复。CLI仍唯一heavy，组合未运行，不继承正式19ec或77d风险资格。
+
+## 最新客户端已启动，用户接管GUI（2026-11-03）
+
+用户直接要求“启动最新版 客户端，我将手动验证”。Root依此一次构建并启动当前正式来源测试App，不沿旧K2/K3权限。当前包为 `.echo-semantic/local/latest-formal-arm64-App-20261103-r01/retained/Eclip.app`，main c5488208fd93537fcbb777303a8ba814fd1733243f59613a1160436227a1f396。完整来源F c623 clean＋CLI20070当前9WIP/19ec/b94/d542/publication684/frontend498，R2 candidate未混。19ec全工程通过后漏public-api声明已正常补齐、Source/Final-r02各0且所有源码bytes不变，唯一7b154；新App完整源码与之逐3945项相等。
+
+App最终e8d1：实际Tauri build0（1482.224s）/编译W0E0，原no-sign两Warn和原bundle strict1保原，retained本机adhoc sign0/strict0，arm64/Info/otool通过。149 tauri-mode assets均在实际CLI库dep-info，4593原编译context/FP u64/.d/build-output已T外保全；独立产物review C0I0M0。Root a16cc45实际核75终态index及context/原FP exactdecimal/4bundle，共4675物理refs匹配，不把成品静态资格扩大成GUI/native/main/发布。
+
+Root唯一open自然0，真实PID27441/UID501/libproc精retained exe及二次稳定观察；启动日志含AgentPool initialized for GUI，未见已检查的startup-failed/panic短语，stderr空；只进程及已生成日志核对，无AX/窗口查询/截图/点击。原U为persistent-GUI-owner-66760c3…/isolated-runtime/data与project，启动前后config/MCP SHA当时相同。用户随后截图并询问模型，Root说明普通业务手验使用本人配置的真实LLM API，127.0.0.1的local fixture和“仅呈现”不是真实模型。用户可在GUI正常变更模型/认证/工作空间配置，这些真实用户写入不算Agent引入的source漂移，后台禁止恢复旧配置或要求发聊天中的密钥。
+
+79项清单已更新新包可用、实际与待具名用例的区别，编号及未勾选状态保持；旧c836版从真实HEAD保到Root接受目录，历史219覆盖票不追改。当前编译target暂保warm供手验发现的必要修复，不在本次自动clean；App用户正在使用，launch权限已消费，所有线不得再open/activate/quit/reopen、AX/键鼠/截图/窗口轮询/App业务测试。只继续已授权后台只读与独立源码工作，不用新包替用户完成手工验收。Root AGENTS亦已与CLI既有19ec中文来源条款同步，旧风险与失败记录不改，无未来输入自动续期。

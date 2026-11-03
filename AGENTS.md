@@ -583,3 +583,13 @@ checker要求当前固定五项完整warning集合，4/6/少项/重复/字段/se
 Root acceptance SHA256为 `0970aa37689ed74530cd4daef28130c5a7199fd1308f6ea1629d736d0364c22b`，完整原件及执行时间见原风险决定的本日后继。人类3e3d精确新锁授权保持充分，本双0只签当前锁/consumer/五身份；旧fetch1/空audit、r04新yanked、候选旧policy两gate1和静态PENDING包全保，不追成旧时通过。原五风险并未修复，scanner1不是零warning审计，不扩第六风险、ignore/过滤或未来输入自动续期，不向Framework/SDK继承。
 
 正常Source/Final仅按两doc新bytes复核，globalClosure不宣称已查。当前仍无CLI Rust/NoRun/GUI/提交GO，SDK独占重型窗；后续publication RED→原684→实际后继consumer/fresh gate→GREEN仍须Root明确资源派窗，不改原tests087、预算或执行ID，也不改ADR0057 76d和原生产patch。
+
+## 2026-11-03 CLI publication 真实验证后的19ec精确来源
+
+本条追加原publication流水线及test-only Clippy修复后的当前时态，不改写早先d5/77d资格、真实RED、Clippy101或任何fetch/yanked/旧policy失败。Root55c391先以真实publication RED为前提采用原684三生产文件，原collector实际两读77d/274、仅3输入变化后才机械绑定policy550675并取得新77d双fresh gate0；同原tests087行为GREEN、executor79/79和6原exact回归随后通过。原tests087 Clippy101因replace_box，按首个未知失败要求停报。
+
+Root74650另行具名批准独审C0/I0/M0的原负控Box就地替换，构造器/identity/sequence/parent/payload/Result/断言/预算/场景不变，不加allow或skip；tests当前精SHA为 `4f495651c40e9b0e77ff56b9be28c9c98af74c60bedbc504625cdc13c31a4766`。原collector采用后实际两读恰 `19ecac5f16256d4141540f528ae1e9e3c604a77b7be7d42676d77dd1ffc31cc4`／274，仅tests一输入变化、无增删，policy仅consumer字段后继为 `b94bbfefeffa523df850299db7a32e5a4e9efa13594c214d52694ab58ce53e05`。锁保持人类3e3d精许的 `d542c37ea3d32ca9a8064f0ef473fa3e2fd7175c0576c8e97d4564db09ed39e1`／768包，原五完整风险及其它policy字节保持；这两个consumer后继来自Root具体Source复评，不是锁许可自动续未来来源。
+
+19ec新cut原controls8/8自然0，fresh actual/canonical两gate和caller自然0；两个原scanner自然1、DB263a4d/1402、零漏洞、恰原五完整warning、零yanked、noFetch=false、ignore=[]。新NoRun自然0/W0/E0，features=[]、test opt0/debug0、j2/inc0与原frozen1.99/private RUSTUP保持，新实际程序2f99d595…取得两目标各exact1P和整个executor79P/0F/0I。六额外回归仅明确复用77d的各exact1P原件，不冒充19ec新程序执行。targeted lib/tests/no-default Clippy -Dwarnings及fmt write/check均自然0，格式化源码差量零；当前Source/Final按最终bytes另有回执，globalClosure不宣称已查。
+
+当前仅具备受控合成Model经过原unattended/RunTurn/Driver/sink/shared log/strict FileStore history的Rust消费者资格；GUI/App/native/外部provider/R03/NodeFull/三语/mainCI/发布未重跑。原五风险未修复，scanner1不是零warning审计；不新增风险、ignore/过滤/no-fetch或跨仓继承，不预授其它源码/锁。程序/完整FP/u64/.d/raw先T外保全，reader0后仍等Root准确clean票；本writer不自行清target或stage/commit/push。
