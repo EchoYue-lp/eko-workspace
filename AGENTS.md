@@ -567,3 +567,19 @@ checker要求当前固定五项完整warning集合，4/6/少项/重复/字段/se
 ### 2026-11-01 IM/cron 历史与前台续接呈现的当前精确风险绑定
 
 本后继只记录 Root 已具体审定的源码修复和原合同下的实际绑定，不新增人类风险接受，不改旧 525f 及更早阶段的事实。CLI 原 collector 的 274 输入当前两读 `7441191402e2350ea32fdf72052c0a5f68c3ce0431f326608b37a3988b54bf74`，锁 `399509eeb951c87d407ffd949c60ac4c5b7dcc460a189e078a25f8287f4e2a4f`／768，policy `c1993eb7f64c36e81f18eec7768d08fb0045f16d0e74d11fcbcec5a10a5c0b9c`；机器 policy 仅 consumer 字段改变，原五完整风险身份和人类六项原话／退役后五项严格子集保持。八个既有 Rust 输入的具名增量及两审结论见当前风险决定；新增依赖／feature／GTK／glib 宏或通知 D-Bus 调用面为零。原八项控制实际自然 0，默认 fresh actual-lock 与 canonical-origin 官方 scanner 均自然 1、零漏洞、恰原五项 warning，独立精确 gate／caller 均自然 0，原 raw／FP／来源与失败保留。源码、锁、身份、warning 或 settings 再变仍需具体复核，不新增 ignore 或 no-fetch，不向 Framework／SDK 继承，也不替代 Rust／原生／main CI／完整 Goal 验收。
+
+## 2026-11-03 CLI async-executor 去 yank 的精确新锁授权
+
+人类对 Root 原问题 `call_6ffdc346972249549e7c242af391e0b2`／question0 直接回答“允许采用最小修复（推荐）”，明确同意 async-executor 1.14.0 → 1.14.1 单包修复和原五项风险合同的新锁绑定。Root 精票 SHA256 为 `3e3d76e70001c9bf9d6d5552559cebac2718ee2b5a387bc8c3cbd4c8861ea44f`；本条只覆盖这一具体来源，不更改旧授权/失败事实，不预授未来锁或 consumer。
+
+当前 CLI Cargo.lock SHA256 为 `d542c37ea3d32ca9a8064f0ef473fa3e2fd7175c0576c8e97d4564db09ed39e1`（768包）；仅 async-executor 的 version/checksum 改变，其余767个完整package表不变。原 collector 当前 consumer 实际两读仍为 `d5a9668f203ab76633df87eddb1fa4f111b78c30fb85a3599ec1d2477d71660c`（274输入）。`.cargo/accepted-dependency-risks.json` 仅改 lock_sha256，完整 SHA256 为 `f6a42b3ccf90ada2dc639b9999fc2bc70551c2e4f83cce00c2e87347bdde5950`；原五项完整风险身份、decision路径及其余policy字节不变，不接受第六项/yanked，不增ignore、过滤或no-fetch，不向Framework/SDK继承。
+
+人类批准和正式采用不等于工程门禁通过。本正式切点原controls8/8自然0；fresh actual首轮/一次有界网络复试、fresh canonical均在原RustSec fetch阶段自然1、未输出有效审计JSON，当前fresh双gate0仍缺。候选两scanner的零漏洞/原五warning/零yanked结果、旧exact-policy两gate1、r04新yanked及历史网络失败全部保留，不改称正式新gate0。恢复后仍须原actual/canonical默认fresh扫描与精确gate，scanner自然1和独立gate0分列；任何新风险、身份、来源、settings或输入漂移仍阻断。完整事实与人类来源见原风险决定文档的本日后继。Rust、native、main CI、GUI和发布资格继续独立；本条不授NoRun或绕过资源窗口。
+
+## 2026-11-03 CLI 正式 d542/f6/d5 的 fresh 双 gate 已取得
+
+本条为前段fetch失败的时间后继，不改写旧失败或e804原件。Root在当前正式CLI锁 `d542c37ea3d32ca9a8064f0ef473fa3e2fd7175c0576c8e97d4564db09ed39e1`（768包）、policy `f6a42b3ccf90ada2dc639b9999fc2bc70551c2e4f83cce00c2e87347bdde5950`、原collector consumer `d5a9668f203ab76633df87eddb1fa4f111b78c30fb85a3599ec1d2477d71660c`（274输入）上取得新fresh actual/canonical exact gate和caller各自然0。两个原官方scanner自然1，DB263a4d951a0867d4bddc29dddd6d59427c78f9a7/1402，零漏洞、恰原五完整风险warning、零yanked、noFetch=false、ignore=[]；原URL/设置/预算/代理/工具未改。本线只复用Root同raw/receipt并核验完整身份，未重跑scans或8controls。
+
+Root acceptance SHA256为 `0970aa37689ed74530cd4daef28130c5a7199fd1308f6ea1629d736d0364c22b`，完整原件及执行时间见原风险决定的本日后继。人类3e3d精确新锁授权保持充分，本双0只签当前锁/consumer/五身份；旧fetch1/空audit、r04新yanked、候选旧policy两gate1和静态PENDING包全保，不追成旧时通过。原五风险并未修复，scanner1不是零warning审计，不扩第六风险、ignore/过滤或未来输入自动续期，不向Framework/SDK继承。
+
+正常Source/Final仅按两doc新bytes复核，globalClosure不宣称已查。当前仍无CLI Rust/NoRun/GUI/提交GO，SDK独占重型窗；后续publication RED→原684→实际后继consumer/fresh gate→GREEN仍须Root明确资源派窗，不改原tests087、预算或执行ID，也不改ADR0057 76d和原生产patch。

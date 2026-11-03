@@ -127,3 +127,31 @@ CLI canonical r04已真正fetch/audit取得DB263a4d951a0867d4bddc29dddd6d59427c7
 F W2终态7c9b24与epoch准备051b52已Root全文/物理7975refs复核；旧3949文件独立preserved-source按原SHA/mode/路径集完整可恢复、无Git/cache/target/软硬链接，四program25件及AppCore原profile3914811562547596171真保全。Root f704b3与Runtime确认d03c/preserved-base-provenance后，精授F在active路径epoch02只a680→c435（60226→60222B）两方法名rename，原closure/order/return不变，另3948及2140/6df锁不变。实际manifest adcedfeb（非预测）与新record只epoch02，旧19b81/ab447/6b5d/raw/guard/recovery map不改。warm普通NoRun在途，无Gov20/telemetry资格；后继仍0/W0→list20精名→exact20一次→telemetry NoRun/list-only。try_update本机冻结stdlib稳定标注since1.95.0，与根及AppCore声明MSRV1.95一致，0886是source读回，不冒MSRV实际编译。Runtime五件overlay只继续preserved旧base，source审发现的shutdown缓存首错、release前stop、活Popen持有等问题还在source修复，未运行case。
 
 CLI去yank候选bf78已实际正常update1.14.0→1.14.1/newlockd542，另767完整package tables不变；两完整metadata/normalizationfeatures+edges0差量，13local全部ownedpair；两fresh官方scanner自然1/0漏洞/原五完整warning/no yanked/ignore[]，未改原policy精gate均因新锁human risk reassessment自然1。Root2c5323核3993refs/3945源/official index及cratechecksum，两source独审C0。原消费者d5双读/正式3995/policybd5/原决定仍不变。Root已创建只lock字段的具体policy候选f6a42（未采用），并按CLI AGENTS178“锁/身份/范围变化必须重新裁决”和checker64实际阻断向用户异步询问本次精d542绑定；未收到回答，不能视为批准，也不能把修复候选scanner当原精gate0。其它R2/SDK独立工作不因此停。
+
+## 人类精确批准 d542 与 Gov20 实际通过
+
+人类直接回答Root异步call_6ffdc346972249549e7c242af391e0b2：“允许采用最小修复（推荐）”。Root3e3d76保存原question/answer/本次范围，已精派sole采用仅async-executor1.14.0→1.14.1/newlockd542与policy唯一lock字段3995→d542/fullf6a42；原d5两读/五完整身份/其它policy及checker字节不变。Root实际读取正式d542/f6a42确认；原8controls已通过，fresh actual首轮因fetch失败1无有效audit保原，sole仅新prefix同配置有界复试，正式两gate0尚未闭合。原c53静态包及此前“pending”材料保持历史，不再据旧摘要请求同一锁批准；本次许可不续后来的lock/source/consumer、不授Rust编译或GUI。
+
+R2 epoch02普通cfg已0/W0/E0，原NoRun raw与newprogram66e53f/6件FP+.d实际保全；actual-list20精匹配后20 exact各一次全1p/0f/0i/W0/自然0。Root ac6b44逐读116物理件/caller精args/完整raw/时序/guard接受。辅助gov20 state经JS镜像的profile为3914811562547596300，Root指出精度丢失并保原state；权威原FP及program证明仍精3914811562547596171，新增delta说明不改raw/FP、不重编或重跑20。telemetry第二cfg仍自然编译中，仅0/W0/list后才有该cfg资格，不初始化真实logger/app.log/exporter。整体R2/case/GUI和新锁风险仍各自单列。
+
+## 两 cfg 收口／SDK 实际启动／双 AGENTS 同步
+
+R2最终唯一46019：plain+telemetry原NoRun各自然0/W0/E0，plain66e53f/list20/20exact各一次全P；telemetryd6ff15/features[telemetry]/list同20、0run。Root3e149核181refs/6程序37件保全/两原NoRun compilerJSON/list集合，独审C0；既有ac6b对plain116refs/各原raw/时序仍权威。原u64 decimal/JSstate精度delta保原，旧W2/旧F25/newGov20分epoch，不冒完整45矩阵。T保为后继case warm候选，F只保全/不新Cargo或clean。
+
+SDK fullc623/65ae准备及old340官方clean已齐，Root fresh UTC02:35:38 noRust、memory1/free59%/37.20GB后授唯一重型j1 nice10的ae2d packet。SDK独立controller实际PID74333/Cargo74614/session91755于UTC02:37:53启动（历史启动身份，不代当前liveness），句柄G/controlled-green-execution-r01/actual-handle.json；4161完整源/13path/Protocol0/new65ae/test14b/tool/旧8076保全守卫0，新T由Cargo创建。仅新NoRun0/W0→真libtest/原FP/profile/features绑定→actual-list原selector1→同program exact一次，失败首因停报，无新formal pin/风险/其它矩阵/GUI；原9c loss继续5261限界。
+
+CLI正式e804交件已Root5e9f41实际读4003refs/3945完整源、亲用原collector两读d5/274；policy只lock字段f6a42/768包原767不变，原8controls/task Source-final0/globalClosure未查。三次fresh gate均原fetch1无有效audit，既有人类允许不冒gate0。顶层AGENTS已正式追加sole交出的精中文片段，与CLI AGENTS正文逐字相同（标题显式CLI），新Root AGENTS327b966d/同步f552b6；保旧历史/未来不续期/本次门禁未闭合。此治理同步发生在R2最终observation之后，已通知相关lane记录真实跨线时态，未改SDK/F/候选源码。Root正在用新独占prefix对原exact环境/原URL做一次独立actual网络复试，无配置/代理/预算/ignore/no-fetch改动，结果另存不覆盖旧失败。
+
+## 正式风险门禁已闭合，后继 native 测试源码仍待修
+
+Root在新独占目录原URL/设置/工具/timeout/proxy/ignore/noFetch不改，真实d542 actual于UTC02:44:27.941→32.160自然caller/gate0、canonical于02:45:09.973→14.220同0；两scanner仍自然1，DB263a4d/1402/0漏洞/原五完整风险身份精相等/no yanked/ignore[]。Root0970逐份原JSON/settings/URL及后置原collector两读d5/274核过，正式d542/f6不变。CLI直接复用同raw/receipt、不重跑scan/8controls，只新两doc时态后继Source-final0（b42ed/globalClosure未查），Root1dc249实际核3974refs/3945源并同步顶层新段：Root AGENTS当前400249ba，CLI AGENTS42171292；此前初次sync的Root尾部多空行diff-check2已仅格式修成f18cd并留6b634delta，旧327b/失败及raw不改。原e804/原fetch1/空audit/r04 yanked/候选gate1全为其历史输入，不追标0。publication最小后继823ad已Root完整读，d542/f6/d5/087/76d/c623/原684不变；未来actual77d+policy550675只是条件预测，必须原两实际读和后继fresh gate，且CLI实际编译还等SDK唯一重型窗释放。
+
+Runtime A overlay c259（cut6611）六份owned代码已静态/rustfmt并经作者两reviewer C0，Root已核18物理refs后追加自己独立Rust/Python审：Rust发现原Registry未绑定ApplicationLifecycleRetention会在原driver store准入前必失败；Python核快速consumer exit可能绕过H前canonical消费回证、controls异常活holder持有等反例。仍待最终精finding，不把作者C0/AST/fmt当可运行，不改冻结r04，不组合/Cargo/HTTP/Popen。原第5/6test seam均仅Root具名授权cfg(test)，case子工具作用和GUI/B gap保持Unknown/OPEN。
+
+Provider新生产wire补充817/a2ae/98af原九methods/12内部scenarios只source/static，Root独审block C0/I1/M0：OpenAI pre-cancel原producer先给request-cancel，测试却统一断言stream-cancel会假RED并截断post。原生产错误/旧票不改，已精派新r02按协议×phase producer断言，0Cargo/serve/HTTP/运行；其余真实client/probe不补scope/socket/join源码未发现独立问题，仍无实际wire资格。
+
+## Root 两路源码审查最终结论
+
+A overlay r04（c259/6611）最终Rust C0/I2/M0、Python C0/I2/M0，Root c9764f记录四条真实source反例及新独占r02/r05修复GO：原lifecycle root未绑定、旧/cold cleanup盖掉原work首因、consumer快速退出绕过H前精消费事实、controls finally异常丢活holder句柄。修复仅现6文件职责，新旧目录分开，原r01所有byte/ref不改；复用原resource_scope_for_test/bind生命周期，无新owner机制。新pure control只定义不执行；0Cargo/HTTP/Popen/GUI/预算。作者两旧C0不是本cut已合格，仍等Root自身两reviewer定向复审后组合。
+
+Provider oracle新r02 e7bf（delta0d94/fullpatchb783/manifest69ab）仅test helper protocol×pre/post六格精断言，typed/fulltext/send0/无连接/postNone/drop/nofinish/9methods12scenarios/预算均不弱；Root原reviewer定向pass C0，原I1闭合，Root28refs已核7457。F已获准备-only下一独占source副本/完整epoch02恢复＋Provider2test文件patch；如需16manifest/31path机械重定位只改真实owned根，normal lockedoffline metadata不改2140/6df、包/features/graph正规化0差，不能借active/formal类型；无新compile/HTTP/风险接受/Runtime6件组合。
