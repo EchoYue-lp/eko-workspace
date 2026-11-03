@@ -863,5 +863,95 @@
     "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/manual-findings-20261103-r01/website-candidate-Root-readback.json",
     "sha256": "792152dad655b2ff552d2ade5298bee5e98327900be8a6ea3dd67d9081a3c236",
     "bytes": 619
+  },
+  "Framework_implicit_temperature_official_clean": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent/.echo-semantic/local/framework-implicit-temperature-removal-20261103-r01/official-clean-result-r01.json",
+    "sha256": "a6f7c3599115bc0aa4cbb05b54e10e53552c0ecdd2e93df108cfb41430d0f424",
+    "bytes": 7348
+  },
+  "Framework_implicit_temperature_clean_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/framework-implicit-temperature-Root-acceptance-20261103-r01/official-clean-Root-accepted.json",
+    "sha256": "6a86edcb79fdd57378ac4b7f9564023c6a6ed3dc512397219e38ed9f7f73afdb",
+    "bytes": 426
+  },
+  "Workspace_registry_actual_RED_GREEN_r03": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/workspace-default-and-ssh-reconnect-20261103-r01/registry-real-crate-packet-r01/actual-r03/registry-real-RED-GREEN-delivery.json",
+    "sha256": "f9eb97bd7acdce8c59a754e0472b03f0109f749f1b8fc43df790aac05771a307",
+    "bytes": 19352
+  },
+  "Workspace_registry_actual_RED_GREEN_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/workspace-registry-real-backend-resource-20261103-r01/actual-Registry-RED-GREEN-Root-accepted.json",
+    "sha256": "71619a816b45274cf204e0dda32211b80169cb49bd4c3709be99b9aab1ad9136",
+    "bytes": 1160
+  },
+  "Workspace_registry_Clippy_and_MD_only_successor": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/workspace-default-and-ssh-reconnect-20261103-r01/registry-real-crate-packet-r01/actual-r03/targeted-clippy-r01/Clippy-and-ADR0055-only-successor-delivery.json",
+    "sha256": "a29405abd17d3e58e6908d386de803c2ef842b50d88a779d208519dc3a099fe1",
+    "bytes": 7269
+  },
+  "EKO_temperature_original_first_fixture_failure": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/eko-temperature-tests-continuation-20261103-r01/actual-GREEN-reuse-tests-r01/首项真实loopback前dialect失败与原件交付入口.json",
+    "sha256": "9cc6f2ffd40e7aa0a1fd4be3d3926d66a858e441a707ded8fe5a0ac15d63d597",
+    "bytes": 10259
+  },
+  "EKO_temperature_remaining8_diagnostic_original82ae": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/eko-temperature-tests-continuation-20261103-r01/remaining-eight-fixture-diagnostics-r01/剩余8项独立诊断8P与未扩候选交付入口.json",
+    "sha256": "672b124d9e8e0b19f67237d58940266c252fd937016efba77df28f038c94bb27",
+    "bytes": 34934
+  },
+  "EKO_temperature_test_fixture_exact_candidate": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/eko-temperature-fixture-admitted-model-candidate-20261103-r01/可审最小fixture修复候选交付入口.json",
+    "sha256": "57d6a326750ff8071963cc5966f7095029779813faf9b15b28d4f5d62315cf2d",
+    "bytes": 4571
+  },
+  "EKO_temperature_test_fixture_Root_source_review": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/temperature-fixture-test-only-source-review-20261103-r01/exact-fixture-adoption-and-conditional-42a1-binding-GO.json",
+    "sha256": "2482bbe3450a6783350859e96fe38287e56dead6e5802a7d57dbc3342b758acb",
+    "bytes": 3642
+  },
+  "EKO_temperature_42a1_actual_formal_adoption": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/eko-temperature-fixture-42a1-formal-adoption-20261103-r01/实际6e采用与42a1-2028精绑定最小交付入口.json",
+    "sha256": "4eb81a929ce1324be094a39ef744a4069dd2b45e603aa492a8705415660dcbf2",
+    "bytes": 7541
+  },
+  "EKO_temperature_42a1_actual_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/temperature-fixture-test-only-source-review-20261103-r01/actual-formal42a1-after-adoption-Root-readback.json",
+    "sha256": "a3f764075e1a5024c19fd8c278e7ea5f69198c3f9a15e5e39628b81f4f33df94",
+    "bytes": 949
+  },
+  "Workspace_r04_old3945_source_archived": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/workspace-default-and-ssh-reconnect-20261103-r01/registry-real-crate-packet-r01/actual-r04/old-source-archive-entry.json",
+    "sha256": "9c8de3a2b4a59394433f643452ff1a518c9b1dd137d7af39788671c42217cb20",
+    "bytes": 7144
+  },
+  "Workspace_r04_source_activated": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/workspace-default-and-ssh-reconnect-20261103-r01/registry-real-crate-packet-r01/actual-r04/source-activation-and-admission.json",
+    "sha256": "f57e64a23abc8c9bd8701a07c1a2b1977ec44d53029ec3aadc4f8052a1a73eee",
+    "bytes": 4185
+  },
+  "Workspace_r04_resource_stop_original": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/workspace-default-and-ssh-reconnect-20261103-r01/registry-real-crate-packet-r01/actual-r04/fresh-resource-after-actual-adoption-r02.json",
+    "sha256": "613bc23684568d97b07f785d524f1fb6c8cc0e6a64604786f82717cf70f02d13",
+    "bytes": 983
+  },
+  "Workspace_r04_archive_and_runtime_GO": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/temperature-fixture-test-only-source-review-20261103-r01/owned-old-source-archive-and-r04-runtime-GO.json",
+    "sha256": "a3ee9b23d867fb1ed9f91c34b52827c2c51451c356561dc9ff496a1a5e5250ca",
+    "bytes": 3840
+  },
+  "Workspace_r04_adaptive_resource_successor_GO": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/temperature-fixture-test-only-source-review-20261103-r01/r04-adaptive-resource-only-successor-GO-r02.json",
+    "sha256": "192799a0c9a0f1a82890ee3e63fce7c75c4709f3866140c0eac3d90cac46cb24",
+    "bytes": 1836
+  },
+  "repair_App_warm_manual_launch_continuation_prepared": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/repair-App-warm-continuation-20261103-r01/entry.json",
+    "sha256": "5e24739a3e853db74e974a0b42ec41a0dfd048f9252977c49d010f2b56915900",
+    "bytes": 6438
+  },
+  "Workspace_r04_actual_NoRun_started_jobs1": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/workspace-default-and-ssh-reconnect-20261103-r01/registry-real-crate-packet-r01/actual-r04/NoRun.started.json",
+    "sha256": "b825c566df27fd99b31c54399fe4a0374af83ba3887e5c9941538c18172c4be2",
+    "bytes": 3812
   }
 }

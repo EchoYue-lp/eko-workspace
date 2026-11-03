@@ -6,7 +6,7 @@
 
 本轮供真人手验的最新客户端已构建并启动：2026-11-03 本机 arm64 Eclip 1.0.0，包标识 `c5488208`，来源为 Framework c623＋CLI20070当前19ec／b94／d542及已审publication修复、当前前端498文件。原两目标及executor79、Clippy/fmt、精风险双gate和正常Source/Final均通过；本次App构建自然0／RustW0E0、retained本机ad-hoc strict0，149前端assets与实际dep-info绑定，4593编译材料已保。Root唯一open自然0／精新PID27441及启动AgentPool日志已核；用户正手动验证GUI、配置真实LLM，后台不得再抢屏或自动退出重开。当前运行包与原d41历史分列，GUI/native业务/发布资格不由构建或open推导。
 
-11月3日手验新增四项：用户要求 EKO 取消 `temperature`；真实 API 返回403的规则原因仍未知；已有SSH工作空间在新进程中缺少连接；新建本地目录未选父文件夹应使用默认位置。前三类源码修复已分别冻结、独立审阅：Framework九处自动helper缺省改为None，11项定向测试和正常task Source/Final通过，保留框架显式参数API；EKO温度表单/配置退役与工作空间默认位置、原认证弹窗重连已取得40项及90项前端通过。Registry真实临时目录RED/GREEN和EKO请求回环仍在验证，不能把源码或前端通过写成后端/SSH/真实API恢复。当前联合consumer66a502、原锁d542及原五风险身份不变；fresh风险门禁遇RustSec fetch失败，原1/空audit保留，不借旧19ec门禁冒当前通过。运行中的c548尚不包含这些新修复，待合格修复包后由用户切换，Agent不操作GUI。
+11月3日手验新增四项：用户要求 EKO 取消 `temperature`；真实 API 返回403的规则原因仍未知；已有SSH工作空间在新进程中缺少连接；新建本地目录未选父文件夹应使用默认位置。源码修复均已独审：Framework九处helper缺省None、11项定向测试及正常task Source/Final通过，显式框架API保留；EKO温度退役与默认位置/原SSH认证弹窗恢复取得40项及90项前端通过。Registry现已真实复现原empty-parent失败，修复版两个临时目录用例各1P，原cut Clippy/NoRun均0/W0。EKO回环首项因夹具模型名未准入而101、未HTTP；另外8项独立诊断均0，不能冒9项GREEN。精测试修复仅三处模型名与首因传播顺序，经独审和Root复评后采用，当前实际collector两读42a1/274、仅此一输入相对66变化，policy仅consumer后继2028，原d542/768包及五风险不动；新cut重新NoRun/11项及Clippy继续。旧66的RustSec TCP fetch失败1保原，42新fresh尚未运行，不继承旧19ec门禁。运行c548未含新修复；一次本地手验候选包接续已准备，等新cut真实通过及最终源冻结后后台构建，由用户手动切换，不作发布资格。
 
 ## 本轮实际已闭合的阶段
 

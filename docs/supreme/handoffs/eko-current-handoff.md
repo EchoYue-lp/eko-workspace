@@ -22,7 +22,7 @@
 | --- | --- | --- |
 | 顶层 | chore/Echoyue/workspace-maintenance | 新Root接管已存52b40c8；四个未推送子仓gitlink差异不晋升，index空；当前进展文档独立保存。 |
 | Framework | chore/Echoyue/root-workspace-convergence | 91797fed1462ad9668956ddcf038998bc8353a84，clean未push；parent c623的Driver/微信70方法资格保留。新增13路径取消helper隐式温度，共11项定向通过，Clippy/fmt及当前task Source/Final0，独审与Root6017引用核验通过；通用显式API保留。旧缺TAG缓存已按真人精许可删除，不作其它target清理许可。完整27/main另验。 |
-| EKO | chore/Echoyue/root-workspace-convergence | 20070d3f7171a95926bdd5c8153f5f382767fea2＋当前47路径WIP；原publication684/tests4f495/19ec/b94/d542资格保原。新增温度28路径与默认目录/SSH10路径已独审，前端40P及90P；新consumer66a502/policy93fc保持d542原五风险，fresh fetch失败保1，联合Source/Final与真实app-core回环待验。Workspace唯一j1编译。当前运行c548不含这些新修复，GUI由用户手验。 |
+| EKO | chore/Echoyue/root-workspace-convergence | 20070d3f7171a95926bdd5c8153f5f382767fea2＋当前47路径WIP；原publication/19ec资格保原。温度28及默认目录/SSH10独审通过，前端40P/90P，真实Registry2 GREEN及原cut Clippy0。回环首项夹具未准入101保原，另8独立诊断0；test-only6e677已具名采用，实际collector两读42a1/274、policy2028保持d542/768/原五风险。新cut11项/Clippy与联合Source/Final待验；42fresh尚未run，旧66fetch1不追签。Workspace r04已授同T j2续接，原3945源已完整归档。当前运行c548不含修复，后续只本地手验候选。 |
 | SDK | chore/Echoyue/root-workspace-convergence | 83ae59e407313d7130811478a74646865d9e8bd3，clean |
 | 官网 | fix/Echoyue/website-source-sync | 817eaa48ff8c8c6c32dc4ff576d70da0b9e7d2e8，clean；精F a8/CLI20070/SDK83 cut原完整verify0/W0、61 unit及15 e2e通过/1原平台skip、338路由，task Source-final/Root产物0；本地未部署。F917与当前EKO温度/默认目录/SSH四文件文档候选已准备并定向检查通过，尚未正式应用或取得新来源同步资格。 |
 
@@ -197,3 +197,15 @@ CLI sole的温度产品退役28路径已冻结和独审通过，前端4文件40P
 Root对原官方274输入两读并逐源复评：相对运行包19ec，仅15个已有Rust/build输入变化，259不变、增删零；新consumer66a502、policy93fc、用户已批d542锁768包及原五完整风险不变。原controls8/8通过；当前fresh风险门禁三次遇同原URL的RustSec fetch失败1、无有效audit，保原始输出与自然退出，不借旧门禁、不改URL/proxy/timeout/no-fetch/ignore，不新增风险授权请求。真实App-core验证只在专属源副本进行，不冒正式风险门禁通过。
 
 当前唯一重型窗交Workspace，以r03票85a60、自有3945完整源副本/1758 Rust与manifest输入及精Registry RED/GREEN绑定，j1/nice10/debug0/inc0验证两个真实文件系统selector。warning2仅在实际free≥30%、无其它compiler时允许；critical或free<20%停止新的后续阶段，已启动程序保自然终态。后续可复用同源GREEN程序核EKO共享连接/doctor回环及配置热换，不平行重复冷编译。当前Registry与EKO实际回环尚未取得结果，当前运行c548未换包；修复包构建/新一次启动/GUI与真实SSH验收分别记录，禁止Agent抢屏。
+
+### Registry 实证与测试夹具后继切点
+
+原Registry NoRun0/W0/E0后，behavior exact1F/101（os error2）、control exact1P/0；修复GREEN NoRun0/W0/E0，两个selector各先list1再实际1P/0F/0I、0。新程序82ae248b、499194640B/0755，test opt0/debug0/features[]，原FP精u64和.d完整T外保留；Root逐5026个RED/GREEN成员与3945源核实，接受71619。其后原cut targeted Clippy实际0/W0/E0，Source guard/reader0；Workspace只把ADR0055验证尾段671630→bfddbd更新事实，未改其它Rust/TS。F917自有helper target也已官方clean0，原文Removed4623files/1.2GiB、T已absent，Root核81引用与9程序54成员不变，接受6a86；没有手删或碰App warm target。
+
+Root1701激活后，CLI真实首项loopback list1/run101，首因是测试夹具 `deepseek-v4-flash` 没有既有DeepSeek Responses dialect，尚未HTTP。原1701首失败及余8未跑原件不改；Root另授独立诊断号后，其余8各list1/实际1P/0F/0I/0。修复候选57d6/patch7d4d/after6e677只把三处模型名改为已有准入 `deepseek-flash`，并在完整5秒server await后先处理原client/doctor首因，再传播fixture错误；15/15/5预算、断言数量、生产与准入规则不动。独立复核C0/I0/M0，Root用官方collector对正式两读66、真实274文件候选副本两读42a1，确认仅infra/tests一输入变、其余273同。具名Source票2482后，当前实际formal已6e677、官方两读42a1/274、consumer-only policy2028，Root亲读a3f764；原d542/768包与完整五风险不变。旧66的三次fetch1保历史，42fresh尚未run，不自动继承或冒当前风险0。
+
+Root授r04票a3ee9b：Workspace先将旧3945/63705246B完整源码外置old-source-archive，双SHA/bytes/mode无漂移、软硬链0，入口9c8d，保原cwd到archive映射和941/82ae/FP/.d/Clippy原件。仅归档后，才允许owned working source更新infra/tests6e677、ADR55bfdd、policy2028这三文件；其余3942及Registry108431、F917不动。实际formal采用条件已满足；fresh memory1/freeRAM≥40%/disk≥8GiB/no-other-compiler下，同自有T仅本新cut j2/nice10/opt0-debug0/inc0/private1.99 NoRun，随后同一新程序Registry2＋EKO9及targeted Clippy。旧j1事实不改，不弱预算，不把82ae诊断8P冒新9P；完成后CLI sole用最终38字节正常Source/Final。
+
+r04源已实际激活f57e，CLI采用票4eb81和原8 controls全部0。两次fresh pressure2/free40%与38%不符原j2门禁，613bc明确只是准入停点、无Cargo/PID。Root随后仅具名调整资源条款192799：无其它compiler/disk≥8GiB时，pressure1/free≥40%可j2；否则pressure1或2/free≥30%可j1，沿原r03已经真实成功的单作业窗口。Root实际观察为pressure2/free33%，不冒normal1；critical或free<20%只阻后续新阶段、保在途自然终态，不杀用户进程。源、断言、profile、15/15/5预算和原件不变。Workspace其后fresh pressure2/free37%，真实以jobs1启动Cargo98983/observer98978，NoRun.started.json及流式stdout/stderr在actual-r04，guard确认新3945/正式1758一致；这是启动身份，尚无终态或新11项结果。
+
+本地手验候选包的接续与手动启动入口已准备，当前入口5e247；旧c548 retained四成员、4593编译原件及warm target独立保真，resume/工具/argv已审。后续Root必须给新程序2+9实际结果、最终完整源清单和唯一重型窗；旧cf690源清单只保历史，不能冒当前最终源。fresh风险未过单列，不授commit/merge/main/发布或启动。manual launcher仅未来由用户手动触发，核新包SHA/fullmanifest/strict签名；已有Eclip则提示正常退出并停止，日志每次唯一attempt，最终成品后才生成可双击“启动修复版.command”。原data/project/config/MCP只保路径参数，不读、输出、hash或恢复用户已改配置。当前尚无新App build/sign/open/GUI操作。
