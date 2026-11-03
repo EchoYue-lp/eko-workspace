@@ -516,8 +516,8 @@
   },
   "GUI_manual_checklist_current79": {
     "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/docs/supreme/acceptance/eko-eclip-gui-manual-checklist-2026-11-02.md",
-    "sha256": "750964c4f87537d50a4d8c76b4232fae29b70b926bf510891f873aef313867fe",
-    "bytes": 24288
+    "sha256": "55923c00540386b9d6829b89aef952837da99b6faf78031cfad6d52731e20df2",
+    "bytes": 25293
   },
   "GUI_manual79_coverage_Root_closure": {
     "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/gui-manual79-coverage-root-closure-r01/acceptance.json",
@@ -803,5 +803,65 @@
     "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/latest-App-final-build-Root-acceptance-20261103-r01/root-CLI-19ec-governance-sync.json",
     "sha256": "01825233c32ffd145c3b624fd7d5889b0ab6ca55e48d260fc20cb760367e571d",
     "bytes": 940
+  },
+  "GUI_manual_checklist_before_findings": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/manual-findings-20261103-r01/manual-checklist-before-findings.md",
+    "sha256": "750964c4f87537d50a4d8c76b4232fae29b70b926bf510891f873aef313867fe",
+    "bytes": 24288
+  },
+  "manual_findings_four_current": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/manual-findings-20261103-r01/findings-and-accepted-behaviors.json",
+    "sha256": "365ad5706628ecb5ef5a2996299185e6ba16d3039b31ee56820600ac1635f359",
+    "bytes": 3588
+  },
+  "manual_checklist_current_findings_delta": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/manual-findings-20261103-r01/manual-checklist-current-findings-delta.json",
+    "sha256": "32f3c4d632d3d07c190f3b867b81b787382940a1ffc024d604828048e0cee127",
+    "bytes": 880
+  },
+  "Framework_implicit_temperature_current_delivery": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent/.echo-semantic/local/framework-implicit-temperature-removal-20261103-r01/delivery-final-r01.json",
+    "sha256": "98bbaed1188a40d831714bf31bd45549410b66d58c7d289f4f14bb7851e862bf",
+    "bytes": 145935
+  },
+  "Framework_implicit_temperature_Root_acceptance": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/framework-implicit-temperature-Root-acceptance-20261103-r01/acceptance.json",
+    "sha256": "7a141a3bbfb2b27f81c4dbe955b039d40192f1d4e96e489cc32d48fa1361b04d",
+    "bytes": 1188
+  },
+  "EKO_temperature_source_frontend_current": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/eko-remove-temperature-20261103-r01/temperature28最小Source复评入口-r02.json",
+    "sha256": "bdd53639ae1a7dfe9bd297e97fc69ea801f4a93422372a203d0ce5bac233d9f4",
+    "bytes": 16861
+  },
+  "Workspace_default_SSH_source_frontend_current": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/workspace-default-and-ssh-reconnect-20261103-r01/r02-reviewed-delivery.json",
+    "sha256": "7772f2fa997c4399a3d2d4a93c501a6d67e8282ec2d0cf8aeb8803c0991b1cc8",
+    "bytes": 9132
+  },
+  "CLI_combined_66_source_risk_review": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/temperature-workspace-combined-source-risk-review-20261103-r01/source-risk-review-and-proposal.json",
+    "sha256": "c0cb0ae5052206fad07aad84f82088628076b197f9df36a4ee5cb1bd60b61b13",
+    "bytes": 5729
+  },
+  "Workspace_Registry_real_backend_r03_GO": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/workspace-registry-real-backend-resource-20261103-r01/source-readback-and-bounded-validation-go-r03.json",
+    "sha256": "85a60a421bea4850c13eb9879adefecd5023333eda829741c1cba27d014be420",
+    "bytes": 3971
+  },
+  "CLI_66_fresh_actual_network_failure_r02": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-66a502-fresh-network-actual-r02/caller.json",
+    "sha256": "4dfd832b7a027b6d732bea3b7bcc3a1ca78274d3f37482a2413f5d4929a26927",
+    "bytes": 702
+  },
+  "Framework_implicit_temperature_local_commit": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/framework-implicit-temperature-Root-acceptance-20261103-r01/local-commit-receipt.json",
+    "sha256": "65e32f47e0f9f185fab370495c48da05a33cbeded8e2772d8fea224e5f5b2b0e",
+    "bytes": 507
+  },
+  "Website_manual_repair_four_doc_candidate_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/manual-findings-20261103-r01/website-candidate-Root-readback.json",
+    "sha256": "792152dad655b2ff552d2ade5298bee5e98327900be8a6ea3dd67d9081a3c236",
+    "bytes": 619
   }
 }

@@ -21,10 +21,10 @@
 | 仓库 | 分支 | HEAD／状态 |
 | --- | --- | --- |
 | 顶层 | chore/Echoyue/workspace-maintenance | 新Root接管已存52b40c8；四个未推送子仓gitlink差异不晋升，index空；当前进展文档独立保存。 |
-| Framework | chore/Echoyue/root-workspace-convergence | c62397061bbe7c22ed169d7277c3ed07c054df4d，clean；原a8后八路径本地fix。Driver55＋Weixin6/6/3共70方法真实通过，3定向Clippy/fmt/当前task Source-Final/独审/Root staged0；原官方clean缺工具环境1、缺TAG101保原，真人仅授权该T手删后已absent（8901248），非official clean0。源和Git状态冻给CLI回归；完整27/main另验。 |
-| EKO | chore/Echoyue/root-workspace-convergence | 20070d3f7171a95926bdd5c8153f5f382767fea2＋当前9路径WIP；publication684三生产、tests4f495/consumer19ec/policyb94/锁d542已精绑定。8controls/双freshgate、新NoRun W0/两目标GREEN/79scope/Clippy/fmt与正常Source-final通过；六额外回归复用77d原件。当前本机App c548已构建并Root唯一启动，GUI由用户手验，main/发布另验。 |
+| Framework | chore/Echoyue/root-workspace-convergence | 91797fed1462ad9668956ddcf038998bc8353a84，clean未push；parent c623的Driver/微信70方法资格保留。新增13路径取消helper隐式温度，共11项定向通过，Clippy/fmt及当前task Source/Final0，独审与Root6017引用核验通过；通用显式API保留。旧缺TAG缓存已按真人精许可删除，不作其它target清理许可。完整27/main另验。 |
+| EKO | chore/Echoyue/root-workspace-convergence | 20070d3f7171a95926bdd5c8153f5f382767fea2＋当前47路径WIP；原publication684/tests4f495/19ec/b94/d542资格保原。新增温度28路径与默认目录/SSH10路径已独审，前端40P及90P；新consumer66a502/policy93fc保持d542原五风险，fresh fetch失败保1，联合Source/Final与真实app-core回环待验。Workspace唯一j1编译。当前运行c548不含这些新修复，GUI由用户手验。 |
 | SDK | chore/Echoyue/root-workspace-convergence | 83ae59e407313d7130811478a74646865d9e8bd3，clean |
-| 官网 | fix/Echoyue/website-source-sync | 817eaa48ff8c8c6c32dc4ff576d70da0b9e7d2e8，clean；精F a8/CLI20070/SDK83 cut，manifest84d627/322镜像/148来源/8产品页；原完整verify0/W0、61 unit及15 e2e通过/1原平台skip、338路由，task Source-final/Root产物0；本地未部署。 |
+| 官网 | fix/Echoyue/website-source-sync | 817eaa48ff8c8c6c32dc4ff576d70da0b9e7d2e8，clean；精F a8/CLI20070/SDK83 cut原完整verify0/W0、61 unit及15 e2e通过/1原平台skip、338路由，task Source-final/Root产物0；本地未部署。F917与当前EKO温度/默认目录/SSH四文件文档候选已准备并定向检查通过，尚未正式应用或取得新来源同步资格。 |
 
 官方main已由新Root在本轮用git ls-remote重核：Framework f5688958960b985da4141212824abe7c74884f7c（PR201／既有七CI绿）；SDK747be937226ce379d0abc04e0f3ba52029da5ed1（PR15／既有九CI绿）。本地formal源码HEAD不是remote main，两种资格不能混用；顶层四gitlink尚不晋升。
 
@@ -185,3 +185,15 @@ App最终e8d1：实际Tauri build0（1482.224s）/编译W0E0，原no-sign两Warn
 Root唯一open自然0，真实PID27441/UID501/libproc精retained exe及二次稳定观察；启动日志含AgentPool initialized for GUI，未见已检查的startup-failed/panic短语，stderr空；只进程及已生成日志核对，无AX/窗口查询/截图/点击。原U为persistent-GUI-owner-66760c3…/isolated-runtime/data与project，启动前后config/MCP SHA当时相同。用户随后截图并询问模型，Root说明普通业务手验使用本人配置的真实LLM API，127.0.0.1的local fixture和“仅呈现”不是真实模型。用户可在GUI正常变更模型/认证/工作空间配置，这些真实用户写入不算Agent引入的source漂移，后台禁止恢复旧配置或要求发聊天中的密钥。
 
 79项清单已更新新包可用、实际与待具名用例的区别，编号及未勾选状态保持；旧c836版从真实HEAD保到Root接受目录，历史219覆盖票不追改。当前编译target暂保warm供手验发现的必要修复，不在本次自动clean；App用户正在使用，launch权限已消费，所有线不得再open/activate/quit/reopen、AX/键鼠/截图/窗口轮询/App业务测试。只继续已授权后台只读与独立源码工作，不用新包替用户完成手工验收。Root AGENTS亦已与CLI既有19ec中文来源条款同步，旧风险与失败记录不改，无未来输入自动续期。
+
+## 手验新增修复：温度、默认目录与 SSH 重新进入（2026-11-03）
+
+用户明确要求直接取消 EKO 的 `temperature` 参数，并要求新建本地文件夹在未选父目录时使用默认地址；截图另证已有SSH工作空间重新进入时报连接未准备。四项原始发现与用户提供截图已归档在 Root local/manual-findings-20261103-r01。原403错误是远端返回的 `abuse_rule_rejected`，原请求没有抓包；只按实际运行c548的冻结源码还原连接探针，未读取或输出密钥、未替用户调用真实API。“不支持当前工具”不证明请求包含function tools，亦不证明取消温度即可修复403。
+
+F sole完成九个自动helper不再注入采样值，保留通用框架显式temperature API和原provider拒绝合同。真实原实现9项RED、1控制通过，修复后10项通过，夹具保首因修正后受影响4项通过（共11个不同用例）；四crate Clippy及fmt均0/W0。最初NoRun E0507及Source/Final的41项owner边界失败保留，使用官方record补充真实已有Map引用后当前task Source/Final均自然0，无工具/schema/ignore/Map正文修改。当前13路径delivery98bba、2857源package788b和54程序成员已由Root逐6017物理引用核对，Root接受7a141，并仅本地提交91797fed（parent c623，13路径、formal clean、无push/merge）；其资格仅当前task与focused工程，不冒真实API、App、SDK、main或完整Goal。
+
+CLI sole的温度产品退役28路径已冻结和独审通过，前端4文件40P；Workspace sole的默认目录及SSH恢复10路径r02冻结，前端5文件90P、类型/lint/格式0，独审C0/I0/M0。默认无父目录且目录名称留空复用原Registry默认构造；任何非空显式名称原样走NewLocal，空parent由同一Registry base_dir解析，保独占创建、冲突与回滚。SSH恢复复用原认证/目录验证及generation检查，不缓存密码、不新建连接权威。38路径联合普通preflight已0，CLI sole维护正常Source/Final，不由Workspace另写record。
+
+Root对原官方274输入两读并逐源复评：相对运行包19ec，仅15个已有Rust/build输入变化，259不变、增删零；新consumer66a502、policy93fc、用户已批d542锁768包及原五完整风险不变。原controls8/8通过；当前fresh风险门禁三次遇同原URL的RustSec fetch失败1、无有效audit，保原始输出与自然退出，不借旧门禁、不改URL/proxy/timeout/no-fetch/ignore，不新增风险授权请求。真实App-core验证只在专属源副本进行，不冒正式风险门禁通过。
+
+当前唯一重型窗交Workspace，以r03票85a60、自有3945完整源副本/1758 Rust与manifest输入及精Registry RED/GREEN绑定，j1/nice10/debug0/inc0验证两个真实文件系统selector。warning2仅在实际free≥30%、无其它compiler时允许；critical或free<20%停止新的后续阶段，已启动程序保自然终态。后续可复用同源GREEN程序核EKO共享连接/doctor回环及配置热换，不平行重复冷编译。当前Registry与EKO实际回环尚未取得结果，当前运行c548未换包；修复包构建/新一次启动/GUI与真实SSH验收分别记录，禁止Agent抢屏。
