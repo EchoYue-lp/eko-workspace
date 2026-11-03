@@ -538,5 +538,50 @@
     "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/r2-validation-source-composition-20261102-r01/preparation-r01/focused-epoch01/app-core-r01/terminal-warning-and-preservation.json",
     "sha256": "6d8f914e86f90c088b17cc9b97bdd2523cf56eed917a91d2e8644dffe90e9839",
     "bytes": 13785
+  },
+  "R2_AppCore_W2_original_terminal": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/r2-validation-source-composition-20261102-r01/preparation-r01/focused-epoch01/app-core-r01/delivery-warning-terminal.json",
+    "sha256": "7c9b24a0ef5eefd3831ad0c57aaf725f0cc1c39b1fac77ac393331b7ffe69be7",
+    "bytes": 5578
+  },
+  "R2_epoch01_recovery_and_epoch02_packet": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/r2-validation-source-composition-20261102-r01/epoch-transition-r01/delivery.json",
+    "sha256": "051b52c1bf1dbd5a21ccd539184b5d3bd8ba993126e9dc316370480f77d035e3",
+    "bytes": 6257
+  },
+  "R2_epoch01_recovery_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r2-epoch01-restoration-root-readback-r01/acceptance-before-switch.json",
+    "sha256": "f704b3e2e5006cd94e74b7851fcc595c9bed4ac2cb7af1f6dbe986ff769afff0",
+    "bytes": 1034
+  },
+  "R2_Runtime_preserved_base_rebind": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/runtime/r2-appcore-case-test-overlay-candidate-20261103-r01/preserved-base-provenance.json",
+    "sha256": "28069d36342c8cd779a8bd0c5496298a39f8b20c1f7974535e65f9fac13352eb",
+    "bytes": 896
+  },
+  "R2_epoch02_actual_source_manifest": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/r2-validation-source-composition-20261102-r01/preparation-r01/focused-epoch02/actual-source-manifest.json",
+    "sha256": "adcedfebd8903f6f4e15cf66feb784471d25f831e49d466a7daf757a9a0d3745",
+    "bytes": 1747306
+  },
+  "R2_try_update_declared_MSRV_source": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r2-atomic-rename-root-source-review-r01/msrv-followup.json",
+    "sha256": "0886aa810930230451a938c4b45c4a2d40916396412d0e3d4c16508f0b8a692b",
+    "bytes": 773
+  },
+  "CLI_async_executor_minimal_repair_candidate": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/async-executor-yank-readonly-20261103-r01/isolated-lock-resolution-r01/最小去yank候选交付入口.json",
+    "sha256": "bf78c3978788c1c67c7e7af8258e4f79b15e7fdc3f4010c357cf4874378337e5",
+    "bytes": 29513
+  },
+  "CLI_async_executor_repair_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-async-executor-repair-root-readback-r01/candidate-readback.json",
+    "sha256": "2c5323d52123662c811258b39f984fde2512eca8be1b243482abb65fd0da8966",
+    "bytes": 1770
+  },
+  "CLI_async_executor_new_lock_human_boundary": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-async-executor-repair-root-readback-r01/review-and-human-boundary.json",
+    "sha256": "f0effbffff413e9711183c8b97ddd01a0667b89cd7e43688b8522b3ecb783db9",
+    "bytes": 2178
   }
 }

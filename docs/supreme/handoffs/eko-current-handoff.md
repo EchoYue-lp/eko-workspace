@@ -121,3 +121,9 @@ CLI canonical r04已真正fetch/audit取得DB263a4d951a0867d4bddc29dddd6d59427c7
 初版13组77项经只读覆盖审查发现4 Important/1 Minor，现已在同一清单增C06远端文件/Agent命令/产物同目标、E07分叉防重/迟到/部分成功恢复，扩A05主聊天输入法与输入来源、B03纯工具、B07长模型等待、L05隐藏/关窗保IMcron与真正退出/重开不重放的具名预期，更新为13组79项，原编号/勾选保留。L05依据既有CLI ADR0050:71–74/ADR0004，未发明新产品策略。C06/E07及异常链仍待具名用例/新版；用户只观察界面，精身份/join/字节由后台核证。11月2日Cron与最近已核d41窗口标为历史观察，不冒当前GUI确认。全程只改磁盘文档，未调用Eclip/AX/窗口查询/焦点/截图/退出重开。
 
 后继资源：R2普通AppCore原NoRun已自然0/W2/E0，wrapper因W0门禁1，无Gov list/test/telemetry；原实际features[]/profile3914811562547596171与program5e32f0f保T外，不沿F profile5631冒同一配置。Gov最小r02两.fetch_update→.try_update（2d275/c435ea）已Root逐字节核5f906，只有方法名变化，不抑制warning/不改测试；pair仍旧3949冻结，sole正在准备完整epoch01源恢复与epoch02方案，未apply/重编。SDK GREEN虽然源码及metadata独审C0，实际NoRun仍未授，等该资源窗和Root fresh准入。
+
+## 2026-11-03 epoch02 准入与依赖修复待复评
+
+F W2终态7c9b24与epoch准备051b52已Root全文/物理7975refs复核；旧3949文件独立preserved-source按原SHA/mode/路径集完整可恢复、无Git/cache/target/软硬链接，四program25件及AppCore原profile3914811562547596171真保全。Root f704b3与Runtime确认d03c/preserved-base-provenance后，精授F在active路径epoch02只a680→c435（60226→60222B）两方法名rename，原closure/order/return不变，另3948及2140/6df锁不变。实际manifest adcedfeb（非预测）与新record只epoch02，旧19b81/ab447/6b5d/raw/guard/recovery map不改。warm普通NoRun在途，无Gov20/telemetry资格；后继仍0/W0→list20精名→exact20一次→telemetry NoRun/list-only。try_update本机冻结stdlib稳定标注since1.95.0，与根及AppCore声明MSRV1.95一致，0886是source读回，不冒MSRV实际编译。Runtime五件overlay只继续preserved旧base，source审发现的shutdown缓存首错、release前stop、活Popen持有等问题还在source修复，未运行case。
+
+CLI去yank候选bf78已实际正常update1.14.0→1.14.1/newlockd542，另767完整package tables不变；两完整metadata/normalizationfeatures+edges0差量，13local全部ownedpair；两fresh官方scanner自然1/0漏洞/原五完整warning/no yanked/ignore[]，未改原policy精gate均因新锁human risk reassessment自然1。Root2c5323核3993refs/3945源/official index及cratechecksum，两source独审C0。原消费者d5双读/正式3995/policybd5/原决定仍不变。Root已创建只lock字段的具体policy候选f6a42（未采用），并按CLI AGENTS178“锁/身份/范围变化必须重新裁决”和checker64实际阻断向用户异步询问本次精d542绑定；未收到回答，不能视为批准，也不能把修复候选scanner当原精gate0。其它R2/SDK独立工作不因此停。
