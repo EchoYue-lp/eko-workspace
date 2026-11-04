@@ -231,3 +231,18 @@ Root已落真实一次候选build票2a5f95，精路径Root local/repair-App-warm
 本轮17条非祖先分支的独立源码价值审查已完成，四reviewer均未写源/merge/delete：Stage0与mainf568、SDK837与6cd、SDK4af与main747三组整树精等；CLI五条的有效义务均已有后继覆盖，旧首页/认证和旧插件健康兄弟隔离发布策略不能恢复；SDK LSP已具名退役、旧fcc8 pin被340后继替代、部分修复在formal83或当前receiving7978承接，候选未冒formal合入。顶层三文档和官网GUI投影均不宜整包回灌；顶层6688所引用的项目环境细化Design及历史验收义务仍要保留原精SHA/blob。两项独有候选需继续保留：F Exa4343（尚无当前接线，要适配现HTTP错误合同；仍不push/合main）及官网24e的25package锁刷新（CI main-only已覆盖、锁更新未覆盖，含registry来源变化，需当前审计复评）。没有需要机械整支合并的分支，也没有据此再删除任何ref；44祖先覆盖与其余源码覆盖、替代/退役或独有候选资格分别记录，不称61全已合入。
 
 新手验候选abdd已实际完成：Tauri build自然0／1992.799秒、j1、RustW0E0；保原nosign两Warn/原bundle strict1，T外本机adhoc sign0/strict0/arm64，149asset在当前实际CLI.d，4685 compilecontext/原FP精u64/.d/out保留。唯一entry24066；Root ef81d3实际核80终态index、4685context、3946formal/副本源和4bundle共12663物理refs，fresh只读strict0/zsh-n0。实际新App在Root local/repair-App-warm-continuation-20261103-r01/epoch-01/retained/Eclip.app；用户入口同epoch/启动修复版.command（37530130，584B/0755），精ready17f949+manual10112及原data/project/config/MCP参数。只生成、未执行，未打开/退出/激活任何App或读hash恢复用户配置。当前42freshTCPfetch1仍pending，不推导外部API403、真实SSH/GUI或main/发布资格。按人类最新边界，warmT约3.72GiB与所有材料继续保留，不再自动清理。
+
+## 2026-11-04 验证阶段新总协调实际进展（本会话）
+
+新会话 `session-538c45f7-593d-4eea-9ec6-6ef534d3f7cd`（DSH）已按用户本轮直接指令接管：新 Goal `goal-99e42748-a446-47e6-a740-364bc2f7683d` 真实 active/armed，专属接管回执 `.echo-semantic/local/validation-coordinator-transfer-20261104-r01/new-coordinator-ack-dsh-538c45f7.json`（与 Codex thread 01a1a4c2 的旧 ack 并存，互不改字节）。旧 Goal 保持未完成。
+
+五仓读数：顶层 `chore/Echoyue/workspace-maintenance` 已含旧 Root 交接提交 b0a5210，仅四个未推送 gitlink 差异与本次文档改动；Framework 91797fe clean、CLI 20070d3＋48 路径 WIP（未动）、SDK 83ae59e clean、官网 817eaa4 clean。Eclip 进程 0；未启动/激活/点击/截图/退出重开；未读用户配置密钥。
+
+用户本轮两项选择已执行：**清理＝仅 Tier A 可重建项**；**下一步＝SDK 重型合同窗口**。
+
+- **Tier A 实际**：删 4 个旧 owned cargo home 共 4.157 GiB（两份回执 `validation-stage-maintenance-20261104-r01/tier-a-cache-removal-r01.json`/`-r02.json`，逐项校验前缀/目录名/registry/reader0）；SDK 合同 target 官方 clean 自然 0（Removed 13134 files/3.1 GiB，TAG 校验、reader0、无手删）。工作区 69.555→65.47 GiB，可用 21.4→25.1 GiB。
+- **刻意保留**：`echo-agent/target`、`echo-agent-cli/target`（手验缺陷快速修复）、三处 node_modules（前端重建）、`m2-cache` 与 r08 的 uv/npm cache（当前三语环境变量直接引用）、6 组同字节大程序（路径分属不同回执/App bundle）。未做扩大删除。
+- **SDK 同源核对**：接收候选相对真实 main747 = A81/M147/D7=235 与批准一致；1302/1303 字节一致，唯一差异为已独审九项资料增量（晚于该清单 12 分钟）；pin 3409932、锁 c4488065、accepted 5344、routes 430 未变。
+- **SDK 完整已接受合同原入口实跑**：自然 0，834.8s，25 profile、135 阻断产物 current、0 阻断漂移、退役账 5344/430 且 unexplained 0、protocol 无 framework 依赖、145 合同测试全过；唯一残余为非阻断遥测 1442→1422 bytes，如实保留未重生成。原件 `sdk-native-main747-contract-window-20261104-r01/{settlement.json,contract-window.raw.log}`（raw SHA d1376470…）。
+
+剩余：normal repository Source/Final（task_digest 外部绑定）、canonical（delete-preflight 外部 gap）、nightly 全量、7 条件 feature、3 项 fresh 风险（网络窗口）、public 83、两外部 Source 合同；CLI fresh canonical 仍为历史 fetch1 未续签；R2 旧夹具需先适配已取消温度类型；真实 API 403、微信 -2/手机收件、SSH/PTY、GUI 79 项仍各自 OPEN，GUI 全由用户手点。
