@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "at": "2026-11-04T06:11:13+00:00",
+ "at": "2026-11-04T06:12:12+00:00",
  "kind": "current-proof-index",
  "note": "每条在写入时即时计算哈希；verifyNow 表示写入瞬间存在且哈希可算，不代表业务结论已被复核。 注意：SDK 条目取的是 origin/main（747be93）树内的副本，与本地 main（83ae59e）是分叉的两条线，见 validation-stage-sdk-lineage-audit-20261104-r01。",
  "repos": {
@@ -284,11 +284,11 @@
    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/docs/supreme/acceptance/eko-first-four-manual-cases-2026-11-04.md",
    "rel": "docs/supreme/acceptance/eko-first-four-manual-cases-2026-11-04.md",
    "meaning": "首批四项手验具名用例与真实预期",
-   "bytes": 7035,
-   "sha256": "f0dda0727313df5e8580891441351431e5dd0376917857f101740a2ff7895bad",
+   "bytes": 7791,
+   "sha256": "c1357c237cd5d4776c558ed47c7afe6a827728b0489af5ebc7096ce3eabcc7e7",
    "exists": true,
-   "refreshedAt": "2026-11-04T06:11:13+00:00",
-   "refreshReason": "第 31 轮精确化 C04 的代码引用（154/257 为提示、524 为说明文案），并核验四项用例全部代码断言"
+   "refreshedAt": "2026-11-04T06:12:12+00:00",
+   "refreshReason": "第 32 轮加入 C04 前置条件核对（ubuntu-ssh-test-20261102 不存在）与真退出提示"
   },
   {
    "key": "acceptance.79",
