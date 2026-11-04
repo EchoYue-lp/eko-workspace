@@ -953,5 +953,80 @@
     "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/workspace-default-and-ssh-reconnect-20261103-r01/registry-real-crate-packet-r01/actual-r04/NoRun.started.json",
     "sha256": "b825c566df27fd99b31c54399fe4a0374af83ba3887e5c9941538c18172c4be2",
     "bytes": 3812
+  },
+  "Workspace_r04_new_program_Registry2_handover": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/workspace-default-and-ssh-reconnect-20261103-r01/registry-real-crate-packet-r01/actual-r04/newcut-NoRun-Registry2-and-program-handover.json",
+    "sha256": "61fd4230a40a9982a60be766a6e2eddf9cb19d25983941ca56b41fef7d6b1599",
+    "bytes": 10777
+  },
+  "EKO_r04_new_program9_real_HTTP_and_generation": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/eko-temperature-tests-continuation-20261103-r01/r04-new-program-nine-selectors-r01/新49b3程序九项真实验证9P交付入口.json",
+    "sha256": "20cdd0ed862c3a0f4641a08d0e919aa773f7c932a1675a899858d042e7f206bf",
+    "bytes": 38059
+  },
+  "Workspace_r04_final12_Clippy_and_MD_successor": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/workspace-default-and-ssh-reconnect-20261103-r01/registry-real-crate-packet-r01/actual-r04/r04-final-controlled-results-and-MD-successor.json",
+    "sha256": "6f7cefccf510700328888550133bee6bfa85294911b63d449a62514cc63914fb",
+    "bytes": 10278
+  },
+  "Workspace_r04_final12_Clippy_Root_actual_acceptance": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/temperature-fixture-test-only-source-review-20261103-r01/actual-r04-12-controlled-cases-and-Clippy-Root-accepted.json",
+    "sha256": "5530e77ff2fa9bf418cc575182e5acbc0688b824c0a8bf19c4c8b8728f1f30fd",
+    "bytes": 1450
+  },
+  "CLI_42a1_actualfresh_TCP_failure": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-42a1-fresh-network-actual-r01/caller.json",
+    "sha256": "00d63e698567a3904c9f78a98598aa187a67166aee01d397e5ce46118d4539f2",
+    "bytes": 697
+  },
+  "CLI_joint38_finalSourceFinal_current_source_freeze": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/eko-temperature-workspace-42a1-joint-source-final-20261103-r01/final-current-source-freeze-r01/联合38最终SourceFinal与候选App源码冻结交付入口.json",
+    "sha256": "6838f206398c55b69d0f659b485e25d5ee959540bbe848a477467fa85822e9dc",
+    "bytes": 23266
+  },
+  "CLI_joint38_and_App_finalsource_Root_actual_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/temperature-fixture-test-only-source-review-20261103-r01/joint-final-and-finalApp-source-Root-accepted-20261104-r01.json",
+    "sha256": "42aedc608407613dc1aa28d1f350cd0238fbd8e51376ba204bb588cb19adaf19",
+    "bytes": 1806
+  },
+  "Workspace_registry_exact_official_clean": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/workspace-default-and-ssh-reconnect-20261103-r01/registry-real-crate-packet-r01/actual-r04/official-clean-20261104-r01/Registry-packet-official-clean-实际交付入口.json",
+    "sha256": "9c62da7c21b70b4b2bc27ed1cb00a6ec4bd9fb5e9b4b2e8cc10525dc608ea821",
+    "bytes": 26517
+  },
+  "Workspace_registry_clean_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/temperature-fixture-test-only-source-review-20261103-r01/Registry-packet-clean-Root-readback-20261104-r01.json",
+    "sha256": "71e290e47b8bf203129fb8ff35bafe4b7c9bafd1da483af8d92ce1c6f4e52422",
+    "bytes": 375
+  },
+  "repair_App_final_source_20261104": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/repair-App-warm-continuation-20261103-r01/final-source-20261104-r01/entry.json",
+    "sha256": "7c16541eda0099c0cdba670134736ece5b3da5293674a728ca9f383c099f1e2a",
+    "bytes": 4507
+  },
+  "repair_App_final_source_manifest_actual": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/repair-App-warm-continuation-20261103-r01/final-source-20261104-r01/finalSourceManifest.json",
+    "sha256": "6abe867d5cc1e3b3572b92a3215134308f5f7366fc3bce3fdcbd57b209b9e82f",
+    "bytes": 1036199
+  },
+  "repair_App_j1_resource_successor_preparation": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/repair-App-warm-continuation-20261103-r01/resource-j1-20261104-r01/entry.json",
+    "sha256": "721047e07235ee4bc338dbb7168d46eef5084d07862adc254d6f9e2da7141264",
+    "bytes": 5220
+  },
+  "repair_App_actual_conditional_build_GO": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/repair-App-warm-continuation-20261103-r01/Root-build-local-manual-repair-candidate-GO-20261104-r01.json",
+    "sha256": "2a5f95f25ec2c1b5da04029cdb4e62d410b053ca6cf47a3899c7b1b2812bf105",
+    "bytes": 6346
+  },
+  "Website_four_doc_candidate_location_wording_successor": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-website/.echo-semantic/local/website-repair-docs-candidate-20261103-r01/r02-location-wording/entry.json",
+    "sha256": "ace9f55c69628ef9367605833a8a4f8d7a5d187332b8c0312d3a6e6d3a40a860",
+    "bytes": 4330
+  },
+  "local_branch_convergence_71_to10_restore_verified": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/local-branch-convergence-20261104-r01/summary.json",
+    "sha256": "4d6e9e03d32287f8afd4aae66f431774a562d4efaab74ed1cde6dcdb9f7c17b3",
+    "bytes": 3304
   }
 }

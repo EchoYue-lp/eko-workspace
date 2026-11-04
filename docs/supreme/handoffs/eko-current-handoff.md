@@ -18,6 +18,8 @@
 
 ## 五仓 fresh 切点
 
+2026-11-04 按用户新指令，五formal仓本地heads已71→10，仅main＋各当前验证分支，61旧heads经完整bundle/verify/真实bare导入核全部尖端后删除。原HEAD/currentbranch/index/status、tags（含pre-retirement）、stash/remote/worktree均未改；未合Exa源码保archive不推合。唯一完整原件Root local/local-branch-convergence-20261104-r01/summary.json，SHA4d6e9e；后续本轮验收继续同一验证branch。先前含refs_sha256的历史源清单不回写，删除heads是Git元数据变化，精确HEAD/源码摘要不变；不得误判源漂移或重跑工程。清理不等于正式main/发布或宿主worktree回收。
+
 | 仓库 | 分支 | HEAD／状态 |
 | --- | --- | --- |
 | 顶层 | chore/Echoyue/workspace-maintenance | 新Root接管已存52b40c8；四个未推送子仓gitlink差异不晋升，index空；当前进展文档独立保存。 |
@@ -209,3 +211,13 @@ Root授r04票a3ee9b：Workspace先将旧3945/63705246B完整源码外置old-sour
 r04源已实际激活f57e，CLI采用票4eb81和原8 controls全部0。两次fresh pressure2/free40%与38%不符原j2门禁，613bc明确只是准入停点、无Cargo/PID。Root随后仅具名调整资源条款192799：无其它compiler/disk≥8GiB时，pressure1/free≥40%可j2；否则pressure1或2/free≥30%可j1，沿原r03已经真实成功的单作业窗口。Root实际观察为pressure2/free33%，不冒normal1；critical或free<20%只阻后续新阶段、保在途自然终态，不杀用户进程。源、断言、profile、15/15/5预算和原件不变。Workspace其后fresh pressure2/free37%，真实以jobs1启动Cargo98983/observer98978，NoRun.started.json及流式stdout/stderr在actual-r04，guard确认新3945/正式1758一致；这是启动身份，尚无终态或新11项结果。
 
 本地手验候选包的接续与手动启动入口已准备，当前入口5e247；旧c548 retained四成员、4593编译原件及warm target独立保真，resume/工具/argv已审。后续Root必须给新程序2+9实际结果、最终完整源清单和唯一重型窗；旧cf690源清单只保历史，不能冒当前最终源。fresh风险未过单列，不授commit/merge/main/发布或启动。manual launcher仅未来由用户手动触发，核新包SHA/fullmanifest/strict签名；已有Eclip则提示正常退出并停止，日志每次唯一attempt，最终成品后才生成可双击“启动修复版.command”。原data/project/config/MCP只保路径参数，不读、输出、hash或恢复用户已改配置。当前尚无新App build/sign/open/GUI操作。
+
+### 11月4日当前最终源码与候选构建窗
+
+r04新49b3已实际完成NoRun0/W0/E0、Registry2、EKO9、独立既有删除保代码1，共12项各exact-list1/run1P/0F/0I/0；同cut targetedClippy0/W0/E0。Root5530实际核10234物理引用、4413程序/FP/.d成员和3945owned/正式1758编译输入；ADR55仅非编译事实后继d914。r04准确自有target已官方clean0，原输出Removed6030files/2.0GiB，T已不存在；sole前后19223唯一文件守卫0漂移，Root71e290再核三个T外programepochs共9439成员未变。无手删、假TAG或其它target清理。
+
+CLI最终入口6838，业务38路径＋6已具名原字节支持范围正常Source/Final-current-task-r03均0，task contentDigest552496/sourceSnapshot fa158/globalClosure not_checked；旧record-beforeEvidence1、旧taskId check1、遗漏6支持path的Source2-1均保原，仅正常参数/范围补齐，不改外部工具/schema/ignore/Rule/Map/refs。正式CLI1090（1089tracked＋1普通Evidence b99ee3）、F917完整2857、frontend498冻结。Root42aedc逐当前3947源与构建3946tracked/HEAD核对一致；普通Evidence单列治理metadata，不参与编译，不隐去。新的Release完整finalSourceManifest6abe两读稳定；旧cf690不改。42a1正式第一次fresh actual Root在UTC11月3日09:42:03.938→25.284自然1/21.3457s，原GitHub TCPfetch/emptyAudit保留，当前risk仍pending，非旧66结果挪用。
+
+Root已落真实一次候选build票2a5f95，精路径Root local/repair-App-warm-continuation-20261103-r01/Root-build-local-manual-repair-candidate-GO-20261104-r01.json。引用真实同49b3 GREEN2/EKO9原件和source6abe，唯一heavy窗交Release；resume-j1 a3c764、helper b18dd、packet7edf，源码/工具/编译flags不变、actualjobs1。两处fresh均须disk≥8GiB/nootherheavy/pressure1或2且actualfree≥35%；critical/free<20仅阻新后续阶段，原build自然出口保。先前Root写票在实际free33%断言停、未创建GO，早发通知已更正；真正2a5f写前freshfree37% admittedtrue，不把资源停点冒build。若实际资源再次抖动，短间隔观察达同条件后可按本票继续，不降阈值或重复问用户。
+
+当前本地分支已按人类新要求收敛，不改变上述HEAD或源码。候选构建只允许新epoch源/日志、精旧warmtarget、T外保全、新包本机adhoc/strict、实际ready与纯生成用户双击入口；任何App open/quit/reopen/GUI/真实API/SSH/UserRoot读取hash恢复/远端发布仍无授权。当前以实际execution/PID及终态判断build，GO或prepared0不代启动。官网最终四文档候选后继ace9/dd84已纠正路径可物理重合，正式817仍clean未应用/部署。
