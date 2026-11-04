@@ -52,3 +52,39 @@
 - 本轮只做**内容比对**，没有提交、没有推送、没有改任何文件。
 - 928/933 的"相同"是**字节相同**；不表示这些文件在运行时行为上被本轮验证过。
 - 候选树里的 `.echo-semantic` 内容未参与比对。
+
+---
+
+## 落地可行性离线预演（不运行任何测试）
+
+那 4 个纯增测试是否会在当前 HEAD 上通过，可以先用契约文件离线推演，不必起 cargo／Java。
+
+### `A2AValueTest.java` 新增的 `retiredA2AJwtMappingsStayOutsideExternalContract`
+
+该测试对 9 项退役身份做三段断言。逐段对照 HEAD 的实际文件：
+
+| 断言 | 预演结果 |
+|---|---|
+| ① ADR `docs/adr/0042-sdk-a2a-lsp-retirement-boundary.md` 逐条含 `- Kind: X\n- Source: Y\n` | **9/9 全部命中**（`method`×7、`struct`、`trait_impl` 各就其位） |
+| ② `contracts/sdk/accepted-external-contract.json` 中不得以相同 kind+source 出现 | **命中数 0**，断言成立 |
+| ③ `parity-manifest.json` 中若出现则须 `host_or_rust_only` + java `not_implemented` + `contract_test = sdk-parity/java/retired_a2a_lsp` | 该 manifest 里**匹配条目数为 0**，循环体不执行，断言空转成立 |
+
+→ 三段全部成立，**该测试应当通过**。
+
+### `scalar.rs` 新增的 `retired_sdk_identities_are_rejected_without_string_wide_filtering`
+
+被测行为在 HEAD 生产代码中已存在：`scalar.rs:558-560` 对 `ResolvedComponents` 的 `lsp_config_file` 字段判退役、`:584` 对 `LspServer`／`lsp_server` 变体判退役，且只对特定 `type_id` 生效（因此 `user::custom::*` 仍通过）。
+
+→ 该测试是在**验证既有行为**，不是引入新行为。
+
+### `test_jwt_values.py` / `jwt-values.test.js`
+
+分别断言 `JwtConfig`／`JwtClaims` 已不导出、`EchoAgentClient` 仍在。Python 侧是 `not hasattr`；TS 侧从 `../dist/index.js` 导入，**需要在构建产物存在的前提下运行**。
+
+→ 逻辑上成立；TS 一项依赖先构建。
+
+## 预演不能替代什么
+
+- 没跑 `cargo test`、没跑 Java/Python/TS 测试；
+- TS 一项依赖 `dist` 构建，构建成功与否未验证；
+- 若落地，仍须按新 HEAD 跑适用门禁，本预演只说明"这几个文件的内容与当前契约不冲突"。
