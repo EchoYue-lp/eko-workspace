@@ -164,3 +164,27 @@ origin 比分支多 8 个身份、1 条路由。提交正文写 `routes431`，�
 **结论**：基线不存在“选哪个”的自由度。合同必须按最终 pin 重新生成；把 008 形状的基线留在 340 上，会得到代码无法满足的合同。
 
 **附带查证**：origin 的 `AgentCheckpointWire.current_plan` 在 `managed.rs` 里只有声明、没有从 framework 取值的映射，分支则完全没有该字段——因此合并时它是可安全追加的纯 wire 字段，代价只是同步更新分支里构造该结构体的穷举字面量（机械改动）。
+
+---
+
+## 十一、`current_plan` 字段的源码级结论（2026-16 轮补记）
+
+第 15 轮说该字段是“可安全追加的纯 wire 字段”，**需修正**。直接读两个 pin 的框架源码：
+
+| pin | `src/state/mod.rs` 的 `AgentCheckpoint::current_plan` |
+|---|---|
+| `0087353f` | 存在（第 106 行），文档注释：「Legacy plan text retained for checkpoint decoding and Store round trips. ReactAgent neither restores this as task state nor writes new values; the revisioned Task graph is the planning authority.」 |
+| `3409932` | **整个字段（含注释）已删除** |
+
+SDK 侧在 `echo-sdk-host/src/core_profile/wire.rs` 用宏做字段映射：
+
+```
+structure!(state::AgentCheckpoint, AgentCheckpointWire,
+           conversation_id, messages_json, current_plan, active_skills, …)
+```
+
+**因此在 pin 340 上，宏列表里的 `current_plan` 找不到源字段，会直接编译失败**，不是“顺手追加”的机械改动。
+
+正确做法：从宏列表移除 `current_plan`，同时让 `AgentCheckpointWire` 的该字段带默认值（serde default / `Default`），保留跨语言合同形状。`core_profile_e2e.rs:5651` 已期望 `"current_plan": null`，与“340 下恒为 None”一致。
+
+**性质**：framework 自己把该字段标为遗留、规划权威已迁到 revisioned Task graph。所以保留是“合同形状向后兼容”的选择，删除是“过时字段直接删”的选择——两者都能编译，属合同稳定性取舍，不是功能差异。
