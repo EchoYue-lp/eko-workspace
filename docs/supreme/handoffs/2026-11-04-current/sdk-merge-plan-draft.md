@@ -7,8 +7,8 @@
 | 项 | 值 |
 |---|---|
 | merge-base | `0930eef` |
-| 本地 `main` | `83ae59e`（10 个未推送提交，含 3 个 `WIP:` 保存点） |
-| `origin/main` | `747be93`（2 个提交：退役 + 校准） |
+| 本地任务分支 `chore/Echoyue/root-workspace-convergence` | `83ae59e`（领先 main 10 个提交，含 3 个 `WIP:` 保存点） |
+| `main` = `origin/main` | `747be93`（2 个提交：退役 + 校准；两者完全一致） |
 | 本地改动面 | 290 文件 |
 | 远端改动面 | 126 文件 |
 | 双方都改 | 124 文件 |
