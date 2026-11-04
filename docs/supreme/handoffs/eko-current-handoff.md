@@ -8,9 +8,9 @@
 
 ## 单一协调与当前授权
 
-唯一Root当前为 `01a19a4a-2815-7072-88b1-63ff005b2476`，平台旧完整Goal实测blocked且未完成；旧Root `01a18588-9a70-7552-912f-477ac52cbe39` 与十执行线现已归档。旧接管及14项票见 `new-coordinator-ack.json`，只保历史，不重写旧注册文件或借旧SID派单。当前写入责任统一由总协调明确安排，保持四子仓独立和单文件单writer。
+用户已于2026-11-04明确选择新建总协调并启用新Goal、交接后归档本会话。新会话 `01a1a4c2-967b-7401-8980-fba6857c3740`（“Eclip 总协调：验收与同源收敛”）已实际创建新Goal且get_goal为active、无token预算，ack85f9e00已由旧Root核绑定与五仓HEAD/branch/子仓WIP。该会话为后继唯一Root，原Root `01a19a4a-2815-7072-88b1-63ff005b2476` 只完成本次交接提交及释放，然后归档，不再派业务任务。新短入口 `docs/supreme/handoffs/2026-11-04-validation-coordinator/README.md` 优先于本长历史；最后写权交割看同名local目录ownership-release.json。
 
-新阶段Goal文档已写，真实调用 `create_goal` 返回“cannot create a new goal because this thread has an unfinished goal; complete the existing goal first”。旧26项尚未全部完成，不能为了腾位标complete。已向用户明确给出两种承载选择：新建干净总协调会话并启用新Goal、交接后归档当前；或保留当前会话先按文档推进。未收到选择前不擅自新建会话或结束旧Goal；独立维护动作已全部完成，不需重复授权。无token预算，原未完成范围及外部push/merge/发布边界保持。
+旧会话真实调用 `create_goal` 曾拒绝覆盖未完成Goal，旧26项不标complete腾位。新平台Goal已在新会话独立启用，原未完成范围及外部push/merge/发布边界保持。用户最新70GiB问题已只读完成基础扫描：压缩档约13.423GiB、大型程序至少11.55GiB、64大文件精SHA重复路径约2.304GiB；详见 `docs/supreme/reports/remaining-validation-data-2026-11-04.md`，不是全部必须保留，亦不是当前删除授权。新总协调先解释和收敛计划，优先同字节重复/已替代历史，保护唯一候选/用户数据，不能借转场扩大删除或继续无边界新增副本。
 
 新任务实施／验证／当前已接受候选正式接收的本地权限持续。具名远端授权PR201／SDK14／SDK15均已消费；新分支push／merge／publish／deploy需在结果具体可审后另问，不能复用。K2“正常退出IDE和Eclip重测70、结束原数据重开Eclip”授权已执行消费；新App47013退出与K3采样尚无新授权。Rover95346现已不见，不重复旧退出请求。6历史会话归档和磁盘精删除已完成，不再重复。
 

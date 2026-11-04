@@ -1138,5 +1138,30 @@
     "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/maintenance-summary-current.json",
     "sha256": "fd90a630b5f2e21f30afa36c3f6a9f91716738df661cb44cd69547293e14078c",
     "bytes": 1683
+  },
+  "validation_20261104_new_coordinator_source_input": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-coordinator-transfer-20261104-r01/transfer-source-state.json",
+    "sha256": "f5549e331d89eb351a4848b44ee00bb7937960c2983a0583589dd62628907c53",
+    "bytes": 8245
+  },
+  "validation_20261104_new_coordinator_active_ack": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-coordinator-transfer-20261104-r01/new-coordinator-ack.json",
+    "sha256": "85f9e00d9984ac38e749e10f809130df0263705992c6ced484588794e84f23e7",
+    "bytes": 13985
+  },
+  "validation_20261104_old_root_actual_ack_acceptance": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-coordinator-transfer-20261104-r01/old-root-accepted-new-active-goal.json",
+    "sha256": "cd4d64db954cdb72e3b12f552ffafe14c9a8935fa21af35c23570ac43fd9870f",
+    "bytes": 1822
+  },
+  "remaining_validation_data_full_readonly_scan": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/remaining-data-file-types-and-large-items-readonly.json",
+    "sha256": "beeaf637cfdc087e0e0b257a2e4581bd36bdea975d60e4da9127feea0dc8cf52",
+    "bytes": 44760
+  },
+  "remaining_validation_large_files_exact_duplicates": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/remaining-large-files-exact-byte-duplicates-readonly.json",
+    "sha256": "d77b3beec265445a533ebe05546661052ac4ba0e6885e6942f278ffbeb93807f",
+    "bytes": 6648
   }
 }
