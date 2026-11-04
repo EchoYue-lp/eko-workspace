@@ -188,3 +188,30 @@ structure!(state::AgentCheckpoint, AgentCheckpointWire,
 正确做法：从宏列表移除 `current_plan`，同时让 `AgentCheckpointWire` 的该字段带默认值（serde default / `Default`），保留跨语言合同形状。`core_profile_e2e.rs:5651` 已期望 `"current_plan": null`，与“340 下恒为 None”一致。
 
 **性质**：framework 自己把该字段标为遗留、规划权威已迁到 revisioned Task graph。所以保留是“合同形状向后兼容”的选择，删除是“过时字段直接删”的选择——两者都能编译，属合同稳定性取舍，不是功能差异。
+
+---
+
+## 十二、163 个残差文件的归因（2026-17 轮补记）
+
+按三个来源集合归因（退役 = `diff(0930eef,6cd2e1b)`；校准 = `diff(6cd2e1b,747be93)`；分支 = `diff(0930eef,83ae59e)`）：
+
+**147 个内容不同**
+
+| 归因 | 数量 |
+|---|---|
+| 仅分支/原生 | 78 |
+| 退役 + 分支同时触及 | 66 |
+| 仅退役 | 1 |
+| 仅校准 | 1 |
+| 退役 + 校准 + 分支 | 1 |
+
+**16 个缺失**
+
+| 归因 | 数量 | 处置 |
+|---|---|---|
+| 仅 origin 新增的 plan 文档 | 9 | 机械补入（`0930eef`/`83ae59e` 均无，只在上游出现） |
+| 分支已删除的退役相关文件 | 7 | 保持删除 |
+
+那 7 个是 `JwtClaims.java`、`JwtConfig.java`、`jwt_values.py`、`jwt_values.ts`、`a2a_host_fixture.py`、`lsp_diagnostic_server.py`、`lsp_fault_server.py`，删除发生在 `6cb12d3`。**已核实不是悬空删除**：origin/main 对两个夹具零引用；分支把 `test_jwt_values.py` 改写成了 `test_a2a_jwt_exports_are_retired`（断言 `not hasattr(sdk,"JwtConfig"/"JwtClaims")`）。
+
+**结论**：144/147 属分支侧改动，说明已合并树内容主体与任务分支一致；origin 独有内容主要是 9 份文档 + 1 个纯校准文件。执行顺序可定为：以 `candidate-source` 为基 → 补 9 份文档 → 逐个复核 66 个双改文件 → 重生成合同 → 跑门禁。
