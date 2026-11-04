@@ -35,7 +35,7 @@
 | 6 | Steer | 最终真实运行矩阵待验 | 用户手点 | 无 |
 | 7 | IM／cron 管理 | 通知 -2 失败、非 Accepted／手机未知；不重发、不改旧 Failed | Root 派窗＋外部 | 无 |
 | 8 | 独立终端入口退役 | 正式最终收敛／接管仍需核 | Root 施工令 | 无 |
-| 9 | A2A／LSP 退役 | normal Source `task_digest` 冲突、`c0bc` delete-preflight 缺口；Final／完整工程／公开 83／主线资格未闭 | 外部工具 | **有**：SDK 完整合同门禁实跑自然 0，退役账 5344 身份／430 路由、unexplained 0（该门禁覆盖的部分已闭，外部两项仍未闭） |
+| 9 | A2A／LSP 退役 | normal Source `task_digest` 冲突、`c0bc` delete-preflight 缺口；Final／完整工程／公开 83／主线资格未闭 | 外部工具 | **有**：SDK 完整合同门禁实跑自然 0，退役账 5344 身份／430 路由、unexplained 0；**但该门禁脚本仅 64 行、不跑语言测试**，覆盖范围仅合同产物与 Rust 清单（详见下节第 24–27 轮）。外部两项仍未闭 |
 | 10 | 工具收敛 | 完整 GUI／native 与其余 canonical 嵌套恢复待验 | 用户手点 | 无 |
 | 11 | Hook／ask | Stop 继续／取消／超时／竞争／过期／真实 Hook／native 待验 | 用户手点 | 无 |
 | 12 | HITL | 输入／选择／审批／焦点与过期 owner | 用户手点 | 无 |
@@ -81,3 +81,10 @@
 ### 附二：79 份“无法解析的 JSON”已判定完结
 
 均为构建快照内 `node_modules` 下的 `tsconfig*.json`（JSONC，含注释与尾逗号），属第三方配置而非本仓回执。**不存在损坏或伪造的回执。** 该条从完整性审计的“未覆盖项”中移除。
+
+## 2026-11-04 第 24–27 轮新增证据（不改任何条目的 OPEN 状态）
+
+- **候选树完整性**：`receiving-main747-source` 对 `747be93` 的实测为相同 1075 / 不同 147 / 缺失 7，与候选自身回执 `A81/M147/D7` 一致；缺失 7 个正是退役删除项。此前“缺失 16、还需补 9 份文档”是 `git core.quotePath` 路径转义误报，已撤回（`validation-stage-sdk-receiving-candidate-recheck-20261104-r01`）。
+- **门禁回执完整性**：日志 sha256 `d1376470…` 重算一致、`naturalExit` 两处均为 0、运行 834.8s、`noUpdateFlag` 无产物重生成、候选树自 2026-11-02 起未再改动——该回执适用于当前树（`validation-stage-sdk-gate-integrity-20261104-r01`）。
+- **覆盖分级**：147 处改动中 129 处有执行型证据，但分两级——A 级为 Rust 32 项（`stable-window` 589 测试 0 失败 + 合同 135 产物）；B 级为三语言 85 项（预构建产物、`noCargoAllowed`、自述不构成 SourceFinal/canonical/mainCI）。**不得把 B 级 0 fail 当 A 级资格使用**（`validation-stage-sdk-delta-coverage-20261104-r01` 及其分级补正）。
+- 上述三项均**不闭合**第 9、22 项；它们只是把“已有什么证据、证据强度多少”写实。
