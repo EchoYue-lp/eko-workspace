@@ -71,3 +71,4 @@ python3 -B docs/supreme/handoffs/2026-11-04-current/verify_proof_index.py
 ## 相关文件
 
 - `remaining-26-ledger.md`：原完整迭代 26 项的可执行剩余台账（每项写清还缺什么、由谁闭合、本会话有无新增证据）。
+- `sdk-merge-plan-draft.md`：SDK 两线合并方案草稿（59 个文件级冲突、解决顺序、合并后门禁），仅分析未执行。
