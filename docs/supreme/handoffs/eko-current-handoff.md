@@ -253,3 +253,8 @@ Root已落真实一次候选build票2a5f95，精路径Root local/repair-App-warm
 - **两次失败归因运行器**：`convert_case-0.10.0` 自带 `rust-toolchain.toml(1.83.0)`，未用队列 `stableEnvironment` 的绝对 `RUSTC/RUSTDOC` 时 rustup 代理会去下载 1.83.0 并被沙箱拒绝写 `~/.rustup/tmp`；第二次是补丁顺序把 `RUSTC/RUSTDOC` pop 掉。均已记录，非源码/feature 缺陷。
 - **联网前置**：github.com 与 raw.githubusercontent.com 443 当前超时，crates.io／api.github.com 正常，SSH 可认证；RustSec HTTPS clone 不可达即 fetch1 成因，SSH 恢复方式未执行、留待确认。原件 `validation-stage-main747-r01/network-prerequisite-probe-r01.json`。
 - 仍 OPEN：nightly 测试矩阵、3 项 fresh 风险、normal Source/Final、canonical delete-preflight、public 83、两外部 Source 合同、CLI 全部门禁、GUI 79 项。
+
+### 同轮追加二（2026-11-04）
+
+- **CLI 当前切点本地控制已补齐**：盘上真实提交为锁 `d542c37e…`（768包）、policy `2028fdc16ebc07c0d29ae6aa9c5a6902eed61b03360760d4a14a980aa0a751be`（mtime 11-03 17:33）、consumer `42a1dd0d…`；既有 controls8 回执只绑上一版 policy `93fcaa10…`，本轮在该 policy 字节上实跑 `scripts/test_cli_dependency_risks.py -v`，自然 0、8/8、0.866s（原件 `validation-stage-cli-controls8-20261104-r01/settlement.json`，raw SHA `65a8e7a4…`）。仍缺 fresh actual/canonical 双门禁（GitHub 443 不可达）。
+- **首批四项手验具名用例已交付**：`docs/supreme/acceptance/eko-first-four-manual-cases-2026-11-04.md`，按当前源码给出可观察成功信号与缺陷长相——C02 默认位置推定为 `~/.eko/workspaces/<规范化名>`（`WorkspaceLayout::base_dir` + `WorkspaceId::from_name`，非字母数字→`_`、64 字符截断）、A06 temperature 已在代码层移除并显式 `None` 防回注、C04 重连入口在 `NewTaskDialog` 已实现、B01 流式与单次发布判据。
