@@ -143,3 +143,24 @@
 | 任务分支 `83ae59e` | 5,344 | 432 |
 
 origin 比分支多 8 个身份、1 条路由。提交正文写 `routes431`，我数到 433，差异可能来自是否计入 intrinsic 路由，口径未统一，故不据此改判；但 8 个身份差需要在合流时逐条确认是否退役造成的合法差。
+
+---
+
+## 十、合同基线差的根因（2026-15 轮补记）
+
+逐条比对后，`5352` 与 `5344` 的差**不是退役造成的，而是 framework pin 008→340 的 API 漂移**：
+
+| 项 | 数量 |
+|---|---|
+| 共有条目 | 5,341 |
+| 仅 origin（pin008）有 | 11 |
+| 仅分支（pin340）有 | 3 |
+| 共有但签名不同 | 12 |
+
+- **仅 origin 有**：`AgentCallback::on_tool_{start,end,error}`、`AgentEvent::{Token, Token::0, ThinkStart, ThinkEnd, ThinkEnd::completion_tokens, ThinkEnd::prompt_tokens}`、`AgentCheckpoint::current_plan`、`state::delete_persisted_conversation`。
+- **仅分支有**：`AgentCallback::on_tool_{start,end,error}_with_id`。
+- **12 处签名差**全部落在：Agent 执行 3、LLM 请求/用量 3、流输入输出 2、PermissionMode 4。
+
+**结论**：基线不存在“选哪个”的自由度。合同必须按最终 pin 重新生成；把 008 形状的基线留在 340 上，会得到代码无法满足的合同。
+
+**附带查证**：origin 的 `AgentCheckpointWire.current_plan` 在 `managed.rs` 里只有声明、没有从 framework 取值的映射，分支则完全没有该字段——因此合并时它是可安全追加的纯 wire 字段，代价只是同步更新分支里构造该结构体的穷举字面量（机械改动）。
