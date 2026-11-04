@@ -69,7 +69,7 @@
 
 ## C04 ubuntu SSH 重新进入与侧栏
 
-**代码依据**：`terminal/project_ssh.rs:711` 仍会在连接未准备时返回 `project SSH connection has not been prepared`；前端 `NewTaskDialog.tsx:154/257/524` 已实现捕获该错误后提示“远程连接尚未准备，请在此重新连接；原工作空间和数据保留。”并保留项目记录、要求重新认证同一远程位置。
+**代码依据**：`terminal/project_ssh.rs:711` 仍会在连接未准备时返回 `project SSH connection has not been prepared`；前端 `NewTaskDialog.tsx:154/257` 为错误提示、`:524` 为「项目记录已保留…不会自动改变项目绑定」的说明文案；两处共同构成重连 UX，已实现捕获该错误后提示“远程连接尚未准备，请在此重新连接；原工作空间和数据保留。”并保留项目记录、要求重新认证同一远程位置。
 
 **步骤**
 
