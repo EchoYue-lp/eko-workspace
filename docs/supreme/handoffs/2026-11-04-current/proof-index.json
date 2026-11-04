@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "at": "2026-11-04T06:13:49+00:00",
+ "at": "2026-11-04T06:18:02+00:00",
  "kind": "current-proof-index",
  "note": "每条在写入时即时计算哈希；verifyNow 表示写入瞬间存在且哈希可算，不代表业务结论已被复核。 注意：SDK 条目取的是 origin/main（747be93）树内的副本，与本地 main（83ae59e）是分叉的两条线，见 validation-stage-sdk-lineage-audit-20261104-r01。",
  "repos": {
@@ -284,11 +284,11 @@
    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/docs/supreme/acceptance/eko-first-four-manual-cases-2026-11-04.md",
    "rel": "docs/supreme/acceptance/eko-first-four-manual-cases-2026-11-04.md",
    "meaning": "首批四项手验具名用例与真实预期",
-   "bytes": 7920,
-   "sha256": "625301f0b1123b77e8d39417ca5ad89ae2b3267427759f74783a25ede7d8bfe8",
+   "bytes": 8195,
+   "sha256": "a4f905267f244a8bbbe9f5fa960f194b577cedf40a5d77638be7b9487d252c09",
    "exists": true,
-   "refreshedAt": "2026-11-04T06:13:49+00:00",
-   "refreshReason": "第 33 轮修正：脚本通过 EKO_DATA_DIR 指向隔离数据根，其中确有 ubuntu-ssh-test-20261102；上一轮「不存在」结论仅在默认 ~/.eko 下成立"
+   "refreshedAt": "2026-11-04T06:18:02+00:00",
+   "refreshReason": "第 36 轮更正 A06 预期：实际只有 Max tokens 与 Context window 两个高级参数，无推理深度字段"
   },
   {
    "key": "acceptance.79",
