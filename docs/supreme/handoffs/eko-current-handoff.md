@@ -246,3 +246,10 @@ Root已落真实一次候选build票2a5f95，精路径Root local/repair-App-warm
 - **SDK 完整已接受合同原入口实跑**：自然 0，834.8s，25 profile、135 阻断产物 current、0 阻断漂移、退役账 5344/430 且 unexplained 0、protocol 无 framework 依赖、145 合同测试全过；唯一残余为非阻断遥测 1442→1422 bytes，如实保留未重生成。原件 `sdk-native-main747-contract-window-20261104-r01/{settlement.json,contract-window.raw.log}`（raw SHA d1376470…）。
 
 剩余：normal repository Source/Final（task_digest 外部绑定）、canonical（delete-preflight 外部 gap）、nightly 全量、7 条件 feature、3 项 fresh 风险（网络窗口）、public 83、两外部 Source 合同；CLI fresh canonical 仍为历史 fetch1 未续签；R2 旧夹具需先适配已取消温度类型；真实 API 403、微信 -2/手机收件、SSH/PTY、GUI 79 项仍各自 OPEN，GUI 全由用户手点。
+
+### 同轮追加（2026-11-04）
+
+- **条件 feature 矩阵 7/7 实际 0**：因 235 差异改动根/Host `Cargo.toml` 与 `#[cfg(feature)]` 分支，强制矩阵成立；原 argv 逐字执行，实跑 200 个测试（35/113/31/19/1/1 + 1 个 `--no-run`），`echo_core` 离线编译自 pin `3409932`，锁 `c4488065` 未变，跑后差异仍 235。原件 `sdk-native-main747-conditional-features-20261104-r01/settlement.json`；target 官方 clean 自然 0（2665 files/1.8 GiB）。
+- **两次失败归因运行器**：`convert_case-0.10.0` 自带 `rust-toolchain.toml(1.83.0)`，未用队列 `stableEnvironment` 的绝对 `RUSTC/RUSTDOC` 时 rustup 代理会去下载 1.83.0 并被沙箱拒绝写 `~/.rustup/tmp`；第二次是补丁顺序把 `RUSTC/RUSTDOC` pop 掉。均已记录，非源码/feature 缺陷。
+- **联网前置**：github.com 与 raw.githubusercontent.com 443 当前超时，crates.io／api.github.com 正常，SSH 可认证；RustSec HTTPS clone 不可达即 fetch1 成因，SSH 恢复方式未执行、留待确认。原件 `validation-stage-main747-r01/network-prerequisite-probe-r01.json`。
+- 仍 OPEN：nightly 测试矩阵、3 项 fresh 风险、normal Source/Final、canonical delete-preflight、public 83、两外部 Source 合同、CLI 全部门禁、GUI 79 项。
