@@ -4,7 +4,19 @@
 
 先读：新阶段Goal `docs/supreme/goals/eko-eclip-validation-convergence-2026-11-04.md`；总表 `docs/MASTER-PLAN.md`；本轮实际维护回执 `.echo-semantic/local/validation-stage-maintenance-20261104-r01/maintenance-summary-current.json`。旧完整Goal `eko-eclip-complete-iteration-2026-11-02.md` 是剩余范围清单；原十执行线已归档，`executors.md` 仅历史责任与原件索引。不要整包重读三天历史或据旧表重新唤醒十个长期会话。
 
-当前Eclip进程0，新abdd手验包保留未启动。13个旧会话已归档、当前仅总协调；59条已经祖先/源码核验的冗余local heads已在先固定15个历史tip后删除，五仓剩12（五main、五验收、Exa及官网依赖候选）。3个准确Cargo target必要原件外置后官方clean0，原8.987GiB、外置去重2.352GiB；主根76.152→69.555GiB，可用空间约20.6GiB为时点观察。没有合并代码、修改四仓源码/WIP、删除SDK接收候选/R2源码/用户配置或其他验证目录；Node精同源条件未满足，未删。
+**第 18–58 轮新增的入口（本轮起先读这些，不要从 301 行历史里捞）**
+
+| 要先做什么 | 打开 |
+|---|---|
+| 开始 GUI 手验 | `docs/supreme/acceptance/README.md`（先做 A06→C02，不需模型与网络） |
+| 落地 SDK 候选 | `docs/supreme/handoffs/2026-11-04-current/sdk-candidate-landing-delta.md`（4 个测试文件＋保留 HEAD 的 `core_profile_e2e.rs`＋门禁 argv） |
+| 改完文档自检 | `/usr/bin/python3 -B docs/supreme/handoffs/2026-11-04-current/verify_docs_consistency.py`（13 项） |
+| 证明没动 WIP | `/usr/bin/python3 -B .echo-semantic/local/validation-stage-cli-wip-baseline-20261104-r01/verify_wip.py`（48 项基线） |
+| 看当前全局 | `.echo-semantic/local/validation-stage-status-snapshot-20261104-r01/status.json` |
+
+两条硬约束：**任何情况下不得对 dirty 文件执行 `git checkout --`／`git restore`**（第 56 轮曾因此丢失用户 WIP，靠 `.echo-semantic` 快照恢复）；**负向测试只改副本，不碰仓库文件**。
+
+当前Eclip进程0，新abdd手验包保留未启动。13个旧会话已归档、当前仅总协调；59条已经祖先/源码核验的冗余local heads已在先固定15个历史tip后删除，五仓剩12（五main、五验收、Exa及官网依赖候选）。3个准确Cargo target必要原件外置后官方clean0，原8.987GiB、外置去重2.352GiB；主根76.152→69.555GiB，可用空间约20.6GiB为时点观察（该数为当时点；第 58 轮实测可用 26GiB，当前值以 `validation-stage-status-snapshot-20261104-r01/status.json` 为准）。没有合并代码、修改四仓源码/WIP、删除SDK接收候选/R2源码/用户配置或其他验证目录；Node精同源条件未满足，未删。
 
 ## 单一协调与当前授权
 
