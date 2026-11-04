@@ -77,3 +77,7 @@
 - **唯一术语遗留**：`echo-sdk-protocol/src/schema.rs` 两处 fixture 值 `"name": "worker"` 为基线既有（baseline 2／当前 2，非新增），但其产物是两份**已提交且被合同门禁逐字节校验**的 fixture。改成 `subagent` 会改变合同字节，须单列一次合同变更（重生成 + 重跑 135 项阻断产物 + 更新 accepted），**本轮只报不改**。
 
 分类依据是文件路径而非 `#[cfg(test)]` 块级归属，回执里已注明该限界。原件 `validation-stage-static-rule-scan-20261104-r01/settlement.json`。
+
+### 附二：79 份“无法解析的 JSON”已判定完结
+
+均为构建快照内 `node_modules` 下的 `tsconfig*.json`（JSONC，含注释与尾逗号），属第三方配置而非本仓回执。**不存在损坏或伪造的回执。** 该条从完整性审计的“未覆盖项”中移除。
