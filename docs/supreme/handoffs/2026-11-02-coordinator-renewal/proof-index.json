@@ -516,8 +516,8 @@
   },
   "GUI_manual_checklist_current79": {
     "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/docs/supreme/acceptance/eko-eclip-gui-manual-checklist-2026-11-02.md",
-    "sha256": "55923c00540386b9d6829b89aef952837da99b6faf78031cfad6d52731e20df2",
-    "bytes": 25293
+    "sha256": "8fbd8f6727f3f258b8bd69e75178c6aa91d227f605b15816058d30a981dbed13",
+    "bytes": 25797
   },
   "GUI_manual79_coverage_Root_closure": {
     "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/gui-manual79-coverage-root-closure-r01/acceptance.json",
@@ -1028,5 +1028,65 @@
     "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/local-branch-convergence-20261104-r01/summary.json",
     "sha256": "4d6e9e03d32287f8afd4aae66f431774a562d4efaab74ed1cde6dcdb9f7c17b3",
     "bytes": 3304
+  },
+  "local_branch_cleanup_all61_restored_exact_tips": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/local-branch-convergence-20261104-r01/restore-all61-after-user-objection-20261104-r01/summary.json",
+    "sha256": "f2ec0be279a447b9cf9e17553b35e953615ba74e388224c0648e9aadef06b638",
+    "bytes": 8933
+  },
+  "local_branch_readonly_ancestry_and_patch_audit": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/local-branch-convergence-20261104-r01/readonly-merge-and-disk-audit-20261104-r01/merge-audit-summary.json",
+    "sha256": "2c661d51b9fbd0b86e32af79aaa6a5414ac84aa93e094f0247e18c0085b4a623",
+    "bytes": 43557
+  },
+  "local_branch17_source_audit_input": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/local-branch-convergence-20261104-r01/readonly-merge-and-disk-audit-20261104-r01/17-unproven-branch-source-review-entry.json",
+    "sha256": "db88df36c256387c7e39f1d808fae5922f085d4eb02fe22ead96c12d86a98903",
+    "bytes": 175088
+  },
+  "workspace_local_disk_readonly_sizes": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/local-branch-convergence-20261104-r01/readonly-merge-and-disk-audit-20261104-r01/workspace-local-du-summary.json",
+    "sha256": "f27409ccd313e1f010b3ccc5c0be0af021ee22f7661e236dd25e0aeee7f8d7e4",
+    "bytes": 19846
+  },
+  "framework_local_disk_readonly_sizes": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/local-branch-convergence-20261104-r01/readonly-merge-and-disk-audit-20261104-r01/framework-local-du-summary.json",
+    "sha256": "a6da5f29ba9750ed90820f792d32f464184902119fa380653cf41b64909942e1",
+    "bytes": 9052
+  },
+  "cli_local_disk_readonly_sizes": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/local-branch-convergence-20261104-r01/readonly-merge-and-disk-audit-20261104-r01/cli-local-du-summary.json",
+    "sha256": "8a08434945a4e21aa3bb8aebb249fa1f79a88462e7ef1cf7c426427d426f5a13",
+    "bytes": 28317
+  },
+  "sdk_local_disk_readonly_sizes": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/local-branch-convergence-20261104-r01/readonly-merge-and-disk-audit-20261104-r01/sdk-local-du-summary.json",
+    "sha256": "c1798c6fd3723d8ab63899e932f838f154088c47cd019f651b50aa334ee6352b",
+    "bytes": 10918
+  },
+  "tagged_target_presence_readonly_not_deletion": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/local-branch-convergence-20261104-r01/readonly-merge-and-disk-audit-20261104-r01/tagged-targets-readonly-sizes.json",
+    "sha256": "d22562836687d702b4b7a21df7bb98a8a1fa8be5d81a2adbc8b6166f675981d4",
+    "bytes": 3059
+  },
+  "repair_App_abdd_actual_final_artifact": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/repair-App-warm-continuation-20261103-r01/epoch-01/entry.json",
+    "sha256": "24066ebc198a3bd99175d6cf246d349a664badabb50ad0d26e50e64a02d551bd",
+    "bytes": 9967
+  },
+  "repair_App_abdd_Root_actual12663_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/repair-App-final-Root-acceptance-20261104-r01/acceptance.json",
+    "sha256": "ef81d3be46eff22cafcc435350830ded15b7d981c452ee3d9bf3b7b7a199ac60",
+    "bytes": 958
+  },
+  "GUI_manual_checklist_before_abdd_ready": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/repair-App-final-Root-acceptance-20261104-r01/manual-checklist-before-abdd-ready.md",
+    "sha256": "55923c00540386b9d6829b89aef952837da99b6faf78031cfad6d52731e20df2",
+    "bytes": 25293
+  },
+  "GUI_manual_checklist_abdd_ready_delta": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/repair-App-final-Root-acceptance-20261104-r01/manual-checklist-abdd-ready-delta.json",
+    "sha256": "39a7e40c40ca5ea0b8cf28e0fd620c1df34c82b2af2a92241071a96749870522",
+    "bytes": 856
   }
 }

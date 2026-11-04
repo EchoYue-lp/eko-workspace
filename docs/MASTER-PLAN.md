@@ -2,7 +2,7 @@
 
 更新时间：2026-11-04。用户已明确恢复完整Goal，并由新协调上下文接手。完整目标在 `docs/supreme/goals/eko-eclip-complete-iteration-2026-11-02.md`，现场与准确下一步在 `docs/supreme/handoffs/eko-current-handoff.md`；十执行线及权限见续接目录 `executors.md`。旧三天时间线原字节归入该目录 `history/`，当前表不以历史“live/paused/pending”覆盖最新事实。
 
-2026-11-04 用户要求验证阶段收敛分支，已实际删除61个历史本地分支：五仓71→10，每仓保留 `main` 和唯一当前验证分支。完整bundle已逐仓验证并在临时bare仓恢复全部尖端提交；HEAD、当前源码/index/WIP、tag/stash/remote/worktree不变。本轮继续在现验证分支修复和测试，不新增平行任务分支。详见 [清理记录](supreme/reports/local-branch-convergence-2026-11-04.md)。
+2026-11-04 分支清理纠正：Root未先证明旧改动已吸收就清理61条本地分支，用户提出异议后，已承认判断错误并将61条全部恢复原精SHA，五仓当前71条，HEAD/index/WIP不变。原bundle保留不代合入依据。初步44条祖先覆盖、17条须按当前源码、squash/重写、后继优化和具名退役审查，禁止机械全部合并或再次批量删除；磁盘仅只读盘点，不再借分支清理删除未确认材料。原过程及撤销见 [记录](supreme/reports/local-branch-convergence-2026-11-04.md)。本轮实际开发/打包继续原验证分支。
 
 唯一Root为 `01a19a4a-2815-7072-88b1-63ff005b2476`，完整Goal未完成、无token预算，原范围不变。F当前本地 `91797fed`（parent c623，继续保a8的1376+f568双父）；Driver/微信错误观测70方法及本次取消隐式温度11项定向回归、Clippy/fmt/task Source-final/独审/Root产物均已核，clean未push；CLI20070保存指南/UI/Hook及R03局部里程碑，b04原全前端945P/4原性能opt-in未跑，R03 normal1P/owner3按原130、143、1验过。官网817对F a8/CLI20070/SDK83 cut原完整verify0/W0（61unit/15e2e/1原平台skip/338路由），本地clean、未部署。SDK真实747接收source7978完整三语已0/W0：TS473/Python547＋18subtest/Java345，各1原Windows skip，隔离包/三个quickstart/Parquet通过；原stable5亦0、18组589P/编译W0，已Root保全/精clean；完整合同/条件矩阵/main/发行资格仍另验。K2原70/复位/同App重开闭合但未测到加速。解锁后自动Cron真实scheduled一次Completed并在卡片显示全文，微信通知-2失败及主chat publication0已分别派候选修复；原任务收尾disabled/rev6，通知恢复。两SDK外部Source合同和本地83公开源仍OPEN。精原件见proof-index。
 
@@ -11,6 +11,8 @@
 11月3日手验新增四项：用户要求 EKO 取消 `temperature`；真实 API 返回403的规则原因仍未知；已有SSH工作空间在新进程中缺少连接；新建本地目录未选父文件夹应使用默认位置。源码修复均已独审：Framework九处helper缺省None、11项定向测试及正常task Source/Final通过，显式框架API保留；EKO温度退役与默认位置/原SSH认证弹窗恢复取得40项及90项前端通过。Registry现已真实复现原empty-parent失败，修复版两个临时目录用例各1P，原cut Clippy/NoRun均0/W0。EKO回环首项因夹具模型名未准入而101、未HTTP；另外8项独立诊断均0，不能冒9项GREEN。精测试修复仅三处模型名与首因传播顺序，经独审和Root复评后采用，当前实际collector两读42a1/274、仅此一输入相对66变化，policy仅consumer后继2028，原d542/768包及五风险不动；新cut真实NoRun/Registry2/EKO9/独立删除保代码1（共12项）及Clippy均自然0/W0/E0；正常联合task Source/Final0，globalClosure未查，最终3947源已Root逐文件核对。旧66的RustSec TCP fetch失败1保原，42首次实际fresh亦TCPfetch1/空audit，不继承旧19ec门禁。当前运行c548未含新修复；Root已授2a5f精票，以最终6abe完整源清单、独占jobs1及实际资源准入后台构建一次本地手验候选，成品/手动入口另核，由用户切换，不作发布或启动许可。
 
 ## 本轮实际已闭合的阶段
+
+2026-11-04 本地手验修复包 `abdd3fac` 已生成并保存在target外，实际build0／1992.799秒／j1／RustW0E0、本机adhoc/strict0；Root逐12663物理引用与当前源核验通过。用户手动入口同新epoch的“启动修复版.command”已生成且语法0，Agent未执行；沿原data/config/MCP/project路径，不读hash恢复用户配置。79项清单更新abdd待复验，不勾选任何GUI项目。当前42联网risk仍TCPfetch1 pending，真实API403/SSH/GUI及发行/main不由本地构建推导；按用户最新边界，warm target与资料保留未删。
 
 - Framework PR201 精main f568，七CI成功，仅Stage0阶段。
 - SDK PR14先行退出＋PR15两文档修正精main747be937，九CI全部成功；旧6cd语义14失败保原，外部旧base删除预检接口未被修。

@@ -18,7 +18,7 @@
 
 ## 五仓 fresh 切点
 
-2026-11-04 按用户新指令，五formal仓本地heads已71→10，仅main＋各当前验证分支，61旧heads经完整bundle/verify/真实bare导入核全部尖端后删除。原HEAD/currentbranch/index/status、tags（含pre-retirement）、stash/remote/worktree均未改；未合Exa源码保archive不推合。唯一完整原件Root local/local-branch-convergence-20261104-r01/summary.json，SHA4d6e9e；后续本轮验收继续同一验证branch。先前含refs_sha256的历史源清单不回写，删除heads是Git元数据变化，精确HEAD/源码摘要不变；不得误判源漂移或重跑工程。清理不等于正式main/发布或宿主worktree回收。
+2026-11-04 重要纠正：最初Root未经合入/价值判断就删61条heads，用户明确反对后已将全部61条恢复原精SHA，五formal仓当前71条；HEAD/currentbranch/index/status、源码/WIP不变。恢复票Root local/local-branch-convergence-20261104-r01/restore-all61-after-user-objection-20261104-r01/summary.json，SHAf2ec0b。原4d6e9e清理票只保历史，绝不代表当前状态或代码都已吸收。初步祖先44、未证17，按用户最新要求对照当前真实实现、后继替代/退役与仍值得提取的差异，只读审查、不机械合并、不再删除。用户当前不授权借缓存惯例扩大删除；Release新包已成品，warm target和所有材料保留。分支refs恢复不改F/CLI最终冻结源，不重编。磁盘只读盘点，尚未作新的GC/clean/rm。历史refs摘要不回写，retirement tag/Exa不推合/远端边界继续保。
 
 | 仓库 | 分支 | HEAD／状态 |
 | --- | --- | --- |
@@ -221,3 +221,11 @@ CLI最终入口6838，业务38路径＋6已具名原字节支持范围正常Sour
 Root已落真实一次候选build票2a5f95，精路径Root local/repair-App-warm-continuation-20261103-r01/Root-build-local-manual-repair-candidate-GO-20261104-r01.json。引用真实同49b3 GREEN2/EKO9原件和source6abe，唯一heavy窗交Release；resume-j1 a3c764、helper b18dd、packet7edf，源码/工具/编译flags不变、actualjobs1。两处fresh均须disk≥8GiB/nootherheavy/pressure1或2且actualfree≥35%；critical/free<20仅阻新后续阶段，原build自然出口保。先前Root写票在实际free33%断言停、未创建GO，早发通知已更正；真正2a5f写前freshfree37% admittedtrue，不把资源停点冒build。若实际资源再次抖动，短间隔观察达同条件后可按本票继续，不降阈值或重复问用户。
 
 当前本地分支已按人类新要求收敛，不改变上述HEAD或源码。候选构建只允许新epoch源/日志、精旧warmtarget、T外保全、新包本机adhoc/strict、实际ready与纯生成用户双击入口；任何App open/quit/reopen/GUI/真实API/SSH/UserRoot读取hash恢复/远端发布仍无授权。当前以实际execution/PID及终态判断build，GO或prepared0不代启动。官网最终四文档候选后继ace9/dd84已纠正路径可物理重合，正式817仍clean未应用/部署。
+
+### 当前纠正与实际成品（11月4日后继）
+
+上段“本地分支已收敛”仅描述随后已撤销的历史动作；当前61条均恢复、五仓71条，状态以本页开头的恢复票f2ec0b为准。按用户要求，历史分支价值审查只读进行；既不以祖先缺席推断功能没实现，也不以备份存在授权删除。磁盘四仓/顶层验证local实测合计71.761GiB，整个主根76.152GiB，primary五仓Git admin约170MiB。7个带Cargo TAG且名称含target的目录共9.954GiB，其中还包括必要target-selected保全材料，不能机械按名称删除。当前无新GC/clean/rm；先分类源码副本、可重建缓存、必要程序/原件及仍引用设计。
+
+本轮17条非祖先分支的独立源码价值审查已完成，四reviewer均未写源/merge/delete：Stage0与mainf568、SDK837与6cd、SDK4af与main747三组整树精等；CLI五条的有效义务均已有后继覆盖，旧首页/认证和旧插件健康兄弟隔离发布策略不能恢复；SDK LSP已具名退役、旧fcc8 pin被340后继替代、部分修复在formal83或当前receiving7978承接，候选未冒formal合入。顶层三文档和官网GUI投影均不宜整包回灌；顶层6688所引用的项目环境细化Design及历史验收义务仍要保留原精SHA/blob。两项独有候选需继续保留：F Exa4343（尚无当前接线，要适配现HTTP错误合同；仍不push/合main）及官网24e的25package锁刷新（CI main-only已覆盖、锁更新未覆盖，含registry来源变化，需当前审计复评）。没有需要机械整支合并的分支，也没有据此再删除任何ref；44祖先覆盖与其余源码覆盖、替代/退役或独有候选资格分别记录，不称61全已合入。
+
+新手验候选abdd已实际完成：Tauri build自然0／1992.799秒、j1、RustW0E0；保原nosign两Warn/原bundle strict1，T外本机adhoc sign0/strict0/arm64，149asset在当前实际CLI.d，4685 compilecontext/原FP精u64/.d/out保留。唯一entry24066；Root ef81d3实际核80终态index、4685context、3946formal/副本源和4bundle共12663物理refs，fresh只读strict0/zsh-n0。实际新App在Root local/repair-App-warm-continuation-20261103-r01/epoch-01/retained/Eclip.app；用户入口同epoch/启动修复版.command（37530130，584B/0755），精ready17f949+manual10112及原data/project/config/MCP参数。只生成、未执行，未打开/退出/激活任何App或读hash恢复用户配置。当前42freshTCPfetch1仍pending，不推导外部API403、真实SSH/GUI或main/发布资格。按人类最新边界，warmT约3.72GiB与所有材料继续保留，不再自动清理。
