@@ -31,6 +31,8 @@
 | `sdks/typescript/test/jwt-values.test.js` | 0 | 35 | 候选**纯增** |
 | `echo-sdk-host/tests/core_profile_e2e.rs` | **6** | 4 | **真分歧** |
 
+四个纯增文件的候选独有行合计 **154** 行（38 + 42 + 39 + 35）。
+
 ## 那处真分歧必须保留 HEAD
 
 `core_profile_e2e.rs` 的差异正是 HEAD 最新提交 `83ae59e test: 将原生 SDK 测试夹具输出限制到临时目录` 做的事：

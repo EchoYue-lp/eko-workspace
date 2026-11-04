@@ -120,6 +120,61 @@ for pat, why in BAD_PATTERNS:
 if not [f for f in fails if "推理深度" in f or "三项" in f]:
     ok("已更正的 A06 表述未复现")
 
+# 7. 入口页给出的启动脚本路径必须真实存在
+LAUNCHER = ".echo-semantic/local/repair-App-warm-continuation-20261103-r01/epoch-01/启动修复版.command"
+if os.path.exists(os.path.join(ROOT, LAUNCHER)):
+    ok("入口页启动脚本路径存在")
+else:
+    bad(f"入口页启动脚本不存在: {LAUNCHER}")
+
+# 8. SDK 落地清单里的路径必须存在，且 4 个纯增行数之和与正文写的 154 一致
+DELTA = os.path.join(ROOT, "docs/supreme/handoffs/2026-11-04-current/sdk-candidate-landing-delta.md")
+if os.path.exists(DELTA):
+    dd = read(DELTA)
+    for rel in [
+        "echo-sdk-protocol/src/scalar.rs",
+        "sdks/java/src/test/java/com/echoagent/sdk/A2AValueTest.java",
+        "sdks/python/tests/test_jwt_values.py",
+        "sdks/typescript/test/jwt-values.test.js",
+        "echo-sdk-host/tests/core_profile_e2e.rs",
+    ]:
+        if not os.path.exists(os.path.join(ROOT, "echo-agent-sdk", rel)):
+            bad(f"落地清单引用的文件不存在: {rel}")
+    if not [f for f in fails if "落地清单引用" in f]:
+        ok("落地清单 5 个文件均存在")
+    # 4 个纯增文件的候选独有行数之和（按表格列解析：路径 | HEAD独有 | 候选独有 | 方向）
+    nums = []
+    for line in dd.split("\n"):
+        if not line.startswith("|") or "纯增" not in line:
+            continue
+        cells = [c.strip() for c in line.split("|")]
+        if len(cells) < 5:
+            continue
+        try:
+            nums.append(int(cells[3]))
+        except ValueError:
+            bad(f"落地清单表格列无法解析: {line[:60]}")
+    stated = re.search(r"合计 \*\*(\d+)\*\* 行", dd)
+    stated_num = int(stated.group(1)) if stated else None
+    if sum(nums) == 154 == stated_num:
+        ok(f"纯增行数之和 {sum(nums)} 与正文声明一致")
+    else:
+        bad(f"纯增行数：表格合计 {sum(nums)}，正文声明 {stated_num}，实测应为 154")
+else:
+    bad("落地清单文件不存在")
+
+# 9. MASTER-PLAN 里的关键数字必须与实际一致
+MP = os.path.join(ROOT, "docs/MASTER-PLAN.md")
+mp = read(MP)
+for token, why in [
+    ("928", "SDK 相同数"),
+    ("26", "原义务数"),
+]:
+    if token not in mp:
+        bad(f"MASTER-PLAN 缺关键数字 {token}（{why}）")
+if not [f for f in fails if "MASTER-PLAN" in f]:
+    ok("MASTER-PLAN 含关键数字")
+
 print("通过:")
 for m in oks:
     print(f"  + {m}")
