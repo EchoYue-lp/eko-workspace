@@ -98,3 +98,39 @@ GUI人工清单：[Eclip GUI 手动验证79项](supreme/acceptance/eko-eclip-gui
 **两次失败已如实记录为运行器偏差，不是源码缺陷**：attempt-01 未装队列 `stableEnvironment` 的绝对 `RUSTC/RUSTDOC`，cargo 走 PATH 上的 rustup 代理，而 registry 里 `convert_case-0.10.0` 自带 `rust-toolchain.toml(channel = "1.83.0")`，代理便尝试下载 1.83.0 并被沙箱拒绝写 `~/.rustup/tmp`；attempt-02 补丁把设置写在 unset 循环之前，`RUSTC/RUSTDOC` 被自己 pop 掉，现象相同；attempt-03 修正顺序并加绝对路径断言后原命令重跑通过。target 随后按官方 `cargo clean --target-dir <exact>` 自然 0（Removed 2665 files/1.8 GiB，TAG 校验、reader0）。
 
 **联网前置已收敛为可复现事实**（Goal 步骤 3）：`https://github.com` 与 `https://raw.githubusercontent.com` 当前 443 超时（curl rc=28，12s/8s 零字节），而 `index.crates.io`、`api.github.com`、`objects.githubusercontent.com` 可用，`git@github.com` SSH 可认证（`Hi EchoYue-lp!`）。RustSec advisory-db 走 HTTPS clone，故 CLI fresh actual/canonical 与 SDK 三项 fresh 风险必然停在 fetch 阶段，与锁/身份/源码无关。既有决定记录过“进程级同官方 RustSec 仓 SSH 传输取得真实 fresh fetch”的恢复方式且明确不是 no-fetch 结果，但该恢复改变传输方式，本轮**未执行**，留待 Root／用户按原风险决定确认。原件 `validation-stage-main747-r01/network-prerequisite-probe-r01.json`。
+
+---
+
+## 2026-11-04 第 18–37 轮：验收文档与证据链的逐步核真
+
+上节之后本会话继续只读推进，没有新构建、没有推送、没有启动 GUI。产出分两类：**把已有结论核成实证**，与**修正自己写的预期**。
+
+### 一、同源证据从"推断"变"实证"
+
+- **App 交付身份**：`finalSourceManifest.json` 重算 sha256 仍为 `6abe867d…`，3946/3946 字节相同，两仓 HEAD 一致，CLI 脏状态 2353 字节与构建时记录逐字节相同。
+- **前端修复真的进了包**：构建日志第 3/6 行证明跑了 `npm run build:tauri`，第 159 行列出的 `dist/assets/index-DskFRksZ.js`（534.45 kB）即快照内 534,451 字节那份，grep 命中「留空使用默认位置」「远程连接尚未准备」「把想法变成成果」。**注意工作树 `web-frontend/dist`（mtime 2026-11-02 12:31）不是交付所用产物**，它不含这两处文案。
+- **SDK 合同门禁回执自洽**：日志 sha256 `d1376470…` 重算一致、`naturalExit` 两处均 0、运行 834.8s、`noUpdateFlag` 无重生成、候选树自 2026-11-02 起未改动。
+- **SDK 147 处改动有覆盖分级**：129/147 落在已执行门禁内且全部退出 0，但分两级——A 级 Rust 32 项（`stable-window` 589 测试 0 失败 + 合同 135 产物）；B 级三语言 85 项（预构建产物、`noCargoAllowed`，自述不构成 SourceFinal/canonical/mainCI）。**不得把 B 级 0 fail 当 A 级资格使用**。
+
+### 二、修掉的四处预期错误（若不修，每个都会变成一次无效报障）
+
+1. `latest-formal-arm64-App-20261103-r01/retained/Eclip.app` 名字带 latest 但主二进制是旧 `c5488208…`（176,894,784 B，缺 SSH 重连入口）；正确包是 `repair-App-warm-continuation…/epoch-01/retained/Eclip.app`（`abdd3fac…`，176,890,208 B）。
+2. 启动脚本在 `epoch-01/` 而非 `retained/`，原文档写"同目录"会让用户找不到入口。
+3. C04 前置：`~/.eko` 里没有 `ubuntu-ssh-test-20261102`，但启动脚本经 `EKO_DATA_DIR` 指向 `isolated-runtime/data`，那里**有且仅有**该工作空间——**用脚本启动即可照原文执行 C04**。
+4. A06 预期写"推理深度／输出上限／上下文三项"，实际只有 `Max tokens`、`Context window` **两项**且为英文标签，不存在推理深度字段。
+
+### 三、两次自我更正（同类错误的两种表现）
+
+- 第 24 轮撤回"候选树缺 9 份 plan 文档"：`git ls-tree` 默认 `quotePath` 把非 ASCII 路径输出成八进制转义串，脚本拿它当文件系统路径判断存在性，必然判缺失。改用 `-c core.quotePath=false` 后实测为 **相同 1075／不同 147／缺失 7**，缺失 7 个正是退役删除项，与回执 `D=7` 吻合。
+- 第 30 轮 `codesign … | head` 后取 `$?`，拿到的是 `head` 的状态；第 33 轮只查 `~/.eko` 就断定某工作空间不存在，未确认被测进程实际读哪个数据根。两者同属"把中间输出当事实"。
+
+### 四、磁盘组成（Tier A 之后刷新）
+
+工作区 65 GiB 中 **61 GiB（约 94%）是四仓 `.echo-semantic` 证据树**，构建缓存仅约 1.0 GiB；`.worktrees/` 1.6 GiB 内**没有一个是 git worktree**（无 `.git`，实为历史证据目录）；`ZCode` 352 MiB 是第三方 `zai-org/ZCode` 克隆。≥50 MiB 文件 156 个名义 39.50 GiB，但按 `st_blocks` 实际分配，同名同尺寸重复组仅可回收 **1.88 GiB**（7 份 `large.bin` 名义 14 GiB、实际≈0，稀疏）。**不动证据的回收上限约 2.9 GiB**；要显著释放必须对证据目录定保留策略，那是新的授权决定。
+
+### 五、当前待决（没有一项可在只读范围内闭合）
+
+- GUI 79 项：全部用户手点；四项用例的静态断言已核完，文档预期已修正。
+- SDK：合并树完整、门禁与测试均有据；缺 canonical/SourceFinal 资格（需重型窗口）与 `inventory.rs` 特例裁决；落提交并推送需授权。
+- 原 26 项：台账仍 26 行、编号连续、无一行标完成；分类 11+5+4+1+4+1=26。
+- 可选清理：两个陈旧外部 worktree（内容已在任务分支）、1.88 GiB 证据去重，均需授权。
