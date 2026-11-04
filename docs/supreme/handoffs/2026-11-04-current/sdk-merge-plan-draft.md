@@ -48,7 +48,7 @@
 ## 四、建议的解决顺序
 
 1. **先定退役裁决**：`sdks/{java,python,typescript}` 下 33 个 A2A/LSP 相关冲突，统一接受**远端删除**。本地对这些文件的修改属于退役前行为，不保留。
-2. **再合构建层**：`Cargo.toml`、`echo-sdk-host/Cargo.toml`、`Cargo.lock`、`.cargo/cargo-deny-duplicate-baseline.json`。两线 framework pin 相同（`3409932`），锁差异应来自依赖集合差异，需逐项核对而非取一侧。
+2. **再合构建层**：`Cargo.toml`、`echo-sdk-host/Cargo.toml`、`Cargo.lock`、`.cargo/cargo-deny-duplicate-baseline.json`。**两线 framework pin 不同**（origin `0087353f` / 分支 `3409932`），这一步实质是 pin 升级 + 依赖基线重建，必须逐项核对，不能取一侧。
 3. **再解源码语义**（4 处必须显式裁决）：
    - `echo-sdk-protocol/src/inventory.rs`：本地有 `sandbox_command_projection` 覆盖语言合同分类的特例（注释称“已批准值投影”），origin 已移除。**保留还是放弃，须由了解该批准来源的人定**；它正是遥测产物差 20 字节的根因。
    - `echo-sdk-host/src/core_profile/mod.rs`：必须补回 `mod native_message;`（origin 无此行）。
@@ -114,3 +114,23 @@
 - `candidate-source` 只做过源码级审阅，**未跑完整合同门禁、未重生成合同产物**（原回执明示 source-only）；
 - `747be93` 仍保留 `a2a_host_fixture.py` 与 `lsp_*_server.py`，与“A2A/LSP 已退役”是否矛盾未判定；
 - 前文第一~七节仍有效，但应读作“直接三路合并路径的冲突面（59）”，与本节“已合并树残差（163）”是两条不同路径。
+
+---
+
+## 九、pin 与方向问题的答案（2026-13/14 轮补记）
+
+**谁先谁后，已有定论（依据提交正文）**：
+
+- `6cd2e1b`（2026-11-01 22:42）正文原话：“仅保存 main0930 基础上的独立 StageA；框架精确 pin008、accepted5352/routes431，**正式 eea 的九项原生消息后继保持独立待三方合流**。”
+- `747be93`（2026-11-02 00:37）正文：仅更新 Baseline 摘要与退役 Evidence 的源码定位，业务源码/依赖/生成合同/工具规则均无变化。
+
+因此 **origin/main 有意不含原生消息**，那是被显式推迟到三方合流的后继；`candidate-source`（审阅切点 2026-11-01T15:14Z ≈ 23:14 北京，晚于 StageA）正是那次合流尝试的产物。
+
+**并纠正前文一处错误**：第 4 节第 2 步原写“两线 framework pin 相同（3409932）”，这是错的——那次是在接收候选**工作树**里 grep 的，而工作树属于任务分支。
+
+| | framework pin |
+|---|---|
+| origin/main `747be93` | `0087353fd78eb73ffaa68b255cf4ef807ca96d4a` |
+| 任务分支 `83ae59e` | `340993201cc937fc8e4783b66be399ef9f14e3d5` |
+
+**这改变了合流成本的性质**：不只是搬 163 个文件，而是 framework pin 008→340 的升级 + 已接受合同基线重建（正文提到 origin 侧 accepted5352/routes431，与本轮接收树上合同门禁记录的 5344 身份/430 路由口径是否一致尚未判定）。
