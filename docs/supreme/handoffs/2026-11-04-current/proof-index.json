@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "at": "2026-11-04T06:18:02+00:00",
+ "at": "2026-11-04T06:21:24+00:00",
  "kind": "current-proof-index",
  "note": "每条在写入时即时计算哈希；verifyNow 表示写入瞬间存在且哈希可算，不代表业务结论已被复核。 注意：SDK 条目取的是 origin/main（747be93）树内的副本，与本地 main（83ae59e）是分叉的两条线，见 validation-stage-sdk-lineage-audit-20261104-r01。",
  "repos": {
@@ -295,9 +295,11 @@
    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/docs/supreme/acceptance/eko-eclip-gui-manual-checklist-2026-11-02.md",
    "rel": "docs/supreme/acceptance/eko-eclip-gui-manual-checklist-2026-11-02.md",
    "meaning": "79 项 GUI 手验清单",
-   "bytes": 25797,
-   "sha256": "8fbd8f6727f3f258b8bd69e75178c6aa91d227f605b15816058d30a981dbed13",
-   "exists": true
+   "bytes": 26425,
+   "sha256": "87d54b97f7005442f4ffef7c57ad91c51b4d43c13943eb8f3cbd962915a3eb8e",
+   "exists": true,
+   "refreshedAt": "2026-11-04T06:21:24+00:00",
+   "refreshReason": "第 40 轮加入环境前置段（隔离数据根实测：仅微信、无已安装插件、9 会话/17 run/7 任务），条目数仍 13 组 79 项"
   }
  ],
  "entryCount": 30,
