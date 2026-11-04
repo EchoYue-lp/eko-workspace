@@ -99,10 +99,10 @@
 | 对比较对象追踪文件 | 1,229 |
 | 完全相同 | **1,066** |
 | 内容不同 | 147 |
-| 合并树缺失 | 16 |
+| 合并树缺失 | ~~16~~ → **7**（见第十三节修正） |
 
 差异分布：语言客户端 85、Rust 源码 22、语义资料 10、合同产物 10、构建/策略 8、文档 8、其它 4。
-缺失 16 个中值得注意的是 `JwtClaims/JwtConfig/jwt_values.{java,py,ts}` 与 `a2a_host_fixture.py`、`lsp_diagnostic_server.py`、`lsp_fault_server.py`。
+缺失实为 **7** 个（第 13 轮误报 16，见第十三节）：`JwtClaims/JwtConfig/jwt_values.{java,py,ts}` 与 `a2a_host_fixture.py`、`lsp_diagnostic_server.py`、`lsp_fault_server.py`。
 
 ### 因此实际剩余工作是两件事，不是重做合并
 
@@ -215,3 +215,22 @@ structure!(state::AgentCheckpoint, AgentCheckpointWire,
 那 7 个是 `JwtClaims.java`、`JwtConfig.java`、`jwt_values.py`、`jwt_values.ts`、`a2a_host_fixture.py`、`lsp_diagnostic_server.py`、`lsp_fault_server.py`，删除发生在 `6cb12d3`。**已核实不是悬空删除**：origin/main 对两个夹具零引用；分支把 `test_jwt_values.py` 改写成了 `test_a2a_jwt_exports_are_retired`（断言 `not hasattr(sdk,"JwtConfig"/"JwtClaims")`）。
 
 **结论**：144/147 属分支侧改动，说明已合并树内容主体与任务分支一致；origin 独有内容主要是 9 份文档 + 1 个纯校准文件。执行顺序可定为：以 `candidate-source` 为基 → 补 9 份文档 → 逐个复核 66 个双改文件 → 重生成合同 → 跑门禁。
+
+---
+
+## 十三、修正：候选树并不缺那 9 份文档（2026-24 轮）
+
+第 12 节把“16 个缺失”拆成“9 份 plan 文档 + 7 个退役文件”，**9 份是误报**。
+
+**原因**：`git ls-tree` 默认 `core.quotePath` 开启，把非 ASCII 路径输出成带八进制转义的引号串（`plan_01_\345\206\273...`）；脚本把该串直接当文件系统路径判断存在性，必然判为缺失。
+
+**实测（`-c core.quotePath=false`）**：候选树对 `747be93` 追踪文件的结果是 **相同 1075 / 不同 147 / 缺失 7**，缺失的 7 个正是退役删除项，与候选自身回执的 `D=7` 吻合。
+
+**因此**：
+
+- 接收候选是**完整**的 merged tree（`747be93` + 原生消息 81 新增 + 147 修改 + 7 退役删除）；
+- 既有“完整合同门禁自然退出 0”就是在这棵树上取得的，适用性不受影响；
+- “还需补 9 份文档”这个工作项**不存在**，第 12 节的执行顺序应删去该步；
+- 残差总量由 163 修正为 **154**（147 + 7）。
+
+**教训**：与此前 `git cat-file -e` 只看 stdout 的错误同类——都是把 git 的输出格式当成文件系统事实。判定存在性必须用 returncode 或关闭路径转义。
