@@ -66,3 +66,14 @@
 - 不把本台账当作 26 项完成；它只是把剩余范围整理成可决策的形态。
 - 不为凑数启动需要资源窗口的完整矩阵；不因等待用户而制造模拟结果。
 - 不擅自 close Issue、不 push／合并／发布／部署。
+
+## 附：增量硬约束静态扫描（2026-11-04）
+
+对两处未提交增量做只读规则扫描（SDK 235 增量内 29 个 `.rs`；CLI 48 项 WIP 内 19 个 `.rs` + 18 个 `.ts/.tsx`），模式含 `unwrap`／`expect`／`panic!`／`unreachable!`／字节切片／`worker`：
+
+- **SDK**：非测试文件 0 处 `unwrap`/`expect`/`panic!`/`unreachable!`/字节切片；`expect` 56、`panic!` 3、字节切片 2 均按路径落在测试文件内。
+- **CLI Rust**：全部为 0；`worker` 3 处按路径在测试文件内。
+- **CLI 前端**：`temperature` 3 处全是“断言温度字段已不存在”的测试；`worker` 0；`console.log` 0；唯一 `as any` 出现在解释历史问题的注释里。
+- **唯一术语遗留**：`echo-sdk-protocol/src/schema.rs` 两处 fixture 值 `"name": "worker"` 为基线既有（baseline 2／当前 2，非新增），但其产物是两份**已提交且被合同门禁逐字节校验**的 fixture。改成 `subagent` 会改变合同字节，须单列一次合同变更（重生成 + 重跑 135 项阻断产物 + 更新 accepted），**本轮只报不改**。
+
+分类依据是文件路径而非 `#[cfg(test)]` 块级归属，回执里已注明该限界。原件 `validation-stage-static-rule-scan-20261104-r01/settlement.json`。
