@@ -79,3 +79,38 @@
 ## 七、本方案不做的事
 
 不执行合并、不建分支、不 fetch、不 push、不重写历史；不代替任何人裁决 `inventory.rs` 的投影特例是否保留；不预设哪条线是“正确基线”。
+
+---
+
+## 八、重要修订：先期合并已经存在（2026-13 轮补记）
+
+本节修正前文“合并尚未开始”的措辞。既有证据树显示 **2026-11-01 已完成过一次三方合并**：
+
+- 回执：`sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/review-cut-r02/all44-static-review-cut.json`
+- 状态：`ALL44_RESOLVED_SOURCE_ONLY_READY_FOR_ROOT_INCREMENTAL_REVIEW`，**44 个冲突全部解决**
+- 合并树：`…/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/candidate-source`
+- 该树**同时具备**：原生消息模块 `native_message.rs`、A2A/LSP 退役（A2A 客户端文件已不存在）、分支最新修复（`echo-sdk-channel-forward`）
+- 该树**不具备**：origin 的 `AgentCheckpointWire.current_plan`；且仍保留 `sandbox_command_projection` 特例
+
+### 与 origin/main（`747be93`）的残差
+
+| 项 | 值 |
+|---|---|
+| 对比较对象追踪文件 | 1,229 |
+| 完全相同 | **1,066** |
+| 内容不同 | 147 |
+| 合并树缺失 | 16 |
+
+差异分布：语言客户端 85、Rust 源码 22、语义资料 10、合同产物 10、构建/策略 8、文档 8、其它 4。
+缺失 16 个中值得注意的是 `JwtClaims/JwtConfig/jwt_values.{java,py,ts}` 与 `a2a_host_fixture.py`、`lsp_diagnostic_server.py`、`lsp_fault_server.py`。
+
+### 因此实际剩余工作是两件事，不是重做合并
+
+1. 决定以 `candidate-source` 为基，还是以 `747be93` 为基（**谁先谁后尚未确认**：747 可能正是由该树派生，若是，则“缺失 16 个”可能是退役删除而非遗漏）；
+2. 收敛 163 个文件的残差，其中合同产物 10 个必须**重生成**而非手工合并。
+
+### 仍未解决的三点
+
+- `candidate-source` 只做过源码级审阅，**未跑完整合同门禁、未重生成合同产物**（原回执明示 source-only）；
+- `747be93` 仍保留 `a2a_host_fixture.py` 与 `lsp_*_server.py`，与“A2A/LSP 已退役”是否矛盾未判定；
+- 前文第一~七节仍有效，但应读作“直接三路合并路径的冲突面（59）”，与本节“已合并树残差（163）”是两条不同路径。
