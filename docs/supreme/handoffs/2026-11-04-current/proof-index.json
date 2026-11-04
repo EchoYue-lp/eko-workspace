@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "at": "2026-11-04T06:33:05+00:00",
+ "at": "2026-11-04T06:34:15+00:00",
  "kind": "current-proof-index",
  "note": "每条在写入时即时计算哈希；verifyNow 表示写入瞬间存在且哈希可算，不代表业务结论已被复核。 注意：SDK 条目取的是 origin/main（747be93）树内的副本，与本地 main（83ae59e）是分叉的两条线，见 validation-stage-sdk-lineage-audit-20261104-r01。",
  "repos": {
@@ -295,11 +295,11 @@
    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/docs/supreme/acceptance/eko-eclip-gui-manual-checklist-2026-11-02.md",
    "rel": "docs/supreme/acceptance/eko-eclip-gui-manual-checklist-2026-11-02.md",
    "meaning": "79 项 GUI 手验清单",
-   "bytes": 26671,
-   "sha256": "2732df5f0025b77d4d5001705993f178d75a30dd76c65c72423ec3e182a4482e",
+   "bytes": 26839,
+   "sha256": "728c9260a45dfa8dd34cf446614e734f35b3cf059d078447553a5325065fc24e",
    "exists": true,
-   "refreshedAt": "2026-11-04T06:33:05+00:00",
-   "refreshReason": "第 47 轮 L01 条目加具名用例指引（含与 C04 合并成一次重启）"
+   "refreshedAt": "2026-11-04T06:34:15+00:00",
+   "refreshReason": "第 48 轮 D 组加具名用例指引（D01–D05 可做，D06/D07 未做并写明原因）"
   }
  ],
  "entryCount": 30,

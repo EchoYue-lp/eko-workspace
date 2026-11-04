@@ -48,6 +48,8 @@
 
 ## D．终端与两个 SSH 账号（当前可先做 ubuntu；echo 独立待准备）
 
+> 具名用例：`docs/supreme/acceptance/eko-case-D-terminal-2026-11-04.md`（覆盖 D01–D05 的具体步骤与预期；D06／D07 未做及原因一并写明）。
+
 - [ ] **D01 本地终端**：在测试项目打开内置终端，执行 `pwd`。预期目录是当前项目；默认权限模式下用户主动打开终端可用。
 - [ ] **D02 ubuntu 远端身份**：在其项目终端清当前输入行后，手动执行 `id -un`、`pwd`，再执行只读 `git rev-parse --show-toplevel`／`git rev-parse HEAD`。预期账号为 ubuntu、目录及 Git 输出符合该真实远端；若不是 Git，显示真实错误，不伪造仓库。
 - [ ] **D03 中文与 emoji**：在本地和 SSH 终端分别执行 `printf '中文🙂\n'` 并输入中文。预期显示／回显正确，无乱码或字符截断。
