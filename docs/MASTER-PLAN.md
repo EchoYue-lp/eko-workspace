@@ -2,6 +2,8 @@
 
 更新时间：2026-11-04。用户已明确恢复完整Goal，并由新协调上下文接手。完整目标在 `docs/supreme/goals/eko-eclip-complete-iteration-2026-11-02.md`，现场与准确下一步在 `docs/supreme/handoffs/eko-current-handoff.md`；十执行线及权限见续接目录 `executors.md`。旧三天时间线原字节归入该目录 `history/`，当前表不以历史“live/paused/pending”覆盖最新事实。
 
+**本轮维护后的当前状态：** Eclip进程已核为0，未启动客户端；13个旧会话已归档。上一轮源码价值核验后，本轮按用户新授权仅清59个冗余local heads，15个非祖先历史tip先固定归档标签；五仓当前12条分支（main＋当前验收，另保Exa/官网依赖两个独有候选），没有合并代码。三个准确Cargo缓存官方clean0，原占8.987GiB，必要字节去重保全2.352GiB；项目实测76.152→69.555GiB，可用空间时点约20.6GiB。正式源/WIP/SDK候选/用户数据/abdd手验包保留，其他混合目录和Node依赖未删。新阶段目标见 [验收与同源收敛Goal](supreme/goals/eko-eclip-validation-convergence-2026-11-04.md)；平台旧完整Goal仍未完成，`create_goal`拒绝覆盖，正在等待新协调会话或当前文档承载方式的选择。旧Goal原文及未完成义务不标完成。以下明细同时保留此前操作历史，当前状态以上段及最新交接为准。
+
 2026-11-04 分支清理纠正：Root未先证明旧改动已吸收就清理61条本地分支，用户提出异议后，已承认判断错误并将61条全部恢复原精SHA，五仓当前71条，HEAD/index/WIP不变。原bundle保留不代合入依据。初步44条祖先覆盖、17条须按当前源码、squash/重写、后继优化和具名退役审查，禁止机械全部合并或再次批量删除；磁盘仅只读盘点，不再借分支清理删除未确认材料。原过程及撤销见 [记录](supreme/reports/local-branch-convergence-2026-11-04.md)。本轮实际开发/打包继续原验证分支。
 
 唯一Root为 `01a19a4a-2815-7072-88b1-63ff005b2476`，完整Goal未完成、无token预算，原范围不变。F当前本地 `91797fed`（parent c623，继续保a8的1376+f568双父）；Driver/微信错误观测70方法及本次取消隐式温度11项定向回归、Clippy/fmt/task Source-final/独审/Root产物均已核，clean未push；CLI20070保存指南/UI/Hook及R03局部里程碑，b04原全前端945P/4原性能opt-in未跑，R03 normal1P/owner3按原130、143、1验过。官网817对F a8/CLI20070/SDK83 cut原完整verify0/W0（61unit/15e2e/1原平台skip/338路由），本地clean、未部署。SDK真实747接收source7978完整三语已0/W0：TS473/Python547＋18subtest/Java345，各1原Windows skip，隔离包/三个quickstart/Parquet通过；原stable5亦0、18组589P/编译W0，已Root保全/精clean；完整合同/条件矩阵/main/发行资格仍另验。K2原70/复位/同App重开闭合但未测到加速。解锁后自动Cron真实scheduled一次Completed并在卡片显示全文，微信通知-2失败及主chat publication0已分别派候选修复；原任务收尾disabled/rev6，通知恢复。两SDK外部Source合同和本地83公开源仍OPEN。精原件见proof-index。

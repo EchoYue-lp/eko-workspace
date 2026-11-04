@@ -1,14 +1,16 @@
 # EKO／Eclip 当前协调权交接
 
-更新：2026-11-02，用户明确恢复完整Goal并要求评估新协调窗口。本次采取新鲜协调会话；原26项及新增原生消息／终态／进度完整保留。
+更新：2026-11-04。本轮按用户五项请求收敛验证阶段；原26项及新增原生消息／终态／进度未完成义务保留，不把维护当完整迭代完成。
 
-先读：新版Goal `docs/supreme/goals/eko-eclip-complete-iteration-2026-11-02.md`；总表 `docs/MASTER-PLAN.md`；十执行线 `docs/supreme/handoffs/2026-11-02-coordinator-renewal/executors.md`。本入口只放当前状态；三天旧正文原字节移入同目录 `history/`，不要整包重读。
+先读：新阶段Goal `docs/supreme/goals/eko-eclip-validation-convergence-2026-11-04.md`；总表 `docs/MASTER-PLAN.md`；本轮实际维护回执 `.echo-semantic/local/validation-stage-maintenance-20261104-r01/maintenance-summary-current.json`。旧完整Goal `eko-eclip-complete-iteration-2026-11-02.md` 是剩余范围清单；原十执行线已归档，`executors.md` 仅历史责任与原件索引。不要整包重读三天历史或据旧表重新唤醒十个长期会话。
+
+当前Eclip进程0，新abdd手验包保留未启动。13个旧会话已归档、当前仅总协调；59条已经祖先/源码核验的冗余local heads已在先固定15个历史tip后删除，五仓剩12（五main、五验收、Exa及官网依赖候选）。3个准确Cargo target必要原件外置后官方clean0，原8.987GiB、外置去重2.352GiB；主根76.152→69.555GiB，可用空间约20.6GiB为时点观察。没有合并代码、修改四仓源码/WIP、删除SDK接收候选/R2源码/用户配置或其他验证目录；Node精同源条件未满足，未删。
 
 ## 单一协调与当前授权
 
-唯一Root已切换为 `01a19a4a-2815-7072-88b1-63ff005b2476`，平台完整Goal已建立active，无token预算；旧Root `01a18588-9a70-7552-912f-477ac52cbe39` 停止派单和stage／commit。十条既有执行线均已收到具体实施派单，未复制会话。接管fresh快照、14项接受票哈希回读及实际派单见同目录 `new-coordinator-ack.json`；原注册文件仍仅旧Root写入。
+唯一Root当前为 `01a19a4a-2815-7072-88b1-63ff005b2476`，平台旧完整Goal实测blocked且未完成；旧Root `01a18588-9a70-7552-912f-477ac52cbe39` 与十执行线现已归档。旧接管及14项票见 `new-coordinator-ack.json`，只保历史，不重写旧注册文件或借旧SID派单。当前写入责任统一由总协调明确安排，保持四子仓独立和单文件单writer。
 
-平台旧Goal实测paused，用户本轮“现在请继续”撤销暂停。新协调会话应先明确建立active持续Goal，目标读取新版完整Goal文件；不得新设token预算，不把交接标完整迭代完成。不要尝试把旧Root的paused当继续等用户的理由，也不要擅自把旧Goal标complete。
+新阶段Goal文档已写，真实调用 `create_goal` 返回“cannot create a new goal because this thread has an unfinished goal; complete the existing goal first”。旧26项尚未全部完成，不能为了腾位标complete。已向用户明确给出两种承载选择：新建干净总协调会话并启用新Goal、交接后归档当前；或保留当前会话先按文档推进。未收到选择前不擅自新建会话或结束旧Goal；独立维护动作已全部完成，不需重复授权。无token预算，原未完成范围及外部push/merge/发布边界保持。
 
 新任务实施／验证／当前已接受候选正式接收的本地权限持续。具名远端授权PR201／SDK14／SDK15均已消费；新分支push／merge／publish／deploy需在结果具体可审后另问，不能复用。K2“正常退出IDE和Eclip重测70、结束原数据重开Eclip”授权已执行消费；新App47013退出与K3采样尚无新授权。Rover95346现已不见，不重复旧退出请求。6历史会话归档和磁盘精删除已完成，不再重复。
 

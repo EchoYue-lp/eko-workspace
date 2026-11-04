@@ -1088,5 +1088,55 @@
     "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/repair-App-final-Root-acceptance-20261104-r01/manual-checklist-abdd-ready-delta.json",
     "sha256": "39a7e40c40ca5ea0b8cf28e0fd620c1df34c82b2af2a92241071a96749870522",
     "bytes": 856
+  },
+  "maintenance_20261104_initial_state": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/initial-state.json",
+    "sha256": "c74e4f55817d9b6f95f2e97c258c7f98132e61a0ad058e05f44b60dd1f5785dd",
+    "bytes": 28873
+  },
+  "maintenance_13_session_archive_before": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/session-archive-before.json",
+    "sha256": "3f495970d8c3b754c3192d02abfa789e1b7ece7c02db494937d057b9edd6ddf5",
+    "bytes": 19964
+  },
+  "maintenance_13_session_archive_actual": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/session-archive-results.json",
+    "sha256": "632dc1d0783a817364c1951df40bb2208544c0aed3686883d6ffbaad5ed4f4f9",
+    "bytes": 4355
+  },
+  "maintenance_reviewed59_heads_plan": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/reviewed59-branch-cleanup-plan.json",
+    "sha256": "47852ef585ada13d1f8b9c1b73059b234ec74c426ed3f3810e9c223cc5031a9c",
+    "bytes": 23090
+  },
+  "maintenance_reviewed59_heads_actual": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/reviewed59-branch-cleanup-actual-results.json",
+    "sha256": "81b21030fe9c0e45abb1518706c1d853dee9999b61d1eb4be63d5dc0c08bfd5d",
+    "bytes": 5434
+  },
+  "maintenance_exact3_targets_preserved_plan": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/three-proven-target-cleanup-plan.json",
+    "sha256": "a42a10c4041794139bb173168e9a0f580fcf1f808bc22bf2212b25bb963f5de2",
+    "bytes": 4159
+  },
+  "maintenance_exact3_targets_official_clean_actual": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/three-target-cleanup-actual-results.json",
+    "sha256": "1232fdfd82a8e8a71576c720588ba4988b41059e4fcc502fffdd994a03615371",
+    "bytes": 4295
+  },
+  "maintenance_node_candidates_no_deletion": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/exact-duplicate-node-modules-cleanup-plan.json",
+    "sha256": "f856575dc82009f512f72511d409e86c6010d42e5c129193dda17e11de32912a",
+    "bytes": 4303
+  },
+  "maintenance_final_state_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/final-independent-state-readback.json",
+    "sha256": "74f3d227f55d3b47dcf517588c0281efc40e99c7038291444fdc440ab327cfdd",
+    "bytes": 738
+  },
+  "maintenance_current_summary": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/maintenance-summary-current.json",
+    "sha256": "fd90a630b5f2e21f30afa36c3f6a9f91716738df661cb44cd69547293e14078c",
+    "bytes": 1683
   }
 }
