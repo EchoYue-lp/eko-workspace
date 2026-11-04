@@ -2,7 +2,7 @@
  "schemaVersion": 1,
  "at": "2026-11-04T05:25:00+00:00",
  "kind": "current-proof-index",
- "note": "每条在写入时即时计算哈希；verifyNow 表示写入瞬间存在且哈希可算，不代表业务结论已被复核。",
+ "note": "每条在写入时即时计算哈希；verifyNow 表示写入瞬间存在且哈希可算，不代表业务结论已被复核。 注意：SDK 条目取的是 origin/main（747be93）树内的副本，与本地 main（83ae59e）是分叉的两条线，见 validation-stage-sdk-lineage-audit-20261104-r01。",
  "repos": {
   "echo-agent": {
    "head": "91797fed1462ad9668956ddcf038998bc8353a84",
@@ -66,7 +66,7 @@
    "key": "sdk.lock",
    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/Cargo.lock",
    "rel": "echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/Cargo.lock",
-   "meaning": "SDK 接收候选锁（c4488065，与 stable/合同门禁同源）",
+   "meaning": "SDK origin/main 747be93 的锁（非本地 main 线）",
    "bytes": 171858,
    "sha256": "c4488065aa4a94a8a073e427aeddfefe7670d93b709b82555b39f2431954e1c7",
    "exists": true
@@ -75,7 +75,7 @@
    "key": "sdk.acceptedExternal",
    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/contracts/sdk/accepted-external-contract.json",
    "rel": "echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/contracts/sdk/accepted-external-contract.json",
-   "meaning": "已接受外部合同（10126202B，合同门禁校验项）",
+   "meaning": "origin/main 的已接受外部合同（10126202B，合同门禁校验项）",
    "bytes": 10126202,
    "sha256": "372c8e018c5408bd590a46387f0e2898c360901ce3805228c5e9824a008ca615",
    "exists": true
@@ -84,7 +84,7 @@
    "key": "sdk.facadeCatalog",
    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/contracts/sdk/accepted-facade-operation-catalog.json",
    "rel": "echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/contracts/sdk/accepted-facade-operation-catalog.json",
-   "meaning": "已接受 facade 操作目录（合同门禁校验项）",
+   "meaning": "origin/main 的已接受 facade 操作目录（合同门禁校验项）",
    "bytes": 611485,
    "sha256": "7383897bff8dcdc8490cbd81b51f78c935a4523f54ebfd835ca927a988f08357",
    "exists": true
