@@ -88,3 +88,28 @@
 - 没跑 `cargo test`、没跑 Java/Python/TS 测试；
 - TS 一项依赖 `dist` 构建，构建成功与否未验证；
 - 若落地，仍须按新 HEAD 跑适用门禁，本预演只说明"这几个文件的内容与当前契约不冲突"。
+
+---
+
+## 落地后应跑的门禁（命令已从实跑记录提取，不是自拟）
+
+以下 5 条取自候选内 `stable-window-r01/*.caller.json` 的**实际 argv**（当时 6 步全部自然 0，589 个测试通过）。落地后应在**新 HEAD** 上按同一 argv 复跑，而非引用旧回执：
+
+```
+cargo fmt --all
+cargo fmt --all -- --check
+cargo check --workspace --lib --no-default-features --locked --offline
+cargo clippy --workspace --all-targets --all-features --locked --offline -- -D warnings
+cargo test --workspace --all-targets --all-features --locked --offline -- --test-threads=1
+```
+
+注意事项：
+
+- 当时用的是 `~/.rustup/.../stable-aarch64-apple-darwin/bin/cargo`（**注意不是冻结的 1.99.1 工具链**）；复跑前先确认用哪个，别混用；
+- `--offline` 是原 argv 的一部分，当前无网络也能跑；
+- 语言侧测试（TS／Python／Java）不在上述 5 条内，它们当时是预构建产物入口（B 级证据）；
+- TS 新测试需要 `dist` 构建产物，故语言侧要跑就得先构建。
+
+## 一句话结论
+
+**授权后的动作是**：取 4 个测试文件（`scalar.rs` + 3 个语言测试）、保留 HEAD 的 `core_profile_e2e.rs`、按上面 5 条在新 HEAD 复跑、再跑语言侧（含 TS 构建）。不是"合并候选树"。
