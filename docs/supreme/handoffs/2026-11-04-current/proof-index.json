@@ -238,9 +238,10 @@
    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-evidence-integrity-20261104-r01/settlement.json",
    "rel": ".echo-semantic/local/validation-stage-evidence-integrity-20261104-r01/settlement.json",
    "meaning": "交付前证据完整性审计（38143 绝对引用，0 未声明漂移）",
-   "bytes": 2666,
-   "sha256": "953aab317157f9527aaac432ee8871b112bdb27e169df3829c4f6f1194df90e9",
-   "exists": true
+   "bytes": 3081,
+   "sha256": "5fdbb8dc706c4d5ada982864db36c39e78d5ddf21ee3396a4c8d16d44178d08c",
+   "exists": true,
+   "refreshedAt": "2026-11-04 因补记“79 份不可解析 JSON 已判定”而重算该条"
   },
   {
    "key": "evidence.integrity.raw",
