@@ -1,5 +1,9 @@
 # AGENTS.md
 
+## 当前 GUI 产品名称：Eclip
+
+用户于 2026-11-06 明确纠正：GUI 产品名称为 **Eclip**。对外界面、弹窗、产品说明、默认助手身份和应用 HTTP User-Agent 均使用 Eclip；后文 EKO 仅为历史产品称呼，既有规则仍约束同一应用。`echo-agent-cli`、`EkoConfig`、`EKO_*` 环境变量、`.eko` 数据目录和既有 bundle identifier 是技术标识，不因品牌修正而另建数据或自动迁移。通用 `echo-agent` 框架不硬编码 Eclip 品牌，产品身份由应用注入。
+
 本文件是 AI agent 在本仓库工作时的**最高优先级约束**(优先级高于 agent 默认行为和任何技能)。请严格遵守。
 
 `echo-agent/AGENTS.md`、`echo-agent-sdk/AGENTS.md`、`echo-agent-cli/AGENTS.md` 各自承载独立的提交门禁与仓库级规范(供独立检出使用)。修改本文件中与子仓库相关的规范时,必须同步更新对应子仓库的 AGENTS.md,防止两边漂移。
