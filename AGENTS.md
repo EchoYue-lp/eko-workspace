@@ -10,6 +10,15 @@
 
 ---
 
+## 2026-11-05 两仓新锁的用户精确裁决
+
+用户在当前协调会话直接回答：“同意本次 Framework 8fb62e 与 CLI 48eece 新锁的精确绑定，不自动接受后续新风险。”原文回执为主根 `.echo-semantic/local/dependency-exact-binding-20261105-r01/authorization.json`，SHA256 `a2e324628e7ad1c11dc737405a48cb46a36e8333f109e15f66b4836810815a62`。本节更新下方历史绑定的当前时态，不改旧授权和失败事实。
+
+- Framework 仅接受锁 `8fb62e249fc8fa3114a51b85277f201a98bb190572a80293a91555d8a519e928`（677包）。原49组107个name/version/source身份完整保留，仅quick-xml组新增 `0.42.0`／`registry+https://github.com/rust-lang/crates.io-index`，现49组108身份；唯一机器权威仍为该仓 `.cargo/cargo-deny-duplicate-baseline.json`。原deny策略、cargo-deny 0.20.2、完整四类命令和严格parser不变，所有其它变化继续阻断，不增加ignore/allow。
+- CLI 仅接受锁 `48eece730daaa9eff539e416861454441c23c54abf02bacaa2c3bdb375bd6329`（769包），consumer仍为 `42a1dd0dd843ee8629ff12dc20d238dc9356c7b35d29e4bd3b353c0b72d53f42`。该仓policy只更新lock字段；原五项完整风险身份、collector和checker不变，原8控制只机械更新包数量及对应负控。官方scanner真实出口与精确gate分别记录，仍须原actual-lock及canonical-origin两gate实际通过。
+
+这不是风险修复或零warning审计，不预授未来锁、版本、来源、consumer或新风险，不向SDK继承；不授权GUI、提交、推送、合并或发布。局部媒体、完整工程、App及main CI继续分别验收。对应Framework及CLI独立AGENTS已同步本裁决。
+
 ## 项目简介(冷启动免重新读)
 
 `eko-workspace` 是 EKO 的顶层 Git superproject,通过 submodule 统一管理四个**互相独立的 git 子仓库**,但不是 monorepo。工作根目录为 `/Users/ls/MyWork/code/ylp_agent_learn/lp-agent`。
