@@ -93,3 +93,17 @@ CLI两次提交只推进Git元数据，冻结源码字节前后均不变；共�
 - 未认领XLS实测为原已提交4153字节后追加455个零，原短尾回归条件已改变。当前字节与原始版本均保全，继续排除提交，不以它支持原CFB负控覆盖。必要恢复包、当前App和共享target保留；两份已完成工作区源码副本已清理，全部原失败日志与源票保留。
 
 下一步以新程序实际取得关机、缓存增长／HTTP、OwnedRun和IM两项原失败的结果；Root新增测试另取真实执行。之后才进入独立Tauri根编译和真实history transport控制。Fork来源usage不计目标账目的追加候选仍只在ignored，验证口径为tokens归属，不能称货币成本或完整Fork流程通过。当前全部源码继续冻结，尚未推送、合并、发布或启动用户原生App；本目标保持active。
+
+## 第六阶段进展（2026-11-08）
+
+- r05共享切点的App Clippy、公开`lh6_concurrency_soak`示例仅编译、原NoRun均自然0、零warning；1764项保守冻结和1807项库存零漂移，正式bindings未变。唯一程序`649ebd30…`保全568258896字节，各会话只读复用。
+- 原退出竞态精确GREEN1P，完整command_cells35P、blocking owner1P；UI约定九项重点消费者全部通过，OwnedRun三项原失败转绿。缓存完整compact31P（含growth及三协议18次本机HTTP）、turn7P及1原ignore、memory4P；逐次核实际动态正文抵达，旧producer事后隔离复现的早部差异与新追加结果分列，不能称真实vendor命中收益。
+- Root default NoRun自然0但默认feature为空，新增Tail测试受subagent开关控制；默认程序的缺覆盖未算通过。最低必要subagent feature新程序`fa937630…`实际list含该case并1P通过，恢复10P、Store33P及1原profile ignore、snapshot32P。原snapshot选错前缀导致零测试被wrapper96拒绝，旧原件保留；正确前缀实际list32／run32通过。最终15源独审C0／I0／M0／行动0，审后关机、Chat／Run回执、大上下文多scope CAS各1P，源和程序SHA均稳定。
+- 已按已审精确补丁独立本地提交：Framework scope `f24e8d59`、缓存21路径`3c495153`、执行／保存11路径`604c434d`、用量机制10路径`e33f7908`、原有Responses行为说明`120e71a6`；CLI执行4路径`8187372d`、缓存5路径`0d9b7f2c`。共享文件按hunk分组，提交前后全部正式源码字节保持；资格仍绑定各完整受控工作区切点，不冒中间commit单独构建或main资格。
+- 原四ADR漏登记导致parity1已修：沿原canonical writer登记后全check0。仅已完成ADR0064／0065／0067的三登记提交`cffc4ffa`；UI0066本身与其登记继续留在工作树，不混入已完成功能。两份历史清理报告按2026-11-06原字节和原settlement核对后归档`47ad2729`，当时current状态不作为今日事实。
+- 官网从干净已提交Framework120e视图同步，独审逐项核332镜像／221唯一源与Git blobs及manifest SHA一致，111项ADR索引和六个新增双语路由符合原生成规则。source check、24项文档测试、格式／lint／site检查、348路由构建均0，13路径本地提交`6df68a5c`。应用投影完整保留20070／source-correction-pending-source-review及原八产品页；doc43只有中文上游，现有pairedPaths不发布它，不能声称本笔镜像包含doc43。临时51512KiB源视图在reader0且原提交可达后删除，保留全部原件。
+- IM race原失败已1P转绿，managed仍在第二输入自然101。真实诊断证明两个输入均Completed，但模型仅routing／answer各两次，第二次发送为routing_json。夹具初始pool有测试模型而State为空，真实渠道配置保存覆盖池配置，导致Critic前置失效、三响应脚本错位。已独审并仅将原同值测试配置传State，正式A2变为`4aa1411d…`，其余七源不变；原十二调用、四业务回复、唯一claim、预算保持，尚待新程序GREEN。另发现默认A／原已绑定B的高层放弃路径错误地使用默认workspace作权威，正准备原范围真实RED与原B generation adapter修复，不以global-only测试签完整IM。
+- UI已核标准generate_chart生产链只返回ToolResult，既有Chart8提交只证明接到chartSpecs后的显示／CSP闭包。正在按原ToolResult结构化data／官方Vega-Lite MIME及原presentation fold准备真实producer贯通；同名工具不能凭名称推断builtin，失败／截断／缺见证保持未恢复，不新增事件、Store或IPC。候选及Tauri历史冲突／Fork用量控制仍分阶段验证，不冒已通过。
+- 原42a风险绑定的274项旧源码现在完整可读：20070 Git加原19项WIP哈希精确重算42a，缺失十二份正文从必要恢复包按SHA一次找回。新IM模型夹具切点consumer为005d6e4c…／282项，新增8／修改62／删除0／不变212；818352字节完整内容差量保全，独立审查内存回放70路径／421个hunk后的全部SHA与摘要一致；该结论仅为差量完整性，未改policy、锁、授权或扫描结果。0150f0是模型夹具之前的旧切点，不回写。两计划第四Outcome明确要求最终源码适用门禁，仍保ready／active，不能把当前consumer复评及原gate0缺口仅改称未来合并事项；live未授权／未验收亦不自动发起或宣称95%。
+
+本阶段代码、文档与官网均只作本地提交，顶层gitlink不指向未推送成果。下一批仅在具名源窗口合入IM与UI候选，重新冻结并由唯一Cargo会话编译；旧失败、现程序、用户数据和必要恢复材料保留。本目标继续执行。
