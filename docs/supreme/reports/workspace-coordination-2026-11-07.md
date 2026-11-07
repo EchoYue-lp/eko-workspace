@@ -118,3 +118,15 @@ CLI两次提交只推进Git元数据，冻结源码字节前后均不变；共�
 - R08共同源码清单7656db42…绑定App保守1764项、全Rust及构建库存1808项（含新增Root测试），两仓完整格式检查0，四方source票零不符；Root附加676项前端／配置／图标输入固定。主App及chart feature条件编译已明确授权唯一会话串行执行；RootGUI编译待前两类结果与精确输入阶段核对，均不启动GUI。所有预期失败分别写明原因，不能把compiler0或目标RED充作整批成功。
 
 新发现均保留原失败与已通过切片边界。IM长回复在发送活跃时Stop／Reconnect的原计划组合负控还只在ignored候选，不能拿短回复及单层fence通过替代。最终源码、精确风险复评和原actual／canonical门禁仍未闭合，两个旧计划保持ready；没有新的风险接受、推送、合并或原生用户数据操作。本目标继续执行。
+
+## 第八阶段进展（2026-11-08）
+
+- R08 App及chart条件编译均已自然0。App保全程序为`1bca2d14…`，Frame chart程序为`204588df…`；源票、dep-info、fingerprint与原日志分别保留。IM在此App程序取得五模块293项唯一测试全部通过，包含八项重点控制，不重复累计；四次真实业务HTTP与十二次测试模型调用的管理路径、历史B／默认A隔离、冷恢复及真实终结错误负控均通过。独立最终审查C0／I0／M0，源票十文件零漂移；长回复Stop／Reconnect组合、手机及正式App仍待验收。
+- Verification容量问题已取得真实RED。原factory／execute_run产生后台回执，首次wait仍Queued，最终在原五秒预算内Failed／TimedOut、exit为空、无命令输出；四次模型调用时父任务shell可用量均为0，父任务结束后恢复1。child自然101、未触发夹具外层超时，属于父任务占用子执行所需物理容量的依赖饥饿。后继方案必须同时覆盖前台、后台及run_code，并保持原容量、取消、deadline和物理owner结算，不以禁用合法后台调用或扩大配额掩盖；生产修正尚未采用。
+- 图表Frame真实工具层完整五项为旧三项通过、新两项失败，App原journal查询层一项失败，均自然101，分别准确落在缺少公开结构化data／官方MIME及未恢复chartSpecs，非编译或夹具错误。Root原producer测试随后实际list1、run0P／1F／0I、自然101；DriverCompleted和真实GenerateChartTool成功均已越过，首次失败正是公开data／MIME断言，saved／get／prune／cold后段未达。该结果是原ReAct生产入口RED；运行时源码和676项资产零漂移。
+- Root GUI首轮质量检查自然101，唯一位置为config.rs的collapsible_if，NoRun未执行；2483项保守联合输入零漂移。单文件仅把原Some(max_tokens)分支合并进既有let链，独审和格式检查0。后继源票`380a2a91…`与原`7656db42…`仅此文件不同，新Clippy已自然0、零warning，原脚本接续唯一NoRun并自然0，保全Root程序`c5d892ac…`（352882880字节）。实际feature为channels／default／gui，profile为unoptimized；dep-info与tauri宏feature佐证dev EmptyAssets，正式App资产资格为false。原始producer测试的上述RED已回交，读者全部释放；不启动用户App。等价lint修正仅该文件提交`fcf5ec75`，完整fmt check0，提交前后源字节不变，无产品文档／示例／官网行为变化。
+- CLI孤立构造器适配已独立提交`73b42c97`，只复用既有ContextProjection::replacing以保留新增默认边界／版本字段，四增四删；独审0，正式源码字节未变，动态资格仍绑定原共同App切点，不冒此commit单独构建。
+- 已精确退役旧r03／r05两份App测试程序，共1135876784逻辑字节。删除前逐SHA／555模式／reader0／无待执行消费者核对，删除后路径均不存在；全部源码、原日志、dep-info、fingerprint及真实Rust DTO保留。r06／r07缺陷前像、当前r08／Frame／Root程序及共享target保留。旧成功／失败回执仍是历史事实，但已退役程序不再承诺直接重跑；该数值不代表独占物理回收量。
+- 已接受42a到固定005d模型夹具切点的五项依赖风险暴露复评完成：构建／依赖／feature入口不变，未发现新直接调用五个原风险crate接口的路径；生产改动并非纯测试，原五项风险均未修复，Linux原生及长时行为未获动态证明。后继IM／UI／Root修改必须纳入最终consumer差量，现结论不构成后继源码风险接受、官方扫描或原actual／canonical门禁通过。
+
+本阶段证据继续归档于主根ignored协调目录，另有各原作者自有回执。Root编译及原producer读者均已自然终结、释放，中央已下达R09六路径具名写窗：UI仅四份既审生产／文档修正及Root既有两journal用量归属测试，IM仅长回复Stop／Reconnect测试。各路径采用前后SHA已固定，禁止重放已采用补丁或修改TS／资产；SRE生产修正不在此窗口。下一共同切点仍需重新编译和动态验证，不能把旧程序资格续到新源码。此报告只更新协作与清理事实，不改变产品契约、公共API或示例，故无需新增示例和官网产品页。所有提交仍为本地，目标保持active。
