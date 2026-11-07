@@ -81,3 +81,15 @@
 - IM首批九项实际7P2F，含四项高层owner／IO保有控制通过。race失败已确认测试把同一会话流中原输入与后续输入的Started混计，修正将按完整identity保留各自恰一次断言与原raw前缀。manager跨scope组合的原child另有真实失败，正在按原日志定位，不能称组合通过或手机验收。UI用量七项已通过，4100条裁剪／冷恢复及其余原组仍在原进程执行；不提前解冻源码。
 
 CLI两次提交只推进Git元数据，冻结源码字节前后均不变；共享App仍按原manifest、环境和完整WIP切点验收。下一批安排为所有reader自然退出后统一限定写窗，先App scoped Clippy，再原NoRun及真实RED对应的GREEN；不通过跳过已知失败取得全组声明。共享target、当前App、用户数据及必要恢复材料继续保留，所有提交仍仅本地，本目标继续执行。
+
+## 第五阶段进展（2026-11-08）
+
+- UI原程序验证已完整取得usage7P、presentation2P、journal46P、projection7P、driver43P，均0F／0I、自然0；OwnedRun三项仍为真实0P3F／101。原测试数预期写错的包装器失败保留，46项底层成功未被重复执行或改写。三项夹具已通过原公开配置与claim获得Started，第三项仍保留journal成功／记账失败切点；编译前另发现并机械修正类型限定名，未编译的候选不冒充编译失败或GREEN。
+- 实际Rust冷恢复DTO已导出约25KB，经原React加载链路实际1P；真实Chromium两宽使用明确合成IPC桥接验证，保留原JSON。审后完整前端格式／lint／1012P及4原skip／构建均0。后继ContextRing键盘与点击补强已另取审后同范围通过结果；这些均不能替代Tauri根wrapper、原生窗口或货币费用验收。
+- IM额外backtrace诊断原child自然101，定位到completed_network_input等待，仍不能区分具体业务步骤。旧程序原P1冷恢复对照实际1P：恢复模型3／业务1，重开0／0；它只说明旧冷fixture原链路有效，不追认managed组合。新精确identity与有界阶段诊断已落盘并静态通过，原预算、四reply、十二Mock与各自唯一claim断言保持。
+- 第一批共同修正涉及六个具名源码文件：退出同锁修复、缓存真实前置及18次本机HTTP对照补测／内容抵达断言、Subagent Tail隔离补测、IM身份oracle／诊断、OwnedRun前置。两仓完整cargo fmt写入和检查均0，1807项库存无格式化字节变化。新的Root补测加入后的四组Framework私有索引仍36文件精确等于当前源码，独立边界复核保持0 findings；新增动态验证尚未取得。
+- r04 App Clippy已自然101，完整日志11588字节，1764项保守冻结与1807项完整库存零漂移，正式bindings未变。五个唯一位置分属四文件：测试专用getter的生产dead_code、String比较冗余借用、usage测试helper八参、两处注册探针复杂类型。公开示例检查和NoRun均not_reached，未拿编译质量失败当运行时结果。
+- 四文件等价修正已按三个单一writer完成并独审：getter仅限定cfg(test)；比较保持原PartialEq；helper输入／输出配为同值tuple，十处调用数值与全部断言保持；探针仅复用私有测试alias。r05新共同manifest为c1f1cc55…，四方源票零不符，两仓完整fmt写入／检查再次0。唯一Cargo会话已获同切点Clippy→公开例compile-only→原NoRun的连续执行授权，任一失败先保原并停止后继，无需再次请求人类批准。
+- 未认领XLS实测为原已提交4153字节后追加455个零，原短尾回归条件已改变。当前字节与原始版本均保全，继续排除提交，不以它支持原CFB负控覆盖。必要恢复包、当前App和共享target保留；两份已完成工作区源码副本已清理，全部原失败日志与源票保留。
+
+下一步以新程序实际取得关机、缓存增长／HTTP、OwnedRun和IM两项原失败的结果；Root新增测试另取真实执行。之后才进入独立Tauri根编译和真实history transport控制。Fork来源usage不计目标账目的追加候选仍只在ignored，验证口径为tokens归属，不能称货币成本或完整Fork流程通过。当前全部源码继续冻结，尚未推送、合并、发布或启动用户原生App；本目标保持active。
