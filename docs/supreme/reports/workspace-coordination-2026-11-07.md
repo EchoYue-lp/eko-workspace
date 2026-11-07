@@ -52,3 +52,20 @@
 剩余运行时工作继续由各原writer负责：失败／取消已报告usage的三adapter纯查询与真实retry attempt观测；manager产品lease向原SSH Unknown物理resource guard的传递；IM静态全准入路径已闭合候选的9／171及Clippy实际验证；随后一次共享app-core程序供UI、缓存、执行和工作区回归使用。已知旧RED、Clippy101及尚未验证的候选全部保留。旧目录／SSH组按调用闭包整理，模型展示与最近任务折叠分开，等待两条原Registry fresh回归后再提交。
 
 官网精确文档镜像继续遵守clean-source与manifest门禁，待相关源组提交后同步；不绕过当前dirty检查，不推送、合并或发布，不更新未推送子提交的顶层gitlink。阶段回执仍在本报告的ignored目录，新增 `round2-local-delivery.json`、`state-alias-debug.json`、`state-alias-reproduction.json`、`state-alias-verification.json`、`media-r03-validation.json`、`media-clean-settlement.json` 与 `provider-usage-handoff/handoff.json`。
+
+## 第三阶段进展（2026-11-07 晚）
+
+- Framework 微信准入观测与会话退出组已按原作者精确四文件回交提交 `1f35f0d2`。channels 实际171P（其中包含新增9项，不能相加），定向 Clippy 与源码独审通过；App、手机收发和 main CI 不在此结论内。
+- CLI 最近任务折叠已独立提交 `ad0a22b8`，仅三个文件的对应部分。基于干净 CLI HEAD 加折叠候选的30P、ESLint／Prettier均0；正式工作树中的 SSH 与其它 UI 未提交字节保持原样。
+- 官网已提交 `70884ba9`，从干净 Framework `1f35f0d2` 源视图同步正式镜像，20个路径；source check、24项文档同步测试、格式／lint、342条静态路由构建均0。首轮 sitemap 漂移失败保留，正式 discovery 同步后原检查通过。应用文档投影仍保持原 pending revision，不以脏应用源码更新镜像；没有部署。
+- 根规范已提交 `6d51fa96`，仅同步已有两仓新锁的精确人类裁决。原授权文件SHA核对一致，不新增风险接受，不变更锁或子仓指针。
+- 缓存与执行／保存的 Framework 候选已取得 v2 投影信封及原 `Parts` 场景回归、Core489P、State387P、orchestration559P、Shell30P、Execution355P、Root定向回归与定向 Clippy 的自然0，各结果仍分别绑定其回执源码切点。原旧格式／Parts／资源 guard 的RED、测试格式及 Clippy 失败均保留。两个公开示例实际执行0，IM示例仅编译0，不声明外部provider或手机资格。
+- Framework 剩余实现已在私有 Git 索引中合成为产品scope、缓存前缀、执行与保存、模型用量观测四组；独立边界审查0 findings。合成36文件与当前字节一致，但未分别执行各中间tree测试；正式索引未被该审查修改，尚未提交这四组。
+- 最新前端完整切点审后格式／lint／构建均0，1010P、4个原skip；真实原CSP下本地图表九场景及两宽布局通过，npm审计0。正式 web-mode 资产与私有浏览器资产分别记录。App／Tauri／真实Rust DTO到React及原生窗口尚未验收，UI整体仍为WIP。
+- 共享 App 首次 `cargo test -p echo-agent-app-core --lib --features channels --no-run --locked` 已于22:30:11自然101结束，未产生测试程序，后继消费者均 `not_reached`。完整12项错误为8处测试引用、2处 wake 观测方法误用、2处异步类型递归。cargo／rustc reader归零且正式bindings未改后，已给IM限定修正窗口；不以加递归上限、放宽断言或新任务替代修正。
+- 首编保守清单中一份独立媒体集成测试XLS发生4153→4608字节漂移，来源未确认，原始失败／漂移和当前文件均保全，不恢复或提交。原8份dep-info与源码关系证明它不属于 App 库输入；下一清单将区分保守冻结清单与实际依赖，不回写旧回执。
+- 计划覆盖审查还发现两项待补：执行模块的退出检查与producer注册竞态，需要真实原路径barrier RED→修复→GREEN；缓存需补真实projector到三adapter的增长链与旧producer事后隔离对照。已按不重叠文件分别交给原writer，下一唯一 App 编译等三方重新冻结，不并开Cargo。
+
+本阶段已结束的缓存、IM与媒体独立target均在关键程序、dep-info和原始日志保全、reader归零后准确清理；SDK/media的新建批次清理与前述旧缓存计量分开。临时官网干净源视图和已完成折叠候选目录也已核对后删除。共享执行／App target继续保留以复用编译。当前df可用约60GiB；这是并行构建中的阶段观察，不能据此推算独占物理回收量。当前App、配置、认证、用户历史和必要源码恢复包继续保留。
+
+本报告及根规范是协作材料，不改变公共API或示例，故不另增示例或官网产品页。已交付源码组的文档／示例／官网检查分别见各精确回执。所有本地提交均未推送，尚未合并、发布或更新未推送子提交的顶层gitlink；本目标继续执行。
