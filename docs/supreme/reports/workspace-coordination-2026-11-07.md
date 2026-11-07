@@ -14,7 +14,7 @@
 
 共享文件按单一writer交接，验证期间冻结被读源码。UI已完成echo_core LlmUsage字段代的静态同步并冻结core；可靠性和IM既有reader结束后，缓存先完成wire摘要及Anthropic工具结果合并后的断点修复，再发布新冻结SHA。root think计时仍由UI写，root/app-core当前不能作为全包冻结验收。可靠性后续app-core同源测试程序可供缓存复用，避免重复重编译。完整矩阵串行，focused Rust遵守并发和jobs上限。
 
-## 未提交改动分组
+## 起始未提交改动分组
 
 - 活动IM、缓存、执行/保存、UI：分别保留，未有最终交付回执前不stage。
 - Framework媒体依赖/vendor与两仓精确风险绑定：独立历史功能组，不能借协调授权扩大风险接受或把旧gate视为当前通过。
@@ -39,3 +39,16 @@
 - Framework、CLI活动修复尚未回交冻结，保持未暂存；顶层gitlink不更新，SDK提交未推送。main CI、原生App、真实手机IM验收均未由本轮执行。
 
 原始回执位于主根ignored `.echo-semantic/local/coordination-20261107-r01/`：`baseline.json`、`ownership.json`、`functional-inventory.json`、`cleanup-preflight.json`、`cleanup-results.json`、`cleanup-settlement.json`、`native-retirement.json`、`sdk-validation.json`和`sdk-commit.json`。这些是本轮协调与清理证据，不是产品完成声明。
+
+## 第二阶段进展（2026-11-07）
+
+- Framework 已独立提交媒体安全升级组 `eec388d1`：37 个 Git 变更路径，官方 Calamine 0.38.0、获准精确锁及规范、CFB 负控；本轮 CFB／XLSX／DOCX 共4P，定向 Clippy、16项 origin 控制、14项 baseline 控制与 fmt write/check 均0。新鲜官方 advisory 全扫描未在本切片执行；定向验证绑定完整工作区内容，不冒单独 commit-only、完整工程、SDK／App／main资格。
+- Framework 已独立提交路径别名夹具修正 `2bd3f13d`，仅两处 expected 路径 canonicalize 与一条注释。同一旧 native 在主根 symlink TMP 中实际 RED101、真实 TMP 控制0；新 native 在两环境原单测各1P。产品 authority 与原 no-rekey／文件字节／历史恢复断言不变。
+- 缓存、执行与保存、UI 三组已批准 design／Plan 原字节分别提交为 `a9df55a`、`806b8e1`、`e069e43`。schema／设计绑定实际通过，不修改 lifecycle，也不代表各实现完成。
+- 约9.5MB真实检查点隔离 profile 已自然0，绑定旧 `a27f31…` native 与1479输入零漂移切点：Store cold691ms／warm561ms，完整coordinator cold3412ms／warm1080ms，每段原10s预算。cold指新authority／目录，没有清OS pagecache；raw／approved字段往返断言通过，嵌套耗时不相加，不冒后继新源码重新编译的结果。
+- UI 完整 `npm test-r03` 自然0：lint0、1001P、4个原skip；此前997P／2F原件保留。浏览器只证明受控真实组件的两宽布局及交互，不替代native App、真实手机IM或main验收。
+- 媒体批次的两份最新程序与dep-info／SHA已保全，reader0后准确清理自有media-target，natural0，Cargo报告4145文件／833.4MiB；不计作上一阶段旧缓存回收量。
+
+剩余运行时工作继续由各原writer负责：失败／取消已报告usage的三adapter纯查询与真实retry attempt观测；manager产品lease向原SSH Unknown物理resource guard的传递；IM静态全准入路径已闭合候选的9／171及Clippy实际验证；随后一次共享app-core程序供UI、缓存、执行和工作区回归使用。已知旧RED、Clippy101及尚未验证的候选全部保留。旧目录／SSH组按调用闭包整理，模型展示与最近任务折叠分开，等待两条原Registry fresh回归后再提交。
+
+官网精确文档镜像继续遵守clean-source与manifest门禁，待相关源组提交后同步；不绕过当前dirty检查，不推送、合并或发布，不更新未推送子提交的顶层gitlink。阶段回执仍在本报告的ignored目录，新增 `round2-local-delivery.json`、`state-alias-debug.json`、`state-alias-reproduction.json`、`state-alias-verification.json`、`media-r03-validation.json`、`media-clean-settlement.json` 与 `provider-usage-handoff/handoff.json`。
