@@ -157,3 +157,18 @@ CLI两次提交只推进Git元数据，冻结源码字节前后均不变；共�
 - SRE统一r02`65660e8d…`仍只在ignored。原缺字段、Unknown核销、probe无界输出及未支持backend拒绝均有源码对应修正；新复审仍block两项Important：Local／direct正常父进程退出与EOF不证明同组后代结束，ProjectSSH非255返回及只kill父PID也不证明远端物理树结束。新增后继控制全部not_run，writer继续在原owner／原远端控制内修正，未采用、不伪cap、不新增supervisor或退役SSH。Accepted日志三个路径的无重叠候选也未采用；下一真实后端批次再统一安排，IM原Plan没有因本次UI包而完成。
 
 当前CLI剩余工作树只保留精确风险材料、SRE测试增量、旧温度证据及Python派生产物；Framework未认领媒体夹具继续保留。所有成果均为本地，未推送、合并、部署或更新未推送子提交的顶层gitlink。最终source／consumer复评、原actual／canonical门禁、原生操作与用户手机验收仍按原范围推进，目标保持active。
+
+## 第十一阶段进展（2026-11-08）
+
+- 当前独立编译资源空闲、SRE后继尚未具备采用资格时，中央安排R12仅A2测试切点，生产Accepted日志分支保持原样。完整App Clippy／NoRun自然0、零warning、2487项输入零漂移；新程序`2c97843b…`只执行原长回复exact一项，parent／child自然101、无超时或kill。内层真实HTTP已accepted1／send1，Stop await、原wake清除、pump idle及physical settled断言均已越过，准确失败在`accepted-after-original-http`观察校验。raw没有打印实际观察长度，expected1／derived0继续明确为源码绑定推导；这证明缺少Accepted观察，不是发送失败。
+- 随后仅采用已审logger与ADR两路径，A2测试不变；R13完整格式、Clippy／NoRun均0、零warning、源／库存／bindings无漂移。新程序`b047bb73…`的long、managed、cold、pending与stop-error五exact各1P／0F／0I、所有child自然0。长回复raw直接确认观察数2／脱敏标记、四片计划、六次Mock、两次HTTP及原Stop物理join；原断言另验证beforeACK0→原ACK1→新回复2、真实client摘要／ordinal、固定四字段和root event，迟到旧fence不进入HTTP。没有重跑293项或跨切点累加。
+- 该私有应用观察三路径已本地提交`bd2a083e`，作者与中央独立Final均0 findings，working2487项字节及实际index保持。仅原typed Accepted之后info，`parent: None`防止继承caller span；不记正文、账号、凭据，不新增协议、store、状态、重试或公共API。ADR0056同步，既有examples及官网公开产品页不新增此私有观察承诺；官网c089仍精确指向其已审3c13来源，不冒新App日志资格。真实App.log sink、原账号手机、最终组合包及依赖风险门禁继续待验。
+- R12期间只读调用原collector，当前283项消费者输入摘要两读稳定为`cf158b4a…`，锁仍精确48ee；它不同于已接受42a，未修改policy或执行scanner。283份完整正文按SHA保全、合计12525051字节，供后继最终差量审阅复用。这是R12观测，不能把它当bd2或再后SRE最终consumer绑定。
+- SRE后继仅在ignored沿原owner修正正常父退出／EOF后仍存活的原进程组。Some SSH方向采用Python标准库替换同一个原deadline controller，所需POSIX能力在payload前探测，None保留旧POSIX路；无明确凭据不冒未执行或组闭合，缺runtime按明确未启动／Unsupported处理，EPERM不当closed，原总预算不重置。官方subprocess／os文档原件与本仓CAS源码事实已核；CAS使用Python不证明所有SSH目标都有它。三项纯本机controller探针自然0，只证明该控制器normal／signal／deadline的原组闭合，Rust Some链、SSH live、原5秒及35项仍not_run，当时后继完整cut仍待复审，不采用r02。
+- 用户在UI会话明确回复“现在开始隔离验收”，原R03签包重核后已实际启动独立候选PID43901，重新准备的loopback模型使用64840；旧58735不复用。只操作该候选及私有data／workspace／配置，原App不操作，不把R13日志或SRE后继归入R11包。原生首轮正向遇受控provider未遵守critique JSON schema，产品校验正确拒绝；错误会话、截图和日志保留，修复仅owned fixture并从新会话继续，未修改包或正式源码。当前原生完整验收仍未签完。
+- 精确删除未跟踪的CPython3.12派生缓存13295字节，先核magic／reader0／非Git文件；原风险脚本与全部证据保留，空缓存目录一并移除。没有清理用户数据、未知夹具、当前warmtarget或活动候选包。
+- SRE完整immutable r03源票`e0ab7c67…`已独立复审C0／I0／M0，24份候选及before审后M0；Local／direct沿原timer／cancel继续等待原PGID，SSH只在匹配nonce的完整EOF尾部物理闭合／未启动凭据下释放资源。原I1–I4未回退。中央重核两HEAD／index及编译读者0后，发出精确24路径与已审Design／Plan增量的唯一作者写窗；这是源码采用窗口，后继Rust编译、原五秒、35项及新控制尚未运行。
+- 用户随后在UI会话要求自己验收，UI已停止全部AX／键鼠／焦点／窗口／截图自动化，转交短操作清单。当前隔离App43901及受控provider55962:64840继续保留；正向final折叠与物理展开／工具详情已见，图表等未验项目保持未验，不把fixture修正或人工接管当通过。
+- 手机同源验收离线准备已独审0 findings，README`1fe3e2b5…`／helper`4028dbfd…`原件核对一致。六项合成离线控制均0、原十一份构包配方SHA不变，helper只处理显式输入摘要及冻结日志导出，不读取真实App日志或历史。最终组合source、原风险门禁和同源签包就绪后才进入用户手机步骤；R03历史包不继承bd2日志能力。
+
+本阶段只完成源代码观察补强及其受控链路验证；原生操作、手机、SRE物理闭合与最终source／consumer门禁仍按各自范围推进。所有提交仍为本地，目标保持active。
