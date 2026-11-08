@@ -20,19 +20,19 @@ out_of_scope:
 design_ref: docs/supreme/specs/2026-11-07T1729-执行与保存可靠性/design.md
 design_sections:
   - ref: design.md § 审查结论与证据
-    digest: sha256:a3e7e896e7b275f4f5ec5fe030b26b1e1d86b8a167a37848207a52dad5bf1075
+    digest: sha256:bec375d0461c02bd99366d520d2e588566c60db7d107ad58cef09d93b2c94983
   - ref: design.md § 目标与范围
-    digest: sha256:f6091ff12a4e102efd375b00c2ccf2279dd47f2d35d3b9f6af6a8b065b8105aa
+    digest: sha256:0a27e09d5b1f5c74cd43f68f5b5f950c5663de7a0f2f9ebadace96cf93e3a3d3
   - ref: design.md § 分层与复用
-    digest: sha256:97913e26b6ef294d16bef77e3ef9aef47c2eb064c30f3a0a2b95d0adfc6b2d1b
+    digest: sha256:be92d878a482a0f9f74353dc00f60481168df347f0b077517a4c994d06ab680a
   - ref: design.md § 目标行为
-    digest: sha256:5b147ff502172e1b52273059157366aa6ddc84b4d612d1801435b25eeae78528
+    digest: sha256:72a6dd0ff8926a4a1ee3d35ddd0caad61f8af71f557fd9045884230eb1cf73e1
   - ref: design.md § 参考实现与候选取舍
-    digest: sha256:11c1f6192e45df8021ba90339fdc6bd830cf0d33fbad6c0b46cca4d5888d0254
+    digest: sha256:0236291a977de5c2fe43c6232f3da3ac5e3784696b0231cdbfa8f1abdfbe2490
   - ref: design.md § 验收标准
-    digest: sha256:fed66eb1e85c75947f7b0df1885e43d1a590845a23fe021858629323b7bcf28d
+    digest: sha256:90043c2533e422b2b350b42ee70b3f00ee4401b65059a76583c54fdc2afa5b00
   - ref: design.md § 协作、文档与交付边界
-    digest: sha256:5810cde83e2b1b69e28c85066a4130578aa0412a59b4d58d96104d0304eb8475
+    digest: sha256:e6348e801572d273fbcf56abb1bb406703f1e6297321df9a750a4f5f6e0081f3
 delivery_ref: null
 todos:
   - id: reproduce-admission-and-profile-settlement
@@ -90,6 +90,47 @@ todos:
       - 原格式及raw/approved身份、sequence、签名、pending batch与ack proof往返无损；原physical
         Store结算与unknown恢复保持，caller abort不生成第二写。
       - 真实大小/多scope样本复测仍超过预算时停止性能切片并保留RED，提交分段证据供同authority缓存/失效补充设计审定；不得删原件、关校验/fsync、换数据库或加大timeout。
+  - id: bind-capacity-to-original-physical-operation
+    summary: 闭合真实父Verification争槽RED，将同一global1绑定前台/后台/Code/技能原生操作的原物理owner，并保持预算、来源与恢复权威。
+    files:
+      - echo-agent/echo-core/src/sandbox.rs
+      - echo-agent/echo-core/src/tools/mod.rs
+      - echo-agent/echo-core/src/tools/native_execution.rs
+      - echo-agent/echo-core/src/tools/cell.rs
+      - echo-agent/echo-execution/src/tools.rs
+      - echo-agent/echo-execution/src/sandbox/local.rs
+      - echo-agent/echo-execution/src/sandbox/manager.rs
+      - echo-agent/echo-execution/src/sandbox/docker.rs
+      - echo-agent/echo-execution/src/sandbox/k8s.rs
+      - echo-agent/echo-execution/src/skills/external/run_script_tool.rs
+      - echo-agent/echo-tools/src/shell.rs
+      - echo-agent/echo-tools/src/code.rs
+      - echo-agent/echo-orchestration/src/tasks/command_cell.rs
+      - echo-agent/src/agent/react/run/pipeline.rs
+      - echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/executor/limits.rs
+      - echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/executor/unattended.rs
+      - echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/executor/tests.rs
+      - echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/command_cells.rs
+      - echo-agent-cli/echo-agent-app-core/src/infra/factory.rs
+      - echo-agent-cli/echo-agent-app-core/src/agent_pool/pool.rs
+      - echo-agent-cli/echo-agent-app-core/src/plugin_components.rs
+      - echo-agent-cli/echo-agent-app-core/src/terminal/project_ssh/sandbox.rs
+    acceptance:
+      - 保留R08真实factory/execute_run/MAIN Verification/shell/wait
+        RED和原5秒cell期限；后继父任务结束前实际echo/exit0，不手工释放parent、不放宽quota、不禁background输入。
+      - 原ToolManager只传provider引用，per-attempt
+        timer/childcancel保持；每次资源恰一次取得并仅送本次command/child原owner，root/child/Plugin/pool最终manager共享App同一global1。
+      - Local/direct正常root
+        exit+EOF而原PGID后代仍活时保留资源；natural/cancel/deadline真实组控制保持同一预算，Unknown保Child/PGID/guard直到真实闭合及exact
+        fence确认。
+      - 默认false后端能力及runtime-only要求用唯一检查覆盖工具、Queued、Manager实际leaf/fallback/stream
+        pre-spawn和Docker/K8s公开共同入口；Some未支持在workload前失败，None按最终有效政策保旧，不盲包controlIO/PTY/MCP、不猜name/role/isolation/guardcount。
+      - 有效Some SSH以单一原Python3 stdlib controller
+        exec接替，实际session/group/signal/errno/monotonic
+        probe在payload前；同一原deadline含probe/执行/组等待/清理，只有原组真结束或明确未启动的匹配nonce完整有界EOF尾帧才结算。缺失/截断/EPERM/non255本身保持原Unknown，不改来源、不假cap、不无依据退役已证目标。
+      - 本地probe读取阶段零保留并持续drain，真实双pipe各1MiB控制通过；direct
+        script旧输出与关闭stdin保持；原35断言/时限/global1/策略来源负控不变，真实Local前置不代替实际结果。
+      - 按最终冻结源编译新cfg(test)/公开Rustdoc/examples并运行原5秒、35、新组/凭据/预算/manager/混合workspace及保存恢复控制；纯本机controller3探针与源码PASS不代签RustSome、受控SSH、App、phone或mainCI。
   - id: validate-full-owned-lifecycle
     summary: 闭合后台/保存组合故障、恢复、公共消费者与正式说明，保持验证层级真实。
     files:
@@ -116,3 +157,10 @@ todos:
 artifact_id: plan:5470deb5-c11d-4126-abd3-2d7474e98a26
 lifecycle: ready
 ---
+## Notes
+
+2026-11-08 阶段验收：原Outcome、六项Todo、原时限与边界保持，Plan仍ready、delivery_ref仍为空。当前R17同一753 native／427a冻结工作树的51项全部实际通过，0失败0忽略；Framework31、保存/恢复/真实snapshot47、15独立feature及同9.5MB样本四阶段原10秒预算分别通过。证据与旧失败保存在正式阶段报告及主根R02原件，不能相加旧cf5结果冒充最终源。
+
+R16的49P2F及原R08父任务争槽RED保留；两fixture仅补普通Chat根消息身份、修正懒factory实际generation的Mock传输并暴露原错误。R17独立registry无client负控已实际观察固定错误且Mock调用0，阳性仍真实typed shell成功/exit0/stdout。没有放宽角色、Schema、global1、原5秒或验证器。
+
+原Outcome第四项尚需协调会话完成CLI workspace集成质量/完整适用测试、公开消费者和官网最终同步、consumer8bd/283的精确复评及原actual-lock/canonical-origin门禁；原Outcome要求的组合App、main CI与发布继续分层，不由受控lib-test或界面专用旧来源包代签。当前不关闭Plan或Goal，不改变SDK独立pin/合同，不自动重绑依赖批准。
