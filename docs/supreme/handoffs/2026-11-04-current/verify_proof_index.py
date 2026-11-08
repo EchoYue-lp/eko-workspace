@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""重算并核对 2026-11-04 当前状态证据索引。
+"""重算并核对 2026-11-04 至 11-06 历史状态证据索引。
+
+仅检查原切点，不是当前 main 或新包门禁；旧制品退役后的缺失/变化保留原义，
+不为得到零差异恢复旧环境或改写历史条目。
 
 用法：python3 verify_proof_index.py
 退出码：0 全部一致；1 存在差异（差异逐条打印，不自动改写索引）。
@@ -13,7 +16,8 @@ import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-INDEX = os.path.join(HERE, "proof-index.json")
+CURRENT_INDEX = os.path.join(HERE, "proof-index-2026-11-05.json")
+INDEX = CURRENT_INDEX if os.path.isfile(CURRENT_INDEX) else os.path.join(HERE, "proof-index.json")
 
 
 def sha256(path):
@@ -25,6 +29,7 @@ def sha256(path):
 
 
 def main():
+    print(f"index={os.path.basename(INDEX)}")
     index = json.load(open(INDEX))
     missing, changed, ok = [], [], 0
     for entry in index["entries"]:

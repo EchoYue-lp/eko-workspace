@@ -1,5 +1,22 @@
 # 验证阶段新总协调交接
 
+> **历史归档（2026-11-04 至 11-05）**：下文“唯一 Root”和待批准/已批准分别属于旧协调切点；不构成今天的会话归属或重复批准要求。当前协调及真实进度见 [协调交接](../eko-current-handoff.md)。不恢复旧 App、源码或用户数据。
+
+## 2026-11-05 后继入口
+
+最新真人裁决已经执行：Framework8fb／49组108身份和CLI48ee／42a1精确绑定已批准并采用，原Framework checker／14控制和CLI8控制均0，CLI默认fresh actual／canonical两正式gate均0（scanner各1、零漏洞、原五warning）。本次原件在主根local/dependency-exact-binding-20261105-r01。下方“仍待答复／正式策略未变”保留先前时态，不再请求重复批准；SDK pin／App／GUI79及原26项没有因此完成。
+
+接管已完成，唯一Root仍为 `01a1a4c2-967b-7401-8980-fba6857c3740`。下方保留11月4日
+交接原时态，后继先读 `docs/MASTER-PLAN.md` 和 `docs/supreme/handoffs/eko-current-handoff.md`
+顶部最新段，不再将下方“clean／未采用／运行0”等旧读数当fresh。
+
+当前已完成SDK四测试及589P、十份语义资料当前来源修正、calamine0.38源码采用与新锁候选复评，
+当前前端完整963P／4原性能opt-in跳过／build0；R2当前27路径差量仅源码准备并独审pass。
+Framework49／108与CLI48ee锁的精确绑定仍待用户答复，正式策略未变，SDK精pin和App未升级。
+报告分别为 `docs/supreme/reports/calamine-cfb-validation-2026-11-05.md`、
+`r2-current-source-intake-2026-11-05.md` 和 `current-frontend-full-validation-2026-11-05.md`。
+GUI79和原26项未完成，不从自动Goal续接推断用户已经同意精确绑定。
+
 2026-11-04，用户已明确选择“新建总协调会话并启用新Goal，交接后归档当前会话”。这是新的协调上下文，沿用唯一主根与已有验收分支，不新建工作树或搬动源码。
 
 ## 最短读取顺序

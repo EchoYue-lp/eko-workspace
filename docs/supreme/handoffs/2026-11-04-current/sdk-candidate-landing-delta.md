@@ -1,5 +1,49 @@
 # SDK 接收候选相对当前 HEAD 的真实差值（2026-11-04 实测）
 
+> **历史归档（2026-11-04）**：“当前 HEAD”、候选、通过及失败均指原具名来源，不继承新 pin、漏洞修复或 main 资格。当前进度见 [协调交接](../eko-current-handoff.md)。
+
+## 当前执行后继
+
+用户交回本页方案并要求继续后，已在正式 `echo-agent-sdk/` 的原非 main 分支接收
+四个测试文件，共新增154行；保留 `core_profile_e2e.rs` 的 HEAD 字节，未整树覆盖候选。
+另同步本仓退役边界说明，共5个已跟踪文件发生改动，尚未 stage／commit。
+生产实现、Host pin、Cargo.lock 和生成合同保持原字节。
+
+本轮实际定向结果为 Rust scalar 4P、Python 2P、TypeScript 构建0及2P、Java 2P，
+均零失败、零跳过；独立实现审查 pass，无 findings。五条工程门禁已全部取得自然0：
+fmt write／check、featureless library、严格 Clippy，以及完整 Rust 测试18组589P／0F／0I。
+首轮完整命令因本轮运行器漏传 `ECHO_AGENT_SDK_CONSUMER_ROOT`，真实249P／18F、出口101；
+既有CI和原stable运行器均显式传该目录。同程序同用例的单变量缺目录101／补目录0
+确认原因后，仅补本批自有目录，按原完整argv重跑自然0；未修改测试断言或产品实现。
+原101与两个诊断原件保留，不改写成通过。
+原始 argv、日志和出口位于 SDK `.echo-semantic/local/sdk-candidate-landing-20261104-r01/`；
+`landing.json` 记录四测试前后 SHA 和保留的 core SHA，`settlement.json` 汇总实际终态。
+20个实际程序与原FP／dep-info／build输出共8251文件已在target外保全；同卷移动为主，
+保留约662MiB必要字节。确认reader0后，准确自有target官方clean自然0，移除2315文件／3.3GiB，
+target已不存在；未清旧目录或重新复制完整依赖缓存。后继不再轮询已结束句柄或重复冷编。
+
+本页以下比对和离线预演是落地前事实，不能作为本轮实际验证结果。
+normal Source 的 task_digest 绑定冲突、canonical 的 delete-preflight 缺口、fresh 风险、
+公开83来源和平台／GUI验收继续分别开放；网络恢复本身不会修复前两项工具合同。
+
+完整资料补查：上述933业务文件比对排除了 `.echo-semantic/`。补查时370份已跟踪语义资料
+与候选相比360份相同、10份不同、无缺失。现已对10份资料完成正式工作树的处置：
+baseline绑定当前摘要；4个历史观察锚定位既有Git83；当前消费者Evidence补本轮实际结果；
+Finding增加当前证据引用、Audit增加作者对账；另两份历史Evidence保完整header和正文，
+只追加处置说明，不用候选StageA段覆盖。旧状态、修复链、旧挑战及正文全部保留。
+
+installed0.5与固定c0bc原算法实算当前933业务文件摘要均为
+`source:0e84c61ef79502743c58bf928b9a9ff208621580323d7ca6efb01a21f242731b`，
+编辑10份语义资料前后不变；候选7978仍是其原切点。此次仅资料变化，不重跑Cargo。
+独立审查pass；installed0.5原严格检查在正式根、base83、require-change-evidence及具名既有ADR下，
+实际从31错／自然1收敛为自然0。它是本次83增量的独立检查，不是main747 normal Source／Final。
+
+固定c0bc首次误用了新版design-authority参数，CLI实际2保留；按旧工具原argv纠正后仍自然1／4错：
+不识别两个0.5运行态根条目、不接受旧Evidence的task after，以及要求同次更新ADR。
+不移动原运行态文件、不改旧task证明、不为形式改ADR、不改工具/schema/ignore求绿。
+原main747的两外部Source合同、fresh风险、公开来源、GUI和发行资格继续开放。
+完整原件与限定范围见同一SDK local目录的 `semantic-settlement.json`；不能以新版0覆盖旧版1。
+
 **问题**：候选 `receiving-main747-source` 基于 `747be93`，而 SDK 当前 HEAD 是 `83ae59e`；两者**不是祖先关系**（`git merge-base --is-ancestor 747be93 83ae59e` 为假），HEAD 相对 `747be93` 有 **10 个提交**（含 3 个 `WIP:`）。
 
 所以"提交候选"会不会把那 10 个提交的成果冲掉，必须先算清楚，不能凭"候选是合流产物"就提交。

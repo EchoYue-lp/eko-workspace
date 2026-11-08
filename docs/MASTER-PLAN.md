@@ -1,5 +1,7 @@
 # EKO／Eclip 总纲：当前交付状态
 
+**2026-11-09 整合交付进行中。** 用户要求全部既有开发成果分别进入框架、应用、SDK、官网及主工程的 `main`，核对功能覆盖后仅保留主分支；learning 指 `echo-agent/echo-agent-learning`。当前处于整合分支验证阶段，远端 main 与精确 CI 尚未完成。框架依赖检查已通过，首次完整 Rust 测试的 9 项失败正在定位；SDK 旧 pin 的 `calamine 0.36.1` 漏洞须经升级及独立验收闭合。原账号微信无回复仍未确定业务根因，新综合 App 未交付。当前路由见 [协调交接](supreme/handoffs/eko-current-handoff.md)；下文具名日期、旧包和旧“当前”均保留其历史时态。
+
 **2026-11-08 同源候选已就绪：** 用户已精确批准本次consumer `43ed071e…`／锁 `48eece73…`。原8控制、actual-lock和canonical-origin默认fresh正式门禁及独立Final审查均通过；官方scanner各1、精确gate／caller各0，零漏洞、原5项warning仍未修复。CLI风险组已本地提交 `894374232b3be89f0060840459bb7d5c294f9dd7`，两仓规则同步，不更新未推送gitlink。
 
 新候选签名程序 `30db9539…` 已完成官方构建、严格签名及资产／编译来源核验，4008源与17工具零漂移、152新资产保全，独立包审查通过，自有target准确clean0后约43.44GiB可用。人类原数据入口为[启动同源候选（原数据）](../.echo-semantic/local/eclip-final-native-20261108-r01/启动同源候选（原数据）.command)，沿此前主App准确数据／配置／工作空间；仅读工程启动结构并stat原路径，不读取认证或恢复旧数据。该入口静态检查、真实隔离flock跨exec控制及独立复审通过，Agent未启动App或操作GUI。私有UIQA入口仍单独保留，不能代签原账号手机。
@@ -27,6 +29,36 @@ IM、缓存、执行基础、界面及官网已按功能本地提交；缓存历
 新密度包绑定已提交CLI `a1ea6579…`／Framework `2b296b7e…` 与已接受锁，使用主根内干净归档来源，未包含未提交的执行候选；构建、签名和嵌入资产核验完成前不标ready。
 执行候选R14首轮编译自然101，后继两文件最小修正已采用，原五秒、物理容量和完整运行矩阵仍待验证。GUI由用户接管，不再自动操作窗口。
 总Goal继续active；未推送、合并、部署或更新未推送子提交的顶层gitlink。分批证据见[协调报告](supreme/reports/workspace-coordination-2026-11-07.md)及主根ignored协调目录；以下早期状态保留其历史切点。
+
+**2026-11-06 历史验证环境已按用户授权退役：** 在上一轮清理后，本轮再删5处旧App/制品/闲置工具链，并退役约100万历史文件。原展开源码、旧日志和程序不再默认存在；去重源码/配置及映射约3.19GiB，已全量SHA回读及实际恢复抽查。当前App12546b31、用户数据、进行中SSH包/9冻结工具和活动target保留；当前启动器所需旧启动结构已按原SHA恢复并静态验证0。两处有reader的历史目录排除。项目最终du约38.17GiB，结账可用约51.94GiB，存在并行构建和APFS共享。后继不要直接沿旧绝对路径重跑旧环境；先看本轮恢复映射。 [本轮清理记录](supreme/reports/history-retirement-2026-11-06.md)。
+
+**2026-11-06 主Agent固定轮数删除包已就绪：** `12546b31…`／177146608字节，主根3976源直接冷构建0、源零漂移，149新资产和真实.d匹配，签名/deep strict及实际包独审pass。GUI/API/YAML不再提供固定迭代参数，主工厂沿既有无产品轮数上限行为工作至完成或取消。源码20文件独审pass；976前端+4原opt-in、6项筛选（4轮数相关+2原匹配）、32配置、225实际导出、2相关池控制、严格Clippy/实际gui feature check/格式与构建0，最后Outcome1P+8P0。自有target必要4881件保全后准确官方clean0，target不存在。入口root local/gui-unbounded-agent-App-20261106-r01/启动新版.command，ready 40ee70ab。当前未替用户退出a440或启动新包；保存并正常退出后切换。72项WIP保全，锁/policy不改，新依赖资格、GUI/真实Provider及main CI不由本地包资格代替，79项与原26项未完成。 见[本轮反馈](supreme/reports/gui-feedback-2026-11-06.md)。下方在途及旧包状态均为历史切点。
+
+**2026-11-06 固定10轮上限删除：源码资格已闭合，新App构建中。** 用户已明确立即删除GUI Agent迭代参数。EKO默认10、GUI字段、DTO与发布链已移除，旧YAML有限值忽略且不再保存；主工厂沿既有usize::MAX工作到完成或取消。20文件独审pass（678d6580），3956其它路径无漂移；6项unbounded_筛选（4相关+2原匹配）/32配置/225真实导出/2相关池控制、严格Clippy、实际gui feature check、完整前端976P+4原opt-in及工程入口0，Outcome1P+8P0。72项WIP中52原字节不变、14获准改、6新增；锁/policy不改。test target必要保全后准确官方clean0。新包root local/gui-unbounded-agent-App-20261106-r01主根3976路径冷编译，exec48592已启动且未完成，149实际Tauri资产已捕获；不重复prepare/build。运行中a440仍旧，79GUI/26义务未完成。具体启动延迟、Docker引号、两次真实失败和归属讨论见本轮GUI反馈报告。
+
+**2026-11-06 用户授权的旧App清理已完成：** 已启动并核实新版a4405b14…（177032960字节、PID93080）的准确路径。删除14份旧Eclip.app（含5份不完整残留）及1份旧unsigned程序副本，共1775233976逻辑字节；删除前逐路径reader0，删除后准确路径均不存在，当前程序SHA不变。清理窗口可用空间增加1242222592字节，此差值含系统并发变化，不能由APFS路径总和推导可回收量。源码、用户数据和配置未删除，历史哈希及日志保留。原件root local/old-App-cleanup-20261105-r01/receipt.json。下方“旧包保留”均为清理前历史状态。当前正在处理GUI主Agent固定10轮上限的用户新要求；运行中的a440尚不含该后继改动。
+
+**2026-11-05 本次新会话及最近任务修复包已就绪：** 新包`a4405b14…`／177032960字节，直接主根3976路径冷构建0，签名及deep strict0，149新资产与实际.d绑定、源码零漂移。新会话重复派发／假队列、原journal失败只读原位显示、Responses中立content_part类型和最近任务折叠已编入；975前端／4原opt-in、94 Responses、相关工程入口和Outcome均0，源码及实际包独审pass。入口root local/new-conversation-repair-App-20261105-r01/启动新版.command，ready 3e032113；必要4881件编译原件保全后准确官方clean0，target不存在。CLI66项WIP、原锁／policy／consumer及旧d5包保持；未自动退出旧App或启动新版。请保存草稿并正常退出后切换；GUI／真实Provider仍待手验，79项和原26项未完成。 见[本次报告](supreme/reports/new-conversation-queue-2026-11-05.md)。下方构建在途与旧包状态保留为历史切点。
+
+**2026-11-05 新会话本次真实故障已定位并修复源码：** 指定conv-1793886223809-nl5rpi原32事件证明两input／两failed turn，非仅重复渲染；冷启动恢复在原send未回started时二次派发同一输入并抢pending投影，旧Responses又把reasoning父项的content_part误猜message。现保原pending与journal重放、当前input不作追加队列、提交中薄投影；中立part保未知父类型、ID／已知type校验不降。冷错误还按原ID／时间只读插回历史，去重不autosave；最近任务已可折叠。独审均pass，975前端／4原opt-in、94 Responses及Clippy/fmt0，207前端及parser原复现Outcome0。CLI66项WIP原62中56未动、6获准改、4新增；原锁／policy／Rust consumer不变。新包root local/new-conversation-repair-App-20261105-r01正直接主根3976路径冷编译（exec48056，不重复启动）。d5仍旧运行包，本轮修复尚未进入GUI；79项及26项未完成。[本次指定会话报告](supreme/reports/new-conversation-queue-2026-11-05.md)优先于下方旧“Responses待定位”等状态。
+
+**2026-11-05 新手验包已就绪：** 本轮Provider名称／模型名、IM入口迁移、Steer及scope修复已进入新本地包 `d5f1ea3a…`／177013792字节；冷构建0、编译W0E0、签名及deep strict0，实际.d绑定149新资产，3976主根源路径零漂移、无源码副本。独审pass及静态入口检查0；未启动或退出旧App。新入口为root local/gui-manual-feedback-App-20261105-r01/启动新版.command，ready799be510；先正常保存退出旧App再手验。原unsigned及新App、4881必要元数据保全后官方clean0／2.4GiB且准确target不存在，旧abdd不变。30项索引及手验入口已切新候选，旧原件保留；CLI新62项WIP核字节。Responses实际兼容故障仍待新包诊断，不把967前端／局部Rust和产物资格计作GUI79或原26项完成。完整终态d9348bc3见 [手验报告](supreme/reports/gui-manual-feedback-2026-11-05.md)。下段“构建在途”保留先前时态。
+
+**2026-11-05 用户已开始GUI手验：** 已反馈Provider误选、模型标签缺Provider、渠道scope恢复错误、Steer空turn IPC及Responses输出身份错误。前端已改实际Provider名称／模型标签、基础与扩展IM入口及基础配置去重、无活跃turn时保留Steer队列、历史失败reason呈现；完整967P／4原opt-in跳过、lint／类型／构建0，独审pass、Outcome215P。Framework默认scope恢复修复已真实RED→GREEN及10项相关回归0，Responses92P及Clippy/fmt0，独审pass；Responses实际兼容故障仍未解决，仅补安全诊断。当前仍运行旧abdd App，主根直接源码的3976路径新App冷构建已启动，未复制源码，不签新源码GUI通过。自有测试target必要3643件约106MiB保全后官方clean0／1007.5MiB；第一次清理因保全误移缓存标记而被Cargo拒绝，已从原件恢复同字节标记重跑，旧101保留。见 [本次手验反馈](supreme/reports/gui-manual-feedback-2026-11-05.md)。原79项和26项不关闭，下面旧“GUI未开始”和498／498同源仅保原切点。
+
+**2026-11-05 用户裁决已执行：** Framework8fb／49组108身份与CLI48ee／原42a1 consumer的精确绑定已获真人直接批准并采用，不预授后续新风险。原Framework checker读回同一官方raw自然0，14项控制0；CLI8项控制0，默认fresh actual／canonical正式gate各0（官方scanner各1、零漏洞、原五warning、DB965bf9ad／1403）。原“未答复”阻塞条件已解除，下面blocked段落及旧policy状态只保历史；平台Goal先前blocked原件不篡改，不称整体完成。原件为根local/dependency-exact-binding-20261105-r01；SDK pin／App／GUI79／原26项仍开放。详见 [CFB当前结果](supreme/reports/calamine-cfb-validation-2026-11-05.md)。
+
+**2026-11-05 Goal实际状态：blocked，目标未完成。** 可独立前端／R2源码准备已收口；精确Framework49／108与CLI48ee新锁绑定仍未获答复，正式策略不改，原26项和GUI79不标完成。已按连续3轮同一条件核验后调用平台update_goal取得blocked，等待原精确裁决，不自动重跑已通过矩阵或反复新增准备包。审计原件为根local/validation-coordinator-transfer-20261104-r01/goal-blocked-audit-20261105.json，实际frontend963及其它新成果保持。
+
+**2026-11-05 当前前端完整门禁：** 498输入相对旧945切点确有18文件差量，现已在正式前端运行原格式／npm test／npm build各自然0，963P／4原性能opt-in跳过／0F，94文件通过。498输入零漂移并与abdd构建前端498／498相同；只签前端工程，不签GUI或当前Framework全同源。原dist149文件同卷恢复后按旧清单逐项SHA／模式验证一致，新149浏览器输出约3.09MiB单独保留。官网原快照check0、当前来源check因dirty guard1，未改站点／manifest或绕过guard。精确49/108及48ee锁裁决仍未收到，正式policy不动。见 [当前前端完整验证](supreme/reports/current-frontend-full-validation-2026-11-05.md)。
+
+**2026-11-05 风险裁决等待期间的R2推进：** 已核实专用AppCore case通过ConfiguredModel默认值构造，自身没有退役temperature字段；问题在旧完整组合仍含旧类型，不能回灌旧infra/tests。7份已审R2补丁已只在内存重基到当前主根，输出27路径的两份差量，各实际apply-check0；正式源/锁/policy未写、无新完整源码副本、无Cargo/HTTP/Popen/180秒运行。观察器依赖与后继hyper-util锁边仍须资格化，不以补丁可应用代类型或生命周期通过。当前精确49/108及48ee锁绑定仍待用户答复。详见 [R2当前源码接收准备](supreme/reports/r2-current-source-intake-2026-11-05.md)。
+
+**2026-11-05 用户批准升级后：** 官方calamine0.38已正式采用，Framework新锁8fb62e／677包、CLI新锁48eece／769包，完整差量经独审pass。正式媒体4P、Clippy/fmt0，CLI AppCore新消费图check0，来源工具16控制0。新锁首轮两份有效fresh audit均0漏洞／原5warning，官方scanner各1；后继串行fresh网络fetch1保原。Framework deny官方0，实际49组108身份，仅增加quick-xml0.42，正式baseline仍旧49/107；CLI policy仍绑定旧锁，原8控制因此未通过，不能称双gate0。精确49/108与48ee锁绑定提案已备，待用户裁决，不自动增加ignore/风险。SDK pin340/c448和abdd App未变。当前30项索引与WIP基线已重发，原件保留，47个其它CLI WIP输入不变。详见下方CFB报告的当前后继。
+
+**2026-11-05 新风险后继：** SDK十份资料已按当前source0e84收敛并独审pass，installed0.5严格独立检查实际31错→0；旧c0bc仍1／4错，normal Source/Final完整资格保持未完成。网络恢复后CLI原fresh actual精确gate0，但canonical1发现calamine0.36.1的RUSTSEC-2026-0436。Framework已按上游PR762取得真实短目录panic RED、局部修复2P、正式媒体4P及Clippy/fmt0，独审pass；不改三正式锁/版本/origin/风险策略，不冒当前App或SDK精pin已采用。官方0.38.0完整runtime候选及49项补丁已准备、样本2P、apply-check0，新增quick-xml0.42身份与新锁尚待用户裁决；不自动扩原接受合同。本批必要制品约19MiB保全后准确target官方clean0／892.4MiB且不存在。详见 [CFB验收及升级待决](supreme/reports/calamine-cfb-validation-2026-11-05.md)。原26项与79项GUI未闭合。
+
+**2026-11-04 最新接续：** 用户已明确要求继续四测试落地方案，SDK 原83非main分支现已接收4个测试／154行，保留HEAD沙箱修复，另同步1份SDK说明；无生产、pin、锁或合同变化，尚未提交。当前直接回归Rust4＋三语言各2实际通过、独立审查pass；五条工程门禁全部自然0，完整Rust18组589P／0F／0I。首轮漏consumer目录引起的249P／18F／101及单变量诊断保原，纠正运行器环境后原完整命令通过，产品与测试未改。8251必要制品外置保全后，本批准确target官方clean0／3.3GiB且已不存在。后继10份语义资料已按正式来源处置，旧正文/状态/修复链保留，933业务摘要仍0e84；独审pass，installed0.5独立strict在base83实际31错→0。旧c0bc按其原argv仍1／4错，不能由新版0覆盖；main747 normal Source/Final等完整资格仍开放。准确终态见 [SDK落地后继](supreme/handoffs/2026-11-04-current/sdk-candidate-landing-delta.md)。CLI48项WIP与基线一致；79项GUI仍无新增真人结果，原26项继续开放。以下旧轮状态按其时间解释，不重新索取已具备的本地实施／验证授权。
 
 更新时间：2026-11-04。用户已明确恢复完整Goal，并由新协调上下文接手。完整目标在 `docs/supreme/goals/eko-eclip-complete-iteration-2026-11-02.md`，现场与准确下一步在 `docs/supreme/handoffs/eko-current-handoff.md`；十执行线及权限见续接目录 `executors.md`。旧三天时间线原字节归入该目录 `history/`，当前表不以历史“live/paused/pending”覆盖最新事实。
 

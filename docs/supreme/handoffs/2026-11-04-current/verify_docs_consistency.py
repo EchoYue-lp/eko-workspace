@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""验收文档一致性检查（只读）。
+"""2026-11-04 至 11-06 历史验收文档一致性检查（只读）。
+
+这是旧切点索引的维护工具，不是当前 main 或新包的最终门禁；历史制品退役后
+原索引可能不再与磁盘一致，不得为通过检查恢复旧环境或改写历史哈希。
 
 用途：本会话多次出现「同一错误在多份文档各存一份」「数字与实际不符」。
 本脚本把这些检查固化成可重复运行的形式，改完文档跑一次即可。
@@ -22,6 +25,9 @@ ACC = os.path.join(ROOT, "docs", "supreme", "acceptance")
 CHK = os.path.join(ACC, "eko-eclip-gui-manual-checklist-2026-11-02.md")
 LEDGER = os.path.join(ROOT, "docs", "supreme", "handoffs", "2026-11-04-current", "remaining-26-ledger.md")
 INDEX = os.path.join(ROOT, "docs", "supreme", "handoffs", "2026-11-04-current", "proof-index.json")
+CURRENT_INDEX = os.path.join(ROOT, "docs", "supreme", "handoffs", "2026-11-04-current", "proof-index-2026-11-05.json")
+if os.path.isfile(CURRENT_INDEX):
+    INDEX = CURRENT_INDEX
 
 fails = []
 oks = []
@@ -121,11 +127,11 @@ if not [f for f in fails if "推理深度" in f or "三项" in f]:
     ok("已更正的 A06 表述未复现")
 
 # 7. 入口页给出的启动脚本路径必须真实存在
-LAUNCHER = ".echo-semantic/local/repair-App-warm-continuation-20261103-r01/epoch-01/启动修复版.command"
-if os.path.exists(os.path.join(ROOT, LAUNCHER)):
+launchers = re.findall(r"^(\.echo-semantic/local/[^\r\n`]+\.command)$", rd, re.M)
+if len(launchers) == 1 and os.path.isfile(os.path.join(ROOT, launchers[0])):
     ok("入口页启动脚本路径存在")
 else:
-    bad(f"入口页启动脚本不存在: {LAUNCHER}")
+    bad(f"入口页启动脚本缺失或不唯一: {launchers}")
 
 # 8. SDK 落地清单里的路径必须存在，且 4 个纯增行数之和与正文写的 154 一致
 DELTA = os.path.join(ROOT, "docs/supreme/handoffs/2026-11-04-current/sdk-candidate-landing-delta.md")
