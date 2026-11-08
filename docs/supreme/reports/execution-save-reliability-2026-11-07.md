@@ -1,5 +1,71 @@
 # 执行与保存可靠性阶段验收
 
+## 当前结论（R20阶段证据）
+
+2026-11-08 R20 阶段证据（本次采用）：最终本地完整 workspace 命令已自然退出 0，零失败、零编译警告、零源码漂移。原 Outcome、六项 Todo 和七个 Design 章节不变，Plan 仍为 `ready`，`delivery_ref` 仍为空，Goal 保持 `active`。精确风险门禁、同源 App 边界、官网及最终交付尚未收口。本节为本次正式采用的R20阶段证据，整体交付仍未完成。
+
+正式采用日期：2026-11-08（Asia/Shanghai）。技术证据切点：原完整 workspace 终局 2026-11-08T09:23:23.793963+00:00，本次 fresh raw audit 终局 2026-11-08T17:27:06.569183+08:00。风险人类裁决状态：PENDING。
+
+应用原 `ChatEventLog` safe-point 复用既有 retention 判定：没有需要裁剪的 segment、也没有待收敛 cleanup 时，先返回，避免每次追加都主动追平可派生的 native projection；真正读取仍经原 API 自动追平。真实裁剪及 cleanup 路径继续原 journal sync、checkpoint 覆盖确认、pin 和 prune。此处只记录已审查的应用调度优化，不向 Framework 新增产品策略，不修改原耐久屏障、10 秒保存预算或 20 秒综合用例期限。
+
+| R20 验证 | 原程序的实际结果 | 可证明的范围 |
+| --- | --- | --- |
+| 旧生产源加新精确回归 | 自然 101；coverage save 尝试 1、成功 1、失败 0 | 新断言取得有效 RED；后续 live/cold 断言未到。 |
+| 新生产源的新精确回归 | 1P/0F/0I，自然 0；coverage save 尝试、成功、失败均 0 | 非空原 journal、实时及冷重开 publication 完整断言均到达并通过。 |
+| App-core `native_history_` 族 | 15P/0F/2 项原有 ignored，自然 0 | 邻接 correctness；两项原 opt-in I/O 诊断没有被执行或改为普通样本。 |
+| 旧 CLI 原邻接 1、2 | 各 1P/0F/0I，自然 0 | 分别绑定原 CLI 程序，不相加冒称整个 CLI 套件通过。 |
+| 旧 CLI 原邻接 3 | 0P/1F/0I，自然 101，7.52 秒 | 完整 DTO 比较实际失败；该旧批遇首错停止，邻接 4–7 当时未执行。 |
+| 同一 R20 App-core 程序无过滤默认并行诊断 | 外层 2367P/0F/15 项原有 ignored，自然 0，308.44 秒，输入无漂移 | 包含原 A2 综合用例在原 20 秒内通过；不是完整 Cargo workspace 命令。 |
+| 最终六项质量与编译 | 六阶段自然 0/W0，输入无漂移，四个程序及各自来源制品保全 | 包含全 workspace 的 NoRun；编译不代签运行。 |
+| 新 CLI 原七项邻接 | 7 项各 1P/0F/0I，自然 0，输入无漂移 | 含原失败的完整 DTO 用例、真实裁剪、首次冷读及 Fork；不代签原完整 workspace 或 release 性能。 |
+| 原完整命令内 App-core 主库 | 外层 2367P/0F/15 项原有 ignored，296.73 秒，无过滤 | 主库结束后同一 Cargo 已继续后继目标；与上方独立主库诊断分列，不相加或用时差作提速结论。 |
+| 同一原完整命令随后三个集成目标 | 分别 6P、5P、2P，均 0F/0I/0 filtered | 逐目标保留实际结果；两个重持久化目标、CLI 和完整终局另列于下方。 |
+| 原完整命令内两个独立持久化目标 | presentation 1P/0F/0I、260.96 秒；usage 1P/0F/0I、293.09 秒 | 两者均在本次原命令实际完成，不借 R19 独立程序的旧通过结果代签。 |
+| 原完整命令内 CLI 主库 | 143P/0F/3 项原有 ignored，60.25 秒，无过滤 | 与上方七项 exact 分列，不将相同用例重复相加。 |
+| 原完整 workspace 最终终局 | 原命令自然退出 0，零编译警告、终局源码 guard 无漂移 | 后续 r4/runtime_state、Tauri 目标及 doctest 均实际完成；零测试目标和原 ignored 不作为新增断言或 GUI 实跑资格。 |
+| 本次批准前的 actual-lock／canonical-origin 官方 raw audit | 两次各自然退出 1；均零漏洞、恰原五项未修复 warning | 原始扫描与精确 gate 分开；候选 preview 不是正式风险接受或 gate 通过。 |
+
+App-core 实际程序 SHA256 为 `97c3df25aeaf3ae4983450969fead680da1fb8b188187a3246d378c5315c0e74`，CLI 旧邻接程序为 `c570fe1f0743585133aa359b8b3e953e8eaf3af1f75e6955bd96b2b58f306121`。该 R20 构建批次自然 0/W0，冻结 2503 项输入；程序、`.d`、fingerprint 和来源回执分别保全。主库输出内嵌的 1P/2381 filtered 行不作为外层终局。
+
+旧 CLI 第 3 项失败保留。源码核对发现，原 baseline 只使用纯 publication mapper；实际 GUI consumer 还会根据原日志附加一次 presentation supplement。single-final 与 progress+final batch 的承载位置不同，不能删字段或把该差异归为可忽略 metadata。此结论来自原路径源码及该次真实失败，不反向宣称更早旧程序已实际复现；后继新程序的通过也不覆盖原 RED。
+
+单文件完整 oracle 候选已独立 Source PASS，C0/I0/M0，审查 SHA256 为 `e8bdd939d2575457681b3383b30e67293614e730143005a0a5115b6ac082be97`。expected 从受控原 fixture journal 独立构造，保留 source、identity、event/cursor、固定 head、prefix 和全部 record 字段；single、batch、cold 分别建模承载位置。原 publication baseline 值和完整 JSON/Vec 比较保留，未从被测 GUI 响应复制答案，未在 tail 后调用会追平 native projection 的查询预热。此处原 replay 的无维护路径依赖具名 fixture 无 pending barrier 的前置，不泛化为所有 replay 均无副作用。
+
+候选已由唯一 writer 采用到原测试文件并限定格式化，最终文件 SHA256 为 `069b42f77c54705843b1b5df2f471622b17e5ba904b72aefd66d871c5226ff45`。仅两个 helper 和一个必要 caller 改变，生产 consumer 与其他保护源未改；Final 增量审查已 PASS，其完整回执由本次记录 manifest 绑定。后继最终质量与 NoRun 批次（own91375，`r20-final-quality`）六阶段均自然 0/W0/M0，冻结 2503 项输入；App-core、CLI、presentation、usage 四个程序及 `.d`/fingerprint 已保全。新 CLI 程序为 `dfe8ee6e12c2f0df2bce7aca31198dd73a1d53637b4d336e91a69154b9eef9f1`，353,745,568B。`r20-final-cli-neighbors` 的 recipe 同样绑定该程序和 2503 项输入，七项原 exact 各自 1P/0F/0I、自然 0/M0；原失败场景的完整比较确已在新程序通过。这是测试 oracle 修正及对应真实复验，不以 Source PASS 或编译成功替代运行证据。
+
+原 `cargo test --workspace --all-features --locked` 无 selector/默认并行命令（own99974）现已完整自然退出 0/W0/M0，包含两个独立长测试、后续 r4/runtime_state、CLI、Tauri 和 doctest。终局 raw SHA256 为 `016f1d84a4f124e5d6c8fbf56064ab2e50df7e89f7b4773df630ae76db963252`。`central-terminal-summary.json` 逐目标保留原结果；内嵌的 1P/2381 filtered 不作为外层主库终局，Tauri 的零测试目标也不构成 GUI 运行。原 Cargo PID 已结束，四个保全 native 的真实 reader 均为空。R04 的 `full-progress.json` 继续以其中途观察的原日志前缀身份保留，不能冒充终局摘要；本次记录另外绑定真正的完整 execution、terminal summary 和最终 raw。
+
+六项质量、七项 CLI 邻接及原完整命令的本地测试门禁已闭合。协调者后继将本次精确六文件代码／测试／ADR／性能说明本地提交为 `efbf200c0d2ff9c4ff20ba567e2660fa0200e248`，本次记录以真实 Git 对象元数据绑定六条路径；编译和测试资格仍准确绑定其原冻结工作树与程序，不把后继提交元数据倒填成原编译时 HEAD。
+
+本次 fresh 官方 actual-lock 和 canonical-origin 扫描均使用原 `cargo audit --json --deny warnings`，两次真实出口均为 1，零漏洞，保留原五项未修复 warning：glib 0.18.5 为 unsound；proc-macro-error 1.0.4、zvariant 5.13.1、zbus_names 4.3.4、zvariant_derive 5.14.0 为 unmaintained。原 settings 未设置 ignore、target 或 severity 过滤；完整 advisory/source/checksum 身份及原始输出由批准材料和本次记录 manifest 绑定。该事实不改写为零 warning 或正式精确 gate 已通过。
+
+新源码的官方 consumer 摘要为 `43ed071e6471d4ab627520a74843fdd8c3524a023b30c85205270176257c3143`（283 个输入，相对原接受源码 78 个路径变动）；锁仍为 `48eece730daaa9eff539e416861454441c23c54abf02bacaa2c3bdb375bd6329`（769 包）。本切点的批准材料仍明确 `humanAuthorized=false`、`formalAdoption=false`，正式接受仍是原 `42a1dd…`。协调聊天已提出仅限本次的精确绑定问题，尚不据此授予新源码接受；原八项控制及两项 fresh 正式精确 gate 继续待完成。本阶段工程记录已在本次采用中更新；官网的最终Git文档来源及同源App边界仍未完成；原 UI3 `b6c23b7d`/Framework `f479f52c` 包不包含后继 R20 生产 guard，不能代签当前 App。release 性能、真实 GUI/phone、SSH 网络、公开 Host、main CI、推送、合并和发布继续分别验收，不能由 debug correctness、旧风险批准或源审继承。
+
+## 原计划六项 Todo 的验收对照
+
+下表只展示原 Plan 的验收义务及证据边界，不新增或改变 Todo 状态，也不把 R20 的一个邻接测试修正当作整个任务的成功标准。正式 Plan 尚未结账，六项的正式收口均标记为 `not_done`；已满足的专项和完整测试证据照实列出，不因此重跑已通过控制或伪造尚缺验证。
+
+| 原 Todo | 已满足的证据入口 | 当前未闭合边界（正式收口均 not_done） |
+| --- | --- | --- |
+| `reproduce-admission-and-profile-settlement` | 原 prepared/timeout/101 链、两类准入反例及真实 9.5MB 分段 profile 均保留，原10秒未改 | not_done：证据保留在原数据/程序范围内；共同交付门禁及正式计划结账尚未完成。 |
+| `separate-admission-and-cell-lifetime` | Framework31、应用51及后继原完整命令0，预算、取消、Queued和接纳边界保留 | not_done：精确风险与同源App的共同交付边界尚未闭合，源码/受控合同不代签其他Host。 |
+| `wire-product-capacity-and-receipts` | 普通Chat/TaskRun真实接线、命令cell35、同服务容量1及后继完整组合测试0 | not_done：当前同源App尚待具名验收；原UI3包不能证明R20 guard已进入产品包。 |
+| `remove-operation-local-save-amplification` | 保存/恢复/快照47项、真实样本冷暖四阶段、合成多scope及后继完整测试0 | not_done：同源最终交付边界待结账；原10秒/CAS/原件/pending debt资格保留，不新增A/B或release性能结论。 |
+| `bind-capacity-to-original-physical-operation` | 原5秒父Verification、35断言、Local/组控制/SSH Some与None/混合workspace及后继完整命令0 | not_done：受控运行资格与真实网络、任意Host和App分开；最终交付门禁及正式状态仍未关闭。 |
+| `validate-full-owned-lifecycle` | R20 RED/GREEN、最终六质量、新CLI7及整个workspace含两个重integration实际0，原失败账本保留 | not_done：最终精确consumer接受、原controls/两gate、当前Git来源官网及同源App边界待收口；本阶段工程记录已采用，正式Plan整体未结账。 |
+
+以上旧通过结果继续在其准确源码、feature、样本和程序范围内成立；新增完整命令0也只证明本地测试层级。原第六项、Outcome第四项及整体交付不会因为本表或本地全绿而自动完成。
+
+## R20 证据入口与后继收口
+
+所有 R20 运行证据位于主根 `.echo-semantic/local/exec-save-reliability-20261107-r02/`：`r20-target-red`、`r20-target-green`、`r20-green-compile`、`r20-green-neighbors`、`r20-core-full-diagnostic`、`r20-final-quality`、`r20-final-cli-neighbors` 和已自然0的 `cli-full-workspace-tests-r20`。本次记录的 `candidate.json` 逐项绑定完整回执、最终raw、单文件采用回执及具名中途观察的路径和 SHA256，不复制模型正文、工具内容或凭据；中途前缀与真正终局原件保持不同身份。
+
+本次已将R20阶段证据写入正式报告、Design与原Plan Notes；七章绑定经ArtifactCLI正常 `revise/validate` 更新，原Outcome、六Todo、ready/null保持。本阶段记录仍待Root Final复核；风险门禁、同源App、官网及整体交付继续待结账。采用回执位于主根 `.echo-semantic/local/exec-save-reliability-20261107-r02/engineering-record-candidate-r20/formal-adoption-r06/`。
+
+## R19 及更早阶段记录（原文保留）
+
+以下正文逐字保留；其“当前”和未到描述属于各自历史切点，不覆盖上方R20的实证与剩余义务。
+
 ## 当前结论（R19）
 
 执行与保存修复已有源码及受控运行证据，完整交付仍未完成。R19 主库在原完整命令中实际得到 2365P/1F/15I，耗时 324.82 秒；Cargo 自然退出 101，唯一失败是 IM 的 `original_manager_reconnect_and_exact_abandon_drive_network_inputs_once`。零编译 warning、冻结输入无漂移。原 failfast 使后续 workspace 套件和两个独立持久化目标尚未执行，不能把此前专项通过或程序已编译当作它们已运行。

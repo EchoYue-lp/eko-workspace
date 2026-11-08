@@ -35,6 +35,49 @@ carrier: markdown
 2026-11-08 的真实 factory→execute_run→MAIN Verification→shell(background=true)→wait 补充取得有效 RED：父任务持有唯一进程 shell 许可，cell 首次观察为 Queued，随后在原5秒内 Failed/cause TimedOut、exit=None、output=0；四次模型请求所见 available=[0,0,0,0]，父结束后才恢复1。不是 fixture timeout，不以扩大原期限解决。后继完整 r03 SourceReview 为 C0/I0/M0，仍只有源码资格；纯 Python controller 三项本机原组探针通过，不代签 Rust Some／SSH／App／原5秒／35项或最终冻结源。
 
 
+### R20阶段证据
+
+2026-11-08 R20 阶段证据（本次采用）：最终本地完整 workspace 命令已自然退出 0，零失败、零编译警告、零源码漂移。原 Outcome、六项 Todo 和七个 Design 章节不变，Plan 仍为 `ready`，`delivery_ref` 仍为空，Goal 保持 `active`。精确风险门禁、同源 App 边界、官网及最终交付尚未收口。本节为本次正式采用的R20阶段证据，整体交付仍未完成。
+
+正式采用日期：2026-11-08（Asia/Shanghai）。技术证据切点：原完整 workspace 终局 2026-11-08T09:23:23.793963+00:00，本次 fresh raw audit 终局 2026-11-08T17:27:06.569183+08:00。风险人类裁决状态：PENDING。
+
+应用原 `ChatEventLog` safe-point 复用既有 retention 判定：没有需要裁剪的 segment、也没有待收敛 cleanup 时，先返回，避免每次追加都主动追平可派生的 native projection；真正读取仍经原 API 自动追平。真实裁剪及 cleanup 路径继续原 journal sync、checkpoint 覆盖确认、pin 和 prune。此处只记录已审查的应用调度优化，不向 Framework 新增产品策略，不修改原耐久屏障、10 秒保存预算或 20 秒综合用例期限。
+
+| R20 验证 | 原程序的实际结果 | 可证明的范围 |
+| --- | --- | --- |
+| 旧生产源加新精确回归 | 自然 101；coverage save 尝试 1、成功 1、失败 0 | 新断言取得有效 RED；后续 live/cold 断言未到。 |
+| 新生产源的新精确回归 | 1P/0F/0I，自然 0；coverage save 尝试、成功、失败均 0 | 非空原 journal、实时及冷重开 publication 完整断言均到达并通过。 |
+| App-core `native_history_` 族 | 15P/0F/2 项原有 ignored，自然 0 | 邻接 correctness；两项原 opt-in I/O 诊断没有被执行或改为普通样本。 |
+| 旧 CLI 原邻接 1、2 | 各 1P/0F/0I，自然 0 | 分别绑定原 CLI 程序，不相加冒称整个 CLI 套件通过。 |
+| 旧 CLI 原邻接 3 | 0P/1F/0I，自然 101，7.52 秒 | 完整 DTO 比较实际失败；该旧批遇首错停止，邻接 4–7 当时未执行。 |
+| 同一 R20 App-core 程序无过滤默认并行诊断 | 外层 2367P/0F/15 项原有 ignored，自然 0，308.44 秒，输入无漂移 | 包含原 A2 综合用例在原 20 秒内通过；不是完整 Cargo workspace 命令。 |
+| 最终六项质量与编译 | 六阶段自然 0/W0，输入无漂移，四个程序及各自来源制品保全 | 包含全 workspace 的 NoRun；编译不代签运行。 |
+| 新 CLI 原七项邻接 | 7 项各 1P/0F/0I，自然 0，输入无漂移 | 含原失败的完整 DTO 用例、真实裁剪、首次冷读及 Fork；不代签原完整 workspace 或 release 性能。 |
+| 原完整命令内 App-core 主库 | 外层 2367P/0F/15 项原有 ignored，296.73 秒，无过滤 | 主库结束后同一 Cargo 已继续后继目标；与上方独立主库诊断分列，不相加或用时差作提速结论。 |
+| 同一原完整命令随后三个集成目标 | 分别 6P、5P、2P，均 0F/0I/0 filtered | 逐目标保留实际结果；两个重持久化目标、CLI 和完整终局另列于下方。 |
+| 原完整命令内两个独立持久化目标 | presentation 1P/0F/0I、260.96 秒；usage 1P/0F/0I、293.09 秒 | 两者均在本次原命令实际完成，不借 R19 独立程序的旧通过结果代签。 |
+| 原完整命令内 CLI 主库 | 143P/0F/3 项原有 ignored，60.25 秒，无过滤 | 与上方七项 exact 分列，不将相同用例重复相加。 |
+| 原完整 workspace 最终终局 | 原命令自然退出 0，零编译警告、终局源码 guard 无漂移 | 后续 r4/runtime_state、Tauri 目标及 doctest 均实际完成；零测试目标和原 ignored 不作为新增断言或 GUI 实跑资格。 |
+| 本次批准前的 actual-lock／canonical-origin 官方 raw audit | 两次各自然退出 1；均零漏洞、恰原五项未修复 warning | 原始扫描与精确 gate 分开；候选 preview 不是正式风险接受或 gate 通过。 |
+
+App-core 实际程序 SHA256 为 `97c3df25aeaf3ae4983450969fead680da1fb8b188187a3246d378c5315c0e74`，CLI 旧邻接程序为 `c570fe1f0743585133aa359b8b3e953e8eaf3af1f75e6955bd96b2b58f306121`。该 R20 构建批次自然 0/W0，冻结 2503 项输入；程序、`.d`、fingerprint 和来源回执分别保全。主库输出内嵌的 1P/2381 filtered 行不作为外层终局。
+
+旧 CLI 第 3 项失败保留。源码核对发现，原 baseline 只使用纯 publication mapper；实际 GUI consumer 还会根据原日志附加一次 presentation supplement。single-final 与 progress+final batch 的承载位置不同，不能删字段或把该差异归为可忽略 metadata。此结论来自原路径源码及该次真实失败，不反向宣称更早旧程序已实际复现；后继新程序的通过也不覆盖原 RED。
+
+单文件完整 oracle 候选已独立 Source PASS，C0/I0/M0，审查 SHA256 为 `e8bdd939d2575457681b3383b30e67293614e730143005a0a5115b6ac082be97`。expected 从受控原 fixture journal 独立构造，保留 source、identity、event/cursor、固定 head、prefix 和全部 record 字段；single、batch、cold 分别建模承载位置。原 publication baseline 值和完整 JSON/Vec 比较保留，未从被测 GUI 响应复制答案，未在 tail 后调用会追平 native projection 的查询预热。此处原 replay 的无维护路径依赖具名 fixture 无 pending barrier 的前置，不泛化为所有 replay 均无副作用。
+
+候选已由唯一 writer 采用到原测试文件并限定格式化，最终文件 SHA256 为 `069b42f77c54705843b1b5df2f471622b17e5ba904b72aefd66d871c5226ff45`。仅两个 helper 和一个必要 caller 改变，生产 consumer 与其他保护源未改；Final 增量审查已 PASS，其完整回执由本次记录 manifest 绑定。后继最终质量与 NoRun 批次（own91375，`r20-final-quality`）六阶段均自然 0/W0/M0，冻结 2503 项输入；App-core、CLI、presentation、usage 四个程序及 `.d`/fingerprint 已保全。新 CLI 程序为 `dfe8ee6e12c2f0df2bce7aca31198dd73a1d53637b4d336e91a69154b9eef9f1`，353,745,568B。`r20-final-cli-neighbors` 的 recipe 同样绑定该程序和 2503 项输入，七项原 exact 各自 1P/0F/0I、自然 0/M0；原失败场景的完整比较确已在新程序通过。这是测试 oracle 修正及对应真实复验，不以 Source PASS 或编译成功替代运行证据。
+
+原 `cargo test --workspace --all-features --locked` 无 selector/默认并行命令（own99974）现已完整自然退出 0/W0/M0，包含两个独立长测试、后续 r4/runtime_state、CLI、Tauri 和 doctest。终局 raw SHA256 为 `016f1d84a4f124e5d6c8fbf56064ab2e50df7e89f7b4773df630ae76db963252`。`central-terminal-summary.json` 逐目标保留原结果；内嵌的 1P/2381 filtered 不作为外层主库终局，Tauri 的零测试目标也不构成 GUI 运行。原 Cargo PID 已结束，四个保全 native 的真实 reader 均为空。R04 的 `full-progress.json` 继续以其中途观察的原日志前缀身份保留，不能冒充终局摘要；本次记录另外绑定真正的完整 execution、terminal summary 和最终 raw。
+
+六项质量、七项 CLI 邻接及原完整命令的本地测试门禁已闭合。协调者后继将本次精确六文件代码／测试／ADR／性能说明本地提交为 `efbf200c0d2ff9c4ff20ba567e2660fa0200e248`，本次记录以真实 Git 对象元数据绑定六条路径；编译和测试资格仍准确绑定其原冻结工作树与程序，不把后继提交元数据倒填成原编译时 HEAD。
+
+本次 fresh 官方 actual-lock 和 canonical-origin 扫描均使用原 `cargo audit --json --deny warnings`，两次真实出口均为 1，零漏洞，保留原五项未修复 warning：glib 0.18.5 为 unsound；proc-macro-error 1.0.4、zvariant 5.13.1、zbus_names 4.3.4、zvariant_derive 5.14.0 为 unmaintained。原 settings 未设置 ignore、target 或 severity 过滤；完整 advisory/source/checksum 身份及原始输出由批准材料和本次记录 manifest 绑定。该事实不改写为零 warning 或正式精确 gate 已通过。
+
+新源码的官方 consumer 摘要为 `43ed071e6471d4ab627520a74843fdd8c3524a023b30c85205270176257c3143`（283 个输入，相对原接受源码 78 个路径变动）；锁仍为 `48eece730daaa9eff539e416861454441c23c54abf02bacaa2c3bdb375bd6329`（769 包）。本切点的批准材料仍明确 `humanAuthorized=false`、`formalAdoption=false`，正式接受仍是原 `42a1dd…`。协调聊天已提出仅限本次的精确绑定问题，尚不据此授予新源码接受；原八项控制及两项 fresh 正式精确 gate 继续待完成。本阶段工程记录已在本次采用中更新；官网的最终Git文档来源及同源App边界仍未完成；原 UI3 `b6c23b7d`/Framework `f479f52c` 包不包含后继 R20 生产 guard，不能代签当前 App。release 性能、真实 GUI/phone、SSH 网络、公开 Host、main CI、推送、合并和发布继续分别验收，不能由 debug correctness、旧风险批准或源审继承。
+
+以下 R19 及 R17 段落保留其原历史时态，不覆盖本段 R20 实际结果。
+
 ### R19 最新阶段资格
 
 2026-11-08 的联合切片 `c6577d2968db22b6898026d976a40c5aecb1b09d49a5e8acdb26dbcf411a9e47` 冻结 1814 项 Rust／构建库存及 687 项额外输入；主程序为 `349a8949ec6bf24e8fa8702c0312218b9ef2425fb1c4539c5380dead7a86f4a7`。六项质量／编译全 0/W0/M0，命令 cell 35、执行环境 9、Git/worktree 27 的默认并行回归共 71P/0F/0I。原完整 workspace 命令仍实际自然退出 101：主库 2365P/1F/15I、324.82 秒，唯一 A2 失败；独立持久化目标及后续套件因 failfast 未到。当前不关闭原 Outcome、Plan 或 Goal。
