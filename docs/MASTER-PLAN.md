@@ -1,5 +1,12 @@
 # EKO／Eclip 总纲：当前交付状态
 
+**2026-11-08 当前协调入口：** `01a1b583-b8c0-7ea2-96f7-5cbd77bc3d25`。
+IM、缓存、执行基础、界面及官网已按功能本地提交；缓存历史验收报告已归档，最终风险门禁与手机验收仍开放。
+紧凑间距与主栏宽度修正为 CLI `a1ea6579…`，前端1027P／4原skip、类型／格式／构建及隔离浏览器验证通过；当前人工操作的R03旧包不含此改动。
+新密度包绑定已提交CLI `a1ea6579…`／Framework `2b296b7e…` 与已接受锁，使用主根内干净归档来源，未包含未提交的执行候选；构建、签名和嵌入资产核验完成前不标ready。
+执行候选R14首轮编译自然101，后继两文件最小修正已采用，原五秒、物理容量和完整运行矩阵仍待验证。GUI由用户接管，不再自动操作窗口。
+总Goal继续active；未推送、合并、部署或更新未推送子提交的顶层gitlink。分批证据见[协调报告](supreme/reports/workspace-coordination-2026-11-07.md)及主根ignored协调目录；以下早期状态保留其历史切点。
+
 更新时间：2026-11-04。用户已明确恢复完整Goal，并由新协调上下文接手。完整目标在 `docs/supreme/goals/eko-eclip-complete-iteration-2026-11-02.md`，现场与准确下一步在 `docs/supreme/handoffs/eko-current-handoff.md`；十执行线及权限见续接目录 `executors.md`。旧三天时间线原字节归入该目录 `history/`，当前表不以历史“live/paused/pending”覆盖最新事实。
 
 **本轮维护后的当前状态：** Eclip进程已核为0，未启动客户端；13个旧会话已归档。上一轮源码价值核验后，本轮按用户新授权仅清59个冗余local heads，15个非祖先历史tip先固定归档标签；五仓当前12条分支（main＋当前验收，另保Exa/官网依赖两个独有候选），没有合并代码。三个准确Cargo缓存官方clean0，原占8.987GiB，必要字节去重保全2.352GiB；项目实测76.152→69.555GiB，可用空间时点约20.6GiB。正式源/WIP/SDK候选/用户数据/abdd手验包保留，其他混合目录和Node依赖未删。新阶段目标见 [验收与同源收敛Goal](supreme/goals/eko-eclip-validation-convergence-2026-11-04.md)。用户已选新总协调承载：新会话 `01a1a4c2-967b-7401-8980-fba6857c3740` 已创建，核接管并启用Goal后原会话归档，短入口为 `docs/supreme/handoffs/2026-11-04-validation-coordinator/README.md`。旧完整Goal及未完成义务不标完成。最新用户追问剩余约70GiB数据构成与删除后果，当前只读核查，后继优先回答，不以转场漏项或扩大删除。以下明细同时保留此前操作历史，当前状态以最新交接为准。
