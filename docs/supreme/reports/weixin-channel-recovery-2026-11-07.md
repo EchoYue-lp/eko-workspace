@@ -1,5 +1,35 @@
 # 微信渠道恢复：阶段实现与验收记录
 
+## R20 当前验收后继（2026-11-08，Asia/Shanghai）
+
+本次已取得同一冻结工作字节的 **CLI workspace 原完整命令自然通过**，不再停在单项A2或局部模块通过。执行为 `cargo test --workspace --all-features --locked`，保原默认并行、A2 20秒预算及全部断言，无全局过滤；自然退出0、W0、2503输入source0。最终源码以该次recipe精确输入为权威，原raw SHA256为 `016f1d84a4f124e5d6c8fbf56064ab2e50df7e89f7b4773df630ae76db963252`。[原执行回执](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/exec-save-reliability-20261107-r02/cli-full-workspace-tests-r20/execution.json)、[完整目标终局](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/exec-save-reliability-20261107-r02/cli-full-workspace-tests-r20/central-terminal-summary.json)均保留。
+
+| 同一原完整命令中的实际目标 | 原结果 |
+| --- | --- |
+| App-core主库外层 | 2367P／0F／15原ignored，0 filtered，296.73秒；包含原A2 managed通过 |
+| f0／f10／f5 | 分别6P／5P／2P，全部自然0 |
+| native_presentation_retention | 原独立target实际1P／0F／0I，260.96秒 |
+| native_usage_retention | 原独立target实际1P／0F／0I，293.09秒 |
+| r4／runtime_state | 分别3P／5P，全部自然0 |
+| CLI Rust主库 | 143P／0F／3原ignored，0 filtered，60.25秒 |
+| Tauri及后续doc targets | 原完整命令中全部自然0；原各自ignored保持 |
+
+主库输出中的nested 1P不是另一组2367，也不跨target／批次相加。两个heavy target是在这一原完整命令中实际执行，不能只用先前独立1P代替。运行耗时只是原件，不作为release性能样本、优化倍率或SLA。中央已实际确认四native无reader、cargo进程消失。
+
+[最终质量六阶段](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/exec-save-reliability-20261107-r02/r20-final-quality/execution.json)全部自然0／W0／source0，包含fmt write/check、两类Clippy、App-core no-default check及whole-workspace all-feature NoRun；[fresh CLI七项exact邻接](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/exec-save-reliability-20261107-r02/r20-final-cli-neighbors/execution.json)各1P／0F／0I／source0，其中原CLI3的完整presentation DTO、cap、prune、冷读和Fork均已在新实际程序上通过。NoRun、I/O0、App-core合成回环和完整CLI workspace测试分别列证，不互相冒充。
+
+本切点的最小实现分层是：Framework会话结束与准入通用机制沿既有提交；App在确无prune/cleanup工作时不预付派生投影，原journal的durability、barrier_pending、pins、prune前durable coverage与读时resave确认不变。GUI测试oracle保原publication原值，原source事实独立构造完整supplement，按每响应同source唯一carrier和原journal固定head严格比较；没有删除presentation字段或从actual GUI响应抄expected。源码实际六文件SHA及四测试程序/FP来源均在本次执行recipe和质量回执，不能只按HEAD重建。中央已将上述六文件精确本地提交为 CLI `efbf200c0d2ff9c4ff20ba567e2660fa0200e248`，工作字节与本次已执行源码保持一致，risk五项WIP未夹带；来源为[提交回执](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/coordination-20261107-r01/r20-projection-guard-commit.json)。
+
+**整体验收仍未完成，Plan保持ready。** 当前collector `43ed…/283`只有静态Source资格；正式 `42a…`policy保持。具体 `43ed…/48ee…` 绑定问题已向用户发出，答复为 **PENDING**；尚未取得该人类绑定及对应正式fresh actual-lock/canonical-origin双gate回执，不能据Rust全绿代签风险。扫描器原始出口与精确风险gate继续分列，既有风险不改称修复，不向后续source自动续期。
+
+本R20证明范围是CLI workspace本地Rust／原生消费者测试。它不自动授Framework独立完整门禁、SDK、当前前端资产、最终Eclip签名组合App、真实App.log、原账号手机收件、mainCI或发布资格；其它UI3独立包也不继承这次最终源码。performance support仅保持私有helper返回槽兼容，其独立完整GUI性能oracle与release样本未由本次运行验收。
+
+最终还需在经授权、准确风险绑定的同源组合上构建并strict verify签名App，绑定fresh前端资产与启动入口。用户使用原数据、原账号及原工作空间，明确处理准确待恢复项后，从手机依次验证A/B两条不同新消息各回复一次、Stop/Reconnect后的C、保存退出并重开App后的D。每条分别关联poll Ready、原DATA、唯一claim、TaskRun、Accepted app.log与手机收件；Unknown不自动重发，不清历史或切账号绕过。本聊天未自动GUI、扫码、账号操作、发消息或修改原数据；手机仍为**未验**。
+
+原R17自然失败、R18受控SIGINT、R19唯一A2 20秒失败、R20无必要coverage写入目标RED及旧CLI3自然101继续作为各自原切点事实保留。新的fresh CLI邻接和原完整R20是后继正证据，不把旧失败追成旧pass，也不把旧UNKNOWN补写成已完成。
+
+以下现存“当前归档”及历史批次内容保留其原时点语义；最新状态以上方R20回执为准。
+
 ## 当前归档交付指针（2026-11-08，Asia/Shanghai）
 
 本地源码交付分别是 Framework IM `1f35f0d2f9274c60f9cb009f29675efc33f80422`（会话关闭/准入观察，channels 局部 171 项含新增 9 项）、CLI 后端/IPC `70ac06a52479ea59b6bd9f67df1173e891b80b24`（15 路径功能组）、Accepted 观察 `bd2a083ee6b24ab27864b8becdb3082f1dff3494`（A2/logger/ADR 三路径）。中央对应交付原件为 `cli-im-backend-commit.json`、`cli-im-accepted-observer-commit.json`；文件位于主根 `.echo-semantic/local/coordination-20261107-r01/`。提交分组不把原冻结工作树验证改称独立 commit-tree 或 main CI 资格。

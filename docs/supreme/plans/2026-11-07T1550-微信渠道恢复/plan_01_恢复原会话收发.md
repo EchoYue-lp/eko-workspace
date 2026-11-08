@@ -146,6 +146,14 @@ lifecycle: ready
 ---
 ## Notes
 
+### R20 原完整Rust workspace已通过；最终App与手机仍待（2026-11-08）
+
+同一2503输入冻结源上，原 `cargo test --workspace --all-features --locked` 已自然0／W0／source0，主库外层2367P／0F／15原ignored且包含原A2 managed通过；两原独立presentation/usage retention target在同一完整命令内各1P／0F／0I，CLI主库143P／0F／3原ignored，剩余目标均自然0。最终质量六阶段与fresh CLI七项exact邻接均通过。nested及其它切点计数不累加；原20秒、并行和断言保持。准确原件见[报告R20后继](../../reports/weixin-channel-recovery-2026-11-07.md)及[完整执行回执](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/exec-save-reliability-20261107-r02/cli-full-workspace-tests-r20/execution.json)。
+
+本后继只记录已取得的源码与Rust消费者证据，不改上方Outcome/Todo acceptance、绑定和 `lifecycle: ready`。本次执行以recipe的完整工作字节为权威；本地六文件已由中央精确提交为 CLI `efbf200c0d2ff9c4ff20ba567e2660fa0200e248`（[来源回执](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/coordination-20261107-r01/r20-projection-guard-commit.json)），原工作字节保持且risk五项WIP未夹带。当前43ed…/283仅静态Source资格，具体43ed…/48ee…绑定问题已向用户发出、答复PENDING；正式42a policy保持，具体人类绑定与对应正式fresh双gate仍待，旧风险接受及Rust全绿不能自动续签。
+
+最终组合签名App/fresh资产/真实App.log及原数据、原账号、原工作空间的手机A/B、Stop/Reconnect C、冷重开D收发尚未验，已有独立UI包不继承本切点资格。因此整体Plan继续ready，不能写completed或代用户GUI/账号验收。原失败、控制退出和Unknown原件全部保持。本说明不签性能release样本、mainCI、合并或发布。
+
 ### 当前交付指针（2026-11-08 归档，Asia/Shanghai）
 
 本节仅补交付导航与时态，不改变上方 Outcome、Todo acceptance、绑定或 `lifecycle: ready`。准确本地源码组为 Framework IM `1f35f0d2f9274c60f9cb009f29675efc33f80422`、CLI 后端/IPC `70ac06a52479ea59b6bd9f67df1173e891b80b24`、Accepted 观察 `bd2a083ee6b24ab27864b8becdb3082f1dff3494`。
