@@ -1,5 +1,13 @@
 # 微信渠道恢复：阶段实现与验收记录
 
+## 风险绑定与同源候选后继（2026-11-08，Asia/Shanghai）
+
+人类已[精确批准本次43ed…/283源码输入与48ee…/769锁绑定](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/dependency-exact-binding-20261108-r01/authorization.json)（授权SHA `ad2267dc…`）；原8项控制及[fresh actual-lock/canonical-origin两正式gate](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/dependency-exact-binding-20261108-r01/fresh-formal-r08/execution.json)均完成，两个caller/gate各0、官方scanner各1、0漏洞、恰原5项warning，风险仍未修复且不接受未来变化。[风险Final](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/coordination-20261107-r01/risk-binding-43ed-adoption-final-review-r01.json)为C0/I0/M0，已本地提交CLI `894374232b3be89f0060840459bb7d5c294f9dd7`。
+
+[新同源候选包](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/eclip-final-native-20261108-r01/package-handoff-r01.json)已official自然0/W0，4008源/17工具无漂移，152份fresh资产核对通过，签名及独审通过；签后binary SHA256为 `30db95391d5fe871847e04f3d08bb29919ed12e85a740a4c48848bc8d387f014`。构建身份保留CLI `efbf200c…`／Framework `f479f52c…` 加5份捕获overlay；[后继映射](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/eclip-final-native-20261108-r01/successor-mapping-r01.json)确认8943742仅有两份工程文档不同，实际native `.d`未列这两路径，283运行源码/锁/policy相同，不冒完整源码树或原构建commit相同。
+
+[原数据启动入口](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/eclip-final-native-20261108-r01/启动同源候选（原数据）.command)已准备，仅完成check-only0；复用此前主App准确的data/config/MCP/project/cwd及显式环境，不读取或复制认证内容。共享flock跨exec互斥控制通过，[入口Final r02](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/coordination-20261107-r01/final-native-original-data-launcher-review-r02.json)为C0/I0/M0（SHA `536e7e8a…`）。独立QA入口仅用私有样本，不能代签原账号。用户已收到同binary原数据UI及手机A/B、Stop/Reconnect C、重开D问答，答复仍 **PENDING**；未自动GUI或发送消息，真实UI、app.log与原账号手机收件仍未验。原Outcome、Todos、acceptances及 `lifecycle: ready` 均保持；以下PENDING/未构包等文字保留为旧切点，原失败和UNKNOWN不改写。
+
 ## R20 当前验收后继（2026-11-08，Asia/Shanghai）
 
 本次已取得同一冻结工作字节的 **CLI workspace 原完整命令自然通过**，不再停在单项A2或局部模块通过。执行为 `cargo test --workspace --all-features --locked`，保原默认并行、A2 20秒预算及全部断言，无全局过滤；自然退出0、W0、2503输入source0。最终源码以该次recipe精确输入为权威，原raw SHA256为 `016f1d84a4f124e5d6c8fbf56064ab2e50df7e89f7b4773df630ae76db963252`。[原执行回执](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/exec-save-reliability-20261107-r02/cli-full-workspace-tests-r20/execution.json)、[完整目标终局](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/exec-save-reliability-20261107-r02/cli-full-workspace-tests-r20/central-terminal-summary.json)均保留。

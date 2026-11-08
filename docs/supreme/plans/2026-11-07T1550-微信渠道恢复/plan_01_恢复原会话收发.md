@@ -146,6 +146,14 @@ lifecycle: ready
 ---
 ## Notes
 
+### 风险绑定与同源候选后继（2026-11-08，Asia/Shanghai）
+
+人类已[精确批准本次43ed…/283源码输入与48ee…/769锁绑定](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/dependency-exact-binding-20261108-r01/authorization.json)（授权SHA `ad2267dc…`）；原8项控制及[fresh actual-lock/canonical-origin两正式gate](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/dependency-exact-binding-20261108-r01/fresh-formal-r08/execution.json)均完成，两个caller/gate各0、官方scanner各1、0漏洞、恰原5项warning，风险仍未修复且不接受未来变化。[风险Final](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/coordination-20261107-r01/risk-binding-43ed-adoption-final-review-r01.json)为C0/I0/M0，已本地提交CLI `894374232b3be89f0060840459bb7d5c294f9dd7`。
+
+[新同源候选包](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/eclip-final-native-20261108-r01/package-handoff-r01.json)已official自然0/W0，4008源/17工具无漂移，152份fresh资产核对通过，签名及独审通过；签后binary SHA256为 `30db95391d5fe871847e04f3d08bb29919ed12e85a740a4c48848bc8d387f014`。构建身份保留CLI `efbf200c…`／Framework `f479f52c…` 加5份捕获overlay；[后继映射](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/eclip-final-native-20261108-r01/successor-mapping-r01.json)确认8943742仅有两份工程文档不同，实际native `.d`未列这两路径，283运行源码/锁/policy相同，不冒完整源码树或原构建commit相同。
+
+[原数据启动入口](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/eclip-final-native-20261108-r01/启动同源候选（原数据）.command)已准备，仅完成check-only0；复用此前主App准确的data/config/MCP/project/cwd及显式环境，不读取或复制认证内容。共享flock跨exec互斥控制通过，[入口Final r02](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/coordination-20261107-r01/final-native-original-data-launcher-review-r02.json)为C0/I0/M0（SHA `536e7e8a…`）。独立QA入口仅用私有样本，不能代签原账号。用户已收到同binary原数据UI及手机A/B、Stop/Reconnect C、重开D问答，答复仍 **PENDING**；未自动GUI或发送消息，真实UI、app.log与原账号手机收件仍未验。原Outcome、Todos、acceptances及 `lifecycle: ready` 均保持；以下PENDING/未构包等文字保留为旧切点，原失败和UNKNOWN不改写。
+
 ### R20 原完整Rust workspace已通过；最终App与手机仍待（2026-11-08）
 
 同一2503输入冻结源上，原 `cargo test --workspace --all-features --locked` 已自然0／W0／source0，主库外层2367P／0F／15原ignored且包含原A2 managed通过；两原独立presentation/usage retention target在同一完整命令内各1P／0F／0I，CLI主库143P／0F／3原ignored，剩余目标均自然0。最终质量六阶段与fresh CLI七项exact邻接均通过。nested及其它切点计数不累加；原20秒、并行和断言保持。准确原件见[报告R20后继](../../reports/weixin-channel-recovery-2026-11-07.md)及[完整执行回执](/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/exec-save-reliability-20261107-r02/cli-full-workspace-tests-r20/execution.json)。
