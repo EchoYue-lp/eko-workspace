@@ -20,7 +20,7 @@ out_of_scope:
 design_ref: docs/supreme/specs/2026-11-07T1729-执行与保存可靠性/design.md
 design_sections:
   - ref: design.md § 审查结论与证据
-    digest: sha256:bec375d0461c02bd99366d520d2e588566c60db7d107ad58cef09d93b2c94983
+    digest: sha256:0b5848074b584e00d1f840e004797d1192a03303a14c774b54797d0da32ed9c4
   - ref: design.md § 目标与范围
     digest: sha256:0a27e09d5b1f5c74cd43f68f5b5f950c5663de7a0f2f9ebadace96cf93e3a3d3
   - ref: design.md § 分层与复用
@@ -159,8 +159,10 @@ lifecycle: ready
 ---
 ## Notes
 
-2026-11-08 阶段验收：原Outcome、六项Todo、原时限与边界保持，Plan仍ready、delivery_ref仍为空。当前R17同一753 native／427a冻结工作树的51项全部实际通过，0失败0忽略；Framework31、保存/恢复/真实snapshot47、15独立feature及同9.5MB样本四阶段原10秒预算分别通过。证据与旧失败保存在正式阶段报告及主根R02原件，不能相加旧cf5结果冒充最终源。
+2026-11-08 R19 阶段记录：原 Outcome、六项 Todo、不做事项及七个 Design 章节保持，Plan 仍 ready、delivery_ref 仍为空、Goal 仍 active。联合切片 c6577d 冻结 1814 项 Rust/构建与 687 项额外输入；新主程序 349a8949 及两个独立持久化程序已保全。六项质量/编译全0/W0/M0，命令cell35、执行环境9、Git/worktree27 的默认并行回归共71P/0F/0I。原完整命令主库实际2365P/1F/15I、324.82秒，Cargo自然101，唯一A2失败，独立integration及后续workspace因failfast未到。不能据专项或编译完成关闭Plan。
 
-R16的49P2F及原R08父任务争槽RED保留；两fixture仅补普通Chat根消息身份、修正懒factory实际generation的Mock传输并暴露原错误。R17独立registry无client负控已实际观察固定错误且Mock调用0，阳性仍真实typed shell成功/exit0/stdout。没有放宽角色、Schema、global1、原5秒或验证器。
+历史证据保持：R17自然full2358P/10F/15I与专项51分列；R18原cf6十项exact实际10P/0F/0I，后继full因六个CurrentThread Git等待环受控SIGINT，不冒自然libtest完整结果；同cf6命令cell命名空间实际32P/3F/0I。后继夹具使用原spawn_blocking+await驱动真实Local，各测试服务复用真实默认governor并独立作用域，同服务Chat/Run仍共享1，生产全局身份走不注入governor的真实构造器及原断言。fallback旧phase未捕获，保原5秒与失败metadata，不反推首因。R18 typed Cancelled第一版Important及修正、R19独审均留原件；Framework Fork任意current_thread Host支持边界独立归档，未宣称修复。
 
-原Outcome第四项尚需协调会话完成CLI workspace集成质量/完整适用测试、公开消费者和官网最终同步、consumer8bd/283的精确复评及原actual-lock/canonical-origin门禁；原Outcome要求的组合App、main CI与发布继续分层，不由受控lib-test或界面专用旧来源包代签。当前不关闭Plan或Goal，不改变SDK独立pin/合同，不自动重绑依赖批准。
+test-utils分支真实注册2381+1+1仍为原2383；无test-utils的原无默认feature单元程序编译0并list2180，含两个原长case，未实际运行该分支长case。Frame1499输入保持，Frame31、保存/恢复/快照47、15feature及真实9.5MB原10秒四phase沿各自原程序分scope保留，不叠加冒称新App或全量资格。原始失败、源码/程序/样本SHA及最新剩余项见正式阶段报告和R02证据。官网最终同步、当前精确consumer人类复评及actual-lock/canonical-origin、App/phone、真实SSH、mainCI与发布分别验收；旧风险批准不自动续到后继源，当前不改变SDK独立pin/合同。
+
+协调者后继把IM2/GUI1/SRE5八个已通过测试修复分别本地提交972263e6、b123dbdf、d6eefd456b93e3c944fa62512f90e2cb2e60267d，当前CLI HEAD为后者；七文件隔离增量与五文件风险WIP未夹带，源码字节未因提交改变。局部提交不代表完整门禁或全任务完成，UI3仍绑定原b6构建来源；本Plan仍ready且delivery_ref不变。

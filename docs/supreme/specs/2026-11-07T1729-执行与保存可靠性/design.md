@@ -35,7 +35,19 @@ carrier: markdown
 2026-11-08 的真实 factory→execute_run→MAIN Verification→shell(background=true)→wait 补充取得有效 RED：父任务持有唯一进程 shell 许可，cell 首次观察为 Queued，随后在原5秒内 Failed/cause TimedOut、exit=None、output=0；四次模型请求所见 available=[0,0,0,0]，父结束后才恢复1。不是 fixture timeout，不以扩大原期限解决。后继完整 r03 SourceReview 为 C0/I0/M0，仍只有源码资格；纯 Python controller 三项本机原组探针通过，不代签 Rust Some／SSH／App／原5秒／35项或最终冻结源。
 
 
-### R17 当前受控验收证据
+### R19 最新阶段资格
+
+2026-11-08 的联合切片 `c6577d2968db22b6898026d976a40c5aecb1b09d49a5e8acdb26dbcf411a9e47` 冻结 1814 项 Rust／构建库存及 687 项额外输入；主程序为 `349a8949ec6bf24e8fa8702c0312218b9ef2425fb1c4539c5380dead7a86f4a7`。六项质量／编译全 0/W0/M0，命令 cell 35、执行环境 9、Git/worktree 27 的默认并行回归共 71P/0F/0I。原完整 workspace 命令仍实际自然退出 101：主库 2365P/1F/15I、324.82 秒，唯一 A2 失败；独立持久化目标及后续套件因 failfast 未到。当前不关闭原 Outcome、Plan 或 Goal。
+
+test-utils 分支实际注册为主程序 2381 项、两个独立持久化目标各 1 项，总数仍为原 2383。无 test-utils 的原无默认 feature 单元程序也实际编译 0，列表有 2180 项并包含两个原长用例；此处只证明入口注册，不签默认长用例运行。Framework 原 1499 输入保持，以下 R17 的 Frame31、保存/恢复/快照47及真实样本四阶段继续按原程序、feature 和声明负载分 scope 保留。
+
+协调者后继将 IM2／GUI1／SRE5 八个已通过测试修复分别本地提交为 `972263e6`、`b123dbdf`、`d6eefd456b93e3c944fa62512f90e2cb2e60267d`，当前 CLI HEAD 为后者，工作树字节不因提交改变；七文件隔离增量与五文件风险 WIP 未夹带，不能把局部提交当作全量或整个任务通过。R19 编译时元数据与 UI3 原构建来源仍是各自的 `b6c23b7d`，不改写旧程序资格。
+
+R17 自然完整回归 2358P/10F/15I 和 R18 同 cf6 十项单控通过均保留。R18 完整运行因六个夹具同步 join 阻塞原 CurrentThread driver，由协调者仅对实际测试 PID 发 SIGINT 后结束，不能记为自然 libtest 完整结果；R18 同命名空间 32P/3F/0I 也保留。后继六个原同步 Git body 放入原阻塞池并完整 await，真实 Local、原 runtime、断言和预算保持。测试服务各自建真实默认 governor 实例，服务内 Chat/Run 仍共享容量1；生产全局共享由不注入 governor 的真实构造器整合控制验证。fallback 的原失败 phase 未捕获，不反推相同首因。上述均为夹具与证据修闭，不把生产 global1 或状态权威改成测试政策。
+
+原 Local typed Cancelled 夹具的第一版 Important 与 r02 修正、R19 四文件独审 C0/I0/M0 分别归档。Framework Fork 同步 isolate/finalize 的任意 current_thread Host 支持仍是独立 Source 边界，未由本次夹具修复签署或修复。最新原件与剩余门禁见阶段报告；此前通过不代签 A2、后续 integration、GUI/phone、真实 SSH、精确风险门禁、main CI 或发布。
+
+### R17 受控验收证据（历史切点）
 
 2026-11-08 的同源补充已取得实际运行结果。Framework 原 1499 输入字节保持，通用机制由协调会话本地提交 `f479f52c26ca5664bed960f2793100382852ffdb`；CLI 的 `aecf90c161bcc5b4808a11f7311de696831c7122` 是界面提交元数据，不能冒充包含工作树全部 SRE 增量的提交资格。应用以冻结工作树 manifest `427a916cf7d182f463252237ed07613dc494a00a859c8057e4f5cbfe7105d4cf` 与唯一测试程序 `753140f44bf96e48676e7665c0a0c73e484f207db29cf7f05202dc2740ccdf0c` 为权威。
 

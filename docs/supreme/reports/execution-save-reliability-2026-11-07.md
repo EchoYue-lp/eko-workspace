@@ -1,5 +1,49 @@
 # 执行与保存可靠性阶段验收
 
+## 当前结论（R19）
+
+执行与保存修复已有源码及受控运行证据，完整交付仍未完成。R19 主库在原完整命令中实际得到 2365P/1F/15I，耗时 324.82 秒；Cargo 自然退出 101，唯一失败是 IM 的 `original_manager_reconnect_and_exact_abandon_drive_network_inputs_once`。零编译 warning、冻结输入无漂移。原 failfast 使后续 workspace 套件和两个独立持久化目标尚未执行，不能把此前专项通过或程序已编译当作它们已运行。
+
+本轮命令 cell 同组并行 35 项、执行环境 9 项、Git/worktree 周边 27 项分别全通过，共 71P/0F/0I。原全量中的命令 cell、fallback 和六项 Git 场景本轮均未列失败。此结论限于对应源码、程序和场景；Plan 仍为 `ready`、`delivery_ref` 为空，Goal 保持 `active`。
+
+## R19 来源与验证范围
+
+联合快照 SHA256 为 `c6577d2968db22b6898026d976a40c5aecb1b09d49a5e8acdb26dbcf411a9e47`，冻结 1814 项 Rust／构建库存及 687 项前端、dist、配置与 policy 输入。库存是保守保护范围，不冒称精确编译 DAG。Framework 的原 1499 项输入字节保持；R19 编译时 CLI HEAD 元数据为 `b6c23b7d5e78e4d8b0351f15c2e99046bb474299`，整体验证仍以冻结工作树和实际程序为权威。
+
+后继协调者将已审查且本轮实际通过的八个测试修复分三组本地提交：IM2 为 `972263e6`，GUI1 为 `b123dbdf`，SRE5 为 `d6eefd456b93e3c944fa62512f90e2cb2e60267d`；当前 CLI HEAD 为后者，工作树源码字节未因提交改变。SRE5 包含 command_cells、limits、executor/tests、project_environment_tests 与 worktree 的相应测试增量，七文件隔离增量与五文件风险 WIP 未夹带。这些局部提交不代表完整门禁通过。UI3 包继续准确绑定原 `b6c23b7d` 构建来源，不因纯测试提交改写其资格。
+
+六项质量／编译检查均自然退出 0，零 warning、零输入漂移。主程序为 `349a8949ec6bf24e8fa8702c0312218b9ef2425fb1c4539c5380dead7a86f4a7`，575,904,528B；两个独立持久化程序及三者各自的 `.d`、fingerprint 已保全。构建回执在主根 R02 的 `cli-integrated-quality-r19/execution.json`。
+
+| 验证 | 实际结果 | 资格 |
+| --- | --- | --- |
+| 原格式写入／检查、两类 Clippy、无默认 feature 检查、全 feature NoRun | 六项全 0/W0/M0 | 质量与编译，不代签运行。 |
+| 三组原命名空间默认并行 | 35、9、27 项分别 0，合计 71P/0F/0I | 同一新主程序；原断言、预算、真实 Local 与默认线程保持。 |
+| test-utils 分支真实注册 | 主程序 2381、presentation 1、usage 1，合计原 2383 项 | 两个独立目标各自真实 `--list`，未减少注册用例。 |
+| 无 test-utils 分支 | 原无默认 feature 单元程序编译 0/W0/M0，实际注册 2180 项，含两个原长用例 | 注册核对，不是默认长用例运行或默认完整测试资格。 |
+| 原完整 workspace 命令 | 主库 2365P/1F/15I，Cargo 自然 101 | 唯一 A2 失败；两个独立目标及后续套件未到，整体验收仍阻断。 |
+
+原完整命令是 `cargo test --workspace --all-features --locked`，未附 selector 或线程覆盖。原完整 raw SHA256 为 `2e887b86c63d90469a9eec3c1d217e7fa9ea7de4122a4cb374c56a91f718ddc0`；开头嵌套的 1P/2380 filtered 行不作为外层终局。来源、自然出口及本轮子进程采样保存在 `cli-full-workspace-tests-r19/`。本任务范围对照封证在 `r19-sre-runtime-closure/evidence.json`，SHA256 `2db897c09c599e9695a196a095ad6f1a08082bca47ad9084cdb31360974e0dcb`。
+
+## R17 至 R19 的失败链与测试边界
+
+R17 的 51 项专项通过后，原完整默认并行命令实际自然退出 101：2358P/10F/15I、914.65 秒，原程序为 619，区别于专项程序 753。后继同一 619 程序的七项有限诊断为 4P/3F；三个稳定失败涉及 GUI 请求表示与两个执行环境夹具的真实物理 owner 能力，不能用另外四项单独通过宣称完整并行问题已修。
+
+R18 的新 cf6 程序对原十个失败选择子分别复验，实际 10P/0F/0I。后继完整运行出现三项失败与六个 Git 等待环，最终由协调者保全 raw、采样和进程清单后，仅对实际测试 PID 59827 发 SIGINT；随后 Cargo 返回 101。这是受控外部中断，不是自然 libtest 完整结果。六个夹具在默认 `current_thread` 中同步 join 原 Git bridge，真实 Local 的任务与 I/O 又等待同一 driver，形成闭环；修正为在原 `spawn_blocking` 中执行原同步 body 并完整 await，不更换 runtime、flavor 或执行器。
+
+同一 cf6 的命令 cell 命名空间默认并行诊断实际为 32P/3F/0I、自然 101。occupied 用例自身两 cell 均已终结、exit101、owner/debt 均为 0，但进程全局名额仍被其他测试占用；持久化故障用例在原 2 秒失败时仍为 Queued、无 exit、无退化债务，尚未进入要验证的终态故障。后继夹具分别持有同一真实 governor 类型及默认容量，单服务内 Chat/Run 仍共享 1；全局身份控制直接进入真实生产构造器，保留原两项指针断言，不将注入对象当作生产接线证据。fallback 原失败未捕获 phase，保留其原 5 秒并补失败元数据，不反向签署与前两项相同首因。R19 的 35 项同组及原主库运行提供后继结果，旧失败不覆盖。
+
+R18 第一版真实 Local 取消结果的 Important 也保留：夹具曾把 typed `SandboxError::Cancelled` 当作成功结果处理，提前跳过回执屏障；r02 修正保留原 `Result`，只在真实 ready、原取消已请求及实际 typed Cancelled 成立时等待原交付屏障，并原样返回。R19 四文件独审为 C0/I0/M0，报告 SHA256 `c417bab6402af23fa16ec590dcbd0ac09592508ad0607ed267965066a16c3f10`。Framework Fork 内同步 isolate/finalize 的运行时支持边界另有具名源码记录，未由六个夹具修复签署任意 `current_thread` Host 支持，也未宣称该生产 SourceGap 已修复。
+
+## 保存证据与剩余交付
+
+Framework 输入字节保持，原 31 项资源／相邻控制、47 项保存／恢复／快照、15 个独立 feature 检查及公开 cache 示例继续绑定各自原程序与 feature，不改写为新的 App 运行。真实 9,526,506B 样本原 raw 重解析仍为 Store 冷／暖 584/548ms、coordinator 冷／暖 3361/1044ms 且均 Settled；19 个 stage 及原 10 秒预算保留，未清 OS 页缓存或宣称同条件提速。另一个合成多 scope 控制含三个各不小于 9.5MB 的 checkpoint，create/update 93.127833/82.881625ms，在原总 10 秒断言内；其 130 消息形态与真实样本分列。
+
+本轮四文件只改测试调度、夹具作用域和失败诊断，生产接线、公开合同及默认产品容量不变，不另造产品示例。原长期说明仍由各子仓 ADR／产品文档维护；官网最终来源同步、最终精确 consumer 复评及 actual-lock/canonical-origin 两门禁继续由协调会话处理。旧 consumer `8bd378…` 仅属于 R17，不能作为 R19 当前摘要或继承 `42a1dd…` 人类批准的依据。独立 UI3 包的构建、签名预检和人工入口也不代签此完整 Rust 命令、真实 GUI/phone、SSH 网络、main CI、推送、合并或发布。
+
+## R17 及早期阶段记录（原文保留）
+
+以下正文原文保留。其中“当前”属于其各自历史切点，不覆盖上方 R19 的实际失败与未完成项。
+
 ## 当前结论（R17）
 
 执行与保存修复的本地受控验证已通过：应用在同一冻结工作树与唯一新程序上完成51项，51P/0F/0I；原5秒父Verification、混合workspace、真实注册／Fork／Plugin／Pool、原35、Some与None SSH控制均在其中。Framework31项、保存／恢复／快照47项、原15独立feature检查以及9.5MB原10秒四阶段profile分别通过。原件与先前失败均保留，不把不同程序的旧通过结果相加冒充R17。
