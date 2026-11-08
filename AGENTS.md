@@ -10,7 +10,17 @@
 
 ---
 
-## 2026-11-05 两仓新锁的用户精确裁决
+## 2026-11-08 CLI 源码的本次精确绑定
+
+用户直接回答本次具体问题：“同意，仅本次精确绑定（推荐）”。原问题、原回答及范围保存在主根 `.echo-semantic/local/dependency-exact-binding-20261108-r01/authorization.json`，SHA256 `ad2267dc75aaec224777c4133a00c1c54277906fc6f0152f1a31b9486c24bae1`。
+
+本次仅将CLI原五项完整风险身份绑定到已验证源码提交 `efbf200c0d2ff9c4ff20ba567e2660fa0200e248` 的consumer `43ed071e6471d4ab627520a74843fdd8c3524a023b30c85205270176257c3143`（283个输入），锁仍为 `48eece730daaa9eff539e416861454441c23c54abf02bacaa2c3bdb375bd6329`（769包）。policy只变consumer字段，collector、checker、原五项name/version/source/checksum/advisory/kind和原8项控制保持；采用后仍须原actual-lock及canonical-origin默认fresh正式门禁实际通过，并分别保留scanner与gate出口。
+
+上述原8项控制及两项默认fresh正式门禁已实际通过：每个scanner自然1、精确gate／caller自然0，0漏洞、原5项warning、769包，noFetch=false、无过滤。完整回执为主根 `.echo-semantic/local/dependency-exact-binding-20261108-r01/fresh-formal-r08/execution.json`（SHA256 `d37d2107d27c33064242880ffebdfb63b2c36054ff0969b0b829f1611d42820b`）。早先网络失败与受控中断仍保留，不追改为自然成功；临时进程连接转发已停止，未关闭TLS、fetch或yanked检查，未修改系统网络配置。
+
+本节仅更新下方11月5日CLI consumer42a的当前时态，不改历史授权或失败，也不向Framework/SDK继承。原五项风险仍未修复，不是零warning审计；不预授未来任何新源码、锁、版本、来源或风险。GUI/手机、完整工程与main CI继续单独验收，推送、合并及发布不由此次风险答复授权。对应CLI独立AGENTS同步维护。
+
+## 2026-11-05 两仓新锁的用户精确裁决（历史切点）
 
 用户在当前协调会话直接回答：“同意本次 Framework 8fb62e 与 CLI 48eece 新锁的精确绑定，不自动接受后续新风险。”原文回执为主根 `.echo-semantic/local/dependency-exact-binding-20261105-r01/authorization.json`，SHA256 `a2e324628e7ad1c11dc737405a48cb46a36e8333f109e15f66b4836810815a62`。本节更新下方历史绑定的当前时态，不改旧授权和失败事实。
 
