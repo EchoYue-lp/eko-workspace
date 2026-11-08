@@ -1,5 +1,24 @@
 # 执行与保存可靠性阶段验收
 
+## 当前结论（R20 源层完成）
+
+2026-11-08（Asia/Shanghai）记录：本次仅完成原 Plan 声明的两仓源层与公开合同收口。原完整 `cargo test --workspace --all-features --locked` 已自然退出 0，终局 raw SHA256 `016f1d84a4f124e5d6c8fbf56064ab2e50df7e89f7b4773df630ae76db963252`，零失败、零编译警告、零源码漂移；随后 Framework 冻结源上执行的两条公共合同命令也均自然退出 0：`cargo check --workspace --examples --all-features --locked` caller/raw SHA 分别为 `ca39de93…`/`20dae546…`，`cargo test --workspace --doc --all-features --locked` caller/raw SHA 分别为 `eaef1725…`/`aae3988a…`，doctest 汇总为 136 passed、0 failed、40 ignored。独立 target、recipe、run、caller 和完整 raw 已保全后清理。
+
+公共合同命令的 source preflight 是 13:06 的事后元数据，不被当作启动前全量扫描：实际源资格由 12:23:19 的 native provenance 对 4008 个冻结输入逐项 M0、其后独占冻结以及 Root 对当前 4008/M0 的承接组成；source pre/post 输入一致。运行环境准确记录为移除匹配的 credential/model 变量，保留其它必要环境，不宣称全量 ambient 白名单。Framework 源身份为 `f479f52c26ca5664bed960f2793100382852ffdb`，CLI 风险提交为 `894374232b3be89f0060840459bb7d5c294f9dd7`，其 source tree `6fc99ea…`；精确 consumer/lock、原八项控制与两 fresh gate 已按人类授权材料闭合，残余五项 warning 仍未修复。
+
+官网当前提交为 `bdc99191ba4acb607d04462da55854d91c0f55bb`，24 个 docs tests 与 348 个静态页面检查已通过。30db 包的签名资产和原数据入口仅作静态交付材料，不代签 GUI/phone。上述证据只完成本 Plan 的源层、公开合同和已声明受控合同；不把原文另行验收的 App、main CI、发布、phone 或任意 Host/真实网络扩大为本源层条件。
+
+### 六项 Todo 当前判定（按原 acceptance 范围）
+
+1. `reproduce-admission-and-profile-settlement`：**achieved**。R08 准入 RED、R17 51 项实际 GREEN、R20 完整 workspace 0，以及 31 项控制/47 项保存恢复/9.5MB 分段证据共同覆盖原 admission、receipt、保存预算和历史失败保留。
+2. `separate-admission-and-cell-lifetime`：**achieved**。R17/R19 的 queued、cancel、owner、35/9/27 邻接和原完整命令 0 覆盖原 cell 生命周期；R17 51 项中已有 Rust Some/None SSH 受控控制。该结论不扩展为任意 Host 或真实网络。
+3. `wire-product-capacity-and-receipts`：**achieved**。R17 manager/slot/receipt 51 项、R19 command-cell 35 项与 R20 CLI/full workspace 回执覆盖普通 Chat/TaskRun 主路径；Tauri、phone 和其它产品宿主仍按原文另验。
+4. `remove-operation-local-save-amplification`：**achieved**。31+47 控制、19-stage 分段、9,526,506B 样本和多-scope 9.5MB 样本通过，CAS、raw/approved、pending debt、owner-first 与 10 秒预算约束保持；不外推 release 性能收益。
+5. `bind-capacity-to-original-physical-operation`：**achieved**。R17 的原 5 秒父 Verification、global1、manager、Local 及 Rust Some/None SSH 受控控制，R19 35/9/27 与 R20 full 均通过；不新增任意 Host、真实网络或 phone 条件。
+6. `validate-full-owned-lifecycle`：**achieved（原 Plan 源层范围）**。R20 RED→GREEN、fresh CLI 7 exact、完整 workspace、两项重 retention、公开 examples/doctests、精确风险 gates、正式三 doc 与官网当前投影均有回执；旧失败和 ignored 保持历史事实。App/phone、main CI、发布仍是原文的独立验收边界。
+
+本段是当前 source-layer completion；下方 R20/R19/R17 正文中的 `not_done`、`PENDING` 和“待收口”均按其历史切点保留，不覆盖本段当前结论。整体协调 Goal、IM Plan、GUI/phone 仍不随本 Plan 自动完成。
+
 ## 当前结论（R20阶段证据）
 
 2026-11-08 R20 阶段证据（本次采用）：最终本地完整 workspace 命令已自然退出 0，零失败、零编译警告、零源码漂移。原 Outcome、六项 Todo 和七个 Design 章节不变，Plan 仍为 `ready`，`delivery_ref` 仍为空，Goal 保持 `active`。精确风险门禁、同源 App 边界、官网及最终交付尚未收口。本节为本次正式采用的R20阶段证据，整体交付仍未完成。

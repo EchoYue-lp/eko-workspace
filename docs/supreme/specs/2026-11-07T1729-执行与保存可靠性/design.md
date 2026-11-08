@@ -35,6 +35,14 @@ carrier: markdown
 2026-11-08 的真实 factory→execute_run→MAIN Verification→shell(background=true)→wait 补充取得有效 RED：父任务持有唯一进程 shell 许可，cell 首次观察为 Queued，随后在原5秒内 Failed/cause TimedOut、exit=None、output=0；四次模型请求所见 available=[0,0,0,0]，父结束后才恢复1。不是 fixture timeout，不以扩大原期限解决。后继完整 r03 SourceReview 为 C0/I0/M0，仍只有源码资格；纯 Python controller 三项本机原组探针通过，不代签 Rust Some／SSH／App／原5秒／35项或最终冻结源。
 
 
+### R20 源层完成结论（本次采用）
+
+2026-11-08（Asia/Shanghai）本源层完成切点：原完整 workspace、Framework examples 编译和 Framework doctest 均自然退出 0；doctest 为 136 passed、0 failed、40 ignored。public-contract 的 source preflight 是 13:06 的事后元数据，不被当作启动前全量扫描；资格来自 12:23:19 native provenance 对 4008 项逐项 M0、独占冻结和 Root 当前 4008/M0 承接，source pre/post 输入一致。环境仅移除匹配 credential/model 变量，不声称全 ambient 白名单。
+
+原六项 Todo 在原 acceptance 范围内均达到 source-layer completion：准入/保存分段、cell lifecycle、Chat/TaskRun receipt、31+47 保存/恢复控制、9.5MB/多-scope、R17 Rust Some/None SSH 受控控制、R19 35/9/27 邻接、R20 full workspace、公开 examples/doctests、精确风险 controls/gates、正式三 doc 和官网当前投影均有直接回执。原文另行定义的 App、main CI、发布、phone、任意 Host/真实网络和 release 性能不加入本层条件。
+
+旧 R20/R19/R17 段落中的 `not_done`、`PENDING` 和历史失败按各自切点保留；本段只声明当前 source-layer completion，不改写历史事实，也不声明整体协调 Goal 或 IM/GUI/phone 已完成。
+
 ### R20阶段证据
 
 2026-11-08 R20 阶段证据（本次采用）：最终本地完整 workspace 命令已自然退出 0，零失败、零编译警告、零源码漂移。原 Outcome、六项 Todo 和七个 Design 章节不变，Plan 仍为 `ready`，`delivery_ref` 仍为空，Goal 保持 `active`。精确风险门禁、同源 App 边界、官网及最终交付尚未收口。本节为本次正式采用的R20阶段证据，整体交付仍未完成。

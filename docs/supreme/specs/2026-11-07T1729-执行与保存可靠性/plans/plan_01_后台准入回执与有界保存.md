@@ -20,7 +20,7 @@ out_of_scope:
 design_ref: docs/supreme/specs/2026-11-07T1729-执行与保存可靠性/design.md
 design_sections:
   - ref: design.md § 审查结论与证据
-    digest: sha256:cf92c5bd72ecaf996f8bc980792b36324c509953f1a3edfacbe55d2ab2a6e0e6
+    digest: sha256:f466c0ac31a424870a924d8e2051e439cf3d99f1f73a73e3fe7c5179a0a03b17
   - ref: design.md § 目标与范围
     digest: sha256:0a27e09d5b1f5c74cd43f68f5b5f950c5663de7a0f2f9ebadace96cf93e3a3d3
   - ref: design.md § 分层与复用
@@ -155,9 +155,20 @@ todos:
       - 原微信计划已有的shutdown_end回归101仍由该owner修复；合流门禁不能忽略它。新基础设施GREEN不冒称原微信、真实App、main
         CI或发布通过。
 artifact_id: plan:5470deb5-c11d-4126-abd3-2d7474e98a26
-lifecycle: ready
+lifecycle: completed
 ---
 ## Notes
+
+### 当前 source-layer completion（2026-11-08，Asia/Shanghai）
+
+原 Outcome 4 与六项 Todo 已按原 acceptance 的受控源码/程序范围完成。原完整 workspace `cargo test --workspace --all-features --locked` 自然退出 0/W0/source0；Framework `cargo check --workspace --examples --all-features --locked` 与 `cargo test --workspace --doc --all-features --locked` 均自然退出 0，后者为 136P/0F/40I。public-contract 的 source preflight 为 13:06 事后元数据，不能冒充启动前全量扫描；source qualification 由 12:23:19 native provenance 的 4008/M0、独占冻结和 Root 当前 4008/M0 承接。环境准确记录为移除匹配 credential/model 变量，不宣称全 ambient 白名单。
+
+人类精确风险授权、CLI 894374232/consumer283/lock48ee、原八项 controls、actual-lock/canonical-origin fresh gates、官网 bd c99191、30db 静态签名资产及原数据入口均有独立回执。Framework examples/doctests、31/47/51/35、原5秒、9.5MB/多-scope 与完整 R20 workspace 证据保持各自范围；不新增任意 Host、真实网络、releasePerf、mainCI、phone 或 App 条件。旧失败、40 ignored、历史 `not_done`/`PENDING` 段落继续按历史切点保留。
+
+原 Plan 的 source-layer Outcome/6 Todo 当前完成；整体协调 Goal、IM Plan、GUI/phone 和其它原文分别验收项不随本 Plan 自动完成。`delivery_ref` 保持 null。
+
+### 历史 Notes（原文保留）
+
 
 2026-11-08 R20 阶段证据（本次采用）：最终本地完整 workspace 命令已自然退出 0，零失败、零编译警告、零源码漂移。原 Outcome、六项 Todo 和七个 Design 章节不变，Plan 仍为 `ready`，`delivery_ref` 仍为空，Goal 保持 `active`。精确风险门禁、同源 App 边界、官网及最终交付尚未收口。本节为本次正式采用的R20阶段证据，整体交付仍未完成。
 
