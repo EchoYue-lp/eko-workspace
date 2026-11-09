@@ -1,5 +1,7 @@
 # EKO／Eclip 总纲：当前交付状态
 
+**2026-11-09 主线整合的最终验收进度。** Framework `3413d64`、CLI `2335163`、SDK `5bbaf9a` 已分别合入各自main，精确main CI为7/7、4/4、9/9全成功；三仓本地与远端仅保留main。SDK从官方远端全新冷仓及必要证据标签的原严格检查通过。官网已合入main `1e42fc9`，最终本地完整verify、fresh审计和精确main CI 1/1通过，尚未部署。CLI最终95b／283与原48ee／769的精确风险绑定已获用户批准，原八控制和fresh actual/canonical正式门禁通过；原五风险未修复。统一App已由已过CI的primary Framework／CLI官方冷构建成功，签名与来源核验通过，签后程序`ed081f08…`；原数据手动启动器的check-only已自然0，签后包及来源保全后App target准确清理0；原账号微信无回复的业务根因与最终手机收发仍由人工验收，不把源码、CI或诊断日志补强当作已修复手机收发。全量证据和清理详情见[本次综合交付记录](supreme/reports/integrated-main-delivery-2026-11-09.md)。下文旧状态按日期保留历史含义。
+
 **2026-11-09 整合交付进行中。** 用户要求全部既有开发成果分别进入框架、应用、SDK、官网及主工程的 `main`，核对功能覆盖后仅保留主分支；learning 指 `echo-agent/echo-agent-learning`。已完成的工作已按功能提交并推送同名整合分支。框架最终 23 阶段本地门禁全部自然 0、零警告、4013 输入无漂移，最初运行及编译失败已修复并保留原件；最终 cargo-deny 也为 0，但两项 fresh audit 的最后复扫因 GitHub 公告库连接失败尚无新结论。当前正在等待本次本地网络豁免及 CLI 新 consumer 精确绑定裁决，main 合并与精确 CI 尚未完成。SDK 的 `calamine 0.36.1` 漏洞修复和薄适配正在开发，最终须锁定框架 main 后独立验收；官网本阶段来源同步已提交，最终 main 来源锚及完整门禁仍待完成。原账号微信无回复仍未确定业务根因，新综合 App 未交付。当前路由见 [协调交接](supreme/handoffs/eko-current-handoff.md)；下文具名日期、旧包和旧“当前”均保留其历史时态。
 
 **2026-11-08 同源候选已就绪：** 用户已精确批准本次consumer `43ed071e…`／锁 `48eece73…`。原8控制、actual-lock和canonical-origin默认fresh正式门禁及独立Final审查均通过；官方scanner各1、精确gate／caller各0，零漏洞、原5项warning仍未修复。CLI风险组已本地提交 `894374232b3be89f0060840459bb7d5c294f9dd7`，两仓规则同步，不更新未推送gitlink。

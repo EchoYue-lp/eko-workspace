@@ -1,5 +1,37 @@
 # AGENTS.md
 
+## 2026-11-09 CLI consumer95b 的最终精确绑定
+
+用户对本次具体问题直接回答：“同意，仅本次精确绑定（推荐）”。原问题与回答保存在主根 `.echo-semantic/local/dependency-exact-binding-20261109-r02/authorization.json`，SHA256 `3e394dd4404cb529b1ae8a4f461eda57696fac65b720b985d2007d94a66f18f3`。
+
+本次仅将 CLI 原五项完整风险身份绑定到 consumer `95b7d02ad130a5bbb886183e9c365d780b36ad35a7f9256163375d42cc744a97`（283输入）及原锁 `48eece730daaa9eff539e416861454441c23c54abf02bacaa2c3bdb375bd6329`（769包）。相对554仅六Rust文件变化：生产增量仅SSH POSIX包装保存、传递并关闭独立stdin fd；其余为真实Git/cwd夹具、精确cfg及None后代资源负控。所有依赖/features、五项完整name/version/source/checksum/advisory/kind、原checker/collector/八控制和扫描设置均保持。policy仅机械更新consumer，SHA256 `d65ffe6697a3f799cb7ff4f0d762239d639a27ac3906b7ed3ba965d79b264f11`。
+
+当前源码原完整Rust/GUI八项自然0、两版Node前端验证通过；两次最新default fresh官方scanner各自然1、零漏洞、仅原五项warning，候选严格比较各0。旧两次fetch失败原件与UNKNOWN保留；网络恢复使用当前官方DNS默认直连，未增加ignore、no-fetch、过滤、强制协议或全局网络配置。正式采用后仍须原八控制与actual-lock/canonical-origin两项fresh正式精确门禁实际通过；候选比较不冒作正式gate。
+
+原glib0.18.5 unsound及proc-macro-error1.0.4、zvariant5.13.1、zbus_names4.3.4、zvariant_derive5.14.0 unmaintained未修复。本次不是零warning审计，不接受未来源码、锁、版本、来源或新风险，不向Framework/SDK继承；App、GUI/手机、真实provider与精确main CI独立验收。下方554和旧授权/失败保留其原历史事实。
+
+正式采用后原8项控制实际自然0；恢复后的actual-lock和canonical-origin两项default fresh正式gate/caller各自然0，两个原官方scanner各自然1、0漏洞、精确原5完整warning、769包、ignore=[]、noFetch=false。DB为 `7a40350e1b8ba5b656d909f88222a8059a83d88d`／1422条，两份独立原JSON均10795B／SHA256 `c89fea7b249432cbb925ea45458a3a12ad16c31a9634c22439b1b5e00dd301d9`。原8控制沿首次采用后同切点实际0原件保留，未重复；首次正式POST fetch失败未被追改，成功后继单独记录。完整实际执行为主根 `.echo-semantic/local/dependency-exact-binding-20261109-r02/formal-cli-r02/execution.json`，SHA256 `4fb2e3c90fc8b80accb467fd03190dd5a113c28344c4fef0eabdd5605dd3132f`；handoff SHA256 `e218bde7eba2559cf3dfa0615ba4d414be3f1f556c87c022ed91cf86ed3b6dc2`。283源码、正式d65 policy及工具无漂移，临时透明连接与scanners/readers均已退出；原风险未修复，本事实不替代App/手机和精确main CI。
+
+## 2026-11-09 CLI consumer554 的本次精确绑定
+
+用户对本次具体问题直接回答：“同意，仅本次精确绑定（推荐）”。原问题与回答保存在主根 `.echo-semantic/local/dependency-exact-binding-20261109-r01/authorization.json`，SHA256 `b940901e6c755ea39725be1ad184c6713aa6c9c388f9c29e8d1b4d2ffd305733`。
+
+本次仅将 CLI 原五项完整风险身份绑定到 consumer `55413633c252b53cc79116b374a03d36fcdcfc3ec00dd093d159c91809e6eac4`（283 输入）和原锁 `48eece730daaa9eff539e416861454441c23c54abf02bacaa2c3bdb375bd6329`（769 包）。consumer 仅因微信诊断源码变化，原五项 name/version/source/checksum/advisory/kind、collector、checker、原8控制及扫描策略均不变；不增加 ignore 或过滤。policy 仅更新 consumer 字段，采用后原8控制和 actual-lock／canonical-origin 默认 fresh 正式门禁仍须实际通过，分别记录 scanner 与 gate 出口。
+
+原 glib0.18.5 unsound，以及 proc-macro-error1.0.4、zvariant5.13.1、zbus_names4.3.4、zvariant_derive5.14.0 unmaintained 风险仍未修复；本次不是零warning审计，不接受未来任何新源码、锁、版本、来源或风险，不向其它仓继承。GUI／手机、App和精确 main CI继续单独验收；整体提交合并仍按本次已授权整合目标与原门禁执行。下方旧43ed绑定和失败保留历史原义。
+
+批准后的原8项控制已实际自然0；两个原正式默认 fresh gate/caller均自然0，scanner各自然1、0漏洞、恰原5项完整warning、769包、ignore=[]、noFetch=false。数据库为 `7a40350e1b8ba5b656d909f88222a8059a83d88d`／1422条；两份独立原JSON均10795B／SHA256 `c89fea7b249432cbb925ea45458a3a12ad16c31a9634c22439b1b5e00dd301d9`。完整执行位于主根 `.echo-semantic/local/dependency-exact-binding-20261109-r01/formal-cli-r01/execution.json`，SHA256 `4490c6d7fd133485f256a24cc26c745681f8ebb23005343c92825cce12f68f4e`。283输入、policy和工具无漂移，临时转发与scanner均已停止；原五风险未修复，不以风险gate通过代替App、手机或精确main CI。
+
+## 2026-11-09 SDK 新锁的独立精确裁决
+
+用户对列出精确 pin、锁和新增身份的本次问题直接回答：“同意，仅本次 SDK 精确绑定（推荐）”。原问题与回答保存在主根 `.echo-semantic/local/dependency-exact-binding-20261109-r01/authorization.json`，SHA256 `b940901e6c755ea39725be1ad184c6713aa6c9c388f9c29e8d1b4d2ffd305733`。
+
+本次仅接受 Framework main `3413d64dae23353c6d02c546ac374deded855827` 和 SDK 锁 `95e3caabaf5e72fc71ad1d6b79964eae1883b297f0006667e39c4c3a6eb8c5e5`（654 包）：原49组107个 name/version/source 身份全部保留，仅 quick-xml 组新增 `0.42.0`／`registry+https://github.com/rust-lang/crates.io-index`，现49组108身份。唯一机器权威为SDK仓 `echo-agent-sdk/.cargo/cargo-deny-duplicate-baseline.json`；cargo-deny0.20.2、原四策略命令、严格parser及原四项 audit ignore不变，不新增 allow/ignore。
+
+批准前 actual／canonical 默认 fresh audit均自然0、0漏洞及0额外warning（原4ignore保持），原四策略 deny scanner自然0；旧正式基线因锁变化拒绝的gate1与候选同raw校验0分别保留。批准后须执行原14控制并对完整原raw／receipt正式严格复核，不把候选结果改写成旧正式成功。本次不接受未来 pin、锁、身份或风险，不继承 Framework／CLI 裁决，不豁免完整 SDK、Host、三语、平台或精确 main CI。下方旧锁、旧来源和失败仍按原切点解释。
+
+正式采用后的原14项控制已实际自然0；原未改严格parser对完整原scanner0的raw／receipt执行正式复核自然0，`authorization=ACCEPTED_BY_HUMAN`、`matches_exact_baseline=true`、49组108身份。原raw为695282B／SHA256 `14a615b61b4518ea4b84315bd6be2e1823f2e82e527bc5d091f8145048575616`，未重跑scanner，旧正式gate1保留。采用后执行位于主根 `.echo-semantic/local/dependency-exact-binding-20261109-r01/formal-sdk-r01/execution.json`，SHA256 `5b9ad60aeda348f539f4144400e4b11b6cb66b20eae2a77021ec8342d67c1576`。本次actual／canonical fresh audit各自然0、原4ignore下0漏洞与0额外warning的原件为主根 `.echo-semantic/local/integrated-acceptance-20261108-r01/sdk-main-validation-r01/dependency-candidate-3413-r03/execution.json`（SHA256 `8fba40c1516e36ebafdde6e1ebd0fa6f8b17b57b9918bb5d25758bbb9aeb0e89`）。复核只签依赖输入范围，不冒完整SDK工作源无变化、Host／三语或精确main CI完成。
+
 ## 2026-11-09 本次整合交付范围
 
 用户当前目标明确要求框架、应用、SDK、官网和主工程的既有开发成果全部合入各自 `main`，交付时仅保留主分支，并清理多余构建产物、旧制品、备份和日志。用户已澄清 learning 指 `echo-agent/echo-agent-learning`，随框架交付，不是顶层被忽略的样例目录。
