@@ -1,0 +1,37 @@
+---
+schema_version: 1
+artifact: delivery-map
+design_ref: docs/supreme/specs/2026-09-15-echo-agent-sdk-independent-repository/design.md
+outcomes:
+  sdk-source-import:
+    ships: echo-agent-sdk 仓库先原样接收完整 SDK 产品源码、合同、三语言 SDK、文档、脚本和
+      CI，并将源快照推送到远端任务分支；不在本结果修复当前框架治理期间暴露的合同或生成物漂移。
+    depends_on: []
+  framework-semantic-governance-gate:
+    ships: echo-agent 当前语义治理完成后冻结一个可复核的 framework revision，作为后续 SDK 收敛与依赖 pin 的输入。
+    depends_on: []
+  sdk-source-continuity:
+    ships: echo-agent-sdk 合并 echo-agent@c5f7688 的 SDK-owned 历史，补齐 source-import 后 17
+      个已提交 SDK 变化及 SDK ADR/design，并将完整可恢复源码快照推送到远端。
+    depends_on:
+      - sdk-source-import
+      - framework-semantic-governance-gate
+  framework-sdk-extraction:
+    ships: echo-agent 删除迁出的 SDK 实现与门禁，保留通用 ACP/runtime 权威和指向新仓库的正式边界，并将任务分支交付到远端。
+    depends_on:
+      - sdk-source-continuity
+  sdk-clean-framework-pin:
+    ships: echo-agent-sdk 固定到已经移除 SDK 资产的 echo-agent revision，并集中修复 protocol
+      边界、accepted external contract、生成物、Host 与三语言行为。
+    depends_on:
+      - framework-sdk-extraction
+  consumer-sdk-projection:
+    ships: echo-agent-cli 与 echo-website 的 SDK 引用、文档和展示投影改指向独立仓库，并分别完成受影响仓库交付。
+    depends_on:
+      - sdk-clean-framework-pin
+  superproject-sdk-integration:
+    ships: lp-agent 纳入第四个 echo-agent-sdk submodule，更新跨仓规则、状态和 gitlinks，并验证完整组合可复现。
+    depends_on:
+      - consumer-sdk-projection
+design_revision: sha256:df2df92229d259837f85fae56df9a82fa4df2d2eb783888d999f039a810b682f
+---

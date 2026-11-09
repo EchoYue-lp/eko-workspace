@@ -1,0 +1,364 @@
+{
+  "at": "2026-10-28T11:53:10.304427+00:00",
+  "package": "cross-chat-candidates",
+  "originalDirectory": ".echo-semantic/local/user-maintenance-cut-20261028/relocated-cross-chat-staging/2026-10-28-cross-chat-candidates-staging-v2",
+  "archive": "cross-chat-candidates.tar.gz",
+  "archive_sha256": "d1c46da7b81bc25c883745bf60c058fa33425ae64346248b0cac3a2f1fcf80c7",
+  "archive_bytes": 522872,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2038,
+      "sha256": "273aa577541c2b27fd06a3b484bafc811b2b84a6abe148631329f530110acbff",
+      "mode": 420
+    },
+    {
+      "path": "evidence/base-after-index.json",
+      "bytes": 18761,
+      "sha256": "012809899bc429ed99c89c776bab2ff84e293d82416384272e88c83c9daaf92a",
+      "mode": 420
+    },
+    {
+      "path": "evidence/format-v5-run.json",
+      "bytes": 6824,
+      "sha256": "5dd9c86252f8342a6556cf2bdaa9236dda87ae28c3d4df9f4b57525ac81a0686",
+      "mode": 420
+    },
+    {
+      "path": "evidence/frontend-validation-inputs.json",
+      "bytes": 81156,
+      "sha256": "b2c95d6f302dc0d7cdb3469117bd123a91aae14750bc1c6e679ceb3c6d7f74d3",
+      "mode": 420
+    },
+    {
+      "path": "evidence/functional-v4-run.json",
+      "bytes": 1505,
+      "sha256": "b83287a4eac8797b2fa6a06440956ff1d2896e2f8fcf56aef739ebd4a2188640",
+      "mode": 420
+    },
+    {
+      "path": "evidence/functional-v4.log",
+      "bytes": 353,
+      "sha256": "9932967ff7b10d332825429ba3ff0c66a81c780a10b5bdff110834ceec957214",
+      "mode": 420
+    },
+    {
+      "path": "evidence/gui-interagent-timeline.patch",
+      "bytes": 173853,
+      "sha256": "a3693ef727a4f61c700018139eea4e62f05881c006c599d525f27d12ceb82b6d",
+      "mode": 420
+    },
+    {
+      "path": "evidence/lint-v2.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": 420
+    },
+    {
+      "path": "evidence/maintenance-archive-readback.json",
+      "bytes": 716,
+      "sha256": "a52d1cdc175ea3d3664ec5c6c30308a42282bf89fd601d2c5d8ad548c4cd6108",
+      "mode": 420
+    },
+    {
+      "path": "evidence/maintenance-attempt-history.json",
+      "bytes": 1548,
+      "sha256": "248c397c10f9206c2865d8c8a98f804d58b3dd254a65c61276153f66a80ebf51",
+      "mode": 420
+    },
+    {
+      "path": "evidence/maintenance-checksums.json",
+      "bytes": 1173,
+      "sha256": "8d86d2d10501e50a5acd40a644bf3a0dcfa0a2f028aca90708d681705edb12a2",
+      "mode": 420
+    },
+    {
+      "path": "evidence/maintenance-cleanup-candidates.json",
+      "bytes": 1252,
+      "sha256": "b433e7a3bb05ddca20f7607be67fa96086e34638468c27fbf2c9981ffa5f3212",
+      "mode": 420
+    },
+    {
+      "path": "evidence/maintenance-git-state.json",
+      "bytes": 9290,
+      "sha256": "db7122f493e7a0543b9ece1165cb51bd6458081354c7e8bb37b3b3dc2bdb92b7",
+      "mode": 420
+    },
+    {
+      "path": "evidence/maintenance-process-state.json",
+      "bytes": 1457,
+      "sha256": "dd6f335d70a8c8a009bd8983b27f3ea026a0e06d2f16535fa35d9ac71bed0393",
+      "mode": 420
+    },
+    {
+      "path": "evidence/maintenance-validation-state.json",
+      "bytes": 2145,
+      "sha256": "db2b039c0cf2a4a4ee790369b261ea03b57d19c6df2cd6433da7395a80dd5bda",
+      "mode": 420
+    },
+    {
+      "path": "evidence/manifest.json",
+      "bytes": 26234,
+      "sha256": "a2878d1749111d609e8aec79d71e6c0013ba5dcd999b108224eb9420642ecf2d",
+      "mode": 420
+    },
+    {
+      "path": "evidence/review-epoch01/review.json",
+      "bytes": 696,
+      "sha256": "b828ebe7df3cc966d00dc282464c2d20a31738576c5f9dea1e180100c2f3f674",
+      "mode": 420
+    },
+    {
+      "path": "evidence/scratch-apply-readback.json",
+      "bytes": 8325,
+      "sha256": "81ad23557116af676df32df09a6406cb6e77dadd05ed9b15a81411062d66dd92",
+      "mode": 420
+    },
+    {
+      "path": "evidence/source-inputs.json",
+      "bytes": 3049,
+      "sha256": "46e2f08d42eb497f3db211cc0d8f020f8006a42ee6942675e5461528ad646adb",
+      "mode": 420
+    },
+    {
+      "path": "evidence/staging-checksums.json",
+      "bytes": 3637,
+      "sha256": "2f27acf872b9d8cf4160ef6ba96f157d2a5962a49808324402540c7d076c2542",
+      "mode": 420
+    },
+    {
+      "path": "evidence/staging-readback.json",
+      "bytes": 657,
+      "sha256": "6cb811989d40ce66b39f23e8a390f40de54187cceb113dbb2df4e74024a32d23",
+      "mode": 420
+    },
+    {
+      "path": "evidence/types-v4-run.json",
+      "bytes": 1114,
+      "sha256": "8a1f07584782bd02ab2eea30d3358a78d2c6d68bd882298c08294e503aba839a",
+      "mode": 420
+    },
+    {
+      "path": "evidence/types-v4.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": 420
+    },
+    {
+      "path": "evidence/v2-checksums.json",
+      "bytes": 7178,
+      "sha256": "0156c3ea41c247f24dcfa31e9911d0839da72759707fddf8136986e662a78707",
+      "mode": 420
+    },
+    {
+      "path": "evidence/v2-package-readback.json",
+      "bytes": 645,
+      "sha256": "94672a9adb5b1e4e5dbda2f59622a665d18db5f7d3c54b15ab760bce50737cc1",
+      "mode": 420
+    },
+    {
+      "path": "evidence/维护冻结说明.md",
+      "bytes": 3527,
+      "sha256": "4c96cade51d8331967041e5f03f5e64cf4fbecc55176fe5012fbf3062ba4c2a5",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/docs/zh/adr/0047-automatic-agent-collaboration.md",
+      "bytes": 4205,
+      "sha256": "17fbe39e7bb171036a7b054fcf590762e96ab2fd1c9e8cc333089a5027590c2c",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/docs/zh/features.md",
+      "bytes": 21609,
+      "sha256": "d41a7bd50246036e33ca5cdd056f797d62477a82671dda5ec0a371b0065c94ed",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/echo-agent-app-core/src/agent_control.rs",
+      "bytes": 144085,
+      "sha256": "ee172650d11e69a18f92993ece6cadc02fbca6ceb8fdcaf1441275a58ba590eb",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/echo-agent-app-core/src/agent_pool/tests.rs",
+      "bytes": 144023,
+      "sha256": "b89544e2ab8af4c9819f2a7ffd3a6f42672fe7d2e589e12066517b6e636739af",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/echo-agent-app-core/src/channel_runtime.rs",
+      "bytes": 705720,
+      "sha256": "a936a2c30736546738828bdc8c292b4510aae6f2b79c581553f44156b713b820",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/echo-agent-app-core/src/chat_driver.rs",
+      "bytes": 255290,
+      "sha256": "ca22fbde7b81331d1fc9049982afa449efe6a19d32cd789e332b640b58df84bd",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/echo-agent-app-core/src/conversation_archive.rs",
+      "bytes": 32407,
+      "sha256": "4d13c6b1ffeb068fe14605d62044a8ae8cdae7ed7937d5a6069fea09ecf3561d",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/echo-agent-app-core/src/conversation_projection.rs",
+      "bytes": 26535,
+      "sha256": "a611a7ec6c2e1b524718ab9199bfd0bd79414cafc5504bb81c2dcca78a5fc6df",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/echo-agent-app-core/src/prepared_turn/provenance.rs",
+      "bytes": 21066,
+      "sha256": "af5cff541fe45b85db0a976b0be131c819753a41719a01f871b1291918fec43e",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/echo-agent-app-core/src/prepared_turn.rs",
+      "bytes": 92171,
+      "sha256": "01f8be2e3c862c791c1623bb02569e403f95b72757c2e4769ac98c467b16a5cf",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/echo-agent-app-core/src/state/app_state.rs",
+      "bytes": 318685,
+      "sha256": "eca4020fb37e8713d49e05dd2c596d9d02bac55ad5f7d72b09ddf76a320e784a",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/echo-agent-app-core/src/state/workspace.rs",
+      "bytes": 39523,
+      "sha256": "22de6a9d2d41c682d6ce6addd7f1c57361a691be4828065430efd8d00541dcb2",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/src/tauri/commands/conversations.rs",
+      "bytes": 138844,
+      "sha256": "eb8b3c756c20834fff233a3cadb4efde3ee0bce4dac9d63d1c2d07538dfbc682",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/src/tauri/mod.rs",
+      "bytes": 23637,
+      "sha256": "598135f17478a58933cf12848fb9940a67dbae6fe3559187b269ee8011c3a1fc",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/web-frontend/src/api/endpoints.ts",
+      "bytes": 114745,
+      "sha256": "9dba38f2c0654af95addd273b118ce7e71ffe33559ea54a878b16c035c2c0503",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/web-frontend/src/components/chat/AgentCommunication.test.tsx",
+      "bytes": 8746,
+      "sha256": "0a9d03be6f52d01264bf599e1f0ceab2ff24a8beebc9ee003ca5dcf72a46c542",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/web-frontend/src/components/chat/AgentInputMessage.tsx",
+      "bytes": 2003,
+      "sha256": "d7f40d2f8b614087864f182f7adfd76af3ef71f8bb7236ca707a1583dfc1c2d2",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/web-frontend/src/components/chat/AgentSentMessage.test.tsx",
+      "bytes": 4244,
+      "sha256": "323b1177a6f87dcbdfebd45d548455619e6b9939fbd8c8ec9f98cf28ec8afabc",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/web-frontend/src/components/chat/AgentSentMessage.tsx",
+      "bytes": 2698,
+      "sha256": "89b887ecd97602f06f80d76c980261a5c2f32a6068af4947e132f84d8cab0d7b",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/web-frontend/src/components/chat/ChatPanel.controls.test.tsx",
+      "bytes": 34850,
+      "sha256": "fd3aacf886da8fe1f296ae529e83f4e9c424e06c4990904a714529c70516b6f7",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/web-frontend/src/components/chat/ChatPanel.tsx",
+      "bytes": 54517,
+      "sha256": "078bed8b4d77a8716bc25899192cac67947b58450405ec4392bbacb45550edf8",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/web-frontend/src/components/chat/MessageBubble.tsx",
+      "bytes": 23992,
+      "sha256": "101ca01419aa4626b110026c18c437e9b7fe104797f0778320aff1a89e5b35a0",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/web-frontend/src/components/chat/ToolExecutionGroup.tsx",
+      "bytes": 5285,
+      "sha256": "6d66c7a0babd24f608422da06605cb8b23c2ed474016432b2933b577368e860c",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/web-frontend/src/hooks/useAgentCommunicationInputs.test.tsx",
+      "bytes": 4825,
+      "sha256": "12a24aa51d0a5272a0506ab3b6e5edd0bdfec00ceb3c67b9758cc743ad69741b",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/web-frontend/src/hooks/useAgentCommunicationInputs.ts",
+      "bytes": 2483,
+      "sha256": "62ed9a05f36f03cb5e11f3514c8d5aeaa205050789f62b38452df33c6613cc7f",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/web-frontend/src/lib/agentCommunication.ts",
+      "bytes": 5443,
+      "sha256": "69e01db25f5816c04860cf4f626a0d6fb50337628ad149c1aef7aae34d074d62",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/web-frontend/src/lib/openAgentConversation.test.ts",
+      "bytes": 6336,
+      "sha256": "5b8f5d93fd893ec8376ed7efe517c458e13a2db50844781f5259d85d0de77a39",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/web-frontend/src/lib/openAgentConversation.ts",
+      "bytes": 3132,
+      "sha256": "4d05b0a8550153c7977cc65688a63a91febb5291bb016bc890b2eb92f1a0858b",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/web-frontend/src/stores/chatStore.ts",
+      "bytes": 21867,
+      "sha256": "fbbc24b6aa3a9d546ed0b91398a1a7ce23af6b739e4930b4b0e3e93e37e90d25",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/web-frontend/src/stores/conversationStore.test.ts",
+      "bytes": 71496,
+      "sha256": "e758c84cbe27adbc7ea50a7c12d19fdb6aeb1fe8a286cb8c6d930dea4302000f",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/web-frontend/src/stores/conversationStore.ts",
+      "bytes": 43631,
+      "sha256": "252736584af3ad302fc7c8dcc701def1837f7f4162128b7db73705571bdcaff1",
+      "mode": 420
+    },
+    {
+      "path": "scratch-apply/web-frontend/src/types/api.ts",
+      "bytes": 32473,
+      "sha256": "e3a49263003df3bf080ff75eec699cc36c2e782839a3f59a99c8011af1489d1f",
+      "mode": 420
+    }
+  ],
+  "file_count": 58,
+  "logical_bytes": 2767699,
+  "actualScratchExtractionAndFullBytesModesHashMatch": true,
+  "productionAdoption": false,
+  "goalStatus": "paused",
+  "qualification": "冻结工程包；工具分类JS候选独审有限通过但无Rust/native，跨会话末版尚未独审/未合流；原旧票不升级"
+}

@@ -1,0 +1,13 @@
+{
+  "at": "2026-11-02T11:23:09.158012+08:00",
+  "originalThreeProgressDocumentsByteExactPreserved": true,
+  "originalGoalByteExactPreserved": true,
+  "allInheritedScopeClausesPresent": true,
+  "all26RowsPlusNativeScopePresent": true,
+  "all14ReferencedCurrentProofsFullHash0": true,
+  "canonicalGoalAttachmentByteEqualTrackedNewGoal": true,
+  "previousCurrentEntrypointBytes": 1043535,
+  "newCurrentEntrypointBytes": 18711,
+  "historyIsNotCurrentStatus": true,
+  "noBusinessCodeBuildOrUserDataMutation": true
+}

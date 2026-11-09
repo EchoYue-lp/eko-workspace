@@ -1,0 +1,1167 @@
+{
+  "framework_main": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/root-full-framework-window-20261029/framework-S008-authorized-main-merge-20261101-r01/exact-main-delivery-accepted.json",
+    "sha256": "acb5113fce7407e053bf547ade7310f9694910807e459aa73aa45e9dc20f4d73",
+    "bytes": 1612
+  },
+  "sdk_main": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/root-full-framework-window-20261029/SDK-own13-normal-local-milestone-20261102-r01/authorized-remote-delivery-PR15/exact-main-delivery-accepted.json",
+    "sha256": "973a6a29c64bac86a0ad46c1fdd9caf4c68cc3ec047c1489c7b2025c41f98f3b",
+    "bytes": 3178
+  },
+  "sdk_native_source": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/root-full-framework-window-20261029/SDK-all44-current-native-candidate-source-Root-accepted-20261101-r01.json",
+    "sha256": "c99ec3866188d845a1204428a2fa44a200917b8ddc565753b5ac65944917126d",
+    "bytes": 1632
+  },
+  "python_focus": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/root-full-framework-window-20261029/SDK-native-fivefocus-Python2-Root-accepted-20261102-r01.json",
+    "sha256": "46b4179b372500fe5d397b0befe520b30eb9c82e8e4a3a9882375f059ccaa900",
+    "bytes": 1841
+  },
+  "typescript_focus": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/root-full-framework-window-20261029/SDK-native-fivefocus-TypeScript2-Root-accepted-20261102-r01.json",
+    "sha256": "68ac5281fb3dda38cad7d5ba6cf33fc537401cf6900bc2895789c8c4a68e3f06",
+    "bytes": 1353
+  },
+  "java_focus": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/root-full-framework-window-20261029/SDK-native-fivefocus-Java2-Root-accepted-20261102-r01.json",
+    "sha256": "c350025e54e4e80c0ae3ed68248a2e1d223d3ff66ba85cea0477154b970ce1fb",
+    "bytes": 1660
+  },
+  "rust_focus": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/root-full-framework-window-20261029/SDK-native-twoRust-actual-results-Root-verified-20261102-r01.json",
+    "sha256": "9aecc23d4d9e0b0d1f2c33fdaf7c737f683d33a357a41210de82de6dd8654b40",
+    "bytes": 2571
+  },
+  "rust_preservation": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/root-full-framework-window-20261029/SDK-native-twoRust-full-preservation-Root-accepted-20261102-r01.json",
+    "sha256": "9f5a9d514e35da2510c03974db165f3d8833b537b34982b14d466b444007d905",
+    "bytes": 8099
+  },
+  "rust_clean": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/root-full-framework-window-20261029/SDK-native-twoRust-official-full-clean-20261102-r01/Root-accepted-clean.json",
+    "sha256": "8a447cdd02562a63a18c0a61dd5bcabbd4e9bd047c83c474db71f42b6145e8cf",
+    "bytes": 1205
+  },
+  "perf_contended": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/root-full-framework-window-20261029/Perf70-r03-original-actual-Root-accepted-descriptive-20261101-r01.json",
+    "sha256": "393519da30b53629bb1fa0422a212eddd71a9d5d8520b2090cc5a0831b5da0d0",
+    "bytes": 1387
+  },
+  "H3_failed": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/root-full-framework-window-20261029/H3-full10000-ENOSPC-Root-accepted-failure-20261101-r01.json",
+    "sha256": "ca5fa5fbcc829a92928e606c0e885c559b294646c2feefafaec1773d618fbc3a",
+    "bytes": 930
+  },
+  "SDK_meta_local": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/root-full-framework-window-20261029/SDK-main6cd-own13-normal-repository-SourceFinal0-Root-accepted-20261102-r01.json",
+    "sha256": "10a6ca79b65321531b86ea3cadae45741754725198de2bdfdff82560c96ed779",
+    "bytes": 4611
+  },
+  "disk_cleanup": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/user-priority-disk-cleanup-20261102-r01/cleanup-final-verification.json",
+    "sha256": "5b3dbc4cf4f83aa59a8c4ef838919b2c52dbf021d5c6dbdcf7542e3be1bea3bc",
+    "bytes": 3485
+  },
+  "five_files_deleted": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/user-priority-disk-cleanup-20261102-r01/batch07-user-explicit-five-files-deletion.json",
+    "sha256": "bf832f5344d723b662edcb03f18986ac6474a831498aa42278a727595d855c8a",
+    "bytes": 2382
+  },
+  "sdk_main747_materialized": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/materialization-entry.json",
+    "sha256": "26168809c13d8971dc3c07f08565f91168116c5d89850800e61f47ef75d870e8",
+    "bytes": 2300
+  },
+  "K2_current": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/K2-native70-Root-readback-accepted.json",
+    "sha256": "0ce919cde6f4adcf74f8f7390184cca91468f4c2bead5a3373eef8a3276f6527",
+    "bytes": 19954
+  },
+  "K2_App_reopen": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/workspace/normal-quit-9970-and-RustRover95346-r01/Root-actual-once/reopen/K2-same-App-reopened-physical-proof.json",
+    "sha256": "398a3a5411e572b4872013cb80b04ed853d8d4eee5ed00a23fe3e11db6fa4156",
+    "bytes": 3064
+  },
+  "framework_local_main_reception": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/framework-local-main-intake/local-main-reception-accepted.json",
+    "sha256": "c010d076f5fb3a3fa7bdf8cc823b39e740da14b2c30eca761991666b5b0cdb65",
+    "bytes": 1495
+  },
+  "framework_runtime3": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/runtime/scoped-guidance-next-attempt-20261102/focused-execution-r01/delivery.json",
+    "sha256": "1494e1d5e1c7537c9a6f7d6678fcf6bc96d63a3950148e58d3ff7e30ac84975a",
+    "bytes": 23571
+  },
+  "cli_guides_local": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/CLI-guides-local-milestone.json",
+    "sha256": "bc1ba02bcd84c1af05418311d06d69a8e009255b279359533ddd820d4eadc7a8",
+    "bytes": 1249
+  },
+  "cli_two_UI_local": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/CLI-two-UI-fixes-local-milestones.json",
+    "sha256": "5d39c24744e7c2e1d0bd00ba14db79cee086a9c80b6630f176b2228514657b29",
+    "bytes": 3175
+  },
+  "sdk_native_meta_increment": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/gatefix-r01/incremental-review-entry.json",
+    "sha256": "a7cfe3d32b807b2593627144fec1079fa62e71eb17058c2c634644bd9d839895",
+    "bytes": 2193
+  },
+  "sdk_canonical_and_normal_progress": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/normal-and-canonical-progress-r02.json",
+    "sha256": "f250c76c17da36ff06c6aca7ea3baccf001e8137ffd9a623f847f2f5e8c043b3",
+    "bytes": 6712
+  },
+  "website_common_clean_copy": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-website/.echo-semantic/local/website-native-source-refresh-20261102-r01/common-clean-copy-20261102-r01/copy-terminal.json",
+    "sha256": "dc47c3bac6a1e4da977c874c2e5e04e37f35efa9c2351e7725ce095a089d4cad",
+    "bytes": 916
+  },
+  "cron_locked_window": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/im-cron/cron-native-resume-20261102-r01/本次窗口实际回执.md",
+    "sha256": "e7d0ca011106283c9c66b582f2fd0c9314f3a31aec5548b645c8382aa6a078d2",
+    "bytes": 3674
+  },
+  "gui_fork_readiness": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/workspace/fork-head-only-source-and-case-readiness-20261102-r01/entry.json",
+    "sha256": "899d8dd671fa34fd29d1a53b27314f7dfc42496432eedc128e386189f266674c",
+    "bytes": 20885
+  },
+  "remaining_native_cases": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/runtime/remaining-real-scenarios-20261102/Subagent恢复最小执行清单.md",
+    "sha256": "bc33b323fed923592768454f47157222f14130a2154c83d18db3b0fe638673ed",
+    "bytes": 10432
+  },
+  "cli_hook_formal": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/hook-event-catalog-formal-20261102-r01/formal-frozen-four-path-delivery.json",
+    "sha256": "540dcb14240958fb6cbf4282b4bf62a5949a77ffaf38e7ef5490b332915f0d24",
+    "bytes": 10508
+  },
+  "cli_full_frontend": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/CLI-full-frontend-Root-accepted.json",
+    "sha256": "756d55d47ff479be9331b6ed5d8e4dd0d0b7cb43fa0cf7ec5709f7f083c2938d",
+    "bytes": 1204
+  },
+  "sdk_gate_terminal": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/normal-and-canonical-terminal-r03.json",
+    "sha256": "e6f4c9128efac7f49c38744af9a9849f4f8db99e105808c2c141d7380e3adea9",
+    "bytes": 59720
+  },
+  "sdk_independent_strict": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/independent-strict-bound-authorities-result-r05.json",
+    "sha256": "1df6649abb85043ed3854387931c8e08176215946ffd8c56d1db83b6c8665edb",
+    "bytes": 5936
+  },
+  "sdk_publication_source_open": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/publication-source-readonly-r01/source83-reachability-and-existing-sources.json",
+    "sha256": "c2f70a6a53f8f97eb57aef4b8d039bf06d4e2ce691ec6f6dbdf7cb189ab13e96",
+    "bytes": 24229
+  },
+  "r03_norun_initial_failure": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/r03-formal-controlled-focused-20261102-r01/NoRun-r01-自然失败与最小修正交接入口.json",
+    "sha256": "51276a516502fc4c555c07de969de68d697e1f91a3bf54aa40ec40f23ae523d7",
+    "bytes": 20203
+  },
+  "r03_compile_fix_proposal": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/r03-formal-controlled-focused-20261102-r01/compile-errors-review-r01/最小测试编译修正审阅入口.json",
+    "sha256": "99a82729693bae282a61f2d70930c8be059f18056a0e141b5dac5a88570cc751",
+    "bytes": 2038
+  },
+  "K3_current_App_prepare": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/workspace/normal-quit-47013-K3-history0-prepare-20261102-r01/entry.json",
+    "sha256": "5139bfda88b862bfe86f97a439f9201e4d7cd4b2bf262c6405872b240e849a51",
+    "bytes": 18730
+  },
+  "R2_child_http_prepare": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/providers/resume-20261102/r2-child-http-held-r01/handoff.json",
+    "sha256": "6116a82678ed1f8dd50647cc317a7aedfdc8e08ed70355df6a9671aef82c0023",
+    "bytes": 10339
+  },
+  "r03_actual_debug_input": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/r03-formal-controlled-focused-20261102-r01/debug-r02-精采用与网络阻塞交接入口.json",
+    "sha256": "95bd5844d31a35dfd21c0b14916edc5c329ea7007c38734944389c8e16e9f00d",
+    "bytes": 8348
+  },
+  "r03_current_root_fresh_actual_gate": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r03-risk-network-transport-trace-r01/actual-lock.gate.json",
+    "sha256": "c8df7ad7038543473e37c795864d4b122aa79ae9e44d193c7d972b08049d5c96",
+    "bytes": 454
+  },
+  "r03_current_root_transport_observation": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r03-risk-network-transport-trace-r01/caller.json",
+    "sha256": "435744b29d0900066bc6a3171c019e7d7c4e30c2b8caa59b15bf121f1ab5f664",
+    "bytes": 648
+  },
+  "R2_exact_existing_boundary_gap": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/runtime/r2-child-owner-source-interface-20261102/R2现有边界最终核对入口.json",
+    "sha256": "f2bf9d57b037d7152f2c19a7a221fd6bacf42d38afc18e2165d1ddb7d7079f25",
+    "bytes": 2071
+  },
+  "r03_library_local_milestone": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/CLI-R03-local-milestone.json",
+    "sha256": "a4a6001116852816730b254ef62997a9e221d65992968f63c0bc57de82ced55d",
+    "bytes": 3017
+  },
+  "r03_platform_final_delivery": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/r03-formal-controlled-focused-20261102-r01/R03_平台后继最终交付入口.json",
+    "sha256": "5222e60c5db03b89d6cd22b291427b3bd5e4e4ba5c867a184967a7f4bc544cfb",
+    "bytes": 28375
+  },
+  "website_20070_copy": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-website/.echo-semantic/local/website-native-source-refresh-20261102-r01/website-20070-verify-r01/copy-terminal.json",
+    "sha256": "61a8960ecddab8fa2645ae44bdec174c71c6e3ab1d20bdbc0b877ae3827111f0",
+    "bytes": 840
+  },
+  "R2_private_design_draft": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent/.echo-semantic/local/r2-child-http-private-observation-design-20261102-r01/delivery.json",
+    "sha256": "a514d87b24f357087307f211a84be537bf210dfb2f211b0b8a463e2f487e8862",
+    "bytes": 5397
+  },
+  "R2_private_fetch_options": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/governance/r2-cli-collector-safe-export-readonly-20261102-r01/Root_R2非控制取件A_B精范围入口-r02.json",
+    "sha256": "1d1a37e4000029d12b6b33573a939d27186ac873446a60a6e4db34c1f8f9b2be",
+    "bytes": 4064
+  },
+  "website_817_local": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/website-local-milestone-817eaa.json",
+    "sha256": "3428cf6ad4a942640931ec84b8dc797577bdf7c01c5165d118b593ea94eb151b",
+    "bytes": 2806
+  },
+  "website_20070_full_and_source_final": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-website/.echo-semantic/local/website-native-source-refresh-20261102-r01/website-20070-verify-r01/delivery.json",
+    "sha256": "5061a85eb3735535b4b4491827261c26344c69695269babac2f8562a3627ae6d",
+    "bytes": 12348
+  },
+  "website_readme_result_increment": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-website/.echo-semantic/local/website-native-source-refresh-20261102-r01/readme-status-r05/entry.json",
+    "sha256": "2fecd33de8bac3361d54e720038ea05207376bffc62c82c273e73d3214fc7f1e",
+    "bytes": 22791
+  },
+  "cron_after_unlock_actual": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/im-cron/cron-native-resume-20261102-r01/本次自动验收交件.md",
+    "sha256": "c55bdcc3bd5db93a470806802c5e8977540fda0d68726a553447ac170b7e8ffc",
+    "bytes": 5303
+  },
+  "R2_composite_design_for_review": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/framework-r2-private-observation-local-design-20261102-r01/delivery.json",
+    "sha256": "ca4e8a979009337cdfffedfa4c68bb4e55f7a0d746a26aef35187864a04bbe05",
+    "bytes": 8348
+  },
+  "R2_parent_gate_successor_source": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/providers/resume-20261102/r2-child-http-held-r01/successor-r02/handoff.json",
+    "sha256": "3cd782f6eafbf553c7a250c33dc7cde40321ef1370709e6c15b21424715f4c9f",
+    "bytes": 11029
+  },
+  "SDK_full_languages_admission": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/language-window-r01/admission-before.json",
+    "sha256": "4b861292080bef9b80cec0f5178a2112f3a5dba885f0a5d5db4a0b9054458fd5",
+    "bytes": 651826
+  },
+  "sdk_main747_full_three_language": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/SDK-main747-full-three-language-Root-accepted.json",
+    "sha256": "4aea552ad893b23b123ee8ae10fb5a98fe9dac5fb6a057b63578cf60f50f18e1",
+    "bytes": 3463
+  },
+  "sdk_main747_full_three_language_original": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/.echo-semantic/local/sdk-native-main747-engineering-r01/complete-language-result-index.json",
+    "sha256": "040cbaa42cb12dda48860343615982ddf436dd80f3f7766664369ea741f58805",
+    "bytes": 24025
+  },
+  "ssh_ubuntu_GUI_auth_prepared": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/workspace/ssh-two-account-native-20261102-r01/ubuntu-authentication-ready.json",
+    "sha256": "e199eec6e38fc7964e836645044109a39b16c61de27693adcafa684ffbbf02ab",
+    "bytes": 6648
+  },
+  "ssh_GUI_stopped_for_manual": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/workspace/ssh-two-account-native-20261102-r01/GUI-manual-handoff-stop-ticket-20261102-r01.json",
+    "sha256": "f1ce9dfac0f85deff2202e16ebaaf9f6d931269bf43bc36b8f3ff7f9512d41f0",
+    "bytes": 7394
+  },
+  "weixin_send_observation_source_candidate": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/im-cron/weixin-send-error-observation-20261102-r01/交件入口.md",
+    "sha256": "7146b324d3d776a7b6068052a89975c0c32eea2b17dc794a5e2b2ed72efdf615",
+    "bytes": 6689
+  },
+  "cron_driver_missing_identity_proposal": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/runtime/cron-driver-source-identity-bridge-20261102/Driver首帧身份只读建议.md",
+    "sha256": "596b908b0d71a5a06db5e59bdc1e890a3d94bfad49d5cefdf2fa0f082f601a3f",
+    "bytes": 10712
+  },
+  "R2_get_typed_projection_contract_increment": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/providers/resume-20261102/r2-child-http-held-r01/successor-r02/contract-projection-r03/handoff.json",
+    "sha256": "dbf92995cb7b53af3a61691c1687c52f6d8ce07bf7fccaafe772e15a0e401f96",
+    "bytes": 6218
+  },
+  "SDK_stable5_admission": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/.echo-semantic/local/sdk-native-main747-engineering-r01/stable-window-r01/admission-result.json",
+    "sha256": "2a79def44adce21dc654d6a1364db9e9cd664e537b884ab26aaa081763d0a992",
+    "bytes": 8614
+  },
+  "sdk_main747_stable5_Root_clean": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/sdk-stable5-readback-r01/Root-accepted-stable5-clean.json",
+    "sha256": "5d3a52319143902c1ec2b3b128ce8c7caf3057ff4b001458035f39205366aae4",
+    "bytes": 7223
+  },
+  "sdk_main747_stable5_original": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/.echo-semantic/local/sdk-native-main747-engineering-r01/stable-window-r01/stable-five-result-index.json",
+    "sha256": "76b811393988030f964f428c6f6e871f1f5280ab33296137a5539735d533570b",
+    "bytes": 12064
+  },
+  "R2_timeout_design_fixed": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/framework-r2-private-observation-local-design-20261102-r01/r02-timeout-order-fix/delivery.json",
+    "sha256": "9497ba8d7b007d85d83877135feed913cd7e1f35fbef75872382a39912cf7f9e",
+    "bytes": 8827
+  },
+  "R2_timeout_review_pass": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/framework-r2-private-observation-framework-review-20261102-r01/r02-I1-timeout-order/review.md",
+    "sha256": "48b435c39b1e4e6cb1022b0abd8730020dce108ba50a367df1431ab09c64a6a8",
+    "bytes": 5891
+  },
+  "cron_Driver_cursor_proposal_fixed": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/runtime/cron-driver-source-identity-bridge-20261102/Driver首帧身份只读建议-r02-cursor门禁.md",
+    "sha256": "9f679cce77966701289ef649eea07dc423a7dab194cc66292a819db823fdf29d",
+    "bytes": 3336
+  },
+  "cron_App_publication_Source_candidate": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/cron-native-publication-candidate-20261102-r01/最小publication候选交接入口.json",
+    "sha256": "a7d2d728606c65af06d71e717ee739651b6510341b5a18c184e21a04d3658a49",
+    "bytes": 7717
+  },
+  "performance_one_B_case_prepared": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/performance/memory-reconcile-optimization-20261101-r01/four-test-candidate-r03-rebase-5132-F340-filename/memory10-history0-single-case-preparation-20261102-r01.json",
+    "sha256": "c93541afe202ed7df723a5a1fe827cdc53b46f0450fae923329c86f89f65cfef",
+    "bytes": 22380
+  },
+  "r2_owned_candidate_plan": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/governance/r2-private-observation-plan-20261102-r01/plan_01_跨仓私有观测候选与采用.md",
+    "sha256": "5aeeed835b4a9e4ba85d489109c934ef73d36b75c72552d75693859b5e8b20df",
+    "bytes": 10081
+  },
+  "sdk_source83_local_options": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/publication-source-options-r02/source83-options-entry.json",
+    "sha256": "9cb49fbb09cca34d85994abaa6fc7613962612dbb26e823c5b0efb310e07ac71",
+    "bytes": 32720
+  },
+  "cli_publication_test_only_Source": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/cron-native-publication-test-only-20261102-r01/test-only正式源冻结交接入口.json",
+    "sha256": "3df25281fb31b6bb03ad8cf1a50235a2b5b2ccf19793b25f94f9c76de00b70fd",
+    "bytes": 10391
+  },
+  "driver_real_red_r02": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent/.echo-semantic/local/framework-native-diagnostics-focused-20261102-r01/driver-red-r02-proof.json",
+    "sha256": "c8229939281f5d6790cedf7d6bba327e252f0a7abad2c5191deb80abcf15e837",
+    "bytes": 1051
+  },
+  "driver_whole55_green_raw": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent/.echo-semantic/local/framework-native-diagnostics-focused-20261102-r01/driver-whole-scope-green/raw.log",
+    "sha256": "b64955bdf9cd5b19c568ce3c926481b88efed407bbb6710ebb8d4abd65c9736e",
+    "bytes": 6090
+  },
+  "framework_Driver_test_only_initial": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent/.echo-semantic/local/framework-driver-first-frame-execution-bridge-20261102-r01/delivery-test-only-r02.json",
+    "sha256": "38822730a4f27a30afddf95bf4560125b064c54fcbb1d583efd905d6403563b5",
+    "bytes": 12332
+  },
+  "framework_native_header_weixin_local_milestone": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/framework-focused70-readback-r01/local-milestone-c6239706.json",
+    "sha256": "b92e50f501178e6dc9c7c0ff7578bce30e7b7372d31e70208fc1cc2e758ad576",
+    "bytes": 2599
+  },
+  "framework_exact_user_manual_cleanup": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/framework-focused70-readback-r01/user-authorized-manual-cleanup-complete.json",
+    "sha256": "8901248abbb25cf77077185a360bbd40ee2d680f437f92d7c0deb26e2168a35a",
+    "bytes": 1192
+  },
+  "framework_focused70_final": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent/.echo-semantic/local/framework-native-diagnostics-focused-20261102-r01/delivery-current-source-final-r01.json",
+    "sha256": "8422f5121506dac3f6059f21893a6ef33743921366ef440d355147d33b6d8584",
+    "bytes": 7502
+  },
+  "SDK83_local_cold_recovery": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/SDK-source83-local-recovery-Root-accepted.json",
+    "sha256": "50963ed595e7f64f50d2da5de8c421671ce5b2d705cb8dd52fac7fc61bb3fb27",
+    "bytes": 2253
+  },
+  "R2_interface_cut_bound": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/governance/r2-private-interface-cut-20261102-r01/interface-cut.md",
+    "sha256": "224d175ca7a3c90eadd72d85bc9e892942c7381557e42282d89f050df233508c",
+    "bytes": 16969
+  },
+  "CLI_publication_bounded_consumer_GO": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/CLI-publication-bounded-consumer-review.json",
+    "sha256": "5eee3393036c12404123f1b119c01c96878a6abf36779de9cf2e379a8fd78b18",
+    "bytes": 2929
+  },
+  "CLI_current_c623_consumer_proposal": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/cron-native-publication-test-only-20261102-r01/metadata-only-proposal-r01/successor-c623-provenance-r01/c623当前consumer最终交付入口.json",
+    "sha256": "6a669f6f1fb194fd996b355292930ba32c27452ebf5b4f7c6c3061b5dbe6b9c7",
+    "bytes": 7165
+  },
+  "CLI_d5_root_actual_fresh_gate": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-publication-risk-network-r01/actual-lock.gate.json",
+    "sha256": "c8df7ad7038543473e37c795864d4b122aa79ae9e44d193c7d972b08049d5c96",
+    "bytes": 454
+  },
+  "CLI_d5_root_actual_fresh_caller": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-publication-risk-network-r01/caller.json",
+    "sha256": "122b7eb71fefdf528986bc832cd8fc76cb92a8bfbeb068bdc8cce7cb487b9c03",
+    "bytes": 698
+  },
+  "SDK_longid_source_only": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/long-conversation-id-current-source-packet-r01/source-only-entry.json",
+    "sha256": "ebcbb6e0ccdead931141a323f392d5784c2e275ddb6255e9db45ec8dcd05c488",
+    "bytes": 12421
+  },
+  "SDK_longid_materialized1305": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/long-conversation-id-current-source-packet-r01/materialization-r01/materialized-source-entry.json",
+    "sha256": "ea76001f3834a6e73bf9f25426d6554392d82b87ce056e3bdc602d1050acb23f",
+    "bytes": 9665
+  },
+  "R2_three_candidate_review_entry": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r2-three-candidate-source-review-r01/entry.json",
+    "sha256": "130793d622739de6992981b9c3cb826a0e6836c60681eee67cee35e197b25bce",
+    "bytes": 2920
+  },
+  "R2_controlled_pair_metadata": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/r2-validation-source-composition-20261102-r01/delivery.json",
+    "sha256": "19b81f17e4ceff9d2049b072770cf576eccc4f1a05770d0beb01acfd65e4c8b0",
+    "bytes": 41616
+  },
+  "SDK_longid_old340_reference_drift_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/sdk-long-id-red-root-readback-r01/full-readback-with-reference-drift.json",
+    "sha256": "934f531ea6a9a73b6e871fb8d42da27249790a2389b3e8d505ffc3dbe708633b",
+    "bytes": 1943
+  },
+  "R2_three_lib_actual_norun_list": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/r2-validation-source-composition-20261102-r01/preparation-r01/focused-epoch01/delivery.json",
+    "sha256": "68bd55a60f7d1335a77a301f9793bc259e3e0bce9b25d1f67ca9846952778e26",
+    "bytes": 24019
+  },
+  "R2_three_lib_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r2-focused-norun-root-readback-r01/acceptance.json",
+    "sha256": "5ca1e2e4ba3932de72a8130e1470c9481bc0de8d626c55580c67bd3b46b9029f",
+    "bytes": 1342
+  },
+  "R2_AppCore_180s_Design": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/runtime/r2-appcore-case-180s-design-20261102-r01/design.md",
+    "sha256": "33ac625478abae808427279cf9a9a5b8856309f23f3ee0b3cbcb2215188310d9",
+    "bytes": 17940
+  },
+  "R2_AppCore_180s_Design_Root_accepted": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r2-appcore-design-root-review-r01/review-and-plan-go.json",
+    "sha256": "a02b18e73081ce14fa3e76528ed35c05a83e78df96bc53962685ba421022ca8b",
+    "bytes": 1544
+  },
+  "Tauri2124_isolated_official_tool": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/frozen-tauri-cli-2.12.4-20261102-r01/entry.json",
+    "sha256": "7b06489974cd68200763887b4ec3de3d7ea78cd9ac26d23cabcc34a138400f93",
+    "bytes": 10360
+  },
+  "Tauri2124_tool_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/tauri-2124-tool-root-readback-r01/acceptance.json",
+    "sha256": "3c94b00aa99c8a16e46efce7233ee64480c28930976c51022b8a880c3e637460",
+    "bytes": 766
+  },
+  "SDK_longid_guard_loss_corrected_delta": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/long-conversation-id-current-source-packet-r01/guard-overwrite-correction-r02/old340-red-final-delta-r02.json",
+    "sha256": "5261537cba52fb2b2394784beb7336fdb3476d56a39166e1664df491dc3db9bf",
+    "bytes": 15540
+  },
+  "SDK_longid_corrected_Root_clean_GO": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/sdk-long-id-red-correction-root-readback-r02/acceptance-before-official-clean.json",
+    "sha256": "9d335dbae0ade09bab41fb800f27327b6548746c9244bde75b866de0288d7cc1",
+    "bytes": 1823
+  },
+  "SDK_longid_old340_official_clean": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/long-conversation-id-current-source-packet-r01/official-clean-old340-r01/official-clean-successor-entry.json",
+    "sha256": "5a5d39b938242a352eeb824a11ea1555600d79be2814715d93dba3ecc0409570",
+    "bytes": 14847
+  },
+  "SDK_longid_old340_official_clean_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/sdk-old340-official-clean-root-readback-r01/acceptance.json",
+    "sha256": "518a86a9652f95a16dcc7574560bd7b0b9ec21aa9d9a8b51eb1300858608010d",
+    "bytes": 891
+  },
+  "SDK_longid_c623_source_preparation": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/long-conversation-id-current-source-packet-r01/green-source-c623-preparation-r01/controlled-c623-preparation-entry-corrected-r02.json",
+    "sha256": "79713e0c9f444587b816b0bd2228616eefbd23cb68845a7b2d0b439dc2357733",
+    "bytes": 13575
+  },
+  "SDK_longid_c623_source_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/sdk-green-c623-preparation-root-readback-r01/acceptance-source-only.json",
+    "sha256": "63567802ef00ac79116a46d6b97c318eb57ee0c654016fb0f1c3dd05a54b70a4",
+    "bytes": 1813
+  },
+  "R2_framework_distinct25_behavior": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/r2-validation-source-composition-20261102-r01/preparation-r01/focused-epoch01/behavior-r01/delivery.json",
+    "sha256": "a09895948beabef193d1fbf3899c6c0321657afdd733f8956595b84d9deb46fd",
+    "bytes": 4638
+  },
+  "R2_framework_distinct25_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r2-focused-behavior25-root-readback-r01/acceptance.json",
+    "sha256": "fbc176aff9d382eb414e90d784ca42d9df276cee7c1631025ff072e9e44a2311",
+    "bytes": 908
+  },
+  "R2_AppCore_180s_Plan": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/runtime/r2-appcore-case-180s-design-20261102-r01/plans/plan_01_AppCore真实consumer与单一180秒holder.md",
+    "sha256": "dfcf7ea5e9b0f00a22802a4116b609395d1600b937c584f7dd7d64314f1d810b",
+    "bytes": 12033
+  },
+  "CLI_fresh_canonical_new_yanked_block": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-publication-risk-network-canonical-r04/root-new-yanked-failure-classification.json",
+    "sha256": "c064ce7925dbcb534474e66ecb8b441c9ecba491716fd87e58cbdc0ef12115da",
+    "bytes": 2507
+  },
+  "GUI_manual_checklist_current79": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/docs/supreme/acceptance/eko-eclip-gui-manual-checklist-2026-11-02.md",
+    "sha256": "8fbd8f6727f3f258b8bd69e75178c6aa91d227f605b15816058d30a981dbed13",
+    "bytes": 25797
+  },
+  "GUI_manual79_coverage_Root_closure": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/gui-manual79-coverage-root-closure-r01/acceptance.json",
+    "sha256": "21963d8dba711f36f87fe0f037b653e32b0cb673b08f5ca2834929c2b2bdd3ba",
+    "bytes": 1224
+  },
+  "R2_Gov_two_atomic_rename_source_candidate": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/governance/r2-app-observation-candidate-20261102-r01/r02-atomic-try-update/delivery.json",
+    "sha256": "2d2753f441d0a8839f652f84e5007c60a0dbe46d4143fd4b94ffc3d831276e53",
+    "bytes": 2618
+  },
+  "R2_Gov_two_atomic_rename_Root_source_review": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r2-atomic-rename-root-source-review-r01/acceptance-source-only.json",
+    "sha256": "5f9064c43e70d4d8011f613ad7178587f3db57eab1691d231d2512f9dbe6e205",
+    "bytes": 1454
+  },
+  "R2_AppCore_original_norun_W2_terminal": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/r2-validation-source-composition-20261102-r01/preparation-r01/focused-epoch01/app-core-r01/terminal-warning-and-preservation.json",
+    "sha256": "6d8f914e86f90c088b17cc9b97bdd2523cf56eed917a91d2e8644dffe90e9839",
+    "bytes": 13785
+  },
+  "R2_AppCore_W2_original_terminal": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/r2-validation-source-composition-20261102-r01/preparation-r01/focused-epoch01/app-core-r01/delivery-warning-terminal.json",
+    "sha256": "7c9b24a0ef5eefd3831ad0c57aaf725f0cc1c39b1fac77ac393331b7ffe69be7",
+    "bytes": 5578
+  },
+  "R2_epoch01_recovery_and_epoch02_packet": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/r2-validation-source-composition-20261102-r01/epoch-transition-r01/delivery.json",
+    "sha256": "051b52c1bf1dbd5a21ccd539184b5d3bd8ba993126e9dc316370480f77d035e3",
+    "bytes": 6257
+  },
+  "R2_epoch01_recovery_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r2-epoch01-restoration-root-readback-r01/acceptance-before-switch.json",
+    "sha256": "f704b3e2e5006cd94e74b7851fcc595c9bed4ac2cb7af1f6dbe986ff769afff0",
+    "bytes": 1034
+  },
+  "R2_Runtime_preserved_base_rebind": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/runtime/r2-appcore-case-test-overlay-candidate-20261103-r01/preserved-base-provenance.json",
+    "sha256": "28069d36342c8cd779a8bd0c5496298a39f8b20c1f7974535e65f9fac13352eb",
+    "bytes": 896
+  },
+  "R2_epoch02_actual_source_manifest": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/r2-validation-source-composition-20261102-r01/preparation-r01/focused-epoch02/actual-source-manifest.json",
+    "sha256": "adcedfebd8903f6f4e15cf66feb784471d25f831e49d466a7daf757a9a0d3745",
+    "bytes": 1747306
+  },
+  "R2_try_update_declared_MSRV_source": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r2-atomic-rename-root-source-review-r01/msrv-followup.json",
+    "sha256": "0886aa810930230451a938c4b45c4a2d40916396412d0e3d4c16508f0b8a692b",
+    "bytes": 773
+  },
+  "CLI_async_executor_minimal_repair_candidate": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/async-executor-yank-readonly-20261103-r01/isolated-lock-resolution-r01/最小去yank候选交付入口.json",
+    "sha256": "bf78c3978788c1c67c7e7af8258e4f79b15e7fdc3f4010c357cf4874378337e5",
+    "bytes": 29513
+  },
+  "CLI_async_executor_repair_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-async-executor-repair-root-readback-r01/candidate-readback.json",
+    "sha256": "2c5323d52123662c811258b39f984fde2512eca8be1b243482abb65fd0da8966",
+    "bytes": 1770
+  },
+  "CLI_async_executor_new_lock_human_boundary": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-async-executor-repair-root-readback-r01/review-and-human-boundary.json",
+    "sha256": "f0effbffff413e9711183c8b97ddd01a0667b89cd7e43688b8522b3ecb783db9",
+    "bytes": 2178
+  },
+  "R2_epoch02_actual_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r2-epoch02-actual-root-readback-r01/actual-source-acceptance.json",
+    "sha256": "29629e405cd12038ab04b44ab5bbec0bdc3889597794e87df707548ecc5c7efa",
+    "bytes": 929
+  },
+  "R2_Gov20_plain_Root_actual_acceptance": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r2-gov20-plain-root-readback-r01/acceptance-with-aux-profile-correction.json",
+    "sha256": "ac6b44d6a465cd077b0ae6baaaa5a8c13fbb33891ae820eaf6d1bd5e64415ca1",
+    "bytes": 1737
+  },
+  "CLI_d542_direct_human_approval_and_adoption_GO": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-async-executor-human-approved-d542-r01/human-approval-and-bounded-adoption-go.json",
+    "sha256": "3e3d76e70001c9bf9d6d5552559cebac2718ee2b5a387bc8c3cbd4c8861ea44f",
+    "bytes": 1979
+  },
+  "CLI_d542_formal_Root_observation": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-async-executor-human-approved-d542-r01/formal-adoption-root-observation.json",
+    "sha256": "c1622852d47f7fcd49f7f69cc02f69ed038518e5487e3cc14bdcf5020e2563c4",
+    "bytes": 690
+  },
+  "R2_epoch02_final_two_cfg_and_Gov20": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/r2-validation-source-composition-20261102-r01/preparation-r01/focused-epoch02/delivery.json",
+    "sha256": "46019b19b8ec6933c8a5c3a80304b9cf36c8118c35e89618296a655afe7ce422",
+    "bytes": 17119
+  },
+  "R2_epoch02_final_Root_acceptance": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r2-epoch02-final-root-readback-r01/acceptance.json",
+    "sha256": "3e14917ad227f6ab0b4aec6d21ef3c2b8d063895ab02c9a1be6feb4e49871775",
+    "bytes": 1253
+  },
+  "CLI_d542_formal_SourceFinal_and_fetch_failures": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/cli-async-executor-formal-adoption-20261103-r01/d542正式采用与SourceFinal及风险阻塞交付入口.json",
+    "sha256": "e804b3b9415bdadb51918671f96b645122604a7ad4d5ab44822afaac032c9d07",
+    "bytes": 27252
+  },
+  "CLI_d542_formal_Root_full_acceptance": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-d542-formal-root-readback-r01/acceptance-source-and-blocked-gates.json",
+    "sha256": "5e9f41cf4417a830734661f0a4be3a6c417a13cb9a1c546dd01a3bffbc7dc78f",
+    "bytes": 1391
+  },
+  "Root_and_CLI_AGENTS_d542_sync": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/root-agents-d542-human-approved-sync-r01/sync-current-risk-authority.json",
+    "sha256": "f552b60058f595f690e1c1abfed2b81baa5e28242daba0f2325f80267c2d09c7",
+    "bytes": 988
+  },
+  "CLI_d542_fresh_double_gate_Root_actual_acceptance": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-d542-formal-fresh-double-gate-root-r01/acceptance.json",
+    "sha256": "0970aa37689ed74530cd4daef28130c5a7199fd1308f6ea1629d736d0364c22b",
+    "bytes": 6807
+  },
+  "CLI_d542_two_doc_current_SourceFinal": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/cli-d542-root-double-gates-successor-20261103-r01/Root实双gate与两doc后继交付入口.json",
+    "sha256": "b42eddda0cfa5e0752bc1ce570e8dc328a9ece9353f4dff0dd615ff8c996487a",
+    "bytes": 13906
+  },
+  "CLI_d542_two_doc_and_Root_sync_acceptance": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-d542-doublegate-doc-successor-root-r01/acceptance-and-root-sync.json",
+    "sha256": "1dc24984efc2e4aa21f041313beda998d26bd774310066e3cf27c56b9a729a69",
+    "bytes": 1283
+  },
+  "CLI_d542_publication_wait_resource_delta": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/cli-d542-root-double-gates-successor-20261103-r01/publication-d542-Root双gate0-待资源最小delta包.json",
+    "sha256": "823ad75e974b93bc135dbbdbd03ce0d2d81df922083409db281b8642d4b2aea7",
+    "bytes": 12496
+  },
+  "Root_AGENTS_trailing_blank_format_delta": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/root-agents-d542-human-approved-sync-r01/trailing-blank-format-correction.json",
+    "sha256": "6b634070ccd877d106778058e7c839076e0deb2e2aabf5d6c6c4c2855f0c594a",
+    "bytes": 516
+  },
+  "R2_AppCore_overlay_source_candidate_for_review": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/runtime/r2-appcore-case-test-overlay-candidate-20261103-r01/delivery.json",
+    "sha256": "c259ada3ca2d2d814e713b82b85d65591a3d08fadf327d6bfd47dbcda1c9f4ef",
+    "bytes": 10260
+  },
+  "R2_AppCore_overlay_Root_physical_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r2-appcore-overlay-source-root-readback-r01/physical-readback-only.json",
+    "sha256": "37ab5d1ce6a5d779e31e7f3361a3c5307898d491c412cbcaad1ff209807d7636",
+    "bytes": 894
+  },
+  "R2_Provider_production_wire_source_initial_blocked_candidate": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/providers/resume-20261103/provider-production-wire-scope-tests-r01/handoff.json",
+    "sha256": "817e8749f4106c729ba1aa289265f9a93edf20c6ef850749248054d800868efd",
+    "bytes": 19519
+  },
+  "R2_AppCore_overlay_Root_block4_and_source_repair_GO": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r2-appcore-overlay-source-root-review-r01/findings-and-repair-go.json",
+    "sha256": "c9764f5a4474c3a39fd38e8d7afdad16cc5ea6945f0040fa7789cc252c812771",
+    "bytes": 2691
+  },
+  "R2_Provider_production_wire_r02_source_oracle_fix": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/providers/resume-20261103/provider-production-wire-scope-tests-r02/handoff.json",
+    "sha256": "e7bff3a54a531b87e20a2d7e7e2478852ec6b32184bd1820ad797d541dd9df4d",
+    "bytes": 16048
+  },
+  "R2_Provider_wire_r02_Root_reference_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/provider-wire-r02-root-readback-r01/physical-reference-readback.json",
+    "sha256": "7457f28ff343c9c71287ffd285b082acacd28d5ad5eafdaa0ba259646386687c",
+    "bytes": 628
+  },
+  "SDK_c623_controlled_longid_actual_GREEN": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/long-conversation-id-current-source-packet-r01/green-source-c623-preparation-r01/controlled-green-execution-r01/controlled-green-focused-result-index.json",
+    "sha256": "709b2baff73f0ae737aa5ff095c8c8ed2abae0653e4e14a033359b6477565182",
+    "bytes": 68411
+  },
+  "SDK_c623_controlled_GREEN_Root_acceptance": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/sdk-c623-green-root-readback-r01/acceptance-before-official-clean.json",
+    "sha256": "e8c6881e67718dc5b2b634add3ad539409565e397d305688cbd1521e4cf55a88",
+    "bytes": 1881
+  },
+  "SDK_c623_controlled_GREEN_official_clean": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-records-r01/long-conversation-id-current-source-packet-r01/green-source-c623-preparation-r01/official-clean-c623-green-r01/official-clean-successor-entry.json",
+    "sha256": "6e06dc93871e88e4e362748c4f8d57ee16ac54e266743fb6736f85f38d82fbdb",
+    "bytes": 15603
+  },
+  "SDK_c623_controlled_GREEN_clean_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/sdk-c623-green-official-clean-root-readback-r01/acceptance.json",
+    "sha256": "c995c9d35544c269540c50e79f60c47fba56cfcba88a94391289c9667e32d683",
+    "bytes": 1143
+  },
+  "CLI_publication_d542_actual_resource_pipeline_GO": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-publication-d542-actual-resource-go-r01/admission-and-bounded-pipeline-go.json",
+    "sha256": "55c391070da1b774e9c0be10c317cdaa320655fac0453af741942d9ba23cd285",
+    "bytes": 3487
+  },
+  "R2_Provider_wire_independent_pair_preparation": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/r2-validation-source-composition-20261102-r01/provider-wire-r02-preparation-20261103-r01/delivery.json",
+    "sha256": "fac67dcfbb6c9573a92b24e8fb6d750d54a460c5d7590c2bf488f30de7cf5e58",
+    "bytes": 23499
+  },
+  "R2_Provider_wire_pair_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/provider-wire-new-pair-root-readback-r01/artifact-and-preparation-readback.json",
+    "sha256": "7d18b379689d099e36a7c20511c2bb218b0aa215ea0fc0807aaba428fd6b480d",
+    "bytes": 1164
+  },
+  "R2_AppCore_r05_source_four_findings_fixed": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027/runtime/r2-appcore-case-test-overlay-candidate-20261103-r02/delivery.json",
+    "sha256": "c39052ee9db80690d5bff421e541e10b7d0a85832e3ac895919e9896c5897155",
+    "bytes": 11008
+  },
+  "R2_AppCore_r05_Root_source_closure": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r2-appcore-r05-source-root-closure-r01/acceptance-source-only.json",
+    "sha256": "c635c6b9520ddc2d8e6b80ca2ab9f3bd690520b2e03c29317775ccffa68f72df",
+    "bytes": 1493
+  },
+  "R2_holder_r05_python39_pure8_actual": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/r2-holder8-pure-actual-r01/acceptance.json",
+    "sha256": "c4ef3c124441dd8a6118cd551e6d28b1f42db46f59c32aea99acee5ff0156ea2",
+    "bytes": 3831
+  },
+  "R2_Provider_A_r05_combined_current_preparation": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/r2-validation-source-composition-20261102-r01/provider-a-r05-combined-preparation-20261103-r01/delivery-r03.json",
+    "sha256": "4f94b8627cf3a675c6e2317247adb0dfd5fee80c2710eb5ad2ba58136cca9652",
+    "bytes": 38224
+  },
+  "CLI_original684_actual77d_Root_binding": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-publication-original684-actual77d-root-r01/actual-source-binding-readback.json",
+    "sha256": "fb26326f800a7f54535209c9a3c6c609642a1b585aeb2cf57cfb8a69f41725ad",
+    "bytes": 1452
+  },
+  "CLI_test_only_replace_box_exact_candidate": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-publication-replace-box-test-fix-r01/proposal.json",
+    "sha256": "32c66dbf380a73711550bcf5c6e1d97c41459c474e783cdfe623caafb327b60e",
+    "bytes": 1818
+  },
+  "CLI_test_only_replace_box_Root_source_review_GO": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-publication-replace-box-test-fix-r01/Root-source-review-and-bounded-go.json",
+    "sha256": "74650a887008c6324172a95ca34e2343db769307a55291cdfe1ccbaa3cfa2702",
+    "bytes": 2127
+  },
+  "latest_client_current_formal_source_and_normal_SourceFinal": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/cli-publication-replace-box-19ec-actual-20261103-r01/app-source-freeze-r03/App最新版正式源码与SourceFinal交付入口.json",
+    "sha256": "7b1542a0671322e18ffdb65d3ced0dbed5b15c37da01dc5a4242b25c736b40bb",
+    "bytes": 17204
+  },
+  "latest_client_3945_source_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/latest-client-launch-user-request-20261103-r01/current-source-and-normal-gates-accepted.json",
+    "sha256": "da041202b399089a669f13a4afaa78b141e694160dae971de690c67dd8a9b11a",
+    "bytes": 765
+  },
+  "latest_client_human_launch_authority": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/latest-client-launch-user-request-20261103-r01/authority-and-launch-context.json",
+    "sha256": "56830893488d8fe8a41dd7aae5be0a1d4c1ef44fd0d564b95a144df273b03676",
+    "bytes": 2238
+  },
+  "latest_client_actual_ready_to_launch": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/latest-formal-arm64-App-20261103-r01/evidence/ready-to-launch.json",
+    "sha256": "dbe6f0f37e3b359df529d8fd87c0bbff0a86adf6bbed86f7317d061f2cfbebe2",
+    "bytes": 2970
+  },
+  "latest_client_actual_once_launch": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/latest-client-launch-user-request-20261103-r01/actual-launch-r01/launch-receipt.json",
+    "sha256": "f1626754e8832e3e1f89986093ea597fe03fe4c65daba1f3d8935c78d4b0d42a",
+    "bytes": 4435
+  },
+  "latest_client_startup_metadata_observation": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/latest-client-launch-user-request-20261103-r01/actual-startup-process-observation.json",
+    "sha256": "85117f927a90438535b8c91acf389e38d933656f0aa2ed65420a4819718474bf",
+    "bytes": 1312
+  },
+  "latest_client_final_build_and_preservation": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/latest-formal-arm64-App-20261103-r01/entry.json",
+    "sha256": "e8d1c9d5b0bf798ef06008a1dc19144d939a9cfe342c661724e5c25bd98da5d5",
+    "bytes": 9399
+  },
+  "latest_client_final_Root_4675_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/latest-App-final-build-Root-acceptance-20261103-r01/acceptance.json",
+    "sha256": "a16cc45cb497274f1d75bb599a82ac2cae5dc5855e8152e456988fa523baea67",
+    "bytes": 2208
+  },
+  "latest_client_GUI_manual_current_package_delta": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/latest-App-final-build-Root-acceptance-20261103-r01/manual-checklist-current-package-delta.json",
+    "sha256": "56ffdd227df107ebd1a927b7a04901a021a4fd16d8f8701afcb41ea59ba9feea",
+    "bytes": 1045
+  },
+  "latest_client_Root_CLI_19ec_rule_sync": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/latest-App-final-build-Root-acceptance-20261103-r01/root-CLI-19ec-governance-sync.json",
+    "sha256": "01825233c32ffd145c3b624fd7d5889b0ab6ca55e48d260fc20cb760367e571d",
+    "bytes": 940
+  },
+  "GUI_manual_checklist_before_findings": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/manual-findings-20261103-r01/manual-checklist-before-findings.md",
+    "sha256": "750964c4f87537d50a4d8c76b4232fae29b70b926bf510891f873aef313867fe",
+    "bytes": 24288
+  },
+  "manual_findings_four_current": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/manual-findings-20261103-r01/findings-and-accepted-behaviors.json",
+    "sha256": "365ad5706628ecb5ef5a2996299185e6ba16d3039b31ee56820600ac1635f359",
+    "bytes": 3588
+  },
+  "manual_checklist_current_findings_delta": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/manual-findings-20261103-r01/manual-checklist-current-findings-delta.json",
+    "sha256": "32f3c4d632d3d07c190f3b867b81b787382940a1ffc024d604828048e0cee127",
+    "bytes": 880
+  },
+  "Framework_implicit_temperature_current_delivery": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent/.echo-semantic/local/framework-implicit-temperature-removal-20261103-r01/delivery-final-r01.json",
+    "sha256": "98bbaed1188a40d831714bf31bd45549410b66d58c7d289f4f14bb7851e862bf",
+    "bytes": 145935
+  },
+  "Framework_implicit_temperature_Root_acceptance": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/framework-implicit-temperature-Root-acceptance-20261103-r01/acceptance.json",
+    "sha256": "7a141a3bbfb2b27f81c4dbe955b039d40192f1d4e96e489cc32d48fa1361b04d",
+    "bytes": 1188
+  },
+  "EKO_temperature_source_frontend_current": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/eko-remove-temperature-20261103-r01/temperature28最小Source复评入口-r02.json",
+    "sha256": "bdd53639ae1a7dfe9bd297e97fc69ea801f4a93422372a203d0ce5bac233d9f4",
+    "bytes": 16861
+  },
+  "Workspace_default_SSH_source_frontend_current": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/workspace-default-and-ssh-reconnect-20261103-r01/r02-reviewed-delivery.json",
+    "sha256": "7772f2fa997c4399a3d2d4a93c501a6d67e8282ec2d0cf8aeb8803c0991b1cc8",
+    "bytes": 9132
+  },
+  "CLI_combined_66_source_risk_review": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/temperature-workspace-combined-source-risk-review-20261103-r01/source-risk-review-and-proposal.json",
+    "sha256": "c0cb0ae5052206fad07aad84f82088628076b197f9df36a4ee5cb1bd60b61b13",
+    "bytes": 5729
+  },
+  "Workspace_Registry_real_backend_r03_GO": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/workspace-registry-real-backend-resource-20261103-r01/source-readback-and-bounded-validation-go-r03.json",
+    "sha256": "85a60a421bea4850c13eb9879adefecd5023333eda829741c1cba27d014be420",
+    "bytes": 3971
+  },
+  "CLI_66_fresh_actual_network_failure_r02": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-66a502-fresh-network-actual-r02/caller.json",
+    "sha256": "4dfd832b7a027b6d732bea3b7bcc3a1ca78274d3f37482a2413f5d4929a26927",
+    "bytes": 702
+  },
+  "Framework_implicit_temperature_local_commit": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/framework-implicit-temperature-Root-acceptance-20261103-r01/local-commit-receipt.json",
+    "sha256": "65e32f47e0f9f185fab370495c48da05a33cbeded8e2772d8fea224e5f5b2b0e",
+    "bytes": 507
+  },
+  "Website_manual_repair_four_doc_candidate_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/manual-findings-20261103-r01/website-candidate-Root-readback.json",
+    "sha256": "792152dad655b2ff552d2ade5298bee5e98327900be8a6ea3dd67d9081a3c236",
+    "bytes": 619
+  },
+  "Framework_implicit_temperature_official_clean": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent/.echo-semantic/local/framework-implicit-temperature-removal-20261103-r01/official-clean-result-r01.json",
+    "sha256": "a6f7c3599115bc0aa4cbb05b54e10e53552c0ecdd2e93df108cfb41430d0f424",
+    "bytes": 7348
+  },
+  "Framework_implicit_temperature_clean_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/framework-implicit-temperature-Root-acceptance-20261103-r01/official-clean-Root-accepted.json",
+    "sha256": "6a86edcb79fdd57378ac4b7f9564023c6a6ed3dc512397219e38ed9f7f73afdb",
+    "bytes": 426
+  },
+  "Workspace_registry_actual_RED_GREEN_r03": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/workspace-default-and-ssh-reconnect-20261103-r01/registry-real-crate-packet-r01/actual-r03/registry-real-RED-GREEN-delivery.json",
+    "sha256": "f9eb97bd7acdce8c59a754e0472b03f0109f749f1b8fc43df790aac05771a307",
+    "bytes": 19352
+  },
+  "Workspace_registry_actual_RED_GREEN_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/workspace-registry-real-backend-resource-20261103-r01/actual-Registry-RED-GREEN-Root-accepted.json",
+    "sha256": "71619a816b45274cf204e0dda32211b80169cb49bd4c3709be99b9aab1ad9136",
+    "bytes": 1160
+  },
+  "Workspace_registry_Clippy_and_MD_only_successor": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/workspace-default-and-ssh-reconnect-20261103-r01/registry-real-crate-packet-r01/actual-r03/targeted-clippy-r01/Clippy-and-ADR0055-only-successor-delivery.json",
+    "sha256": "a29405abd17d3e58e6908d386de803c2ef842b50d88a779d208519dc3a099fe1",
+    "bytes": 7269
+  },
+  "EKO_temperature_original_first_fixture_failure": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/eko-temperature-tests-continuation-20261103-r01/actual-GREEN-reuse-tests-r01/首项真实loopback前dialect失败与原件交付入口.json",
+    "sha256": "9cc6f2ffd40e7aa0a1fd4be3d3926d66a858e441a707ded8fe5a0ac15d63d597",
+    "bytes": 10259
+  },
+  "EKO_temperature_remaining8_diagnostic_original82ae": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/eko-temperature-tests-continuation-20261103-r01/remaining-eight-fixture-diagnostics-r01/剩余8项独立诊断8P与未扩候选交付入口.json",
+    "sha256": "672b124d9e8e0b19f67237d58940266c252fd937016efba77df28f038c94bb27",
+    "bytes": 34934
+  },
+  "EKO_temperature_test_fixture_exact_candidate": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/eko-temperature-fixture-admitted-model-candidate-20261103-r01/可审最小fixture修复候选交付入口.json",
+    "sha256": "57d6a326750ff8071963cc5966f7095029779813faf9b15b28d4f5d62315cf2d",
+    "bytes": 4571
+  },
+  "EKO_temperature_test_fixture_Root_source_review": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/temperature-fixture-test-only-source-review-20261103-r01/exact-fixture-adoption-and-conditional-42a1-binding-GO.json",
+    "sha256": "2482bbe3450a6783350859e96fe38287e56dead6e5802a7d57dbc3342b758acb",
+    "bytes": 3642
+  },
+  "EKO_temperature_42a1_actual_formal_adoption": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/eko-temperature-fixture-42a1-formal-adoption-20261103-r01/实际6e采用与42a1-2028精绑定最小交付入口.json",
+    "sha256": "4eb81a929ce1324be094a39ef744a4069dd2b45e603aa492a8705415660dcbf2",
+    "bytes": 7541
+  },
+  "EKO_temperature_42a1_actual_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/temperature-fixture-test-only-source-review-20261103-r01/actual-formal42a1-after-adoption-Root-readback.json",
+    "sha256": "a3f764075e1a5024c19fd8c278e7ea5f69198c3f9a15e5e39628b81f4f33df94",
+    "bytes": 949
+  },
+  "Workspace_r04_old3945_source_archived": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/workspace-default-and-ssh-reconnect-20261103-r01/registry-real-crate-packet-r01/actual-r04/old-source-archive-entry.json",
+    "sha256": "9c8de3a2b4a59394433f643452ff1a518c9b1dd137d7af39788671c42217cb20",
+    "bytes": 7144
+  },
+  "Workspace_r04_source_activated": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/workspace-default-and-ssh-reconnect-20261103-r01/registry-real-crate-packet-r01/actual-r04/source-activation-and-admission.json",
+    "sha256": "f57e64a23abc8c9bd8701a07c1a2b1977ec44d53029ec3aadc4f8052a1a73eee",
+    "bytes": 4185
+  },
+  "Workspace_r04_resource_stop_original": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/workspace-default-and-ssh-reconnect-20261103-r01/registry-real-crate-packet-r01/actual-r04/fresh-resource-after-actual-adoption-r02.json",
+    "sha256": "613bc23684568d97b07f785d524f1fb6c8cc0e6a64604786f82717cf70f02d13",
+    "bytes": 983
+  },
+  "Workspace_r04_archive_and_runtime_GO": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/temperature-fixture-test-only-source-review-20261103-r01/owned-old-source-archive-and-r04-runtime-GO.json",
+    "sha256": "a3ee9b23d867fb1ed9f91c34b52827c2c51451c356561dc9ff496a1a5e5250ca",
+    "bytes": 3840
+  },
+  "Workspace_r04_adaptive_resource_successor_GO": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/temperature-fixture-test-only-source-review-20261103-r01/r04-adaptive-resource-only-successor-GO-r02.json",
+    "sha256": "192799a0c9a0f1a82890ee3e63fce7c75c4709f3866140c0eac3d90cac46cb24",
+    "bytes": 1836
+  },
+  "repair_App_warm_manual_launch_continuation_prepared": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/repair-App-warm-continuation-20261103-r01/entry.json",
+    "sha256": "5e24739a3e853db74e974a0b42ec41a0dfd048f9252977c49d010f2b56915900",
+    "bytes": 6438
+  },
+  "Workspace_r04_actual_NoRun_started_jobs1": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/workspace-default-and-ssh-reconnect-20261103-r01/registry-real-crate-packet-r01/actual-r04/NoRun.started.json",
+    "sha256": "b825c566df27fd99b31c54399fe4a0374af83ba3887e5c9941538c18172c4be2",
+    "bytes": 3812
+  },
+  "Workspace_r04_new_program_Registry2_handover": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/workspace-default-and-ssh-reconnect-20261103-r01/registry-real-crate-packet-r01/actual-r04/newcut-NoRun-Registry2-and-program-handover.json",
+    "sha256": "61fd4230a40a9982a60be766a6e2eddf9cb19d25983941ca56b41fef7d6b1599",
+    "bytes": 10777
+  },
+  "EKO_r04_new_program9_real_HTTP_and_generation": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/eko-temperature-tests-continuation-20261103-r01/r04-new-program-nine-selectors-r01/新49b3程序九项真实验证9P交付入口.json",
+    "sha256": "20cdd0ed862c3a0f4641a08d0e919aa773f7c932a1675a899858d042e7f206bf",
+    "bytes": 38059
+  },
+  "Workspace_r04_final12_Clippy_and_MD_successor": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/workspace-default-and-ssh-reconnect-20261103-r01/registry-real-crate-packet-r01/actual-r04/r04-final-controlled-results-and-MD-successor.json",
+    "sha256": "6f7cefccf510700328888550133bee6bfa85294911b63d449a62514cc63914fb",
+    "bytes": 10278
+  },
+  "Workspace_r04_final12_Clippy_Root_actual_acceptance": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/temperature-fixture-test-only-source-review-20261103-r01/actual-r04-12-controlled-cases-and-Clippy-Root-accepted.json",
+    "sha256": "5530e77ff2fa9bf418cc575182e5acbc0688b824c0a8bf19c4c8b8728f1f30fd",
+    "bytes": 1450
+  },
+  "CLI_42a1_actualfresh_TCP_failure": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/cli-42a1-fresh-network-actual-r01/caller.json",
+    "sha256": "00d63e698567a3904c9f78a98598aa187a67166aee01d397e5ce46118d4539f2",
+    "bytes": 697
+  },
+  "CLI_joint38_finalSourceFinal_current_source_freeze": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/eko-temperature-workspace-42a1-joint-source-final-20261103-r01/final-current-source-freeze-r01/联合38最终SourceFinal与候选App源码冻结交付入口.json",
+    "sha256": "6838f206398c55b69d0f659b485e25d5ee959540bbe848a477467fa85822e9dc",
+    "bytes": 23266
+  },
+  "CLI_joint38_and_App_finalsource_Root_actual_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/temperature-fixture-test-only-source-review-20261103-r01/joint-final-and-finalApp-source-Root-accepted-20261104-r01.json",
+    "sha256": "42aedc608407613dc1aa28d1f350cd0238fbd8e51376ba204bb588cb19adaf19",
+    "bytes": 1806
+  },
+  "Workspace_registry_exact_official_clean": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.echo-semantic/local/workspace-default-and-ssh-reconnect-20261103-r01/registry-real-crate-packet-r01/actual-r04/official-clean-20261104-r01/Registry-packet-official-clean-实际交付入口.json",
+    "sha256": "9c62da7c21b70b4b2bc27ed1cb00a6ec4bd9fb5e9b4b2e8cc10525dc608ea821",
+    "bytes": 26517
+  },
+  "Workspace_registry_clean_Root_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/temperature-fixture-test-only-source-review-20261103-r01/Registry-packet-clean-Root-readback-20261104-r01.json",
+    "sha256": "71e290e47b8bf203129fb8ff35bafe4b7c9bafd1da483af8d92ce1c6f4e52422",
+    "bytes": 375
+  },
+  "repair_App_final_source_20261104": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/repair-App-warm-continuation-20261103-r01/final-source-20261104-r01/entry.json",
+    "sha256": "7c16541eda0099c0cdba670134736ece5b3da5293674a728ca9f383c099f1e2a",
+    "bytes": 4507
+  },
+  "repair_App_final_source_manifest_actual": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/repair-App-warm-continuation-20261103-r01/final-source-20261104-r01/finalSourceManifest.json",
+    "sha256": "6abe867d5cc1e3b3572b92a3215134308f5f7366fc3bce3fdcbd57b209b9e82f",
+    "bytes": 1036199
+  },
+  "repair_App_j1_resource_successor_preparation": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/repair-App-warm-continuation-20261103-r01/resource-j1-20261104-r01/entry.json",
+    "sha256": "721047e07235ee4bc338dbb7168d46eef5084d07862adc254d6f9e2da7141264",
+    "bytes": 5220
+  },
+  "repair_App_actual_conditional_build_GO": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/repair-App-warm-continuation-20261103-r01/Root-build-local-manual-repair-candidate-GO-20261104-r01.json",
+    "sha256": "2a5f95f25ec2c1b5da04029cdb4e62d410b053ca6cf47a3899c7b1b2812bf105",
+    "bytes": 6346
+  },
+  "Website_four_doc_candidate_location_wording_successor": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-website/.echo-semantic/local/website-repair-docs-candidate-20261103-r01/r02-location-wording/entry.json",
+    "sha256": "ace9f55c69628ef9367605833a8a4f8d7a5d187332b8c0312d3a6e6d3a40a860",
+    "bytes": 4330
+  },
+  "local_branch_convergence_71_to10_restore_verified": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/local-branch-convergence-20261104-r01/summary.json",
+    "sha256": "4d6e9e03d32287f8afd4aae66f431774a562d4efaab74ed1cde6dcdb9f7c17b3",
+    "bytes": 3304
+  },
+  "local_branch_cleanup_all61_restored_exact_tips": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/local-branch-convergence-20261104-r01/restore-all61-after-user-objection-20261104-r01/summary.json",
+    "sha256": "f2ec0be279a447b9cf9e17553b35e953615ba74e388224c0648e9aadef06b638",
+    "bytes": 8933
+  },
+  "local_branch_readonly_ancestry_and_patch_audit": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/local-branch-convergence-20261104-r01/readonly-merge-and-disk-audit-20261104-r01/merge-audit-summary.json",
+    "sha256": "2c661d51b9fbd0b86e32af79aaa6a5414ac84aa93e094f0247e18c0085b4a623",
+    "bytes": 43557
+  },
+  "local_branch17_source_audit_input": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/local-branch-convergence-20261104-r01/readonly-merge-and-disk-audit-20261104-r01/17-unproven-branch-source-review-entry.json",
+    "sha256": "db88df36c256387c7e39f1d808fae5922f085d4eb02fe22ead96c12d86a98903",
+    "bytes": 175088
+  },
+  "workspace_local_disk_readonly_sizes": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/local-branch-convergence-20261104-r01/readonly-merge-and-disk-audit-20261104-r01/workspace-local-du-summary.json",
+    "sha256": "f27409ccd313e1f010b3ccc5c0be0af021ee22f7661e236dd25e0aeee7f8d7e4",
+    "bytes": 19846
+  },
+  "framework_local_disk_readonly_sizes": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/local-branch-convergence-20261104-r01/readonly-merge-and-disk-audit-20261104-r01/framework-local-du-summary.json",
+    "sha256": "a6da5f29ba9750ed90820f792d32f464184902119fa380653cf41b64909942e1",
+    "bytes": 9052
+  },
+  "cli_local_disk_readonly_sizes": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/local-branch-convergence-20261104-r01/readonly-merge-and-disk-audit-20261104-r01/cli-local-du-summary.json",
+    "sha256": "8a08434945a4e21aa3bb8aebb249fa1f79a88462e7ef1cf7c426427d426f5a13",
+    "bytes": 28317
+  },
+  "sdk_local_disk_readonly_sizes": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/local-branch-convergence-20261104-r01/readonly-merge-and-disk-audit-20261104-r01/sdk-local-du-summary.json",
+    "sha256": "c1798c6fd3723d8ab63899e932f838f154088c47cd019f651b50aa334ee6352b",
+    "bytes": 10918
+  },
+  "tagged_target_presence_readonly_not_deletion": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/local-branch-convergence-20261104-r01/readonly-merge-and-disk-audit-20261104-r01/tagged-targets-readonly-sizes.json",
+    "sha256": "d22562836687d702b4b7a21df7bb98a8a1fa8be5d81a2adbc8b6166f675981d4",
+    "bytes": 3059
+  },
+  "repair_App_abdd_actual_final_artifact": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/repair-App-warm-continuation-20261103-r01/epoch-01/entry.json",
+    "sha256": "24066ebc198a3bd99175d6cf246d349a664badabb50ad0d26e50e64a02d551bd",
+    "bytes": 9967
+  },
+  "repair_App_abdd_Root_actual12663_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/repair-App-final-Root-acceptance-20261104-r01/acceptance.json",
+    "sha256": "ef81d3be46eff22cafcc435350830ded15b7d981c452ee3d9bf3b7b7a199ac60",
+    "bytes": 958
+  },
+  "GUI_manual_checklist_before_abdd_ready": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/repair-App-final-Root-acceptance-20261104-r01/manual-checklist-before-abdd-ready.md",
+    "sha256": "55923c00540386b9d6829b89aef952837da99b6faf78031cfad6d52731e20df2",
+    "bytes": 25293
+  },
+  "GUI_manual_checklist_abdd_ready_delta": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/new-coordinator-20261102-r01/repair-App-final-Root-acceptance-20261104-r01/manual-checklist-abdd-ready-delta.json",
+    "sha256": "39a7e40c40ca5ea0b8cf28e0fd620c1df34c82b2af2a92241071a96749870522",
+    "bytes": 856
+  },
+  "maintenance_20261104_initial_state": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/initial-state.json",
+    "sha256": "c74e4f55817d9b6f95f2e97c258c7f98132e61a0ad058e05f44b60dd1f5785dd",
+    "bytes": 28873
+  },
+  "maintenance_13_session_archive_before": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/session-archive-before.json",
+    "sha256": "3f495970d8c3b754c3192d02abfa789e1b7ece7c02db494937d057b9edd6ddf5",
+    "bytes": 19964
+  },
+  "maintenance_13_session_archive_actual": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/session-archive-results.json",
+    "sha256": "632dc1d0783a817364c1951df40bb2208544c0aed3686883d6ffbaad5ed4f4f9",
+    "bytes": 4355
+  },
+  "maintenance_reviewed59_heads_plan": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/reviewed59-branch-cleanup-plan.json",
+    "sha256": "47852ef585ada13d1f8b9c1b73059b234ec74c426ed3f3810e9c223cc5031a9c",
+    "bytes": 23090
+  },
+  "maintenance_reviewed59_heads_actual": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/reviewed59-branch-cleanup-actual-results.json",
+    "sha256": "81b21030fe9c0e45abb1518706c1d853dee9999b61d1eb4be63d5dc0c08bfd5d",
+    "bytes": 5434
+  },
+  "maintenance_exact3_targets_preserved_plan": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/three-proven-target-cleanup-plan.json",
+    "sha256": "a42a10c4041794139bb173168e9a0f580fcf1f808bc22bf2212b25bb963f5de2",
+    "bytes": 4159
+  },
+  "maintenance_exact3_targets_official_clean_actual": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/three-target-cleanup-actual-results.json",
+    "sha256": "1232fdfd82a8e8a71576c720588ba4988b41059e4fcc502fffdd994a03615371",
+    "bytes": 4295
+  },
+  "maintenance_node_candidates_no_deletion": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/exact-duplicate-node-modules-cleanup-plan.json",
+    "sha256": "f856575dc82009f512f72511d409e86c6010d42e5c129193dda17e11de32912a",
+    "bytes": 4303
+  },
+  "maintenance_final_state_readback": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/final-independent-state-readback.json",
+    "sha256": "74f3d227f55d3b47dcf517588c0281efc40e99c7038291444fdc440ab327cfdd",
+    "bytes": 738
+  },
+  "maintenance_current_summary": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/maintenance-summary-current.json",
+    "sha256": "fd90a630b5f2e21f30afa36c3f6a9f91716738df661cb44cd69547293e14078c",
+    "bytes": 1683
+  },
+  "validation_20261104_new_coordinator_source_input": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-coordinator-transfer-20261104-r01/transfer-source-state.json",
+    "sha256": "f5549e331d89eb351a4848b44ee00bb7937960c2983a0583589dd62628907c53",
+    "bytes": 8245
+  },
+  "validation_20261104_new_coordinator_active_ack": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-coordinator-transfer-20261104-r01/new-coordinator-ack.json",
+    "sha256": "85f9e00d9984ac38e749e10f809130df0263705992c6ced484588794e84f23e7",
+    "bytes": 13985
+  },
+  "validation_20261104_old_root_actual_ack_acceptance": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-coordinator-transfer-20261104-r01/old-root-accepted-new-active-goal.json",
+    "sha256": "cd4d64db954cdb72e3b12f552ffafe14c9a8935fa21af35c23570ac43fd9870f",
+    "bytes": 1822
+  },
+  "remaining_validation_data_full_readonly_scan": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/remaining-data-file-types-and-large-items-readonly.json",
+    "sha256": "beeaf637cfdc087e0e0b257a2e4581bd36bdea975d60e4da9127feea0dc8cf52",
+    "bytes": 44760
+  },
+  "remaining_validation_large_files_exact_duplicates": {
+    "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/remaining-large-files-exact-byte-duplicates-readonly.json",
+    "sha256": "d77b3beec265445a533ebe05546661052ac4ba0e6885e6942f278ffbeb93807f",
+    "bytes": 6648
+  }
+}

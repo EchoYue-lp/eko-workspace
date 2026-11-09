@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">EchoLeap · 参考布偶猫的矢量卡通肖像</title>
+  <desc id="desc">依据用户照片的侧转角度、左右耳朵朝向、棕色重点毛、白色鼻梁和蓝色大圆瞳简化绘制。天蓝底色，全部为矢量形状，无嵌入照片。</desc>
+  <defs>
+    <linearGradient id="fur" x1="258" y1="160" x2="270" y2="485" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFCF5"/><stop offset="1" stop-color="#F0E9DC"/></linearGradient>
+    <linearGradient id="points" x1="284" y1="163" x2="284" y2="391" gradientUnits="userSpaceOnUse"><stop stop-color="#B4A18B"/><stop offset=".6" stop-color="#C8B9A2"/><stop offset="1" stop-color="#DDD0BC"/></linearGradient>
+    <linearGradient id="ear" x1="160" y1="53" x2="200" y2="225" gradientUnits="userSpaceOnUse"><stop stop-color="#3E302A"/><stop offset="1" stop-color="#8A7560"/></linearGradient>
+    <linearGradient id="eye" x1="0" y1="-29" x2="0" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#365C7A"/><stop offset=".55" stop-color="#6095BA"/><stop offset="1" stop-color="#8CC1DF"/></linearGradient>
+    <linearGradient id="left-patch" x1="231" y1="248" x2="216" y2="369" gradientUnits="userSpaceOnUse"><stop stop-color="#6F5844"/><stop offset=".65" stop-color="#65513F"/><stop offset="1" stop-color="#94816A"/></linearGradient>
+    <linearGradient id="right-patch" x1="383" y1="265" x2="383" y2="360" gradientUnits="userSpaceOnUse"><stop stop-color="#77604B"/><stop offset="1" stop-color="#8F7A63"/></linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="224" fill="#8CD0F2"/>
+  <g transform="translate(28 16) scale(1.7872340426)">
+    <!-- 姿态沿参考照片，左耳更直、右耳向外，避免镜像通用猫脸。 -->
+    <path d="M121 218C108 181 108 125 122 73C128 50 138 33 150 37C179 46 213 91 236 145L214 218Z" fill="url(#ear)"/>
+    <path d="M349 179C370 139 428 109 481 99C492 97 493 102 486 113C465 147 436 176 408 205Z" fill="#493A30"/>
+    <path d="M144 66C129 110 130 155 140 183L206 163C188 126 166 90 144 66Z" fill="#9D8B77"/>
+    <path d="M376 170C400 143 440 120 474 113C452 138 428 162 406 180Z" fill="#AC9B86"/>
+
+    <!-- 浅色外层脸毛保留照片中左宽右窄、下颌饱满的轮廓。 -->
+    <path d="M224 144C193 137 160 148 134 172C108 190 92 215 82 244C71 262 66 285 69 304C58 316 57 334 66 346C58 359 63 377 77 385C72 400 82 415 99 422C101 438 119 451 140 452C157 469 181 476 205 475C236 489 269 495 301 492C329 498 358 489 377 479C402 476 422 462 432 444C449 436 459 421 459 404C475 391 480 372 471 358C482 337 477 315 466 301C470 273 461 241 448 217C433 188 408 163 376 153C333 130 272 128 224 144Z" fill="url(#fur)"/>
+
+    <!-- 奶油色面部与深棕眼罩分层，不将整张脸切成两块灰色。 -->
+    <path d="M223 151C193 150 166 164 145 188C126 210 113 238 112 268C103 290 107 315 121 332C136 360 164 379 197 383C232 394 274 390 302 377L369 379C400 376 423 359 436 334C449 308 451 277 440 252C431 225 410 201 386 181C343 148 278 135 223 151Z" fill="url(#points)"/>
+    <path d="M252 149C270 154 287 171 295 189C301 172 312 161 324 152C298 145 275 144 252 149Z" fill="#95816A" opacity=".2"/>
+    <path d="M282 218C266 236 255 251 237 254C211 250 187 261 174 284C158 306 159 334 177 351C196 368 225 361 251 348C273 336 287 313 291 286C296 259 291 236 282 218Z" fill="url(#left-patch)"/>
+    <path d="M363 266C380 254 399 261 412 279C425 300 416 326 401 343C387 359 369 358 359 344C348 326 348 285 363 266Z" fill="url(#right-patch)"/>
+
+    <!-- 白斑沿真实额头和鼻梁的位置展开，口鼻为宽短的两团白毛。 -->
+    <path d="M321 179C318 193 310 204 305 218C294 236 288 254 288 274C289 301 280 327 264 342C250 352 235 357 220 362C208 372 203 390 213 406C230 431 265 449 301 453C324 459 350 451 367 439C389 433 403 417 404 400C413 388 405 372 395 366C380 359 368 351 361 337C354 322 353 307 355 293C362 276 362 255 355 239C349 223 340 213 332 208C329 197 325 187 321 179Z" fill="#FFFEF9"/>
+    <path d="M145 361C164 371 186 371 209 366C217 384 228 402 247 416C263 428 284 436 304 438C338 442 366 430 387 411C399 398 405 384 405 372C424 379 439 391 444 408C442 431 417 451 390 459C366 476 336 485 307 481C276 487 244 480 219 468C195 469 172 458 160 443C142 441 127 428 128 413C115 402 114 388 125 378Z" fill="#FFFEF9"/>
+
+    <!-- 照片里的眼睛是蓝色虹膜环绕大圆瞳，左右有真实的透视差。 -->
+    <g transform="translate(242 295) rotate(-3)">
+      <path d="M-33-5C-28-29-1-37 20-22C35-12 36 8 21 24C4 39-26 27-33 7Z" fill="#493C34"/>
+      <ellipse cx="1" cy="2" rx="27" ry="28" fill="url(#eye)"/>
+      <ellipse cx="2" cy="-1" rx="20" ry="23" fill="#2E2830"/>
+      <path d="M-19 13C-9 30 11 31 23 14" stroke="#96C6E3" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M-9-19C-3-23 4-23 10-20" stroke="#F6FAFC" stroke-width="2.7" stroke-linecap="round"/>
+      <circle cx="-12" cy="-16" r="2.8" fill="white"/>
+    </g>
+    <g transform="translate(367 306) rotate(9)">
+      <path d="M-28-4C-25-25-3-33 17-23C30-16 32 4 22 18C9 33-16 28-26 13Z" fill="#4B3D33"/>
+      <ellipse cx="1" cy="1" rx="24" ry="25" fill="url(#eye)"/>
+      <ellipse cx="2" cy="-2" rx="18" ry="21" fill="#2D282C"/>
+      <path d="M-17 11C-9 26 9 28 21 13" stroke="#91C2DF" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M-8-17C-3-21 4-22 10-20" stroke="#F6FAFC" stroke-width="2.3" stroke-linecap="round"/>
+    </g>
+
+    <!-- 保留粉鼻和小口，不再画尖长的犬科口鼻。 -->
+    <path d="M274 392C282 380 298 377 312 384C327 376 343 381 350 393C356 409 343 422 328 423C321 427 307 427 298 423C281 424 268 409 274 392Z" fill="#FFFEFC"/>
+    <path d="M295 373C305 369 320 369 329 373C332 378 326 383 320 387L314 397C308 394 308 389 304 386C296 382 291 378 295 373Z" fill="#D5A0A2"/>
+    <path d="M298 375C306 373 319 373 325 376" stroke="#EABAB7" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M314 397L314 409C308 413 302 414 298 411M314 409C319 413 326 414 332 410" stroke="#9A8C81" stroke-width="2" stroke-linecap="round"/>
+    <path d="M307 426Q317 430 328 426" stroke="#E0D8CD" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- 长毛只保留方向性的少量短笔触，五官与毛色轮廓仍是主识别。 -->
+    <g stroke="#EEE5D5" stroke-width="3.4" stroke-linecap="round">
+      <path d="M142 122Q151 151 173 167M151 110Q163 140 183 154M174 132Q189 154 204 162M402 157Q427 142 450 133M395 168Q421 156 435 145"/>
+      <path d="M152 221Q173 204 193 203M137 241Q155 228 174 225M408 237Q423 249 429 261M121 339Q133 351 151 355M145 401Q158 414 173 418M173 432Q186 442 203 444M369 445Q384 440 393 433M411 398Q424 387 429 374"/>
+    </g>
+    <g stroke="#A38C74" stroke-width="2.2" stroke-linecap="round" opacity=".65">
+      <path d="M203 174Q218 189 222 207M216 172Q231 188 235 201M368 195Q376 208 379 219M168 291Q173 279 182 274M411 303Q414 314 408 325"/>
+    </g>
+    <g stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" opacity=".9">
+      <path d="M276 388C245 380 211 377 180 380M274 398C237 396 204 402 176 411M279 409C250 419 226 434 211 446"/>
+      <path d="M345 391C373 385 400 385 424 388M347 403C379 404 406 409 432 420M343 414C369 422 390 433 406 444"/>
+    </g>
+  </g>
+</svg>

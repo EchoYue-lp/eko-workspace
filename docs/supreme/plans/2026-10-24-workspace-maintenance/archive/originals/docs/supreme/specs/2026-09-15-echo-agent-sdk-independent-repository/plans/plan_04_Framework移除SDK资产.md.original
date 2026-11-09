@@ -1,0 +1,118 @@
+---
+schema_version: 4
+slug: echo-agent-sdk-independent-repository/framework-extraction
+outcome:
+  summary: echo-agent 删除迁出的 SDK 实现与门禁，保留通用 ACP/runtime 权威和指向新仓库的正式边界，并将任务分支交付到远端。
+  acceptance:
+    - echo-agent Cargo workspace、README、双语架构文档、AGENTS 和 learning documentation
+      contract 不再把 echo-sdk-protocol/echo-sdk-host 作为 framework workspace
+      member；通用 ACP adapter 仍可独立编译。
+    - echo-agent 中不存在活跃的 SDK Host、protocol、contracts/sdk、sdks、docs/sdk、SDK
+      generator、language SDK CI 或 SDK 专属正式文档第二事实源；所有相关删除路径均有可追溯的 replacement
+      与回滚证据。
+    - framework extraction 任务分支通过适用的 Rust formatter、lint、test、no-default/feature
+      matrix、文档和 semantic gates，并已提交推送；SDK source-continuity commit
+      b80cf068b2fb69b62913f23260980b4ce2ebf941 同时保全 ea21dfc 导入与
+      echo-agent@c5f7688 SDK-owned 历史。
+    - task-scoped semantic change-evidence 的 extraction-specific checks、strict
+      snapshot、replacement/before-revision、工程门禁和独立 review 全部通过；仓库级 verifier
+      仅保留基线已有且与本切片无关的 unresolved/needs_review backlog，并已在 verification Evidence
+      中记录。
+out_of_scope:
+  - 修改 echo-agent-sdk 的 protocol 依赖、accepted external contract、生成物、Host、三语言实现或
+    SDK CI。
+  - 在本结果中更新 echo-agent-cli、echo-website 或 lp-agent/.gitmodules。
+  - 改变 echo_agent ACP、EventEnvelope、Turn、Task、Subagent、取消、恢复或持久化语义。
+  - 删除 framework 的通用 ACP adapter、learning package 或仍被 framework 文档和示例使用的通用协议实现。
+design_ref: docs/supreme/specs/2026-09-15-echo-agent-sdk-independent-repository/design.md
+design_sections:
+  - ref: design.md § 目标行为
+    digest: sha256:92ae576059568ae7b1883f2600e9d314e3bb1d509ce0e0db41f13276e21e43fc
+  - ref: design.md § 范围
+    digest: sha256:b95a8097a6dea40ad44003a7ef1743d0b7fd0ef486100cdd218ea1b7083c7ae5
+  - ref: design.md § 系统边界
+    digest: sha256:58a74239562555c3a7101650be426afbfe6a93c3bf139b2c8b48630abe500cb8
+  - ref: design.md § 分层与事实权威
+    digest: sha256:4c31df4d9543ca16db861326f8aa93451c40a99b9f1c81ff94cb02d11c6945f5
+  - ref: design.md § 文档、ADR 与历史归属
+    digest: sha256:5d72a7c5ab1b196d6888a243ded7db1e4befd920b087dc075ce20770f0fcb408
+  - ref: design.md § CI 与门禁边界
+    digest: sha256:0e9e818db60b1e1271a351c66bc28171dd12780cef39d40d9d08f10524f620a5
+  - ref: design.md § 异常与边界场景
+    digest: sha256:bbefb154cb0733f3118a4e98fdd5c1e6ea26dd3188c2d05f6b41afacf2ac66d8
+  - ref: design.md § 复用与实现约束
+    digest: sha256:8433d41a70261b3933bd3eaf06b02eaa1311bd2658f5021367caddb296aec4c6
+  - ref: design.md § 验收标准
+    digest: sha256:7c463a2e8f5d63c3906fbc73bf8c97e5081a473fc3c49c863e600b66d7c1a367
+delivery_ref: docs/supreme/specs/2026-09-15-echo-agent-sdk-independent-repository/plans/delivery-map.md#framework-sdk-extraction
+todos:
+  - id: freeze-framework-replacement-boundary
+    summary: 建立 extraction 任务 worktree，冻结当前 echo-agent main 与已推送 SDK
+      source-continuity commit，并登记受控删除范围、保留的 ACP/runtime replacement 和回滚点。
+    files:
+      - echo-agent-worktrees/extract-sdk-from-framework/.echo-semantic/
+      - echo-agent-worktrees/extract-sdk-from-framework/.echo-semantic/assets/
+      - echo-agent-worktrees/extract-sdk-from-framework/.echo-semantic/findings/
+      - echo-agent-worktrees/extract-sdk-from-framework/.echo-semantic/evidence/
+    acceptance:
+      - preflight、design/ADR authority、repair reference、delete paths、framework
+        c5f7688 和 SDK b80cf06 source/remote SHA 均可复核，原 echo-agent 与
+        echo-agent-sdk 工作树不被修改。
+  - id: remove-sdk-workspace-assets
+    summary: 从 echo-agent workspace 删除
+      echo-sdk-protocol、echo-sdk-host、contracts/sdk、sdks 和 docs/sdk，并从
+      scripts、learning contract 与 root manifests 移除 SDK 专属入口。
+    files:
+      - Cargo.toml
+      - Cargo.lock
+      - echo-sdk-protocol/
+      - echo-sdk-host/
+      - contracts/sdk/
+      - sdks/
+      - docs/sdk/
+      - scripts/check-sdk-contracts.sh
+      - scripts/check-language-sdks.sh
+      - scripts/export-language-sdk-catalog.sh
+      - echo-agent-learning/tests/documentation_contract.rs
+    acceptance:
+      - Cargo metadata 只列 framework/runtime 与 learning package；删除路径不再被活跃
+        source、registration、test 或 script 引用，通用 ACP adapter 和 learning examples
+        保持可用。
+  - id: separate-framework-ci-and-docs
+    summary: 将 root AGENTS、README、双语架构/生命周期文档、SDK ADR 指引、examples contract 和 GitHub
+      workflow 收敛为 framework-only 事实源，并以独立 SDK 仓库链接替代 package member 描述。
+    files:
+      - AGENTS.md
+      - README.md
+      - README.zh.md
+      - docs/adr/0028-source-first-multilanguage-sdk-runtime.md
+      - docs/adr/0031-sdk-identity-governance-scope.md
+      - docs/adr/0032-sdk-contract-scope-classification.md
+      - docs/en/architecture.md
+      - docs/zh/architecture.md
+      - docs/en/lifecycles.md
+      - docs/zh/lifecycles.md
+      - .github/workflows/rust-ci.yml
+      - echo-agent-learning/tests/documentation_contract.rs
+    acceptance:
+      - framework 文档只描述 framework ACP boundary 和外部 SDK consumer link；SDK 专属 ADR
+        正文只在新仓维护，framework 仅保留 superseded/ownership 指引；CI 不运行 SDK
+        language/contract 工具链，双语链接与 topology contract 通过。
+  - id: verify-and-deliver-framework-extraction
+    summary: 完成 framework extraction 的语义连续性、工程门禁、review、commit 和远端推送，保留冻结 SDK commit
+      与删除前后的回滚证据。
+    files:
+      - .echo-semantic/
+      - AGENTS.md
+      - Cargo.toml
+      - Cargo.lock
+      - .github/workflows/
+      - README.md
+      - README.zh.md
+      - docs/
+      - echo-agent-learning/tests/
+    acceptance:
+      - 所有适用命令零失败、零警告、零格式差异；任务分支 commit 使用关闭 GPG 签名方式并推送，远端 SHA 可复核。
+artifact_id: plan:21ddd1a1-4338-49cb-9161-ffc9c2607aa0
+lifecycle: completed
+---

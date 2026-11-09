@@ -1,0 +1,307 @@
+{
+ "schemaVersion": 1,
+ "at": "2026-11-04T06:34:15+00:00",
+ "kind": "current-proof-index",
+ "note": "每条在写入时即时计算哈希；verifyNow 表示写入瞬间存在且哈希可算，不代表业务结论已被复核。 注意：SDK 条目取的是 origin/main（747be93）树内的副本，与本地 main（83ae59e）是分叉的两条线，见 validation-stage-sdk-lineage-audit-20261104-r01。",
+ "repos": {
+  "echo-agent": {
+   "head": "91797fed1462ad9668956ddcf038998bc8353a84",
+   "dirtyPaths": 0,
+   "statusBytes": 0
+  },
+  "echo-agent-cli": {
+   "head": "20070d3f7171a95926bdd5c8153f5f382767fea2",
+   "dirtyPaths": 48,
+   "statusBytes": 2353
+  },
+  "echo-agent-sdk": {
+   "head": "83ae59e407313d7130811478a74646865d9e8bd3",
+   "dirtyPaths": 0,
+   "statusBytes": 0
+  },
+  "echo-website": {
+   "head": "817eaa48ff8c8c6c32dc4ff576d70da0b9e7d2e8",
+   "dirtyPaths": 0,
+   "statusBytes": 0
+  }
+ },
+ "entries": [
+  {
+   "key": "cli.lock",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/Cargo.lock",
+   "rel": "echo-agent-cli/Cargo.lock",
+   "meaning": "CLI 当前正式锁（768 包）",
+   "bytes": 200066,
+   "sha256": "d542c37ea3d32ca9a8064f0ef473fa3e2fd7175c0576c8e97d4564db09ed39e1",
+   "exists": true
+  },
+  {
+   "key": "cli.riskPolicy",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-cli/.cargo/accepted-dependency-risks.json",
+   "rel": "echo-agent-cli/.cargo/accepted-dependency-risks.json",
+   "meaning": "CLI 已接受五项依赖风险策略（当前字节）",
+   "bytes": 1796,
+   "sha256": "2028fdc16ebc07c0d29ae6aa9c5a6902eed61b03360760d4a14a980aa0a751be",
+   "exists": true
+  },
+  {
+   "key": "cli.controls8",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-cli-controls8-20261104-r01/settlement.json",
+   "rel": ".echo-semantic/local/validation-stage-cli-controls8-20261104-r01/settlement.json",
+   "meaning": "当前 policy 上 8 项本地控制 8/8 通过",
+   "bytes": 1807,
+   "sha256": "c5380f4cad1c0f4a4f04ef30b8eb9adace6ec6bf21e4343ece8a196dbe529518",
+   "exists": true
+  },
+  {
+   "key": "cli.controls8.raw",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-cli-controls8-20261104-r01/controls8.raw.log",
+   "rel": ".echo-semantic/local/validation-stage-cli-controls8-20261104-r01/controls8.raw.log",
+   "meaning": "controls8 原始输出",
+   "bytes": 1354,
+   "sha256": "65a8e7a4a855e1edae2bd2107c378253f387451ac03ef6a5e5d96cc3ca5d98d2",
+   "exists": true
+  },
+  {
+   "key": "sdk.lock",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/Cargo.lock",
+   "rel": "echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/Cargo.lock",
+   "meaning": "SDK origin/main 747be93 的锁（非本地 main 线）",
+   "bytes": 171858,
+   "sha256": "c4488065aa4a94a8a073e427aeddfefe7670d93b709b82555b39f2431954e1c7",
+   "exists": true
+  },
+  {
+   "key": "sdk.acceptedExternal",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/contracts/sdk/accepted-external-contract.json",
+   "rel": "echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/contracts/sdk/accepted-external-contract.json",
+   "meaning": "origin/main 的已接受外部合同（10126202B，合同门禁校验项）",
+   "bytes": 10126202,
+   "sha256": "372c8e018c5408bd590a46387f0e2898c360901ce3805228c5e9824a008ca615",
+   "exists": true
+  },
+  {
+   "key": "sdk.facadeCatalog",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/contracts/sdk/accepted-facade-operation-catalog.json",
+   "rel": "echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/contracts/sdk/accepted-facade-operation-catalog.json",
+   "meaning": "origin/main 的已接受 facade 操作目录（合同门禁校验项）",
+   "bytes": 611485,
+   "sha256": "7383897bff8dcdc8490cbd81b51f78c935a4523f54ebfd835ca927a988f08357",
+   "exists": true
+  },
+  {
+   "key": "sdk.parityManifest",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/contracts/sdk/parity-manifest.json",
+   "rel": "echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/contracts/sdk/parity-manifest.json",
+   "meaning": "parity 清单（38511556B）",
+   "bytes": 38511556,
+   "sha256": "dce04ebc9a93e9f2a10f6f3456945185305ebbf61129c5adfd239910a47c2521",
+   "exists": true
+  },
+  {
+   "key": "sdk.publicApi",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/contracts/sdk/public-api.txt",
+   "rel": "echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/contracts/sdk/public-api.txt",
+   "meaning": "public API 快照（19205567B，rustdoc 校验项）",
+   "bytes": 19205567,
+   "sha256": "b00b0cccd6228c5e0ae73b708f084e3dece7adfcd9c6a122db544ba1278e9b23",
+   "exists": true
+  },
+  {
+   "key": "sdk.contract.settlement",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/sdk-native-main747-contract-window-20261104-r01/settlement.json",
+   "rel": ".echo-semantic/local/sdk-native-main747-contract-window-20261104-r01/settlement.json",
+   "meaning": "完整已接受合同原入口实跑：自然 0、135 阻断产物 current、145 测试通过",
+   "bytes": 5215,
+   "sha256": "732f9b0d084e520fa01ee494a141e5031c2519939d23eb0959264c50201dab17",
+   "exists": true
+  },
+  {
+   "key": "sdk.contract.raw",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/sdk-native-main747-contract-window-20261104-r01/contract-window.raw.log",
+   "rel": ".echo-semantic/local/sdk-native-main747-contract-window-20261104-r01/contract-window.raw.log",
+   "meaning": "合同门禁原始输出（SHA d1376470…）",
+   "bytes": 17311,
+   "sha256": "d1376470c6902294269eed8dd1294507d60d5e236ed1b372c41038e263fd5245",
+   "exists": true
+  },
+  {
+   "key": "sdk.conditional.settlement",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/sdk-native-main747-conditional-features-20261104-r01/settlement.json",
+   "rel": ".echo-semantic/local/sdk-native-main747-conditional-features-20261104-r01/settlement.json",
+   "meaning": "7 个条件 feature profile 全 0、实跑 200 测试",
+   "bytes": 5523,
+   "sha256": "b9585799cd4936064eeceec4a8859419a3c928155fbeed8ac0b76ad5b7fa2b28",
+   "exists": true
+  },
+  {
+   "key": "sdk.conditional.summary",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/sdk-native-main747-conditional-features-20261104-r01/summary.json",
+   "rel": ".echo-semantic/local/sdk-native-main747-conditional-features-20261104-r01/summary.json",
+   "meaning": "条件矩阵逐步退出码与日志哈希",
+   "bytes": 9208,
+   "sha256": "736179ef7b999981b2c0d479b7ac31802580a1a87aa771e74bd8acb610525f86",
+   "exists": true
+  },
+  {
+   "key": "sdk.stable.01",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/.echo-semantic/local/sdk-native-main747-engineering-r01/stable-window-r01/01-format-write.caller.json",
+   "rel": "echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/.echo-semantic/local/sdk-native-main747-engineering-r01/stable-window-r01/01-format-write.caller.json",
+   "meaning": "stable 窗口 01 fmt 写入",
+   "bytes": 820,
+   "sha256": "30ff38e90117a838b97cfa24fdb851a5bf0a07b94c6b6c1b47faed4cce24802f",
+   "exists": true
+  },
+  {
+   "key": "sdk.stable.02",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/.echo-semantic/local/sdk-native-main747-engineering-r01/stable-window-r01/02-format-check.caller.json",
+   "rel": "echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/.echo-semantic/local/sdk-native-main747-engineering-r01/stable-window-r01/02-format-check.caller.json",
+   "meaning": "stable 窗口 02 fmt 检查",
+   "bytes": 845,
+   "sha256": "dac1a024c32e546c4578ea86d28fd89fadbd7107c42c519a01d94c2996287263",
+   "exists": true
+  },
+  {
+   "key": "sdk.stable.03",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/.echo-semantic/local/sdk-native-main747-engineering-r01/stable-window-r01/03-featureless-library.caller.json",
+   "rel": "echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/.echo-semantic/local/sdk-native-main747-engineering-r01/stable-window-r01/03-featureless-library.caller.json",
+   "meaning": "stable 窗口 03 无 feature 库编译",
+   "bytes": 923,
+   "sha256": "6db5919369d0205df549f1eaeaf71559e35e92b9babd1e012f738057ee73a9b5",
+   "exists": true
+  },
+  {
+   "key": "sdk.stable.04",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/.echo-semantic/local/sdk-native-main747-engineering-r01/stable-window-r01/04-strict-clippy.caller.json",
+   "rel": "echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/.echo-semantic/local/sdk-native-main747-engineering-r01/stable-window-r01/04-strict-clippy.caller.json",
+   "meaning": "stable 窗口 04 严格 clippy（-D warnings 等）",
+   "bytes": 951,
+   "sha256": "8ca7e5f1e1f1984caf0d29b1417903bbf9847e6a24e86dea5b95b5e5d9040d9f",
+   "exists": true
+  },
+  {
+   "key": "sdk.stable.05",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/.echo-semantic/local/sdk-native-main747-engineering-r01/stable-window-r01/05-workspace-all-targets-all-features.caller.json",
+   "rel": "echo-agent-sdk/.echo-semantic/local/sdk-native-stagea837-formal83-threeway-candidate-20261101-r01/receiving-main747-source/.echo-semantic/local/sdk-native-main747-engineering-r01/stable-window-r01/05-workspace-all-targets-all-features.caller.json",
+   "meaning": "stable 窗口 05 全 workspace 全 targets 全 features",
+   "bytes": 989,
+   "sha256": "2a63a7cb49da911716c1de160a6d19166abd0e8f3c6668fae54f745439b8d60c",
+   "exists": true
+  },
+  {
+   "key": "app.entry",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/repair-App-warm-continuation-20261103-r01/epoch-01/entry.json",
+   "rel": ".echo-semantic/local/repair-App-warm-continuation-20261103-r01/epoch-01/entry.json",
+   "meaning": "abdd App 构建与保全总回执",
+   "bytes": 9967,
+   "sha256": "24066ebc198a3bd99175d6cf246d349a664badabb50ad0d26e50e64a02d551bd",
+   "exists": true
+  },
+  {
+   "key": "app.ready",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/repair-App-warm-continuation-20261103-r01/epoch-01/evidence/ready.json",
+   "rel": ".echo-semantic/local/repair-App-warm-continuation-20261103-r01/epoch-01/evidence/ready.json",
+   "meaning": "手验入口钉定的 ready 状态（launcher 校验其哈希）",
+   "bytes": 2617,
+   "sha256": "17f949cbb918490cac42a4b9d2d45f4d9561f36d6b15edef5c58ad2e336e64af",
+   "exists": true
+  },
+  {
+   "key": "app.binary",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/repair-App-warm-continuation-20261103-r01/epoch-01/retained/Eclip.app/Contents/MacOS/echo-agent-tauri",
+   "rel": ".echo-semantic/local/repair-App-warm-continuation-20261103-r01/epoch-01/retained/Eclip.app/Contents/MacOS/echo-agent-tauri",
+   "meaning": "交付 App 主二进制（abdd3fac…）",
+   "bytes": 176890208,
+   "sha256": "abdd3faca00815c93d73c84c86956d97732e5814994b9d6e8acdc25037b020a3",
+   "exists": true
+  },
+  {
+   "key": "app.launcher",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/repair-App-warm-continuation-20261103-r01/epoch-01/启动修复版.command",
+   "rel": ".echo-semantic/local/repair-App-warm-continuation-20261103-r01/epoch-01/启动修复版.command",
+   "meaning": "用户双击入口（生成但从未执行）",
+   "bytes": 584,
+   "sha256": "37530130ff8dde0118d2d9f87941b6017184f113bae77e99976e33f4d7c1adc7",
+   "exists": true
+  },
+  {
+   "key": "app.sourceIdentity",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-app-source-identity-20261104-r01/settlement.json",
+   "rel": ".echo-semantic/local/validation-stage-app-source-identity-20261104-r01/settlement.json",
+   "meaning": "交付包构建源与当前工作树 3946/3946 同源",
+   "bytes": 4031,
+   "sha256": "7256cb0b16df0b38a00c4e835099d8c2ecc4af821a3939914640a223c21e89b7",
+   "exists": true
+  },
+  {
+   "key": "evidence.integrity",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-evidence-integrity-20261104-r01/settlement.json",
+   "rel": ".echo-semantic/local/validation-stage-evidence-integrity-20261104-r01/settlement.json",
+   "meaning": "交付前证据完整性审计（38143 绝对引用，0 未声明漂移）",
+   "bytes": 3081,
+   "sha256": "5fdbb8dc706c4d5ada982864db36c39e78d5ddf21ee3396a4c8d16d44178d08c",
+   "exists": true,
+   "refreshedAt": "2026-11-04 因补记“79 份不可解析 JSON 已判定”而重算该条"
+  },
+  {
+   "key": "evidence.integrity.raw",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-evidence-integrity-20261104-r01/result-v3.json",
+   "rel": ".echo-semantic/local/validation-stage-evidence-integrity-20261104-r01/result-v3.json",
+   "meaning": "审计逐条结果",
+   "bytes": 3863,
+   "sha256": "6d77ffcc153d605d43b443e17fb01ab2d9a96164f30d68a2b30e57d6d180bc2a",
+   "exists": true
+  },
+  {
+   "key": "cleanup.tierA.r01",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/tier-a-cache-removal-r01.json",
+   "rel": ".echo-semantic/local/validation-stage-maintenance-20261104-r01/tier-a-cache-removal-r01.json",
+   "meaning": "Tier A 两处旧 cargo home 删除回执",
+   "bytes": 565,
+   "sha256": "ab563318d14b0f0d40946230795e51948fed7fbecd300744a6d65528e2895f42",
+   "exists": true
+  },
+  {
+   "key": "cleanup.tierA.r02",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/validation-stage-maintenance-20261104-r01/tier-a-cache-removal-r02.json",
+   "rel": ".echo-semantic/local/validation-stage-maintenance-20261104-r01/tier-a-cache-removal-r02.json",
+   "meaning": "Tier A 另两处旧 owned cargo home 删除回执",
+   "bytes": 769,
+   "sha256": "b704ef548525cbebd09f351fb3879d3c868d1715aabc432a7e598bc5d619938a",
+   "exists": true
+  },
+  {
+   "key": "disk.report",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/docs/supreme/reports/remaining-validation-data-2026-11-04.md",
+   "rel": "docs/supreme/reports/remaining-validation-data-2026-11-04.md",
+   "meaning": "剩余资料组成/可重建性/删除后果的实测报告",
+   "bytes": 4922,
+   "sha256": "0883d09ca47533cf376e758219838a8686030533192ed1ecd4e47ae2d3f645dc",
+   "exists": true
+  },
+  {
+   "key": "acceptance.first4",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/docs/supreme/acceptance/eko-first-four-manual-cases-2026-11-04.md",
+   "rel": "docs/supreme/acceptance/eko-first-four-manual-cases-2026-11-04.md",
+   "meaning": "首批四项手验具名用例与真实预期",
+   "bytes": 9315,
+   "sha256": "86c596ad3d6f0e9e227119f8cb3757efd7d18605b649b387cfa2de8863855d71",
+   "exists": true,
+   "refreshedAt": "2026-11-04T06:23:36+00:00",
+   "refreshReason": "第 42 轮补「回报格式」：失败只需报编号＋看到的原文＋关键动作，并给出正确/旧包字节数用于核对是否拿错包"
+  },
+  {
+   "key": "acceptance.79",
+   "path": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/docs/supreme/acceptance/eko-eclip-gui-manual-checklist-2026-11-02.md",
+   "rel": "docs/supreme/acceptance/eko-eclip-gui-manual-checklist-2026-11-02.md",
+   "meaning": "79 项 GUI 手验清单",
+   "bytes": 26839,
+   "sha256": "728c9260a45dfa8dd34cf446614e734f35b3cf059d078447553a5325065fc24e",
+   "exists": true,
+   "refreshedAt": "2026-11-04T06:34:15+00:00",
+   "refreshReason": "第 48 轮 D 组加具名用例指引（D01–D05 可做，D06/D07 未做并写明原因）"
+  }
+ ],
+ "entryCount": 30,
+ "allExist": true
+}

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">EchoLeap · 布偶猫头像</title>
+  <desc id="desc">天蓝色圆角底上的蓝双色布偶猫头，宽楔形脸、灰色重点毛、倒V白脸、蓬松围脖和蓝色杏仁眼。</desc>
+  <defs>
+    <linearGradient id="sky" x1="512" y1="0" x2="512" y2="1024" gradientUnits="userSpaceOnUse"><stop stop-color="#A0DCFA"/><stop offset="1" stop-color="#7CC5EF"/></linearGradient>
+    <radialGradient id="fur" cx="0" cy="0" r="1" gradientTransform="translate(505 400) rotate(90) scale(410 390)" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF"/><stop offset=".6" stop-color="#FBFDFF"/><stop offset="1" stop-color="#DCE9EF"/></radialGradient>
+    <linearGradient id="earL" x1="287" y1="202" x2="363" y2="431" gradientUnits="userSpaceOnUse"><stop stop-color="#536574"/><stop offset=".5" stop-color="#788B99"/><stop offset="1" stop-color="#AABBC5"/></linearGradient>
+    <linearGradient id="earR" x1="737" y1="202" x2="661" y2="431" gradientUnits="userSpaceOnUse"><stop stop-color="#536574"/><stop offset=".5" stop-color="#788B99"/><stop offset="1" stop-color="#AABBC5"/></linearGradient>
+    <radialGradient id="maskL" cx="0" cy="0" r="1" gradientTransform="translate(375 382) rotate(64) scale(235 167)" gradientUnits="userSpaceOnUse"><stop stop-color="#7F91A0"/><stop offset=".62" stop-color="#9CAEBB"/><stop offset="1" stop-color="#C3D1D8"/></radialGradient>
+    <radialGradient id="maskR" cx="0" cy="0" r="1" gradientTransform="translate(649 382) rotate(116) scale(235 167)" gradientUnits="userSpaceOnUse"><stop stop-color="#7F91A0"/><stop offset=".62" stop-color="#9CAEBB"/><stop offset="1" stop-color="#C3D1D8"/></radialGradient>
+    <linearGradient id="iris" x1="0" y1="-40" x2="0" y2="31" gradientUnits="userSpaceOnUse"><stop stop-color="#235A95"/><stop offset=".4" stop-color="#478FC8"/><stop offset=".78" stop-color="#8BCDF1"/><stop offset="1" stop-color="#BBE8F8"/></linearGradient>
+    <linearGradient id="blaze" x1="512" y1="298" x2="512" y2="731" gradientUnits="userSpaceOnUse"><stop stop-color="#FDFEFF"/><stop offset=".6" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3F8FA"/></linearGradient>
+    <linearGradient id="muzzle" x1="512" y1="581" x2="512" y2="674" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E9F1F5"/></linearGradient>
+    <clipPath id="left-eye"><path d="M-61-5C-41-37 10-40 51-9C30 24-22 29-61-5Z"/></clipPath>
+    <clipPath id="right-eye"><path d="M61-5C41-37-10-40-51-9C-30 24 22 29 61-5Z"/></clipPath>
+    <filter id="head-shadow" x="-25%" y="-25%" width="150%" height="160%"><feDropShadow dx="0" dy="12" stdDeviation="13" flood-color="#3A749B" flood-opacity=".13"/></filter>
+  </defs>
+  <rect width="1024" height="1024" rx="224" fill="url(#sky)"/>
+
+  <g transform="translate(-102.4 -60) scale(1.2)" filter="url(#head-shadow)">
+    <!-- 深色耳尖、较宽耳根以及浅色内耳是布偶重点色的第一识别层。 -->
+    <path d="M292 440C269 395 257 300 270 214C272 193 277 183 287 187C325 209 382 270 411 337L394 429Z" fill="url(#earL)"/>
+    <path d="M732 440C755 395 767 300 754 214C752 193 747 183 737 187C699 209 642 270 613 337L630 429Z" fill="url(#earR)"/>
+    <path d="M289 224C282 280 292 339 308 369L371 340C352 300 320 254 289 224Z" fill="#BAC5CC"/>
+    <path d="M735 224C742 280 732 339 716 369L653 340C672 300 704 254 735 224Z" fill="#BAC5CC"/>
+    <path d="M295 267C300 298 310 319 324 337M309 273C320 303 334 321 345 331M731 267C726 298 716 319 702 337M717 273C706 303 692 321 681 331" stroke="#EAF1F4" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- 宽楔形脸与下垂的长毛脸颊，保持柔和的不对称毛束。 -->
+    <path d="M512 289C462 278 402 294 357 329C321 355 293 391 282 434C274 461 260 487 241 505C252 506 262 507 270 505C251 523 238 548 232 570C248 569 261 573 274 580C256 591 248 607 247 624C263 617 278 620 292 629C280 640 276 653 280 665C302 659 319 667 334 681C359 704 397 727 442 737C466 753 489 764 512 767C535 764 558 753 582 737C627 727 665 704 690 681C705 667 722 659 744 665C748 653 744 640 732 629C746 620 761 617 777 624C776 607 768 591 750 580C763 573 776 569 792 570C786 548 773 523 754 505C762 507 772 506 783 505C764 487 750 461 742 434C731 391 703 355 667 329C622 294 562 278 512 289Z" fill="url(#fur)"/>
+
+    <!-- 两片灰色面罩的内缘自然展开，留出从额头通往鼻梁的倒V白斑。 -->
+    <path d="M491 296C445 282 385 302 347 339C309 375 289 419 286 461C284 505 307 548 347 573C383 562 413 537 435 503C455 473 468 435 478 388C486 349 490 318 491 296Z" fill="url(#maskL)"/>
+    <path d="M533 296C579 282 639 302 677 339C715 375 735 419 738 461C740 505 717 548 677 573C641 562 611 537 589 503C569 473 556 435 546 388C538 349 534 318 533 296Z" fill="url(#maskR)"/>
+    <path d="M512 298C501 332 487 363 478 396C464 446 450 490 420 527C400 553 373 573 342 583C362 641 424 697 512 714C600 697 662 641 682 583C651 573 624 553 604 527C574 490 560 446 546 396C537 363 523 332 512 298Z" fill="url(#blaze)"/>
+
+    <!-- 细毛束打散面罩边缘，不用硬描边切割毛色。 -->
+    <g stroke="#EDF4F7" stroke-width="4" stroke-linecap="round" opacity=".8">
+      <path d="M476 376L469 408M463 416L455 439M446 466L435 489M427 502L411 522M398 536L378 549"/>
+      <path d="M548 376L555 408M561 416L569 439M578 466L589 489M597 502L613 522M626 536L646 549"/>
+    </g>
+    <g stroke="#D5E2E9" stroke-width="4" stroke-linecap="round" opacity=".75">
+      <path d="M286 505C299 519 309 527 321 532M280 529C294 541 306 548 316 551M294 565C305 574 319 579 332 581M326 638C340 648 353 654 366 657M368 686L390 697M472 730L486 741"/>
+      <path d="M738 505C725 519 715 527 703 532M744 529C730 541 718 548 708 551M730 565C719 574 705 579 692 581M698 638C684 648 671 654 658 657M656 686L634 697M552 730L538 741"/>
+    </g>
+    <g stroke="#6D8293" stroke-width="3.5" stroke-linecap="round" opacity=".25">
+      <path d="M343 364C361 351 383 344 403 343M326 387C345 374 365 368 380 369M681 364C663 351 641 344 621 343M698 387C679 374 659 368 644 369"/>
+    </g>
+
+    <!-- 较克制的蓝色杏仁眼，虹膜严格限制在眼睑轮廓内。 -->
+    <g transform="translate(410 480) rotate(5)">
+      <path d="M-61-5C-41-37 10-40 51-9C30 24-22 29-61-5Z" fill="#E7F2F6"/>
+      <g clip-path="url(#left-eye)">
+        <ellipse cy="-3" rx="32" ry="36" fill="url(#iris)"/>
+        <ellipse cy="-5" rx="14" ry="29" fill="#15374D"/>
+        <path d="M-18 13L-22 23M-7 19L-8 29M8 18L11 28M20 12L24 21" stroke="#C3EDFC" stroke-width="2" opacity=".7"/>
+        <ellipse cx="-12" cy="-16" rx="8" ry="10" fill="white" opacity=".95"/>
+        <circle cx="15" cy="12" r="3.5" fill="#E2F8FF"/>
+      </g>
+      <path d="M-61-5C-41-37 10-40 51-9" stroke="#506575" stroke-width="7" stroke-linecap="round"/>
+      <path d="M-52 5C-23 27 19 23 43 1" stroke="#78909F" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(614 480) rotate(-5)">
+      <path d="M61-5C41-37-10-40-51-9C-30 24 22 29 61-5Z" fill="#E7F2F6"/>
+      <g clip-path="url(#right-eye)">
+        <ellipse cy="-3" rx="32" ry="36" fill="url(#iris)"/>
+        <ellipse cy="-5" rx="14" ry="29" fill="#15374D"/>
+        <path d="M-18 13L-22 23M-7 19L-8 29M8 18L11 28M20 12L24 21" stroke="#C3EDFC" stroke-width="2" opacity=".7"/>
+        <ellipse cx="-12" cy="-16" rx="8" ry="10" fill="white" opacity=".95"/>
+        <circle cx="15" cy="12" r="3.5" fill="#E2F8FF"/>
+      </g>
+      <path d="M61-5C41-37-10-40-51-9" stroke="#506575" stroke-width="7" stroke-linecap="round"/>
+      <path d="M52 5C23 27-19 23-43 1" stroke="#78909F" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- 鼻口收小，保留布偶猫的白色口鼻和柔和神情。 -->
+    <ellipse cx="482" cy="611" rx="44" ry="33" fill="url(#muzzle)"/>
+    <ellipse cx="542" cy="611" rx="44" ry="33" fill="url(#muzzle)"/>
+    <path d="M492 573C501 569 523 569 532 573C536 577 531 585 519 591C515 594 509 594 505 591C493 585 488 577 492 573Z" fill="#CA9AA3"/>
+    <path d="M512 591V612M512 612C505 623 492 626 481 621M512 612C519 623 532 626 543 621" stroke="#8A8790" stroke-width="4" stroke-linecap="round"/>
+    <path d="M496 649C505 653 519 653 528 649" stroke="#D5E0E5" stroke-width="3" stroke-linecap="round"/>
+    <g fill="#BBCAD2"><circle cx="461" cy="600" r="2"/><circle cx="454" cy="611" r="2"/><circle cx="467" cy="617" r="2"/><circle cx="563" cy="600" r="2"/><circle cx="570" cy="611" r="2"/><circle cx="557" cy="617" r="2"/></g>
+    <g stroke="#EDF7FC" stroke-width="3.5" stroke-linecap="round" opacity=".9">
+      <path d="M450 600C399 580 345 568 296 569M448 613C392 607 343 609 299 616M451 627C400 633 356 646 321 663"/>
+      <path d="M574 600C625 580 679 568 728 569M576 613C632 607 681 609 725 616M573 627C624 633 668 646 703 663"/>
+    </g>
+  </g>
+</svg>

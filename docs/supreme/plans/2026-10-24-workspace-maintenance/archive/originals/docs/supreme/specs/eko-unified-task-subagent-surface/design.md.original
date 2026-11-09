@@ -1,0 +1,349 @@
+---
+title: EKO Unified TaskRun and Subagent Execution Model
+artifact: design
+carrier: markdown
+---
+
+# EKO Unified TaskRun and Subagent Execution Model
+
+## 问题与目标
+
+EKO 的长程任务需要一个稳定的任务事实源。一个用户大目标应当能够经历需求拆解、计划、
+实施、验证、Review 和交付，并在实施过程中继续展开更多步骤，而不产生嵌套任务运行或
+第二套任务队列。
+
+当前概念容易混淆：`TaskRun`、`PlanTask`、`SubagentRun`、直接 `agent_tool`、嵌套派发、
+`Sync`、`Fork`、`AgentPool` 和多个并发 Semaphore 都可能被理解成“任务”。这会导致：
+
+- 一个大目标被错误地拆成多个 `TaskRun`；
+- Subagent 通过 `agent_tool` 无限派生；
+- TaskRuntime、SubagentExecutor 和 AgentPool 各自维护并发语义；
+- PlanTask 的任务队列与 Subagent 的执行实例无法对应；
+- 长程能力被错误地依赖于递归派生，而不是同一个 TaskRun 的动态 graph revision。
+
+本设计的目标是：
+
+1. 一个用户大目标对应一个活动 `TaskRun` 和一个权威 revisioned Task Graph。
+2. 所有阶段任务都进入同一个全局任务队列；实施阶段的细分只提交同一 graph 的新 revision。
+3. 明确 `TaskRun`、`PlanTask`、`SubagentRun`、`AgentPool` 和执行模式的边界。
+4. 委派关系最多两层：主智能体 -> Subagent；Subagent 不得继续调用 `agent_tool`。
+5. 用一个 EKO 产品级并发值表示所有运行中 Subagent 的总数，默认 `5`。
+6. 保留 framework 的通用执行原语，但不让 EKO 暴露两个含义近似的 Subagent 配额。
+
+## 参考实现与取舍依据
+
+- Claude Code 官方 Subagent 文档将运行中并发上限与嵌套深度分开；达到并发上限时新的
+  Agent 派发被拒绝，而不是无限等待：
+  <https://code.claude.com/docs/en/sub-agents#concurrent-subagent-limit>。
+- EKO ADR 0003 已记录 Agent、Task CRUD、后台句柄和 Plan artifact 的边界，并指出任务
+  关系不能复制为互不兼容的状态权威。
+- EKO ADR 0015 已将 `TaskRun -> PlanTask -> SubagentRun` 固定为唯一关系图。
+- 现有 framework 已提供 revisioned Task graph、ready frontier、claim、retry、cancel、
+  `RuntimeTaskService`、`NestedDelegationPolicy`、`SubagentExecutor` 和
+  `KeyedExecutionAdmission`；现有 app-core 已提供 TaskRuntime、AgentPool、SubagentRun
+  投影和 EKO 产品配置。本设计组合这些能力，不新增平行任务模型。
+
+## Framework / application 下沉审计
+
+| 能力 | 当前事实 | 目标归属 |
+| --- | --- | --- |
+| Task graph、revision、DAG 校验、ready frontier、claim、retry、cancel | `echo-agent/echo-orchestration` 已由 `RevisionedTaskGraph`、`RuntimeTaskService` 和 `RuntimeTaskServiceConfig` 实现 | 保持 framework authority；EKO 只提供 persistence、workspace、review/worktree 和产品 metadata adapter |
+| 委派深度 | `echo-agent/echo-core/src/tools/mod.rs` 已有 `NestedDelegationPolicy`，`TaskSubagentContext` 会推进 child policy，`SubagentExecutor` 会检查 depth | 下沉 framework；EKO 只把产品策略配置为最大深度 `1`，不再新建 depth reducer |
+| Keyed lease / process permit / retirement / shutdown wait | `echo-agent/src/agent/admission.rs` 已有 `KeyedExecutionAdmission`；EKO `AgentPoolAdmission` 已经是薄 wrapper | 继续使用 framework primitive；SubagentRun 使用独立 admission 实例和唯一 execution key，不复制 EKO active/permit 状态机 |
+| TaskRuntime Subagent wave | framework `RuntimeTaskService` 当前创建 per-runtime semaphore；EKO `EkoExecutionLimits.max_concurrent_subagents` 同时重复表达该值和 process semaphore | framework 保留 per-runtime scheduling width；EKO 删除重复的 Subagent 字段，产品值注入 shared admission，内部宽度由产品值与 ready 数量推导 |
+| Fork 局部并发 | `SubagentExecutorConfig.max_concurrent_forks` 只在 framework Fork 路径获取 permit，Sync 不获取 | 保留为 framework standalone compatibility fallback；EKO 不把它当产品配额，EKO 所有模式走 shared admission |
+| AgentPool | EKO 管理 AgentHandle、workspace、model、memory、lease、eviction 和 publication；其 admission 已复用 framework keyed primitive | 留在 application；不得把 AgentPool key/实例数当作 SubagentRun 数量 |
+
+因此本设计明确要求：**通用机制下沉并复用 framework，EKO 只保留产品策略和适配边界**。
+实施结果中不得同时保留 EKO Subagent 专用 process semaphore 与 framework shared
+admission；不得同时保留两套 delegation depth 判断或两套 Task graph wave 主循环。
+
+## 已确认决策
+
+| 主题 | 决策 |
+| --- | --- |
+| 大目标关系 | 一个活动用户大目标对应一个 `TaskRun`；TaskRun 不嵌套 TaskRun。历史已结束 TaskRun 可以保留。 |
+| 任务权威 | 一个 TaskRuntimeStore、一个 revisioned Task Graph、一个全局任务队列投影；Todo 只是投影。 |
+| 动态拆分 | PlanTask 在同一 graph 的新 revision 中展开为多个普通 PlanTask；不创建子队列。 |
+| Subagent 层级 | 主智能体可以调用 `agent_tool`；Subagent 不得再次调用 `agent_tool`。最多一层 Subagent。 |
+| 任务修改 | Subagent 返回拆分建议或证据；TaskRun graph 的 revision 提交由主智能体/TaskRuntime 权威路径完成。 |
+| 并发语义 | `max_concurrent_subagents` 是 EKO 产品配置，默认 `5`；它通过 framework `KeyedExecutionAdmission` + shared process semaphore 统计进程内运行中 `SubagentRun`，Sync/Fork 都计数。 |
+| 调度宽度 | ready frontier 或内部并行宽度是调度事实，不作为第二个用户可见 Subagent 配额。 |
+| AgentPool | 只负责 Agent 实例、workspace、model、memory 和 lease 复用，不拥有任务图、委派深度或终态。 |
+
+## 目标行为
+
+### 单一 TaskRun 和全局任务队列
+
+一个大目标的目标队列如下：
+
+```text
+TaskRun R1
+└── revision 1: 一个权威任务图
+    ├── 拆解需求
+    ├── 制定计划
+    ├── 开始实施
+    ├── Review
+    └── 提交/推送
+```
+
+“开始实施”需要更多步骤时，更新同一个 `R1`：
+
+```text
+TaskRun R1
+└── revision 2: 同一任务图
+    ├── 拆解需求
+    ├── 制定计划
+    ├── 检查框架输出
+    ├── 检查 app-core 输出
+    ├── 补充测试
+    ├── Review
+    └── 提交/推送
+```
+
+新增项是同一队列中的普通 `PlanTask`。它们可以有依赖关系，形成 DAG，但不能拥有独立
+的 TaskRuntime、Todo store、ready frontier 或终态 reducer。原“开始实施”可以保留为阶段
+标签或 grouping metadata；执行权威仍然是扁平的 revisioned graph。
+
+### 对象和执行关系
+
+```text
+TaskRun                 一次大目标的生命周期容器
+  └── PlanTask           全局任务队列中的一个节点
+        └── SubagentRun  执行该节点的一次具体 attempt
+```
+
+直接派发的 Subagent 也必须归属当前 TaskRun/PlanTask；如果主智能体处于没有具体 PlanTask
+的上下文，系统应把它表达为当前 graph 中的一个受控委派 PlanTask，而不是创建另一个
+TaskRun。
+
+Subagent 的重试是同一 PlanTask 的新 attempt，不是新的 TaskRun。Subagent 的结果、证据、
+错误和终态都回到其所属 PlanTask，再由 TaskRuntime 结算任务图。
+
+### 两层委派边界
+
+产品树只能是：
+
+```text
+主智能体 (delegate_depth = 0)
+├── explorer (delegate_depth = 1)
+├── reviewer (delegate_depth = 1)
+└── implementer (delegate_depth = 1)
+```
+
+以下调用必须被拒绝：
+
+```text
+主智能体 -> explorer -> reviewer
+```
+
+这不是取消 Subagent 的协作能力，而是把协作协调权集中回主智能体和同一个任务图。
+Subagent 可以返回建议任务、证据和未完成事项，主智能体再决定是否通过 `task_create` /
+`task_update` 写入同一 graph revision。
+
+深度限制需要同时存在于：
+
+1. Subagent capability snapshot：不向 Subagent 注册 `agent_tool`、`task_execute` 等会
+   创建新运行树的工具。
+2. EKO role policy：内置/插件 Subagent 的 `can_delegate` 默认关闭。
+3. Framework runtime guard：对 `delegate_depth >= 1` 的请求返回结构化
+   `delegation_depth_exceeded`，不创建第三层 SubagentRun。
+
+### 统一并发语义
+
+EKO 唯一的产品级 Subagent 配额是：
+
+```text
+max_concurrent_subagents = 5
+```
+
+它计数所有正在运行的 SubagentRun：
+
+- 当前 TaskRun 中由 PlanTask 派发的 Subagent；
+- 主智能体直接委派但已归属当前任务图的 Subagent；
+- Sync、Fork 和仍归入 SubagentRun 的 Teammate。
+
+`Sync` 与 `Fork` 只表示执行方式：
+
+- Sync：父调用等待结果，但仍占用一个 Subagent permit；
+- Fork：独立上下文运行，也占用同一个 Subagent permit。
+
+ready frontier 的并行宽度只用于决定一次尝试哪些 PlanTask；最终必须经过统一 admission。
+容量满时，顶层 TaskRuntime 可以排队；不存在的第三层派发直接返回深度错误，不得通过
+递归等待制造死锁。
+
+### AgentPool 边界
+
+`AgentPool` 管理可复用的 `AgentHandle` 和其产品运行资源：
+
+- conversation/task/background Agent 实例；
+- workspace、model、memory、plugin 和 lease；
+- 实例创建、复用、eviction 和关闭。
+
+它不表示一个任务队列，也不表示一个 Subagent 层级。TaskRuntime 使用 AgentPool 获取执行
+所需的实际 Agent 实例，是应用装配边界；Subagent 不应通过创建新的 AgentPool 来产生
+子任务。
+
+## 数据流与分层
+
+```text
+用户目标
+  -> TaskRun
+  -> TaskRuntimeStore / revisioned Task Graph
+  -> ready frontier
+  -> framework shared execution admission (EKO 默认 5)
+  -> SubagentRun / exact attempt
+  -> durable task/subagent events
+  -> 同一任务队列与各入口的状态投影
+```
+
+**Framework (`echo-agent`)**
+
+- 继续唯一拥有 revisioned Task graph、claim、ready frontier、retry、cancel、Subagent
+  execution mode 和 `NestedDelegationPolicy`；
+- 扩展现有 `KeyedExecutionAdmission` 为可复用的 execution-class/shared admission 接口，
+  由 `RuntimeTaskService` 和 `SubagentExecutor` 接收同一 shared lease source；
+- 共享 admission 只表达 opaque execution identity、permit、retirement、close 和
+  shutdown wait，不包含 EKO 默认值、workspace、AgentPool 或 UI；
+- 保留 `RuntimeTaskServiceConfig.max_concurrent_subagents` 与
+  `SubagentExecutorConfig.max_concurrent_forks` 供 framework standalone consumer 使用，
+  但不把它们当作 EKO 的全局产品配置；
+- 通过 framework 自有测试和文档证明 depth guard、shared permit、取消和终态释放。
+
+**Application (`echo-agent-cli/echo-agent-app-core`)**
+
+- 定义一个活动大目标的单一 TaskRun/global queue policy；
+- 注入默认 `max_concurrent_subagents = 5` 和最大委派深度 `1`，并创建/持有 shared
+  framework admission；
+- 组合 TaskRuntime、AgentPool、workspace、model/memory、review/worktree 和持久化投影；
+- 让 TaskRuntime、direct `agent_tool` 和所有一层 Subagent 共享同一 admission；删除当前
+  `PROCESS_EXECUTION_GOVERNOR.subagent` 这类重复 Subagent 计数路径。
+
+**Adapter / surface**
+
+- 只转换 framework identity、attempt、event 和 EKO metadata；
+- 不重新实现 graph、depth、permit、retry、cancel 或 terminal authority；
+- GUI、TUI、CLI、channel 读取同一运行事实，不能各自创建任务队列。
+
+## 异常与边界场景
+
+### 动态展开冲突
+
+两个调用同时修改同一 PlanTask 时，只有 base revision 正确的一次可以提交。另一个调用
+收到 typed revision conflict，重新读取当前 graph；不能覆盖已提交步骤或创建旁路队列。
+
+### 非法第三层委派
+
+Subagent 发出 `agent_tool` 或 `task_execute` 请求时，capability snapshot 应让工具不可见；
+如果兼容路径仍收到请求，runtime 返回 `delegation_depth_exceeded`，写入当前 attempt
+evidence，不创建新的 TaskRun 或 SubagentRun。
+
+### 并发容量耗尽
+
+当 5 个 Subagent 都在运行时：
+
+- 新的顶层 PlanTask 可以保持 queued；
+- 直接委派返回结构化 capacity 状态或进入可取消等待；
+- 取消、失败、超时和正常终态都必须释放 permit。
+
+容量拒绝和等待语义由 framework admission 提供 typed result；EKO 不在
+`ProcessExecutionGovernor` 中再实现一套 Subagent 专用计数器。AgentPool 的前台 Agent
+执行额度、TaskRuntime 的 write/shell/LLM 资源额度和 SubagentRun admission 是不同资源类，
+可以共享 framework primitive 类型，但不能共享同一个 key namespace 或状态 reducer。
+
+### 进程重启和恢复
+
+恢复从原 TaskRun 的 journal、graph revision 和 attempt identity 继续。正在运行的
+Subagent attempt 按现有 boot reconciliation 结算；恢复不得生成新的 TaskRun 或隐藏的
+子队列。
+
+### 无具体 PlanTask 的直接委派
+
+直接委派不能成为无主 SubagentRun。应用应将其附着到当前任务节点，或先在同一 TaskRun
+中建立一个明确的委派 PlanTask；不能绕过任务图建立第二个长期执行入口。
+
+## 范围与非目标
+
+本设计覆盖：
+
+- TaskRun、PlanTask、SubagentRun 的单一关系图；
+- 同一任务图的动态拆分和 revision/CAS；
+- 主智能体到一层 Subagent 的能力与运行时限制；
+- TaskRuntime、direct `agent_tool`、Sync/Fork 的统一 Subagent admission；
+- AgentPool 与任务图/执行层的应用边界；
+- framework、app-core、adapter 的职责和验收合同；
+- framework 现有通用原语的下沉复用、EKO 重复 Subagent admission 的删除目标和跨仓同步。
+
+本设计不覆盖：
+
+- UI 布局、右侧工作区、消息 renderer 或导航改版；
+- 删除分析、研究、浏览器、文件、自动化等产品能力；
+- 具体 Rust 函数签名、React 文件拆分或迁移提交顺序；
+- 把 EKO 产品默认值直接放进通用 framework；
+- 不保留 EKO `PROCESS_EXECUTION_GOVERNOR.subagent` 与 framework shared admission 两套
+  Subagent 总量 authority；
+- 不把 `RuntimeTaskServiceConfig.max_concurrent_subagents` 或
+  `SubagentExecutorConfig.max_concurrent_forks` 误标为同一个 EKO 配置字段；
+- 新增第二套任务、Todo、Subagent 或 AgentPool 状态权威。
+
+## 关键取舍
+
+### 一个 TaskRun，而不是每个阶段一个 TaskRun
+
+单一 TaskRun 保留目标、revision、依赖、恢复、证据和最终完成语义。代价是动态展开需要
+严格的 revision/CAS；收益是不会出现跨 TaskRun 的同步、恢复和 UI 汇总歧义。
+
+### 一层 Subagent，而不是开放递归
+
+开放递归可以表达更深的协作，但会使并发、成本、取消、结果归属和任务数量无界。EKO 的
+长程能力由同一个 TaskRun 的 continuation 和动态 graph 提供，不需要递归派生。
+
+### 一个产品配额，而不是多个相似 Semaphore
+
+用户只需要理解“同时运行多少个 Subagent”。TaskRuntime 的调度宽度和 framework 的
+Fork fallback 可以作为内部或独立 framework 配置存在，但不能继续冒充 EKO 全局配额。
+
+## 复用与实现约束
+
+- 复用 framework `RuntimeTaskService`、Task graph、`NestedDelegationPolicy`、
+  `KeyedExecutionAdmission`、SubagentExecutor、现有 cancellation、retry、control receipt
+  和事件；
+- 复用 app-core `TaskRuntimeStore`、`SubagentControlService`、`SubagentRun` 投影和
+  `AgentPool`，不新建任务队列或 Subagent 状态机；
+- 所有任务修改使用现有 revision/CAS API；Subagent 只能返回建议，不能自行拥有 graph
+  commit authority；
+- 所有运行模式共用同一 framework shared Subagent admission，避免只限制 Fork 或只限制
+  PlanTask；EKO 不新增同义 admission 类型；
+- 结构化错误必须可观察、可恢复、可取消，不能将深度/容量拒绝伪装成普通模型失败；
+- 变更公共配置或 contract 时同步 `echo-agent-cli/docs/{zh,en}`、测试和示例（如有）；
+- 遵守仓库 UTF-8、无 `unwrap`/`expect`/panic、只使用 Subagent 术语等硬约束。
+
+## 验收标准
+
+### 任务图
+
+1. 一个用户大目标只创建一个活动 TaskRun；生产路径不存在嵌套 TaskRun、子队列或第二个
+   Todo authority。
+2. 实施阶段动态展开通过同一 TaskRun graph 的新 revision 完成，依赖、claim、retry、
+   cancel、recovery 和 terminal settlement 保持单一 authority。
+3. Subagent 建议可以被主智能体/TaskRuntime 写入同一 graph；Subagent 本身不能提交新的
+   TaskRun 或旁路任务队列。
+
+### 委派和并发
+
+1. 主智能体可以派发 Subagent；Subagent 不可见且不能执行 `agent_tool`/`task_execute`。
+2. 任何第三层请求都返回 `delegation_depth_exceeded`，不创建新运行实例。
+3. TaskRuntime、direct `agent_tool`、Sync、Fork 和 Teammate（若保留）都经过同一
+   framework shared admission；EKO `max_concurrent_subagents` 默认值为 `5`，且 EKO
+   没有第二个 Subagent 总量 Semaphore。
+4. capacity、cancel、failure、timeout 和 restart 场景均不会泄漏 permit 或重复终态。
+5. AgentPool 的实例/lease 数量与 SubagentRun 数量可以独立变化，且不会成为第二任务权威。
+
+### 验证
+
+1. 补齐动态 graph expansion、revision conflict、一层委派、非法深度、全局 permit、
+   capacity、cancel 和 recovery 的定向测试。
+2. framework 与 app-core 通过相关 fmt、clippy、workspace tests 和条件 feature 验证。
+3. `echo-agent` 与 `echo-agent-cli` 的文档、示例和测试同步说明 framework admission、
+   唯一 TaskRun、最大深度 `1` 和 EKO 默认并发 `5`；EKO 重复 Subagent governor 的删除
+   目标有明确证据。

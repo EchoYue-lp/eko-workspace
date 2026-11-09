@@ -1,538 +1,238 @@
-# EKO 总纲（MASTER-PLAN）
-
-> **跨仓库当前事实源**。本文只记录阶段状态、前向路线、分层边界、验收门和可核验证据；不再保存逐轮实施日志。
-> EKO 是本机个人助理：`echo-agent` 是独立可复用框架，`echo-agent-sdk` 是独立 SDK 产品，`echo-agent-cli` 是应用层，`echo-website` 是官网。
-> 最后更新：2026-10-22（四个子仓本轮验收已闭合，顶层集成按下列精确指针；历史阶段保留原验收范围）。
-
-## 2026-10-16 SDK 全能力治理（2026-10-22 联合验收）
-
-治理范围仍以明确接受的跨语言合同为准，完整 Rust public inventory 仅作遥测。
-用户已批准 Workflow `protected_claim_v1` 与
-`workflow_checkpoint_protect_claim(checkpoint_id, attempt_id)` 反向操作：原 Store 在节点副作用前
-保护同一 claim，未知执行不能因租约到期重跑，也不能由 CRUD 解除；缺能力时执行前明确拒绝。
-取消结算采用已批准的 B：观察等待有界，原物理执行、claim 和 permit 保留到原执行真实结算，
-不得用超时、丢弃 handle 或合成终态替代。正式合同、实现与限制分别由 framework/SDK 维护。
-
-本 goal 当前验收与开发状态如下；后文各切点保留原历史范围，不替代本表的待办。
-
-| 仓库 | 本 goal 已验收的 main 快照 | 最新开发 checkpoint 与未完成事项 |
-| --- | --- | --- |
-| framework | `f7bac62e`：PR197，精确main七项CI成功，独立冷恢复与严格检查C0 | 已正式接受完整revision `f7bac62eee04a963f92a3e4308b6ea2336e91cc0`。原始main CI39605663648七项SUCCESS；新EMPTY GitHub-only冷仓2332输入/source8506、27必要tags、固定950a strict及真实base6849 change检查均0，最终proof独审C0。通用prepare_run driver仍由同一Run/receipt权威结算；历史两entry RED2→GREEN2、runtime15及adapter31分组独审，不相加或借此证明SDK原12已过。最新六完整工程门禁actual3664通过/0失败/3原环境忽略；父环境CARGO_TERM_COLOR=always时，原policy5五项真实0；scanner子进程never及strict49不变，CI含原14及8项单元，49版本组与107来源精确匹配。人类仅接受锁7607的精49 duplicate合同，其它warning、新组/版本/source或编译告警仍阻断，官方原始输出和自然退出码保留。旧6849 CI的scanner0/ANSI gate1、网络/资源失败的UNKNOWN及首个其它actor错误UNKNOWN保原切点，不倒推为flaky或已查明。原1d/ebc/356及预算、custody范围见历史，不复标当前；旧#120已按严格水位范围闭合，F四path历史账本亦已正式闭合，不扩大为managed未知或全goal。F BF自有L1 target经官方DEV清理，全139保护项零漂移、target8192B/free约19.322GB，最终必要性独审C0；这只是当时F owncache清理观察，不是CLI清理或SDK runtime授权，SDK默认约8.113GB cache未动。官网a29已同步本Ff7与CLI0616，最终联合gitlinks只引用本表已接受的四个main。 |
-| SDK | [`7138de2c`](https://github.com/EchoYue-lp/echo-agent-sdk/commit/7138de2ccc87f8967129c8bd7859dee1f84ec736)：PR9，最终文稿及精确main九项CI、冷恢复、独审通过 | 既有工程及模型验收锚点为完整revision `eb22398676310fcbd67e9f4babe4afcefd56ed06`，soleparent为已验工程main a9f267，tree `be10d293b702898bffeaedc46720d3e59e9c4d72` 与已审ed8任务快照一致、签名valid。最终材料精9路径（1A/8M）必要性独审C0，无raw、缓存、控制脚本、数据库、二进制或源码副本入Git。四whole与人的唯一裁决已正式落盘：50 Behavior verified、75 Finding resolved、1 risk_accepted、0 open；accepted inventory/model closed，97 Audit仍只表示各具名假设已examined。[原push CI39720432985](https://github.com/EchoYue-lp/echo-agent-sdk/actions/runs/39720432985)九job原attempt1全SUCCESS；原Linux Host、Windows及完整语言日志独审C0。Linux原bridge31/core33/facade12与无reverse具名1（25原selector过滤）分别通过，不跨feature相加；managed具名回归仍在原10秒首Host被动等待内返回，但不证明首Host退出码0。用户仅接受历史超时首因UNKNOWN这一残余，修复/验证/复审三链仍空、原失败保留、后续同类失败仍阻断；两个bridge共享同一裁决，资源/客户端依自身证据结算。Windows三语具名原生case各1通过/0失败/0case skip、各4真实调用，PY/Java fresh XML和UTF-16证据成立；不扩大为全Windows套件。精main Linux完整入口TS363通过另1平台未运行、PY450通过另1平台未运行及18成功subtests、Java原mvn-q与三个quickstart在Temurin17成功；不借本机Java380/76XML冒CI计数。新空仓仅GitHub main与36必要tags恢复1227文件及必要历史锚点，tree/source afbd逐byte-mode一致；固定950a strict/basea9/change检查实际0、71.33秒，原初始化回执错误在首次fetch前修正并保原件，独审C0。本机33原96样本/4大墙钟缺口UNKNOWN、Channel/Workflow真实不完整close及protected claim/receipt未知边界保留。Host接受Ff7bac、锁1c865、accepted5621 identity-kind/454routes不扩；原14 Rust/合同/三policy按193编译与支持输入连续性承接原范围，4项Rust库存漂移仍仅遥测，不自动update117。正式SDK事实归[来源Evidence](https://github.com/EchoYue-lp/echo-agent-sdk/blob/eb22398676310fcbd67e9f4babe4afcefd56ed06/.echo-semantic/evidence/evidence.sdk-source-continuity.md)。本地ed8/PF、原4 pyc/old19及Host/collector保留以承接协调资源义务，任何已退休普通镜像由明确归档/恢复索引/实际journal后继承接，不伪称原位仍在。最终集成接受后继main `7138de2ccc87f8967129c8bd7859dee1f84ec736`（PR9、tree e879b1f2、单父eb223986、服务端签名valid）。六处current-status文案M1以精8路径修正，语义及必要性双独审C0、193工程输入/代码fence/历史原文不变。新原push CI39739735628 attempt1九job全部SUCCESS，三原关键日志独审C0；本轮Host managed具名通过、bridge31/core33/facade12及无reverse具名1（25原selector过滤）分别通过，Windows与完整语言入口亦按上列限定重新取得实际证据，不借旧eb CI。新空冷仓1227输入与原36tags/digest b4cc逐byte-mode一致，固定950a strict/baseeb/change检查实际0、71.41秒，独审C0。首次HTTPS fetch128原件及首因UNKNOWN保留；修正脚手架到原SSH配方后，唯一获授权的第二网络尝试fetch0、strict0，不冒称整体首次通过。辅助计数脚本字段错误保留且仅修读取，不重跑冷门禁。最终SDK资格已闭合；原eb锚点文稿无需追自身新CI再开ack PR。原4pyc、历史原件、outside副本及归档保护继续保存，无运行时、API、117库存或风险接受范围扩张；插件native Hook/Stop专项撤回，普通保护保留；无registry发布或网站部署。 |
-| CLI | PR12 main `0616c6cd`：按本次精确人类风险接受验收；原CI仍失败 | 接受完整revision `0616c6cd25e2496c6940b74c983f4ffa08003518`，由任务checkpoint a4f03fb8普通快进复用PR12后squash合入，tree526ba4/单父f57b90a2。90路径及最终六份材料必要性独审C0，无raw、缓存、控制脚本或二进制入库；原13处dirty工作区保留。消费clean framework f7bac/2332、consumer e46/锁d2e7；本地原full8加factory格式检查九命令均0，workspace1978通过/15原忽略、GUI226通过/3原忽略，配置分别计数，nested selfprobe不另加，原17为通过集合子集。最终fresh policy3也0：官方DB4b587/1348 advisories/839依赖、零漏洞/精六warning，原scanner自然1、独立riskgate0；原三依赖冻结及本次精六合同不变。303编译/测试/工具输入等价承接到a4f/0616；固定950a strict与artifact均0。GitHub-only精main冷恢复独审C0，945输入/tree526一致，仅main、两既有tag和固定PR12/head历史来源；当时未测冷仓峰值等指标，不追溯宣称后加caps通过。原main CI39730818227确实失败：quality/frontend成功，Linux app-core1646通过/1失败/9原忽略，唯一cold-compose具名用例5秒观察超时，aggregate正确失败。用户2026-10-22明确接受下方F-CLI-CI0616-COLD-COMPOSE-01残余，本次不再阻断官网及联合交付；原失败与根因UNKNOWN保留，不称CI全绿、已修复或机器资源已证实。Mac原二进制控制及阶段诊断通过只作有限证据；不自动接受其它测试或后续新增失败。后续负控与修复扩展已取消；在途V1自然通过仅作Mac取证，未执行V2。测试已恢复原7ef277字节、runtime4f1从未修改，945输入/2332框架输入/保护项末核通过，工作树干净且无残留重型进程；保留原诊断但不把候选二进制冒充已恢复源码或Linux修复。Framework/SDK独立验收保持，官网a29的来源采纳及精确CI均已验收，最终gitlinks按本表绑定。原资源准入失败、精10恢复保护及已撤回插件边界不变；无发布或部署。 |
-| website | [`a29d6769`](https://github.com/EchoYue-lp/echo-website/commit/a29d6769030639df0745b8bd3599c127e79d1799)：PR7，精确main CI及独立复审通过 | 正式接受完整revision `a29d6769030639df0745b8bd3599c127e79d1799`，tree58cbd641与已审checkpoint c1740841一致、单父ccdbfb4b、服务端签名valid；普通match-head squash，无policy绕过。相对main累计20必要路径：12篇framework镜像、6篇既有双语EKO页面、manifest及官方llms-full；必要性与来源/语义独审C0，无raw、缓存、二进制、脚本、锁、路由或SDK投影改动。精绑定Ff7bac与CLI0616，290框架镜像逐Git字节相同、118 CLI来源与8页EKO投影集合/身份不扩，298个发现文本段落与正式正文一致。6条本地命令自然0；39单测、306静态路由、真实Chromium15通过/1既有desktop移动专用条件跳过，其mobile同例通过。原push CI39738054426 attempt1的verify119688331537全部22steps成功；原日志实际checkout官网a29/Ff7/CLI0616，source-aware、39/306/15+1具名结果均成立，精main独审C0。平台/action弃用提示保留，不称零CI警告；CLI人类例外不充官网豁免。工作树clean-detached精main，任务分支依规范删除，所有本地产物保ignored；未部署、未执行部署脚本。SDK后继7138资格也已验收，最终顶层gitlink统一绑定本表四个main。 |
-
-联合验收只引用已推送的 framework `f7bac62e`、SDK `7138de2c`、CLI `0616c6cd` 和官网 `a29d6769`。
-顶层正式合并范围仅 `AGENTS.md`、本文与四个gitlink；SDK能力边界、逐场景证据和延期/Rust-Host合同由SDK正式文档维护。
-SDK的历史managed残余与下方CLI单次CI残余分别按人的明确裁决保留，不计为修复；后续失败仍按原门禁处理。
-registry发布、官网部署及已取消的插件派生专项不属于本轮交付。
-
-### CLI 精确 main CI 残余风险裁决（2026-10-22）
-
-- Finding：`F-CLI-CI0616-COLD-COMPOSE-01`，状态 `risk_accepted`。只绑定
-  `0616c6cd25e2496c6940b74c983f4ffa08003518`、[原 CI run 39730818227](https://github.com/EchoYue-lp/echo-agent-cli/actions/runs/39730818227)
-  和 `plugin_runtime::tests::canonical_compose_binds_cold_workspace_owner_before_boot_dispatch`
-  的本次失败；该 run 的测试与 aggregate 失败状态均不改写。
-- 人类裁决：用户在侧聊解释本地通过与 Linux 根因未证实后，明确接受本次残余并要求通知主线程；
-  本线程已收到其可信转达。用户原话：“github ci 会收到机器、资源等限制。我觉得ci 可以忽略这个问题。”
-  侧聊来源为 `01a1623e-e31b-7bc3-bca0-eb09d7bbc520`；此临时聊天不支持原文读取 API，
-  不声称协调者另行读过侧聊。该裁决覆盖本次原零失败验收要求中的唯一例外，无需重复确认。
-- 证据与限制：本地原完整门禁、原二进制控制和阶段诊断实际通过；原 Linux 具名用例超时失败保留。
-  根因为 `UNKNOWN`，机器/资源解释未证实。修复、修复验证、修复复审链为空，不能标为 `resolved`，
-  也不能称原 CI 全绿或 Linux 修复已验收；已有诊断及候选复审不充当上述修复链。
-- 后继义务：仅解除本次具名失败对官网与最终集成的阻断，不新增测试 ignore、重试、延长超时或工作流豁免。
-  其它测试、其它类别及后续新增失败仍按原门禁阻断，不自动继承本裁决。临时诊断与负控候选不进入正式 CLI 提交；
-  本次跨仓验收账本由顶层维护，CLI 受接受的 main 内容保持不变。
-
-框架 [PR #187](https://github.com/EchoYue-lp/echo-agent/pull/187) 已 squash 合入
-`875cc22f2e99c7ccd83c07e02c03fe221c5e3f6c`，签名有效、tree 与已审候选一致。
-精确 main CI `38849170013` 的六项运行时/平台 job 成功，依赖策略 job 因
-`zip 2.4.2`、`zip 8.6.0` 已撤回而失败，因此该提交尚未通过交付验收，SDK 不升级到此快照。
-后继修复 [PR #190](https://github.com/EchoYue-lp/echo-agent/pull/190) 已合入
-`9886502c83d6b1f6fa9212eb221db0e5874deaee`：保留三个媒体父包的 API/feature，适配非撤回的
-zip 9，并补齐 path/Git 来源的 registry-origin 审计；正式决策见框架 ADR 0089。
-六项完整本地门禁及 17 项独立 feature 检查全通过，主测试计数 3,622 成功、0 失败、
-3 项既有 opt-in 忽略；不重复计入两个子进程结果。独立复审、必要路径检查通过，签名有效、
-tree 与已审候选一致；精确 main CI `38862267005` 七项全部成功，远端冷克隆的严格语义
-检查通过。按用户“旧提交无法找到则按最新代码审计、处理”的明确裁决，相关能力重新绑定
-当前源码与已执行用例；不宣称恢复七个缺失历史 tree，也不把旧红绿记录作为新执行。
-本轮框架验证后官方 `cargo clean` 移除 7.2 GiB 缓存，源码及证据保留。
-
-SDK 后继 B 场景在上述固定 `9886502` 来源上又确认一个 ACP 集成缺口：原 driver 返回
-`ExecutionNotSettled` 并保留 lease 后，其错误直接进入官方 `connection.spawn(task)`，按
-ACP actor 合同关闭整连接。原 Host 自行退出2，不是 `run_wait` 的正常有界等待，也不能
-把 foreign physical exit 当作原 Run 收据。唯一框架子智能体已接手原干净隔离工作区的
-`fix/Echoyue/acp-run-task-error-isolation`，先以官方连接复现，标准 adapter 与 SDK 通用入口同审；
-RunRegistry、lease、receipt 权威保留，SDK 不吞错或复制状态。该反例首先按988复现，
-必要修复的来源资格与后继消费者升级分别验收，旧 CI 通过不覆盖这条新反例。
-后继开发 checkpoint `30b9bf0539efbec838f6229e7736e5889b483639` 已提交推送，精13个
-文件及 tree 与审定候选一致。原官方 ACP 连接两项真实 red 在最小修复后同例通过，
-29项 ACP 集成、43项 ACP 单元和 focused Clippy 全通过，独立实现及必要性复审 PASS。
-新 `wait_result` 只暴露原 Run 的非终态观察，真实 receipt 优先，原 lease 不释放；未新增
-三语言合同。原 canonical 的精 Git 候选严格/真实988基准变更检查通过；当前0.5运行态
-校验的历史引用、闭包与范围限制单列，不称原生 Stop 通过。[PR #191](https://github.com/EchoYue-lp/echo-agent/pull/191)
-的最终文稿 checkpoint `b7319a81e8c24b1b595e0daee74ea52828512547` 已提交推送；累计仍仅
-13个必要文件，无原始产物入库。后继同源码的六项完整门禁实际全0、零告警及输入漂移；主87个 harness 共
-3627成功、0失败、3项既有 opt-in 忽略，两个各1成功的嵌套 echo-state 子进程单列，不将
-原始3629合计当主计数。17项独立 feature 矩阵也已全部退出0；文档合同15项通过，最终
-独立实现及必要性复审均 PASS。PR 已正常 squash 合入
-`6563d26570cc4a8d93c86b7e37443b0559476807`，签名有效、唯一父为988，tree 与最终已审
-候选完全一致；精确 main 的 canonical 严格快照及真实988基准变更检查实际通过。
-精确 main CI `38958501642` 七项全部成功，协调者独立核对远端身份及各 job，正式接受
-`6563d26570cc4a8d93c86b7e37443b0559476807` 为后继治理目标。SDK 与 CLI 先完成当前
-988切点的有限里程碑，再在各自冻结边界升级并重验；不将新框架通过冒充消费者已验证。
-仅官方清理本任务独占 target 后回收7.97 GiB，源码及证据校验不变，不动 SDK/CLI 缓存。
-
-SDK 下述历史 checkpoint 固定已通过 CI 的988来源；后继6563切换及新 Host 资格见本节后段，
-各切点结果不互相替代。
-[PR #5](https://github.com/EchoYue-lp/echo-agent-sdk/pull/5) 的开发 checkpoint
-`637a308e0d1c7f13339d279eb1f91aedfb403685` 已推送，修复 canonical generator 对 workspace
-membership 的选择，独立复审和对应 9 项测试通过。后继已推送 checkpoint
-`4ca17639265af41b5a39586331346f165d1a610f` 保存当前锁的依赖复验及必要元数据修正；
-两项 audit 在既有配置下退出0，deny 保留49组原已接受 duplicate、没有增量，不把它称为
-零告警。28 profiles 的唯一生成与合同检查已经完成，仍不代替后继 runtime 的验收。
-后继 `55bf069cf75832416f5d61ba247cd6b7df5cd25c` 已提交并推送，仅将22份历史对象的
-23行版本字段绑定到可恢复的 `019e700279677a2eb77e265b5038d9d581bc22da`；对应完整源码
-摘要 `2bbd6457d7b6ea031b8999d1466d85f5a5c1d2d994218d45f008ed6d5f1fa276` 和947组
-来源引用已用原校验器核对，独立复审 PASS。正文、状态和原失败范围未重写；不代表其余
-新材料、baseline、完整 runtime 或 main 验收通过。
-
-Issue #120 的具名场景在不可变 Host `45fc7b267941864f4528f55d8d7373d048f5afc824b2fb389c7c8c8fbc680abc`
-切点取得 TypeScript 12、Python 12、Java 9+3 项真实通过，零失败、零跳过，独立复审 PASS。
-182项生产/合同输入和语言来源已核对，包含 snapshot ACK 后严格更大水位的 replay/live
-continuation、迟到 ACK、terminal EOF 与 journal 换代；Java 两次运行互不重叠。
-它不证明后继 callback 改动后的最终整套、SDK main 或外部 Issue 已关闭。
-
-callback observer unwind 提前释放，以及 invalid ACK 被投影为普通终止错误，均已取得真实
-before；后继同源7项 focused 通过、局部独立复审 PASS，保留原 guard/lease/配额与 foreign
-身份边界，宽 Finding 继续 open。保存的 dev opt1 配置保留 assertions、overflow checks 和
-unwind，删除旧链接告警屏蔽；无 opt-level/assertions/overflow/panic 环境覆盖的 Host
-构建实际退出0、零告警，产物
-`8bf4a1d6deb647e608153c807ca07785dd31f7d3223a88cc3daf9b835b8bff5c` 的 EH 为15,489,244字节，
-低于16 MiB，保存配置下的 unwind focused 也通过。A/B 累计 Rust/protocol/pin 必须按真实
-依赖边界验证和提交，不能仅 stage 局部代码而借用完整 dirty 树的通过结果。
-
-CLI [PR #12](https://github.com/EchoYue-lp/echo-agent-cli/pull/12) 的开发 checkpoint
-`c874a79aa25f8bef16ba4df2e809ceb447bb1604` 已推送，compose 早绑定、Running/Paused
-恢复和既有 run 身份/错配拒绝三项定向验证各通过 1 项。后继具名 cron 场景实际1项通过并
-经独立复审；channel 丢失观察身份、GUI launch 把 pending owner 写成 Failed 两条独立
-before 均已复现，两个同例 after 与普通错误/正常/continuation 等控制共6项通过、独立
-复审及15路径必要性检查 PASS。验证使用与实际 CLI 字节/模式一致的冻结消费者和干净
-framework `9886502`；不称原生 Tauri UI 或 OS 物理执行验收。all-target/all-feature Clippy
-后继实际失败过4项测试 lint；最小修正后原命令 v2 已退出0、零告警，源码与干净 framework
-均无漂移。两条局部修复、6项测试与该 Clippy 分别验收，不称其余完整门禁已通过。
-这些行为修复、对应测试与必要文稿已在
-`dfd5750ce1b00ac1e36a2e778d469f2c3e82b62c` 独立提交并推送；24个必要路径不含原始
-日志、临时产物或会话预检。普通、strict 与变更证据检查通过；绑定任务/会话的仓库收据
-仍因将5个历史 Git 引用当成当前文件读取而失败，已交插件专项调查，不修改历史锚来消错。
-
-用户已明确保留 `glib 0.18.5`、`proc-macro-error 1.0.4`、`bincode 1.3.3`，记录风险并延期升级；
-停止相应升级、替换与回补研究。三项真实审计告警及 exit1 保留；CLI 上述提交已保存精确
-Decision 与 `risk_accepted` Finding，绑定版本、registry 来源、checksum 和消费者闭包。
-当时门禁处置尚待验证，不称告警消失或缺陷已修复，也不扩大其它告警/编译/测试豁免。
-后继窄 checkpoint `32c6719d4f15c4c27b59258a7ff22579357dfe11` 已提交并推送，实现
-精确风险门禁及6个反例测试方法；11个文件的独立必要性审查 PASS。官方 actual-lock 与
-干净 framework 来源重建的 registry-origin 在线扫描均保留 scanner exit1、三项告警、
-零漏洞，单独风险核对 gate0；未关闭 fetch。该次只对扫描进程指定 HTTP/1.1，默认 fetch
-失败原件仍保留，不推定更底层原因或默认 Linux CI 已通过。四类 panic Clippy 实际通过。
-新全范围复审另发现 shared chat preparation 将 `RecoveryBlocked` 字符串化并错误释放
-foreground 的缺口。后继 `629de1ea95627ce8284dae1fcf56221b7d0be476` 已修复并提交推送：
-原持久化 pending-intent 重开后的共享入口实际 before 失败，普通错误对照通过；同两项
-after 全通过、零告警及输入漂移。四种 surface 参数仍只算一个顶层用例，不称原生界面
-E2E。10个必要文件经独立审查 PASS。风险门禁先拒绝新源码，再经独立确认消费者边界未
-扩大后重评指纹；锁和三项身份不变，后继双在线结果仍为 scanner1/gate0。旧完整测试在
-编译阶段由其唯一 owner 停止，没有行为结果。新切点两类 Clippy 均实际退出0、零告警和
-源码漂移；完整 workspace 的首次运行在行为用例前被9 GiB target 守卫中断，原件保留为
-资源中断，不算产品 red 或通过。仅官方清理本任务独占缓存后冷跑原完整命令，预算及
-覆盖不变；该轮进入行为后出现多项真实失败，另两条忽略 cancel 的永久 pending fixture
-无法产生 EOF，已保全未完成结果并仅停止自有进程。代表用例确认 foreground 的关闭分支
-可能抢先吞掉已发布 Cancelled 收据；产品读序和资源 scope/真实 EOF/故障阶段等 fixture
-问题分开修复，保留强断言，不将全部失败归为 fixture。完整命令、no-default 及 GUI 门禁
-均仍须通过，前述局部结果不能替代。
-后继精确46例重跑为40成功、6失败、0忽略，零编译告警及输入漂移；parked 与
-aborted-reporter 两例确认原终态写入债务的资源被提前释放，分别保有真实 red 和独立
-before 产物。现有债务结构携带同一物理 owner、严格确认后才释放的最小修复正在验证。
-其余失败涉及真实进程退出模拟、恢复/续跑及故障阶段预期，逐桶保强断言调查；不把
-caller future abort 当作进程死亡，也不把目录缺失/不可读直接推为无未结算意图。
-后继冻结组合48项实际全通过，零失败、零忽略及来源漂移；原 parked/abort、错误owner、
-来源IO、重复ACK、目录恢复及真正子进程退出后重开等控制分别保留。另一个明确声明
-输入差异的原产物反例实际失败：取消已真实完成后遇读取错误，原兜底把债务目标写成
-Failed，预期仍为 Cancelled。后继复用原取消目标修复该分支，原失败、同owner journal、
-单次receipt及精确产物均保留。最终 focused49 实际49成功、0失败、0忽略、零告警及输入
-漂移，来源仍为988；不借此覆盖6563后的完整门禁。必要修复及证据已在
-`e0f09e80743c7a784ff43bf590f083e7de43fec3` 提交推送；协调侧独立累计检查 main f57 至该
-提交的83个路径，全部有保留依据，无 raw/log/PF、临时产物、凭据或新增发布路径。
-风险仅重绑消费者指纹，版本、锁和三项接受身份未扩大。后继
-`9819a51318df04996103b8b56b2413e59822cb20` 仅补两份历史来源持久化文稿，固定增量独审
-通过；累计84路径均有必要性，无新增运行代码或告警豁免。两条精确 evidence refs 的远端
-对象、冷仓32条唯一来源及9份对象已独立核对，不借此改写历史观察或声称原生 Stop 通过。
-独立 CF 已 clean 切到6563；945项新来源已冻结，完整门禁及精确 main 仍待。
-该切点的原完整 workspace 命令后继实际退出101：app-core 单测1647成功、9项既有忽略，
-嵌套子进程单列；CLI 库285成功、3失败，后续目标未完成。运行无源码/CF漂移或资源中断。
-Channel 原 driver 的实际提前失败与 GUI 均确认缺少测试前置的应用 lifecycle owner；
-TUI 原静态字符串提取越过 resume 分支，不能据此认定真实输入进入 ingress。后继复用
-公开 owner 绑定并保持原强断言，以真实 TaskRun/Goal 与输入事实验证 TUI；全量仍须重验。
-CLI 已按用户指令无损迁入 primary `echo-agent-cli` 的
-`fix/Echoyue/cancellation-observation-primary`，C 工作区保留备份；primary framework 的 Exa
-任务改动不纳入本次验证。旧 Cargo paths 覆盖产生不支持的依赖图告警，未用于验收。
-
-SDK 后继 `335193791c70a6cb077033c3f8f0cb1223e5266e` 已正常提交并推送，74个文件的
-提交树与最终独立审阅树一致，无原始产物入库。A/B 累计生产、协议、三语、生成物和必要
-文稿按真实依赖共同纳入该切片，验证限于下述实际用例；另9条独立 Task/protected-claim
-fixture 与平台诊断路径仍未纳入。
-保存配置四项 dev 行为唯一归原 config；无行为及 Rust warning flags 环境覆盖，保留原
-debug/strip/inc/jobs 资源设置的 Host 构建实际退出0、零告警，新产物
-`14a0cb58c44bdb84990262f1324e1a2513513a8b40fc0640a9d36f91f95e27e9` 的 EH 为15,488,572
-字节，unwind 信息保留。当前共同切点的 drain 两例、unwind 和 direct-run 各一例全通过，
-三语言 late-payload 各一例通过，611项语言输入无漂移；旧7控、纯回归及#120另保原切点。
-原 canonical 的严格快照、真实基准变更依据及必要性审查通过；19处缺标题及后继来源已
-修正，不等于本地原生 Stop 或完整运行验收。deferred 原脚本已修，2528项完整互斥分组，
-accepted 仍5621，均不以库存数量充当完成率。
-
-官方对象解析在该已推提交为65 resolved/5 open：三项 Workflow Finding 纳入交付，direct-run
-与 late Completed 两个具名缺陷在当前三链、真实验证及独审后有限 resolved；历史原件保留。
-其余宽 cleanup、Sandbox、Task resume、Graph claim、managed exit 仍 open，均为已接受行为
-或必要 Host 生命周期，不能整体 deferred。B fixture 仍需修复普通 turn 可缺 `run_id` 的
-假设，严格区分 foreign producer 与原 TaskRun/attempt 回执。protected-claim 的旧三语言
-30步核心校验的 Java 关闭失败已取得分阶段事实：原 Host 在 native writes 完成后仍活着，
-五秒时由既有 SDK watchdog 回收为137，并非 stderr/dispose 卡死。后继 A 有限 checkpoint
-`404d447f1a69fb4af2843272005b894063888ed9` 已提交推送14个必要文件，精树与已审候选
-一致；三语 A 各一例通过，Java 另有合法 local-close 控制一例通过。测试允许本机 transport
-清理成功，但无原回执的 A 场景要求实际 Host 非零退出；错误分支精核 typed timeout、
-原取消地址、同 owner retry 及清理后 backend 不变，不把137或 transport retry 叫作自然
-退出、业务 receipt 或 claim 结算。5份旧来源元数据仅无损改绑可恢复 Git335，canonical
-严格/真实基准检查、局部独审及 artifact 检查通过；B四路径和 Linux诊断一条仍未提交。
-原 target 下358份诊断已按 bytes/hash 固化到 ignored local，未提交 raw。宽 Graph Finding
-仍 open，外部进程退出不能替原 callback 回执；这些局部闭合不关闭外部 Issue #120、SDK
-main、持久恢复义务或整体治理。
-五项 open 已只读盘点：Sandbox 原 connection-scoped 实现及 cleanup 先于 Cancelled 的
-强断言已有；Graph 的 Memory/File、renew/expiry/reopen/CRUD 上游证明也已有，不能泛称
-整组未验。后继按精确来源复用、补必要当前用例及正式三链和独审；原历史切点的 Graph
-foreign/lateUnknown 仅源码审记录保留，后来补证单列于下段。宽 cleanup 的未证入口与
-独立 Linux 十秒诊断仍具名待办。
-Graph 后继测试 checkpoint `c1547d6b92201fd3c702782fe0972e1a99e13318` 已提交推送：补齐
-foreign 观察不被本地观察覆盖、terminal 后 Unknown 不借先前收据两项负例，五项控制及
-默认 workflow 子集93项实际全通过。生产前缀、Node、Store 不变，未出现产品 red；7个
-必要文件、最终严格/真实6563基准检查及独立复审通过，无原始产物入库。后继同一精确
-提交及1023项冻结输入的六条本地 main 门禁已全部实际退出0、零告警和来源漂移；主87个
-harness 为3629成功、0失败、3项既有 live opt-in 忽略，两个各1成功的嵌套子进程单列。
-两条新增负例及原 matching 正控在全套实际通过。最终7个必要路径及薄文稿经独立复审，
-[PR #192](https://github.com/EchoYue-lp/echo-agent/pull/192) 正常 squash 合入
-`f3fa0705f62fe813a5a86bc41cd673f82f915a61`，唯一父为6563、签名有效、tree 与已审候选
-一致；精确 main 严格语义/真实6563基准变更检查退出0，精确 main CI `38972460664`
-七项全部成功，协调者已独立核对远端身份和各 job。该补证切片完成交付；不改变 SDK
-已接受6563生产 pin，也不把 Memory 同实例反例扩称跨 provider 或重启持久化验证。
-新 target 的90份引用可执行产物已压缩并逐成员核 SHA，137份原记录前后 hash 不变；
-仅官方清理本任务独占 target 后释放6.38 GiB，未触及 SDK/CLI 缓存。
-正式 Task 后继 checkpoint `fa62f3b3d0df3ed5b14c6d9786dfffce5db57da6` 已提交推送，精树与
-审定候选一致；13个必要文件经独立复审，foreign/Linux 原工作差异保留，无原始产物入库。
-仅供后续 foreign 的 UUID 缺省分支已从该候选剔除，要求原 Task 双身份；输入变化后全新
-TypeScript/Python/Java 各5项完整 Task 套件实际通过，零失败、零跳过，611项输入各无漂移，
-原四类经典场景仍覆盖。同 claim 的 A 只由原 matching attempt 完成一次结算，B 即时
-提交 canonical 结果，C/D 消费原依赖结果，B execution 不变；结果限于988/14a切点。
-原 ADR0060 和 Tasks 文档明确 next wave 等待本 wave 全部结算；unknown A 仍持 claim 与
-已结算 Paused 不同。新用例原“释放 A 前 C 必须完成”的失败保留为超出该合同的 oracle，
-不降低原 Paused 场景的独立继续断言，也不据当前实现新增调度承诺。
-后继6563 pin 的依赖解析已退出0，656个包的版本、checksum和依赖边不变，仅11个 Git
-来源改精确 revision。唯一生成入口实际退出0，28 profiles、117项产物；5621个 accepted
-身份及454条路由不变，5份阻断/共享合同逐字节不变，仅4份非阻断遥测变化。
-新增 `RunEntry::wait_result` 归 process-local Host/Rust intrinsic，不进入三语言合同。
-官方合同检查实际退出0。新保存配置 Host 构建实际退出0、零告警，产物
-`ac4332105734bbedda144b5c033fedc6610de4b5b9d9a5a0c11dd4953a28a87f` 的 EH 为15,491,256
-字节，保留 unwind；原14a产物与新产物均保全到 target 外。不借旧 Host 验收新 pin。
-同 dropped-next 原 waiter 的 quota 单测实际1项通过；Sandbox 原强断言用例补齐原 RPC
-真实 Cancelled 回应后同例1项通过，原失败保留为失效 oracle，不称新增生产缺陷。
-SDK 历史335/404/637的精确 annotated evidence refs 已按既有来源策略推送；独立空仓只从
-远端 main 与三条显式 refs 取回，8份对象、11组观察及42条引用逐字节匹配，无 task branch、
-PR 或本地对象借用。它只关闭这三条来源持久化缺口，最终 squash main 冷检仍待。
-后继官方语言入口实际退出1：完整 telemetry collector 编译退出0、原 Host ac433 复用，
-TypeScript 354项中351成功、3失败、0跳过，Python/Java 尚未启动。三例分别涉及迟到的
-factory construction、Workflow stream owner cancel/close 与 cancelled tool callback；
-独立源码复核发现旧测试未释放原物理 owner。第一轮修订后最窄运行中 Workflow 三语和
-TS Tool 通过；Factory 新增的回执检查却误读只记录 Host→SDK 的单向 trace，Java 另将
-invocation timeout 错当成必须取消独立 cleanup owner。此前源码复审漏核这两个边界，
-已由实际失败纠正，原审查和失败保留。后继只给既有 proxy 补方向明确的真实回传记录，
-并验证原超时之后 cleanup 仍由原 owner 持有；不改生产、Host、pin 或超时，不制造收据。
-后继实际复验已完成：TS3、Python2、Java3全部通过；再补强原 RPC 唯一回复断言后，
-Factory TS1、Python1、Java2实际全通过，零失败、error、skip；独立源码及原始帧/日志复审
-通过。两切点按未变输入衔接，不重复计数或替代完整官方入口。
-有限 checkpoint `410e0f1d857bbf8bcfd805376638794697524de9` 已正常提交推送：29个必要
-路径经独立复审，tree 与最终候选一致，canonical 严格快照/真实 main 基准检查、artifact、
-fmt 和对应语言格式检查通过。仅纳入已资格6563 pin、必要官方遥测、原测试修正及薄证据；
-候选四份 Task 文件采用 fa62 原 blob，foreign 后继改动保留为工作树差异，未纳入本提交。必要历史来源
-fa62 已有精确 annotated evidence ref，远端 main 加该 tag 的空仓冷取回、七个来源 blob
-等价均独立核对通过；旧 Task 的988/14a正文和状态未重写。
-协调者已独立核对公开 SHA、tree、父提交及 PR #5 head；PR 仍为草稿。原官方全语言
-第二轮后继实际退出1：TS354项中353成功、1失败、0跳过，Python/Java 未启动；前述三类
-oracle 本轮均通过。新失败已定位到 collector 启动清单的 create/write 窗口：文件存在时
-内容尚为空，真实 Host 尚未启动，业务 flush 未执行。后继修正原进程的完整清单就绪条件，
-保原期限、退出与清理边界，先验证已声明的瞬态读取反例，不伪造 ready 或业务成功。完整语言与
-Rust、四份后继 Task 改动、五项 open Finding、平台、精确 SDK main 和最终冷检仍待，
-不以该 checkpoint 宣称整体完成。
-
-官网独立 checkpoint `28f38b523319f7470a2715f64135395b0f30e3f6` 已提交并推送：290个
-framework 镜像逐字节匹配干净 `9886502`，CLI 的118个来源文件和8个投影仍绑定原
-`f57b90a2`；未复制 SDK 合同或新增 SDK pin。source-aware 检查及完整官网验证通过，
-包括39项单测、306条静态路由、15项浏览器测试，另有1项既有条件跳过；52个文件的独立
-必要性审查及 artifact 检查通过，无原始产物入库。CI 改为仅 push main，原 jobs 和来源
-检查保留。该阶段 [PR #5](https://github.com/EchoYue-lp/echo-website/pull/5) 已 squash 合入
-`faa9987d8da642d59e4a5c8e302d725cf18e36d2`，tree 与上述已审候选完全相同；精确 main
-CI `38938673709` 的唯一 verify job 及全部步骤成功，实际检出的来源为 `9886502`/
-`f57b90a2`。协调者已独立复核远端 SHA、tree、CI 和实际 checkout 日志。平台 action/
-runner 的非阻断弃用提示保留，不宣称 CI 零告警；无部署。最终 EKO 投影与联合验收仍待
-CLI main 后收束，不能将本阶段通过代替后继来源更新的验收。
-后继框架6563同步已以6个必要文件单独交付：[PR #6](https://github.com/EchoYue-lp/echo-website/pull/6)
-合入 `ccdbfb4b35b7b867cf39b059bbca56c3b01fbb9c`，tree 与已审候选一致；精确 main CI
-`38960733265` 全部步骤成功。协调者独立核对 CI 及实际 checkout 日志，来源确为6563/
-f57，CLI 118个来源和8个投影不变；完整官网验证及独立复审通过。无部署、无原始产物
-入库；后继 CLI 投影与联合验收仍须独立完成，平台弃用提示保留。
-
-### 早期协调与插件调查历史快照
-
-以下保留当时的待验、owner 和外部 Issue 状态；后继状态以上方当前表为准。
-已撤回的插件专项不再构成本 goal 的验收前置，原失败和未知证据仍保留。
-
-SDK/CLI 的剩余完整 Rust/GUI 与语言门禁、官网最终来源同步、四仓 main 验收和最终
-gitlink 更新仍待完成。Echo Semantic 支撑修复已由其
-[PR #4](https://github.com/EchoYue-lp/echo-semantic/pull/4) 交付到
-`c0bc306bd36d2b1b76def2b6c7308a07dda4f54b`，用于无损读取 SDK 原有二进制 diff。
-
-顶层协调规则 checkpoint `d36f4c1d` 已推送任务分支；四个 gitlink 尚保持下方历史验收快照。
-本轮协调线程为 `01a143e5-5a92-7293-8655-f880c3f698ae`；SDK 任务
-`01a14385-3980-70e2-af93-07f29fb43ed2` 独占原 SDK worktree，CLI 任务
-`01a143e8-d621-7f81-b968-b08783991777` 独占上述 primary CLI 任务分支，协调者负责官网、
-顶层集成和联合验收。framework Issue #120 在 GitHub 仍为 OPEN；SDK 本地 watermark
-Finding 与当前 Host 有限验证不能代替精确 SDK main 的最终结果或外部 Issue 结算。
-Hook 专项 `01a1442d-160b-7523-a946-32184bc23e72` 已经独审及完整检查并正规本机安装；
-P 的真实 pre-edit 根/宿主证据成立，S 的新 pre-edit 记录仍缺失，宿主四项 Hook 显示
-`trustStatus=modified`，已请求用户在 `/hooks` 审阅信任。不能据安装成功或编辑未拒绝冒称
-整个原生 Hook/Stop 通过；已授权工程工作继续，最终现场验收单列。后继正常提交推进又
-触发 Stop 绑定失效，原现场已保全并复现；与历史来源处理一起形成的隔离候选 Node134、
-Python95 项实际通过，但正式应用仍待两处受保护既有改动的明确接纳，不据自动续跑授权
-覆盖这些文件，也不手改安装缓存或绑定记录。该专项未远端推送或发布。
-每个可独立验收里程碑经 focused 验证、复审和必要路径检查后及时提交；正式 squash 前再次
-逐项检查完整 PR 文件及引用，raw/log/PF/临时探针不进入 main，仅保留必要源码、合同、
-测试、fixture、正式文档、CI 和最小长期证据结论。最终只更新已推送且精确 main CI 验收
-通过的子仓 gitlink，不用任务分支 checkpoint 冒充 main 交付。
-原主 checkout 的无关差异继续保留；CLI 目录迁移是用户后继明确授权，不推广到其它子仓。
-本轮不发布 npm/PyPI/Maven/crates.io 或插件版本，不部署官网；本节不声明全项目已完成。
-
-## 2026-10-11 SDK 独立仓接入
-
-完整 SDK 产品与过滤 Git 历史归属独立 `echo-agent-sdk`，顶层接入第四个 submodule。
-Protocol 不依赖 framework；Host 固定已推送的 framework extraction revision `27c7701e`，
-不随顶层 framework gitlink 隐式升级。Framework 已删除可编辑 SDK 副本与 SDK CI；
-EKO 与官网使用独立 SDK 链接。
-
-兼容门禁只承诺明确接受的跨语言合同。三语言直接读取 accepted artifact，完整 Rust
-inventory 数量与 intrinsic membership 是非阻断遥测。SDK 全能力语义治理与发布制品
-属于后续独立工作，不把 inventory 数量计入 framework 完成率。验收范围、子仓交付和
-用户工作区保留记录见 [SDK 迁移验收](./sdk-migration-final-acceptance.md)。
-
-## 2026-10-11 Background Review 入口结算
-
-按用户 B 选择，#38 的应用层修复纳入本轮交付。CLI
-[PR #11](https://github.com/EchoYue-lp/echo-agent-cli/pull/11) 候选
-`b34df102e8aca5d787c23d851f9c85bc748521ff` 在 4 项 PR CI 全绿后 squash 合入签名有效的
-远端 main `f57b90a2b0962fa5561f8839a3df70be1f261ffa`，Git tree 与候选一致，actual main
-strict semantic 通过。原顶层 checkout 的既有差异
-完整保留，应用、framework 证据及顶层指针分别使用专用 worktree。
-
-修复 Tauri 正常退出绕过服务结算、workspace bootstrap 恢复身份和 ProductData 回滚顺序；
-复用单一 Review owner/Store/generation，保留全部弱投影目标、显式 P/Q 项目指令及同项目
-link 幂等，Memory 归因排除 recall telemetry 并对旧指纹保持 unknown。框架公共 API、
-SDK、前端契约和 website 无改动。应用双语 ADR 0043 是正式行为说明。
-
-联合定向 94/94、桌面 adapter 7/7、两份独立只读复审 pass；完整本地门禁已通过两档
-Clippy、fmt/check、workspace all-feature（app-core 1,611 passed / 9 ignored、CLI 285，
-集成/doctest 零失败）、app-core no-default、GUI check/tests（216 + Tauri 1 + JSONL 6
-passed，3 ignored doctests）、59 对文档/49 ADR 和 semantic strict/change-evidence。
-原生窗口、真实 provider、Tauri restart/setup panic、较早 post-fork 初始化错误的完整
-清理尚未验证；发布检查失败的显式清理和 EffectsApplied 恢复是本轮较窄的验证结论。
-
-外部 #38 因真实入口反例重新打开，旧 PR #5 的 resolved 不能代替本次验收。Framework
-[PR #180](https://github.com/EchoYue-lp/echo-agent/pull/180) 的7项 CI 全绿后 squash 合入
-签名有效的 main `95ec66c6083a8feb17a1c28de0d01e1a24ca8a28`，tree 与候选 `a0c5b95d`
-一致，actual main strict semantic 通过；仅改四份语义材料，框架代码/API 无变化。
-独立复审 pass，完整 `scripts/verify.sh` 退出码 0。CLI 精确 main run 38106297341 的
-4项 CI 全绿；framework 精确 main run 38107875170 的7项 CI 全绿。
-#38 已在 repair、verification、independent rereview 全部进入主线并验收后关闭，
-[关闭记录](https://github.com/EchoYue-lp/echo-agent/issues/38#issuecomment-6105020331) 绑定实际快照和收据。
-SDK #120 与 A2A #32–35 继续排除，既有 release/soak 阶段不在本轮重开。
-
-## 2026-10-10 上下文压缩远端集成
-
-框架 [PR #178](https://github.com/EchoYue-lp/echo-agent/pull/178) 已在 7 项 CI 全绿后 squash
-合入 `e5372b8ca3dc308ce8dde4a0092ea58b8d7dd21d`，签名 verified，Git tree 与完整验证的
-`13a8b285` 候选一致。Summary、IncrementalSummary、SlidingWindow 共用 token/turn
-尾部选择，当前请求和工具组保真；取消、fallback 和增量观察缓存复用 ContextManager 权威。
-
-随后修复了远端集成发现的 process-group cleanup 前置缺陷：[框架 PR #179](https://github.com/EchoYue-lp/echo-agent/pull/179)
-在本地完整门禁（3,398 tests）与7项 PR CI 全绿后合入 `1486d2f4a26adbefab393679c58da2804e5f4a75`，
-签名 verified、tree 与已审候选一致。负数 PGID 通过 `kill -KILL --` 明确分隔；两条原清理
-路径继续拥有取消、超时和回收权威。Ubuntu 的无信号 syscall probe 证明原解析缺陷，但不
-宣称已证明历史 cancelled CI 的具体因果。
-
-应用 [PR #10](https://github.com/EchoYue-lp/echo-agent-cli/pull/10) 在4项 CI 和完整本地
-Rust/GUI 门禁通过后合入 `f98f50985c9dbc8aad8c1c7e873a8997fe5024f0`；官网
-[PR #4](https://github.com/EchoYue-lp/echo-website/pull/4) 在2项 verify 通过后合入
-`b1609b126014bf0cb120e68a2a665a9c64b8fa54`。两者签名 verified、tree 与验收候选一致。
-CI 复用已审预算拆分、保留全部原检查与失败聚合；官网 manifest 绑定上述实际 main。
-EKO 的 default policy、goal/recovery projection、focus 与 journal 仍属于
-应用层。独立复审全部 pass，剩余 findings 0；本地框架 3,396 tests/17 feature、应用
-1,922 tests、GUI 218 tests、前端 287 tests 和官网 39 unit/15 E2E 已通过。
-完整源码、文档与验证材料见[压缩验收记录](./supreme/plans/2026-10-09T1545-eko-context-compression/verification.md)。
-三仓最终 main push CI 全绿，精确run与snapshot见验收记录。三个 submodule 指针
-在本次顶层交付中同步，保留原工作区与其它线程成果；
-不将本次本地/CI 证据扩展为真实模型或原生 EKO 窗口验收。
-
-## 2026-10-08 GUI Fork 增量交付
-
-EKO 应用候选 `8bd2a6f` 已提交、推送至 [CLI PR #8](https://github.com/EchoYue-lp/echo-agent-cli/pull/8)。完成回复下方的独立 Fork 与普通会话列表已接通，复用原有 branch IPC、managed import 与会话权威。正式行为说明和双语 ADR 0045 均在应用子仓库维护；framework、普通 TUI `/fork` 与 Side Conversation 的分层边界保持既有约定。
-
-候选本地完整门禁通过：两档 Rust Clippy、fmt、workspace all-features（app-core 1594 passed / 9 ignored、CLI 281、main 11、JSONL 6）、app-core no-default、GUI check/tests（212、Tauri main 1、JSONL 6）、前端 Prettier/ESLint/290 tests/build、57 对双语文档与 strict semantic snapshot/change-evidence。已修复完整测试暴露的 live-steer 固定睡眠竞争，用流式入口和持久 mailbox acceptance 同步测试，未放宽断言。浏览器使用真实组件与本地 API fixture 验证分叉选中及源/分支独立列表条目；不宣称原生 Tauri 窗口验收。
-
-该候选已包含在 CLI PR #8 的最终 squash main `40fd804` 中，Fork 与自动协作边界按下节共同交付。Framework examples 与 echo-website 不消费这个 EKO 回复操作入口，无需修改。既有阶段的全局 release/soak 结论不由本次 GUI 增量改写。
-
-## 当前结论
-
-### 2026-10-09 合并后 Docker 测试门禁收尾
-
-framework `d8a73701` 的 main CI 曾在 invalid-create cleanup fixture 间歇失败，同一提交重跑通过。`echo-agent` [PR #177](https://github.com/EchoYue-lp/echo-agent/pull/177) 已合入 `a8c2d1ae3fce675633ea20d4e3d49258c327f634`，7 项 CI 全绿，Git tree 与本地验证候选 `707f5279` 一致。普通注入 CLI 恢复到原生产 control deadline，仅 dedicated hung info/create/rm 测试保留 100ms。有限延迟 200ms 后返回 invalid ID 的确定性回归在修复前失败、修复后 StartFailed 与 info/create/rm 结算通过。
-
-本地 Docker 28/28、受影响 echo_execution 331/331、完整 workspace/all-target/all-feature tests、两档严格 Clippy、fmt、workspace no-default 与 strict semantic snapshot/change-evidence 均通过。生产 Docker 配置/执行、GUI、Sidechat/Fork 与 AI 自动协作行为没有变化；CLI、SDK、website 不消费 test-only override，examples 已进入 all-target 链路。此阶段仅同步 framework 修复指针与验收材料，不重开其它旧阶段。
-
-顶层同步 framework squash main 指针。EKO 开发版持续运行，旧用户 journal 的格式警告不由本次测试修复解决。CLI `40fd804` 的 PR 检查均成功；main push run `37802448671` 的 frontend 与 Linux lint/no-default 均通过，Linux app-core test job `113397896291` 被取消且平台未保留可下载日志，不能据此认定代码失败，也不能声称该 main run 全绿。已请求精确重跑该 job，其结果单独结算。
-
-### 2026-10-08 Agent 自动协作边界
-
-按用户明确决定，EKO 不提供人工发协作消息、维护 Agent 组或管理投递收据的页面。CLI `f014323` 删除旧弹窗、组编辑器、聊天入口与无消费者的 GUI adapter，并完整撤回未提交的动态管理台/查询。模型工具、AgentRouter/AppState、TaskRuntime 与 Sidechat/Fork 保留；正式产品决定在 CLI 双语 ADR 0047 和 top-level/CLI AGENTS 同步维护。
-
-本地 Rust 1.99 完整门禁全绿：app-core 1594 passed/9 ignored、CLI 280、main 11、JSONL 6、GUI 211/main 1/JSONL 6，前端 287 tests/build、两档 Clippy、no-default、58 对文档/48 ADR 与 strict semantic deletion evidence。人工 UI 有意退役，保留核心与 Side/Fork 的验证不冒充 UI 等价。
-
-Framework [PR #176](https://github.com/EchoYue-lp/echo-agent/pull/176) 已合入签名有效的 `d8a73701768a3433c8b2afd5de08da573754673c`，7 项 CI 全绿，Git tree 与验证候选 `c13937b5` 一致。修复 Rust 1.99 atomic API 与 generated must-use lint，保留 Rust 1.95 minimum 和原 lazy dispatch；完整 workspace/all-target/all-feature、no-default、18-feature 与 semantic 门禁通过。CLI [PR #8](https://github.com/EchoYue-lp/echo-agent-cli/pull/8) 已合入 `40fd80447cdf3d7627399af0b2069a8b4da5327a`，Linux 与 frontend CI 全绿，Git tree 与验证候选 `f014323` 一致。本顶层 [PR #16](https://github.com/EchoYue-lp/eko-workspace/pull/16) 同步两者 main 指针；旧用户 journal 的恢复警告未通过清空数据或迁移绕过。开发版已重新启动，运行新源码且人工 Agent 协作入口已移除。
-
-F0-F6、R1、R2 和 R3 文档/website 收敛已完成；G 的当前静态门禁已完成，但完整测试与 Final Integration/Release 仍为 conditional，因此整个优化迭代不能宣称发布完成。
-
-| 阶段 | 当前状态 | 结论与证据入口 |
-| --- | --- | --- |
-| F0 characterization | Complete | 已进入 CLI `main`，作为后续交互回归输入；细节见 [`agent-interaction-convergence-plan`](./2026-08-26-agent-interaction-convergence-plan.md)。 |
-| F1 receipt/admission | Complete | Persisted/Accepted/Drained/TurnSettled 已收敛；framework 与 CLI child baseline 已冻结。 |
-| F2 Task/Plan/Todo authority | Complete | `TaskStatus` 是唯一执行权威，Todo 仅只读投影；ADR [0015](../echo-agent-cli/docs/zh/adr/0015-task-graph-status-authority.md)。 |
-| F3 Agent control tools | Complete | 六个 `agent_*` 工具复用既有 router/subagent/task authority；bounded query 已下推。ADR [0016](../echo-agent-cli/docs/zh/adr/0016-agent-control-tools.md)。 |
-| F4 删除 InteractionMode | Complete | 生产 Rust、DTO、prompt、surface 旧 mode 路径已删除；不得以同义名称恢复。 |
-| F5 Agent/Subagent lifecycle | Complete | characterization、生产修复、测试卫生和适用完整门禁已通过；统一使用 Subagent 术语。 |
-| F6 cursor/recovery/surface parity | Complete | restart cursor、cold address、workspace switch/delete、boot reconcile、terminal exactly-once 和五入口 canonical fixture 已形成 executable 闭环。 |
-| R0 app/framework boundary audit | Complete | 151 个 app-core Rust 文件已分类，现已升级为 R1 final closure ledger。见 [`boundary closure`](./2026-08-28-current-framework-application-boundary-audit.md)。 |
-| R1 framework-first migration | Complete | 19 个 M 与 8 个 C 均有最终 disposition；turn、TaskRuntime、artifact、bootstrap、diff、plugin、memory、tool-control、background 和旧路径已收敛，无第二 authority。 |
-| R2 examples convergence | Complete | 43 个教学/组合 demo 与 21 个 executable contracts 已统一迁入 `echo-agent/echo-agent-learning`；feature、panic、UTF-8、facade 与链接合同通过。见 [`framework-examples-inventory`](./2026-08-28-framework-examples-inventory.md)。 |
-| R3 framework docs/website | Complete / 2026-10-10 验收快照 | framework 与 EKO 正式双语文档、示例路径、discovery 与 source-aware sync 在该次交付完成；website manifest 绑定 CLI `f98f509` 与 framework `1486d2f4`，对应 2026-10-10 的压缩交付快照。本轮私有生命周期修复与证据交付不更新 website，不把历史站点快照当作本轮 main 验收。 |
-| R4 app-core global modularization | Complete | app-core authority modules are physically split behind `echo_agent_app_core::api`; CLI/TUI/Tauri/channel/examples/tests use the facade. Wire and persistence contracts remain unchanged. R4 validation remains pinned to code `0e762ab` and framework `125ea5f`; current child baselines are listed below. See `echo-agent-cli/docs/zh/adr/0025-app-core-global-modularization.md`. |
-| Framework capability placement correction | Complete | 通用 primitive 不再以第二消费者作为准入门槛；AgentPool/AgentRouter/ChatEventLog/Plugin/Extension 的逐符号 disposition 见 [`framework capability placement audit`](./2026-08-30-framework-capability-placement-audit.md)。 |
-| AgentPool keyed admission kernel | Complete | `echo-agent` 的 `KeyedExecutionAdmission` 负责 opaque-key lease、per-key process permit、retirement、close/wait；EKO `AgentPool` 保留 Agent cache、capacity class、workspace、plugin/model/tool policy。 |
-| AgentRouter delivery ledger contract | Typed API complete / development schema reset | framework typed `DeliveryLedger<Route, Payload>` 与统一 `DeliveryTransition` 已成为唯一 lifecycle/projection/retry authority；EKO 直接使用 `AgentAddress`/`AgentMessage`，旧 `ClaimSettlement`、`AgentInboxProjection`、`FoldedDelivery`、legacy event wire 与 checkpoint codec 均已删除。 |
-| Framework-native domain values | Complete for current migration lane | EKO 权限状态直接保存 framework `PermissionRule`；matcher、behavior、source 由 framework `FromStr` 校验；TaskRuntime 直接保存 framework `TaskExecution`；Subagent 与 conversation-input outcome 直接使用 framework 类型；framework 配置通过标准 `From<FrameworkConfig> for AgentConfig` 转换；delivery/subagent 对外入口统一为 `echo_agent::delivery`、`echo_agent::subagent`，两类执行结果直接返回 `ExecutionUsage`，不再保留 split-crate workspace facade、转换 trait、framework-shaped DTO 或 `to_framework_*`/`from_framework_*` helper。ADR framework `0021`、EKO `0027`。 |
-| Typed LLM timeout contract | Complete for framework/API integration | framework `LlmTimeouts` 同时拥有 non-stream request 与 stream first-chunk/idle/overall 边界；`LlmConfig` 提供 client 默认，`ChatRequest` 使用同类型覆盖单次调用。Chat Completions、Responses、Anthropic 共用唯一 SSE transport；旧 `ECHO_AGENT_STREAM_*`、Anthropic 私有 byte loop、固定 reqwest 120s stream 总超时和 `llm::{core,integration,config,providers}` 迁移 facade 已删除。ADR framework `0022`。 |
-| Dead AgentRunner contract cleanup | Complete | `src/runner.rs` 从未进入 module tree，且 deprecated facade 文档引用不存在的 context/eval builder API；现已删除。Agent 构建、trace 与 eval 分别直接使用 `ReactAgentBuilder`、`RunStore`、`EvalRunner`，Eval/Tracing 双语文档和 website 不再声称存在自动 recorder 或第二 runner。 |
-| Current EKO product schema authority | Complete | `.eko/learned-rules.md`、`.eko/workspace.json`、原样 cron prompt 与 `TaskRuntimeStore::new()` 是唯一当前输入。`.eko/AGENTS.md`、root `.workspace.json` reader、`[plan]` marker strip、`TaskRuntimeStore::open()` 和生产 run-id-only wrapper 已删除；retired workspace marker 只用于防覆盖，journal rebuild 与保守 worktree cleanup 继续保护当前数据。EKO ADR `0028`。 |
-| Framework-native Agent/model config | Complete | EKO 直接保存 framework `AgentSettings`，并以产品默认结构化合并部分 YAML；顶层 `model` 只含 `default_model_id` 且拒绝未知 mirror 字段；`ConfiguredModel`/`ModelProviderConfig` 分别唯一拥有模型与连接事实；`resolve_runtime_model -> Result` 是所有 surface 共用的唯一 resolver，不再合成 synthetic model。EKO ADR `0029`。 |
-| Current Skill format authority | Complete / official format enforced | `SkillDocument::parse/parse_at` is the sole parser/writer authority. File frontmatter accepts only agentskills.io fields, rejects private extensions, invalid types/null, name mismatch, and official length violations; Skill files carry no private Hook sidecar, and host/plugin Hook configuration stays separate. `validate_skill_markdown/validate_skill_dir`, SkillsHub, install, Plugin validation, SkillMerger, and examples use the same contract. |
-| Enabled Skill 运行时权威 + catalog 收缩 | Complete / locally merged; remote delivery pending | `enabled-skills.json` 只保留 `{category, enabled, baseline}` flat policy 与原子写，损坏配置 fail-open；generation CAS、operation identity 与 repair debt 已删除。catalog 41 → 39 → 24，默认启用 8 → 5，methodology baseline 4 → 1。TUI/GUI 可激活当前会话 Skill，Tauri bundle 使用官方 resource dir，Agent Plugins 1.0 的 skills 面按包原子安装。framework `ac00815`、EKO `f194c43`、website `35490e8` 已在各自本地 `main`；尚未 push，顶层 gitlink 因此尚未提交。EKO ADR `0032`、`0033`、`0036`。 |
-| Unified Subagent prompt architecture | Complete / static gates passed | framework `SubagentPromptCompiler` 统一拥有 stable system prompt 与 typed invocation messages；真实 registered capability、`ToolVisibilityPolicy`、typed `access_mode`、effective workspace、allowlist override、结构化历史与附件均在单一编译链收敛。direct/planned/fork/teammate/team member/plugin/primary TaskRuntime 共用该合同；角色 Markdown 只保留角色、方法和领域知识。framework ADR `0024`、EKO ADR `0030`。 |
-| Deterministic CommandCell watch | Complete / static gates passed | framework `CommandCellWatcher` 持有 observation lease、按 byte cursor drain 并返回 typed terminal；EKO 只保留 exact workspace/conversation/root、generation、Ready/delivery/ack、恢复与 surface policy。模型驱动的 `awaiter` Subagent、provider summary/status、Subagent attempt identity 与旧 active spec 已删除。framework ADR `0025`、EKO ADR `0031`。 |
-| Bilingual docs parity foundation | Complete | CLI 已提交 40 对 zh/en 镜像文档（含 30 个 ADR）和 fail-closed checker；website sync 强制执行 parity 并记录 sourcePath/hash。 |
-| Repository hygiene | Complete / runtime scope protected | 已清理 20 个空缓存/源码占位目录，并在全部验证后按磁盘规则清理两个 Cargo target 缓存（共释放 48.5 GiB）；tracked audit `.txt`、website `.txt`、115 个 `.eko` runtime trace、8 个 soak roots 和验收 worktree 均保留，未按扩展名删除运行数据。 |
-| G Final Integration/Release | Conditional / full gates pending | 当前 framework/app all-target compile、严格 Clippy、双语 parity 与 website static checks 已通过；测试、frontend build、GUI、soak、人工 GUI、远端 CI 和 release 尚未重新验证。 |
-| 长程任务优化(统一 turn-run 绑定) | Closure complete on local `main` / `echo-agent-cli@be273d3` + `echo-website@ae91c39`,未推送 | `feature/unified-turn-run@9524b47` 的 9 项 review 修复已作为基线,closure 补齐 typed provenance memory gate、quiet-check 与 RunTurn claim 原子复核、五入口长 steer 原文保真、`ForegroundTurnSnapshot.run_id` TS 绑定和 `PlanRevisionCommitted` 任务 UI 激活。第三轮独立复审 Critical/Important/Minor 均为 0。CLI 门禁已通过 fmt、Clippy 双档、workspace all-features(app-core 1534 passed/9 ignored、CLI lib 276、main 11、JSONL 6)、no-default、GUI check/tests(207 + main 1 + JSONL 6)、前端 Prettier/ESLint/Vitest 244/build、双语 parity；website source-aware docs check 与完整 verify 通过(39 单测、174 static/discovery routes、Playwright 15 passed/1 skipped)。后续项(独立 ADR):task_execute §10.1 同步 await 合同的后台化。 |
-| echo-agent 全 workspace 语义治理 | Baseline complete / 当前修复范围已闭合 | 最新 framework 清单为 96 个 Finding：91 resolved、5 open；5 个 open 是本轮排除的 SDK #120 与 A2A #32–35。#38 的 CLI 修复、framework 三类证据及两仓精确 main CI 已验收，外部 Issue 已关闭；不以旧 resolved 代替本次验收。治理单位为 Capability / Behavior / Rule / State Authority / Lifecycle / Finding / Evidence；SDK identity inventory 不计项目完成率。历史路线保留于 [`delivery map`](./supreme/plans/2026-09-13T1448-echo-agent全workspace语义治理/delivery-map.md) 与 [`优化清单`](./2026-09-14-echo-agent-semantic-governance-findings.md)。 |
-
-## 2026-10-11 已验收基线（历史快照）
-
-| 仓库 | 本轮验收快照 | 远端/发布状态 |
-| --- | --- | --- |
-| `echo-agent` | `95ec66c6`（精确远端 main） | PR180 已合入签名有效的远端 main，tree 与已审候选一致；完整本地、PR与精确main各7项CI、actual main strict semantic通过，#38已关闭。 |
-| `echo-agent-cli` | `f57b90a2`（精确远端 main） | PR11 已合入签名有效的远端 main；tree 与已审候选一致，完整本地、PR 与精确 main 的4项CI、strict semantic 通过。 |
-| `echo-website` | `0dc2dc5`（SDK projection main） | PR2 已合入远端 main；source-aware manifest、完整 verify、PR 与精确 main CI 通过，正式来源只取已提交 revision。 |
-| `echo-agent-sdk` | `30d7e21`（SDK independent main） | PR4 的 8 项 CI 与精确 main 的 8 项 CI 全绿，tree 与已审候选一致；完整本地及独立检出验证通过；只承诺 accepted contract，源码交付证据见 SDK 迁移验收。 |
-| superproject | PR20 的四仓快照 | 从最新 origin/main 隔离，新增 SDK 第四 gitlink、同步 website 已交付指针及跨仓规则；远端四仓新检出验证通过，原 checkout 的未提交材料和旧 task worktree 保留。 |
-
-F2-F5 的合流与门禁证据集中在 [`plan_03`](./supreme/plans/2026-08-28T0013-项目未完成工作收敛/plan_03_F5收口完整验证主分支合并与资源清理.md) 及两个 child MASTER-PLAN；这些文件记录历史实施证据，不替代本节状态表。
-
-## 分层与不变量
-
-- framework 保持通用 EventEnvelope、turn/checkpoint、Task DAG/revision/validator、Subagent lifecycle、Tool/Store、MCP/LSP/channel、scheduler、HITL 和通用 bounded I/O 原语。框架的合理公开能力（包括 SQLite store）不得因 EKO 不调用而删除。
-- EKO 保持 workspace、DomainProfile、产品配置、TaskRun 文件权威、review/worktree、文件/工件/记忆策略、surface 投影、pool、应用生命周期和本地权限策略。EKO CLI 不启用 SQLite。
-- R4 的 app-core 物理模块化不改变上述 owner：`state/`、`tasks/task_runtime/store/`、`tasks/task_runtime/executor/`、`agent_router/`、`chat_event_log/`、`agent_pool/`、`extension_control/`、`plugin_runtime/` 和 `infra/` 通过单一 `api/` facade 对外；没有第二 runtime/store/DAG/status/publication authority。
-- 只有一个 turn driver、一个 receipt lifecycle、一个 revisioned Task graph/validator/ready frontier、一个 Conversation Agent router 和一个 attempt-scoped Subagent control owner。不得新增第二 runtime、mailbox、store、DAG loop、status reducer 或 mode 替身。
-- GUI、TUI、CLI/JSONL、channel、cron/background 共享同一核心能力；surface 只渲染/适配，不自行推断运行终态。内部执行角色统一使用 `Subagent` 术语。
-- 取消、失败、部分副作用和恢复必须以持久事实为准；不宣称任意副作用 exactly-once。所有字符串预览使用 UTF-8 安全字符迭代，外部输入不得触发 panic。
-- 语义修复严格执行一 Finding 一 GitHub Issue：Issue 正文包含唯一 `echo-semantic-finding` marker，Finding 回写唯一 URL；新问题先建 Issue 再进入修复，只有修复进入远端主线且 repair、verification、independent rereview 三类证据闭合后才关闭 Issue。
-
-## 已完成收敛
-
-- F6：Conversation/TaskSubagent cursor 跨重启恢复、cold/unloaded address、workspace generation/delete、boot reconcile、terminal exactly-once 和 GUI/TUI/CLI/JSONL/channel 同 fixture 已通过。
-- R1：framework producer first、EKO product integration second、旧路径同阶段删除。最终逐项证据和 SHA 见 [`boundary closure`](./2026-08-28-current-framework-application-boundary-audit.md)。
-- R2：`echo-agent-learning` 统一承载 43 个编号 demo、13 个 Rust 学习章节和 21 个 executable contracts；正式 framework 文档只引用 learning package 的示例路径。
-- 全方向通信矩阵（2026-09-03）：框架 `feature/agent-communication`（SubagentLineage/UplinkSink/共享控制面/subagent_message+list，ADR 0027，demo50）与 CLI `feature/agent-communication`（EKO uplink sink、escalation→NeedsInput、同 run 兄弟投递、8 角色全开 can_delegate、agent_spawn/resume/handoff/group 四工具，ADR 0034）在各自 worktree 分支完成并通过 fmt/clippy 双档/feature 矩阵/gui bin/前端三件套；CLI 全量测试 76 项失败全部为运行中 EKO 实例持有 `~/.eko/tasks` 文件锁的环境冲突（零断言回归），待实例退出后复跑补验再合并。
-
-## 下一阶段路线
-
-### echo-agent 全 workspace 语义治理（当前修复范围已闭合，2026-10-11）
-
-全 workspace discovery、状态权威/生命周期审计及 Finding 修复已持续进入框架 main。
-当前实际清单为 96 个 Finding：91 resolved、5 open；5 个 open 均是本轮排除的 SDK #120
-与 A2A #32–35。GitHub 功能请求 #10 不是语义 Finding，不计入该清单。#38 的新入口
-验收见本文件 2026-10-11 阶段记录；当前纳入目标的已确认 Finding 均已交付并关闭。
-
-本轮只完成当前范围的终态、恢复、持久化和副作用结算，不重开 SDK/website 或产品发布。
-后续发现须以最新 main 的真实入口、唯一状态权威、取消/恢复与持久事实反例为依据，按依赖
-关系形成可独立验收的 Finding 切片；完整门禁只在稳定的 PR/main 交付点执行。
-SDK inventory 继续作为漂移监控和独立 backlog，不按 identity 数量衡量项目完成度。
-
-统一Tool Surface / ToolRouter草案的首次复审结论为block：surface必须按model request/iteration generation冻结，必须复用现有`ToolInvocation`/`ToolRuntime`/`ToolExecutionContext`，execution traits不得取代动态Permission与现有ToolManager/network生命周期。草案在修订和复审通过前不是正式ADR，不得进入实现。
-
-### 全方向通信矩阵收尾（Complete，2026-09-03）
-
-76 项锁冲突测试在 EKO 实例退出后复验全绿（CLI 全量 1844 通过 0 失败）；squash merge 落地：echo-agent main `53473e3`、echo-agent-cli main `8a7fd85`，均已推送；worktree/分支/symlink 已清理；superproject gitlink `d8388dd` 已推送。合并前两仓主 checkout 的遗留 WIP 已 stash 保留：echo-agent `archive/pre-agent-communication-merge-wip-critic-schema-20260903`、echo-agent-cli `archive/pre-agent-communication-merge-wip-pool-primary-frontend-20260903`（未自动 pop，由所有者决定恢复时机）。
-
-### R3：framework docs/website（Complete）
-
-framework 中英文 README、公共 API/feature/examples 文档和 EKO 正式产品文档已按 framework `d9cb003` 与 CLI `c29ca20` 完成复核；typed Delivery Ledger、immutable `SkillDocument`、official Skill format/validator、typed Task/Subagent/Tool/LLM API、统一 Subagent prompt compiler、registered capability/visibility/access authority 与 deterministic CommandCell watch 均已同步到 website，source/discovery/site checks 已通过；本阶段未运行完整测试、frontend build、GUI、soak、release 或浏览器人工门禁。
-
-### G：Final Integration/Release
-
-在 R3 完成后一次性执行三仓适用完整门禁、fault matrix、10k/100k release 性能、10 分钟/1 小时/最终 2 小时 soak、人工 GUI、远端 CI 修复与复验、child-first push 和 superproject gitlink 更新。所有命令必须真实 exit 0；被阻塞或中断必须保留 exit code 和原因，不得称为通过。
-
-## 证据与文档索引
-
-- 交互/任务路线与依赖：[`2026-08-26-agent-interaction-convergence-plan.md`](./2026-08-26-agent-interaction-convergence-plan.md)。
-- 扩展与最终集成边界：[`2026-08-26-extension-control-final-integration-unified-plan.md`](./2026-08-26-extension-control-final-integration-unified-plan.md)。
-- R1 boundary closure：[`2026-08-28-current-framework-application-boundary-audit.md`](./2026-08-28-current-framework-application-boundary-audit.md)。
-- R2 examples inventory：[`2026-08-28-framework-examples-inventory.md`](./2026-08-28-framework-examples-inventory.md)。
-- Tools/app-core boundary assessment：[`2026-08-29-tools-app-core-boundary-assessment.md`](./2026-08-29-tools-app-core-boundary-assessment.md)。
-- Framework capability placement audit：[`2026-08-30-framework-capability-placement-audit.md`](./2026-08-30-framework-capability-placement-audit.md)。
-- AgentRouter delivery ledger phase 1：[`plan_06_冻结AgentRouter通用ledger契约`](./supreme/specs/2026-08-30-framework-boundary-and-bilingual-docs/plans/plan_06_冻结AgentRouter通用ledger契约.md)。
-- AgentRouter delivery ledger phase 2：[`plan_07_AgentRouter生产ledger切换`](./supreme/specs/2026-08-30-framework-boundary-and-bilingual-docs/plans/plan_07_AgentRouter生产ledger切换.md)。
-- AgentRouter delivery ledger phase 3：[`plan_08_AgentRouter删除旧projection`](./supreme/specs/2026-08-30-framework-boundary-and-bilingual-docs/plans/plan_08_AgentRouter删除旧projection.md)。
-
-以上三份计划均为 `status: superseded` 的历史工程记录。它们原先规划的 adapter、legacy
-wire/checkpoint codec 和旧 projection 保留策略没有延续到当前实现；typed framework
-`DeliveryLedger` 与 EKO 直接 typed 集成的 ADR 0019/0026 才是现行事实源。
-
-- Repository hygiene：[`2026-08-30-repository-hygiene.md`](./2026-08-30-repository-hygiene.md)。
-- Skill 系统重构（Phase 0-5 已实现、复审、验证并本地合并，待 remote delivery 与顶层 gitlink）：[`2026-09-03-skill-system-refactor.md`](./2026-09-03-skill-system-refactor.md)。
-- EKO website projection review：[`2026-08-29-eko-website-projection-review.md`](./2026-08-29-eko-website-projection-review.md)。
-- EKO 应用事实源：[`echo-agent-cli/docs/zh/project-status.md`](../echo-agent-cli/docs/zh/project-status.md)、[`architecture overview`](../echo-agent-cli/docs/zh/architecture/overview.md)、[`features`](../echo-agent-cli/docs/zh/features.md)。
-- Agent control：[`ADR 0016`](../echo-agent-cli/docs/zh/adr/0016-agent-control-tools.md)；bounded query 已由生产 store API 下推。
-
-历史 `docs/superpowers/`、`docs/supreme/` 计划和旧审计只作为可追溯证据，不能直接授权新代码修改；新阶段需先创建同主题专项 plan/ADR（若涉及架构），并注明 owner、删除目标和退出门。
-
-## 提交与验证约束
-
-跨仓修改顺序固定为 framework → CLI → website → superproject gitlink。提交显式关闭 GPG 签名：
-
-```text
-git -c commit.gpgsign=false commit -m "..."
-```
-
-提交前按 `AGENTS.md` 执行与改动匹配的 fmt、clippy、workspace tests、no-default/feature matrix、GUI/frontend 和文档链接检查；磁盘不足时才按规则清理对应 `target/`。本文件不把未执行的性能、soak、人工 GUI、远端 CI 或 release 命令写成通过证据。
+# EKO／Eclip 总纲：当前交付状态
+
+**2026-11-09 主线整合的最终验收进度。** Framework `3413d64`、CLI `2335163`、SDK `5bbaf9a` 已分别合入各自main，精确main CI为7/7、4/4、9/9全成功；三仓本地与远端仅保留main。SDK从官方远端全新冷仓及必要证据标签的原严格检查通过。官网已合入main `1e42fc9`，最终本地完整verify、fresh审计和精确main CI 1/1通过，尚未部署。CLI最终95b／283与原48ee／769的精确风险绑定已获用户批准，原八控制和fresh actual/canonical正式门禁通过；原五风险未修复。统一App已由已过CI的primary Framework／CLI官方冷构建成功，签名与来源核验通过，签后程序`ed081f08…`；原数据手动启动器的check-only已自然0，签后包及来源保全后App target准确清理0；原账号微信无回复的业务根因与最终手机收发仍由人工验收，不把源码、CI或诊断日志补强当作已修复手机收发。全量证据和清理详情见[本次综合交付记录](supreme/reports/integrated-main-delivery-2026-11-09.md)。下文旧状态按日期保留历史含义。
+
+**2026-11-09 整合交付进行中。** 用户要求全部既有开发成果分别进入框架、应用、SDK、官网及主工程的 `main`，核对功能覆盖后仅保留主分支；learning 指 `echo-agent/echo-agent-learning`。已完成的工作已按功能提交并推送同名整合分支。框架最终 23 阶段本地门禁全部自然 0、零警告、4013 输入无漂移，最初运行及编译失败已修复并保留原件；最终 cargo-deny 也为 0，但两项 fresh audit 的最后复扫因 GitHub 公告库连接失败尚无新结论。当前正在等待本次本地网络豁免及 CLI 新 consumer 精确绑定裁决，main 合并与精确 CI 尚未完成。SDK 的 `calamine 0.36.1` 漏洞修复和薄适配正在开发，最终须锁定框架 main 后独立验收；官网本阶段来源同步已提交，最终 main 来源锚及完整门禁仍待完成。原账号微信无回复仍未确定业务根因，新综合 App 未交付。当前路由见 [协调交接](supreme/handoffs/eko-current-handoff.md)；下文具名日期、旧包和旧“当前”均保留其历史时态。
+
+**2026-11-08 同源候选已就绪：** 用户已精确批准本次consumer `43ed071e…`／锁 `48eece73…`。原8控制、actual-lock和canonical-origin默认fresh正式门禁及独立Final审查均通过；官方scanner各1、精确gate／caller各0，零漏洞、原5项warning仍未修复。CLI风险组已本地提交 `894374232b3be89f0060840459bb7d5c294f9dd7`，两仓规则同步，不更新未推送gitlink。
+
+新候选签名程序 `30db9539…` 已完成官方构建、严格签名及资产／编译来源核验，4008源与17工具零漂移、152新资产保全，独立包审查通过，自有target准确clean0后约43.44GiB可用。人类原数据入口为[启动同源候选（原数据）](../.echo-semantic/local/eclip-final-native-20261108-r01/启动同源候选（原数据）.command)，沿此前主App准确数据／配置／工作空间；仅读工程启动结构并stat原路径，不读取认证或恢复旧数据。该入口静态检查、真实隔离flock跨exec控制及独立复审通过，Agent未启动App或操作GUI。私有UIQA入口仍单独保留，不能代签原账号手机。
+
+原完整CLI workspace、前端和官网已验证结果保持；正在补齐原SRE计划要求的公开Rustdoc／examples直接合同证据。用户界面手验与原账号手机A/B、重连C、冷重开D仍待，整体Goal不标完成。以下段落均保留各自历史切点。
+
+**2026-11-08 完整测试后继状态：** CLI `efbf200c0d2ff9c4ff20ba567e2660fa0200e248` 已本地提交无需裁剪时延后派生投影维护的最小修复及严格历史比较回归。原完整命令 `cargo test --workspace --all-features --locked` 使用默认并行自然退出0、编译警告0、2503个冻结输入零漂移：App-core主目标2367通过／15原忽略，CLI主目标143通过／3原忽略，两个4100事件的独立持久化目标分别实际通过；其余工作区与文档目标也已实际完成。原R17失败、R18受控中断和R19失败及程序、原始日志均保留，不以这轮通过改写历史。六项质量门禁及七项CLI邻接测试均通过。
+
+精确consumer `43ed071e6471d4ab627520a74843fdd8c3524a023b30c85205270176257c3143`／锁 `48eece730daaa9eff539e416861454441c23c54abf02bacaa2c3bdb375bd6329` 的具体裁决包已独审并向用户提问，当前等待答复，正式基线仍为42a。两次未过滤fresh官方扫描均自然退出1：0漏洞、原5项warning；它们是审批前原始扫描，不能记为正式风险gate、零warning或风险已修复。接受后仍须执行原8项控制及actual-lock／canonical-origin两项正式fresh门禁。
+
+第三轮隔离包继续供用户手验，包含`/goal`、`/side`、288像素左栏和适量留白，但它不包含后继R20生产修复；官网已绑定当前CLI正式文档来源，24项文档测试及348个静态页面检查通过（官网本地提交 `bdc99191`）。R02已结束验证的target在保全11个实际程序及来源后官方clean0，可用空间观测净增约13.82GiB。执行保存与IM的正式阶段记录分别本地提交 `daf8fe18`、`d9962512`；原Plan状态与验收条件保持。最终同源App和手机收发／恢复仍待完成。GUI由用户操作。总Goal保持active；未推送、合并、部署或更新指向未推送子提交的顶层gitlink。以下段落保留各自历史切点。
+
+**2026-11-08 最新验收入口：** 第三轮Eclip隔离包已就绪，包含CLI `b6c23b7d…`的`/goal`、`/side`、288像素左栏和适量留白；主根入口为[启动第三轮隔离验收](../.echo-semantic/local/eclip-ui3-native-20261108-r01/启动第三轮隔离验收.command)。包绑定Framework `f479f52c…`／CLI `b6c23b7d…`及已接受CLI锁，签名程序`668c5fdd…`；官方构建、4006源／17工具零漂移、152资产依赖及签名静检和独审通过，未自动启动App或操作GUI。
+该包不包含后继纯测试修复，也不继承完整Rust、风险或手机验收资格。独立构建target在保全产物和reader0后准确清理，清理前后观测可用空间净增约3.75GiB；原App、私有数据、provider、旧视图及Root热target均保留。
+R18完整并行批次重现3项失败并暴露6个Git测试等待环，已保全采样并仅受控中断原测试进程，不能称自然libtest终局。R19的阻塞边界、测试实例资源隔离及两个独立持久化目标均已源码审查通过；联合1814个Rust输入的新质量检查正在进行，完整原命令、default／test-utils入口计数及新目标运行仍待验证。后续继续精确风险裁决与同源手机手验；总Goal保持active。下方各段保留其历史切点。
+
+**2026-11-08 后继协调状态：** 九份11月5日至6日的媒体、前端、GUI、R2准备及SSH报告已按五组本地归档（`b189b637`、`59b9ece5`、`e07920d8`、`f2404091`、`4f42cb3d`）；它们保留各自历史切点，部分旧程序已退役，不能据此声称今日验收通过。
+CLI原完整命令自然101：2358通过、10失败、15原忽略，来源零漂移；失败程序、日志和指纹已保全。两处IM测试夹具修复源码审查通过，执行测试修复仍在进行，新运行尚待共同冻结，原失败不被单控结果替代。
+用户新增`/goal`、`/side`快捷入口，并要求左栏略加宽、主栏恢复适量留白；按用户裁决由会话`01a1b972-3dd9-7001-ad24-86d2896654e8`唯一接手相关前端，原界面会话已停止重叠写入。带内容命令直接创建支线或更新目标，沿既有接纳及Goal安全点／CAS；前端17文件已本地提交为CLI `b6c23b7d…`，独审及完整1049通过／4原skip、格式／类型／lint／Vite和六组隔离布局检查通过，尚未进入新原生包。
+第二轮紧凑工具行隔离包已就绪（CLI `aecf90c1…`，签名程序`fa122d52…`），新栏宽与斜杠命令尚未打入该包。GUI继续由用户操作；新风险consumer精确裁决、组合原生及手机验收仍开放。总Goal保持active，未推送、合并、发布或更新未推送子提交的顶层gitlink。下方内容按各自历史时间解释。
+
+**2026-11-08 当前协调入口：** `01a1b583-b8c0-7ea2-96f7-5cbd77bc3d25`。
+IM、缓存、执行基础、界面及官网已按功能本地提交；缓存历史验收报告已归档，最终风险门禁与手机验收仍开放。
+紧凑间距与主栏宽度修正为 CLI `a1ea6579…`，前端1027P／4原skip、类型／格式／构建及隔离浏览器验证通过；当前人工操作的R03旧包不含此改动。
+新密度包绑定已提交CLI `a1ea6579…`／Framework `2b296b7e…` 与已接受锁，使用主根内干净归档来源，未包含未提交的执行候选；构建、签名和嵌入资产核验完成前不标ready。
+执行候选R14首轮编译自然101，后继两文件最小修正已采用，原五秒、物理容量和完整运行矩阵仍待验证。GUI由用户接管，不再自动操作窗口。
+总Goal继续active；未推送、合并、部署或更新未推送子提交的顶层gitlink。分批证据见[协调报告](supreme/reports/workspace-coordination-2026-11-07.md)及主根ignored协调目录；以下早期状态保留其历史切点。
+
+**2026-11-06 历史验证环境已按用户授权退役：** 在上一轮清理后，本轮再删5处旧App/制品/闲置工具链，并退役约100万历史文件。原展开源码、旧日志和程序不再默认存在；去重源码/配置及映射约3.19GiB，已全量SHA回读及实际恢复抽查。当前App12546b31、用户数据、进行中SSH包/9冻结工具和活动target保留；当前启动器所需旧启动结构已按原SHA恢复并静态验证0。两处有reader的历史目录排除。项目最终du约38.17GiB，结账可用约51.94GiB，存在并行构建和APFS共享。后继不要直接沿旧绝对路径重跑旧环境；先看本轮恢复映射。 [本轮清理记录](supreme/reports/history-retirement-2026-11-06.md)。
+
+**2026-11-06 主Agent固定轮数删除包已就绪：** `12546b31…`／177146608字节，主根3976源直接冷构建0、源零漂移，149新资产和真实.d匹配，签名/deep strict及实际包独审pass。GUI/API/YAML不再提供固定迭代参数，主工厂沿既有无产品轮数上限行为工作至完成或取消。源码20文件独审pass；976前端+4原opt-in、6项筛选（4轮数相关+2原匹配）、32配置、225实际导出、2相关池控制、严格Clippy/实际gui feature check/格式与构建0，最后Outcome1P+8P0。自有target必要4881件保全后准确官方clean0，target不存在。入口root local/gui-unbounded-agent-App-20261106-r01/启动新版.command，ready 40ee70ab。当前未替用户退出a440或启动新包；保存并正常退出后切换。72项WIP保全，锁/policy不改，新依赖资格、GUI/真实Provider及main CI不由本地包资格代替，79项与原26项未完成。 见[本轮反馈](supreme/reports/gui-feedback-2026-11-06.md)。下方在途及旧包状态均为历史切点。
+
+**2026-11-06 固定10轮上限删除：源码资格已闭合，新App构建中。** 用户已明确立即删除GUI Agent迭代参数。EKO默认10、GUI字段、DTO与发布链已移除，旧YAML有限值忽略且不再保存；主工厂沿既有usize::MAX工作到完成或取消。20文件独审pass（678d6580），3956其它路径无漂移；6项unbounded_筛选（4相关+2原匹配）/32配置/225真实导出/2相关池控制、严格Clippy、实际gui feature check、完整前端976P+4原opt-in及工程入口0，Outcome1P+8P0。72项WIP中52原字节不变、14获准改、6新增；锁/policy不改。test target必要保全后准确官方clean0。新包root local/gui-unbounded-agent-App-20261106-r01主根3976路径冷编译，exec48592已启动且未完成，149实际Tauri资产已捕获；不重复prepare/build。运行中a440仍旧，79GUI/26义务未完成。具体启动延迟、Docker引号、两次真实失败和归属讨论见本轮GUI反馈报告。
+
+**2026-11-06 用户授权的旧App清理已完成：** 已启动并核实新版a4405b14…（177032960字节、PID93080）的准确路径。删除14份旧Eclip.app（含5份不完整残留）及1份旧unsigned程序副本，共1775233976逻辑字节；删除前逐路径reader0，删除后准确路径均不存在，当前程序SHA不变。清理窗口可用空间增加1242222592字节，此差值含系统并发变化，不能由APFS路径总和推导可回收量。源码、用户数据和配置未删除，历史哈希及日志保留。原件root local/old-App-cleanup-20261105-r01/receipt.json。下方“旧包保留”均为清理前历史状态。当前正在处理GUI主Agent固定10轮上限的用户新要求；运行中的a440尚不含该后继改动。
+
+**2026-11-05 本次新会话及最近任务修复包已就绪：** 新包`a4405b14…`／177032960字节，直接主根3976路径冷构建0，签名及deep strict0，149新资产与实际.d绑定、源码零漂移。新会话重复派发／假队列、原journal失败只读原位显示、Responses中立content_part类型和最近任务折叠已编入；975前端／4原opt-in、94 Responses、相关工程入口和Outcome均0，源码及实际包独审pass。入口root local/new-conversation-repair-App-20261105-r01/启动新版.command，ready 3e032113；必要4881件编译原件保全后准确官方clean0，target不存在。CLI66项WIP、原锁／policy／consumer及旧d5包保持；未自动退出旧App或启动新版。请保存草稿并正常退出后切换；GUI／真实Provider仍待手验，79项和原26项未完成。 见[本次报告](supreme/reports/new-conversation-queue-2026-11-05.md)。下方构建在途与旧包状态保留为历史切点。
+
+**2026-11-05 新会话本次真实故障已定位并修复源码：** 指定conv-1793886223809-nl5rpi原32事件证明两input／两failed turn，非仅重复渲染；冷启动恢复在原send未回started时二次派发同一输入并抢pending投影，旧Responses又把reasoning父项的content_part误猜message。现保原pending与journal重放、当前input不作追加队列、提交中薄投影；中立part保未知父类型、ID／已知type校验不降。冷错误还按原ID／时间只读插回历史，去重不autosave；最近任务已可折叠。独审均pass，975前端／4原opt-in、94 Responses及Clippy/fmt0，207前端及parser原复现Outcome0。CLI66项WIP原62中56未动、6获准改、4新增；原锁／policy／Rust consumer不变。新包root local/new-conversation-repair-App-20261105-r01正直接主根3976路径冷编译（exec48056，不重复启动）。d5仍旧运行包，本轮修复尚未进入GUI；79项及26项未完成。[本次指定会话报告](supreme/reports/new-conversation-queue-2026-11-05.md)优先于下方旧“Responses待定位”等状态。
+
+**2026-11-05 新手验包已就绪：** 本轮Provider名称／模型名、IM入口迁移、Steer及scope修复已进入新本地包 `d5f1ea3a…`／177013792字节；冷构建0、编译W0E0、签名及deep strict0，实际.d绑定149新资产，3976主根源路径零漂移、无源码副本。独审pass及静态入口检查0；未启动或退出旧App。新入口为root local/gui-manual-feedback-App-20261105-r01/启动新版.command，ready799be510；先正常保存退出旧App再手验。原unsigned及新App、4881必要元数据保全后官方clean0／2.4GiB且准确target不存在，旧abdd不变。30项索引及手验入口已切新候选，旧原件保留；CLI新62项WIP核字节。Responses实际兼容故障仍待新包诊断，不把967前端／局部Rust和产物资格计作GUI79或原26项完成。完整终态d9348bc3见 [手验报告](supreme/reports/gui-manual-feedback-2026-11-05.md)。下段“构建在途”保留先前时态。
+
+**2026-11-05 用户已开始GUI手验：** 已反馈Provider误选、模型标签缺Provider、渠道scope恢复错误、Steer空turn IPC及Responses输出身份错误。前端已改实际Provider名称／模型标签、基础与扩展IM入口及基础配置去重、无活跃turn时保留Steer队列、历史失败reason呈现；完整967P／4原opt-in跳过、lint／类型／构建0，独审pass、Outcome215P。Framework默认scope恢复修复已真实RED→GREEN及10项相关回归0，Responses92P及Clippy/fmt0，独审pass；Responses实际兼容故障仍未解决，仅补安全诊断。当前仍运行旧abdd App，主根直接源码的3976路径新App冷构建已启动，未复制源码，不签新源码GUI通过。自有测试target必要3643件约106MiB保全后官方clean0／1007.5MiB；第一次清理因保全误移缓存标记而被Cargo拒绝，已从原件恢复同字节标记重跑，旧101保留。见 [本次手验反馈](supreme/reports/gui-manual-feedback-2026-11-05.md)。原79项和26项不关闭，下面旧“GUI未开始”和498／498同源仅保原切点。
+
+**2026-11-05 用户裁决已执行：** Framework8fb／49组108身份与CLI48ee／原42a1 consumer的精确绑定已获真人直接批准并采用，不预授后续新风险。原Framework checker读回同一官方raw自然0，14项控制0；CLI8项控制0，默认fresh actual／canonical正式gate各0（官方scanner各1、零漏洞、原五warning、DB965bf9ad／1403）。原“未答复”阻塞条件已解除，下面blocked段落及旧policy状态只保历史；平台Goal先前blocked原件不篡改，不称整体完成。原件为根local/dependency-exact-binding-20261105-r01；SDK pin／App／GUI79／原26项仍开放。详见 [CFB当前结果](supreme/reports/calamine-cfb-validation-2026-11-05.md)。
+
+**2026-11-05 Goal实际状态：blocked，目标未完成。** 可独立前端／R2源码准备已收口；精确Framework49／108与CLI48ee新锁绑定仍未获答复，正式策略不改，原26项和GUI79不标完成。已按连续3轮同一条件核验后调用平台update_goal取得blocked，等待原精确裁决，不自动重跑已通过矩阵或反复新增准备包。审计原件为根local/validation-coordinator-transfer-20261104-r01/goal-blocked-audit-20261105.json，实际frontend963及其它新成果保持。
+
+**2026-11-05 当前前端完整门禁：** 498输入相对旧945切点确有18文件差量，现已在正式前端运行原格式／npm test／npm build各自然0，963P／4原性能opt-in跳过／0F，94文件通过。498输入零漂移并与abdd构建前端498／498相同；只签前端工程，不签GUI或当前Framework全同源。原dist149文件同卷恢复后按旧清单逐项SHA／模式验证一致，新149浏览器输出约3.09MiB单独保留。官网原快照check0、当前来源check因dirty guard1，未改站点／manifest或绕过guard。精确49/108及48ee锁裁决仍未收到，正式policy不动。见 [当前前端完整验证](supreme/reports/current-frontend-full-validation-2026-11-05.md)。
+
+**2026-11-05 风险裁决等待期间的R2推进：** 已核实专用AppCore case通过ConfiguredModel默认值构造，自身没有退役temperature字段；问题在旧完整组合仍含旧类型，不能回灌旧infra/tests。7份已审R2补丁已只在内存重基到当前主根，输出27路径的两份差量，各实际apply-check0；正式源/锁/policy未写、无新完整源码副本、无Cargo/HTTP/Popen/180秒运行。观察器依赖与后继hyper-util锁边仍须资格化，不以补丁可应用代类型或生命周期通过。当前精确49/108及48ee锁绑定仍待用户答复。详见 [R2当前源码接收准备](supreme/reports/r2-current-source-intake-2026-11-05.md)。
+
+**2026-11-05 用户批准升级后：** 官方calamine0.38已正式采用，Framework新锁8fb62e／677包、CLI新锁48eece／769包，完整差量经独审pass。正式媒体4P、Clippy/fmt0，CLI AppCore新消费图check0，来源工具16控制0。新锁首轮两份有效fresh audit均0漏洞／原5warning，官方scanner各1；后继串行fresh网络fetch1保原。Framework deny官方0，实际49组108身份，仅增加quick-xml0.42，正式baseline仍旧49/107；CLI policy仍绑定旧锁，原8控制因此未通过，不能称双gate0。精确49/108与48ee锁绑定提案已备，待用户裁决，不自动增加ignore/风险。SDK pin340/c448和abdd App未变。当前30项索引与WIP基线已重发，原件保留，47个其它CLI WIP输入不变。详见下方CFB报告的当前后继。
+
+**2026-11-05 新风险后继：** SDK十份资料已按当前source0e84收敛并独审pass，installed0.5严格独立检查实际31错→0；旧c0bc仍1／4错，normal Source/Final完整资格保持未完成。网络恢复后CLI原fresh actual精确gate0，但canonical1发现calamine0.36.1的RUSTSEC-2026-0436。Framework已按上游PR762取得真实短目录panic RED、局部修复2P、正式媒体4P及Clippy/fmt0，独审pass；不改三正式锁/版本/origin/风险策略，不冒当前App或SDK精pin已采用。官方0.38.0完整runtime候选及49项补丁已准备、样本2P、apply-check0，新增quick-xml0.42身份与新锁尚待用户裁决；不自动扩原接受合同。本批必要制品约19MiB保全后准确target官方clean0／892.4MiB且不存在。详见 [CFB验收及升级待决](supreme/reports/calamine-cfb-validation-2026-11-05.md)。原26项与79项GUI未闭合。
+
+**2026-11-04 最新接续：** 用户已明确要求继续四测试落地方案，SDK 原83非main分支现已接收4个测试／154行，保留HEAD沙箱修复，另同步1份SDK说明；无生产、pin、锁或合同变化，尚未提交。当前直接回归Rust4＋三语言各2实际通过、独立审查pass；五条工程门禁全部自然0，完整Rust18组589P／0F／0I。首轮漏consumer目录引起的249P／18F／101及单变量诊断保原，纠正运行器环境后原完整命令通过，产品与测试未改。8251必要制品外置保全后，本批准确target官方clean0／3.3GiB且已不存在。后继10份语义资料已按正式来源处置，旧正文/状态/修复链保留，933业务摘要仍0e84；独审pass，installed0.5独立strict在base83实际31错→0。旧c0bc按其原argv仍1／4错，不能由新版0覆盖；main747 normal Source/Final等完整资格仍开放。准确终态见 [SDK落地后继](supreme/handoffs/2026-11-04-current/sdk-candidate-landing-delta.md)。CLI48项WIP与基线一致；79项GUI仍无新增真人结果，原26项继续开放。以下旧轮状态按其时间解释，不重新索取已具备的本地实施／验证授权。
+
+更新时间：2026-11-04。用户已明确恢复完整Goal，并由新协调上下文接手。完整目标在 `docs/supreme/goals/eko-eclip-complete-iteration-2026-11-02.md`，现场与准确下一步在 `docs/supreme/handoffs/eko-current-handoff.md`；十执行线及权限见续接目录 `executors.md`。旧三天时间线原字节归入该目录 `history/`，当前表不以历史“live/paused/pending”覆盖最新事实。
+
+**本轮维护后的当前状态：** Eclip进程已核为0，未启动客户端；13个旧会话已归档。上一轮源码价值核验后，本轮按用户新授权仅清59个冗余local heads，15个非祖先历史tip先固定归档标签；五仓当前12条分支（main＋当前验收，另保Exa/官网依赖两个独有候选），没有合并代码。三个准确Cargo缓存官方clean0，原占8.987GiB，必要字节去重保全2.352GiB；项目实测76.152→69.555GiB，可用空间时点约20.6GiB。正式源/WIP/SDK候选/用户数据/abdd手验包保留，其他混合目录和Node依赖未删。新阶段目标见 [验收与同源收敛Goal](supreme/goals/eko-eclip-validation-convergence-2026-11-04.md)。用户已选新总协调承载：新会话 `01a1a4c2-967b-7401-8980-fba6857c3740` 已创建，核接管并启用Goal后原会话归档，短入口为 `docs/supreme/handoffs/2026-11-04-validation-coordinator/README.md`。旧完整Goal及未完成义务不标完成。最新用户追问剩余约70GiB数据构成与删除后果，当前只读核查，后继优先回答，不以转场漏项或扩大删除。以下明细同时保留此前操作历史，当前状态以最新交接为准。
+
+2026-11-04 分支清理纠正：Root未先证明旧改动已吸收就清理61条本地分支，用户提出异议后，已承认判断错误并将61条全部恢复原精SHA，五仓当前71条，HEAD/index/WIP不变。原bundle保留不代合入依据。初步44条祖先覆盖、17条须按当前源码、squash/重写、后继优化和具名退役审查，禁止机械全部合并或再次批量删除；磁盘仅只读盘点，不再借分支清理删除未确认材料。原过程及撤销见 [记录](supreme/reports/local-branch-convergence-2026-11-04.md)。本轮实际开发/打包继续原验证分支。
+
+后继唯一Root为 `01a1a4c2-967b-7401-8980-fba6857c3740`，新阶段Goal已实际active、无token预算；原Root `01a19a4a-2815-7072-88b1-63ff005b2476` 交接释放后归档，旧完整Goal不虚报完成。F当前本地 `91797fed`（parent c623，继续保a8的1376+f568双父）；Driver/微信错误观测70方法及本次取消隐式温度11项定向回归、Clippy/fmt/task Source-final/独审/Root产物均已核，clean未push；CLI20070保存指南/UI/Hook及R03局部里程碑，b04原全前端945P/4原性能opt-in未跑，R03 normal1P/owner3按原130、143、1验过。官网817对F a8/CLI20070/SDK83 cut原完整verify0/W0（61unit/15e2e/1原平台skip/338路由），本地clean、未部署。SDK真实747接收source7978完整三语已0/W0：TS473/Python547＋18subtest/Java345，各1原Windows skip，隔离包/三个quickstart/Parquet通过；原stable5亦0、18组589P/编译W0，已Root保全/精clean；完整合同/条件矩阵/main/发行资格仍另验。K2原70/复位/同App重开闭合但未测到加速。解锁后自动Cron真实scheduled一次Completed并在卡片显示全文，微信通知-2失败及主chat publication0已分别派候选修复；原任务收尾disabled/rev6，通知恢复。两SDK外部Source合同和本地83公开源仍OPEN。精原件见proof-index。
+
+本轮供真人手验的最新客户端已构建并启动：2026-11-03 本机 arm64 Eclip 1.0.0，包标识 `c5488208`，来源为 Framework c623＋CLI20070当前19ec／b94／d542及已审publication修复、当前前端498文件。原两目标及executor79、Clippy/fmt、精风险双gate和正常Source/Final均通过；本次App构建自然0／RustW0E0、retained本机ad-hoc strict0，149前端assets与实际dep-info绑定，4593编译材料已保。Root唯一open自然0／精新PID27441及启动AgentPool日志已核；用户正手动验证GUI、配置真实LLM，后台不得再抢屏或自动退出重开。当前运行包与原d41历史分列，GUI/native业务/发布资格不由构建或open推导。
+
+11月3日手验新增四项：用户要求 EKO 取消 `temperature`；真实 API 返回403的规则原因仍未知；已有SSH工作空间在新进程中缺少连接；新建本地目录未选父文件夹应使用默认位置。源码修复均已独审：Framework九处helper缺省None、11项定向测试及正常task Source/Final通过，显式框架API保留；EKO温度退役与默认位置/原SSH认证弹窗恢复取得40项及90项前端通过。Registry现已真实复现原empty-parent失败，修复版两个临时目录用例各1P，原cut Clippy/NoRun均0/W0。EKO回环首项因夹具模型名未准入而101、未HTTP；另外8项独立诊断均0，不能冒9项GREEN。精测试修复仅三处模型名与首因传播顺序，经独审和Root复评后采用，当前实际collector两读42a1/274、仅此一输入相对66变化，policy仅consumer后继2028，原d542/768包及五风险不动；新cut真实NoRun/Registry2/EKO9/独立删除保代码1（共12项）及Clippy均自然0/W0/E0；正常联合task Source/Final0，globalClosure未查，最终3947源已Root逐文件核对。旧66的RustSec TCP fetch失败1保原，42首次实际fresh亦TCPfetch1/空audit，不继承旧19ec门禁。当前运行c548未含新修复；Root已授2a5f精票，以最终6abe完整源清单、独占jobs1及实际资源准入后台构建一次本地手验候选，成品/手动入口另核，由用户切换，不作发布或启动许可。
+
+## 本轮实际已闭合的阶段
+
+2026-11-04 本地手验修复包 `abdd3fac` 已生成并保存在target外，实际build0／1992.799秒／j1／RustW0E0、本机adhoc/strict0；Root逐12663物理引用与当前源核验通过。用户手动入口同新epoch的“启动修复版.command”已生成且语法0，Agent未执行；沿原data/config/MCP/project路径，不读hash恢复用户配置。79项清单更新abdd待复验，不勾选任何GUI项目。当前42联网risk仍TCPfetch1 pending，真实API403/SSH/GUI及发行/main不由本地构建推导；按用户最新边界，warm target与资料保留未删。
+
+- Framework PR201 精main f568，七CI成功，仅Stage0阶段。
+- SDK PR14先行退出＋PR15两文档修正精main747be937，九CI全部成功；旧6cd语义14失败保原，外部旧base删除预检接口未被修。
+- SDK当前C1303／44冲突解决源码独审通过，五focus八case真实通过、两NoRun W0；最新三程序／FP／.d外置4536件核验后target官方clean0（约3.1GiB）。这是当前业务切片资格，尚非最终真实main接收／完整native SDK交付。
+- 本轮旧编译／运行产物／日志删除、五截图精文件删除，以及六历史会话归档已执行。当前三primary target缺席，必要源码/当前App/Auth/Git保全。
+
+## 全部原26项结果
+
+“已有”仅指原scope里程碑，可核输入相同才复用；表中未明确最终闭合的项目仍属于完整Goal，不能因为别项CI通过而完成。
+
+| 项 | 原结果 | 当前状态／资格 | 负责人线 | 剩余验收／动作 |
+| --- | --- | --- | --- | --- |
+| 1 | 产品边界 | 既定裁决已固定；最终各入口接管未全验 | Framework／EKO／治理 | 按AGENTS保GUI主入口、IM/cron/共享恢复，单独退役具名入口。 |
+| 2 | 工具与Exa | 实现／资料已有里程碑；最终真实集成未全验 | 治理／EKO | 保Exa本地分支与未授权范围，不能push/合mainExa。 |
+| 3 | 性能基线 | K2原70完整实际样本及72全程观测已核；其它原矩阵未全闭合 | 性能 | K2后台仍有竞争、没有加速结论；保原样本/资源数据，下一history0切片只准备，不自动退出新App重测。 |
+| 4 | GUI视觉 | b04完整前端945P/4性能opt-in未跑、tsc/Vite/W0；最终App人工覆盖不足 | EKO／工作空间 | 浅深主题／响应式／键盘／焦点／可访问性及同源新App。 |
+| 5 | 首页导航 | 品牌／最近任务／工作空间已落地部分验收 | EKO | 最新源码组合实际窗口与导航／历史一致性。 |
+| 6 | Steer | CAS／持久输入实现已有；最终真实运行矩阵待验 | EKO／Runtime | 普通Steer由主模型理解，不独立意图模型/强制要求流水线。 |
+| 7 | IM／cron管理 | 解锁后原GUI真实自动scheduled一次Completed，历史/任务卡全文可见，收尾disabled/rev6 | IM／cron／EKO | 通知-2失败、非Accepted/手机未知；主chat publication0已定位，CLI/IM各准备最小候选，不重发/扫码或改旧Failed。 |
+| 8 | 独立终端产品入口退役 | 用户已批准；正式最终收敛／接管仍需核 | EKO／Runtime | TUI/REPL/CLI/JSONL退役不连带GUI终端、Agent shell和SDKstdio。 |
+| 9 | A2A／LSP消费者去依赖与物理退役 | SDK资料/增量独审及独立strict0；F已真实本地接收main，原SDK747 CI保原 | SDK／Framework／EKO | normal Source的repository→task_digest冲突和c0bc deletepreflight不同缺口各保1；Final/完整工程/公开83历史锚/主线资格未闭合。 |
+| 10 | 工具收敛 | 六组等阶段成果；目录回读未知恢复修复已正式5c699b1/13P | 治理／EKO | 显式reload成功才恢复UI操作，原后端/required权威保留；完整GUI/native与其余canonical嵌套恢复待验。 |
+| 11 | Hook／ask | 事件目录失败恢复已正式b04/11P/普通Evidence及task Source-final0 | 治理／Runtime | 原scope/sequence只读恢复events；完整前端已过，其余Stop继续/取消/超时/竞争/过期/真实Hook/native仍待验。 |
+| 12 | HITL | 既有实现；完整GUI/IM跨surface待验 | 治理／IM／EKO | 输入/选择/审批/焦点与过期owner。 |
+| 13 | 任务列表／历史Run | IM/cron历史有限人工保原；侧栏读取失败错误导航已正式068b77d/47P | EKO／IM／性能 | 前端合同/task门禁已核，native/大数据量/性能及最终持久Run组合仍分别验收。 |
+| 14 | SSH终端 | 准备与局部实现；两个真实账号验收未齐 | 工作空间 | echo与ubuntu两义务分开，用户GUI认证、断线不回本机。 |
+| 15 | 项目工作空间 | 本地/远端/Fork代码已有里程碑 | 工作空间／EKO | HEAD-only worktree、不带脏改动、附件/原文跨源保全、双SSH owner。 |
+| 16 | 领域插件 | 实现及有限回归已有；真实全链待验 | 治理／Runtime | 绑定版本/身份，activate/retire/reviewer/foreground/subagent/resume一致。 |
+| 17 | 存储实测优化 | K2原70实际通过/复位/同App重开；H3功能46/10k失败保原 | 性能／Framework／Runtime | K2写入+0.714%/重开+3.284%且后台竞争，未测到加速，不冒H3/因果结论；剩36corpora按原输入推进。 |
+| 18 | 个人微信及按需新平台 | 用户授权/手机回复与历史有限成功 | IM／cron | 扫码/确认/取消/过期/重连/私聊/HITL/手机收件全范围不齐。 |
+| 19 | 旧资源清理 | 本轮具体批次及五文件删除已完成 | Root／治理 | 最近约44GB可用；保删除清单，后续不无限留旧制品/日志。 |
+| 20 | Issue／Finding对账 | 最新增量101issue/203finding有证据；非全新复测 | 官网发行／治理 | 按实际源码/验证/退役/风险接受/未验分类，不擅自closeIssue。 |
+| 21 | 发行目标 | 具名平台/版本/包/网站矩阵已准备 | 官网发行／EKO／SDK | 落实每个目标的支持／未验／阻塞，不靠列表代交付。 |
+| 22 | 发行制品 | 当前本机arm64App可运行；最终同源分发组合未齐 | EKO／SDK／官网发行 | 真实targets／安装启动恢复／签名公证边界，Windows/Intel不冒通过。 |
+| 23 | 包发布 | 未授权执行最终发布 | SDK／Framework／官网发行 | 先做具名合格制品/验证，再取明确外部授权。 |
+| 24 | 官网部署 | 本地817完整verify/task Source-final/Root产物0，未部署 | 官网 | 当前Fa8/CLI20070/SDK83投影已同步；后续源变化差量同步，最终部署另授权。 |
+| 25 | 主模型Steer理解 | 方向已确认并实现部分 | EKO／Runtime | 沿主模型历史理解，不恢复独立解释A/B/强制验收流水线。 |
+| 26 | Goal用户权威与完整原文恢复 | 实现与严格局部测试已有；最终native恢复待验 | EKO／Runtime | 已有Goal仅人类显式CAS改删，current版本cold/import/fork长原文可读，缺context暂停相关新副作用。 |
+
+## 新增完整原生消息／统一终态／长任务进度（与原26同批交付）
+
+Framework、所有Provider、EKO、SDK、示例和官网要一起收敛：具名退役ThinkTool／FinalAnswerTool；reasoning／assistant commentary/partial/final／tool／runtime状态无损分开；真实ID/顺序/stream和nonstream/签名加密history完整。存在工具先结清，截断／空响应／异常断流不能成功；候选统一经结构化Guard/Critic/StopHook/持久化/结算，Stop继续保持同执行，最终发布/成功幂等一次。消费者不能看到FinalAnswer就停读，必须真实settled＋源EOF。旧版本兼容不保，当前版本自己的cold/reload/Fork/import/取消恢复和不重放必须验。
+
+应用默认60秒无可见自然语言，在下一模型请求安全点提醒一次；长工具未返回显示真实操作/耗时/最后事件，不额外模型循环、不打断工具、不拿状态冒新发现。纯文、多消息、多并行工具、混合、未知phase、断流/截断/校验失败/取消/恢复/Subagent/GUI历史/IMcron/三语/长等待全场景需真实资格，现仍有native缺口。
+
+## 立即实施顺序（可独立工作必须并行）
+
+1. SDK完整原三语言及包/Host/Parquet/quickstart已实际通过，Root核原件与reader0；stable5已真实0、589P，Root验7262保全并官方clean0/3.7GiB，后续nightly合同/条件features/fresh风险分批排。两外部Source合同和83公开源不靠工程通过代替，不改外部tool/schema/ignore。
+2. 自动Cron已取得真实scheduled→Completed→GUI卡片全文→禁用事实。F Driver真实RED→GREEN55P及Weixin6/6/3、3Clippy/fmt/Source-Final均0，已存本地c623；CLI publication候选已独审并仅test-only两路径正式/Source0，Root已核d5/274仅tests一项变，原3995/5风险不变，已授bounded consumer-only元数据及原双fresh gate后CLI RED→原3production GREEN，当前尚未新Rust，不放宽reader/不补造终态。
+3. R2 ca4e/c02ab局部设计已审，F timeout起点Important已修9497且复审pass，App1cd/parent gate dbf已接受；Gov轻量Plan已接，只先写私有接口cut，R2正式源/新锁仍未授。当前F focused独占其源冻结，SDK重型窗已释放。R03仅真实loopback library consumer，不冒App/R2/live-provider资格；F27及105321 bench末期pending。
+4. 原App47013 GUI由Workspace做ubuntu SSH；ubuntu已原GUI登录/创建进入，终端远端命令矩阵未验，echo独立保留。用户随后明确禁止自动操作Eclip，所有GUI改为其手点，按79项人工清单，不再抢屏。K3 history0票/新47013 helper已审，但新退出/采样未授权；K2不重跑同70。其余新App/GUI/手机IM/HITL/Subagent/恢复/corpora/IssueFinding/发行全保，外部操作最终提精scope。
+
+GUI人工清单：[Eclip GUI 手动验证79项](supreme/acceptance/eko-eclip-gui-manual-checklist-2026-11-02.md)。已停止全部自动GUI/AX/焦点/截图/退出重开；背景源码与SDK工程继续，不将人类接管当作GUI已经通过。
+
+## 执行纪律
+
+同一主根、不新外部worktree；Root唯一stage/commit、各repo独立、所有commit显式GPGfalse；不晋升未push子repo指针。完整heavy/正式采样独占；最多5focused各独立T/jobs≤5/debug0、fresh<5GiB不启重构建；合理成批→必要target外保全→reader0→官方精clean，失败不造TAG或抹退出码。保持当前UserRoot/Auth，已删旧程序/归档不得假称可重放。十现有会话继续复用，新协调会话接手后旧Root不双写。
+
+当前局部阻塞与新证据（2026-11-03）：CLI d5风险controls8P、旧actual0保原；Root canonical r04现已真实fetch/audit完DB263a4d/1402、0漏洞，原五warning不变而新添yanked async-executor1.14.0，原gate自然1阻断（c064），不再仅归网络超时，CLI NoRun未启动。最小修复候选bf78仅async-executor1.14.0→1.14.1，新锁d542，其余767包不变；metadata和两官方scanner真实0漏洞/原5warn/no yanked/scanner1，旧精policy因新锁仍gate1。Root3993refs/独审C0，用户已直接答“允许采用最小修复（推荐）”，3e3d票仅精d542绑定；sole已正式采用d542/policyf6a42（仅lock字段）、consumer仍d5，原8controls通过，首次fresh actual两次/canonical一次fetch1保原；Root后继原URL/env实际actual+canonical各caller/gate0、两scanner自然1/0漏洞/原5warn/no yanked（0970），新两doc Source-final0/globalClosure未查、Root3974refs/3945源（1dc2）及双AGENTS当前态已同步，不冒风险gate0。SDK old340两轮NoRun0/W0；首轮fixture101保原，r02 exact0p1f/101在首Cron create message log得errno63真实RED，后4未跑。被复写post-exact guard的原9c JSON已丢失，5261纠正保此限界，未补造；Root实核9469refs及9452个T外文件后，精T官方clean0/6050files/2.5GiB、518a票。c623完整2856 Git源+SDK r02的1305件新path组合/锁65ae已Root4186refs与独审C0，只准备无NoRun/新风险接受。R2 pair19b81原三lib NoRun0/W0/list25后，同program25 exact已25P/0F/0I/W0，Root核132原refs与精caller/raw（fbc176）；Gov20/普通与telemetry两cfg的精串行窗口已授，旧普通NoRun自然0/W2/wrapper1已保4program25件；Root核7975refs/3949完整旧源恢复＋Runtime确认从preserved读后，精授epoch02仅Gov两方法名rename，actual manifest adcedfe已生效/另3948不变，warm普通NoRun已0/W0，原profile3914811562547596171/newprogram66e53f；Gov20 exact逐名仅一次20P/W0，Root实际核116件/ac6b44。state镜像的profile3914811562547596300是辅助JS精度丢失，原FP字节/精十进制权威保，不重跑。telemetry NoRun亦0/W0/features[telemetry]/新programd6ff15，actual-list同20但0run；最终46019/Root3e149核181refs/6program37保全、双epoch及u64限界独审C0。SDK fullc623/65ae真实NoRun34m20s自然0/W0、new25b45/profile7602/30features，actual-list1/exact唯一1P0F，函数内5ID/7ops全达；Root e8c核8251refs/4161源/4038保全/4backend。精T官方clean0/2.5GiB后Root c995核8316refs/8298T外文件，T不存在，不升级正式pin/风险/三语/stdio。重型已切CLI j2/Root55c391，基线NoRun0/W0，header1P/publication真实目标RED，原684三production已实际采用（Root fb263），77d两gate原0并在NoRun前、两目标GREEN/全executor79P/6原回归P；随后Clippy唯一replace_box test087:6012自然101。Root精test-only修复4f495已Source C0/74650票，19ec/consumer-onlyb94仍须实际两读/8controls/fresh gates/新binary复验，非新用户风险取舍。AppCore180秒Design33ac/Plan dfcf已接受，只owned test-only Build；原receipt可见性gap仅候选第五路径cfg(test)helper已精授，不改pair/formal。A overlay c259/6611六件仅source/static已交，Root独审最终block C0/I4/M0：lifecycle root未绑定、cleanup遮原首因、Python快速exit绕H前消费回证及controls异常丢活句柄；新owned r02/r05 c390已修四项、Root自身两路定向C0（c635），原r04冻结；Root在原Python3.9实际8pure全P（c4ef），Rust类型/nativecase仍未验，未组合/类型或运行；Provider新真实wire测试817九methods/12scenarios仅source，Root独审发现pre-cancel错误oracle I1；新r02 e7bf六格精producer断言已闭合/定向复审C0，仍无NoRun/list/实际运行，均不能沿作者C0冒通过。child工具作用gap与GUI/B入口OPEN。Tauri2.12.4工具Root59refs已核，无App build/launch。完整Goal未完成，GUI全由用户手点79项。
+
+## 2026-11-04 验证阶段：新总协调接管、Tier A 清理与 SDK 完整合同实跑
+
+新阶段Goal `docs/supreme/goals/eko-eclip-validation-convergence-2026-11-04.md`（SHA256 `565524276272f7965ccceec38b66539c6f72648ab49c854a1f16e7fb19833e4e`）已在新会话真实 active/armed（`goal-99e42748-a446-47e6-a740-364bc2f7683d`），旧Goal保持未完成，归档与局部验证不计完成。接管回执二份并存、互不改字节：旧 `new-coordinator-ack.json`（Codex thread 01a1a4c2，已被 ownership-release 引用）与本会话 `new-coordinator-ack-dsh-538c45f7.json`。
+
+**剩余资料真实构成（只读实测，du 分配块）**：工作区 69.555 GiB 中约 93.6% 是五仓 `.echo-semantic/local` 证据树（顶层 28.0 + SDK 14.0 + CLI 12.0 + Framework 11.0 + 官网 0.11 GiB），源码/git/文档/前端依赖/warm target 合计约 4.4 GiB。按类型：无后缀 21.2 GiB（其中 ≥20 MiB 的 Mach-O 程序 171 个 15.9 GiB）、`.gz` 9.4 + `.zst` 4.0 GiB 冷归档、`.rs` 6.75 GiB 副本、`.json/.md/.log/.jsonl/.html` 约 11.4 GiB 回执与原始日志。已按“当前必需 / 可由源码依赖重建 / 历史唯一且有引用”三类向用户交底，未据此整包删除；APFS 克隆与 7 个稀疏夹具使路径累加不等于真实可释放量。
+
+**Tier A 实际清理（用户本轮明确授权“仅 Tier A 可重建项”）**：删除 4 个旧 owned cargo home（`zstd-patch-probe cargo-home` 1.05 GiB、`zstd-safe-chain cargo-home` 1.02 GiB、`sdk-localgit340 owned-cargo-home` 1.10 GiB、`sdk-u03 https340 owned-cargo-home` 0.98 GiB，合计 4.157 GiB，删除前 controller 逐一校验前缀/目录名/registry 存在/reader0），回执 `validation-stage-maintenance-20261104-r01/tier-a-cache-removal-r01.json`、`-r02.json`；SDK 完整合同 target 按官方 `cargo clean --target-dir <exact>` 自然 0（Removed 13134 files/3.1 GiB，CACHEDIR.TAG `6d9d1d…` 校验、reader0、无手删），回执 `sdk-native-main747-contract-window-20261104-r01/target-clean-receipt.json`。工作区 69.555→65.47 GiB（-4.08 GiB），可用 21.4→25.1 GiB。**刻意保留**：`echo-agent/target` 与 `echo-agent-cli/target`（手验发现缺陷后的快速修复）、三处 node_modules（前端重建）、`m2-cache`/r08 的 uv+npm cache（当前三语环境 `MAVEN_OPTS`/`UV_CACHE_DIR`/`npm_config_cache` 直接引用）、6 组同字节大程序（各路径分属不同回执与 App bundle，删任一份会破坏其回执映射或 bundle）。未做扩大删除。
+
+**SDK main747 接收候选同源核对（只读）**：工作树相对真实 main747 差异实测 A81/M147/D7=235，与已批准清单逐类相等；与 1303 项清单逐文件比对 1302/1303 字节一致，唯一差异是已独审“九项资料”增量（`evidence.sdk-sandbox-and-canonical-input-consumption.md` 23393→25303，晚于该清单 12 分钟），业务摘要 `source:7978…` 不受影响；pin `3409932`、锁 `c4488065`、accepted 5344、routes 430 全部未变。
+
+**SDK 当前必要重型门禁实跑**：按已备队列 `full-accepted-contract-original` 的 argv/envDelta/unset 与 `effective-environment.json` 基线实际执行（nightly-2026-08-06，target-contract-nightly，jobs2/debug0/inc0/offline），自然 0，用时 834.8s：25 个 rustdoc profile、135 个阻断合同产物 current、0 阻断漂移、语言目录一致、A2A/LSP 退役账 5344/430 且 unexplained 0、protocol 无 framework 依赖、framework metadata 精确 pin、合同测试 145 passed/0 failed。唯一残余为非阻断遥测 `inventory-telemetry.json`（committed 1442 vs regenerated 1422 bytes），按 SDK AGENTS 属非阻断且未在本次授权内用官方入口重生成，如实保留、不改写。原件 `sdk-native-main747-contract-window-20261104-r01/settlement.json` 与 raw log（SHA `d1376470…`，17311B）。本结果只签该 cut 的完整已接受合同原入口；不代 normal repository Source/Final（task_digest 外部绑定冲突）、canonical（delete-preflight 外部 gap）、nightly 全量、7 条件 feature、3 项 fresh 风险、public 83 来源与两外部 Source 合同，未改外部 echo-semantic 工具/schema/ignore。
+
+**下一步**：GUI 79 项仍全部由用户手点（先 A06/C02/C04/B01，交付入口 `repair-App-warm-continuation-20261103-r01/epoch-01/启动修复版.command`，Agent 未执行）；后台只剩 SDK 三项 fresh 风险（需网络窗口）与 7 条件 feature（需资源窗口），以及 CLI 的 fresh 风险 canonical（历史 fetch1，未续签）。
+
+### 同轮追加：条件 feature 矩阵 7/7 实际通过（上段“7 条件 feature 待资源窗口”已兑现）
+
+**为何必须跑**：接收候选 235 项差异实际改了根 `Cargo.toml`、`echo-sdk-host/Cargo.toml`，并新增大量 `#[cfg(feature = "framework-web" / "sdk-extension-bridge" / "sdk-facade-adapters")]` 分支，命中“改动触及 feature 定义或 `#[cfg]`”的强制矩阵；当时队列把它们挂为 `ROOT_SELECT_ONLY_IF_FEATURE_CLOSURE_NOT_ALREADY_COVERED_BY_VALID_SAME_INPUT_PROOF`，前置不成立，故按原 argv/cwd 逐字执行。
+
+**结果**：7/7 自然 0，实跑测试 200 个（`sdk-host-default` 35、`sdk-host-core` 113、`bridge-e2e` 31、`consumer-fields-real-acp` 19、`facade-without-reverse-bridge` 1/26 filtered、`physical-reverse-stream-guard` 1/233 filtered、`bridge-norun-strict` 为 `--no-run` 编译通过）。`echo_core v0.2.0` 离线编译自 pin `3409932`，与锁 `c4488065` 一致。跑后复核差异仍为 A81/M147/D7=235、锁未变。原件 `sdk-native-main747-conditional-features-20261104-r01/settlement.json`。
+
+**两次失败已如实记录为运行器偏差，不是源码缺陷**：attempt-01 未装队列 `stableEnvironment` 的绝对 `RUSTC/RUSTDOC`，cargo 走 PATH 上的 rustup 代理，而 registry 里 `convert_case-0.10.0` 自带 `rust-toolchain.toml(channel = "1.83.0")`，代理便尝试下载 1.83.0 并被沙箱拒绝写 `~/.rustup/tmp`；attempt-02 补丁把设置写在 unset 循环之前，`RUSTC/RUSTDOC` 被自己 pop 掉，现象相同；attempt-03 修正顺序并加绝对路径断言后原命令重跑通过。target 随后按官方 `cargo clean --target-dir <exact>` 自然 0（Removed 2665 files/1.8 GiB，TAG 校验、reader0）。
+
+**联网前置已收敛为可复现事实**（Goal 步骤 3）：`https://github.com` 与 `https://raw.githubusercontent.com` 当前 443 超时（curl rc=28，12s/8s 零字节），而 `index.crates.io`、`api.github.com`、`objects.githubusercontent.com` 可用，`git@github.com` SSH 可认证（`Hi EchoYue-lp!`）。RustSec advisory-db 走 HTTPS clone，故 CLI fresh actual/canonical 与 SDK 三项 fresh 风险必然停在 fetch 阶段，与锁/身份/源码无关。既有决定记录过“进程级同官方 RustSec 仓 SSH 传输取得真实 fresh fetch”的恢复方式且明确不是 no-fetch 结果，但该恢复改变传输方式，本轮**未执行**，留待 Root／用户按原风险决定确认。原件 `validation-stage-main747-r01/network-prerequisite-probe-r01.json`。
+
+---
+
+## 2026-11-04 第 18–37 轮：验收文档与证据链的逐步核真
+
+上节之后本会话继续只读推进，没有新构建、没有推送、没有启动 GUI。产出分两类：**把已有结论核成实证**，与**修正自己写的预期**。
+
+### 一、同源证据从"推断"变"实证"
+
+- **App 交付身份**：`finalSourceManifest.json` 重算 sha256 仍为 `6abe867d…`，3946/3946 字节相同，两仓 HEAD 一致，CLI 脏状态 2353 字节与构建时记录逐字节相同。
+- **前端修复真的进了包**：构建日志第 3/6 行证明跑了 `npm run build:tauri`，第 159 行列出的 `dist/assets/index-DskFRksZ.js`（534.45 kB）即快照内 534,451 字节那份，grep 命中「留空使用默认位置」「远程连接尚未准备」「把想法变成成果」。**注意工作树 `web-frontend/dist`（mtime 2026-11-02 12:31）不是交付所用产物**，它不含这两处文案。
+- **SDK 合同门禁回执自洽**：日志 sha256 `d1376470…` 重算一致、`naturalExit` 两处均 0、运行 834.8s、`noUpdateFlag` 无重生成、候选树自 2026-11-02 起未改动。
+- **SDK 147 处改动有覆盖分级**：129/147 落在已执行门禁内且全部退出 0，但分两级——A 级 Rust 32 项（`stable-window` 589 测试 0 失败 + 合同 135 产物）；B 级三语言 85 项（预构建产物、`noCargoAllowed`，自述不构成 SourceFinal/canonical/mainCI）。**不得把 B 级 0 fail 当 A 级资格使用**。
+
+### 二、修掉的四处预期错误（若不修，每个都会变成一次无效报障）
+
+1. `latest-formal-arm64-App-20261103-r01/retained/Eclip.app` 名字带 latest 但主二进制是旧 `c5488208…`（176,894,784 B，缺 SSH 重连入口）；正确包是 `repair-App-warm-continuation…/epoch-01/retained/Eclip.app`（`abdd3fac…`，176,890,208 B）。
+2. 启动脚本在 `epoch-01/` 而非 `retained/`，原文档写"同目录"会让用户找不到入口。
+3. C04 前置：`~/.eko` 里没有 `ubuntu-ssh-test-20261102`，但启动脚本经 `EKO_DATA_DIR` 指向 `isolated-runtime/data`，那里**有且仅有**该工作空间——**用脚本启动即可照原文执行 C04**。
+4. A06 预期写"推理深度／输出上限／上下文三项"，实际只有 `Max tokens`、`Context window` **两项**且为英文标签，不存在推理深度字段。
+
+### 三、两次自我更正（同类错误的两种表现）
+
+- 第 24 轮撤回"候选树缺 9 份 plan 文档"：`git ls-tree` 默认 `quotePath` 把非 ASCII 路径输出成八进制转义串，脚本拿它当文件系统路径判断存在性，必然判缺失。改用 `-c core.quotePath=false` 后实测为 **相同 1075／不同 147／缺失 7**，缺失 7 个正是退役删除项，与回执 `D=7` 吻合。
+- 第 30 轮 `codesign … | head` 后取 `$?`，拿到的是 `head` 的状态；第 33 轮只查 `~/.eko` 就断定某工作空间不存在，未确认被测进程实际读哪个数据根。两者同属"把中间输出当事实"。
+
+### 四、磁盘组成（Tier A 之后刷新）
+
+工作区 65 GiB 中 **61 GiB（约 94%）是四仓 `.echo-semantic` 证据树**，构建缓存仅约 1.0 GiB；`.worktrees/` 1.6 GiB 内**没有一个是 git worktree**（无 `.git`，实为历史证据目录）；`ZCode` 352 MiB 是第三方 `zai-org/ZCode` 克隆。≥50 MiB 文件 156 个名义 39.50 GiB，但按 `st_blocks` 实际分配，同名同尺寸重复组仅可回收 **1.88 GiB**（7 份 `large.bin` 名义 14 GiB、实际≈0，稀疏）。**不动证据的回收上限约 2.9 GiB**；要显著释放必须对证据目录定保留策略，那是新的授权决定。
+
+### 五、当前待决（没有一项可在只读范围内闭合）
+
+- GUI 79 项：全部用户手点；四项用例的静态断言已核完，文档预期已修正。
+- SDK：合并树完整、门禁与测试均有据；缺 canonical/SourceFinal 资格（需重型窗口）与 `inventory.rs` 特例裁决；落提交并推送需授权。
+- 原 26 项：台账仍 26 行、编号连续、无一行标完成；分类 11+5+4+1+4+1=26。
+- 可选清理：两个陈旧外部 worktree（内容已在任务分支）、1.88 GiB 证据去重，均需授权。
+
+---
+
+## 2026-11-04 第 39–53 轮：验收可执行化、SDK 落地缩到可判定
+
+第 38 轮之后又推进 15 轮，仍未启动 GUI、未提交、未推送、未改任何子仓源码。这 15 轮的价值集中在三件事：**把验收变成可执行的**、**把 SDK 落地变成可判定的**、**把错误变成可重复检查的**。
+
+### 一、验收从"清单"变成"可执行材料"
+
+- 新增入口页 `docs/supreme/acceptance/README.md`：先做 A06→C02（不需模型与网络）、L01 与 C04 合并成一次退出连做、D01–D05 终端、79 项全量索引；并集中了**唯一启动方式**与环境限制表。
+- 新增具名用例两份：`eko-case-L01-cold-reopen`（冷重开历史完整，写明 4096 事件批次追平，避免误报"历史丢失"）、`eko-case-D-terminal`（D01–D05，D06/D07 写明为何不做）。
+- 环境限制实测（只列名称与计数）：隔离数据根内会话 9、run 17、任务 7；`channels` **仅 weixin**；`plugins` **无已安装插件**。故 I（领域插件）、J 的 QQ／飞书、M（其它平台）在本环境无法验证。
+- **修掉五处会诱导误报的文档缺陷**：`latest` 目录里是旧 `c5488208`（正确包 `abdd3fac`，两者相差 4,576 字节）；启动脚本在 `epoch-01/` 而非 `retained/`；C04 数据根判断错（脚本经 `EKO_DATA_DIR` 指向含 `ubuntu-ssh-test-20261102` 的隔离根）；A06 写了不存在的"推理深度"（实际只有 `Max tokens`／`Context window`），且该错误在**两份文档各存一份**，第 36 轮只修了一处。
+
+### 二、SDK 从"重型合并"缩为"4 个测试文件"
+
+- 候选基于 `747be93`，HEAD `83ae59e`，**两者非祖先**（HEAD 相对 `747be93` 有 10 提交含 3 个 WIP）。按字节比对 HEAD 933 个受控文件：**相同 928／不同 5／缺失 0**；候选独有的 197 个文件全是缓存与构建产物。**候选不会回退那 10 个提交。**
+- 5 处差异中 4 个是候选**纯增**退役负控测试（`scalar.rs` +38、Java +42、Python +39、TS +35）；唯一真分歧是 `echo-sdk-host/tests/core_profile_e2e.rs`——HEAD 用 `tempdir_in("../target")`（正是 `83ae59e` 的沙箱可见性修复），候选是旧写法 `tempdir()`，**落地必须保留 HEAD**。
+- 离线预演这 4 个测试能否通过：ADR 0042 对 9 项退役身份**逐条命中**、`accepted-external-contract` **零命中**、`parity-manifest` **零匹配**（断言空转成立）；`scalar.rs` 新测试验证的是 HEAD 已有行为（`:558-560`／`:584`）；`typescript/src` 与 `python/src` 对 `JwtConfig|JwtClaims` **零命中**；新增 38 行**无** `unwrap/expect/panic/unreachable`。
+- 落地后门禁命令取自实跑 argv（5 条，含 `--offline`），并注明原 argv 用的是 `~/.rustup/.../stable` **而非**冻结 1.99.1 工具链。
+
+### 三、错误从"记住"变成"可重复检查"
+
+- 新增 `verify_docs_consistency.py`：一次跑 9 项（13 组 79 项、编号连续、台账 26 行、索引 30 条且哈希一致、入口页互引、**已更正的表述不得复现**）。做了**负向测试**——注入两处错误后脚本确实报错退出 1，证明它不是永远通过。
+- 新增 `app-rebuild-recipe.md`：冻结工具链、实跑 argv、env、四步产出流程；并记录 warm target **已被官方 clean 删除**（`Removed 6333 files, 3.7GiB`），故重建是冷构建。
+- 新增 `receipts-index-rounds18-40.md`：32 份 validation-stage 原件的导航，标注两处被推翻的结论。
+
+### 四、本段三次自我更正
+
+1. `grep -aqF` 在 UTF-8 locale 下对混合 ASCII+多字节匹配失败，误判二进制里"没有" C04 文案；改 Python 字节扫描后在偏移 98,687,917 命中。
+2. 照抄 `entry.json` 的 `warmTargetRetained` 写"刻意未清"，未核 `test -d`；实际该目录已被后续清理删除。
+3. 用 `^(\d+)[.、)]` 找清单编号得出"79 项无编号"，实际条目是 `**A01 …**` 字母前缀；若照误判补编号会破坏两份文档的互引。
+
+共同点与第 18–37 轮一致：**把中间输出或记录里的旧状态当成当前事实**。
+
+### 五、仍未闭合（都需要用户或授权）
+
+- 79 项 GUI：**0 项**由用户实际验证；材料已就绪。
+- SDK：只差一个落地授权（4 个测试文件 + 门禁复跑）与网络窗口（canonical／SourceFinal，GitHub 443 仍超时）。
+- 原 26 项义务：台账 26 行编号连续、无一行标完成。

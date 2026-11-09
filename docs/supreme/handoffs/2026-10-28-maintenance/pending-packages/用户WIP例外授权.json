@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-28T11:46:09.469666+00:00",
+  "source": "actual Root user reply request_user_input_async call_8e119f5075c94bef972b519e108acf66",
+  "question": "这轮是否允许把现有产品源码做成本地 WIP 提交？代码已有完整恢复快照；提交会明确标注尚未通过的检查，不推送、不合并，也不算验收完成。",
+  "actualUserAnswer": "允许，先把现有代码全部做成本地 WIP 提交（推荐）",
+  "authorized": "exact current existing coherent WIP source commits despite preserved known incomplete/failed checks, no feature extension",
+  "noPushMergeAcceptanceOrGoalResume": true,
+  "GoalStatus": "paused",
+  "noNoVerifyOrCommitTreeToolBypass": true,
+  "ordinaryGitCommitGpgDisabled": true
+}

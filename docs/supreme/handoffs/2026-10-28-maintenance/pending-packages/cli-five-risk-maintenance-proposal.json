@@ -1,0 +1,172 @@
+{
+  "at": "2026-10-28T11:42:43.070561+00:00",
+  "package": "cli-five-risk-maintenance-proposal",
+  "originalDirectory": ".echo-semantic/local/parallel-executors-20261027/performance/maintenance-cli-risk-tightening-20261028",
+  "archive": "cli-five-risk-maintenance-proposal.tar.gz",
+  "archive_sha256": "2ae6db413a757abf947b27ad761316a487018ea4c84bd9dd7e03f0bb46584398",
+  "archive_bytes": 57258,
+  "file_count": 26,
+  "logical_bytes": 251722,
+  "files": [
+    {
+      "path": "AGENTS-increment.md",
+      "bytes": 1789,
+      "sha256": "a716e4ead6e369dd06553758510e38771b52a49d47ba3742f14834e640563a96",
+      "mode": 420
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 3963,
+      "sha256": "1a1dd78387ce6c5c9a2244c1e162a0ee4c70563bae29a294894ee3ce393f9fb1",
+      "mode": 420
+    },
+    {
+      "path": "after.json",
+      "bytes": 2177,
+      "sha256": "cae2ec225e34521adf1605cbf8ed4cd488d4c7e231aa4a0af3d2c9448becc1ff",
+      "mode": 420
+    },
+    {
+      "path": "before.json",
+      "bytes": 54987,
+      "sha256": "65c60290a88c6db8720ade965803d1de159c63e1afabdfe7124ea50338b26c99",
+      "mode": 420
+    },
+    {
+      "path": "candidate-manifest.json",
+      "bytes": 4602,
+      "sha256": "09f506fe5128babedd7b9c2529ca417dba1c03cd18cd944cb7faf17e526beaa0",
+      "mode": 420
+    },
+    {
+      "path": "captured-green-run.json",
+      "bytes": 1473,
+      "sha256": "0865243c56a90e1e121df8a2896dd1c48e892fef5f688c3e02b02d20e387070f",
+      "mode": 384
+    },
+    {
+      "path": "captured-settings-green-run.json",
+      "bytes": 1499,
+      "sha256": "d54aec9675f0bb4100a3343549da6fb4b0029b6a63c8e9bffddb886ab6cf879a",
+      "mode": 384
+    },
+    {
+      "path": "cli-applycheck-run.json",
+      "bytes": 1131,
+      "sha256": "7a057992d5009ab656f1d9b0c534a45cd3af4b8e6ce10e4390c380c62e04d518",
+      "mode": 384
+    },
+    {
+      "path": "cli-exact-subset.patch",
+      "bytes": 18121,
+      "sha256": "df691ea1cfd7f7cdbc44bbe5dbf96b7de62f9b09cbda6efffe57c43a978709bf",
+      "mode": 420
+    },
+    {
+      "path": "decision-increment.md",
+      "bytes": 3259,
+      "sha256": "8d1fdfb5d9ae2a0f529333e32bc6fc310c29e3aba59da566987f3600228153df",
+      "mode": 420
+    },
+    {
+      "path": "extra-green-run.json",
+      "bytes": 1753,
+      "sha256": "6bb0c3a4d402f72c52578bcc4818a7adb09f610481bc3659265d15570c5241f3",
+      "mode": 384
+    },
+    {
+      "path": "logs/CLI-candidate-applycheck.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": 384
+    },
+    {
+      "path": "logs/Root-AGENTS-applycheck.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": 384
+    },
+    {
+      "path": "logs/captured-warning-and-settings-green.log",
+      "bytes": 720,
+      "sha256": "6e9a3675cd58ec305041021c091ff4e6131e3244de7c809871316569befdc354",
+      "mode": 384
+    },
+    {
+      "path": "logs/captured-warning-green.log",
+      "bytes": 586,
+      "sha256": "276d8b9f696ff2b4d68fb3df1fb10ddba5efb9e0e321f2998de3a492a676c36a",
+      "mode": 384
+    },
+    {
+      "path": "logs/captured-warning-red.log",
+      "bytes": 6025,
+      "sha256": "18430b2ad89e119e56c8a44f1026047324b8f9b8b3aa86a104b31c4b053c6d4a",
+      "mode": 384
+    },
+    {
+      "path": "logs/new-strict-controls-green.log",
+      "bytes": 440,
+      "sha256": "0cf63096eedcc5a5781f1c0ee1103e67ae09bee5bf577b27829d00df1d98b5f5",
+      "mode": 384
+    },
+    {
+      "path": "logs/original-six-candidate-green.log",
+      "bytes": 1148,
+      "sha256": "16ec2c631c4922676a56bd5e63568b748774218440e3f54d954d0b5acd26bf9b",
+      "mode": 384
+    },
+    {
+      "path": "red-run.json",
+      "bytes": 1481,
+      "sha256": "113747b998a2473a47660af088e3ce795007cb6c55b79b34383c4f8350ee22f5",
+      "mode": 384
+    },
+    {
+      "path": "result.json",
+      "bytes": 128697,
+      "sha256": "e3e2a3521291bdb981ec68a192f19973f67740fbeadd1f6cbab6ed5f1604c4db",
+      "mode": 420
+    },
+    {
+      "path": "review.json",
+      "bytes": 1241,
+      "sha256": "ec8c9f681dd6e432e3fb964a084e7f9c8bb4c361c4ad018e86cab251de624f30",
+      "mode": 420
+    },
+    {
+      "path": "root-AGENTS.patch",
+      "bytes": 3112,
+      "sha256": "713a9ac11df29c8e688ed8ee1416fbc0d61ba006d9f86daf2188f2740f4184b6",
+      "mode": 420
+    },
+    {
+      "path": "root-applycheck-run.json",
+      "bytes": 1116,
+      "sha256": "c3f5278a12637f86ee2075471bb0f69e6a8382fa2328e7538353edbae3274817",
+      "mode": 384
+    },
+    {
+      "path": "six-green-run.json",
+      "bytes": 2229,
+      "sha256": "bb66ba488241a25be0372b2728daa0e73215fb1305c76185a7f840cb43f4d7c5",
+      "mode": 384
+    },
+    {
+      "path": "subset-proof.json",
+      "bytes": 7697,
+      "sha256": "d02d8c94955c605e8b3ac56c8ba7b97a29c57712a41134902852872f830630ad",
+      "mode": 420
+    },
+    {
+      "path": "test_captured_warning_coverage.py",
+      "bytes": 2476,
+      "sha256": "8bb05f1a5a7373ab7dc461881135a74b2f3d79dead555bc57a3943bbc362e15b",
+      "mode": 420
+    }
+  ],
+  "actualScratchExtractionAndFullBytesModesHashMatch": true,
+  "productionAdoption": false,
+  "goalStatus": "paused",
+  "qualification": "现授权六项风险严格子集的精确维护提案，静态/隔离验证过；未正式采用或执行正式actual/canonical原gate，不是新的人类风险接受"
+}

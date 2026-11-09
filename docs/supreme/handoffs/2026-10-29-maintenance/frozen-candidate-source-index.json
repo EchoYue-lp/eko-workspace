@@ -1,0 +1,2803 @@
+{
+  "at": "2026-10-28T16:12:21.719843+00:00",
+  "status": "FROZEN_UNADOPTED_SOURCE_ONLY_NOT_EXECUTION_QUALIFICATION",
+  "source_root": "/Users/ls/MyWork/code/ylp_agent_learn/lp-agent/.echo-semantic/local/parallel-executors-20261027",
+  "archive": "frozen-candidate-source.tar.gz",
+  "archive_sha256": "94f5b335ff439c32847dda193bea416b4aa000329a8e6ea9a175f6c53053ce54",
+  "archive_bytes": 4256562,
+  "file_count": 464,
+  "logical_bytes": 23428813,
+  "files": [
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/01-current-native-controls.patch",
+      "sha256": "9ae273bb801689b1a984c007e87dc4bd58003533b49e319f2f2da97223434cf6",
+      "bytes": 30989,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/02-retire-old-control-adapters.patch",
+      "sha256": "b3e21b126cb9aa8ea6be28efeb79985adf4d68a2a23e20b32ab3aed1290753e3",
+      "bytes": 176613,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/03-owned-ADR.patch",
+      "sha256": "5293363145a7ee42ea89728662243c863f64bf942911f2ac0a9099967921b89f",
+      "bytes": 11258,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/apply-check/docs/adr/0101-native-message-execution.md",
+      "sha256": "2ebb59a86c2844fb496b4f1fe83c791b78a53771530a0fa5088d7ac9bd25a9a3",
+      "bytes": 10355,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/apply-check/docs/zh/41-persistence-concepts.md",
+      "sha256": "5380f3e010769614455e3cb2b630bdd0567533dbdd10adf304a8a10720ea318b",
+      "bytes": 16409,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/apply-check/docs/zh/43-native-message-execution.md",
+      "sha256": "439e91d84835a84ef9e3286e08691459ccd4e506ff958e30d24e3807eaa203f1",
+      "bytes": 7058,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/apply-check/echo-core/src/compression.rs",
+      "sha256": "979cfda0a481cc99552a05d7d683ed2b1ecf15b0724137661ba3eaa58c3e045c",
+      "bytes": 20946,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/apply-check/echo-state/src/compression/mod.rs",
+      "sha256": "0e66ea974d5a3092e1d0cf9de6fd3d22ed67382e89e40aea79499d438807a36c",
+      "bytes": 133063,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/apply-check/src/agent/react/mod.rs",
+      "sha256": "95f2aab6c7cfc3c73f68b03f58e1c07ffa7832a120b7ebf2ec894884e81fab08",
+      "bytes": 166027,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/apply-check/src/agent/react/run/phases/think.rs",
+      "sha256": "254187776135044b71dfcf06b1a97febd15b11b0ee480271bb8952703273374b",
+      "bytes": 65481,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/apply-check/src/agent/react/run/stream_channel.rs",
+      "sha256": "7fe1f517c87385bc6d667c2bfb6261c97804ad9c0511b7882b1ebe72bdd78ade",
+      "bytes": 361007,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/apply-check/src/agent/snapshot.rs",
+      "sha256": "873401e579ac7337bd3e685ab95ed11c2f3516da1740835df11f2c8afbd7eddc",
+      "bytes": 230597,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/apply-check/src/state/current_native_recovery_tests.rs",
+      "sha256": "db6a315e6462933bd6dd8b521412129b5190611e656b7c5986e23adf3c2f9ec8",
+      "bytes": 29705,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/apply-check/src/state/file.rs",
+      "sha256": "4054b1e1198eaf8520b9946921df7c1b3758b9424b139e34ad469960e5364c47",
+      "bytes": 223215,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/apply-check/src/state/mod.rs",
+      "sha256": "4a3af96a1226182357eaac62fc9b77152fb5d5e00a6f1ea88531080396adba89",
+      "bytes": 174874,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/base/docs/adr/0101-native-message-execution.md",
+      "sha256": "35c6df14ffcc76096b72171a14d918906000cc77b3bf6d48b3c82fbefe69085e",
+      "bytes": 10097,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/base/docs/zh/41-persistence-concepts.md",
+      "sha256": "416760f2da950d476bb8b26e11269cfc2e6e37250bd27fa6e510e24e8977820f",
+      "bytes": 17036,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/base/docs/zh/43-native-message-execution.md",
+      "sha256": "b1f66ddf497e05e3fbfa67b5201d8eaf9d3a5c168fd8ad9641c5e37378441d39",
+      "bytes": 7102,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/base/echo-core/src/compression.rs",
+      "sha256": "27fc71669eabcd7d1751ad0de101aae51aec2392d74dd9086923556802ee6d62",
+      "bytes": 22279,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/base/echo-state/src/compression/mod.rs",
+      "sha256": "583c32976ce0bd3425a08be6e64edcfd4ae72a9bbc8e7ac7baa4088f9af8766c",
+      "bytes": 133103,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/base/src/agent/react/mod.rs",
+      "sha256": "6fe2e3b9f3ab1d5638a78e3756a01628732af4830be2e85f4357d705b8b52e69",
+      "bytes": 173349,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/base/src/agent/react/run/phases/think.rs",
+      "sha256": "2c88876b227efd28f398c262429df21b3e9923efb4c77acc829400cbc172bee7",
+      "bytes": 65896,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/base/src/agent/react/run/stream_channel.rs",
+      "sha256": "37205805ea118f1c9c8d71fabfc9a7ecb25f83e2fd4249b9286f294912b88980",
+      "bytes": 364040,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/base/src/agent/snapshot.rs",
+      "sha256": "38a91cd87bb3ab705914389669e84f72808bd3a0c92e791ac9b759cf4a46f2bc",
+      "bytes": 230602,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/base/src/state/file.rs",
+      "sha256": "c3a83363f15f230ed0c9364bf8bb32ac886cfafcb48e5272f28567a991f244ea",
+      "bytes": 236515,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/base/src/state/legacy_control_history.rs",
+      "sha256": "c01093552354c7b514e32ba837231e82678540bdf1b4c2ef3e50770306bd188f",
+      "bytes": 42827,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/base/src/state/legacy_control_history/pending_recovery.rs",
+      "sha256": "83c28732cbfb3180e47422d9b8e87556d029e2dafbdc1be91ab8e1e4186aef19",
+      "bytes": 78173,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/base/src/state/mod.rs",
+      "sha256": "60572e12314d33106b7c15cb4bfb2bc40dc1f2b1ba002b34750179e977221b5f",
+      "bytes": 177477,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/candidate/docs/adr/0101-native-message-execution.md",
+      "sha256": "2ebb59a86c2844fb496b4f1fe83c791b78a53771530a0fa5088d7ac9bd25a9a3",
+      "bytes": 10355,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/candidate/docs/zh/41-persistence-concepts.md",
+      "sha256": "5380f3e010769614455e3cb2b630bdd0567533dbdd10adf304a8a10720ea318b",
+      "bytes": 16409,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/candidate/docs/zh/43-native-message-execution.md",
+      "sha256": "439e91d84835a84ef9e3286e08691459ccd4e506ff958e30d24e3807eaa203f1",
+      "bytes": 7058,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/candidate/echo-core/src/compression.rs",
+      "sha256": "979cfda0a481cc99552a05d7d683ed2b1ecf15b0724137661ba3eaa58c3e045c",
+      "bytes": 20946,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/candidate/echo-state/src/compression/mod.rs",
+      "sha256": "0e66ea974d5a3092e1d0cf9de6fd3d22ed67382e89e40aea79499d438807a36c",
+      "bytes": 133063,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/candidate/src/agent/react/mod.rs",
+      "sha256": "95f2aab6c7cfc3c73f68b03f58e1c07ffa7832a120b7ebf2ec894884e81fab08",
+      "bytes": 166027,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/candidate/src/agent/react/run/phases/think.rs",
+      "sha256": "254187776135044b71dfcf06b1a97febd15b11b0ee480271bb8952703273374b",
+      "bytes": 65481,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/candidate/src/agent/react/run/stream_channel.rs",
+      "sha256": "7fe1f517c87385bc6d667c2bfb6261c97804ad9c0511b7882b1ebe72bdd78ade",
+      "bytes": 361007,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/candidate/src/agent/snapshot.rs",
+      "sha256": "873401e579ac7337bd3e685ab95ed11c2f3516da1740835df11f2c8afbd7eddc",
+      "bytes": 230597,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/candidate/src/state/current_native_recovery_tests.rs",
+      "sha256": "db6a315e6462933bd6dd8b521412129b5190611e656b7c5986e23adf3c2f9ec8",
+      "bytes": 29705,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/candidate/src/state/file.rs",
+      "sha256": "4054b1e1198eaf8520b9946921df7c1b3758b9424b139e34ad469960e5364c47",
+      "bytes": 223215,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/candidate/src/state/mod.rs",
+      "sha256": "4a3af96a1226182357eaac62fc9b77152fb5d5e00a6f1ea88531080396adba89",
+      "bytes": 174874,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/complete.patch",
+      "sha256": "e9e98889141b8e31a39f156c3c9062d53714e833360910605a2b61d3c7580d75",
+      "bytes": 217478,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/edit-candidate.py",
+      "sha256": "e8acb18f704816da66bd3d6a6e48b8bbe4881b164e9b5790197db8e8c9456464",
+      "bytes": 9562,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/handoff.json",
+      "sha256": "20510f29969260bdd13d88cf5fe4ecc0629624924a0df80374753ae355495be7",
+      "bytes": 1492,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/handoff.md",
+      "sha256": "5f7a6bd7428589f814b1482cddf82ce8e28aa48c2fa44097988896be77653f28",
+      "bytes": 5975,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/make-package.py",
+      "sha256": "19b927ea2d90ccb211aa9a050880effd838c2dd9780f2fc289002ea26fe926db",
+      "bytes": 8217,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/manifest.json",
+      "sha256": "c329b40345c3c691d5c22ab139c5c4218b1ebd803a02c524d078a4db3d2718ae",
+      "bytes": 7058,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/preserve-current-owner.py",
+      "sha256": "efd419b8e7b0826b4b0296c839f7a122c7e352d6e068b769b63f7ba088cfddac",
+      "bytes": 3307,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/control-candidate/revision02-owner-and-current-controls/review-result.json",
+      "sha256": "32f7929e0a9639f037c62545930c6eedfa01af54c012221336590ec46f360ba8",
+      "bytes": 797,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/apply-check/docs/adr/0103-current-storage-records.md",
+      "sha256": "9a5218f6307610257469efefcd31c6e5fd07bc958ffac1ec46edcb8377a8f787",
+      "bytes": 4666,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/apply-check/src/state/file.rs",
+      "sha256": "f82f0c26ba870280f5db4d730ffebca28ed44b34a856e2bc679eeedaffa09b0d",
+      "bytes": 243052,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/apply-check/src/state/mod.rs",
+      "sha256": "25ffc36f73bbffb66277de92bde8268c7207d1e22def17e3ee3780e57b0bcc0b",
+      "bytes": 176063,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/apply-check/src/state/sqlite.rs",
+      "sha256": "15a595d5928d6602847c2a55da73e4aabab03a31d77ec1e89aa56027371d816f",
+      "bytes": 208475,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/base/src/state/file.rs",
+      "sha256": "c3a83363f15f230ed0c9364bf8bb32ac886cfafcb48e5272f28567a991f244ea",
+      "bytes": 236515,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/base/src/state/mod.rs",
+      "sha256": "60572e12314d33106b7c15cb4bfb2bc40dc1f2b1ba002b34750179e977221b5f",
+      "bytes": 177477,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/base/src/state/sqlite.rs",
+      "sha256": "5462e7aa0271cbf5b0bc2ee02c3742211608ca28701c096bd982f086e956c5ff",
+      "bytes": 210866,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/candidate/docs/adr/0103-current-storage-records.md",
+      "sha256": "9a5218f6307610257469efefcd31c6e5fd07bc958ffac1ec46edcb8377a8f787",
+      "bytes": 4666,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/candidate/src/state/file.rs",
+      "sha256": "f82f0c26ba870280f5db4d730ffebca28ed44b34a856e2bc679eeedaffa09b0d",
+      "bytes": 243052,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/candidate/src/state/mod.rs",
+      "sha256": "25ffc36f73bbffb66277de92bde8268c7207d1e22def17e3ee3780e57b0bcc0b",
+      "bytes": 176063,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/candidate/src/state/sqlite.rs",
+      "sha256": "15a595d5928d6602847c2a55da73e4aabab03a31d77ec1e89aa56027371d816f",
+      "bytes": 208475,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/check-candidate.py",
+      "sha256": "217abb12d07d70f196fce4961296f390ab858c7f69803fa434bab9a8625d0c32",
+      "bytes": 2188,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/current-owner-tests.fragment.rs",
+      "sha256": "51e19d39edcbd5adc299e3d266d92249ba7eb0b49c955931a497358467475cfc",
+      "bytes": 3730,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/handoff.json",
+      "sha256": "0bc465dc10bd6c00466de0d203c3cf0c7cbe4ece2ad2693da5ab0f76fb7f538a",
+      "bytes": 3541,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/handoff.md",
+      "sha256": "2fad115a1a25437f8db153e8c8e65990921495582adf86f1e12af876a8a82965",
+      "bytes": 2998,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/manifest.json",
+      "sha256": "d4bcec8f9c95c893edc61181cbd5b8d43776470ee781a357530cef7484593c23",
+      "bytes": 5062,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/prepare-owner-candidate.py",
+      "sha256": "3edf2f2e247142aa0b24afd0b9ff71000a1cb65c99c5492dbe18a1c924b13787",
+      "bytes": 9453,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/prepare-storage-candidate.py",
+      "sha256": "466e1d99c3762e00ff21b29f58b47554a609c1e52fb5b8e2629affbc9213208a",
+      "bytes": 5691,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/review-01-manifest.json",
+      "sha256": "7190591e504a95cb90e54ca2b62fa8d3e9d2d77fb81d39c1567fd20ddae86523",
+      "bytes": 4846,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/review-01-to-02.patch",
+      "sha256": "1ca5611c3441bf83cc353661410d6dbc8b8ee9f5ebe2e095c0a8db545176abfe",
+      "bytes": 3712,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/review-result.json",
+      "sha256": "a683be18fc496e933ec7bf0a20aa489dff30b21e1eb669d7a15d4b6861fad1ef",
+      "bytes": 843,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/source-qualification.md",
+      "sha256": "dc9a0c5811721d4e2ab8445914ea306fbe6a19f5ecb1791aed0cfa4df8576515",
+      "bytes": 5623,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/storage-adr.patch",
+      "sha256": "607fa616df67d85720f42dac29e2bb95e1a9f93205478876a3f5eff356126b17",
+      "bytes": 4785,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/storage-complete.patch",
+      "sha256": "423d51e084c378b29b813fe8550f1e1b10f576d7492c18ae2182437fa7bace70",
+      "bytes": 58194,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/storage-file.patch",
+      "sha256": "fb60acabc41f94dc15fb49d51aac3654122ac4221c5e1d389c26113e11904cf2",
+      "bytes": 33238,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/storage-formats.patch",
+      "sha256": "4b0139ddaf042541c3a1adbfbd52c03ec5fd633bab0bafab7210b864267eaa8b",
+      "bytes": 53409,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/storage-mod.patch",
+      "sha256": "e60d52f9f7673488a929d0c4b358e9996fa7ba0bba7c9d166d76b4b14f26204f",
+      "bytes": 9383,
+      "mode": 420
+    },
+    {
+      "path": "framework/no-compat-retirement-source-20261028/storage-candidate/revision01-resumed/storage-sqlite.patch",
+      "sha256": "00b6584a79e3707f2b452164f494d6cc0ce7d21db3c2ffa2b9b23cf5ed985e46",
+      "bytes": 10788,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/AGENTS-increment.md",
+      "sha256": "a716e4ead6e369dd06553758510e38771b52a49d47ba3742f14834e640563a96",
+      "bytes": 1789,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/HANDOFF.md",
+      "sha256": "1a1dd78387ce6c5c9a2244c1e162a0ee4c70563bae29a294894ee3ce393f9fb1",
+      "bytes": 3963,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate-manifest.json",
+      "sha256": "09f506fe5128babedd7b9c2529ca417dba1c03cd18cd944cb7faf17e526beaa0",
+      "bytes": 4602,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/.cargo/accepted-dependency-risks.json",
+      "sha256": "67464eadb66da30aa44208a70e0eda60862474717e833a80c9b304e8d777af32",
+      "bytes": 1796,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/.cargo/config.toml",
+      "sha256": "c352e29cad3ea09992856e7f3774f32075bdb4fb1f1dca0610d66842cd6a4f94",
+      "bytes": 652,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/AGENTS.md",
+      "sha256": "e46ee96d96b13a2f9f3261301d2770835c5ca8ef0964340d1e54fd18adc7701b",
+      "bytes": 19591,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/Cargo.toml",
+      "sha256": "e45213dc642858721879831b90512c143ac2960aefc088d1178739519506d5b4",
+      "bytes": 2633,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/build.rs",
+      "sha256": "081f4163e461bb0f39c290b818ee086b2853f0bb6fdf7baf6cd257e358c94914",
+      "bytes": 448,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/docs/supreme/specs/cancellation-observation-consumer/dependency-risk-decision.md",
+      "sha256": "b20c57be93fc1313d520a8ae912f46f2b3e45673479afa3d14e4e9481ed12cdc",
+      "bytes": 88458,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/Cargo.toml",
+      "sha256": "77e95e68cdabb018d06370a7843a6485cda78e7bc0254eb54182d6977862a7b1",
+      "bytes": 2370,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/agent_control.rs",
+      "sha256": "e742bd0ca6da05628491e6935fb7c5d792870961dc064015baf416472b1ed36d",
+      "bytes": 134026,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/agent_handle.rs",
+      "sha256": "fe2e0adf1e41a7f272f5e3d895294e0ef1433d9843911c33a57cb12755c73f7d",
+      "bytes": 364,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/agent_pool/admission.rs",
+      "sha256": "24cadefdf48ffe82d9ef38255f3c7420d4fa540168126b252954a3f3d972040a",
+      "bytes": 39586,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/agent_pool/generation.rs",
+      "sha256": "addf2e3ceeaabc9befcae88e2d7445bffcb8d17d98755e0b6129070d68b7bb44",
+      "bytes": 5974,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/agent_pool/mod.rs",
+      "sha256": "e0957a6b3ba5e55806df424cb5099d905a04c7f9f041e643e290b7991a88cb00",
+      "bytes": 96,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/agent_pool/pool.rs",
+      "sha256": "41627c13ab89d44a0c62503c2c727709fbe318df67756844874ef7d39b7efaf5",
+      "bytes": 95619,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/agent_pool/tests.rs",
+      "sha256": "842ba5e07658818aa57c67923c64bb97c095254211003b3500da2f988c394f1e",
+      "bytes": 143957,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/agent_router/address.rs",
+      "sha256": "d09b9fea9455eb9852353a26960374b0dd4a09777a8da5d0f620ae3d88de1fc6",
+      "bytes": 15009,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/agent_router/delivery.rs",
+      "sha256": "3904fa5b37ba66874bdbaaab6fbf2a0c6f8d636024705fd91ffa1fa2c8032441",
+      "bytes": 14107,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/agent_router/inbox.rs",
+      "sha256": "b03e3a0b755df529d5f13f1d53e7a3fed9df20a166eb8c0ad9b09b0ddcacb113",
+      "bytes": 18254,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/agent_router/mod.rs",
+      "sha256": "99ea9c70523e55f099a386630e7b956f5a8382cc6f4e0d9ea3b90f9a69a01cd7",
+      "bytes": 169,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/agent_router/persistence.rs",
+      "sha256": "447f08e0baca999778a19e53aa42ac46840502eb4cf8faf5f5ec6543bb74f814",
+      "bytes": 617,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/agent_router/recovery.rs",
+      "sha256": "527d7b1ffb1799523434afc9203fee64640fe91a0858e69be999e921628e58c4",
+      "bytes": 21118,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/agent_router/router.rs",
+      "sha256": "148926f49380c5dbdb3d50aeb411c9878a7f81fbde29c74ab37d55f9234c7406",
+      "bytes": 22258,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/agent_router/tests.rs",
+      "sha256": "130f237faf944c93135c38d73c8c31323a9d093a52f13610358d71d4dae374b7",
+      "bytes": 53675,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/analysis.rs",
+      "sha256": "6e0d61c12622b861dd829af945ca78f05fa45096e81a5c3118788a8f9e5cbf69",
+      "bytes": 88838,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/analysis_runtime.rs",
+      "sha256": "aa375b72af71ae77dd3130c1b02fd1522dfdd30a69d1d35c6195ea4be4e8a1f3",
+      "bytes": 41557,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/api/mod.rs",
+      "sha256": "83eb2be7ef462246e39e5182d35c09644865ee90559ef99ed4a0d281345063b6",
+      "bytes": 5613,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/attachments.rs",
+      "sha256": "2f5f44c57ee43b7689070205ff0f75c12a9a0cdcb0522d652b5f75d4696a3745",
+      "bytes": 41827,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/auto_memory/mod.rs",
+      "sha256": "32cb1082ce2e70b237db065d84bade32a9a387450063c657e1b934ae30a29e20",
+      "bytes": 2653,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/auto_memory/policy.rs",
+      "sha256": "a777e4bcedea29a83ed53121cf9e63e2cba679df78762403fe2fe0e01fd8c854",
+      "bytes": 20176,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/browser/config.rs",
+      "sha256": "d8a84611fea81059c3fb8f4243520552d4ce30cf5b4bffd82bdc4820e1187725",
+      "bytes": 7421,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/browser/error.rs",
+      "sha256": "01165b12d5db2c0d7a08d66fa7f5128e5587eeb14ca80b2cfe510ee466ad63d1",
+      "bytes": 560,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/browser/event.rs",
+      "sha256": "482c096bdf2a4f633a59c9209afb4808579a13d3b02bbe0c59bdc89412df7ee4",
+      "bytes": 3245,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/browser/mod.rs",
+      "sha256": "140c59da2bf3aa02302d7860086fa6395bbe46b849585351408addb7f21d6a08",
+      "bytes": 85306,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/browser/risk.rs",
+      "sha256": "a32bebc74bf75aeed736a23e4166d780df61605c75f47c0b127d3d04fbe8188b",
+      "bytes": 8284,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/browser/session.rs",
+      "sha256": "92f91c49606da9d3bb52a3a0ac223761cde19f92e8b8cab509459b170a59b89a",
+      "bytes": 29553,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/browser/sidecar.rs",
+      "sha256": "4695702a982493be0f8a4c7897e99a1cd7c538f661518e0fbd6521244220da26",
+      "bytes": 6095,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/channel_runtime.rs",
+      "sha256": "c44705f3fad667ae1c950f7c7f969ecf94aa3b55d7811e324f2383a2259c6ea7",
+      "bytes": 705681,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/channel_runtime/input_pump.rs",
+      "sha256": "fe3bfe8c8e5997e87a0c454a278cdee042e501e8ae6eab7436766f96b60f28d3",
+      "bytes": 69618,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/channel_runtime/management.rs",
+      "sha256": "08102a40ff5d6a4a86ea1cce2a61aa3bcf55e3b3f214976c146c2df555d2ebd4",
+      "bytes": 64100,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/channel_runtime/management/weixin_a2_consumer_tests.rs",
+      "sha256": "501bb7d11b06727dbb91df25133e8bcead7ea889b81c22f1ad3ed8a429ed9302",
+      "bytes": 40643,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/channel_runtime/management/weixin_auth.rs",
+      "sha256": "f4b5b8cee970d9a3aa5efb6d0d014bc92e3dbf57dfcf1ef1e69a0595e2441a13",
+      "bytes": 64600,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/channel_runtime/native_message_tests.rs",
+      "sha256": "dad0765fab6107f66e7474877f1c044f62c21463e40a8e0aa23352198e19cc1e",
+      "bytes": 36503,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/channel_runtime/outbound.rs",
+      "sha256": "537a4bbc75d544f58689be06a0b24bb467778273c5e6664bd6590a2379731942",
+      "bytes": 33012,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/channel_runtime/tool_render.rs",
+      "sha256": "1140303c8d3a2e5274464cbfb54dc282bf6136bcbfe97d22cf71c2270f2274c9",
+      "bytes": 19218,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/channel_runtime/weixin_control.rs",
+      "sha256": "e4958ac3af30160ec0387a1fca6f2f55534d4364dd17cca2a83e9a0b179ea00c",
+      "bytes": 43701,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/chat_driver.rs",
+      "sha256": "f72ceffdf781c346887426349aa52de3bc876c0e32c42c3a0a8abedff29cd1f9",
+      "bytes": 254780,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/chat_event_log/event.rs",
+      "sha256": "5671d0eaa6e33a245dc9e56c5a6a4af14151250a0edca1d1b6729262dde1a260",
+      "bytes": 20167,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/chat_event_log/journal.rs",
+      "sha256": "70f8f1fe8f306f64259e38b38cf06e7608d94e083ea15fa8985c1200c5247e5b",
+      "bytes": 158828,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/chat_event_log/mod.rs",
+      "sha256": "e4605fe57a100b9e0a513ab6fb27a2a3f0e9eeb76e17e65fa155597acf63454e",
+      "bytes": 95,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/chat_event_log/projection.rs",
+      "sha256": "630dce166fea4e958e85d0cccf84dc33dba7051b90f86aab6f944556902a8d6c",
+      "bytes": 79950,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/chat_event_log/tests.rs",
+      "sha256": "b499aa610d4a724fc83a11955b814f2d1cf9fdb55d529afca369898feb6862a7",
+      "bytes": 116397,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/chat_resources.rs",
+      "sha256": "61afaa6324e7ee4802d98ad552ba45a689ca874e0cba7f4826c0bc3b731835d7",
+      "bytes": 4864,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/config.rs",
+      "sha256": "64dbd288e6b42707d7bad9ac8767429364de11a58a3889c7303868731662f022",
+      "bytes": 18921,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/config_discovery.rs",
+      "sha256": "ce9519d1056474b958c255fa874ec598f66b20d1371d2e0c6ed931fdcfceb7e1",
+      "bytes": 16272,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/config_watcher.rs",
+      "sha256": "ed4ec275961889734191b165e95b9bf1f9e9a8014b363d200714a28db6ac02fc",
+      "bytes": 40490,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/context_window.rs",
+      "sha256": "97841558466cd9edd5c76ab4e5bcb0bf7ab845ed54490a3280bc200d60a5ecf5",
+      "bytes": 15412,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/conversation_archive.rs",
+      "sha256": "08f58fefbb0d4b0bd142d66df6c1fa47409a250a18d6f5e862e7139415eadf27",
+      "bytes": 31929,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/conversation_deletion.rs",
+      "sha256": "2a91d511e448b5f100419db2c6a95962e0723522f74633a6cba09cdf30ac7a3c",
+      "bytes": 96354,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/conversation_input.rs",
+      "sha256": "065156163074153339f9cb416586b7deb71c04cb4a442c1fb9020ceb4f3214a3",
+      "bytes": 119963,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/conversation_projection.rs",
+      "sha256": "1c6375aac975fd80ee561e410a2f705ff87399aa1b7a5599b7eb2f9d7c889c5e",
+      "bytes": 30322,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/data_root.rs",
+      "sha256": "a206b0437807aea14c0eb9758bceac8f82f74df4ac6841d6d7e59c5971993cd7",
+      "bytes": 1812,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/developer_commands.rs",
+      "sha256": "ad42b571ab08c0e554de4a25ddf22f71be65a6f83d5dda49c88b5a09348a65bb",
+      "bytes": 8763,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/diff.rs",
+      "sha256": "26cd28d1f002b9e21e32c52059192ac499480656ee40a4b701f39fe296d093a3",
+      "bytes": 36614,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/domain_plugin.rs",
+      "sha256": "e2ad4e65b7d07f26f256d0a29f991647060143af19fca1b9f0bd8dbbe1be0e05",
+      "bytes": 37724,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/error.rs",
+      "sha256": "b0552d26a4d55e695e2db0f97fe8011b7d8d40b274de81a9f65514442d669a64",
+      "bytes": 3924,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/evolution/background_review_owner.rs",
+      "sha256": "0e87101345d6329cd5ee0da4b73664e377c6c7712d9794c1a10f16f5e3b97db6",
+      "bytes": 25338,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/evolution/dashboard.rs",
+      "sha256": "1672eeec5a32a9bc5bb12ece354d119fe1eedc82fd945a756ae8e6fed2dab2bf",
+      "bytes": 10853,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/evolution/evidence.rs",
+      "sha256": "742b9e85fbea266ae57c50c97d114441f173f4cd062b0c98062b832a99a2be8f",
+      "bytes": 57700,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/evolution/hook_fire.rs",
+      "sha256": "95027c0d35d36b17332279a73a676c3d5f482ed9d9e80286ada229cd86f49db9",
+      "bytes": 2277,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/evolution/mod.rs",
+      "sha256": "d415e3e5ffcf6ae8544ecde62c4b286f18b4317d65ebf0a6684cdb6ef213dee8",
+      "bytes": 1492,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/evolution/review_integration.rs",
+      "sha256": "c422043f983bba0561e2f9752e4737bb88f742a0ff2e68680be4f6918eeab874",
+      "bytes": 173836,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/evolution/rule_promoter.rs",
+      "sha256": "85c25b59c38be1544a7a2434c02e1023c6faf5c5f79003f15854673ad1b94c26",
+      "bytes": 54513,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/export/latex.rs",
+      "sha256": "a4fad1a774619a0d527df03e55e90a2512c03d9da0f907f976756e66e7a002f5",
+      "bytes": 6174,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/export/mod.rs",
+      "sha256": "770e0ec1fe621ed80f074d6f3812087ae1991ec2a92b621ae2123e0eb2195e64",
+      "bytes": 139,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/extension_commands.rs",
+      "sha256": "667f41210cda22cd2842def7813c3f2886bd05d849c6c6829377100aa2adedbe",
+      "bytes": 118023,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/extension_control/mod.rs",
+      "sha256": "5dcb85529a8ded331d16010abd3497c260cbe41029a4d43130e2726918b9bbae",
+      "bytes": 114,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/extension_control/policy.rs",
+      "sha256": "fbb2362d2867fc1f9dce30e634876a0307b0638c956898baac67d23e4e427e43",
+      "bytes": 12171,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/extension_control/service.rs",
+      "sha256": "443e8354dfcc7de551d35424ecd3bdfcfddde51bc519d0eeca5edbea8cb73442",
+      "bytes": 66843,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/extension_control/skills.rs",
+      "sha256": "f856930ada0f117dee87361245c6d2411339e483a0fe089bba8dc0d4143ced7e",
+      "bytes": 6913,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/extension_control/tests.rs",
+      "sha256": "9f5ace3bdc79b894d0d5bce03356cc8435dce4eb20e027754472af5a9b3c3015",
+      "bytes": 46512,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/extension_control/types.rs",
+      "sha256": "4e13bffee67bf2f25eae5935b3e22c999c0a20025506ee18f1c310661ac7555e",
+      "bytes": 9595,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/f6_contracts.rs",
+      "sha256": "5844497fcefa2fef0d37a26a6a77acc2517196223642b7aa55accd703ae90189",
+      "bytes": 18430,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/foreground_turn.rs",
+      "sha256": "415598d9622d6243a71ad504a375a60bf4ee1ccbf40e16b8631dcd29e4ffda46",
+      "bytes": 134789,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/hitl/channel_entry.rs",
+      "sha256": "474d3dc7512a9406beb456e1584d34e576ae64f11412d6ae8649118a78db410c",
+      "bytes": 11062,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/hitl/channel_provider.rs",
+      "sha256": "ef92f50a827bc31d0bb89b09fc4c79b9ca4bc2e8386d5a43647d9118e6d3660a",
+      "bytes": 42202,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/hitl/dispatcher.rs",
+      "sha256": "69957c02444936b9c22d489559a12774d26bcab2de1406b99d8c23a8ed181381",
+      "bytes": 18929,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/hitl/mod.rs",
+      "sha256": "bf996959313dca2f7c522575e89ce7ae1d79cf39d97f50fbde52bb2863c4a45b",
+      "bytes": 709,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/hitl/pairing.rs",
+      "sha256": "a2d7c6e3e1f981d570bd09000881d746e12066d3269552050561ab63b706b688",
+      "bytes": 8776,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/hook_config_loader.rs",
+      "sha256": "e5097f2e0f16ca8fbca69452897939913aff3b1afa7ced07f75bd1cd05edf781",
+      "bytes": 27531,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/infra/background.rs",
+      "sha256": "f6d4a592b3e5882890f486c54c8abec228ba6d6162fb34cd2bc92fcfd7159b81",
+      "bytes": 12461,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/infra/diagnostics.rs",
+      "sha256": "daaed2b9d25464b7819c1f72c398a2f41aef1225a2f612808bc0cd882f91957d",
+      "bytes": 11322,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/infra/factory.rs",
+      "sha256": "57033c1845873b4983c087c675cbb1851bc17d554abe7b0fdbd0ef3e97efaa00",
+      "bytes": 98347,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/infra/llm.rs",
+      "sha256": "e523f93b7af0400f7fad9fbe6e7c235c72677a6b73bd195122ebbeca245ffef0",
+      "bytes": 8916,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/infra/logging.rs",
+      "sha256": "c63b4aee5748bde966d3113a6da9a792d6505e1d782c44ad24550a4ad5ac339f",
+      "bytes": 8959,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/infra/mod.rs",
+      "sha256": "de5a37fab1f8080713d342f2ea0a61a89b9a88a5a1d18e452542cf3f08bd4f9e",
+      "bytes": 145,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/infra/tests.rs",
+      "sha256": "85d63179b0eef6f3f28cdb3025ad37e8dacb009e17b29ac5f1aaec5d1f58f65d",
+      "bytes": 60926,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/instruction_provider.rs",
+      "sha256": "982e8f624d90233573d5f133a6198c15e929005d22598d237b394493f5bf941d",
+      "bytes": 25185,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/legacy_eko_history.rs",
+      "sha256": "db1221f58a90a6ecee7d2d1011959531489f8193a7671a7554498d694fd3bdc1",
+      "bytes": 21396,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/lib.rs",
+      "sha256": "ffc6843573864e766f1d28f4640e1d711f670c59f0ec509b9a21684d64ae5361",
+      "bytes": 2754,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/managed_conversation.rs",
+      "sha256": "825187c6d3aa481d39858147194d313f496744d592bbcce0c3aa64d9b579788c",
+      "bytes": 29643,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/manual_compression.rs",
+      "sha256": "a4b6d23bc90fc864025b33f4d0d27c51535c0f409937ba1fdfa2e4d1b8047c5c",
+      "bytes": 31394,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/mcp_config_runtime.rs",
+      "sha256": "366c8796e3287cd859d06e3ccb14bf4e19f12f8c39c504862d54d58873679c81",
+      "bytes": 140004,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/model_config.rs",
+      "sha256": "df3dad9249eaf9414b468df3633a20dc54f48c51f6a01412f82de250cbb29176",
+      "bytes": 46013,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/observability/diagnostics.rs",
+      "sha256": "af857315aa1dc3cc01c7d4adf740193535c8b2432acbf496904e08e143ef22f5",
+      "bytes": 23643,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/observability/mod.rs",
+      "sha256": "bb97af6657e134f8304da1d7e066da297b717b1a3aa7e6d9c79b2cabbbd1fca6",
+      "bytes": 203,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/observability/types.rs",
+      "sha256": "9d439faea3a4abe612c7ea972e98d7fe881cdda8c372a90ec0c1b6326afd067f",
+      "bytes": 4198,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/output/mod.rs",
+      "sha256": "fca918c3daf0dedc1304937daf307ed7e302a9c54fdc33a7627a39929dc030ca",
+      "bytes": 5133,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/permission.rs",
+      "sha256": "629f3a05c3afced97925d5b9314d430b08f184019fbedab6e32b49209e8ea1ee",
+      "bytes": 1706,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/plugin_components.rs",
+      "sha256": "b9fc59eef743ac62b9e85b539d3bbad5628dfdc44287f85e1a2d15f330fda2b8",
+      "bytes": 43068,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/plugin_runtime/mod.rs",
+      "sha256": "5ba76754e5f679892066aecf20540d9413e29036f21a43df81f559a5f71b0a3f",
+      "bytes": 127,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/plugin_runtime/publication.rs",
+      "sha256": "8255b3488d5a8bf2a1919b9e07f2bb11bbb775913560d5da54ffd49c43d086af",
+      "bytes": 18496,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/plugin_runtime/receipt_ledger.rs",
+      "sha256": "5ad7b5b18a6455eeb219669f11e97b1be65c38b300da351ecfd289d974d8f159",
+      "bytes": 5818,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/plugin_runtime/runtime.rs",
+      "sha256": "f5a0b6b7ca8d746d427853afb161c289f50bd05cda0b9de0857647fc4687c933",
+      "bytes": 130823,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/plugin_runtime/tests.rs",
+      "sha256": "f94a2cb7f6fe5609049d2e3302ef2b5417b54fe9d300d040a4a1979adccfba8e",
+      "bytes": 153490,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/plugin_runtime/types.rs",
+      "sha256": "57db7c32f16449888550c2b38df2383e7bca88ca29ae3f7671609734b69d7d09",
+      "bytes": 20797,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/prepared_turn.rs",
+      "sha256": "20d17249576d7d46b67d0052278ddb6501d0afe52b5dd126c970842abf52089e",
+      "bytes": 83850,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/prepared_turn/provenance.rs",
+      "sha256": "5c124348e8c08e0399c6c7ceaaa6d1990bf4884086a2e20dfee51cdabc3887a0",
+      "bytes": 16364,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/product_data_io.rs",
+      "sha256": "21c1c4deb242cea7a604a694c3ea19ea724fd3dc9646babfdb0436e8d72589bb",
+      "bytes": 107539,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/profiles/manager.rs",
+      "sha256": "f94cb5676678252180313944ddeab85b72be0f2961a450a6d2f013e8ad619171",
+      "bytes": 6120,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/profiles/mod.rs",
+      "sha256": "757382e07b15ee587f25226c07fb41f986b0f795c31993575e8daa14619f0598",
+      "bytes": 390,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/profiles/types.rs",
+      "sha256": "346150e66bde3d277911144380846b4e48eb6d90cb4536dba70b64f9f668a005",
+      "bytes": 2149,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/project/agent_adapter.rs",
+      "sha256": "daac1844e0022a07023cd6200ab1789a91a84856fd400ff8a8a3cef573571d24",
+      "bytes": 30648,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/project/coding_loop.rs",
+      "sha256": "72aa799e7977fea2e17839a7e56e20210b89728f21c858ab42960352e3fd5e2e",
+      "bytes": 1432,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/project/context.rs",
+      "sha256": "a5dd4f83d25d09704754d1722cb07038207e027fa61e629b0f5366562018e30f",
+      "bytes": 9876,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/project/detector.rs",
+      "sha256": "d48bbcf6a454a330e967312aed8ca9c283531496e86f23173153815d539e3591",
+      "bytes": 2248,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/project/gitignore.rs",
+      "sha256": "f4f82a90e10cf48c16375845b68357ba5e03bd1cfc140d47cd444ec132842780",
+      "bytes": 9317,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/project/mod.rs",
+      "sha256": "7e7810e29fe3c3bdbf4b13216e588b83b175a50c69943cc5f6f7d784d2b0d09c",
+      "bytes": 142,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/project/prompt.rs",
+      "sha256": "31df1ace21d7b1dd8cbbb13e345df5ac6d66352e59327bd5bf7306fa69768da2",
+      "bytes": 20506,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/project/test_runner.rs",
+      "sha256": "5f6ccc6a756093d8e0197a2b95811d9cba4b14037bb5a18e12f21757b2382553",
+      "bytes": 6279,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/prompt_contract.rs",
+      "sha256": "3fe1af37c58f8057e3063b3a0d76c2bd9c39fd56fb4efbb676352799650642c2",
+      "bytes": 6038,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/reflection.rs",
+      "sha256": "672a6bcbc934fecdb18d84dd79f6ea68c1dc64399d5403521cf1e421983d242b",
+      "bytes": 13108,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/research.rs",
+      "sha256": "e96eebd26dee4aa0a22469b40ffdfb294fc434cd4f4a7d455a1b61b52f9c5006",
+      "bytes": 80940,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/research_connectors.rs",
+      "sha256": "420efa7f616f80dacb2075b789f6c29b21cea1d070ffccc0cf4dff6454c80e78",
+      "bytes": 55085,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/research_tool.rs",
+      "sha256": "ce99667ebb2cfc631ac6d83176f92e0efad2ac268f30d2626cfb2f4d0e24b8d7",
+      "bytes": 13348,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/run_driver.rs",
+      "sha256": "c793e596c2df66847ac84cf48d4a9e6ebe7678f74fe41cba49041bb5f825808e",
+      "bytes": 21038,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/runtime.rs",
+      "sha256": "e2a1f13f0eb5ec8f1349aba41fbf708ee85e06829197ebbd8a0f2927e500d074",
+      "bytes": 173861,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/scheduler/management.rs",
+      "sha256": "81001c52146184367748bf4830649551b8f937f0dc16f2d53bc829d9e037c802",
+      "bytes": 12208,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/scheduler/mod.rs",
+      "sha256": "6fe74d32a614876404d7b9cc233d55921d74a9075e63f874509e1cf82976bf46",
+      "bytes": 1323,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/scheduler/runner.rs",
+      "sha256": "d2d57b5b6e441552fbaa4ce00d947c93711a5cc1d00f55ad385b5d88889afc51",
+      "bytes": 116215,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/side_conversation.rs",
+      "sha256": "1ea6c0dbc115cdbe1bbe2152d626c35b005f122f696e6600f5a9577fc02989c7",
+      "bytes": 58773,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/skills_hub/enabled_skills.rs",
+      "sha256": "1233218ed082d6104a3a87d620bb92874db45db32129a7e2fa9c01a7fc5dcd5a",
+      "bytes": 5117,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/skills_hub/install.rs",
+      "sha256": "85012cd91b0d76b6fba57124c7abaa709e25b4f2df2e2269890590c10e9e26b4",
+      "bytes": 45817,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/skills_hub/mod.rs",
+      "sha256": "6c95619d5d1456829eee728edf87062024bf11a1e94d443e41394dac0872484b",
+      "bytes": 473,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/skills_hub/project.rs",
+      "sha256": "6537f6526a5d84cc49c2c9941ef34dc093244508d00f2ee037da3357658b2368",
+      "bytes": 4606,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/skills_hub/registry.rs",
+      "sha256": "8022060cd16e70cdea9bdc01b67face1baeefeb62df2866bb6327fa6311600fc",
+      "bytes": 7974,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/state/app_state.rs",
+      "sha256": "e55f11280dd2f305bf98b5e433bfaca7eef6404341152a72c996f1d76880dffb",
+      "bytes": 317189,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/state/config.rs",
+      "sha256": "811b8d5411053ebb2b1b72ba4cfd2d70537b61e713ea136272b5f4508027e3b7",
+      "bytes": 26951,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/state/mod.rs",
+      "sha256": "8bc7d1b92860afd162774fa9c49645ca142acfa9270d7c7677a995058ab092c6",
+      "bytes": 97,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/state/reliability_contracts.rs",
+      "sha256": "edbca1e4029c8de537a5e5eb5f0e5ca9ebbddb22373585d961dba73891f9671e",
+      "bytes": 72387,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/state/tests.rs",
+      "sha256": "d9daf2a32c3c1ddb8c4c8b2ad0c77114a18fe5becb192e1a8db0b86be884ab72",
+      "bytes": 262978,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/state/workspace.rs",
+      "sha256": "e60e022c6c5668713f68061cb068b144ea675b239366535cf2f06873bd85bd2b",
+      "bytes": 39505,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/structured_extraction.rs",
+      "sha256": "beb5e572597219a12bdb628bac3fa497d26cba0887f5ba46d19e370ffcaab749",
+      "bytes": 16109,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/subagent_event_projection.rs",
+      "sha256": "555a0e5f8b288a69910ff1da9785c17567ce188002ad138ecc9e9fcb058fd3bd",
+      "bytes": 84866,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/subagent_loader.rs",
+      "sha256": "4d22534545738abba5d6e08972c90dcab4ee48cde95c6be00f60b1c74b2d355b",
+      "bytes": 40153,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/subagent_policy.rs",
+      "sha256": "c6b221863f1f33110acb68b26064cda621b1ba68b51dbfc6f247e8d587b459bd",
+      "bytes": 6665,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/subagent_prompt.rs",
+      "sha256": "e980d9f988b262725b2e45f2657d6f491c81b156305d0f336ccb1802884afddb",
+      "bytes": 40926,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/background.rs",
+      "sha256": "0456c8ff6f1c2ad4bde0ef1a8a9fcbcd10672bb477772a98bc17ba2d97216d1d",
+      "bytes": 10307,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/mod.rs",
+      "sha256": "cfd4e90b31fd93d215a48b7d17c3ed60bea10eb849d8937feee32d39ebf7c38c",
+      "bytes": 521,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/service.rs",
+      "sha256": "8d596468c4a718ca95e43048648f36b88fba34798953939fa7afa6204eff0373",
+      "bytes": 65558,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/boot_reconciler.rs",
+      "sha256": "ac80d6a8072b8a019c91e35d136dc7249be0c8e3913c93813d97175a6f37e28a",
+      "bytes": 15103,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/command_cells.rs",
+      "sha256": "c9c12f73138ccc4d86bd0fd87610434e0663eaeb531a6814d98674b34020b141",
+      "bytes": 190712,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/compact_context.rs",
+      "sha256": "84bb2fcb44233b44012430026a1b39fc474c9e3981590325e7eacb3ea489c026",
+      "bytes": 168703,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/completion_gate.rs",
+      "sha256": "8b6fe46faea4219952f4bbc0c29cd3834ad8d09ab7e966a0499b9e39531dd5c6",
+      "bytes": 39729,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/continuation.rs",
+      "sha256": "620566cf9ec8f1d651ac254d60cbd3b4aa07abb1026ec608c53e2445ce574158",
+      "bytes": 81019,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/event_rebuild.rs",
+      "sha256": "c2ce15ea7874a097797f2d60aed0f38b32e12207218c47511e92657c9b9ff6a7",
+      "bytes": 109103,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/execution_target.rs",
+      "sha256": "76604f4022d05014972691e16f49fe09a603268c3db7a20f8134a60b6d394866",
+      "bytes": 1312,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/executor/dispatch.rs",
+      "sha256": "f76d188f592ff884319aa01a422183afdfa6290502f446aaacb2c6d6b7452607",
+      "bytes": 109909,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/executor/events.rs",
+      "sha256": "e885b38853d148c25cec7c6e49b0e285572b2a59125ff59286e1f859f218643d",
+      "bytes": 31264,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/executor/limits.rs",
+      "sha256": "4348f03b2081903f63af1311beb1faa6f8158172fdef45c3303c12a4ff3590af",
+      "bytes": 30481,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/executor/mod.rs",
+      "sha256": "26ebad5b4ce7befb603e5af0c9c7f48567f98c9f3360f812c0766a2ceefe1994",
+      "bytes": 163,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/executor/native_projection_tests.rs",
+      "sha256": "226c0232cd897cddd4278f8baf52865d6cda2c864f3c7fdfb530082eb9433454",
+      "bytes": 11026,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/executor/review.rs",
+      "sha256": "90558d7665ef0c9b41d1ecbf1815a128ed1fb2f4d5b2b864b1303275626a7ae1",
+      "bytes": 11323,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/executor/run.rs",
+      "sha256": "5acf1400525fdc7a167e05c982cc124392cd62644e6ff5af6d54fa70a7d3d679",
+      "bytes": 17942,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/executor/tests.rs",
+      "sha256": "6c026bba09c3cd538c5a4068f1f0b5c9faf5a54e27a3498ddae8f6bb05afbff4",
+      "bytes": 229290,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/executor/unattended.rs",
+      "sha256": "98c9d0daddb6185b521894bf5fcf9b242f5fc2a0b6e929be01e1008bdcfc2c52",
+      "bytes": 75209,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/file_shadow.rs",
+      "sha256": "4b254ab133f9d282d6f4b3a70f939b11ec5a44e6e7f6c47c591ba4dfd40a73a2",
+      "bytes": 124372,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/file_store.rs",
+      "sha256": "fbf0bbbd2e593a6e1ece191ec72b8960c5b8fdd1082ae21c93a849aa93baabbc",
+      "bytes": 36868,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/history_projection.rs",
+      "sha256": "a58f773024a860cacfff6a53852b12e0648853609b3c447670dfe44501bd4d0f",
+      "bytes": 47141,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/hook_event_dispatcher.rs",
+      "sha256": "0654fc4221df47d3c76c51f652109b1333318b9ce2eec1866ef6b20f738dcfa7",
+      "bytes": 29380,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/ledger.rs",
+      "sha256": "3c6a86046904194ce3d16ddcb046456e6c61aa3c873e9f129bf9762030c4d22a",
+      "bytes": 10678,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/memory_bridge.rs",
+      "sha256": "155a22a8b2597953f5ab7065893e0c84c67959c7d5e758d58671700f9b5fdc23",
+      "bytes": 21809,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/mod.rs",
+      "sha256": "5ae72ae1c2b9f580c60e3ac06743331f9df55d11b9d9ba200f8233d0bfd2b5c4",
+      "bytes": 4744,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/occurrence.rs",
+      "sha256": "13f326a268504d46ef8412775b0e7a64f653f0d6c9cf3bb337affbb97d5ea15f",
+      "bytes": 13932,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/planner.rs",
+      "sha256": "4b1e67314976bb07a40af407fbdfb2fba254e7e8ced3264bc8fda6bb2c2dafc2",
+      "bytes": 11651,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/profiles.rs",
+      "sha256": "eaae78b4021337b162237fe7592e9d206481c393064f6c8a872d055053818e76",
+      "bytes": 3788,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/project_environment_tests.rs",
+      "sha256": "67a5ecb5c092452fff740dbc7c0ea0ba2e89ba64a9e174eed60886358731be7a",
+      "bytes": 31755,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/register.rs",
+      "sha256": "2d36621c35ee124396ff281d218e74b9ef46c129b7f6097f3ad9896e2e97c29f",
+      "bytes": 8345,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/review.rs",
+      "sha256": "09753e65a7218992743bac9aad44391bccc0656669f761daaea6d91acb62519a",
+      "bytes": 22256,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/revisioned_runtime.rs",
+      "sha256": "d3e84e510044088d3fc8adbd93a15c147347f59d7ea8b253c6a97725f6edeed0",
+      "bytes": 54604,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/root_authority.rs",
+      "sha256": "36ab3e2c764a0425b6cf1ba0fca0c3d0e09596105d35f093340469c4a1135f10",
+      "bytes": 11447,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/run_authority.rs",
+      "sha256": "1c2b23fda89ab92adcf8799bec2684cea0802a41289cb9684d54b97459cd433a",
+      "bytes": 81489,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/settlement_evidence.rs",
+      "sha256": "90bdcabcd986e133f02121da212d0ee3ec07cc6d1e2485d4265ed33e3846a003",
+      "bytes": 13523,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/store/journal.rs",
+      "sha256": "03b860755879833910c51c355d98e8dad298b16716da723f18e56a14d5ac1a30",
+      "bytes": 19781,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/store/mod.rs",
+      "sha256": "1c11dd0f59caece0813e19ac51bf03d2434d5e2bc7b5509c0abbd80fe09bdf49",
+      "bytes": 296,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/store/projection.rs",
+      "sha256": "8064ebbd14be6f331f85a821ad648ea95e5e9ecc7135fcd1a805924de281bffc",
+      "bytes": 6969,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/store/runtime.rs",
+      "sha256": "f4e9477749363c8f143f62da631a78802a30349316a846a40194efc7af7861bd",
+      "bytes": 369801,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/store/tests.rs",
+      "sha256": "acc5b9b1c78df500cd2a6942895040bdc3946e7e0781c9202faef9eca9d6e70d",
+      "bytes": 543261,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/store/workspace.rs",
+      "sha256": "9cba31da5b3bb060041099931a99917e7281d7d9e7a97ddcad93f8c5cdba5224",
+      "bytes": 48755,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/subagent_control.rs",
+      "sha256": "855aff88a5cfaf85b0ea9ec58dbedc77562f8e55c7d9e62a58930c824635ac50",
+      "bytes": 151063,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/task_execute_tool.rs",
+      "sha256": "495f7d14fec466208a697c299875e8e1a07db59afecb95144463ddd827211fcb",
+      "bytes": 48378,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/task_tools.rs",
+      "sha256": "1f52389b0bd6c3cbfde0f063d7881fae46cb0983398d6fb6438052bfe230a468",
+      "bytes": 62460,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/turn_lifecycle.rs",
+      "sha256": "0a7ff44d96a63646f65a75806cbde1857575c24e0f4f0bd6bfcf1d8685b2071a",
+      "bytes": 15099,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/types.rs",
+      "sha256": "07a281ff8535002d80907bacc3a62d21106770b4cd1a2077247c72827f3a3866",
+      "bytes": 138502,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/uplink.rs",
+      "sha256": "d5a1392222a9c7921c6ffb2e8d9458c118a85f9406cbbed0efe6852be4602d90",
+      "bytes": 16845,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/weixin_delivery.rs",
+      "sha256": "6f5d1533f1253fc71185e10070ba82f4a69a4337c0ea3d033abe95491bd3384f",
+      "bytes": 52174,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tasks/task_runtime/worktree.rs",
+      "sha256": "56abe3725a34bc31e34c4546a730f7ef5adc267ffed7c9aceb22da3c0d82cf57",
+      "bytes": 114289,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/terminal.rs",
+      "sha256": "7551e8ff438acb9e18b13d184a116bf69a235f2ea97983752a0129c63cd0cee6",
+      "bytes": 53611,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/terminal/project_ssh.rs",
+      "sha256": "09dbcdc6c34c90d2d956ff08e9af4fdef324a30cb1c2874375efd2ccc9aa90b4",
+      "bytes": 61035,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/terminal/project_ssh/cas.rs",
+      "sha256": "4c88dbc0390f911952e21ac7a5f16b12d4a6a39607a8535947ecaf454a258a7c",
+      "bytes": 8827,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/terminal/project_ssh/channel.rs",
+      "sha256": "6b4865d665af6cf287ecf2b9dd2318bb4b0be21659dca27fd1196325d45fbdb8",
+      "bytes": 14327,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/terminal/project_ssh/effective.rs",
+      "sha256": "24198cd358741bb688cd0b241ca28115e87e0a6e223c9787a5ae58eaa57dd937",
+      "bytes": 12390,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/terminal/project_ssh/reader.rs",
+      "sha256": "7a1aa28636304b8213c39d4f7a32d627ceac33517692ec3b53232e3ecd5527a2",
+      "bytes": 4803,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/terminal/project_ssh/sandbox.rs",
+      "sha256": "3775a284d93b8e4fbb3db5a430e1719df15b5781aa2b367cbecdcafebd00af74",
+      "bytes": 29866,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/terminal/project_ssh/sftp.rs",
+      "sha256": "e4ca346f2eb94f788d46083ea3ad600716cb4965445b59ae33443a6b1eed0c70",
+      "bytes": 20927,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/text_commands.rs",
+      "sha256": "49ded68440965dc5f406c8f2e906f15267c828ec3cb571f5267b3b6be1e19cc5",
+      "bytes": 4151,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/text_commands/agent_router.rs",
+      "sha256": "64330181a627bfab556c82455ae9e03b1ef63dee29d17637f56dfe9a519e41a4",
+      "bytes": 14969,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/text_commands/analysis.rs",
+      "sha256": "bdb198d65e7b74fa7afbf91d254cdf9c251b2142534185478426075bd4e81597",
+      "bytes": 8682,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/text_commands/research.rs",
+      "sha256": "d6f77f9480a3c599a17fd8a270662016e1e6591686c3df7d85d0df78ba8aa8be",
+      "bytes": 19194,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/text_commands/task_run_control.rs",
+      "sha256": "c4be5cce3f98c432709377d6fccfc3fd4257305f643a31a4407b2acdad898d6f",
+      "bytes": 9152,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tool_control.rs",
+      "sha256": "46ab79eea5a9cfb0fd1de669fd24655b079a4e09f68cfc3631b7a4d7c41bb94a",
+      "bytes": 5042,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tool_execution.rs",
+      "sha256": "a591c03972caa83cef28953938b7538bfd9f369bc949d4dd35670370ff542795",
+      "bytes": 65289,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tool_execution_projection.rs",
+      "sha256": "dc852e854d6474a47f21095fb76d70cdd09b99770741b7533bc547b44763500b",
+      "bytes": 30462,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/tool_exposure.rs",
+      "sha256": "cdbbde4f5880cb29228402e76b894de8cdb5965a57c7109ff4c428f9d76d2915",
+      "bytes": 12472,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/turn_context.rs",
+      "sha256": "028f5be982048803ded10e2a2f9da2de28d911ce52ea44c14f6fffb2b4c63832",
+      "bytes": 32954,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/types/mod.rs",
+      "sha256": "409819ac2c35d75506b47f2fa2cef930326637fe6f64b68281a14ae7811b3266",
+      "bytes": 87,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/types/request.rs",
+      "sha256": "2bc8c48e515f12f7a032b98c28664f8500e4dd6df3fa389a00ef1b95dfb1b540",
+      "bytes": 6200,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/types/response.rs",
+      "sha256": "48fef125a79fb2bf58140d64d52aefadd32d13102f482f60f9ac56a3740dd764",
+      "bytes": 9547,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/unified_memory.rs",
+      "sha256": "e57096241a0e316ac7c9684e2a31eb76c886d9ea1d9cceed5856ccd536975839",
+      "bytes": 14999,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/utils.rs",
+      "sha256": "28a3696f3699ffcae5d0ab2dc1ada7ff01ba5f4f03fb4c74ecc051b9c845c25d",
+      "bytes": 7606,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/webhook/emitter.rs",
+      "sha256": "6349b0b944ad1534915a2fd6cca7b4592bb4807799e5d95602a7bf684baa8c16",
+      "bytes": 8434,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/webhook/events.rs",
+      "sha256": "17ad95bbfe5cdcc129822a25af3ca053a77cfefce81a90f3a5ee38f05ed76533",
+      "bytes": 1480,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/webhook/mod.rs",
+      "sha256": "753c2a884c4e00d4afd9ab65193cac922e96227eb280131219c7867763730d82",
+      "bytes": 201,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/weixin_cron.rs",
+      "sha256": "f350cd746dc9653038c8dfea3b0375c8100a320b2c8cc05f29e190a33863fcc3",
+      "bytes": 15589,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/workflow_service.rs",
+      "sha256": "72c9083beec0b2bf010107a761f1ba1a9f1ea00ed26f77745394f211eca0b8e8",
+      "bytes": 19798,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/workspace/layout.rs",
+      "sha256": "9d242687a14ddf7b70c903f25ea471ac05a27036eac8e38bf6fa1f6de0afcb37",
+      "bytes": 6982,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/workspace/mod.rs",
+      "sha256": "dc2586b7cbd5a897a6878e5111e723b4a5f3fc78262112ee6b370281a95b3450",
+      "bytes": 20453,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/workspace/registry.rs",
+      "sha256": "b02cb5e04c8f1758a6317819da67655ca3c4de240d9f7f270d34302bc241ea82",
+      "bytes": 37522,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/workspace/runtime.rs",
+      "sha256": "30151cb391e7963c5f7d820749aac790cb839c090536fbb2c56b88663a721985",
+      "bytes": 96828,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/workspace/templates.rs",
+      "sha256": "72e6ac7486b7853c686748f0f4bd98c1186089614909bfcfb664e23e504a2fe0",
+      "bytes": 4569,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/echo-agent-app-core/src/workspace_routing.rs",
+      "sha256": "5fd2a8c172f65d3e24896d5ab33bb71fabd1d854db8bd2c1c5a154e3b15efc22",
+      "bytes": 9348,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/scripts/check_cli_dependency_risks.py",
+      "sha256": "baf607da9608c8b1ca566c5726c6ebad16f6505bfdc545fd17aee8e8517e75e8",
+      "bytes": 8951,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/scripts/test_cli_dependency_risks.py",
+      "sha256": "ea91158872f14dc9ebafe8891022f4fbde861dbf6000064cf97f8bc0b78c37c0",
+      "bytes": 11709,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src-tauri/src/main.rs",
+      "sha256": "7338ee62d8cb9d05201d033eefcad7d075614032818c9346994f963d9cfb0eb9",
+      "bytes": 201,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/lib.rs",
+      "sha256": "92520c0d377cfcb951b19bafb08eea962600e8e054699056251b3a4d58410040",
+      "bytes": 1699,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/logging/inspector.rs",
+      "sha256": "bec0ce225702fc1692174f4ef2877b2b2fc7ad8fd1e7ee5b8bcfe4b2f50f75a3",
+      "bytes": 5540,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/logging/mod.rs",
+      "sha256": "48367c106f1c78eae3e5b7c78b0f22a3c745b6219aa8bf7033d8645a913f1fc0",
+      "bytes": 384,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/task_run_control.rs",
+      "sha256": "dc866013f808ff1cf2cbf9f7b7e9d1170ee0f7e75df59c92bd4c580d15d84828",
+      "bytes": 136,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/analysis.rs",
+      "sha256": "696fa0e71fb8c48d1a482c9f623a9bd6eb4fa05f34479cd72be16a07d8ce6a5d",
+      "bytes": 5786,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/browser.rs",
+      "sha256": "a60109adaff36c5d8048458ee248a98d5ff2c660db898ac2f518ee5dad24ca91",
+      "bytes": 1661,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/channels.rs",
+      "sha256": "17208ebb4a8e28fcf77c13c79d6b1f2faf8f74fbf649ac9b5130f65cf0d73b18",
+      "bytes": 7669,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/chat.rs",
+      "sha256": "ad881426d125d0bb9fe825094c7364464200f09a9f9991ef5405b977793b41ce",
+      "bytes": 151079,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/config.rs",
+      "sha256": "e63054d9a6467f7827a3024cab5d31c37db0387f4c3fa9d9d444ee06282e9121",
+      "bytes": 13247,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/conversations.rs",
+      "sha256": "788520881ee847f68238f706f2cc4a2f6a20d988da9e7ce9b8f6f8e6f76eb3e4",
+      "bytes": 132411,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/conversations_native_history_tests.rs",
+      "sha256": "9d421fa399d3fc0a9fc3cde4ad9803422778d10eb4dc5e2079dc9eab6aa542df",
+      "bytes": 174795,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/extensions.rs",
+      "sha256": "f6b1f86ce5b53dbf7118fd2656bf9e2e815b64ad2648d510867dcb4a1e48d51e",
+      "bytes": 1960,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/files.rs",
+      "sha256": "c58255a088c4ede49583bf6d72fb26a73825621ed39e6c3d78290fdf03aa5025",
+      "bytes": 46768,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/hooks.rs",
+      "sha256": "41e9f3b817e5c3302073b1d11f7af324df9d592f1060fff89fd778ebd6bd25d1",
+      "bytes": 2937,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/mcp.rs",
+      "sha256": "66dc8b9a914e9f26830832a92d79620bc45dca56d894cfe3c58656c9bed22871",
+      "bytes": 13205,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/memory.rs",
+      "sha256": "f1edfd1c8312b12fc339f80dcfb45402fdc0317ac9985bae756844504004cc25",
+      "bytes": 11123,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/mod.rs",
+      "sha256": "2af70f25b7483297d4546a76fa3006ac10d7071c0d082a6e655b7b44c8e3d171",
+      "bytes": 637,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/native_timeline_actual_backend_capture.rs",
+      "sha256": "dcdd6d8d8f5d04975ebcc5fcd82f78409e4c71172bc6ddd4c8cb9c32fdcf8963",
+      "bytes": 10343,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/panels.rs",
+      "sha256": "d161284c14b630101917391cc2bbc22c57eac722ec9bbffc2cda068b07e1932b",
+      "bytes": 112511,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/plugins.rs",
+      "sha256": "2da57ffc87d8ffc42d53c20c6ca65e6874f5c008c23127ade88914a47c11c999",
+      "bytes": 6111,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/product_data.rs",
+      "sha256": "c73df7593666c4f8f5fc2df7df689b2b685046c838bdc0c159722b61b51a35a2",
+      "bytes": 644,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/providers.rs",
+      "sha256": "1c31467b133fe4c7b6cc4f88871c33eb4ba0f725859af32cec5f17809245f6b7",
+      "bytes": 15060,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/research.rs",
+      "sha256": "a666e113cc32fff1283ea8f2024235da44f9973dfa441a70fa9ef7342b624453",
+      "bytes": 13027,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/scheduler.rs",
+      "sha256": "d717cbd8385b7716b629c1b7b95b41b58512469d657eef79e05cf3dfb6ee483a",
+      "bytes": 7196,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/session.rs",
+      "sha256": "c58046fe6e12bd94231a8b3ec9df8318ce6cd58e0fedcb85c1a8d581f4ac8428",
+      "bytes": 6812,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/task_runtime.rs",
+      "sha256": "2b3b071d5cc51bed9bf0108c157b73895526f36debc9e0831883185d7637fb03",
+      "bytes": 63544,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/tasks.rs",
+      "sha256": "a41fe7750591331c83474a3cab3bafb67377071e004ed121cae9db50bda6b97e",
+      "bytes": 7242,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/tool_executions.rs",
+      "sha256": "59b97dd49ada555419e98be4d679ba3ab2a2723527591baf667437d3de0a9072",
+      "bytes": 1695,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/tools.rs",
+      "sha256": "1b15fdf378498d20f22fd8fb6c02ea76bf2da5355310401960aab73044e9a4a2",
+      "bytes": 2518,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/commands/workspace.rs",
+      "sha256": "5812535f1d7898f03ec5c477ac92446c2c20d1aba119f1b6c1bc780fb78335dc",
+      "bytes": 16225,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/desktop.rs",
+      "sha256": "2825db2f42bdf560ac2280413da1f652a63456b7a4d24281befafd1b4bb749fd",
+      "bytes": 25374,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/error.rs",
+      "sha256": "6db6e729bff7a117d73175d8fe02c2d0daab05ed11f9cfe85123755299d811eb",
+      "bytes": 1522,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/ipc.rs",
+      "sha256": "a8077fc7be36997a31725a1e201445c68da044f85ae8426ddfb1a1992ad0199c",
+      "bytes": 4793,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/mod.rs",
+      "sha256": "cf4dccc399c953ae57d34358ba83f9fe3a58607708d47590004519802837b14a",
+      "bytes": 23568,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/path_validator.rs",
+      "sha256": "6a9a7660bb33ce3415a727c20e7c849c7042d6cc0fa18caad985c4e19b92b7fe",
+      "bytes": 6806,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/state.rs",
+      "sha256": "d435946268b2795dd39b983b54470742c139185e1dae2f2977a7fb0ebe5f11e2",
+      "bytes": 10626,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/echo-agent-cli/src/tauri/terminal.rs",
+      "sha256": "e7cb7ab00e032c8a19129e946f1677de1d18e3a2ae46dc42fcc72ee7b4e04336",
+      "bytes": 9024,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/candidate/lp-agent/AGENTS.md",
+      "sha256": "69bf5d373c2a37a6ceb1ee04ea5cd176423a177a68dcf105fef03b14eec264a0",
+      "bytes": 52486,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/cli-exact-subset.patch",
+      "sha256": "df691ea1cfd7f7cdbc44bbe5dbf96b7de62f9b09cbda6efffe57c43a978709bf",
+      "bytes": 18121,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/decision-increment.md",
+      "sha256": "8d1fdfb5d9ae2a0f529333e32bc6fc310c29e3aba59da566987f3600228153df",
+      "bytes": 3259,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/preserved/Root-AGENTS.original.md",
+      "sha256": "3e6faf9b0928cd4b574db3edc6a9d4cc4add9d1d1f26059931711d0f3c268d2f",
+      "bytes": 50697,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/preserved/check_cli_dependency_risks.original.py",
+      "sha256": "c598c34ab84a0058a9c0e8d705cb974c6c5c1891228f38967a69acae43218bd8",
+      "bytes": 8566,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/preserved/risk-decision-original.md",
+      "sha256": "3cdd925dde9f92ed7a5ffe37824912cce2d08079cdf8020d109d25e5209dd499",
+      "bytes": 85199,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/root-AGENTS.patch",
+      "sha256": "713a9ac11df29c8e688ed8ee1416fbc0d61ba006d9f86daf2188f2740f4184b6",
+      "bytes": 3112,
+      "mode": 420
+    },
+    {
+      "path": "performance/maintenance-cli-risk-tightening-20261028/test_captured_warning_coverage.py",
+      "sha256": "8bb05f1a5a7373ab7dc461881135a74b2f3d79dead555bc57a3943bbc362e15b",
+      "bytes": 2476,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/00-old-api-transport-tests-first.patch",
+      "sha256": "3dc15213d5aaed8f69f60530657f38fd947a82497fdb511ce66d1e2ba8664676",
+      "bytes": 20112,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/10-typed-production-and-new-api-contract-tests.patch",
+      "sha256": "4871fbc9be68a8d38ebe44e7e54ac22952fb81d25d0c9d6d4f432ed049f4862d",
+      "bytes": 32003,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/README.md",
+      "sha256": "7e8a0098d61a0fbea6aa4c66a2d28cf0819b892cccce883ccb93d220711dc29a",
+      "bytes": 3796,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/adr-0101-addition.md",
+      "sha256": "584640b895b39a50df0e01a4369fd424d954764dd803808f73119d8c48dbe7b9",
+      "bytes": 2382,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/adr-0101-selected-provider-error.patch",
+      "sha256": "66900b2806737a69ea25f0e7f3a519aeba110c4bc36ac7afa7832f4c232d428b",
+      "bytes": 2888,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/adr-manifest.json",
+      "sha256": "48c5ccab7f74ea850d3457713734114edfabc59317cecdb59d2d9318f4ffa3be",
+      "bytes": 442,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/after-previous4-to-selected-typed.increment.patch",
+      "sha256": "137b9ad5c5dd1b4f2982e540e431d766e469b558e441d84384ba72433e34c5ab",
+      "bytes": 18512,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/base/echo-agent/echo-core/src/error.rs",
+      "sha256": "acde10e0b8139e586145ca09fc3e4b71fe0462c95293c6e4106541d41d05dce6",
+      "bytes": 36210,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/base/echo-agent/echo-core/src/llm/types.rs",
+      "sha256": "edc09d4097ce258be78f419bc3b105eaa9442407db2c558a7b5f3d71e78f79f9",
+      "bytes": 59665,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/base/echo-agent/echo-integration/src/providers/anthropic.rs",
+      "sha256": "fd68fd5ab6ee15fa968ee47a25bb7b4f71da161c3ab30daacd5f1a2cbf94c95e",
+      "bytes": 86069,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/base/echo-agent/echo-integration/src/providers/client.rs",
+      "sha256": "98bc0f5c1e5c53e548e204ebb357f5835ba442b871341b2f9a3d7bb5a461e5ec",
+      "bytes": 77703,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/base/echo-agent/echo-integration/src/providers/openai.rs",
+      "sha256": "81bf25e7c0b2d53500f133e61c07812caf15b13ed2aadcb1fdf18640c8731f92",
+      "bytes": 28166,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/base/echo-agent/echo-integration/src/providers/responses.rs",
+      "sha256": "13a5cc1e86211378abd57c6a976963bb0afd5c597c81f6b541d37aec1aa41eef",
+      "bytes": 109784,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/base/echo-agent/src/agent/react/mod.rs",
+      "sha256": "6fe2e3b9f3ab1d5638a78e3756a01628732af4830be2e85f4357d705b8b52e69",
+      "bytes": 173349,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/base/echo-agent/src/agent/react/run/retry.rs",
+      "sha256": "ddaa16c47f2f95039ebc01eef536d1c0ab1f8cec0d343cee698815798a527f99",
+      "bytes": 8327,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/candidate/echo-agent/echo-core/src/error.rs",
+      "sha256": "c35ed8671991c40a70e566a968598e5a5abd9a13211f0c94d6a1fcc6f0d658b4",
+      "bytes": 38658,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/candidate/echo-agent/echo-core/src/llm/types.rs",
+      "sha256": "401d58697b560914ab63647a5a1ddae01955ccdf20b645adfdf50d43f73a6573",
+      "bytes": 59821,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/candidate/echo-agent/echo-integration/src/providers/anthropic.rs",
+      "sha256": "83f9a054ab93120b589ceb88e8b1fdb812a17f2434e4a0a02cbafbbf39112a4e",
+      "bytes": 86313,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/candidate/echo-agent/echo-integration/src/providers/client.rs",
+      "sha256": "d09067ab1a01ee2b49443792afe13e31e71d2fbf96c3adb22676614a5c64df8a",
+      "bytes": 91063,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/candidate/echo-agent/echo-integration/src/providers/openai.rs",
+      "sha256": "ef406fe9c0d6c57bba66957e26357c048f8bc7395c2338e3269e54ad254c8d19",
+      "bytes": 28342,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/candidate/echo-agent/echo-integration/src/providers/responses.rs",
+      "sha256": "907a31d17f49c165c03fe3cd510a654bedabc27f2604c63fa7322fffb1adae7d",
+      "bytes": 126584,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/candidate/echo-agent/src/agent/react/mod.rs",
+      "sha256": "c49d1a4ee8a7ec9c1b1b1420430f2b3a6a69902a9606bae54ace5140e407cc90",
+      "bytes": 173418,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/candidate/echo-agent/src/agent/react/run/retry.rs",
+      "sha256": "4d8b176aab0e1c2ba593cdcd8b8a3ac8595226ab2e7eca8e20d624910952e345",
+      "bytes": 9669,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/combined-with-prior4.patch",
+      "sha256": "c660fef91f2cea4eb1c6cb44489bf2abefa6b90aeeed0e26c7195d07ea54fef6",
+      "bytes": 51822,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/consumer-base/echo-agent-cli/echo-agent-app-core/src/chat_driver.rs",
+      "sha256": "ca22fbde7b81331d1fc9049982afa449efe6a19d32cd789e332b640b58df84bd",
+      "bytes": 255290,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/consumer-base/echo-agent-sdk/echo-sdk-host/src/core_profile/wire.rs",
+      "sha256": "47fb9d258739922f1f90e62e9102b486d4460ebb7da45a611240d7dd59ad4632",
+      "bytes": 71576,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/consumer-candidate/echo-agent-cli/echo-agent-app-core/src/chat_driver.rs",
+      "sha256": "2ffe09cddaab84e9d7a40b6205cdfa49b4ae45dd367709107f2a3eb01ed98fb3",
+      "bytes": 256796,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/consumer-candidate/echo-agent-sdk/echo-sdk-host/src/core_profile/wire.rs",
+      "sha256": "41ac936d3cd803ff7195c7159eebfa940d9f7ac4a9f350732de57642ea9704ab",
+      "bytes": 72026,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/consumer-hunks-manifest.json",
+      "sha256": "379e31ee475c3f5cfadb7f555e80b0266de71a1bb80ed5aff6af5a213f014b26",
+      "bytes": 1051,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/doc-base/echo-agent/docs/adr/0101-native-message-execution.md",
+      "sha256": "35c6df14ffcc76096b72171a14d918906000cc77b3bf6d48b3c82fbefe69085e",
+      "bytes": 10097,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/doc-candidate/echo-agent/docs/adr/0101-native-message-execution.md",
+      "sha256": "8c021bd71a1fc305616515ecb0934406665911c23d106fa2b59a27529037ea03",
+      "bytes": 12480,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/eko-original-turn-error-test.patch",
+      "sha256": "0b2e9ccfee48be6494ceab395960972b7cb08df6d72df4c6dbca30a1ad30f781",
+      "bytes": 1907,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/handoff.json",
+      "sha256": "b2865644630f9cf0c80c279452383531ab5379e20f567b02f0dec44a17c02572",
+      "bytes": 6016,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/make_split.py",
+      "sha256": "9d41ed5e06ccf76a228dd5d0abe86392ab2d7129397cc0f4c314a5d856594177",
+      "bytes": 4318,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/manifest.json",
+      "sha256": "c9b2fafdccd6df1e39d209b0ba16795b0a44caba510059b270c98d4b4d0bcaf4",
+      "bytes": 2939,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/prepare_consumer_hunks.py",
+      "sha256": "040c3412ad929fd90a5fbbe52fcc234b2472f682c4d81b657f8c33628e2910e1",
+      "bytes": 3486,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/sdk-bounded-error-test.patch",
+      "sha256": "67b6a80b534280bdfb3d29f62784e74b0732fe462d41629272c6528fe938e0f9",
+      "bytes": 852,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/six-consumer-plan.md",
+      "sha256": "378a12ecaea5f839fa25dcf543689fe9b55670aa5b0375aa986dc6a13e571d96",
+      "bytes": 7032,
+      "mode": 420
+    },
+    {
+      "path": "providers/resume-20261028/typed-provider-errors/split-manifest.json",
+      "sha256": "cca3e165b69400551095cd50554ed966eb93e8ec44770ef323628a9a4cce5a31",
+      "bytes": 4342,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/00-owner-projection-getter-prerequisite.patch",
+      "sha256": "6887aea3dfb0bc1b803a8411edc5e8ba75676c84103090c50c14ecb9a6435bfe",
+      "bytes": 624,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/01-new-native-tests.patch",
+      "sha256": "d82a34c00e6b1f814544a18297abcf6ef04ba2227e3cb26abb2b5f259d3b4896",
+      "bytes": 37717,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/02-current-typed-kernel.patch",
+      "sha256": "1bdd57a191a5c29e5ff1cb9eba6e78e5167c5e62245defc8b30b26f3df0d05bc",
+      "bytes": 90548,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/03-final-core-protocol-removal-after-owner-migrations.patch",
+      "sha256": "df5c42dfbef970d75ae6bd6058e37769beba3424373407f064555c2a3b7b438c",
+      "bytes": 8206,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/04-demo11-current-id-callbacks.patch",
+      "sha256": "7d056f95648a8eb7deddce0d90adcddab2a0ad0930fc3f47c746d682a42183df",
+      "bytes": 1856,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/05-ADR0104.patch",
+      "sha256": "c905abdcc1df812840fc7010fd59a95a17c5978a500251394d283126520374cf",
+      "bytes": 4346,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/archive-review-v1/01-new-native-tests.patch",
+      "sha256": "278998662e4fe42175b906085d9ce03e77304755b3f399f31136219313224351",
+      "bytes": 26604,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/archive-review-v1/02-current-typed-kernel.patch",
+      "sha256": "dbdc717be4725de90fb5d0f31a85d82724e194a6ec0a1eaf340b2b48ec67234b",
+      "bytes": 86317,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/archive-review-v1/03-final-core-protocol-removal-after-owner-migrations.patch",
+      "sha256": "118d8ccf7c427060c0dc128624e5f54d045a2e15b0db5f21f995c0d290a6bff5",
+      "bytes": 8206,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/archive-review-v1/candidate/echo-core/src/agent/mod.rs",
+      "sha256": "b7bbdf58db7e6770ee3e52fcc01362ee12b14c4edd53eb3b6c47c1bc18c1ec0f",
+      "bytes": 79508,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/archive-review-v1/candidate/echo-orchestration/src/runtime/turn_driver.rs",
+      "sha256": "8322ded258be3351eabfa1ff80b85848c6e0b076c9e97f0ff5861bdd30622db3",
+      "bytes": 157059,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/archive-review-v1/kernel-full.patch",
+      "sha256": "a4edb5771c3328cf2203c2e86560aba7a894cdf065d4c03b10805ae8d895258d",
+      "bytes": 111425,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/archive-review-v1/manifest.json",
+      "sha256": "cb7ab74e97ad72cf910743a00625b56cce6602d80d4f1ad01069a0d0540b299b",
+      "bytes": 5361,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/archive-review-v1/review.md",
+      "sha256": "da78e836032f76c7c6ed47bc3c5fef852ddd121881e91b620ec56c0992426ea9",
+      "bytes": 456,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/archive-review-v2/01-new-native-tests.patch",
+      "sha256": "dceda8341a6b7335d318a31576a6a3f23cc4e1272bc2dedf2afa7c84134b6fab",
+      "bytes": 34952,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/archive-review-v2/02-current-typed-kernel.patch",
+      "sha256": "d58404ba81d9dba8a40f85730daea91f80d166fc57020f26fad2831a97878da3",
+      "bytes": 89738,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/archive-review-v2/03-final-core-protocol-removal-after-owner-migrations.patch",
+      "sha256": "df8c2283a3e58c105dd5652a36a748148eb73e3490366d3c402c9303adfba816",
+      "bytes": 8206,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/archive-review-v2/candidate/echo-core/src/agent/mod.rs",
+      "sha256": "3cc3a54e1c94e9206e39ca0f57e54f32c8290e28634c897f7596ded01a0effc6",
+      "bytes": 86735,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/archive-review-v2/candidate/echo-orchestration/src/runtime/turn_driver.rs",
+      "sha256": "40f511371ec79384be8469053fbf941a1351f5861641fc37f20cbd9c0f31fdeb",
+      "bytes": 160648,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/archive-review-v2/kernel-full.patch",
+      "sha256": "a943057a701343f11c3181fe4b19f0eb45417d9d6d483d75214a99b01c969edf",
+      "bytes": 123091,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/archive-review-v2/manifest.json",
+      "sha256": "3100cb3828d7afb182645a0e7b84edd414a28513a757f4f5ea5f4c60b84696dd",
+      "bytes": 6251,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/archive-review-v2/review.md",
+      "sha256": "6e951cb0b0a8f71465458030ad7e16778445874c0b1b9f95dd23f9dcdad6c555",
+      "bytes": 284,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/base/echo-core/src/agent/event_envelope.rs",
+      "sha256": "b9a480191a57d3365f75f2674735463f658e48865492dc40cbb9932f22d872e9",
+      "bytes": 38885,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/base/echo-core/src/agent/mod.rs",
+      "sha256": "8028c967a454848d332f739facf2de110768ba4d3612492ba65266bd4ea66903",
+      "bytes": 119538,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/base/echo-orchestration/src/runtime/turn_driver.rs",
+      "sha256": "0e50130dc60c0717b03b2bfe85b050af16f49e4c730b87b5feb1b277198c7209",
+      "bytes": 148929,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/build-production.py",
+      "sha256": "e68caebb41f4044b097891c861bcd2221e352bed411bbf69694ed7885862dc74",
+      "bytes": 13942,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/candidate/docs/adr/0104-canonical-agent-runtime-kernel.md",
+      "sha256": "c6bc19dae300737d217aed9bb899e5db1283072cd0becdf1e20b479133d83ba9",
+      "bytes": 4094,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/candidate/echo-core/src/agent/event_envelope.rs",
+      "sha256": "08e0c5a1ae805e19a60442490467a115a156a3dfe5d13c2d8d5ad02eca47dd16",
+      "bytes": 40772,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/candidate/echo-core/src/agent/mod.rs",
+      "sha256": "c0704cbb3fb7ddd58ec7000e0579deef7c91f09fb0c79e4c4918b8a5a0f2afa3",
+      "bytes": 86836,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/candidate/echo-orchestration/src/runtime/turn_driver.rs",
+      "sha256": "b34c8354a9254e16234ad4950ca130e59fb3e114255b907d607bd15a7d8cdfa1",
+      "bytes": 163983,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/consumer-call-table.md",
+      "sha256": "5025c98ba6dc4aac78e0c85bf9e9dad20b47526dcf589a089f12a142e80627a6",
+      "bytes": 3065,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/coordination.md",
+      "sha256": "82a51ebb89f0057dac22aeab096034ecef58808c9503cb4c6076af1d562d29a3",
+      "bytes": 2147,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/core-tests.fragment.rs",
+      "sha256": "49d5c5a225fd1e25f25d6f7812fca59f7128cd202fd9a515ddc3b3753a2ce97b",
+      "bytes": 12656,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/design.md",
+      "sha256": "a2c6d3b128ff79d9348dd8522ef840689e9dc2432b1248f84c0e8ad246296410",
+      "bytes": 4165,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/driver-tests.fragment.rs",
+      "sha256": "34dbc2153a335ce959a0dcf965d611136ea8f619639aa1c086d3ebe3ad81873a",
+      "bytes": 5853,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/envelope-tests.fragment.rs",
+      "sha256": "463db7c905e8251d8ccfb2df30f23be581568b8705a1611402bc141f21c19be7",
+      "bytes": 1999,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/example-bases/echo-agent-learning/examples/demo11_callbacks.rs",
+      "sha256": "5b2c6eb71359da0b1da808d806c93e8bfaa69695ffc9c3e4ed7f854f83bede40",
+      "bytes": 12237,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/example-hunks/echo-agent-learning/examples/demo11_callbacks.rs",
+      "sha256": "1c0c86772f0217991082caac41f6498a724efddda5028b3c78449166c25ca1e5",
+      "bytes": 12412,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/final-surface-after-owner-migrations/echo-core/src/agent/mod.rs",
+      "sha256": "fe28b555de89671ab021a6f7f93ed96632d1c3278b4055cf0d5d890c2362250a",
+      "bytes": 84158,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/fix-review-v1.py",
+      "sha256": "3cce48ce3465ac182eaea0bb4e16c008b0758afeb12e90d329bba12d202daa17",
+      "bytes": 5588,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/impact-and-owner-dependencies.md",
+      "sha256": "b005ff8b9eb62c385dca831d85081145eddad999dd7a90b89c525543ff410d42",
+      "bytes": 2255,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/interface-error-correction.md",
+      "sha256": "bdb6018c3b4c954c00f6712f1ec7700e619e07af5c22eefac8a5743bbe6571d4",
+      "bytes": 781,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/kernel-full.patch",
+      "sha256": "b8f486499287d54be482cfdfcb2b3a9e1a734c41997305e833614185333643e5",
+      "bytes": 126666,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/manifest.json",
+      "sha256": "3c1bc23a9f0d099bd0142d9bbd0fb03d9e12c2f467322f9f4b411b2ce2db5c6b",
+      "bytes": 10521,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/narrow-review.md",
+      "sha256": "8b5cc3fcabcaa5067b7ac80ac7376c79ad0f627c16ac484e29950b3cea56c3a1",
+      "bytes": 721,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/observation-tests.fragment.rs",
+      "sha256": "c877236289a442515458103d5ad81325cdaeb465c534bfd21b71f5cfcdd7e830",
+      "bytes": 3405,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/package.py",
+      "sha256": "ec365e213096f8c0acf235d5b58e7a6cb9a43d115bee7d2c9778d20a9a7ad91f",
+      "bytes": 4880,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/plan.md",
+      "sha256": "28c8922ec16236f1c7b9b18be009336eca81aa4b31ef79a0dd8e66fcb3ae15bb",
+      "bytes": 1164,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/prerequisite-base/echo-core/src/agent/output_projection.rs",
+      "sha256": "be856a909c8d2c065f4d5ce50f299ae6be4d117f92fcd3e971b1e58ee7d45630",
+      "bytes": 24968,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/prerequisite-proposal/echo-core/src/agent/output_projection.rs",
+      "sha256": "9c557046cb714b10a914f36faa5ff574bd26e7378a3a678007c020227fdbf492",
+      "bytes": 25141,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/review-v1-corrections.md",
+      "sha256": "bc543ad5cecd5bd4be43e9d33fb69f0343157d814b6bf92cf120065e0e678d42",
+      "bytes": 1292,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/review-v2-corrections.md",
+      "sha256": "6b69f58cf94c9a63f89faecb4f88fc88449880ede22c26811756333f0e7234a8",
+      "bytes": 863,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/review.md",
+      "sha256": "16d85fd4e62d9a87c90b110c3d0e165aab98d4fdee5d5a1b0c9012fc5e81c22b",
+      "bytes": 1268,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/sdk-native-status-sync-api.md",
+      "sha256": "b434ffe2988b7cf7a62fd6f811d5e7105890c104f71359dbbf72ee3e32d5229f",
+      "bytes": 10046,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/tests-first/echo-core/src/agent/event_envelope.rs",
+      "sha256": "fe4fa76df374790aeb7b0f15023f64f096dcbcb730041fdcbcaa1f08c95f03ad",
+      "bytes": 41294,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/tests-first/echo-core/src/agent/mod.rs",
+      "sha256": "da2c81784e2f4acda8c206ea88395c0eacdaa1e81f031eaab5c58b06b6f99984",
+      "bytes": 140196,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/tests-first/echo-orchestration/src/runtime/turn_driver.rs",
+      "sha256": "ae8df4f3f1547d32e02e48e7be12a252a20ddeec9617b4c3732798b33da403cd",
+      "bytes": 161943,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/validation/local-authoring-errors.md",
+      "sha256": "c3e68aad67ba8ea22093c53c7a5c92e4bccc53f5af4f1792d7d97b8eceb5a0e1",
+      "bytes": 706,
+      "mode": 420
+    },
+    {
+      "path": "runtime-acceptance/canonical-agent-runtime-retirement-20261028/给F与Root取件.md",
+      "sha256": "d63ce104f4d9dea4cabcba520618f5d2c2eb57aa19bb768b15f0584b3c5a7c2d",
+      "bytes": 4636,
+      "mode": 420
+    }
+  ],
+  "actual_all_tar_members_bytes_SHA_modes_readback": true,
+  "source_owner_freeze": "All actual execution chats told stop and freeze for explicit human maintenance instruction; Runtime/Frame/Provider returned no in-flight source writes",
+  "production_adoption": false,
+  "runtime_tests_of_unadopted_packages_run": false,
+  "original_raw_logs_and_primary_inputs": "Retained at original ignored paths; not imported into this source package or changed to passing",
+  "full_goal_complete": false,
+  "restore": "核对archive SHA后先解到主目录内独立scratch并按逐file SHA/mode验证；按各包base/after与当前Git做三方合流，不覆盖当前产品代码，不据档案恢复执行或账户状态。"
+}

@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="800" viewBox="0 0 720 800" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">EchoLeap 布偶猫</title>
+  <desc id="desc">一只坐着的海双色布偶猫，奶白色长毛、灰褐色耳朵和尾巴、倒V白脸、清澈的蓝眼睛。</desc>
+  <defs>
+    <linearGradient id="body" x1="218" y1="390" x2="500" y2="711" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDFA"/><stop offset="1" stop-color="#E8E0D7"/>
+    </linearGradient>
+    <linearGradient id="tail" x1="527" y1="466" x2="388" y2="707" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B4A49A"/><stop offset=".55" stop-color="#8D7B70"/><stop offset="1" stop-color="#74635A"/>
+    </linearGradient>
+    <linearGradient id="head" x1="359" y1="133" x2="360" y2="418" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FBF7F1"/><stop offset="1" stop-color="#EFE8DF"/>
+    </linearGradient>
+    <linearGradient id="earL" x1="222" y1="96" x2="274" y2="254" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6D5C54"/><stop offset="1" stop-color="#A89588"/>
+    </linearGradient>
+    <linearGradient id="earR" x1="494" y1="97" x2="451" y2="254" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6D5C54"/><stop offset="1" stop-color="#A89588"/>
+    </linearGradient>
+    <linearGradient id="maskL" x1="248" y1="169" x2="296" y2="347" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A08C7E"/><stop offset="1" stop-color="#C2B0A1"/>
+    </linearGradient>
+    <linearGradient id="maskR" x1="471" y1="169" x2="416" y2="347" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A08C7E"/><stop offset="1" stop-color="#C2B0A1"/>
+    </linearGradient>
+    <linearGradient id="eye" x1="0" y1="-23" x2="0" y2="24" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#447FA5"/><stop offset=".5" stop-color="#73B5D7"/><stop offset="1" stop-color="#B6DFE9"/>
+    </linearGradient>
+    <clipPath id="left-eye"><path d="M-39-5C-24-24 8-26 31-6C17 18-19 24-39-5Z"/></clipPath>
+    <clipPath id="right-eye"><path d="M39-5C24-24-8-26-31-6C-17 18 19 24 39-5Z"/></clipPath>
+  </defs>
+
+  <!-- 尾巴从身体后方环到前爪，轮廓保留布偶猫的长毛体积。 -->
+  <path d="M479 517C513 504 538 483 541 461C543 449 552 449 560 463C585 507 581 564 555 608C528 653 477 674 422 674L398 630C453 619 501 595 513 560C519 542 504 535 479 541Z" fill="url(#tail)"/>
+  <path d="M540 470C551 503 550 539 537 564" stroke="#C9B9AC" stroke-width="8" stroke-linecap="round" opacity=".55"/>
+
+  <!-- 身体为柔和的梨形，肩部和围脖靠少量毛束形成长毛轮廓。 -->
+  <path d="M267 365C241 390 216 434 203 483C189 532 173 565 180 610C185 649 211 677 252 684L478 684C522 668 535 631 524 593C514 556 502 526 494 486C484 438 461 393 440 365Z" fill="url(#body)" stroke="#E2D8CC" stroke-width="2"/>
+  <path d="M231 521C216 540 207 566 212 589C216 611 233 622 249 629" stroke="#DDD0C2" stroke-width="4" stroke-linecap="round"/>
+  <path d="M473 521C490 541 500 568 494 591C490 608 477 621 461 628" stroke="#DDD0C2" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M241 363C225 386 227 415 247 426C251 420 257 414 263 412C263 430 275 445 292 449C293 440 297 432 302 428C316 456 337 470 358 474C377 468 395 455 407 438C409 444 415 450 423 453C442 442 453 431 456 416C461 422 470 427 478 430C491 406 488 382 474 363Z" fill="#FFFDF9"/>
+  <path d="M280 414C296 423 307 426 318 425M401 425C414 426 425 422 439 415" stroke="#E4DACE" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 前肢与柔软脚掌。 -->
+  <path d="M296 455C287 511 286 566 290 625C271 628 258 641 259 656C260 675 282 685 309 683C334 682 344 671 343 654L345 474" fill="#FFFDF9" stroke="#E5DBCE" stroke-width="2"/>
+  <path d="M423 455C433 511 433 566 429 625C448 628 461 641 460 656C459 675 437 685 411 683C386 682 375 671 376 654L375 474" fill="#FFFDF9" stroke="#E5DBCE" stroke-width="2"/>
+  <path d="M287 652L287 665M306 650L306 666M414 651L414 666M433 652L433 665" stroke="#DACDBF" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 耳朵不做等边三角形，使用倾斜曲线和内侧绒毛。 -->
+  <path d="M194 232C187 193 191 132 210 89C215 77 225 81 237 92C267 118 294 146 307 181L275 251Z" fill="url(#earL)"/>
+  <path d="M526 232C533 193 529 132 510 89C505 77 495 81 483 92C453 118 426 146 413 181L445 251Z" fill="url(#earR)"/>
+  <path d="M217 112C208 146 207 175 211 198L263 178C250 154 234 131 217 112Z" fill="#CCB4AA"/>
+  <path d="M503 112C512 146 513 175 509 198L457 178C470 154 486 131 503 112Z" fill="#CCB4AA"/>
+  <path d="M211 174Q219 176 226 184M226 163Q232 170 237 180M242 164Q247 170 250 178" stroke="#F6EEE4" stroke-width="5" stroke-linecap="round"/>
+  <path d="M509 174Q501 176 494 184M494 163Q488 170 483 180M478 164Q473 170 470 178" stroke="#F6EEE4" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- 头与两侧面罩；中央奶白区域形成海双色特征的倒V。 -->
+  <path d="M360 147C317 141 275 152 241 174C214 191 196 216 190 247L176 259L185 275L171 290L185 300L178 318L195 325L192 343L214 348C231 378 262 395 302 401L326 417L341 406L360 421L379 406L394 417L418 401C458 395 489 378 506 348L528 343L525 325L542 318L535 300L549 290L535 275L544 259L530 247C524 216 506 191 479 174C445 152 403 141 360 147Z" fill="url(#head)" stroke="#E2D8CC" stroke-width="2"/>
+  <path d="M333 159C296 150 258 166 230 193C209 214 199 242 202 267C206 299 233 323 267 326C295 311 315 285 326 253C335 225 341 187 333 159Z" fill="url(#maskL)"/>
+  <path d="M387 159C424 150 462 166 490 193C511 214 521 242 518 267C514 299 487 323 453 326C425 311 405 285 394 253C385 225 379 187 387 159Z" fill="url(#maskR)"/>
+  <path d="M360 153C350 173 338 195 328 221C318 247 304 273 285 294C270 310 253 320 239 323C255 366 301 391 360 391C419 391 465 366 481 323C467 320 450 310 435 294C416 273 402 247 392 221C382 195 370 173 360 153Z" fill="#FFFDFA"/>
+  <path d="M343 160Q348 164 349 171M373 160Q369 164 368 171" stroke="#EBE1D5" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 蓝色杏仁眼：上眼睑有轻微弧度，保留猫的表情而非人物眼睛。 -->
+  <g transform="translate(274 255) rotate(7)">
+    <path d="M-39-5C-24-24 8-26 31-6C17 18-19 24-39-5Z" fill="#F1F7F5"/>
+    <g clip-path="url(#left-eye)">
+    <ellipse cx="-2" cy="-1" rx="23" ry="24" fill="url(#eye)"/>
+    <ellipse cx="-1" cy="-2" rx="9" ry="22" fill="#28465A"/>
+    <circle cx="-10" cy="-10" r="6" fill="#FFFFFF"/>
+    <circle cx="8" cy="10" r="3" fill="#DFF6FC"/>
+    </g>
+    <path d="M-39-5C-23-23 8-25 31-6" stroke="#625B55" stroke-width="5" stroke-linecap="round"/>
+    <path d="M-32 7C-14 21 12 18 26 5" stroke="#A99383" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(446 255) rotate(-7)">
+    <path d="M39-5C24-24-8-26-31-6C-17 18 19 24 39-5Z" fill="#F1F7F5"/>
+    <g clip-path="url(#right-eye)">
+    <ellipse cx="2" cy="-1" rx="23" ry="24" fill="url(#eye)"/>
+    <ellipse cx="1" cy="-2" rx="9" ry="22" fill="#28465A"/>
+    <circle cx="-7" cy="-10" r="6" fill="#FFFFFF"/>
+    <circle cx="11" cy="10" r="3" fill="#DFF6FC"/>
+    </g>
+    <path d="M39-5C23-23-8-25-31-6" stroke="#625B55" stroke-width="5" stroke-linecap="round"/>
+    <path d="M32 7C14 21-12 18-26 5" stroke="#A99383" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- 鼻口、胡须与少量绒毛线条。 -->
+  <ellipse cx="335" cy="325" rx="37" ry="25" fill="#FFFDFB"/>
+  <ellipse cx="385" cy="325" rx="37" ry="25" fill="#FFFDFB"/>
+  <path d="M347 304C352 300 368 300 373 304C375 307 371 311 365 316C362 319 358 319 355 316C349 311 345 307 347 304Z" fill="#C78E87"/>
+  <path d="M360 318V330M360 330C352 341 339 341 332 335M360 330C368 341 381 341 388 335" stroke="#8C7870" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M300 323C266 316 239 315 214 317M298 336C267 338 241 344 218 354M420 323C454 316 481 315 506 317M422 336C453 338 479 344 502 354" stroke="#BCAE9F" stroke-width="2.5" stroke-linecap="round"/>
+  <g fill="#C1AFA1">
+    <circle cx="317" cy="319" r="1.8"/><circle cx="309" cy="328" r="1.8"/><circle cx="319" cy="334" r="1.8"/>
+    <circle cx="403" cy="319" r="1.8"/><circle cx="411" cy="328" r="1.8"/><circle cx="401" cy="334" r="1.8"/>
+  </g>
+  <path d="M210 290L220 301M216 307L227 312M500 290L490 301M494 307L483 312M304 378L317 384M416 378L403 384" stroke="#E7DCCE" stroke-width="3" stroke-linecap="round"/>
+</svg>

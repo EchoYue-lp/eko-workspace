@@ -1,0 +1,178 @@
+{
+  "at": "2026-10-28T11:40:51.457781+00:00",
+  "package": "framework-candidates",
+  "originalDirectory": ".echo-semantic/local/parallel-executors-20261027/framework/maintenance-save-cut-20261028/pending-git/echo-agent/docs/engineering/pending/2026-10-28-framework-candidates",
+  "archive": "framework-candidates.tar.gz",
+  "archive_sha256": "0838e08bb2b26ef75096419a446ad4eb46318d28a8e7a1fc1d904975ced414b9",
+  "archive_bytes": 107159,
+  "file_count": 27,
+  "logical_bytes": 465079,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1724,
+      "sha256": "4f9404055243d799054377a207ffe07ffe5b63985f86e2c8fd2e3131d18ee3d6",
+      "mode": 420
+    },
+    {
+      "path": "canonical-v04/01-projection-foundation-and-tests.patch",
+      "bytes": 52244,
+      "sha256": "13f2d5ba39c52cffead9d1d43395be16c48f6412779c5cdd9ab2840a075f09c8",
+      "mode": 420
+    },
+    {
+      "path": "canonical-v04/02-real-consumers.patch",
+      "bytes": 24352,
+      "sha256": "d3c6008e844eac6b85bf797abbb36af61f28f757906b2fe1e704637d40b4dd38",
+      "mode": 420
+    },
+    {
+      "path": "canonical-v04/03-owned-ADR.patch",
+      "bytes": 6147,
+      "sha256": "8b14b213c732e7ca2b2af1d410f9874a0d963dd8ea463e5ef8b330e0006cf3ae",
+      "mode": 420
+    },
+    {
+      "path": "canonical-v04/complete.patch",
+      "bytes": 82577,
+      "sha256": "a7dbc3edea99d7160f80147efeac24a899aa1aa2a42fd33bb74e1a5815b50495",
+      "mode": 420
+    },
+    {
+      "path": "canonical-v04/handoff.md",
+      "bytes": 3231,
+      "sha256": "edfe97aea91c46740cd119f06206ead39158e6a1682e31690e7ccf32a03d4b5a",
+      "mode": 420
+    },
+    {
+      "path": "canonical-v04/manifest.json",
+      "bytes": 4111,
+      "sha256": "a0f02920328366e0a3fdab6b65ac5a11ed7aa893c5de100520902fcf3121c26a",
+      "mode": 420
+    },
+    {
+      "path": "canonical-v04/nonstream-current-producer.md",
+      "bytes": 2332,
+      "sha256": "e5a16cdfe86973f30f77a73aee71d60cbe84ddf9f23c48cfd9db6d91d33b7931",
+      "mode": 420
+    },
+    {
+      "path": "canonical-v04/retirement-inventory.json",
+      "bytes": 20767,
+      "sha256": "0d783e8ecc3d1c5a7cc79091de6738280ac7bfc006daf011899d8ee96dc808c7",
+      "mode": 420
+    },
+    {
+      "path": "canonical-v04/review-result.json",
+      "bytes": 954,
+      "sha256": "ff35f25b1d4bad8ed2008642c208e86cdac9f6cf434f667600f9ae01165d94e3",
+      "mode": 420
+    },
+    {
+      "path": "not-started-retirement/paused-handoff.json",
+      "bytes": 3274,
+      "sha256": "14d49c44a4bb8a07492cddbfffd8bc74b3ecf56c00707b8c6af21b7ec4bf1363",
+      "mode": 420
+    },
+    {
+      "path": "prior-static-reviews/review-history.zh.md",
+      "bytes": 711,
+      "sha256": "d4d368498b670088acdb2dd8d22d62264dfcd7dda8d5af2c317330dcb60a6357",
+      "mode": 420
+    },
+    {
+      "path": "prior-static-reviews/v01-review-original/complete.patch",
+      "bytes": 52547,
+      "sha256": "06e04aaba09242ef5a0f188f0cfbb10ad057e8097897ccebb4b0b3c25b98c2d0",
+      "mode": 420
+    },
+    {
+      "path": "prior-static-reviews/v01-review-original/manifest.json",
+      "bytes": 3275,
+      "sha256": "b39e86a4d339fdaec5874938cf78d79b4d249afd6111a870ba94854d9f8b889c",
+      "mode": 420
+    },
+    {
+      "path": "prior-static-reviews/v01-review-original/review-findings.json",
+      "bytes": 601,
+      "sha256": "a754ed4ef9b7a41d8089b76c383d9b48b5029d242185b25781e253b4dff6b9fb",
+      "mode": 420
+    },
+    {
+      "path": "prior-static-reviews/v02/complete.patch",
+      "bytes": 69702,
+      "sha256": "ca3523bb0416d2db5981a8d1f4d6d0e1b3f9e1717a1c4fb28c4a35ab8b13db01",
+      "mode": 420
+    },
+    {
+      "path": "prior-static-reviews/v02/manifest.json",
+      "bytes": 3544,
+      "sha256": "be8dbdc1756a14e80f17b231cab1e288c8ce646e021834a3f554bf710be257ba",
+      "mode": 420
+    },
+    {
+      "path": "prior-static-reviews/v03/complete.patch",
+      "bytes": 79485,
+      "sha256": "61a57c5dda461ad42e05fbaf4c14992974219b6999eaf8bb9b92e279f6929a5e",
+      "mode": 420
+    },
+    {
+      "path": "prior-static-reviews/v03/manifest.json",
+      "bytes": 3918,
+      "sha256": "dd70fb00165482e1cb1ee719f44c587c82db11cb986d8a0a2208df10378cc289",
+      "mode": 420
+    },
+    {
+      "path": "weixin-current/01-author-tests-first.patch",
+      "bytes": 6213,
+      "sha256": "be1b468f15889df583603809230d13485897b600393c9e45ebaff061d8daa285",
+      "mode": 420
+    },
+    {
+      "path": "weixin-current/02-current-business-predicate.patch",
+      "bytes": 4363,
+      "sha256": "929d66e4c8d6d9385ac81ac9f344439cf6dd0bd84b315845743fc5d9077422d0",
+      "mode": 420
+    },
+    {
+      "path": "weixin-current/03-bounded-original-client-diagnostic.patch",
+      "bytes": 10358,
+      "sha256": "89893d5a93fe87862853ab50e14d20babba12d9f2fa16a613cc30b7927d6a55f",
+      "mode": 420
+    },
+    {
+      "path": "weixin-current/author-parser-manifest.json",
+      "bytes": 1033,
+      "sha256": "30fb2a734817a3c15769c428835f4156d1d80487e6d6b813103c9d3ab7b4c028",
+      "mode": 420
+    },
+    {
+      "path": "weixin-current/complete.patch",
+      "bytes": 20814,
+      "sha256": "98fc6263cccee75448e494c9df9da48fae59fd1171ce9aeed030fd893ea6213b",
+      "mode": 420
+    },
+    {
+      "path": "weixin-current/handoff.md",
+      "bytes": 3090,
+      "sha256": "27d87d60683f26c8c1dbd6d1ab67af52b1b812c73f92d9812d23b41a58ed3950",
+      "mode": 420
+    },
+    {
+      "path": "weixin-current/manifest.json",
+      "bytes": 3203,
+      "sha256": "6ccbc59cdec6e5bc825c716694c5454de84072259490f4fa5b04998a6dbc627b",
+      "mode": 420
+    },
+    {
+      "path": "weixin-current/review-result.json",
+      "bytes": 509,
+      "sha256": "582fa3b6c9972e5768d867960ee7d96c159961599dff808972b266b3dac3309c",
+      "mode": 420
+    }
+  ],
+  "actualScratchExtractionAndFullBytesModesHashMatch": true,
+  "productionAdoption": false,
+  "goalStatus": "paused",
+  "qualification": "冻结候选/提案工程保全，保留原有通过/未审/未执行边界；不晋升实际产品资格"
+}

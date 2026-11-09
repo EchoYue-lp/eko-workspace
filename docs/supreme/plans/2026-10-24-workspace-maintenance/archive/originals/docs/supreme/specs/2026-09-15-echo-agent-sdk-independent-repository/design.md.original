@@ -1,0 +1,495 @@
+---
+title: echo-agent-sdk 独立仓库拆分设计
+artifact: design
+carrier: markdown
+---
+
+# echo-agent-sdk 独立仓库拆分设计
+
+## 问题与目标
+
+`echo-agent` 当前同时承载通用 Rust Agent 框架、SDK wire contract、Rust SDK Host、
+TypeScript/Python/Java SDK、生成合同和跨语言验证。两类产品具有不同的变更原因：框架
+关注 Agent、执行、状态、编排、Tool 和集成能力；SDK 关注跨进程协议、语言投影、Host
+适配和兼容性。把它们放在同一 Cargo workspace 和同一 CI/发布边界中，使无关的框架
+改动也需要经过 SDK package、生成物和多语言工具链的检查。
+
+现有 SDK 资产已经形成独立产品规模：两个 Rust crate 约 7.2 万行，连同合同、三语言
+SDK 和脚本约 20.3 万行；提交中的 `contracts/sdk` 接近 50 MB。当前
+`source-contract.json` 还把 workspace `Cargo.lock`、完整 Rust public inventory、parity
+manifest 和 facade operation catalog 合并为一个兼容摘要，使依赖更新和未进入 SDK
+承诺的 Rust API 变化也可能影响 SDK 协商。
+
+本设计的目标是：
+
+1. 将完整 SDK 产品迁入独立 Git 仓库
+   `git@github.com:EchoYue-lp/echo-agent-sdk.git`。
+2. 让 `echo-agent` 只承担通用框架及通用 ACP adapter 的开发、验证和发布成本。
+3. 让 `echo-agent-sdk` 独立拥有 wire contract、Host、三语言 SDK、文档、示例、生成器、
+   CI 和发布节奏。
+4. 保持 Rust `echo_agent` 为唯一执行与状态权威，SDK 只做协议和语言适配。
+5. 只把明确接受的跨语言能力纳入阻断性 SDK 合同；完整 Rust public inventory 降为
+   非阻断漂移遥测。
+6. 将 `echo-agent-sdk` 作为 `lp-agent` 的第四个独立 submodule，在不恢复单仓耦合的
+   前提下保留跨仓协作和验收入口。
+
+## 已确认决策
+
+| 主题 | 决策 |
+| --- | --- |
+| Git 仓库 | 使用已经创建的 `EchoYue-lp/echo-agent-sdk`，仓库当前只有初始 README commit。 |
+| 迁移范围 | 迁移完整 SDK 产品，不只移动两个 Rust crate。 |
+| Framework 依赖 | SDK Host 消费 `echo_agent`；Rust framework 不反向依赖 SDK。 |
+| Protocol 依赖 | `echo-sdk-protocol` 成为纯 wire/schema crate，不依赖 `echo_agent` 或 `echo_core`。 |
+| SDK 承诺 | 只有明确接受的跨语言合同属于阻断性兼容面。 |
+| Rust inventory | 完整 Rust public inventory 只用于非阻断漂移遥测，不参与运行时兼容判定。 |
+| 顶层组织 | `echo-agent-sdk` 成为 `lp-agent` 的第四个 submodule。 |
+| 交付形态 | 延续源码优先；Rust Host、TypeScript、Python 和 Java 源码从同一 SDK revision 交付。 |
+
+## 目标行为
+
+### 独立开发与验证
+
+- 单独检出 `echo-agent` 时，不需要存在 SDK crate、SDK 合同生成物、Node.js、Python、
+  JDK 或 SDK nightly rustdoc 工具链，框架门禁不执行 SDK Host 和语言 SDK 测试。
+- 单独检出 `echo-agent-sdk` 时，可以从仓库中确定一个不可漂移的 `echo_agent` 依赖版本，
+  构建 Rust Host，并执行协议、Host 和三语言 SDK 的完整验证。
+- SDK 仓库不得依赖相邻目录、superproject checkout 或开发者本机的隐式路径。独立 clone
+  是受支持且必须验证的入口。
+- 两个仓库分别维护分支、commit、PR、CI、tag 和 release。superproject gitlink 只引用
+  已经推送且通过所属仓库门禁的 commit。
+
+### Framework 与 SDK 变更解耦
+
+- `echo-agent` 的内部实现、私有 API、依赖或未进入已接受 SDK 合同的 public API 发生变化
+  时，framework PR 不修改 SDK 文件，也不被 SDK 多语言门禁阻塞。
+- SDK 通过显式依赖升级来选择新的 framework revision。升级时重新生成完整 public
+  inventory 报告，供维护者判断是否影响已接受合同。
+- 仅发生非合同漂移时，CI 记录差异和摘要但不要求修改语言 SDK、协议版本或合同摘要。
+- 已接受的外部合同发生变化时，SDK 仓库中的 protocol、Host adapter、三语言实现、
+  fixture、文档和兼容摘要必须在同一个 SDK 交付结果中闭合。
+
+### 运行时权威不变
+
+- Agent、Session、Run、TaskRun、PlanTask、SubagentRun、事件、取消、恢复、重试、
+  checkpoint 和 terminal 继续由 `echo_agent` 运行时拥有。
+- SDK Host 只做 ACP/runtime 组合、类型转换、handle 管理、资源边界和进程 transport；
+  不建立第二套 Task graph、run state machine、retry、terminal 或 persistence authority。
+- TypeScript、Python 和 Java SDK 是 ACP Client 加 `_echo_agent/*` 扩展的语言惯用投影，
+  不重写 Rust Agent loop。
+- 标准 ACP profile 与扩展 profile 继续投影同一个 Rust Session/Run；协议不匹配只能使
+  extension negotiation 失败或降级为标准 ACP，不能切换到另一执行实现。
+
+## 范围
+
+### `echo-agent-sdk` 拥有
+
+- Rust workspace：`echo-sdk-protocol`、`echo-sdk-host`。
+- SDK contracts：ACP baseline、extension schema、已接受 external contract、operation
+  catalog、golden fixtures、contract digest 和生成元数据。
+- TypeScript、Python、Java 及 shared SDK 源码、测试和可执行示例。
+- SDK 文档：协议、core profile、extension bridge、facade adapters、Host 构建和语言入口。
+- SDK 专属生成器及检查脚本，包括合同生成、语言 catalog 同步和跨语言 E2E。
+- SDK 专属 CI：Rust Host、协议合同、跨平台编译、三语言 SDK、确定性生成和依赖审计。
+- SDK 的 ADR、版本记录、发布说明和 framework compatibility 声明。
+- 从指定 framework revision 生成的完整 Rust public inventory 漂移报告。
+
+### `echo-agent` 保留
+
+- 根 `echo_agent` facade 及七个 split framework/runtime crate。
+- 通用 ACP Agent adapter、ACP Session/Run 投影和 ACP conformance 能力。
+- `EventEnvelope`、Turn driver、Task/Plan/Subagent、Store、Tool、MCP、A2A、Workflow 等
+  通用机制和唯一运行时权威。
+- Framework 自身的 API 文档、示例、ADR、测试、feature matrix 和发布门禁。
+- 指向独立 SDK 项目的简短入口和 framework/SDK 边界说明。
+
+### `lp-agent` 保留
+
+- `echo-agent`、`echo-agent-sdk`、`echo-agent-cli`、`echo-website` 四个独立 submodule。
+- 跨仓协作规则、阶段性设计/计划、迁移验收和当前 gitlink 组合事实。
+- 跨仓交付顺序与“gitlink 不得指向未推送 commit”的门禁。
+
+## 非目标
+
+- 不把 SDK Host、wire contract 或语言 SDK 下沉到 `echo-agent-cli`；SDK 面向通用框架，
+  不是 EKO 私有能力。
+- 不把 EKO workspace、GUI/TUI/CLI projection、DomainProfile 或产品 policy 带入 SDK。
+- 不复制或重写 `echo_agent` 的执行、状态、任务、取消、恢复和持久化机制。
+- 不把 `echo-sdk-protocol` 变成 framework domain crate，也不让 framework 依赖 SDK wire
+  类型。
+- 不因拆仓发布预编译 Host、npm package、wheel 或 JAR；是否增加二进制/制品发布需要
+  后续独立决策。
+- 不以 Git branch（包括 `main`）作为可复现的依赖版本。
+- 不保留旧路径作为长期双事实源，也不维护两份可编辑的 SDK 合同或正式文档。
+- 不在拆分过程中顺便改变 Agent、Task、Subagent、ACP 或扩展方法的业务语义。
+- 不通过重写远端 `echo-agent` 历史或强制覆盖新 SDK 仓库的 `main` 完成迁移。
+
+## 系统边界
+
+```text
+lp-agent superproject
+  |
+  +-- echo-agent/       (independent Git repository)
+  |     echo_agent facade
+  |       -> echo_core / execution / state / orchestration
+  |       -> integration / tools / macros
+  |       -> generic ACP Agent adapter
+  |
+  +-- echo-agent-sdk/   (independent Git repository)
+  |     echo-sdk-protocol   wire/schema only
+  |              ^
+  |              |
+  |     echo-sdk-host -------> pinned echo_agent revision
+  |              ^
+  |              |
+  |     TypeScript / Python / Java ACP clients
+  |
+  +-- echo-agent-cli/   EKO application
+  +-- echo-website/     public website
+```
+
+依赖只能从 SDK 指向 framework：
+
+```text
+echo-sdk-protocol                 no echo workspace dependency
+echo-sdk-host ------------------> echo-sdk-protocol
+echo-sdk-host ------------------> echo_agent
+language SDKs ------------------> ACP + committed echo SDK contract artifacts
+echo_agent                 -X---> echo-sdk-protocol / echo-sdk-host
+```
+
+## 分层与事实权威
+
+| 事实 | 唯一权威 | 非权威消费者/投影 |
+| --- | --- | --- |
+| Framework Rust API 与 feature | `echo-agent` Cargo manifest、source、docs | SDK inventory telemetry |
+| Agent/Run/Task/Subagent 行为 | `echo-agent` source、tests、accepted ADR | Host 和语言 SDK 投影 |
+| 标准 ACP 行为 | 官方 ACP schema/runtime + framework ACP adapter | SDK Host composition |
+| `_echo_agent/*` wire 方法和值 | `echo-agent-sdk/echo-sdk-protocol` | Host handlers、三语言 DTO |
+| 已接受跨语言合同范围 | SDK committed external contract manifest | 完整 Rust inventory |
+| Host 到 framework 的转换 | `echo-agent-sdk/echo-sdk-host` adapter | protocol DTO、framework values |
+| SDK build 所用 framework | SDK manifest/lock 中的精确 version 或 Git revision | superproject gitlink |
+| SDK wire compatibility | protocol version + external contract digest | build provenance、inventory digest |
+| SDK build provenance | SDK revision + framework revision/version + lock digest | runtime negotiation |
+| 跨仓组合 | `lp-agent` 的四个 gitlink | 各仓默认 branch |
+
+`echo-sdk-protocol` 当前持有的 `AgentEvent`、`AgentFailure` 和 HookEvent framework 转换应由
+Host adapter 接管。由于转换两端届时都属于外部 crate，Host 使用本地转换函数或本地 trait，
+而不是为两个外部类型实现 `From`。每个转换仍需字段级和 round-trip 测试，不能通过
+`serde_json::Value` 或字符串中转隐藏语义差异。
+
+## 核心结构与数据流
+
+### SDK 构建数据流
+
+```text
+pinned echo_agent version/revision
+             |
+             v
+     echo-sdk-host compile
+             |
+             +----> framework adapter contract tests
+             |
+             v
+echo-sdk-protocol schema/catalog
+             |
+             v
+TypeScript / Python / Java generated-or-idiomatic projections
+             |
+             v
+real-process Host E2E + examples
+```
+
+SDK 对 framework 的依赖在 SDK root manifest 中声明，并由 lockfile 固定。`echo_agent`
+0.2.0 尚未形成可消费 release 时使用完整 Git commit `rev`；形成稳定 registry release 后
+可以使用精确兼容版本。任何阶段都不得使用 `branch = "main"` 或相邻 `../echo-agent` 作为
+独立构建的唯一入口。superproject 可为本地开发提供显式 path override，但该 override
+必须是可选开发便利，不能写入可交付 manifest 或 lockfile。
+
+### Runtime 数据流
+
+```text
+language SDK call
+      |
+      v
+official ACP JSON-RPC + _echo_agent/* extension DTO
+      |
+      v
+echo-sdk-host negotiation / handle / adapter / bounded stdio
+      |
+      v
+echo_agent facade and canonical runtime
+      |
+      v
+EventEnvelope / receipt / typed failure
+      |
+      v
+Host conversion -> protocol event -> language-native projection
+```
+
+连接仍以 extension protocol version、external contract digest、required capability 和
+compiled feature 为协商依据。`Cargo.lock`、完整 Rust public inventory、SDK commit 和
+framework commit 只用于构建 provenance 与诊断，不得导致 wire 兼容的双方协商失败。
+
+### Framework 漂移数据流
+
+```text
+new candidate echo_agent revision
+              |
+              v
+generate complete Rust public inventory
+              |
+              v
+compare with previous telemetry baseline
+       |                         |
+       | no accepted impact      | accepted contract impact
+       v                         v
+report only               require explicit SDK contract update
+non-blocking              protocol + Host + all languages + docs
+```
+
+完整 inventory 不再进入运行时 contract digest。其详细内容作为 CI artifact 或检查报告
+保存；仓库只提交重算所需工具、源 revision、toolchain、摘要和已接受合同。遥测任务可以
+显示新增、删除和签名变化，但不阻塞 framework PR 或无合同影响的 SDK 依赖升级，也不
+自动创建外部 Issue 或修改仓库。
+
+## 兼容性合同
+
+### 阻断性合同
+
+以下内容构成 SDK 的公开兼容承诺：
+
+- extension protocol version；
+- `_echo_agent/*` 方法、notification 和 typed error closed set；
+- 已接受 external value/handle/stream/extension contracts；
+- facade operation catalog 中明确接受的 operation；
+- capability、feature advertisement 和 negotiation 规则；
+- 取消、terminal、replay、gap、lease、deadline、resource close 等跨语言行为；
+- 三种语言对每个已接受合同的实现和 contract test。
+
+阻断性 digest 只覆盖上述规范化 artifact。变更其中任一行为必须显式判断兼容性；本项目
+仍处开发阶段时可做 breaking change，但 Host、三语言 SDK、fixture、版本、文档和测试必须
+在同一 SDK commit 中更新，不保留旧实现 fallback。
+
+### 非阻断性遥测
+
+以下内容不属于 wire compatibility：
+
+- 完整 root Rust public API identity 列表；
+- `host_or_rust_only`、`language_intrinsic`、`internal_helper` 和 `deferred` 项；
+- framework 或 SDK workspace 的完整 `Cargo.lock` 内容；
+- 私有实现、依赖树、rustdoc 排序和构建目录；
+- SDK/framework Git commit 本身。
+
+这些事实仍用于可复现构建、审计和发现 SDK 候选能力，但不会仅因 digest 不同拒绝
+extended mode。一个 Rust identity 只有经过能力级评审、获得明确 external contract
+归类并具备三语言证据后，才进入阻断性合同。
+
+### 版本与发布
+
+- `echo-agent` 与 `echo-agent-sdk` 使用独立版本和 release cadence。
+- 一个 SDK release 对应一个明确 framework compatibility 范围和一个可重现 lockfile。
+- `echo-sdk-protocol`、`echo-sdk-host` 和三语言源码在同一 SDK release 中保持一致，不允许
+  分别指向不同 contract digest。
+- Framework release 不隐式发布 SDK；SDK dependency update 是 SDK 仓库中的显式变更。
+- SDK release notes 同时声明 SDK version、framework version/revision、ACP artifact version、
+  protocol version 和 external contract digest。
+
+## 文档、ADR 与历史归属
+
+- SDK 当前行为文档迁入 `echo-agent-sdk/docs`，成为唯一长期事实源；framework README 和
+  architecture 只保留边界说明及外部链接。
+- SDK 专属历史 ADR 在新仓库保留可追溯内容，并由新仓库 ADR 记录拆仓、协议纯化和兼容
+  摘要分离。`echo-agent` 增加对应 extraction ADR，说明哪些旧决策被迁移或 supersede。
+- 同一 SDK 行为不得在两个仓库各保留一份可编辑正式文档。历史链接无法直接迁移时，
+  framework 侧只保留短的 ownership/superseded 指引，不继续维护正文。
+- 迁移历史通过从 `echo-agent` 过滤 SDK-owned paths 并合并到新仓库实现。新仓库现有初始
+  README commit 保留，不使用 force-push；允许形成两个历史根的显式合并提交。
+- 现有跨仓阶段材料留在 `lp-agent/docs`，只更新状态和新事实源链接，不复制为产品文档。
+- `echo-website` 的 SDK 入口、源码链接、构建说明和版本信息改指向新仓库；没有外部行为
+  变化的页面不做无关重写。
+
+## CI 与门禁边界
+
+### Framework CI
+
+`echo-agent` CI 只验证 framework workspace、feature topology、Linux/Windows 差异、
+dependency policy、framework docs 和 examples。它不安装三语言 SDK 工具链，不生成 SDK
+parity artifact，也不编译 `echo-sdk-host`。
+
+Framework public API 变化可以生成轻量 API diff 供自身审阅，但 SDK 是否接受该能力由
+SDK 仓库决定，不能反向成为 framework 合并门禁。
+
+### SDK CI
+
+SDK CI 至少覆盖：
+
+- `echo-sdk-protocol` format、lint、test、schema 和 golden fixture；
+- protocol dependency DAG，证明没有 `echo_agent` / `echo_core`；
+- `echo-sdk-host` all-target/all-feature lint、test 和精确 framework pin 构建；
+- Host 支持平台的编译检查和真实进程 core/bridge/facade E2E；
+- external contract artifact 的确定性重算和零漂移检查；
+- TypeScript、Python、Java 的格式、lint、test、build 和 quickstart；
+- accepted external contract 在三语言中的完整覆盖；
+- dependency audit 和凭据/日志红线。
+
+完整 Rust inventory 对照是单独的 scheduled/manual telemetry job。它的执行错误需要修复，
+但单纯发现非 external API 漂移不会阻断 SDK PR；若生成器本身失败或无法读取所声明的
+framework revision，则该依赖升级不能宣称完成验证。
+
+### Superproject 门禁
+
+跨仓依赖顺序是：
+
+```text
+echo-agent -> echo-agent-sdk -> echo-agent-cli -> echo-website -> lp-agent gitlinks/docs
+```
+
+只有实际受影响的仓库需要新 commit，但任何下游 gitlink 都必须指向已推送 commit。
+`lp-agent` 的 `AGENTS.md`、`.gitmodules`、项目表、提交顺序和验证说明同步加入第四个
+submodule；新 SDK 仓库拥有独立的 `AGENTS.md`，不得依赖 superproject 文件才能冷启动。
+
+## 异常与边界场景
+
+### Framework revision 不可解析
+
+SDK manifest 指定的 version/revision 无法获取、与 lockfile 不一致或不包含所需 facade
+时，构建直接失败并指出声明的依赖。不得静默改用 `main`、本地相邻 checkout 或旧缓存。
+
+### Protocol 重新依赖 framework
+
+若 protocol 的 Cargo dependency graph 出现 `echo_agent` 或任一 echo framework split
+crate，DAG 门禁失败。Framework domain 到 wire DTO 的转换必须放回 Host adapter，不能用
+optional feature 绕过纯协议边界。
+
+### 仅有 Rust public API 漂移
+
+新增或修改的 identity 不属于 accepted external contract 时，telemetry 报告差异，SDK
+合同和语言实现保持不变。不得为了让计数归零，把它自动加入 external contract；也不得
+阻断无关 framework 变更。
+
+### 已接受合同发生变化
+
+删除字段、改变默认值、复用 error code、修改 terminal/cancel/replay 或资源生命周期时，
+SDK dependency update 保持失败，直至 protocol、Host、三语言、fixture、digest 和文档共同
+闭合。新旧实现不并存，不用 schema-free JSON 逃逸类型差异。
+
+### Wire 兼容但 build provenance 不同
+
+双方 external contract digest、protocol version 和 capability 满足时，SDK 不因 Cargo.lock
+或 Git revision 不同而拒绝 extended mode。Host 可以在诊断 metadata 中报告 provenance，
+但不得把它提升为隐式 wire gate。
+
+### Host 与语言 SDK digest 不一致
+
+客户端要求的 external contract 与 Host advertisement 不一致时，沿现有 negotiation 规则
+拒绝扩展 profile 或退回标准 ACP。不得创建 extension handle，也不得在部分 capability 上
+静默混用两份合同。
+
+### 当前工作树存在未完成 SDK 改动
+
+当前 `echo-agent` 的 `fix/Echoyue/turn-terminal-delivery-settlement` 分支同时修改 framework、
+SDK Host、protocol、contracts 和三语言源码。迁移基线必须是这些修改已经归属明确、提交并
+进入选定 framework baseline 的干净 commit。拆仓不得从当前脏工作树复制文件，也不得
+遗漏已完成但尚未提交的 SDK 变化。
+
+### 历史计划仍引用旧路径
+
+已完成或 superseded 的历史计划保留原路径作为当时证据，不批量改写历史。当前
+MASTER-PLAN、开放计划、长期文档和可执行脚本必须改到新路径；旧计划不得继续作为迁移后
+SDK 修改的执行来源。
+
+### 新仓库与 superproject 不一致
+
+若 `echo-agent-sdk` commit 尚未推送、submodule URL/branch 不正确、gitlink 指向临时 branch
+或新仓库独立 clone 不能构建，superproject 更新不得提交。第四个 submodule 不承担依赖
+版本权威；SDK 自己的 manifest/lock 才是 framework compatibility 权威。
+
+## 关键取舍与业界参考
+
+### 独立仓库而不是继续扩大 framework workspace
+
+[Cargo workspace](https://doc.rust-lang.org/cargo/reference/workspaces.html) 适合共享 lockfile、
+target、配置和原子验证，但这些优势也会把所有 member 纳入共同维护边界。SDK 已拥有独立
+语言、协议、生成和发布生命周期，继续作为 default member 会让 framework 的常规修改
+承担与其无关的工具链成本。独立仓库牺牲同 commit 原子性，换取明确的依赖版本、独立 CI
+和产品所有权；失去的原子性由精确 framework pin 和合同测试补回。
+
+### 一个 Rust 引擎而不是多语言重写
+
+[OpenAI Codex SDK](https://developers.openai.com/codex/sdk/) 使用语言 SDK 包装本地权威引擎
+并消费结构化事件；[Claude Agent SDK](https://code.claude.com/docs/en/agent-sdk/overview)
+同样区分语言 API 与 Agent loop。echo-agent SDK 延续“一个权威引擎 + 语言 SDK + 结构化进程
+协议”，不在 TypeScript、Python 和 Java 中复制 ReAct、Task、Subagent 或恢复逻辑。
+
+### 复用 ACP 而不是自建基础 RPC
+
+[ACP Overview](https://agentclientprotocol.com/protocol/overview) 和
+[ACP Extensibility](https://agentclientprotocol.com/protocol/v1/extensibility) 已定义 Agent
+进程、Session、Prompt、update、取消和 `_meta`/命名空间扩展。SDK 继续复用官方 ACP
+Rust 与语言 SDK，只为 ACP 无法表达的 echo-agent 能力维护 `_echo_agent/*` 合同。
+
+### 纯 protocol crate 而不是 framework-coupled DTO
+
+协议包需要被 Host、schema 工具、fixture 和潜在独立检查器消费。把 `echo_core` 事件/错误
+转换放在 protocol 中，会让 wire contract 的编译和版本随 framework domain 漂移。将转换
+放入 Host adapter 保持依赖单向，也符合协议、执行权威和适配边界分离的通用做法。
+
+### 显式 external contract 而不是全 public facade 阻断
+
+Smithy、gRPC 和 OpenAPI 都以语言中立的 service operation/message contract 作为跨语言
+承诺，不把某一种实现语言的全部 public symbol 自动变成远程合同。完整 Rust inventory
+仍有审计价值，但将其作为 runtime digest 或 merge gate 会把语言语法、Host-only resource
+和内部 helper 错当成 wire API。本设计保留遥测，删除其阻断权威。
+
+## 复用与实现约束
+
+- 复用现有 `echo-sdk-protocol` 的 wire DTO、schema、catalog、canonical digest 和 fixture，
+  不另建第二套协议模型。
+- 复用现有 `echo-sdk-host` 的 ACP runtime、bounded stdio、handle registry、core profile、
+  extension bridge、facade adapter 和真实进程 E2E，不改写 Host 状态机。
+- 复用 `echo_agent` 现有 ACP adapter、Turn driver、EventEnvelope、Task revision service、
+  Subagent executor、journal 和 runtime store，不把实现复制进 SDK 仓库。
+- 复用现有三语言源码及其 contract/catalog tests，不从 schema 重新生成一套与当前惯用 API
+  并存的客户端。
+- 复用 Git filtered history 保存 SDK-owned paths；新仓库初始 commit 通过合并保留，不强推。
+- 复用 Cargo 的 version/Git `rev` dependency、lockfile 和 metadata，不自建依赖下载器或
+  framework source registry。
+- 生成物只能由一个 SDK repository generator 写入；禁止在 framework 和 SDK 各运行一套
+  可产生不同结果的 generator。
+- Adapter 必须保持字段级无损转换，禁止 `serde_json::Value`、字符串拼接或默认值吞掉未知
+  字段、错误、identity、generation、sequence、deadline 和 terminal cause。
+- 所有产品、领域和运行时术语统一使用 `Subagent` / `subagent`；外部固定 wire name 仅在
+  最小适配边界保留。
+- Rust 实现继续遵守 UTF-8 安全和 no-panic 约束，不因代码迁仓降低 lint 标准。
+- 新仓库必须拥有完整独立规则、README、license、贡献说明和验证入口，不能依赖使用者阅读
+  `lp-agent/AGENTS.md` 或 `echo-agent/AGENTS.md`。
+
+## 验收标准
+
+1. `echo-agent-sdk` 可从远端单独 clone，在没有相邻 `echo-agent` 目录时解析精确 framework
+   dependency，并通过 protocol、Host 和三语言适用门禁。
+2. `echo-agent` Cargo workspace 不再包含 `echo-sdk-protocol` / `echo-sdk-host`，framework
+   CI 不再安装或执行 SDK 的 Node/Python/Java/nightly合同工具链。
+3. `echo-agent` 中不存在活跃 SDK Host、protocol、contracts、language SDK、SDK generator
+   或 SDK CI 的第二份实现；只允许历史证据和指向新仓库的边界链接。
+4. `cargo metadata` / `cargo tree` 证明 `echo-sdk-protocol` 不依赖任何 echo framework crate，
+   `echo-sdk-host` 单向依赖 protocol 和 `echo_agent`，framework 不反向依赖 SDK。
+5. SDK 的 committed contract 只包含 accepted external surface；完整 Rust public inventory
+   可重算、可比较并生成非阻断报告，但不进入 runtime negotiation digest。
+6. 一个只修改非 external Rust public API 的验证 fixture 不要求修改 committed SDK contract
+   或三语言源码；一个修改 accepted contract 的 fixture 会使 SDK gate 稳定失败。
+7. Host 与三语言客户端只使用 external contract digest、protocol version、required
+   capability 和 feature 完成扩展协商；Cargo.lock/public inventory/revision 差异不会单独
+   造成 extended mode 失败。
+8. 现有标准 ACP、core profile、event ACK/replay/gap、extension reverse invocation、facade
+   operation、取消、恢复、资源关闭和唯一 terminal E2E 在迁移后继续通过。
+9. SDK 正式文档、ADR、示例、生成合同和 release notes 只在新仓库维护；framework、website
+   和 superproject 链接全部解析到新事实源。
+10. SDK-owned Git 历史可从新仓库追溯到原 `echo-agent` commit，且新仓库初始 commit 未被
+    force-push 覆盖。
+11. `lp-agent/.gitmodules` 和项目说明包含第四个 `echo-agent-sdk` submodule；四个 gitlink
+    均指向已推送 commit，独立 checkout 和递归 submodule checkout 均无隐式路径依赖。
+12. `echo-agent`、`echo-agent-sdk`、受影响的 `echo-agent-cli`、`echo-website` 和 superproject
+    分别按所属 `AGENTS.md` 提交；所有适用 formatter、lint、test、contract、integration、
+    example、cross-platform 和文档链接检查零失败。

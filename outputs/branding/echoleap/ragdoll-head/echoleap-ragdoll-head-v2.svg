@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">EchoLeap 布偶猫头像 · 圆脸版</title>
+  <desc id="desc">天蓝底色，短而宽的圆尖耳朵、饱满猫脸、灰色双色毛、倒V白鼻梁、大蓝眼睛和宽短口鼻。</desc>
+  <defs>
+    <linearGradient id="white-fur" x1="512" y1="328" x2="512" y2="803" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF"/><stop offset=".65" stop-color="#FEFEFD"/><stop offset="1" stop-color="#EAF0F2"/></linearGradient>
+    <linearGradient id="left-ear" x1="286" y1="249" x2="356" y2="435" gradientUnits="userSpaceOnUse"><stop stop-color="#76818C"/><stop offset="1" stop-color="#A1ABB1"/></linearGradient>
+    <linearGradient id="right-ear" x1="738" y1="249" x2="668" y2="435" gradientUnits="userSpaceOnUse"><stop stop-color="#76818C"/><stop offset="1" stop-color="#A1ABB1"/></linearGradient>
+    <radialGradient id="left-mask" cx="0" cy="0" r="1" gradientTransform="translate(372 395) rotate(64) scale(240 160)" gradientUnits="userSpaceOnUse"><stop stop-color="#8F9BA3"/><stop offset="1" stop-color="#BAC4C9"/></radialGradient>
+    <radialGradient id="right-mask" cx="0" cy="0" r="1" gradientTransform="translate(652 395) rotate(116) scale(240 160)" gradientUnits="userSpaceOnUse"><stop stop-color="#8F9BA3"/><stop offset="1" stop-color="#BAC4C9"/></radialGradient>
+    <radialGradient id="iris" cx="0" cy="0" r="1" gradientTransform="translate(3 14) rotate(-90) scale(58 45)" gradientUnits="userSpaceOnUse"><stop stop-color="#A9E2FA"/><stop offset=".5" stop-color="#5EA8DA"/><stop offset="1" stop-color="#356FAD"/></radialGradient>
+    <linearGradient id="white-muzzle" x1="512" y1="616" x2="512" y2="705" gradientUnits="userSpaceOnUse"><stop stop-color="white"/><stop offset="1" stop-color="#F0F4F5"/></linearGradient>
+    <clipPath id="left-eye"><path d="M-65-4C-48-42-12-54 22-39C50-27 66-10 61 11C33 43-30 43-65-4Z"/></clipPath>
+    <clipPath id="right-eye"><path d="M65-4C48-42 12-54-22-39C-50-27-66-10-61 11C-33 43 30 43 65-4Z"/></clipPath>
+  </defs>
+  <rect width="1024" height="1024" rx="224" fill="#8CD0F2"/>
+  <g transform="translate(-102.4 -112.6) scale(1.2)">
+    <!-- 缩短、放宽耳朵，耳尖为圆弧。 -->
+    <path d="M275 437C255 399 249 325 266 272C272 253 281 247 296 256C333 277 371 315 394 354L376 435Z" fill="url(#left-ear)"/>
+    <path d="M749 437C769 399 775 325 758 272C752 253 743 247 728 256C691 277 653 315 630 354L648 435Z" fill="url(#right-ear)"/>
+    <path d="M286 283C276 322 282 360 294 388L349 361C332 332 309 305 286 283Z" fill="#D6CBCB"/>
+    <path d="M738 283C748 322 742 360 730 388L675 361C692 332 715 305 738 283Z" fill="#D6CBCB"/>
+    <path d="M288 330Q300 350 311 360M308 327Q320 342 328 355M736 330Q724 350 713 360M716 327Q704 342 696 355" stroke="#F4F6F6" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- 下颌为宽圆曲线，毛束仅用少量弧线鼓出。 -->
+    <path d="M512 329C431 320 353 346 297 394C253 432 227 475 224 524C211 543 209 568 221 589C212 610 221 637 239 652C243 680 270 707 302 725C354 768 429 790 512 792C595 790 670 768 722 725C754 707 781 680 785 652C803 637 812 610 803 589C815 568 813 543 800 524C797 475 771 432 727 394C671 346 593 320 512 329Z" fill="url(#white-fur)"/>
+    <path d="M479 335C418 330 359 355 315 398C272 439 251 483 256 526C261 570 297 609 351 629C390 613 420 583 440 547C460 510 475 466 480 417C484 382 484 352 479 335Z" fill="url(#left-mask)"/>
+    <path d="M545 335C606 330 665 355 709 398C752 439 773 483 768 526C763 570 727 609 673 629C634 613 604 583 584 547C564 510 549 466 544 417C540 382 540 352 545 335Z" fill="url(#right-mask)"/>
+    <path d="M512 340C494 375 482 410 471 448C459 491 440 535 410 571C390 593 369 613 347 625C379 684 439 723 512 729C585 723 645 684 677 625C655 613 634 593 614 571C584 535 565 491 553 448C542 410 530 375 512 340Z" fill="#FFFEFD"/>
+    <!-- 色块边界的细毛不扩展成尖角。 -->
+    <g stroke="#F1F5F5" stroke-width="4" stroke-linecap="round" opacity=".8">
+      <path d="M477 428Q473 447 468 459M460 481Q456 495 449 506M438 527Q430 541 421 550M405 570Q396 581 386 588"/>
+      <path d="M547 428Q551 447 556 459M564 481Q568 495 575 506M586 527Q594 541 603 550M619 570Q628 581 638 588"/>
+    </g>
+
+    <!-- 加宽、张开眼睛，避免狭长上挑的狐狸神态。 -->
+    <g transform="translate(395 521) rotate(3)">
+      <path d="M-65-4C-48-42-12-54 22-39C50-27 66-10 61 11C33 43-30 43-65-4Z" fill="#F2F9FB"/>
+      <g clip-path="url(#left-eye)">
+        <ellipse cy="-3" rx="38" ry="44" fill="url(#iris)"/>
+        <ellipse cy="-5" rx="19" ry="33" fill="#203F5A"/>
+        <ellipse cx="-15" cy="-19" rx="9" ry="11" fill="white"/>
+        <circle cx="15" cy="15" r="4.5" fill="#E8F9FF"/>
+      </g>
+      <path d="M-65-4C-48-42-12-54 22-39C45-30 59-17 62-7" stroke="#647680" stroke-width="5" stroke-linecap="round"/>
+      <path d="M-54 11C-25 35 23 34 52 14" stroke="#94A5AD" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(629 521) rotate(-3)">
+      <path d="M65-4C48-42 12-54-22-39C-50-27-66-10-61 11C-33 43 30 43 65-4Z" fill="#F2F9FB"/>
+      <g clip-path="url(#right-eye)">
+        <ellipse cy="-3" rx="38" ry="44" fill="url(#iris)"/>
+        <ellipse cy="-5" rx="19" ry="33" fill="#203F5A"/>
+        <ellipse cx="-15" cy="-19" rx="9" ry="11" fill="white"/>
+        <circle cx="15" cy="15" r="4.5" fill="#E8F9FF"/>
+      </g>
+      <path d="M65-4C48-42 12-54-22-39C-45-30-59-17-62-7" stroke="#647680" stroke-width="5" stroke-linecap="round"/>
+      <path d="M54 11C25 35-23 34-52 14" stroke="#94A5AD" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- 宽短口鼻、圆润胡须垫。 -->
+    <ellipse cx="474" cy="652" rx="59" ry="37" fill="url(#white-muzzle)"/>
+    <ellipse cx="550" cy="652" rx="59" ry="37" fill="url(#white-muzzle)"/>
+    <path d="M491 618C500 613 524 613 533 618C536 623 530 631 519 636C515 638 509 638 505 636C494 631 488 623 491 618Z" fill="#CD9AA3"/>
+    <path d="M512 636V654M512 654C504 667 490 669 478 664M512 654C520 667 534 669 546 664" stroke="#8C8C91" stroke-width="4" stroke-linecap="round"/>
+    <g fill="#B9C5CA"><circle cx="450" cy="642" r="2"/><circle cx="443" cy="654" r="2"/><circle cx="459" cy="660" r="2"/><circle cx="574" cy="642" r="2"/><circle cx="581" cy="654" r="2"/><circle cx="565" cy="660" r="2"/></g>
+    <g stroke="#93A7B3" stroke-width="3.5" stroke-linecap="round" opacity=".6">
+      <path d="M429 642C369 625 294 624 235 632M427 655C361 651 298 660 249 676M432 669C376 675 324 693 286 712"/>
+      <path d="M595 642C655 625 730 624 789 632M597 655C663 651 726 660 775 676M592 669C648 675 700 693 738 712"/>
+    </g>
+    <g stroke="#DAE4E9" stroke-width="4" stroke-linecap="round">
+      <path d="M251 557Q263 575 280 582M247 587Q262 603 278 608M281 686Q296 699 314 705M365 749Q381 756 395 759"/>
+      <path d="M773 557Q761 575 744 582M777 587Q762 603 746 608M743 686Q728 699 710 705M659 749Q643 756 629 759"/>
+    </g>
+  </g>
+</svg>

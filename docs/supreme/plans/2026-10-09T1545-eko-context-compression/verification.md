@@ -69,3 +69,9 @@ GitHub连接曾使监听命令退出1；重新查询同一run确认状态后继�
 
 原生EKO窗口、真实外部模型、官网部署不属于本次Git远端集成验收。框架其它未闭合semantic findings及全局release/soak结论不由本次结果改写。
 
+
+## 顶层集成结果
+
+[superproject PR18](https://github.com/EchoYue-lp/eko-workspace/pull/18) 已 squash merge 为 eadd2aa86f6674c67124b3218f0d1a01bf254be6，GitHub 签名 verified、tree 132f51ffd3aaaaf7957cc121a2e70dc85fe591b8 与已审候选10d7093相同。合并后再次运行最终对账 exit0，三个gitlink、main SHA/tree/签名、PR状态、各完整main CI与Plan binding全部匹配；superproject自身没有配置CI workflow，未以空检查冒充测试。
+
+本地完整日志和测试runtime均已归档，任务分支/工作树按仓库规则回收；原主checkout、SDK与其它线程工作树保留。

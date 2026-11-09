@@ -1,0 +1,52 @@
+{
+  "at": "2026-10-28T11:40:51.768059+00:00",
+  "package": "sdk-candidates",
+  "originalDirectory": "echo-agent-sdk/docs/engineering/handoffs/2026-10-28-sdk-maintenance",
+  "archive": "sdk-candidates.tar.gz",
+  "archive_sha256": "0d228aa85272cd0faff212e86ce1a9861eea5fb44c35bd084efd455e3505a42e",
+  "archive_bytes": 43850,
+  "file_count": 6,
+  "logical_bytes": 173869,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5590,
+      "sha256": "c980a171f910640efb6e41070890273ba72dde9816eb6e9f448c26e53d77db1b",
+      "mode": 420
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 69581,
+      "sha256": "16267baf69a298e4591db00de75f3dfbb854145df95d3d4be226f66e67ba9c6e",
+      "mode": 420
+    },
+    {
+      "path": "no-compat-inventory.pending.md",
+      "bytes": 17188,
+      "sha256": "2f81191d889905a966390fa74cb72f1fdb4ffd07ef17386bc76103a1341511e8",
+      "mode": 420
+    },
+    {
+      "path": "remaining-commands.md",
+      "bytes": 3369,
+      "sha256": "35d8dacb0efacf7be3516a2fe112f23102314bc58c13ce9a305c6d84211ada97",
+      "mode": 420
+    },
+    {
+      "path": "review.md",
+      "bytes": 1292,
+      "sha256": "72467199ddca885941bf8e9452d341d25e2e6857bfd514bb3b05d8c504d7fe1b",
+      "mode": 420
+    },
+    {
+      "path": "rich-message-overrides.pending.patch",
+      "bytes": 76849,
+      "sha256": "d20d9f3ebab5f68f3083bcc98181a4ed3ae6d23523d521ef2510b5adcf2139db",
+      "mode": 420
+    }
+  ],
+  "actualScratchExtractionAndFullBytesModesHashMatch": true,
+  "productionAdoption": false,
+  "goalStatus": "paused",
+  "qualification": "冻结候选/提案工程保全，保留原有通过/未审/未执行边界；不晋升实际产品资格"
+}

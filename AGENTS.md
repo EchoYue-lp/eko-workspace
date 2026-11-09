@@ -1,16 +1,83 @@
 # AGENTS.md
 
+## 2026-11-09 CLI consumer95b 的最终精确绑定
+
+用户对本次具体问题直接回答：“同意，仅本次精确绑定（推荐）”。原问题与回答保存在主根 `.echo-semantic/local/dependency-exact-binding-20261109-r02/authorization.json`，SHA256 `3e394dd4404cb529b1ae8a4f461eda57696fac65b720b985d2007d94a66f18f3`。
+
+本次仅将 CLI 原五项完整风险身份绑定到 consumer `95b7d02ad130a5bbb886183e9c365d780b36ad35a7f9256163375d42cc744a97`（283输入）及原锁 `48eece730daaa9eff539e416861454441c23c54abf02bacaa2c3bdb375bd6329`（769包）。相对554仅六Rust文件变化：生产增量仅SSH POSIX包装保存、传递并关闭独立stdin fd；其余为真实Git/cwd夹具、精确cfg及None后代资源负控。所有依赖/features、五项完整name/version/source/checksum/advisory/kind、原checker/collector/八控制和扫描设置均保持。policy仅机械更新consumer，SHA256 `d65ffe6697a3f799cb7ff4f0d762239d639a27ac3906b7ed3ba965d79b264f11`。
+
+当前源码原完整Rust/GUI八项自然0、两版Node前端验证通过；两次最新default fresh官方scanner各自然1、零漏洞、仅原五项warning，候选严格比较各0。旧两次fetch失败原件与UNKNOWN保留；网络恢复使用当前官方DNS默认直连，未增加ignore、no-fetch、过滤、强制协议或全局网络配置。正式采用后仍须原八控制与actual-lock/canonical-origin两项fresh正式精确门禁实际通过；候选比较不冒作正式gate。
+
+原glib0.18.5 unsound及proc-macro-error1.0.4、zvariant5.13.1、zbus_names4.3.4、zvariant_derive5.14.0 unmaintained未修复。本次不是零warning审计，不接受未来源码、锁、版本、来源或新风险，不向Framework/SDK继承；App、GUI/手机、真实provider与精确main CI独立验收。下方554和旧授权/失败保留其原历史事实。
+
+正式采用后原8项控制实际自然0；恢复后的actual-lock和canonical-origin两项default fresh正式gate/caller各自然0，两个原官方scanner各自然1、0漏洞、精确原5完整warning、769包、ignore=[]、noFetch=false。DB为 `7a40350e1b8ba5b656d909f88222a8059a83d88d`／1422条，两份独立原JSON均10795B／SHA256 `c89fea7b249432cbb925ea45458a3a12ad16c31a9634c22439b1b5e00dd301d9`。原8控制沿首次采用后同切点实际0原件保留，未重复；首次正式POST fetch失败未被追改，成功后继单独记录。完整实际执行为主根 `.echo-semantic/local/dependency-exact-binding-20261109-r02/formal-cli-r02/execution.json`，SHA256 `4fb2e3c90fc8b80accb467fd03190dd5a113c28344c4fef0eabdd5605dd3132f`；handoff SHA256 `e218bde7eba2559cf3dfa0615ba4d414be3f1f556c87c022ed91cf86ed3b6dc2`。283源码、正式d65 policy及工具无漂移，临时透明连接与scanners/readers均已退出；原风险未修复，本事实不替代App/手机和精确main CI。
+
+## 2026-11-09 CLI consumer554 的本次精确绑定
+
+用户对本次具体问题直接回答：“同意，仅本次精确绑定（推荐）”。原问题与回答保存在主根 `.echo-semantic/local/dependency-exact-binding-20261109-r01/authorization.json`，SHA256 `b940901e6c755ea39725be1ad184c6713aa6c9c388f9c29e8d1b4d2ffd305733`。
+
+本次仅将 CLI 原五项完整风险身份绑定到 consumer `55413633c252b53cc79116b374a03d36fcdcfc3ec00dd093d159c91809e6eac4`（283 输入）和原锁 `48eece730daaa9eff539e416861454441c23c54abf02bacaa2c3bdb375bd6329`（769 包）。consumer 仅因微信诊断源码变化，原五项 name/version/source/checksum/advisory/kind、collector、checker、原8控制及扫描策略均不变；不增加 ignore 或过滤。policy 仅更新 consumer 字段，采用后原8控制和 actual-lock／canonical-origin 默认 fresh 正式门禁仍须实际通过，分别记录 scanner 与 gate 出口。
+
+原 glib0.18.5 unsound，以及 proc-macro-error1.0.4、zvariant5.13.1、zbus_names4.3.4、zvariant_derive5.14.0 unmaintained 风险仍未修复；本次不是零warning审计，不接受未来任何新源码、锁、版本、来源或风险，不向其它仓继承。GUI／手机、App和精确 main CI继续单独验收；整体提交合并仍按本次已授权整合目标与原门禁执行。下方旧43ed绑定和失败保留历史原义。
+
+批准后的原8项控制已实际自然0；两个原正式默认 fresh gate/caller均自然0，scanner各自然1、0漏洞、恰原5项完整warning、769包、ignore=[]、noFetch=false。数据库为 `7a40350e1b8ba5b656d909f88222a8059a83d88d`／1422条；两份独立原JSON均10795B／SHA256 `c89fea7b249432cbb925ea45458a3a12ad16c31a9634c22439b1b5e00dd301d9`。完整执行位于主根 `.echo-semantic/local/dependency-exact-binding-20261109-r01/formal-cli-r01/execution.json`，SHA256 `4490c6d7fd133485f256a24cc26c745681f8ebb23005343c92825cce12f68f4e`。283输入、policy和工具无漂移，临时转发与scanner均已停止；原五风险未修复，不以风险gate通过代替App、手机或精确main CI。
+
+## 2026-11-09 SDK 新锁的独立精确裁决
+
+用户对列出精确 pin、锁和新增身份的本次问题直接回答：“同意，仅本次 SDK 精确绑定（推荐）”。原问题与回答保存在主根 `.echo-semantic/local/dependency-exact-binding-20261109-r01/authorization.json`，SHA256 `b940901e6c755ea39725be1ad184c6713aa6c9c388f9c29e8d1b4d2ffd305733`。
+
+本次仅接受 Framework main `3413d64dae23353c6d02c546ac374deded855827` 和 SDK 锁 `95e3caabaf5e72fc71ad1d6b79964eae1883b297f0006667e39c4c3a6eb8c5e5`（654 包）：原49组107个 name/version/source 身份全部保留，仅 quick-xml 组新增 `0.42.0`／`registry+https://github.com/rust-lang/crates.io-index`，现49组108身份。唯一机器权威为SDK仓 `echo-agent-sdk/.cargo/cargo-deny-duplicate-baseline.json`；cargo-deny0.20.2、原四策略命令、严格parser及原四项 audit ignore不变，不新增 allow/ignore。
+
+批准前 actual／canonical 默认 fresh audit均自然0、0漏洞及0额外warning（原4ignore保持），原四策略 deny scanner自然0；旧正式基线因锁变化拒绝的gate1与候选同raw校验0分别保留。批准后须执行原14控制并对完整原raw／receipt正式严格复核，不把候选结果改写成旧正式成功。本次不接受未来 pin、锁、身份或风险，不继承 Framework／CLI 裁决，不豁免完整 SDK、Host、三语、平台或精确 main CI。下方旧锁、旧来源和失败仍按原切点解释。
+
+正式采用后的原14项控制已实际自然0；原未改严格parser对完整原scanner0的raw／receipt执行正式复核自然0，`authorization=ACCEPTED_BY_HUMAN`、`matches_exact_baseline=true`、49组108身份。原raw为695282B／SHA256 `14a615b61b4518ea4b84315bd6be2e1823f2e82e527bc5d091f8145048575616`，未重跑scanner，旧正式gate1保留。采用后执行位于主根 `.echo-semantic/local/dependency-exact-binding-20261109-r01/formal-sdk-r01/execution.json`，SHA256 `5b9ad60aeda348f539f4144400e4b11b6cb66b20eae2a77021ec8342d67c1576`。本次actual／canonical fresh audit各自然0、原4ignore下0漏洞与0额外warning的原件为主根 `.echo-semantic/local/integrated-acceptance-20261108-r01/sdk-main-validation-r01/dependency-candidate-3413-r03/execution.json`（SHA256 `8fba40c1516e36ebafdde6e1ebd0fa6f8b17b57b9918bb5d25758bbb9aeb0e89`）。复核只签依赖输入范围，不冒完整SDK工作源无变化、Host／三语或精确main CI完成。
+
+## 2026-11-09 本次整合交付范围
+
+用户当前目标明确要求框架、应用、SDK、官网和主工程的既有开发成果全部合入各自 `main`，交付时仅保留主分支，并清理多余构建产物、旧制品、备份和日志。用户已澄清 learning 指 `echo-agent/echo-agent-learning`，随框架交付，不是顶层被忽略的样例目录。
+
+本次范围包含经功能核对的历史任务分支和 Exa 移植，覆盖旧迭代“保留 baseline 分支”或“Exa 不在合并范围”的限定；固定历史 tag、必要来源与恢复证据继续保留。仍按任务分支开发、适用本地门禁、PR squash 合入 main、精确 main CI 的原流程执行；子仓提交推送后才更新主工程指针。确认旧分支功能已覆盖且远端 tip 未变化后再清理，不能以删分支替代功能整合。
+
+此范围不扩张任何精确依赖风险接受，不覆盖原数据或用户正在运行的 App，不授权自动 GUI 操作。SDK 升级须独立验收，GUI/真实 Provider/手机收发资格与源码、构建及 main CI 分别记录。
+
+## 当前 GUI 产品名称：Eclip
+
+用户于 2026-11-06 明确纠正：GUI 产品名称为 **Eclip**。对外界面、弹窗、产品说明、默认助手身份和应用 HTTP User-Agent 均使用 Eclip；后文 EKO 仅为历史产品称呼，既有规则仍约束同一应用。`echo-agent-cli`、`EkoConfig`、`EKO_*` 环境变量、`.eko` 数据目录和既有 bundle identifier 是技术标识，不因品牌修正而另建数据或自动迁移。通用 `echo-agent` 框架不硬编码 Eclip 品牌，产品身份由应用注入。
+
 本文件是 AI agent 在本仓库工作时的**最高优先级约束**(优先级高于 agent 默认行为和任何技能)。请严格遵守。
 
 `echo-agent/AGENTS.md`、`echo-agent-sdk/AGENTS.md`、`echo-agent-cli/AGENTS.md` 各自承载独立的提交门禁与仓库级规范(供独立检出使用)。修改本文件中与子仓库相关的规范时,必须同步更新对应子仓库的 AGENTS.md,防止两边漂移。
 
 ---
 
+## 2026-11-08 CLI 源码的本次精确绑定
+
+用户直接回答本次具体问题：“同意，仅本次精确绑定（推荐）”。原问题、原回答及范围保存在主根 `.echo-semantic/local/dependency-exact-binding-20261108-r01/authorization.json`，SHA256 `ad2267dc75aaec224777c4133a00c1c54277906fc6f0152f1a31b9486c24bae1`。
+
+本次仅将CLI原五项完整风险身份绑定到已验证源码提交 `efbf200c0d2ff9c4ff20ba567e2660fa0200e248` 的consumer `43ed071e6471d4ab627520a74843fdd8c3524a023b30c85205270176257c3143`（283个输入），锁仍为 `48eece730daaa9eff539e416861454441c23c54abf02bacaa2c3bdb375bd6329`（769包）。policy只变consumer字段，collector、checker、原五项name/version/source/checksum/advisory/kind和原8项控制保持；采用后仍须原actual-lock及canonical-origin默认fresh正式门禁实际通过，并分别保留scanner与gate出口。
+
+上述原8项控制及两项默认fresh正式门禁已实际通过：每个scanner自然1、精确gate／caller自然0，0漏洞、原5项warning、769包，noFetch=false、无过滤。完整回执为主根 `.echo-semantic/local/dependency-exact-binding-20261108-r01/fresh-formal-r08/execution.json`（SHA256 `d37d2107d27c33064242880ffebdfb63b2c36054ff0969b0b829f1611d42820b`）。早先网络失败与受控中断仍保留，不追改为自然成功；临时进程连接转发已停止，未关闭TLS、fetch或yanked检查，未修改系统网络配置。
+
+本节仅更新下方11月5日CLI consumer42a的当前时态，不改历史授权或失败，也不向Framework/SDK继承。原五项风险仍未修复，不是零warning审计；不预授未来任何新源码、锁、版本、来源或风险。GUI/手机、完整工程与main CI继续单独验收，推送、合并及发布不由此次风险答复授权。对应CLI独立AGENTS同步维护。
+
+## 2026-11-05 两仓新锁的用户精确裁决（历史切点）
+
+用户在当前协调会话直接回答：“同意本次 Framework 8fb62e 与 CLI 48eece 新锁的精确绑定，不自动接受后续新风险。”原文回执为主根 `.echo-semantic/local/dependency-exact-binding-20261105-r01/authorization.json`，SHA256 `a2e324628e7ad1c11dc737405a48cb46a36e8333f109e15f66b4836810815a62`。本节更新下方历史绑定的当前时态，不改旧授权和失败事实。
+
+- Framework 仅接受锁 `8fb62e249fc8fa3114a51b85277f201a98bb190572a80293a91555d8a519e928`（677包）。原49组107个name/version/source身份完整保留，仅quick-xml组新增 `0.42.0`／`registry+https://github.com/rust-lang/crates.io-index`，现49组108身份；唯一机器权威仍为该仓 `.cargo/cargo-deny-duplicate-baseline.json`。原deny策略、cargo-deny 0.20.2、完整四类命令和严格parser不变，所有其它变化继续阻断，不增加ignore/allow。
+- CLI 仅接受锁 `48eece730daaa9eff539e416861454441c23c54abf02bacaa2c3bdb375bd6329`（769包），consumer仍为 `42a1dd0dd843ee8629ff12dc20d238dc9356c7b35d29e4bd3b353c0b72d53f42`。该仓policy只更新lock字段；原五项完整风险身份、collector和checker不变，原8控制只机械更新包数量及对应负控。官方scanner真实出口与精确gate分别记录，仍须原actual-lock及canonical-origin两gate实际通过。
+
+这不是风险修复或零warning审计，不预授未来锁、版本、来源、consumer或新风险，不向SDK继承；不授权GUI、提交、推送、合并或发布。局部媒体、完整工程、App及main CI继续分别验收。对应Framework及CLI独立AGENTS已同步本裁决。
+
 ## 项目简介(冷启动免重新读)
 
 `eko-workspace` 是 EKO 的顶层 Git superproject,通过 submodule 统一管理四个**互相独立的 git 子仓库**,但不是 monorepo。工作根目录为 `/Users/ls/MyWork/code/ylp_agent_learn/lp-agent`。
 
 技术栈总览:Rust 后端(`echo-agent` 框架 + `echo-agent-cli` 应用)+ React/TypeScript 前端 + Tauri 桌面壳。
+
+### 当前迭代的开发目录与并行边界
+
+用户已指定唯一开发目录 `/Users/ls/MyWork/code/ylp_agent_learn/lp-agent`，四个子仓仍在各自目录内独立维护。源码、工程文档、构建产物、验证回执与恢复材料必须位于该主目录内，不新建外部 worktree；已有外部目录只作冻结迁移来源，成果与必要证据归档回主目录后按依赖和恢复校验结果清理。同一主目录可以多会话并行，但必须按文件明确单一写入责任；验证某一快照期间冻结它及所依赖的源码。
 
 ---
 
@@ -28,11 +95,12 @@
 
 - **数据持久化:echo-agent-cli(EKO)不需要 SQLite。** 本地个人 cowork 场景,对话历史/记忆用文件或内存实现即可。**禁止**给 echo-agent-cli 引入或保留 SQLite 依赖(`SqliteStore` / `SqliteConversationStore` / echo-state 的 `sqlite` feature 在 CLI 侧不启用);也**禁止**把"SQLite schema 变更/迁移/前端契约"当作成本或风险来反对改动——本项目尚处开发阶段,无迁移、无兼容负担(见"代码清理"节,过时代码/旧 schema 可直接删)。echo-state 的 `sqlite` feature 仅供框架其它复用方,**echo-agent-cli 不启用**。
 
-- **多模式核心能力对等:TUI 与 GUI 是功能完全一样的 Agent 完全体,只是交互方式不同。** 参考标杆:Claude Code 是纯 TUI 产品,广受全球开发者欢迎——证明 TUI 能成为主力 Agent 交互形态。因此 EKO 的 TUI、GUI(以及 CLI/channel)必须对复杂任务/plan/subagent/任务运行时/工具/HITL/记忆/附件等**核心 Agent 能力保持对等**。**禁止以"某模式不需要"为由拒绝给该模式接入核心能力。** 代码里若出现"X 模式 doesn't use Y"之类的注释/None 传参,那是**待补的缺口,不是产品定位**——不得把它当成"该模式刻意不要"来解读、更不得当成反对接入的理由。各模式共享同一套核心能力(如阶段 2 的 `drive_chat` 统一驱动),差异只在渲染/事件层。
-- **纯界面布局能力不要求跨 surface 复制。** 只有依赖某种界面形态才成立的布局、窗口编排、侧栏或多面板交互,可以由对应 surface 独有;这类例外不得改变底层 Agent 能力、状态权威或其它 surface 已有行为。`Side Conversation` 明确定义为 GUI 的侧栏/并行面板能力:只由 GUI/Tauri 暴露创建、树形导航和支线管理入口,TUI、CLI/JSONL 与 channel 不新增 Side Conversation 专用命令或 wire contract,并继续保留各自已有的普通 conversation、Subagent 和 `/fork` 等行为。不得把这条例外扩展成任意产品能力的 surface 缺失理由。
+- **当前产品目标是 GUI 主入口，继续保留 IM 收发和 cron 后台触发。** 用户已批准从 EKO 退役独立 TUI、REPL、CLI/JSONL 产品入口，不再扩张待退役入口的能力对等目标。GUI 内置终端、Agent shell、桌面最小启动参数、构建命令与独立 SDK Host stdio 不属于该退役范围。先让 GUI/app-core 接管 IM、cron、共享启动/退出和恢复 owner，再删除旧入口；不能按 `src/cli` 目录名连带删除共享能力。GUI、IM、cron 继续保留 Task/Subagent、工具、HITL、记忆、附件与共享恢复。
+- **能力目标与当前实现分别验收。** 固定分支和 `pre-retirement-2026-10-24` tag 保留完整旧能力；退役设计或文案不代表实现已经删除。A2A/LSP 是具名批准的跨仓退役，仍须先解除消费者依赖并验证保留契约；不得据此删除其它合理框架公开 API。外部 echo-semantic 工具合同修复继续排除，原校验阻塞保留。
+- **纯界面布局能力不要求跨 surface 复制。** `Side Conversation` 仍为 GUI 的侧栏/并行面板能力，提供创建、树形导航和支线管理；IM 的普通 conversation、Subagent 和既有 fork 行为继续保留，不新增 Side Conversation 专用 channel wire contract。现存终端入口的普通对话行为随入口退役核对，不能反向成为长期保留旧入口的理由，也不能连带删除底层共享能力。
 - **Agent 协作由 AI 自动组织。** 跨会话通信、主/子 Subagent 消息与协作组编排由 Agent 使用既有工具和运行时完成。GUI 不提供要求用户手动选地址、发送协作消息、维护 Agent 组或管理投递收据的页面/控制台。用户参与并行探索使用 Sidechat 或 Forkchat；既有对话、任务/Subagent 结果呈现及 HITL 保持其核心能力。
 
-> 历史教训:agent 看到 `main.rs` 里 `task_runtime_store — TUI doesn't use the task runtime`(传 None)+ TUI 固定 Chat 模式,就推断"TUI 是轻量交互终端、刻意不接 TaskRuntime",并据此建议取消 TUI 的 complex 接入。这是把**当前的缺口**误读成**产品定位**。用户澄清:TUI 目标是与 GUI 功能对等的完全体(对标 Claude Code)。定位已固化于此,不得再把"TUI 不需要 X"当理由。
+> 历史教训:不得把某入口当前未接入 TaskRuntime 误读成底层能力不需要。后继用户已明确批准退役独立终端入口；当前必须验证的是共享能力由 GUI/IM/cron 接管完整，不能沿用旧入口长期扩张目标来阻止退役。
 
 > 历史教训:agent 多次把"动 SQLite schema/迁移"当作反对 DomainProfile 合并等改动的理由,又在清理 SQLite 死字段时把 `SqliteStore`/`SqliteConversationStore` 当"活代码保留"——都是没记住"echo-agent-cli 不需要 SQLite"这一定位,退回到线上服务的迁移思维。定位已固化于此,不得再犯。
 
@@ -151,6 +219,8 @@
 
 ## 代码、文档与示例同步(强制)
 
+**文档语言统一使用中文。** 后续新增或修改的设计、计划、说明、验收清单和交付报告均使用中文，不再为形式新增英文副本。代码、命令、API/协议标识及原始日志保留原文；历史证据不因翻译而改写。本规则同样适用于四个子仓库。
+
 ### 文档归属边界(强制)
 
 1. **各子仓库承载各自正式、长期维护的框架/SDK/产品文档。** 通用框架概念、公共 API 和框架架构文档归 `echo-agent/`；SDK 合同、语言 API、Host adapter 与 SDK ADR 归 `echo-agent-sdk/`；EKO 产品架构、运行时、交互与应用配置文档归 `echo-agent-cli/`。正式文档必须放在其所属子仓库内，并随该子仓库代码独立提交、维护和发布。
@@ -255,7 +325,7 @@ AI 编程常把一个任务拆成很多细粒度提交,逐 commit 跑全量门�
 - **格式化(强制,CI 依赖)** → `cargo fmt --all` 跑过**且** `cargo fmt --all -- --check` 退出码 0(零 diff)。CI 会跑 fmt 检查,**fmt 不干净的提交会让 CI 红**——本地必须先 fmt 再提交,不能依赖 CI 兜底。前端同理(`prettier --check` / 项目脚本)。
 - 只有"全部通过"这一个状态可以提交;不存在"大部分通过就先提交"。
 
-echo-agent-sdk 与 echo-agent 的依赖检查分别按各自独立 AGENTS.md 中经用户接受、绑定各自精确 Cargo.lock 版本/source 组基线的 cargo-deny `warning[duplicate]` 合同执行；framework 本次仅接受锁 SHA-256 `7607c1458036adc04e64858215e21d45f7f8ae1ffa992ad82fba97e7a72aa528` 的49组，并非从 SDK 自动继承。两仓均保留官方原始输出及自然退出码，其它类别、新组/少组、版本或来源变化仍阻断。echo-agent-cli 另按其独立 AGENTS.md、`.cargo/accepted-dependency-risks.json` 和 `docs/supreme/specs/cancellation-observation-consumer/dependency-risk-decision.md` 中真实用户已接受的当前交付精六项 lock/consumer 合同执行：锁 SHA-256 `d2e7b7ebc035d35940f20fd9a95628a37ddf13bba2c1d5c828cdac142ae41680`，原 glib 0.18.5、proc-macro-error 1.0.4、bincode 1.3.3 继续冻结；官方 scanner 自然退出 1、零漏洞和恰六项 warning 原样保留，由独立精确风险 gate 退出 0 表示符合已接受合同，不是风险修复或零 warning 审计。新增 warning、漏洞、身份或输入漂移仍阻断，不自动续期或新增 ignore。三仓例外互不继承，编译警告、其它工程与提交/分支门禁保持不变。
+echo-agent-sdk 与 echo-agent 的依赖检查分别按各自独立 AGENTS.md 中经用户接受、绑定各自精确 Cargo.lock 版本/source 组基线的 cargo-deny `warning[duplicate]` 合同执行；framework 既有人类裁决接受精确49组/107个crate-version-source身份，历史锁 SHA-256 `7607c1458036adc04e64858215e21d45f7f8ae1ffa992ad82fba97e7a72aa528`；2026-10-28 Root仅授权已批准A2A/LSP退役的本次c48→1442机械绑定维护，当前676包锁为 `1442bf309239cca9354070fee0d6278bb53cb8aeee0cafa436e97c64a93324af`。原官方scanner自然0、同49组/107身份逐项不变，原未改正式caller复用同一raw/receipt已实际自然0、原policy14项控制自然0；旧caller1/网络1保原。此维护不是新的用户风险接受，不新增ignore/allow，不预授未来锁/组/版本/来源，不扩SDK或CLI。唯一当前机器权威仍为framework独立精确baseline，不从SDK自动继承。两仓均保留官方原始输出及自然退出码，其它类别、新组/少组、版本或来源变化仍阻断。echo-agent-cli 另按其独立 AGENTS.md、`.cargo/accepted-dependency-risks.json` 和 `docs/supreme/specs/cancellation-observation-consumer/dependency-risk-decision.md` 中真实用户已接受的当前交付精六项 lock/consumer 合同执行：锁 SHA-256 `d2e7b7ebc035d35940f20fd9a95628a37ddf13bba2c1d5c828cdac142ae41680`，原 glib 0.18.5、proc-macro-error 1.0.4、bincode 1.3.3 继续冻结；官方 scanner 自然退出 1、零漏洞和恰六项 warning 原样保留，由独立精确风险 gate 退出 0 表示符合已接受合同，不是风险修复或零 warning 审计。新增 warning、漏洞、身份或输入漂移仍阻断，不自动续期或新增 ignore。三仓例外互不继承，编译警告、其它工程与提交/分支门禁保持不变。
 
 #### 1. 迭代快检(开发过程中)
 
@@ -294,8 +364,11 @@ cargo clippy --workspace --lib --bins --all-features --locked -- \
   -D clippy::panic \
   -D clippy::unreachable
 cargo test --workspace --all-targets --all-features --locked
+cargo test -p echo-agent-learning --doc --all-features --locked
 cargo check --workspace --lib --no-default-features --locked
 ```
+
+`--all-targets` 不执行 doctest。上面的独立命令会编译 `echo-agent-learning` 的 `no_run` 入门片段，不调用真实模型；CI 的 learning 分组执行默认 feature 的 `--doc --locked`，不替代本地全 feature 的合并门禁。
 
 `echo-agent-cli` 在任务分支合并到 main 前执行:
 
@@ -323,7 +396,7 @@ cargo check -p echo-agent-app-core --no-default-features --locked
 
 ```bash
 cd echo-agent
-for feature in acp a2a mcp lsp sqlite telemetry topology subagent web media \
+for feature in acp mcp sqlite telemetry topology subagent web media \
   data statistics channels git database rag chart; do
   cargo check -p echo_agent --no-default-features --features "$feature" --locked || exit 1
 done
@@ -402,24 +475,12 @@ CI 精简不降低本地提交门禁;任何新增跨平台或依赖策略风险�
   内将其作为明确 residual 记录，待整个重构完成后统一重新测量和优化。任何阈值调整都
   必须是独立、可审阅的后续决策，不能混入合流提交。
 
-### 按磁盘压力 cargo clean,保留增量编译缓存
+### 构建并发与批次后 cargo clean
 
-**背景**:Rust 编译产物（`target/` 目录）极其占空间。本项目两个 Rust 子仓库多次编译及 feature 矩阵验证，累计可能占用大几十 GB。本机磁盘空间有限（约 460GB），不清理会很快耗尽。
-
-**规则:不再每次任务结束强制 `cargo clean`。** 默认保留 `target/` 增量缓存,避免下一任务从零编译。提交前先按需检查:
-
-```bash
-df -h .
-du -sh echo-agent/target echo-agent-cli/target 2>/dev/null
-```
-
-满足任一条件时再清理:
-
-- 可用磁盘空间低于约 50 GiB。
-- 两个 `target/` 合计超过约 60 GiB。
-- 构建缓存损坏、工具链大版本切换,或用户明确要求清理。
-
-清理时只清理造成压力的 workspace;只有两个仓库都明显膨胀时才分别执行 `cargo clean`。`cargo clean` 必须放在全部验证之后,清理后不再重复编译验证。
+- 每个 Cargo 编译/测试批次结束后及时 `cargo clean` 准确自有 target，替代默认保留增量缓存的历史策略。相邻且针对同一冻结快照的验证命令可组成一批；先将原始日志、真实退出状态和必要制品保存在 target 外，再确认没有活动 cargo/rustc/测试子进程/Host 或其它读取者，最后清理并记录回执。
+- 同机最多五条 focused Rust 批次，jobs 不超过 5，dev/test debuginfo 关闭；完整 Rust/GUI/语言矩阵和正式性能测量按协调窗口串行。各批次使用位于唯一主目录内的独立 `CARGO_TARGET_DIR`，禁止清理其它会话或 primary 的缓存。
+- 批次前后记录 `df`/`du`。可用空间低于 5 GiB 时停止新构建，优先清理已确认无使用者的自有可重建缓存；清理失败必须明确报告，不能声称已释放。
+- 未运行 Cargo 的文档/只读工作不为形式执行清理。工作树、分支、未提交/未跟踪源码、stash、保留 tag 和证据原件按独立维护流程处理，不能借 `cargo clean` 删除。
 
 ---
 
@@ -442,6 +503,8 @@ du -sh echo-agent/target echo-agent-cli/target 2>/dev/null
 ## Worktree 并行开发与合并规范
 
 **背景**：本项目使用 git worktree 在 `echo-agent/.worktrees/` 和 `echo-agent-cli/.worktrees/` 下创建隔离工作区，实现多 feature 并行开发。worktree 模式高效但也有**多个容易踩的坑**——以下规则是实战中沉淀的，必须遵守。
+
+本次用户已收紧为唯一主目录开发：本节保留既有工作树的维护、恢复与交付约束，不授予创建新外部工作树的权限。新会话复用主目录和分配的文件写权，不自动 checkout、合并或清理其它会话的工作。
 
 ### 1. Cargo.toml 路径：合并前必须改回相对路径
 
@@ -534,3 +597,62 @@ rm -f .worktrees/fix/Echoyue/echo-agent  # 删除临时 symlink
 - Rust crate 名用下划线:`echo_agent`(不是 `echo-agent`),`cargo check -p echo_agent`。
 - 代码风格:与周围代码一致(命名、注释密度、惯用法)。注释和 commit message 可用中文。
 - 用户指令优先级 > 本文件 > 技能 > 默认行为。当用户在对话中给出与本文件冲突的具体指令时,遵循用户当次指令。
+
+## 2026-10-27 本轮 CLI 六项依赖风险的用户复评
+
+用户在新协调会话明确批准“继续保留原六个依赖，完成本次修复和验证”。本轮CLI实际锁为`3fb8955b56e86eb4bef2454d3328b6ef8eb7f36d7663806387f3b990244e7ed6`（856包），运行隔离/Goal边界本次GREEN consumer为`d38f9a06ca1df7f042295d579bf8144ab3a741a92b6b5bd99fb104941c58ecd9`（321输入），机器policy SHA为`97c2fbe65910328dcc8ba83e5e8ae09d19ea28ded3f4bb8df3a2f0cd2fb34225`；唯一机器身份与中文用户裁决仍看`echo-agent-cli/.cargo/accepted-dependency-risks.json`和原`dependency-risk-decision.md`本日后继。旧b0完整消费源未复原已明确告知，本次直接按当前完整来源复评，不伪称旧基准小增量已证明；原六完整name/version/source/checksum/advisory/kind不变。
+
+这替代本文件CLI旧d2e7及其它历史锁/consumer的当前时态；Framework49组和SDK独立例外不继承本项。scanner自然1与精确gate0分别保原件，原六测试和actual-lock/canonical-origin两原门禁实际通过后才有本切片风险资格；本轮后继源变化需复核暴露面、冻结并跑精确gate，锁/身份/范围变化重新裁决，不扩大以后迭代风险接受。Rust/前端/文档/mainCI/原生门禁不变。对应CLI AGENTS已同文义同步。
+
+## 2026-10-29 F15当前CLI五项严格子集的候选绑定
+
+本节只覆盖CLI旧3fb/d38f和较早7659候选的当前绑定时态，原人类“继续保留原六个依赖，完成本次修复和验证”的原话及失败保留，不称用户新批准五项。bincode1.3.3因具名终端入口/syntect闭包退役离开当前锁；剩余五项完整name/version/source/checksum/advisory/kind是原接受六项的严格子集，不接受新风险或以后自动续期。Framework/SDK独立合同不继承此项。
+
+本候选只绑定CLI锁SHA256`399509eeb951c87d407ffd949c60ac4c5b7dcc460a189e078a25f8287f4e2a4f`（768包）、Root指定GUI3后consumer`d027ea4999a8bcbdc8d6262d4cfdd64f4669565135547e2b0e540e0baa01af9e`（273输入），原freeze SHA为`20dc7b2019f78f2bfd5a3b8fbfcfbbedabab8d34b29e6afb13a8e5a3194fcb96`（292构建来源＋14元数据），机器身份仍看CLI `.cargo/accepted-dependency-risks.json`。原human来源、完整321→273复查、此前两次test-only增量以及本次GUI3生产差异均见原风险决策本日后继和ADR0062。6a17→d027实际删除两处no-native成功早退，统一原publication校验与错误传播；源码复查没有新增依赖/native桥或原五风险完整身份，但它是production语义收紧，不能沿旧6a票直接续期。当前实际重算两读并精确绑定d027；后继非Rust文档索引不改变collector的判断也须用两读事实，不给再后来源码签票。正式采用和fresh actual/canonical门禁仍待Root＋唯一writer正常处理，GUI行为/source票不是风险gate。
+
+checker要求当前固定五项完整warning集合，4/6/少项/重复/字段/settings/漏洞/yanked/扫描错误都阻断；原六方法保留并有缺warning和settings反控，scanner命令/URL/fetch/yanked/ignore不改。候选控制和source复评不代表正式actual/canonical门禁通过；原官方scanner自然1与最终精确gate结果继续分列。正式采用仅由唯一owner在reader安全点正常预检，必要Rust验证结束且source稳定后Root另排两原gate。任何source/lock/consumer漂移须具体复核，任何新风险/身份/范围扩大交Root，不自行续期。其它编译、fmt、文档、native、mainCI和发布门禁不变。
+
+
+### 2026-10-29 当前绑定的真实门禁结果
+
+上述d027/399509五项严格子集已由唯一CLI writer正式采用。原actual-lock和canonical-origin两次调用均保持默认fresh fetch、完整官方输出与自然scanner退出1；独立精确风险gate实际各退出0。两报告均为0漏洞、4项unmaintained及1项unsound，五完整身份与原接受集严格相等，数据库报告commit为`40f5be6fb12ed93fc591bf4ab23b7d793b3f2239`、1381条；Root已对原raw、原caller出口和当前输入逐项复核。原DB六份未跟踪RUSTSEC-0000草稿的存在已如实保留记录，未修改或忽略它们，未将scanner自然1改称零warning审计。
+
+本段只将上节“候选/待正式采用和fresh gate”的本切点时态更新为已采用、已验证；不新增人类风险接受，不把风险标resolved，不续期未来source/lock/consumer变化。原human原话、全身份与暴露复评、真实失败、原six来源及各仓独立合同继续有效；Rust/文档/原生/全矩阵/SDK来源/mainCI和整体Goal仍分别验收。
+
+### 2026-10-31 CLI 当前 f173 精确绑定的真实门禁结果
+
+本节仅更新 CLI 当前绑定时态，保留原人类“继续保留原六个依赖，完成本次修复和验证（推荐）”、退役后五项严格子集及原失败；不新增风险接受，也不授未来来源自动续期。当前锁 SHA256 `399509eeb951c87d407ffd949c60ac4c5b7dcc460a189e078a25f8287f4e2a4f`（768 包）、原 collector `f17364a7e07685e35b90a40af4b70b5893ec60a300c3796aa058efb418e54aa1`（274 输入）及正式 policy `3144106beb2acb946ba313e0c12df4e378fcee6763c18ac59596a56047817294` 精确绑定，五项完整风险身份不变。原八项控制全部通过；默认 fresh actual-lock/canonical-origin 两次官方 scanner 均自然 1、零漏洞和恰五项已接受 warning，独立精确 gate／caller 各自然 0，DB 报告 `2295466c4e9df26647fd67d8fa1c705ac2fc7f81`／1395 条，原六份未跟踪草稿保持。具体原件与中文决定后继见 CLI 原 decision 及其本日 f173 执行回执。新 source/lock/身份/advisory/漏洞/warning/settings 漂移仍阻断，不增加 ignore、不关闭 fetch，不向 Framework／SDK 继承。本段不代替新决定字节的正常 Source／final、原生、性能、main CI 或完整 Goal 验收。
+
+### 2026-10-31 CLI HookTest 单 cfg(test) 的 525f 精确绑定
+
+本节仅记录 Root 已具体审定的唯一测试源码增量：相对已保存 f173／bc08，原274输入仅既有 extension_control/tests.rs 一项修改、新增删除零，生产三文件及其它输入不变。当前 consumer `525f19abeb161c7b118cee03c2e3bbdcd5344cf9f1bf0911509fb969b215f55a`、锁 `399509eeb951c87d407ffd949c60ac4c5b7dcc460a189e078a25f8287f4e2a4f`／768包、policy `e99f7641ec5fb8fe0eb7b792b73470cfa6eb3a827b207daf79bc79b6590c2ff2` 精确绑定。原八工具控制全部通过，默认 fresh actual-lock／canonical-origin 两次官方 scanner 自然1、零漏洞、恰五项原已接受 warning，独立精确 gate／caller 各自然0；DB `2295466c4e9df26647fd67d8fa1c705ac2fc7f81`／1395条与原六draft保护均有真实回执。原人类六项来源、五身份严格子集及全部旧失败保留，不新增风险、ignore、过滤或未来输入自动续期，不向 Framework／SDK 继承。新 Source／final、原生、性能、main CI 和整体 Goal 仍独立；完整原件及中文决定后继在CLI本次 hook-test-fixture-formal-integration-20261031-r01 风险执行目录。
+
+### 2026-11-01 IM/cron 历史与前台续接呈现的当前精确风险绑定
+
+本后继只记录 Root 已具体审定的源码修复和原合同下的实际绑定，不新增人类风险接受，不改旧 525f 及更早阶段的事实。CLI 原 collector 的 274 输入当前两读 `7441191402e2350ea32fdf72052c0a5f68c3ce0431f326608b37a3988b54bf74`，锁 `399509eeb951c87d407ffd949c60ac4c5b7dcc460a189e078a25f8287f4e2a4f`／768，policy `c1993eb7f64c36e81f18eec7768d08fb0045f16d0e74d11fcbcec5a10a5c0b9c`；机器 policy 仅 consumer 字段改变，原五完整风险身份和人类六项原话／退役后五项严格子集保持。八个既有 Rust 输入的具名增量及两审结论见当前风险决定；新增依赖／feature／GTK／glib 宏或通知 D-Bus 调用面为零。原八项控制实际自然 0，默认 fresh actual-lock 与 canonical-origin 官方 scanner 均自然 1、零漏洞、恰原五项 warning，独立精确 gate／caller 均自然 0，原 raw／FP／来源与失败保留。源码、锁、身份、warning 或 settings 再变仍需具体复核，不新增 ignore 或 no-fetch，不向 Framework／SDK 继承，也不替代 Rust／原生／main CI／完整 Goal 验收。
+
+## 2026-11-03 CLI async-executor 去 yank 的精确新锁授权
+
+人类对 Root 原问题 `call_6ffdc346972249549e7c242af391e0b2`／question0 直接回答“允许采用最小修复（推荐）”，明确同意 async-executor 1.14.0 → 1.14.1 单包修复和原五项风险合同的新锁绑定。Root 精票 SHA256 为 `3e3d76e70001c9bf9d6d5552559cebac2718ee2b5a387bc8c3cbd4c8861ea44f`；本条只覆盖这一具体来源，不更改旧授权/失败事实，不预授未来锁或 consumer。
+
+当前 CLI Cargo.lock SHA256 为 `d542c37ea3d32ca9a8064f0ef473fa3e2fd7175c0576c8e97d4564db09ed39e1`（768包）；仅 async-executor 的 version/checksum 改变，其余767个完整package表不变。原 collector 当前 consumer 实际两读仍为 `d5a9668f203ab76633df87eddb1fa4f111b78c30fb85a3599ec1d2477d71660c`（274输入）。`.cargo/accepted-dependency-risks.json` 仅改 lock_sha256，完整 SHA256 为 `f6a42b3ccf90ada2dc639b9999fc2bc70551c2e4f83cce00c2e87347bdde5950`；原五项完整风险身份、decision路径及其余policy字节不变，不接受第六项/yanked，不增ignore、过滤或no-fetch，不向Framework/SDK继承。
+
+人类批准和正式采用不等于工程门禁通过。本正式切点原controls8/8自然0；fresh actual首轮/一次有界网络复试、fresh canonical均在原RustSec fetch阶段自然1、未输出有效审计JSON，当前fresh双gate0仍缺。候选两scanner的零漏洞/原五warning/零yanked结果、旧exact-policy两gate1、r04新yanked及历史网络失败全部保留，不改称正式新gate0。恢复后仍须原actual/canonical默认fresh扫描与精确gate，scanner自然1和独立gate0分列；任何新风险、身份、来源、settings或输入漂移仍阻断。完整事实与人类来源见原风险决定文档的本日后继。Rust、native、main CI、GUI和发布资格继续独立；本条不授NoRun或绕过资源窗口。
+
+## 2026-11-03 CLI 正式 d542/f6/d5 的 fresh 双 gate 已取得
+
+本条为前段fetch失败的时间后继，不改写旧失败或e804原件。Root在当前正式CLI锁 `d542c37ea3d32ca9a8064f0ef473fa3e2fd7175c0576c8e97d4564db09ed39e1`（768包）、policy `f6a42b3ccf90ada2dc639b9999fc2bc70551c2e4f83cce00c2e87347bdde5950`、原collector consumer `d5a9668f203ab76633df87eddb1fa4f111b78c30fb85a3599ec1d2477d71660c`（274输入）上取得新fresh actual/canonical exact gate和caller各自然0。两个原官方scanner自然1，DB263a4d951a0867d4bddc29dddd6d59427c78f9a7/1402，零漏洞、恰原五完整风险warning、零yanked、noFetch=false、ignore=[]；原URL/设置/预算/代理/工具未改。本线只复用Root同raw/receipt并核验完整身份，未重跑scans或8controls。
+
+Root acceptance SHA256为 `0970aa37689ed74530cd4daef28130c5a7199fd1308f6ea1629d736d0364c22b`，完整原件及执行时间见原风险决定的本日后继。人类3e3d精确新锁授权保持充分，本双0只签当前锁/consumer/五身份；旧fetch1/空audit、r04新yanked、候选旧policy两gate1和静态PENDING包全保，不追成旧时通过。原五风险并未修复，scanner1不是零warning审计，不扩第六风险、ignore/过滤或未来输入自动续期，不向Framework/SDK继承。
+
+正常Source/Final仅按两doc新bytes复核，globalClosure不宣称已查。当前仍无CLI Rust/NoRun/GUI/提交GO，SDK独占重型窗；后续publication RED→原684→实际后继consumer/fresh gate→GREEN仍须Root明确资源派窗，不改原tests087、预算或执行ID，也不改ADR0057 76d和原生产patch。
+
+## 2026-11-03 CLI publication 真实验证后的19ec精确来源
+
+本条追加原publication流水线及test-only Clippy修复后的当前时态，不改写早先d5/77d资格、真实RED、Clippy101或任何fetch/yanked/旧policy失败。Root55c391先以真实publication RED为前提采用原684三生产文件，原collector实际两读77d/274、仅3输入变化后才机械绑定policy550675并取得新77d双fresh gate0；同原tests087行为GREEN、executor79/79和6原exact回归随后通过。原tests087 Clippy101因replace_box，按首个未知失败要求停报。
+
+Root74650另行具名批准独审C0/I0/M0的原负控Box就地替换，构造器/identity/sequence/parent/payload/Result/断言/预算/场景不变，不加allow或skip；tests当前精SHA为 `4f495651c40e9b0e77ff56b9be28c9c98af74c60bedbc504625cdc13c31a4766`。原collector采用后实际两读恰 `19ecac5f16256d4141540f528ae1e9e3c604a77b7be7d42676d77dd1ffc31cc4`／274，仅tests一输入变化、无增删，policy仅consumer字段后继为 `b94bbfefeffa523df850299db7a32e5a4e9efa13594c214d52694ab58ce53e05`。锁保持人类3e3d精许的 `d542c37ea3d32ca9a8064f0ef473fa3e2fd7175c0576c8e97d4564db09ed39e1`／768包，原五完整风险及其它policy字节保持；这两个consumer后继来自Root具体Source复评，不是锁许可自动续未来来源。
+
+19ec新cut原controls8/8自然0，fresh actual/canonical两gate和caller自然0；两个原scanner自然1、DB263a4d/1402、零漏洞、恰原五完整warning、零yanked、noFetch=false、ignore=[]。新NoRun自然0/W0/E0，features=[]、test opt0/debug0、j2/inc0与原frozen1.99/private RUSTUP保持，新实际程序2f99d595…取得两目标各exact1P和整个executor79P/0F/0I。六额外回归仅明确复用77d的各exact1P原件，不冒充19ec新程序执行。targeted lib/tests/no-default Clippy -Dwarnings及fmt write/check均自然0，格式化源码差量零；当前Source/Final按最终bytes另有回执，globalClosure不宣称已查。
+
+当前仅具备受控合成Model经过原unattended/RunTurn/Driver/sink/shared log/strict FileStore history的Rust消费者资格；GUI/App/native/外部provider/R03/NodeFull/三语/mainCI/发布未重跑。原五风险未修复，scanner1不是零warning审计；不新增风险、ignore/过滤/no-fetch或跨仓继承，不预授其它源码/锁。程序/完整FP/u64/.d/raw先T外保全，reader0后仍等Root准确clean票；本writer不自行清target或stage/commit/push。

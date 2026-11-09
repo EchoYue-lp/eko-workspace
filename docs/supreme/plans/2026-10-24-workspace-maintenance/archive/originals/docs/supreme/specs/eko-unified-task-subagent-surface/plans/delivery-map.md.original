@@ -1,0 +1,22 @@
+---
+schema_version: 1
+artifact: delivery-map
+design_ref: docs/supreme/specs/eko-unified-task-subagent-surface/design.md
+outcomes:
+  framework-admission-kernel:
+    ships: echo-agent 提供可复用的共享 Subagent execution admission 与一层 delegation policy
+      接入，保留 standalone 兼容配置且不依赖 EKO
+    depends_on: []
+  eko-runtime-convergence:
+    ships: EKO 以 max_concurrent_subagents=5 接入 framework shared admission，移除重复
+      Subagent governor，并让同一 TaskRun graph 驱动动态 PlanTask
+    depends_on:
+      - framework-admission-kernel
+  naming-contract-cleanup:
+    ships: 完成两仓库受影响公共类型、方法和配置命名的分层清理，保持语义、wire 字段和文档示例一致
+    depends_on:
+      - framework-admission-kernel
+      - eko-runtime-convergence
+design_revision: sha256:2875f68631845eb5d70d7d253d185705b58182c8be197495124b0fb84834af6e
+---
+该交付图按 framework-first 顺序组织；命名清理只处理受影响的真实 API 和调用路径，不进行无边界全仓重命名。

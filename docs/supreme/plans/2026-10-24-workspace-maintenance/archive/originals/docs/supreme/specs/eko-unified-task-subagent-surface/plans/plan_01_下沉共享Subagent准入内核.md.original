@@ -1,0 +1,210 @@
+---
+schema_version: 3
+lifecycle: completed
+supersedes: null
+slug: eko-unified-task-subagent-surface/framework-admission-kernel
+goal: 将共享 Subagent 执行准入和委派深度的通用机制收敛到 echo-agent framework，供 EKO 与其他消费者复用
+ships: echo-agent 提供可复用的共享 Subagent execution admission 与一层 delegation policy
+  接入，保留 standalone 兼容配置且不依赖 EKO
+verify: 在 echo-agent 任务分支执行仓库规定的 fmt、all-target/all-feature clippy、strict
+  clippy、workspace tests、no-default check，并执行公共 API 变更要求的独立 feature check matrix
+design_ref: docs/supreme/specs/eko-unified-task-subagent-surface/design.md
+delivery_ref: docs/supreme/specs/eko-unified-task-subagent-surface/plans/delivery-map.md#framework-admission-kernel
+todos:
+  - id: shared-admission-core
+    files:
+      - echo-agent/echo-core/src/agent/admission.rs
+      - echo-agent/echo-core/src/agent/mod.rs
+      - echo-agent/src/agent/admission.rs
+    summary: 将通用 keyed admission 和 shared execution lease 下沉到 echo-core
+    verify: framework core 拥有唯一 lease/permit 生命周期，根 crate
+      旧导出路径仍可用，capacity、close、retirement、shutdown 和取消语义有直接测试
+  - id: runtime-dispatch-wiring
+    files:
+      - echo-agent/echo-orchestration/src/tasks/runtime_executor.rs
+      - echo-agent/echo-orchestration/src/tasks/runtime.rs
+      - echo-agent/src/agent/subagent/executor.rs
+      - echo-agent/src/tools/builtin/agent_dispatch.rs
+      - echo-agent/src/agent/react/mod.rs
+      - echo-agent/src/agent/subagent/team/mod.rs
+    summary: 让 RuntimeTaskService 与 SubagentExecutor 接收同一 shared admission 并避免重复计数
+    verify: planned dispatch、direct agent_tool、Sync、Fork、Teammate 和 Team member
+      各自只占一个 shared lease，standalone fallback 行为保持可用
+  - id: delegation-policy-contract
+    files:
+      - echo-agent/echo-core/src/tools/mod.rs
+      - echo-agent/echo-orchestration/src/tasks/runtime_executor.rs
+      - echo-agent/echo-orchestration/src/tasks/runtime.rs
+      - echo-agent/src/agent/subagent/executor.rs
+      - echo-agent/src/tools/builtin/agent_dispatch.rs
+      - echo-agent/echo-agent-learning/examples/demo50_subagent_communication.rs
+    summary: 统一 framework delegation policy 的默认入口、child transition 和非法深度结果
+    verify: NestedDelegationPolicy 是唯一深度类型，root policy 可注入，child policy 在 max depth
+      处拒绝，非法请求不创建第三层 SubagentRun
+  - id: framework-name-and-doc-contract
+    files:
+      - echo-agent/docs/adr/0029-shared-subagent-execution-admission.md
+      - echo-agent/docs/zh/26-multi-agent.md
+      - echo-agent/docs/en/26-multi-agent.md
+      - echo-agent/docs/zh/39-framework-application-boundary.md
+      - echo-agent/docs/en/39-framework-application-boundary.md
+    summary: 固定 framework API 命名边界并同步双语文档和 ADR
+    verify: 文档说明 shared admission、per-runtime width、Fork fallback 和 EKO adapter
+      边界；受影响名称一行为一 canonical name
+artifact_id: plan:75ac7636-7953-44c5-92c6-7fe94baa4198
+design_revision: sha256:2875f68631845eb5d70d7d253d185705b58182c8be197495124b0fb84834af6e
+---
+## Approach
+
+先把通用执行准入放到 echo-core，使 echo-orchestration 与根 crate 可以共同依赖；再让 RuntimeTaskService 和 SubagentExecutor 使用同一 shared admission。EKO 的产品容量和最大深度留在后续应用 Plan；本 Plan 不修改 EKO 业务代码。
+
+## Global Constraints
+
+- TaskRun -> PlanTask -> SubagentRun 仍是唯一关系图；不创建嵌套 TaskRun、子队列或第二 Todo authority。
+- KeyedExecutionAdmission 的 lease、permit、retirement、close 和 shutdown 生命周期只保留一份；shared 组合必须建立在该 framework primitive 上。
+- 一个实际 SubagentRun 只持有一个 shared lease；planned dispatch 与 SubagentExecutor 之间不得 double acquire。
+- NestedDelegationPolicy 是唯一深度策略；framework 不硬编码 EKO 的最大深度 1。
+- RuntimeTaskServiceConfig.max_concurrent_subagents 保留为 standalone per-runtime scheduling width；SubagentExecutorConfig.max_concurrent_forks 保留为无 shared admission 时的 Fork fallback。
+- 新增通用封装命名为 ExecutionAdmission；已有 Keyed、Nested、Executor、Runtime 限定词保留，不做无语义收益的缩写。
+- 不新增 worker 术语；遵守 UTF-8 安全和无 unwrap、expect、panic 约束。
+- framework 源码、examples、ADR 和双语文档必须同步；提交前记录 SDK-Docs-Impact 与 SDK-Skill-Impact。
+
+## Files
+
+- Create: `echo-agent/echo-core/src/agent/admission.rs` — framework keyed/shared execution admission。
+- Modify: `echo-agent/echo-core/src/agent/mod.rs` — 导出 core admission。
+- Modify: `echo-agent/src/agent/admission.rs` — 改为兼容 re-export，移除重复实现。
+- Modify: `echo-agent/echo-orchestration/src/tasks/runtime_executor.rs` — 接入 shared admission，保留 per-runtime width。
+- Modify: `echo-agent/echo-orchestration/src/tasks/runtime.rs` — 传递 execution context 和 delegation policy。
+- Modify: `echo-agent/src/agent/subagent/executor.rs` — 各模式 shared lease 与 standalone fallback。
+- Modify: `echo-agent/src/tools/builtin/agent_dispatch.rs` — root policy、shared admission、非法深度。
+- Modify: `echo-agent/src/agent/react/mod.rs` — Agent runtime 构造传递 shared admission。
+- Modify: `echo-agent/src/agent/subagent/team/mod.rs` — Team member 复用 shared admission。
+- Modify: `echo-agent/echo-core/src/tools/mod.rs` — 仅补充现有 policy contract，不新建 depth 类型。
+- Modify: `echo-agent/echo-agent-learning/examples/demo50_subagent_communication.rs` — 对齐公共调用示例。
+- Modify: `echo-agent/docs/adr/0029-shared-subagent-execution-admission.md` — 最终 framework 决策。
+- Modify: `echo-agent/docs/zh/26-multi-agent.md` — 中文执行模式和 admission。
+- Modify: `echo-agent/docs/en/26-multi-agent.md` — 英文执行模式和 admission。
+- Modify: `echo-agent/docs/zh/39-framework-application-boundary.md` — 下沉事实。
+- Modify: `echo-agent/docs/en/39-framework-application-boundary.md` — 英文下沉事实。
+
+## Reuse
+
+- `echo-agent/src/agent/admission.rs:90` — KeyedExecutionAdmission — 已有 keyed lease、process permit、retirement、close 和 shutdown 语义。
+- `echo-agent/echo-orchestration/src/tasks/runtime_executor.rs:247` — RuntimeTaskServiceConfig — 已有 per-runtime wave width 和 delegation policy。
+- `echo-agent/echo-orchestration/src/tasks/runtime_executor.rs:304` — RuntimeDagExecutor — 已有 revision safe point、ready wave 和本地 semaphore。
+- `echo-agent/echo-core/src/tools/mod.rs:1172` — NestedDelegationPolicy — 已有 child policy transition。
+- `echo-agent/src/agent/subagent/executor.rs:299` — SubagentExecutorConfig — standalone Fork fallback。
+
+## Todos
+
+### shared-admission-core
+
+requirements:
+- § Framework / application 下沉审计
+- § 统一并发语义
+- § 复用与实现约束
+
+interfaces:
+- consumes: KeyedExecutionAdmission、OwnedSemaphorePermit、现有 framework re-export 路径
+- produces: echo-core shared execution admission/lease API、root facade、lease lifecycle tests
+
+steps:
+
+1. 将现有 KeyedExecutionAdmission 迁移到 echo-core，根 crate 保留兼容 re-export，并在同一边界提供通用 ExecutionAdmission 组合。
+   verify: echo-core、echo-orchestration 和根 crate 可共同构造同一 admission；旧路径不生成第二份状态。
+   expected: framework 只有一份 keyed active、retirement 和 process permit 生命周期。
+
+2. 用 RAII lease 组合 process capacity、cancel 和 opaque execution key，覆盖 closed、retiring、capacity 和 shutdown wait。
+   verify: 直接测试可观察到容量拒绝、取消唤醒、终态释放和重复释放保护。
+   expected: 调用方不维护 raw semaphore 生命周期或手写 active counter。
+
+### runtime-dispatch-wiring
+
+requirements:
+- § Framework / application 下沉审计
+- § 统一并发语义
+- § 数据流与分层
+- § 异常与边界场景
+
+interfaces:
+- consumes: RuntimeTaskServiceConfig、RuntimeDagExecutor、SubagentExecutorConfig、DispatchRequest
+- produces: shared admission injection point、single lease owner contract
+
+steps:
+
+1. 给 RuntimeTaskService 和 SubagentExecutor 增加可选 shared admission，并规定 planned dispatch 与 direct agent_tool 的唯一 lease owner。
+   verify: planned、direct、Sync、Fork、Teammate、Team member 各只占一个 lease。
+   expected: all modes share one process capacity without double acquire。
+
+2. 保留 per-runtime scheduling width 和 Fork fallback；shared admission 只负责跨入口 execution capacity。
+   verify: ready wave、shared capacity 和 standalone fallback 可分别观察，容量耗尽不会绕过另一层。
+   expected: framework 不出现 EKO-specific total counter。
+
+3. 将 cancellation、failure、timeout、normal terminal、background 和 executor close 纳入同一 settlement contract。
+   verify: active count 在所有 terminal path 回到预期，caller drop 不提前释放 detached execution 的 lease。
+   expected: no permit leak or detached execution without an owner。
+
+### delegation-policy-contract
+
+requirements:
+- § 两层委派边界
+- § 异常与边界场景
+- § 复用与实现约束
+
+interfaces:
+- consumes: NestedDelegationPolicy、TaskSubagentContext child transition、DispatchRequest policy compatibility helper
+- produces: configurable root policy、typed depth rejection、updated example
+
+steps:
+
+1. 统一 root policy 注入入口，让 direct tool、TaskRuntime 和 programmatic dispatch 不再各自设置隐藏 max depth。
+   verify: standalone consumer 可显式指定 root policy，未指定时使用 framework documented default。
+   expected: root、child 和 rejected depth 都来自同一 policy contract。
+
+2. 在 max depth boundary 返回结构化 depth rejection，不创建新 dispatch attempt；EKO 后续将 max depth 设为 1。
+   verify: can_spawn_subagents=false、boundary、legacy helper 和 cancellation 场景均有测试。
+   expected: framework 不硬编码 EKO 产品策略。
+
+3. 更新 multi-agent example 和文档，说明 TaskRun graph、SubagentRun attempt、Sync/Fork 和 delegation policy。
+   verify: example 进入现有 learning-example 编译/测试链路。
+   expected: public guidance 与 runtime contract 一致。
+
+### framework-name-and-doc-contract
+
+requirements:
+- § Framework / application 下沉审计
+- § 复用与实现约束
+- § 验收标准
+
+interfaces:
+- consumes: 新 shared admission API、existing public re-exports、ADR 0029
+- produces: canonical touched names and synchronized framework docs
+
+steps:
+
+1. 对本 Plan 触及的 public type、method、field 和 module 做语义命名审查；新 shared composition 使用 ExecutionAdmission，不为短而短地缩写已有边界名。
+   verify: touched symbol inventory 对每种行为只有一个 canonical name，保留 Keyed、Nested、Executor、Runtime 等必要限定词。
+   expected: 名称缩短只发生在删除冗余前缀且不损失 scope 的位置。
+
+2. 同步 framework ADR、双语 multi-agent/architecture 文档和 demo50 引用，写清 standalone fallback 与 EKO adapter 的责任。
+   verify: markdown/link/example checks pass；文档不再把 app-local governor 描述为 framework authority。
+   expected: framework 和 application 读者看到同一 admission、depth 和命名合同。
+
+## Diagram
+
+~~~mermaid
+flowchart LR
+  A[RuntimeTaskService ready wave] --> B[framework ExecutionAdmission]
+  C[direct agent_tool] --> B
+  D[Sync Fork Teammate] --> B
+  B --> E[SubagentRun lease]
+  F[AgentPool foreground lease] --> G[separate KeyedExecutionAdmission resource class]
+~~~
+
+## Decisions
+
+- shared execution admission 是 framework 通用机制；EKO 只提供容量、key scope 和默认产品 policy。
+- RuntimeTaskServiceConfig.max_concurrent_subagents 是 standalone per-runtime width；SubagentExecutorConfig.max_concurrent_forks 是 standalone Fork fallback。
+- EKO ProcessExecutionGovernor.subagent 的删除属于后续 EKO runtime integration Plan，必须在 framework 路径可用后进行。
+- 命名清理只处理受影响 API，不做全仓盲目重命名，也不修改 wire 字段名。
